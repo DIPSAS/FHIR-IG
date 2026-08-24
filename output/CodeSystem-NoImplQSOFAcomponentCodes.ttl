@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/R4/CodeSystem/NoImplQSOFAcomponentCodes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NoImplQSOFAcomponentCodes"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem NoImplQSOFAcomponentCodes</b></p><a name=\"NoImplQSOFAcomponentCodes\"> </a><a name=\"hcNoImplQSOFAcomponentCodes\"> </a><p>This  code system <code>http://dips.no/fhir/R4/CodeSystem/NoImplQSOFAcomponentCodes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">QsofaMentalStatus<a name=\"NoImplQSOFAcomponentCodes-QsofaMentalStatus\"> </a></td><td>QsofaMentalStatus</td></tr><tr><td style=\"white-space:nowrap\">QsofaSystolicBP<a name=\"NoImplQSOFAcomponentCodes-QsofaSystolicBP\"> </a></td><td>QsofaSystolicBP</td></tr><tr><td style=\"white-space:nowrap\">QsofaResRate<a name=\"NoImplQSOFAcomponentCodes-QsofaResRate\"> </a></td><td>QsofaResRate</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "http://dips.no/fhir/R4/CodeSystem/NoImplQSOFAcomponentCodes"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/NoImpl-qsofacodes" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NoImplQSOFAcomponentCodes"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.date [ fhir:value "2026-08-20T12:37:22+05:30"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "DIPS AS"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Lars-Andreas Nystad" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "mailto:lan@dips.no" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NO" ] ;
+       fhir:Coding.display [ fhir:value "Norway" ]
+     ]
+  ] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "QsofaMentalStatus" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "QsofaMentalStatus" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "QsofaMentalStatus" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "QsofaSystolicBP" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "QsofaSystolicBP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "QsofaSystolicBP" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "QsofaResRate" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "QsofaResRate" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "QsofaResRate" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://dips.no/fhir/R4/CodeSystem/NoImplQSOFAcomponentCodes.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

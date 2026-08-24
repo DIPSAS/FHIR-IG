@@ -1,0 +1,414 @@
+{
+  "codeSystems" : [{
+    "url" : "http://dips.no/fhir/R4/ValueSet/DIPSEncounterTypeCom",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSEncounterTypeCom",
+    "title" : "DIPSEncounterTypeCom",
+    "description" : "Have volven codesystems and rest of the namesystem",
+    "systems" : ["urn:oid:2.16.578.1.12.4.1.1.8240"]
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/DIPSEncounterV3",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSEncounterV3",
+    "title" : "DIPSEncounterV3",
+    "description" : "Codes representing body site for blood pressure",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"]
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/DIPSHealthcareServiceTypes",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "DIPSHealthcareServiceTypes",
+    "title" : null,
+    "description" : "Value Sets of DIPSHealthcareServiceTypes",
+    "systems" : ["urn:oid:1.3.6.1.4.1.9038.52.4379",
+    "urn:oid:1.3.6.1.4.1.9038.52.4357",
+    "urn:oid:1.3.6.1.4.1.9038.52.4106",
+    "urn:oid:1.3.6.1.4.1.9038.52.4584",
+    "urn:oid:1.3.6.1.4.1.9038.52.4639",
+    "urn:oid:1.3.6.1.4.1.9038.52.4582"]
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/DipsCoding1003ValueSet",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "DipsCoding1003ValueSet",
+    "title" : null,
+    "description" : "Value Sets of DipsCoding1003ValueSet",
+    "systems" : ["urn:oid:1.3.6.1.4.1.9038.52.1003"]
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/HealthPersonallCategoryValueset",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "HealthPersonallCategoryValueset",
+    "title" : "HealthPersonallCategoryValueset",
+    "description" : "Have volven codesystems and rest of the namesystem",
+    "systems" : ["urn:oid:2.16.578.1.12.4.1.1.9060"]
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/KithCoding9040ValueSet",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "KithCoding9040ValueSet",
+    "title" : null,
+    "description" : "Value Sets of KithCoding9040ValueSet",
+    "systems" : ["urn:oid:2.16.578.1.12.4.1.1.9040"]
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/KithHealthcareServiceTypes",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "KithHealthcareServiceTypes",
+    "title" : null,
+    "description" : "Value Sets of KithHealthcareServiceTypes",
+    "systems" : ["urn:oid:2.16.578.1.12.4.1.1.8654",
+    "urn:oid:2.16.578.1.12.4.1.1.8664",
+    "urn:oid:2.16.578.1.12.4.1.1.8656",
+    "urn:oid:2.16.578.1.12.4.1.1.8655",
+    "urn:oid:2.16.578.1.12.4.1.1.8663",
+    "urn:oid:2.16.578.1.12.4.1.1.8657"]
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/LanguageCodes",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "LanguageCodes",
+    "title" : null,
+    "description" : "Valesets of LanguageCodes",
+    "systems" : ["urn:ietf:bcp:47", "urn:oid:0.1.2.3.4"]
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/LocationTypes",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "LocationTypes",
+    "title" : null,
+    "description" : "Valesets of Location Types",
+    "systems" : ["urn:oid:1.3.6.1.4.1.9038.52.1010",
+    "urn:oid:1.3.6.1.4.1.9038.52.3297",
+    "http://dips.no/fhir/R4/CodeSystem/DIPSLocationTopLevel"]
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationBloodPressureMeasurementMethod",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoImplVitalSignsObservationBloodPressureMeasurementMethod",
+    "title" : null,
+    "description" : "Codes representing measurement method for heart rate",
+    "systems" : ["http://dips.no/fhir/R4/CodeSystem/NoImplMeasurementMethod",
+    "http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationBodyMassIndexFormula",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoImplVitalSignsObservationBodyMassIndexFormula",
+    "title" : "NoImplVitalSignsObservationBodyMassIndexFormula",
+    "description" : "Value set for DIPS Body Mass Index Formula Measurment methods",
+    "systems" : ["http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod"]
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationConsciousness",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoImplVitalSignsObservationConsciousness",
+    "title" : "SNOMED CT Consciousness Structures",
+    "description" : "Codes representing consciousness",
+    "systems" : ["http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness"]
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationHeartRateMeasurementMethod",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoImplVitalSignsObservationHeartRateMeasurementMethod",
+    "title" : null,
+    "description" : "Codes representing measurement method for heart rate",
+    "systems" : ["http://dips.no/fhir/R4/CodeSystem/NoImplMeasurementMethod",
+    "http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationPulseBodySite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoImplVitalSignsObservationPulseBodySite",
+    "title" : "NoImplVitalSignsObservationPulseBodySite",
+    "description" : "Codes representing Body site for Pulse",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationPulseMeasurementMethod",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoImplVitalSignsObservationPulseMeasurementMethod",
+    "title" : null,
+    "description" : "Codes representing measurement method for heart rate",
+    "systems" : ["http://dips.no/fhir/R4/CodeSystem/NoImplMeasurementMethod",
+    "http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/NprLevelOfCare",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NprLevelOfCare",
+    "title" : "NprLevelOfCare",
+    "description" : "Have volven codesystems and rest of the namesystem",
+    "systems" : ["urn:oid:2.16.578.1.12.4.1.1.8406"]
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/OrganizationAccessTypes",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "OrganizationAccessTypes",
+    "title" : null,
+    "description" : "Value Sets of AccessTypes",
+    "systems" : ["http://dips.no/fhir/InternalSecurityAccess"]
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/OrganizationTypes",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "OrganizationTypes",
+    "title" : null,
+    "description" : "Value Sets of OrganizationTypes",
+    "systems" : ["urn:oid:2.16.578.1.12.4.1.1.8628",
+    "urn:oid:2.16.578.1.12.4.1.1.8624"]
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/approvalType",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "approvalType",
+    "title" : "approvalType",
+    "description" : "approvalType",
+    "systems" : ["urn:oid:2.16.578.1.12.4.1.1.7704"]
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/healthPersonnelSpecialization",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "healthPersonnelSpecialization",
+    "title" : "healthPersonnelSpecialization",
+    "description" : "Have volven codesystems and rest of the namesystem",
+    "systems" : ["urn:oid:2.16.578.1.12.4.1.1.7426"]
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/languageid",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "languageid",
+    "title" : null,
+    "description" : "Valesets of languageid",
+    "systems" : ["urn:oid:1.3.6.1.4.1.9038.52.1587"]
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/relatedperson-relationshiptype",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "relatedperson-relationshiptype",
+    "title" : null,
+    "description" : "Valesets of Guardian",
+    "systems" : ["urn:oid:1.3.6.1.4.1.9038.52.3508"]
+  },
+  {
+    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBloodPressureMeasurementMethod",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsObservationBloodPressureMeasurementMethod",
+    "title" : "NoDomainVitalSignsObservationBloodPressureMeasurementMethod",
+    "description" : "Codes representing measurement method for HeartRate",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBloodpressureBodyPosition",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsObservationBloodpressureBodyPosition",
+    "title" : "NoDomainVitalSignsObservationBloodpressureBodyPosition",
+    "description" : "Codes representing body position for blood pressure",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBloodpressureBodySite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsObservationBloodpressureBodySite",
+    "title" : "NoDomainVitalSignsObservationBloodpressureBodySite",
+    "description" : "Codes representing body site for blood pressure",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBodyExposure",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsObservationBodyExposure",
+    "title" : "NoDomainVitalSignsObservationBodyExposure",
+    "description" : "Codes representing body exposure",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBodyHeightBodyPosition",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsObservationBodyHeightBodyPosition",
+    "title" : "NoDomainVitalSignsObservationBodyHeightBodyPosition",
+    "description" : "Codes representing body position for body height",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBodyTempBodySite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsObservationBodyTempBodySite",
+    "title" : "NoDomainVitalSignsObservationBodyTempBodySite",
+    "description" : "Codes representing body site for body temperature",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationClothingState",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsObservationClothingState",
+    "title" : "NoDomainVitalSignsObservationClothingState",
+    "description" : "Codes representing level of clothing",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationCuffsize",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsObservationCuffsize",
+    "title" : "NoDomainVitalSignsObservationCuffsize",
+    "description" : "Codes representing cuff size",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationDiastolicendPoint",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsObservationDiastolicendPoint",
+    "title" : "NoDomainVitalSignsObservationDiastolicendPoint",
+    "description" : "Codes representing Diastolic end point",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationHeartRateBodySite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsObservationHeartRateBodySite",
+    "title" : "NoDomainVitalSignsObservationHeartRateBodySite",
+    "description" : "Codes representing body site for heart rate",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationHeartRateMeasurementMethod",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsObservationHeartRateMeasurementMethod",
+    "title" : "NoDomainVitalSignsObservationHeartRateMeasurementMethod",
+    "description" : "Codes representing measurement method for HeartRate",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationHeartRatePulseBodyPosition",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsObservationHeartRatePulseBodyPosition",
+    "title" : "NoDomainVitalSignsObservationHeartRatePulseBodyPosition",
+    "description" : "Codes representing body position for heart rate or Pulse",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationHeartRhythmIrregularity",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsObservationHeartRhythmIrregularity",
+    "title" : "NoDomainVitalSignsObservationHeartRhythmIrregularity",
+    "description" : "Codes representing heart rhythm irregularity for heart rate",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationPulseBodySite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsObservationPulseBodySite",
+    "title" : "NoDomainVitalSignsObservationPulseBodySite",
+    "description" : "Codes representing body site for pulse",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationPulseMeasurementMethod",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsObservationPulseMeasurementMethod",
+    "title" : "NoDomainVitalSignsObservationPulseMeasurementMethod",
+    "description" : "Codes representing measurement method for HeartRate",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationPulseRhythm",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsObservationPulseRhythm",
+    "title" : "NoDomainVitalSignsObservationPulseRhythm",
+    "description" : "Codes representing  rhythm of Pulse",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationPulseRhythmIrregularity",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsObservationPulseRhythmIrregularity",
+    "title" : "NoDomainVitalSignsObservationPulseRhythmIrregularity",
+    "description" : "Codes representing heart rhythm irregularity for Pulse",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationRespirationRateBodyPosition",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsObservationRespirationRateBodyPosition",
+    "title" : "NoDomainVitalSignsObservationRespirationRateBodyPosition",
+    "description" : "Codes representing body position for respiration rate",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationRespirationRateDepth",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsObservationRespirationRateDepth",
+    "title" : "NoDomainVitalSignsObservationRespirationRateDepth",
+    "description" : "Codes representing depth for respiration rate",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationRespirationRegularity",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsObservationRespirationRegularity",
+    "title" : "NoDomainVitalSignsObservationRespirationRegularity",
+    "description" : "Codes representing Respiration Regularity",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationSleepStatus",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsObservationSleepStatus",
+    "title" : "NoDomainVitalSignsObservationSleepStatus",
+    "description" : "Codes representing Sleep Status",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationSpontaneousBreathing",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsObservationSpontaneousBreathing",
+    "title" : "NoDomainVitalSignsObservationSpontaneousBreathing",
+    "description" : "Codes representing Respiration Spontaneous breathing",
+    "systems" : ["http://snomed.info/sct"]
+  }]
+}

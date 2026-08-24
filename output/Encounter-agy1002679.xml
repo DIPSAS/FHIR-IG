@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="agy1002679"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter agy1002679</b></p><a name="agy1002679"> </a><a name="hcagy1002679"> </a><p><b>identifier</b>: <code>http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid</code>/agy1002679</p><p><b>status</b>: Arrived</p><p><b>class</b>: v3-ActCod: AMB (AMB)</p></div>
+  </text>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid"/>
+    <value value="agy1002679"/>
+  </identifier>
+  <status value="arrived"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCod"/>
+    <code value="AMB"/>
+  </class>
+</Encounter>

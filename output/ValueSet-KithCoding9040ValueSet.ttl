@@ -1,0 +1,123 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/R4/ValueSet/KithCoding9040ValueSet> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "KithCoding9040ValueSet"] ;
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ] ;
+     fhir:Meta.lastUpdated [ fhir:value "2020-04-17T00:33:33.219-04:00"^^xsd:dateTime ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KithCoding9040ValueSet</b></p><a name=\"KithCoding9040ValueSet\"> </a><a name=\"hcKithCoding9040ValueSet\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1; Last updated: 2020-04-17 00:33:33-0400</p></div><ul><li>Include these codes as defined in <code>urn:oid:2.16.578.1.12.4.1.1.9040</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>101</td><td>Helseforetak/private sykehus</td></tr><tr><td>102</td><td>Kommune</td></tr><tr><td>103</td><td>Fastlege</td></tr><tr><td>104</td><td>Privat røntgeninstitutt</td></tr><tr><td>105</td><td>Privat laboratorium</td></tr><tr><td>106</td><td>Privat rehabiliterings- og opptreningssenter	Utgått</td></tr><tr><td>107</td><td>Distriktsmedisinsk senter	Utgått</td></tr><tr><td>108</td><td>Apotek og bandasjist</td></tr><tr><td>109</td><td>Bandagist	Utgått</td></tr><tr><td>110</td><td>Tannlege/Tannhelse</td></tr><tr><td>111</td><td>Fylkeskommunal tannhelsetjeneste	Utgått</td></tr><tr><td>112</td><td>Nasjonalt register	Utgått</td></tr><tr><td>113</td><td>Statlig forvaltning</td></tr><tr><td>114</td><td>Interkommunal virksomhet	Inkluderer interkommunalt selskap/virksomhet</td></tr><tr><td>115</td><td>Øvrig virksomhet som ikke yter helsehjelp (dekker forsikringsselskap mv.)</td></tr><tr><td>116</td><td>Annen privat aktør som yter helsehjelp (dekker fysioterapeuter, medisinske sentre, avtalespesialister mv.)</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://dips.no/fhir/R4/ValueSet/KithCoding9040ValueSet"] ;
+  fhir:ValueSet.version [ fhir:value "0.1.0"] ;
+  fhir:ValueSet.name [ fhir:value "KithCoding9040ValueSet"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2026-08-20T12:37:22+05:30"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "DIPS AS"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Lars-Andreas Nystad" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "mailto:lan@dips.no" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Value Sets of KithCoding9040ValueSet"] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NO" ] ;
+       fhir:Coding.display [ fhir:value "Norway" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.1.9040" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "101" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Helseforetak/private sykehus" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "102" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kommune" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "103" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fastlege" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "104" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Privat røntgeninstitutt" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "105" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Privat laboratorium" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "106" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Privat rehabiliterings- og opptreningssenter	Utgått" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "107" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Distriktsmedisinsk senter	Utgått" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "108" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Apotek og bandasjist" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "109" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bandagist	Utgått" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "110" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tannlege/Tannhelse" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "111" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fylkeskommunal tannhelsetjeneste	Utgått" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "112" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nasjonalt register	Utgått" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "113" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Statlig forvaltning" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "114" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Interkommunal virksomhet	Inkluderer interkommunalt selskap/virksomhet" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "115" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Øvrig virksomhet som ikke yter helsehjelp (dekker forsikringsselskap mv.)" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "116" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Annen privat aktør som yter helsehjelp (dekker fysioterapeuter, medisinske sentre, avtalespesialister mv.)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://dips.no/fhir/R4/ValueSet/KithCoding9040ValueSet.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

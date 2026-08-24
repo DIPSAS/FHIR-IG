@@ -1,0 +1,1128 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>DIPSHealthcareServiceTypes - JSON Representation - DIPS Core Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
+    <style>
+        /* Visual continuity with the developer.dips.no GitBook portal this IG is linked from.
+           TODO: swap --dips-portal-accent for the portal's real brand color, and confirm the
+           font stack against developer.dips.no's actual theme (see PLACEHOLDER note below). */
+        :root {
+            --dips-portal-accent: #0b3d91; /* PLACEHOLDER - replace with the real developer.dips.no accent color */
+        }
+        body {
+            font-family: -apple-system, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+        }
+        .dips-portal-banner {
+            background: var(--dips-portal-accent);
+            color: #fff;
+            padding: 8px 20px;
+            font-size: 14px;
+        }
+        .dips-portal-banner a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .dips-portal-banner a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6.157"}
+    h3,h4,h5,h6{--heading-prefix:"6.157"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+            <div class="dips-portal-banner">
+                <a href="https://developer.dips.no/9fvgRTzUE0KCH4ohQuiM/api/fhir-r4/README.md">&larr; Back to DIPS Developer Portal</a>
+            </div>
+
+            
+<div id="family-nav">
+	<a id="logo" no-external="true" href="http://hl7.org/fhir"> <img
+		alt="logo fhir" height="50" src="assets/images/fhir-logo-www.png" />
+	</a>
+</div>
+
+
+            
+<div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="https://github.com/HL7Norway">
+        <img alt="visit the hl7 website" height="60" src="assets/images/logo-dips.png" />
+    </a>            
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">DIPS Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  Norway
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="toc.html">TOC</a>
+  </li>
+  <li>
+    <a href="changes.html">Change Log</a>
+  </li>
+  <li>
+    <a href="documentation.html">Documentation</a>
+  </li>
+  <li>
+    <a href="download.html">Download</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>DIPSHealthcareServiceTypes</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">DIPS Core Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/R4/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-DIPSHealthcareServiceTypes.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-DIPSHealthcareServiceTypes.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-DIPSHealthcareServiceTypes.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: DIPSHealthcareServiceTypes - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2026-08-20
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-DIPSHealthcareServiceTypes.json" no-download="true">Raw json</a> | <a href="ValueSet-DIPSHealthcareServiceTypes.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">id</a>" : "DIPSHealthcareServiceTypes",
+  "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">versionId</a>" : "1",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2020-04-17T00:33:33.219-04:00"
+  },
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet DIPSHealthcareServiceTypes&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;DIPSHealthcareServiceTypes\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcDIPSHealthcareServiceTypes\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;version: 1; Last updated: 2020-04-17 00:33:33-0400&lt;/p&gt;&lt;/div&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;urn:oid:1.3.6.1.4.1.9038.52.4379&lt;/code&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; version Not Stated (use latest from terminology server)&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264864&lt;/td&gt;&lt;td&gt;Patologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264866&lt;/td&gt;&lt;td&gt;Klinisk nevrofysiologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264868&lt;/td&gt;&lt;td&gt;Nevrovaskulært laboratorium&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264870&lt;/td&gt;&lt;td&gt;Nevroimmunologisk laboratorium&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264872&lt;/td&gt;&lt;td&gt;Cytogenetikk og molekylærgenetikk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264834&lt;/td&gt;&lt;td&gt;Radiologi og billeddiagnostikk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264836&lt;/td&gt;&lt;td&gt;Røntgen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264842&lt;/td&gt;&lt;td&gt;Tomografi MR&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264844&lt;/td&gt;&lt;td&gt;Tomografi CT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264846&lt;/td&gt;&lt;td&gt;Nukleærmedisin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264848&lt;/td&gt;&lt;td&gt;Nevroradiologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264850&lt;/td&gt;&lt;td&gt;Intervensjonsradiologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264852&lt;/td&gt;&lt;td&gt;Laboratoriefag&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264854&lt;/td&gt;&lt;td&gt;Klinisk farmakologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264856&lt;/td&gt;&lt;td&gt;Immunologi, allergologi og transfusjonsmedisin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264858&lt;/td&gt;&lt;td&gt;Medisinsk biokjemi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264860&lt;/td&gt;&lt;td&gt;Medisinsk mikrobiologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264862&lt;/td&gt;&lt;td&gt;Nukleærmedisin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268523&lt;/td&gt;&lt;td&gt;Ultralyd&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268524&lt;/td&gt;&lt;td&gt;Angiografi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268525&lt;/td&gt;&lt;td&gt;Immunologi og allergologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268526&lt;/td&gt;&lt;td&gt;Transfusjonsmedisin&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;urn:oid:1.3.6.1.4.1.9038.52.4357&lt;/code&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; version Not Stated (use latest from terminology server)&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264876&lt;/td&gt;&lt;td&gt;Spilleavhengighet og annen avhengighet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264878&lt;/td&gt;&lt;td&gt;Rusmiddelavhengighet med alvorlig psykiatrisk sykdom (dobbeldiagnose)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264874&lt;/td&gt;&lt;td&gt;Helsehjelp knyttet til rusmiddelavhengighet og annen avhengighet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264880&lt;/td&gt;&lt;td&gt;Rusmiddelavhengighet med langvarig funksjonssvikt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264882&lt;/td&gt;&lt;td&gt;Førstegangspsykose knyttet til rusmiddelavhengighet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264884&lt;/td&gt;&lt;td&gt;Utredning av rusmiddelavhengighet eller annen avhengighet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264886&lt;/td&gt;&lt;td&gt;Avrusning/ avgiftning/ stabilisering&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264888&lt;/td&gt;&lt;td&gt;Familieterapi, parterapi og pårørendeterapi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264890&lt;/td&gt;&lt;td&gt;Legemiddelassistert rehabilitering (LAR)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264892&lt;/td&gt;&lt;td&gt;Terapeutisk samfunn, kollektiv osv.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264894&lt;/td&gt;&lt;td&gt;Innsatte under paragraf 12-soning&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264896&lt;/td&gt;&lt;td&gt;Psykisk helsevern&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264898&lt;/td&gt;&lt;td&gt;Psykisk helsevern for barn og unge (BUP)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264900&lt;/td&gt;&lt;td&gt;Familieterapi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264902&lt;/td&gt;&lt;td&gt;Spiseforstyrrelser hos barn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264904&lt;/td&gt;&lt;td&gt;Psykisk helsevern for voksne&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264906&lt;/td&gt;&lt;td&gt;Spiseforstyrrelser hos voksne&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264908&lt;/td&gt;&lt;td&gt;Psykiatrisk helsehjelp til døve&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264910&lt;/td&gt;&lt;td&gt;Unge schizofrene&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264912&lt;/td&gt;&lt;td&gt;Alderspsykiatrisk behandling&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264914&lt;/td&gt;&lt;td&gt;Psykiatrisk helsehjelp til asylsøkere og flyktninger&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264916&lt;/td&gt;&lt;td&gt;Tidlig intervensjon&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264918&lt;/td&gt;&lt;td&gt;Pasienter med langvarig funksjonssvikt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264920&lt;/td&gt;&lt;td&gt;Førstegangspsykose&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264922&lt;/td&gt;&lt;td&gt;Habilitering/Rehabilitering (psykisk helsevern for voksne)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264924&lt;/td&gt;&lt;td&gt;Familieterapi/behandling&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264926&lt;/td&gt;&lt;td&gt;Helsehjelp knyttet til habilitering og rehabilitering&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264928&lt;/td&gt;&lt;td&gt;Barnehabilitering&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264930&lt;/td&gt;&lt;td&gt;Voksenhabilitering&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264932&lt;/td&gt;&lt;td&gt;Rehabilitering&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264934&lt;/td&gt;&lt;td&gt;Helsehjelp knyttet til somatisk sykdom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264936&lt;/td&gt;&lt;td&gt;Allmennmedisin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264938&lt;/td&gt;&lt;td&gt;Kirurgi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264940&lt;/td&gt;&lt;td&gt;Generell kirurgi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264942&lt;/td&gt;&lt;td&gt;Barnekirurgi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264944&lt;/td&gt;&lt;td&gt;Bryst og endokrin kirurgi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264946&lt;/td&gt;&lt;td&gt;Gastroenterologisk kirurgi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264948&lt;/td&gt;&lt;td&gt;Karkirurgi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264950&lt;/td&gt;&lt;td&gt;Kjevekirurgi og munnhulesykdommer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264952&lt;/td&gt;&lt;td&gt;Nevrokirurgi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264954&lt;/td&gt;&lt;td&gt;Ortopedisk kirurgi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264956&lt;/td&gt;&lt;td&gt;Plastikkirurgi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264958&lt;/td&gt;&lt;td&gt;Thoraxkirurgi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264960&lt;/td&gt;&lt;td&gt;Urologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264962&lt;/td&gt;&lt;td&gt;Indremedisin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264964&lt;/td&gt;&lt;td&gt;Endokrinologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264966&lt;/td&gt;&lt;td&gt;Fordøyelsessykdommer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264968&lt;/td&gt;&lt;td&gt;Geriatri&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264970&lt;/td&gt;&lt;td&gt;Blodsykdommer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264972&lt;/td&gt;&lt;td&gt;Infeksjonsmedisin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264974&lt;/td&gt;&lt;td&gt;Hjertesykdommer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264976&lt;/td&gt;&lt;td&gt;Hjerterytmeforstyrrelser&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264978&lt;/td&gt;&lt;td&gt;Ekkokardiografi og bildediagnostikk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264980&lt;/td&gt;&lt;td&gt;Klinisk kardiologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264982&lt;/td&gt;&lt;td&gt;Forebyggende kardiologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264984&lt;/td&gt;&lt;td&gt;Invasiv kardiologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264986&lt;/td&gt;&lt;td&gt;Lungesykdommer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264988&lt;/td&gt;&lt;td&gt;Nyresykdommer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264990&lt;/td&gt;&lt;td&gt;Dialyse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264992&lt;/td&gt;&lt;td&gt;Fødselshjelp og kvinnesykdommer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264994&lt;/td&gt;&lt;td&gt;Generell gynekologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264996&lt;/td&gt;&lt;td&gt;Gynekologisk onkologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;264998&lt;/td&gt;&lt;td&gt;Obstetrikk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265000&lt;/td&gt;&lt;td&gt;Hud- og veneriske sykdommer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265002&lt;/td&gt;&lt;td&gt;Barnesykdommer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265004&lt;/td&gt;&lt;td&gt;Nyfødtmedisin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265006&lt;/td&gt;&lt;td&gt;Intensivbehandling av barn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265008&lt;/td&gt;&lt;td&gt;Nevrologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265010&lt;/td&gt;&lt;td&gt;Generell nevrologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265012&lt;/td&gt;&lt;td&gt;Cerebrovaskulære sykdommer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265014&lt;/td&gt;&lt;td&gt;Epilepsi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265016&lt;/td&gt;&lt;td&gt;Anestesiologi Inklusiv smertebehandling&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265018&lt;/td&gt;&lt;td&gt;Øre-nese-halssykdommer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265020&lt;/td&gt;&lt;td&gt;Audiologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265022&lt;/td&gt;&lt;td&gt;Laryngologi/Foniatri&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265024&lt;/td&gt;&lt;td&gt;Balansemedisin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265026&lt;/td&gt;&lt;td&gt;Søvnrelaterte sykdommer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265028&lt;/td&gt;&lt;td&gt;Nese- og bihulesykdommer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265030&lt;/td&gt;&lt;td&gt;Otologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265032&lt;/td&gt;&lt;td&gt;Hode- og halskirurgi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265034&lt;/td&gt;&lt;td&gt;Allergologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265036&lt;/td&gt;&lt;td&gt;Pediatriske øre-nese-halssykdommer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265038&lt;/td&gt;&lt;td&gt;Øyesykdommer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265040&lt;/td&gt;&lt;td&gt;Onkologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265042&lt;/td&gt;&lt;td&gt;Revmatologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265044&lt;/td&gt;&lt;td&gt;Tverrfaglig ryggbehandling&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265046&lt;/td&gt;&lt;td&gt;Palliativ medisin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265048&lt;/td&gt;&lt;td&gt;Medisinsk genetikk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265050&lt;/td&gt;&lt;td&gt;Fysikalsk medisin og rehabilitering&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265052&lt;/td&gt;&lt;td&gt;Andre  helsehjelpsområder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265054&lt;/td&gt;&lt;td&gt;Sosionomtjenester&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265056&lt;/td&gt;&lt;td&gt;Ergoterapi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265058&lt;/td&gt;&lt;td&gt;Fysioterapi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265060&lt;/td&gt;&lt;td&gt;Kiropraktikk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265062&lt;/td&gt;&lt;td&gt;Ernæringsfysiologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265064&lt;/td&gt;&lt;td&gt;Tannhelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265066&lt;/td&gt;&lt;td&gt;Audiografi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265068&lt;/td&gt;&lt;td&gt;Spesialpedagogikk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265070&lt;/td&gt;&lt;td&gt;Logopedi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265072&lt;/td&gt;&lt;td&gt;Farmasi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265074&lt;/td&gt;&lt;td&gt;Yrkes- og arbeidsmedisin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268707&lt;/td&gt;&lt;td&gt;Sikkerhetspsykiatri&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268531&lt;/td&gt;&lt;td&gt;Tverrfaglig spesialisert behandling av rusmiddelmisbruk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268532&lt;/td&gt;&lt;td&gt;Assistert befruktning&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268533&lt;/td&gt;&lt;td&gt;Fostermedisin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268534&lt;/td&gt;&lt;td&gt;Hudsykdommer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268535&lt;/td&gt;&lt;td&gt;Veneriske sykdommer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268536&lt;/td&gt;&lt;td&gt;Nevrofysiologi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268708&lt;/td&gt;&lt;td&gt;Sarkomer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;urn:oid:1.3.6.1.4.1.9038.52.4582&lt;/code&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; version Not Stated (use latest from terminology server)&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268409&lt;/td&gt;&lt;td&gt;Somatikk plo meldingsmottak&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268411&lt;/td&gt;&lt;td&gt;Psykiatri plo meldingsmottak&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268413&lt;/td&gt;&lt;td&gt;Meldeordning Kunnskapssenteret&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268734&lt;/td&gt;&lt;td&gt;Teknisk avsenderadresse&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;urn:oid:1.3.6.1.4.1.9038.52.4584&lt;/code&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; version Not Stated (use latest from terminology server)&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268415&lt;/td&gt;&lt;td&gt;Raskere tilbake somatikk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268417&lt;/td&gt;&lt;td&gt;Raskere tilbake psykiatri&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268419&lt;/td&gt;&lt;td&gt;Brystdiagnostikk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268421&lt;/td&gt;&lt;td&gt;Sykelig overvekt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268423&lt;/td&gt;&lt;td&gt;Brannskadebehandling&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268425&lt;/td&gt;&lt;td&gt;Hyperbarmedisinsk behandling&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268427&lt;/td&gt;&lt;td&gt;Benskjørhet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268429&lt;/td&gt;&lt;td&gt;Læring og mestring&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268431&lt;/td&gt;&lt;td&gt;Døvblindhet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268433&lt;/td&gt;&lt;td&gt;Inkontinens&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268736&lt;/td&gt;&lt;td&gt;Diagnostikk uavklart alvorlig sykdom&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;urn:oid:1.3.6.1.4.1.9038.52.4106&lt;/code&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; version Not Stated (use latest from terminology server)&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;263142&lt;/td&gt;&lt;td&gt;Pleie- og omsorgstjeneste (ikke i bruk)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;263139&lt;/td&gt;&lt;td&gt;Legevakttjeneste&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;263141&lt;/td&gt;&lt;td&gt;Kommunelegetjeneste&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;263143&lt;/td&gt;&lt;td&gt;Flyktningehelsetjeneste&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;263147&lt;/td&gt;&lt;td&gt;Legetjeneste, pleie- og omsorg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;263149&lt;/td&gt;&lt;td&gt;Sykepleietjeneste, pleie- og omsorg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;263151&lt;/td&gt;&lt;td&gt;Psykisk kommunehelsetjeneste&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;263153&lt;/td&gt;&lt;td&gt;Helsestasjons- og skolehelsetjeneste&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;263155&lt;/td&gt;&lt;td&gt;Helsestasjon for ungdom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;263157&lt;/td&gt;&lt;td&gt;Jordmortjeneste&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;263159&lt;/td&gt;&lt;td&gt;Sosialkontortjeneste&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;263161&lt;/td&gt;&lt;td&gt;Saksbehandler pleie, omsorg, rehab.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;263163&lt;/td&gt;&lt;td&gt;Sakbehandler bolig&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;263165&lt;/td&gt;&lt;td&gt;Rehabilitering&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;263167&lt;/td&gt;&lt;td&gt;Fysioterapitjeneste&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;263169&lt;/td&gt;&lt;td&gt;Ergoterapitjeneste&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;263171&lt;/td&gt;&lt;td&gt;Andre tjenestetyper&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;263173&lt;/td&gt;&lt;td&gt;Fengselshelsetjeneste&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;263175&lt;/td&gt;&lt;td&gt;Helseteam (Overdoseteam)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;263177&lt;/td&gt;&lt;td&gt;Sosialmedisinsk senter, helsetjeneste&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265138&lt;/td&gt;&lt;td&gt;Fastlegetjeneste&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265140&lt;/td&gt;&lt;td&gt;Smitteverntjeneste&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;265142&lt;/td&gt;&lt;td&gt;Økonomi/oppgjørstjeneste, pleie- og omsorg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268711&lt;/td&gt;&lt;td&gt;Fysioterapi, helsestasjon&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268712&lt;/td&gt;&lt;td&gt;Ergoterapi, helsestasjon&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268713&lt;/td&gt;&lt;td&gt;Psykolog, helsestasjon&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268714&lt;/td&gt;&lt;td&gt;Psykolog, pleie og omsorg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268543&lt;/td&gt;&lt;td&gt;Frisklivssentral&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268544&lt;/td&gt;&lt;td&gt;Heldøgn medisinsk akuttberedskap&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268715&lt;/td&gt;&lt;td&gt;Kreftkoordinator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268716&lt;/td&gt;&lt;td&gt;Demenskoordinator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268717&lt;/td&gt;&lt;td&gt;Diabeteskoordinator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268718&lt;/td&gt;&lt;td&gt;Synskontakt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268719&lt;/td&gt;&lt;td&gt;Hørselskontakt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268720&lt;/td&gt;&lt;td&gt;Logopedi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268721&lt;/td&gt;&lt;td&gt;Familieteam&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;urn:oid:1.3.6.1.4.1.9038.52.4639&lt;/code&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; version Not Stated (use latest from terminology server)&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268549&lt;/td&gt;&lt;td&gt;Apotektjenestetype&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268550&lt;/td&gt;&lt;td&gt;Bandagisttjenestetype&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268738&lt;/td&gt;&lt;td&gt;E-dose-mottak&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268551&lt;/td&gt;&lt;td&gt;Reseptformidler&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;268552&lt;/td&gt;&lt;td&gt;Andre tjenestetyper&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://dips.no/fhir/R4/ValueSet/DIPSHealthcareServiceTypes",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "DIPSHealthcareServiceTypes",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2026-08-20T12:37:22+05:30",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "DIPS AS",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Lars-Andreas Nystad",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "mailto:lan@dips.no",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "work"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "Value Sets of DIPSHealthcareServiceTypes",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "NO",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Norway"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "urn:oid:1.3.6.1.4.1.9038.52.4379",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264864",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Patologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264866",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Klinisk nevrofysiologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264868",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nevrovaskulært laboratorium"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264870",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nevroimmunologisk laboratorium"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264872",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cytogenetikk og molekylærgenetikk"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264834",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Radiologi og billeddiagnostikk"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264836",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Røntgen"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264842",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Tomografi MR"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264844",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Tomografi CT"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264846",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nukleærmedisin"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264848",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nevroradiologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264850",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Intervensjonsradiologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264852",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Laboratoriefag"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264854",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Klinisk farmakologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264856",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Immunologi, allergologi og transfusjonsmedisin"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264858",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Medisinsk biokjemi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264860",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Medisinsk mikrobiologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264862",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nukleærmedisin"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268523",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ultralyd"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268524",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Angiografi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268525",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Immunologi og allergologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268526",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Transfusjonsmedisin"
+          }
+        ]
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "urn:oid:1.3.6.1.4.1.9038.52.4357",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264876",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Spilleavhengighet og annen avhengighet"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264878",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Rusmiddelavhengighet med alvorlig psykiatrisk sykdom (dobbeldiagnose)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264874",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Helsehjelp knyttet til rusmiddelavhengighet og annen avhengighet"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264880",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Rusmiddelavhengighet med langvarig funksjonssvikt"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264882",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Førstegangspsykose knyttet til rusmiddelavhengighet"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264884",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Utredning av rusmiddelavhengighet eller annen avhengighet"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264886",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Avrusning/ avgiftning/ stabilisering"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264888",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Familieterapi, parterapi og pårørendeterapi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264890",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Legemiddelassistert rehabilitering (LAR)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264892",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Terapeutisk samfunn, kollektiv osv."
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264894",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Innsatte under paragraf 12-soning"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264896",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Psykisk helsevern"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264898",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Psykisk helsevern for barn og unge (BUP)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264900",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Familieterapi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264902",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Spiseforstyrrelser hos barn"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264904",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Psykisk helsevern for voksne"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264906",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Spiseforstyrrelser hos voksne"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264908",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Psykiatrisk helsehjelp til døve"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264910",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Unge schizofrene"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264912",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Alderspsykiatrisk behandling"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264914",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Psykiatrisk helsehjelp til asylsøkere og flyktninger"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264916",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Tidlig intervensjon"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264918",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pasienter med langvarig funksjonssvikt"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264920",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Førstegangspsykose"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264922",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Habilitering/Rehabilitering (psykisk helsevern for voksne)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264924",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Familieterapi/behandling"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264926",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Helsehjelp knyttet til habilitering og rehabilitering"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264928",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Barnehabilitering"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264930",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Voksenhabilitering"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264932",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Rehabilitering"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264934",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Helsehjelp knyttet til somatisk sykdom"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264936",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Allmennmedisin"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264938",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Kirurgi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264940",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Generell kirurgi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264942",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Barnekirurgi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264944",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Bryst og endokrin kirurgi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264946",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Gastroenterologisk kirurgi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264948",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Karkirurgi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264950",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Kjevekirurgi og munnhulesykdommer"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264952",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nevrokirurgi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264954",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ortopedisk kirurgi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264956",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Plastikkirurgi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264958",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Thoraxkirurgi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264960",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Urologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264962",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Indremedisin"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264964",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Endokrinologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264966",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Fordøyelsessykdommer"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264968",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Geriatri"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264970",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Blodsykdommer"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264972",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Infeksjonsmedisin"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264974",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Hjertesykdommer"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264976",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Hjerterytmeforstyrrelser"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264978",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ekkokardiografi og bildediagnostikk"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264980",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Klinisk kardiologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264982",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Forebyggende kardiologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264984",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Invasiv kardiologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264986",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Lungesykdommer"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264988",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nyresykdommer"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264990",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Dialyse"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264992",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Fødselshjelp og kvinnesykdommer"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264994",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Generell gynekologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264996",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Gynekologisk onkologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "264998",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Obstetrikk"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265000",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Hud- og veneriske sykdommer"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265002",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Barnesykdommer"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265004",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nyfødtmedisin"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265006",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Intensivbehandling av barn"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265008",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nevrologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265010",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Generell nevrologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265012",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cerebrovaskulære sykdommer"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265014",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Epilepsi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265016",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Anestesiologi Inklusiv smertebehandling"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265018",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Øre-nese-halssykdommer"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265020",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Audiologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265022",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Laryngologi/Foniatri"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265024",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Balansemedisin"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265026",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Søvnrelaterte sykdommer"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265028",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nese- og bihulesykdommer"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265030",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Otologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265032",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Hode- og halskirurgi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265034",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Allergologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265036",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatriske øre-nese-halssykdommer"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265038",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Øyesykdommer"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265040",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Onkologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265042",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Revmatologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265044",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Tverrfaglig ryggbehandling"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265046",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Palliativ medisin"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265048",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Medisinsk genetikk"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265050",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Fysikalsk medisin og rehabilitering"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265052",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Andre  helsehjelpsområder"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265054",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Sosionomtjenester"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265056",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ergoterapi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265058",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Fysioterapi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265060",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Kiropraktikk"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265062",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ernæringsfysiologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265064",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Tannhelse"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265066",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Audiografi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265068",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Spesialpedagogikk"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265070",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Logopedi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265072",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Farmasi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265074",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Yrkes- og arbeidsmedisin"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268707",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Sikkerhetspsykiatri"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268531",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Tverrfaglig spesialisert behandling av rusmiddelmisbruk"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268532",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Assistert befruktning"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268533",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Fostermedisin"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268534",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Hudsykdommer"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268535",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Veneriske sykdommer"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268536",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nevrofysiologi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268708",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Sarkomer"
+          }
+        ]
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "urn:oid:1.3.6.1.4.1.9038.52.4582",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268409",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Somatikk plo meldingsmottak"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268411",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Psykiatri plo meldingsmottak"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268413",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Meldeordning Kunnskapssenteret"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268734",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Teknisk avsenderadresse"
+          }
+        ]
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "urn:oid:1.3.6.1.4.1.9038.52.4584",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268415",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Raskere tilbake somatikk"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268417",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Raskere tilbake psykiatri"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268419",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Brystdiagnostikk"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268421",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Sykelig overvekt"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268423",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Brannskadebehandling"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268425",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Hyperbarmedisinsk behandling"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268427",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Benskjørhet"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268429",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Læring og mestring"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268431",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Døvblindhet"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268433",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inkontinens"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268736",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Diagnostikk uavklart alvorlig sykdom"
+          }
+        ]
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "urn:oid:1.3.6.1.4.1.9038.52.4106",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "263142",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pleie- og omsorgstjeneste (ikke i bruk)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "263139",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Legevakttjeneste"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "263141",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Kommunelegetjeneste"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "263143",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Flyktningehelsetjeneste"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "263147",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Legetjeneste, pleie- og omsorg"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "263149",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Sykepleietjeneste, pleie- og omsorg"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "263151",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Psykisk kommunehelsetjeneste"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "263153",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Helsestasjons- og skolehelsetjeneste"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "263155",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Helsestasjon for ungdom"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "263157",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Jordmortjeneste"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "263159",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Sosialkontortjeneste"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "263161",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Saksbehandler pleie, omsorg, rehab."
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "263163",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Sakbehandler bolig"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "263165",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Rehabilitering"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "263167",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Fysioterapitjeneste"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "263169",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ergoterapitjeneste"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "263171",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Andre tjenestetyper"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "263173",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Fengselshelsetjeneste"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "263175",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Helseteam (Overdoseteam)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "263177",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Sosialmedisinsk senter, helsetjeneste"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265138",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Fastlegetjeneste"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265140",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Smitteverntjeneste"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "265142",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Økonomi/oppgjørstjeneste, pleie- og omsorg"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268711",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Fysioterapi, helsestasjon"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268712",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ergoterapi, helsestasjon"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268713",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Psykolog, helsestasjon"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268714",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Psykolog, pleie og omsorg"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268543",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Frisklivssentral"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268544",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Heldøgn medisinsk akuttberedskap"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268715",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Kreftkoordinator"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268716",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Demenskoordinator"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268717",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Diabeteskoordinator"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268718",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Synskontakt"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268719",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Hørselskontakt"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268720",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Logopedi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268721",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Familieteam"
+          }
+        ]
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "urn:oid:1.3.6.1.4.1.9038.52.4639",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268549",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Apotektjenestetype"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268550",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Bandagisttjenestetype"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268738",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "E-dose-mottak"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268551",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Reseptformidler"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "268552",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Andre tjenestetyper"
+          }
+        ]
+      }
+    ]
+  }
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 20, 2026 12:37+0530">2026-08-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

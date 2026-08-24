@@ -1,0 +1,1337 @@
+[{
+  "id" : "DIPSLocation",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSLocation",
+  "version" : "0.1.0",
+  "name" : "DIPSLocation"
+},
+{
+  "id" : "DIPSLocationTopLevel",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSLocationTopLevel",
+  "version" : "0.1.0",
+  "name" : "DIPSLocationTopLevel"
+},
+{
+  "id" : "DIPSVitalSignsObservationPrePostduktal",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationPrePostduktal"
+},
+{
+  "id" : "NoImplBodyMassIndexMeasurementMethod",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod",
+  "version" : "0.1.0",
+  "name" : "NoImplBodyMassIndexMeasurementMethod"
+},
+{
+  "id" : "NoImplMeasurementMethod",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplMeasurementMethod",
+  "version" : "0.1.0",
+  "name" : "NoImplMeasurementMethod"
+},
+{
+  "id" : "NoImplQSOFAcomponentCodes",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplQSOFAcomponentCodes",
+  "version" : "0.1.0",
+  "name" : "NoImplQSOFAcomponentCodes"
+},
+{
+  "id" : "NoImplVitalSignsObservationConsciousness",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationConsciousness"
+},
+{
+  "id" : "dips.fhir.no.core",
+  "type" : "ImplementationGuide",
+  "url" : "http://dips.no/fhir/R4/ImplementationGuide/dips.fhir.no.core",
+  "version" : "0.1.0",
+  "name" : "DIPSCore"
+},
+{
+  "id" : "AppointmentReschedulingPeriodExtension",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/AppointmentReschedulingPeriodExtension",
+  "version" : "0.1.0",
+  "name" : "AppointmentReschedulingPeriodExtension"
+},
+{
+  "id" : "BankAccountNumber1",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/BankAccountNumber1",
+  "version" : "0.1.0",
+  "name" : "BankAccountNumber1"
+},
+{
+  "id" : "BankAccountNumber2",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/BankAccountNumber2",
+  "version" : "0.1.0",
+  "name" : "BankAccountNumber2"
+},
+{
+  "id" : "BedTime",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/BedTime",
+  "version" : "0.1.0",
+  "name" : "BedTime"
+},
+{
+  "id" : "BedTypeId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/BedTypeId",
+  "version" : "0.1.0",
+  "name" : "BedTypeId"
+},
+{
+  "id" : "ContactTypeExtension",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/ContactTypeExtension",
+  "version" : "0.1.0",
+  "name" : "ContactTypeExtension"
+},
+{
+  "id" : "DIPSAppointment",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSAppointment",
+  "version" : "0.1.0",
+  "name" : "DIPSAppointment"
+},
+{
+  "id" : "DIPSAppointmentSchedule",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSAppointmentSchedule",
+  "version" : "0.1.0",
+  "name" : "DIPSAppointmentSchedule"
+},
+{
+  "id" : "DIPSBasisPatientR4Reference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSBasisPatientR4Reference",
+  "version" : "0.1.0",
+  "name" : "DIPSBasisPatientR4Reference"
+},
+{
+  "id" : "DIPSBasisPractitionerR4",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSBasisPractitionerR4",
+  "version" : "0.1.0",
+  "name" : "DIPSBasisPractitionerR4"
+},
+{
+  "id" : "DIPSEncounterLocation",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSEncounterLocation",
+  "version" : "0.1.0",
+  "name" : "DIPSEncounterLocation"
+},
+{
+  "id" : "DIPSEncounterOrganization",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSEncounterOrganization",
+  "version" : "0.1.0",
+  "name" : "DIPSEncounterOrganization"
+},
+{
+  "id" : "DIPSEncounterPractitionerReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSEncounterPractitionerReference",
+  "version" : "0.1.0",
+  "name" : "DIPSEncounterPractitionerReference"
+},
+{
+  "id" : "DIPSEncounterServiceRequest",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSEncounterServiceRequest",
+  "version" : "0.1.0",
+  "name" : "DIPSEncounterServiceRequest"
+},
+{
+  "id" : "DIPSEncounterSubjectReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSEncounterSubjectReference",
+  "version" : "0.1.0",
+  "name" : "DIPSEncounterSubjectReference"
+},
+{
+  "id" : "DIPSHealthcareService",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareService",
+  "version" : "0.1.0",
+  "name" : "DIPSHealthcareService"
+},
+{
+  "id" : "DIPSHealthcareServiceAddress",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceAddress",
+  "version" : "0.1.0",
+  "name" : "DIPSHealthcareServiceAddress"
+},
+{
+  "id" : "DIPSHealthcareServiceCommunicationProtocol",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceCommunicationProtocol",
+  "version" : "0.1.0",
+  "name" : "DIPSHealthcareServiceCommunicationProtocol"
+},
+{
+  "id" : "DIPSHealthcareServiceDepartment",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceDepartment",
+  "version" : "0.1.0",
+  "name" : "DIPSHealthcareServiceDepartment"
+},
+{
+  "id" : "DIPSHealthcareServiceHospital",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceHospital",
+  "version" : "0.1.0",
+  "name" : "DIPSHealthcareServiceHospital"
+},
+{
+  "id" : "DIPSHealthcareServiceIsPaperCopy",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceIsPaperCopy",
+  "version" : "0.1.0",
+  "name" : "DIPSHealthcareServiceIsPaperCopy"
+},
+{
+  "id" : "DIPSHealthcareServiceSection",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceSection",
+  "version" : "0.1.0",
+  "name" : "DIPSHealthcareServiceSection"
+},
+{
+  "id" : "DIPSHealthcareServiceWard",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceWard",
+  "version" : "0.1.0",
+  "name" : "DIPSHealthcareServiceWard"
+},
+{
+  "id" : "DIPSHospitalStayEncounter",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSHospitalStayEncounter",
+  "version" : "0.1.0",
+  "name" : "DIPSHospitalStayEncounter"
+},
+{
+  "id" : "DIPSLocation",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSLocation",
+  "version" : "0.1.0",
+  "name" : "DIPSLocation"
+},
+{
+  "id" : "DIPSLocationReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSLocationReference",
+  "version" : "0.1.0",
+  "name" : "DIPSLocationReference"
+},
+{
+  "id" : "DIPSOrganization",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSOrganization",
+  "version" : "0.1.0",
+  "name" : "DIPSOrganization"
+},
+{
+  "id" : "DIPSOrganizationReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSOrganizationReference",
+  "version" : "0.1.0",
+  "name" : "DIPSOrganizationReference"
+},
+{
+  "id" : "DIPSPatient",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPatient",
+  "version" : "0.1.0",
+  "name" : "DIPSPatient"
+},
+{
+  "id" : "DIPSPatientContactIdentifier",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPatientContactIdentifier",
+  "version" : "0.1.0",
+  "name" : "DIPSPatientContactIdentifier"
+},
+{
+  "id" : "DIPSPatientContactPractitionerRoleName",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPatientContactPractitionerRoleName",
+  "version" : "0.1.0",
+  "name" : "DIPSPatientContactPractitionerRoleName"
+},
+{
+  "id" : "DIPSPerson",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPerson",
+  "version" : "0.1.0",
+  "name" : "DIPSPerson"
+},
+{
+  "id" : "DIPSPersonDeathComment",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathComment",
+  "version" : "0.1.0",
+  "name" : "DIPSPersonDeathComment"
+},
+{
+  "id" : "DIPSPersonDeathRegisteredBy",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathRegisteredBy",
+  "version" : "0.1.0",
+  "name" : "DIPSPersonDeathRegisteredBy"
+},
+{
+  "id" : "DIPSPersonDeathRegisteredTime",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathRegisteredTime",
+  "version" : "0.1.0",
+  "name" : "DIPSPersonDeathRegisteredTime"
+},
+{
+  "id" : "DIPSPersonHospitalSectorId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonHospitalSectorId",
+  "version" : "0.1.0",
+  "name" : "DIPSPersonHospitalSectorId"
+},
+{
+  "id" : "DIPSPersonHospitalSectorName",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonHospitalSectorName",
+  "version" : "0.1.0",
+  "name" : "DIPSPersonHospitalSectorName"
+},
+{
+  "id" : "DIPSPersonLanguage",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonLanguage",
+  "version" : "0.1.0",
+  "name" : "DIPSPersonLanguage"
+},
+{
+  "id" : "DIPSPersonLastOfficialAddressSyncTime",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonLastOfficialAddressSyncTime",
+  "version" : "0.1.0",
+  "name" : "DIPSPersonLastOfficialAddressSyncTime"
+},
+{
+  "id" : "DIPSPersonMunicipality",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonMunicipality",
+  "version" : "0.1.0",
+  "name" : "DIPSPersonMunicipality"
+},
+{
+  "id" : "DIPSPersonStateName",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonStateName",
+  "version" : "0.1.0",
+  "name" : "DIPSPersonStateName"
+},
+{
+  "id" : "DIPSPractitioner",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitioner",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitioner"
+},
+{
+  "id" : "DIPSPractitionerReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerReference",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerReference"
+},
+{
+  "id" : "DIPSPractitionerRole",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRole",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRole"
+},
+{
+  "id" : "DIPSPractitionerRoleCommunicationProtocol",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationProtocol",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleCommunicationProtocol"
+},
+{
+  "id" : "DIPSPractitionerRoleCommunicationType",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationType",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleCommunicationType"
+},
+{
+  "id" : "DIPSPractitionerRoleCommunicationTypeId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationTypeId",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleCommunicationTypeId"
+},
+{
+  "id" : "DIPSPractitionerRoleDipsSignature",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleDipsSignature",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleDipsSignature"
+},
+{
+  "id" : "DIPSPractitionerRoleHcpRoleName",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHcpRoleName",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleHcpRoleName"
+},
+{
+  "id" : "DIPSPractitionerRoleHealthCarePartyDepartment",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHealthCarePartyDepartment",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleHealthCarePartyDepartment"
+},
+{
+  "id" : "DIPSPractitionerRoleHealthCarePartyType",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHealthCarePartyType",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleHealthCarePartyType"
+},
+{
+  "id" : "DIPSPractitionerRoleHealthCarePosition",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHealthCarePosition",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleHealthCarePosition"
+},
+{
+  "id" : "DIPSPractitionerRoleHospital",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHospital",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleHospital"
+},
+{
+  "id" : "DIPSPractitionerRoleIsPaperCopy",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleIsPaperCopy",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleIsPaperCopy"
+},
+{
+  "id" : "DIPSPractitionerRoleReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleReference",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleReference"
+},
+{
+  "id" : "DIPSPractitionerRoleSection",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleSection",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleSection"
+},
+{
+  "id" : "DIPSPractitionerRoleUserRoleDepartment",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleUserRoleDepartment",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleUserRoleDepartment"
+},
+{
+  "id" : "DIPSPractitionerRoleUserRoleId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleUserRoleId",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleUserRoleId"
+},
+{
+  "id" : "DIPSPractitionerRoleUserRoleLastUpdated",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleUserRoleLastUpdated",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleUserRoleLastUpdated"
+},
+{
+  "id" : "DIPSPractitionerRoleUserRoleName",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleUserRoleName",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleUserRoleName"
+},
+{
+  "id" : "DIPSPractitionerRoleWard",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleWard",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleWard"
+},
+{
+  "id" : "DIPSPractitionerSpecialist",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerSpecialist",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerSpecialist"
+},
+{
+  "id" : "DIPSR4Encounter",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSR4Encounter",
+  "version" : "0.1.0",
+  "name" : "DIPSR4Encounter"
+},
+{
+  "id" : "DIPSRelatedPerson",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPerson",
+  "version" : "0.1.0",
+  "name" : "DIPSRelatedPerson"
+},
+{
+  "id" : "DIPSRelatedPersonAdditionalInformation",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAdditionalInformation",
+  "version" : "0.1.0",
+  "name" : "DIPSRelatedPersonAdditionalInformation"
+},
+{
+  "id" : "DIPSRelatedPersonAppointedByMunicipality",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAppointedByMunicipality",
+  "version" : "0.1.0",
+  "name" : "DIPSRelatedPersonAppointedByMunicipality"
+},
+{
+  "id" : "DIPSRelatedPersonKinship",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonKinship",
+  "version" : "0.1.0",
+  "name" : "DIPSRelatedPersonKinship"
+},
+{
+  "id" : "DIPSRelatedPersonParentalResponsibility",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonParentalResponsibility",
+  "version" : "0.1.0",
+  "name" : "DIPSRelatedPersonParentalResponsibility"
+},
+{
+  "id" : "DIPSRelatedPersonResponsibleRequisitioner",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonResponsibleRequisitioner",
+  "version" : "0.1.0",
+  "name" : "DIPSRelatedPersonResponsibleRequisitioner"
+},
+{
+  "id" : "DIPSSubjectReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSSubjectReference",
+  "version" : "0.1.0",
+  "name" : "DIPSSubjectReference"
+},
+{
+  "id" : "Department",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/Department",
+  "version" : "0.1.0",
+  "name" : "Department"
+},
+{
+  "id" : "DepartmentExtension",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DepartmentExtension",
+  "version" : "0.1.0",
+  "name" : "DepartmentExtension"
+},
+{
+  "id" : "DepartmentTypeCodeId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DepartmentTypeCodeId",
+  "version" : "0.1.0",
+  "name" : "DepartmentTypeCodeId"
+},
+{
+  "id" : "DiagnoseGroupExtension",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DiagnoseGroupExtension",
+  "version" : "0.1.0",
+  "name" : "DiagnoseGroupExtension"
+},
+{
+  "id" : "DipsLocationExtension",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsLocationExtension",
+  "version" : "0.1.0",
+  "name" : "DipsLocationExtension"
+},
+{
+  "id" : "DipsOrganizationRef",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsOrganizationRef",
+  "version" : "0.1.0",
+  "name" : "DipsOrganizationRef"
+},
+{
+  "id" : "DipsPatientDeathComment",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientDeathComment",
+  "version" : "0.1.0",
+  "name" : "DipsPatientDeathComment"
+},
+{
+  "id" : "DipsPatientDeathRegisteredBy",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientDeathRegisteredBy",
+  "version" : "0.1.0",
+  "name" : "DipsPatientDeathRegisteredBy"
+},
+{
+  "id" : "DipsPatientDeathRegisteredTime",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientDeathRegisteredTime",
+  "version" : "0.1.0",
+  "name" : "DipsPatientDeathRegisteredTime"
+},
+{
+  "id" : "DipsPatientHospitalSectorId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientHospitalSectorId",
+  "version" : "0.1.0",
+  "name" : "DipsPatientHospitalSectorId"
+},
+{
+  "id" : "DipsPatientHospitalSectorName",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientHospitalSectorName",
+  "version" : "0.1.0",
+  "name" : "DipsPatientHospitalSectorName"
+},
+{
+  "id" : "DipsPatientLanguageId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientLanguageId",
+  "version" : "0.1.0",
+  "name" : "DipsPatientLanguageId"
+},
+{
+  "id" : "DipsPatientMunicipality",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientMunicipality",
+  "version" : "0.1.0",
+  "name" : "DipsPatientMunicipality"
+},
+{
+  "id" : "DipsPatientPhoneTypeId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientPhoneTypeId",
+  "version" : "0.1.0",
+  "name" : "DipsPatientPhoneTypeId"
+},
+{
+  "id" : "DipsPatientStateName",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientStateName",
+  "version" : "0.1.0",
+  "name" : "DipsPatientStateName"
+},
+{
+  "id" : "IsSpecialistExtension",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/IsSpecialistExtension",
+  "version" : "0.1.0",
+  "name" : "IsSpecialistExtension"
+},
+{
+  "id" : "IsUpdatedByPopulationRegister",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/IsUpdatedByPopulationRegister",
+  "version" : "0.1.0",
+  "name" : "IsUpdatedByPopulationRegister"
+},
+{
+  "id" : "LastOfficialAddressSyncTime",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/LastOfficialAddressSyncTime",
+  "version" : "0.1.0",
+  "name" : "LastOfficialAddressSyncTime"
+},
+{
+  "id" : "LevelOfCareExtension",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/LevelOfCareExtension",
+  "version" : "0.1.0",
+  "name" : "LevelOfCareExtension"
+},
+{
+  "id" : "LocationAddressId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/LocationAddressId",
+  "version" : "0.1.0",
+  "name" : "LocationAddressId"
+},
+{
+  "id" : "LocationExtension",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/LocationExtension",
+  "version" : "0.1.0",
+  "name" : "LocationExtension"
+},
+{
+  "id" : "LocationLabLocalizationId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/LocationLabLocalizationId",
+  "version" : "0.1.0",
+  "name" : "LocationLabLocalizationId"
+},
+{
+  "id" : "LocationTypeCodeId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/LocationTypeCodeId",
+  "version" : "0.1.0",
+  "name" : "LocationTypeCodeId"
+},
+{
+  "id" : "LocationTypeId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/LocationTypeId",
+  "version" : "0.1.0",
+  "name" : "LocationTypeId"
+},
+{
+  "id" : "LocationValidPeriod",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/LocationValidPeriod",
+  "version" : "0.1.0",
+  "name" : "LocationValidPeriod"
+},
+{
+  "id" : "LocationWorkplaceLocalizationId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/LocationWorkplaceLocalizationId",
+  "version" : "0.1.0",
+  "name" : "LocationWorkplaceLocalizationId"
+},
+{
+  "id" : "MunicipalityCode",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/MunicipalityCode",
+  "version" : "0.1.0",
+  "name" : "MunicipalityCode"
+},
+{
+  "id" : "MustOccurBefore",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/MustOccurBefore",
+  "version" : "0.1.0",
+  "name" : "MustOccurBefore"
+},
+{
+  "id" : "NoImplVitalSignsObservationBloodpressure",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationBloodpressure",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationBloodpressure"
+},
+{
+  "id" : "NoImplVitalSignsObservationBodyHeight",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationBodyHeight",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationBodyHeight"
+},
+{
+  "id" : "NoImplVitalSignsObservationBodyMassIndex",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationBodyMassIndex",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationBodyMassIndex"
+},
+{
+  "id" : "NoImplVitalSignsObservationBodyTemp",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationBodyTemp",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationBodyTemp"
+},
+{
+  "id" : "NoImplVitalSignsObservationBodyWeight",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationBodyWeight",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationBodyWeight"
+},
+{
+  "id" : "NoImplVitalSignsObservationClothingState",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationClothingState",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationClothingState"
+},
+{
+  "id" : "NoImplVitalSignsObservationConsciousness",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationConsciousness",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationConsciousness"
+},
+{
+  "id" : "NoImplVitalSignsObservationFiO2",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationFiO2",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationFiO2"
+},
+{
+  "id" : "NoImplVitalSignsObservationFlow",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationFlow",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationFlow"
+},
+{
+  "id" : "NoImplVitalSignsObservationGCS",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationGCS",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationGCS"
+},
+{
+  "id" : "NoImplVitalSignsObservationHeartRate",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationHeartRate",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationHeartRate"
+},
+{
+  "id" : "NoImplVitalSignsObservationInspiredOxygen",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationInspiredOxygen",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationInspiredOxygen"
+},
+{
+  "id" : "NoImplVitalSignsObservationMethodofOxygenDelivery",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationMethodofOxygenDelivery",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationMethodofOxygenDelivery"
+},
+{
+  "id" : "NoImplVitalSignsObservationNews2Score",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationNews2Score",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationNews2Score"
+},
+{
+  "id" : "NoImplVitalSignsObservationOnAir",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationOnAir",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationOnAir"
+},
+{
+  "id" : "NoImplVitalSignsObservationOxygenSaturation",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationOxygenSaturation",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationOxygenSaturation"
+},
+{
+  "id" : "NoImplVitalSignsObservationProsentO2",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationProsentO2",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationProsentO2"
+},
+{
+  "id" : "NoImplVitalSignsObservationPulse",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationPulse",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationPulse"
+},
+{
+  "id" : "NoImplVitalSignsObservationPulseRhythm",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationPulseRhythm",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationPulseRhythm"
+},
+{
+  "id" : "NoImplVitalSignsObservationQSOFAScore",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationQSOFAScore",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationQSOFAScore"
+},
+{
+  "id" : "NoImplVitalSignsObservationRespirationDepth",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationRespirationDepth",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationRespirationDepth"
+},
+{
+  "id" : "NoImplVitalSignsObservationRespirationRate",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationRespirationRate",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationRespirationRate"
+},
+{
+  "id" : "NoImplVitalSignsObservationRespirationRegularity",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationRespirationRegularity",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationRespirationRegularity"
+},
+{
+  "id" : "NprLevelOfCareExtension",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/NprLevelOfCareExtension",
+  "version" : "0.1.0",
+  "name" : "NprLevelOfCareExtension"
+},
+{
+  "id" : "OrganizationAddressId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/OrganizationAddressId",
+  "version" : "0.1.0",
+  "name" : "OrganizationAddressId"
+},
+{
+  "id" : "OrganizationPaymentCode",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/OrganizationPaymentCode",
+  "version" : "0.1.0",
+  "name" : "OrganizationPaymentCode"
+},
+{
+  "id" : "OrganizationTypeCodeId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/OrganizationTypeCodeId",
+  "version" : "0.1.0",
+  "name" : "OrganizationTypeCodeId"
+},
+{
+  "id" : "OrganizationValidPeriod",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/OrganizationValidPeriod",
+  "version" : "0.1.0",
+  "name" : "OrganizationValidPeriod"
+},
+{
+  "id" : "PartOfDepartment",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/PartOfDepartment",
+  "version" : "0.1.0",
+  "name" : "PartOfDepartment"
+},
+{
+  "id" : "PartOfSection",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/PartOfSection",
+  "version" : "0.1.0",
+  "name" : "PartOfSection"
+},
+{
+  "id" : "PlannedContactEndTimeExtension",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/PlannedContactEndTimeExtension",
+  "version" : "0.1.0",
+  "name" : "PlannedContactEndTimeExtension"
+},
+{
+  "id" : "ReferredBy",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/ReferredBy",
+  "version" : "0.1.0",
+  "name" : "ReferredBy"
+},
+{
+  "id" : "Reminder",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/Reminder",
+  "version" : "0.1.0",
+  "name" : "Reminder"
+},
+{
+  "id" : "SectionExtension",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/SectionExtension",
+  "version" : "0.1.0",
+  "name" : "SectionExtension"
+},
+{
+  "id" : "SectionProfessionCodeId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/SectionProfessionCodeId",
+  "version" : "0.1.0",
+  "name" : "SectionProfessionCodeId"
+},
+{
+  "id" : "SelfBookingSlot",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/SelfBookingSlot",
+  "version" : "0.1.0",
+  "name" : "SelfBookingSlot"
+},
+{
+  "id" : "TeamTypeId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/TeamTypeId",
+  "version" : "0.1.0",
+  "name" : "TeamTypeId"
+},
+{
+  "id" : "TerminationExtension",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/TerminationExtension",
+  "version" : "0.1.0",
+  "name" : "TerminationExtension"
+},
+{
+  "id" : "VideoUrl",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/VideoUrl",
+  "version" : "0.1.0",
+  "name" : "VideoUrl"
+},
+{
+  "id" : "WardExtension",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/WardExtension",
+  "version" : "0.1.0",
+  "name" : "WardExtension"
+},
+{
+  "id" : "WardTypeCodeId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/WardTypeCodeId",
+  "version" : "0.1.0",
+  "name" : "WardTypeCodeId"
+},
+{
+  "id" : "DIPSEncounterTypeCom",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/DIPSEncounterTypeCom",
+  "version" : "0.1.0",
+  "name" : "DIPSEncounterTypeCom"
+},
+{
+  "id" : "DIPSEncounterV3",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/DIPSEncounterV3",
+  "version" : "0.1.0",
+  "name" : "DIPSEncounterV3"
+},
+{
+  "id" : "DIPSHealthcareServiceTypes",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/DIPSHealthcareServiceTypes",
+  "version" : "0.1.0",
+  "name" : "DIPSHealthcareServiceTypes"
+},
+{
+  "id" : "DipsCoding1003ValueSet",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/DipsCoding1003ValueSet",
+  "version" : "0.1.0",
+  "name" : "DipsCoding1003ValueSet"
+},
+{
+  "id" : "HealthPersonallCategoryValueset",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/HealthPersonallCategoryValueset",
+  "version" : "0.1.0",
+  "name" : "HealthPersonallCategoryValueset"
+},
+{
+  "id" : "KithCoding9040ValueSet",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/KithCoding9040ValueSet",
+  "version" : "0.1.0",
+  "name" : "KithCoding9040ValueSet"
+},
+{
+  "id" : "KithHealthcareServiceTypes",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/KithHealthcareServiceTypes",
+  "version" : "0.1.0",
+  "name" : "KithHealthcareServiceTypes"
+},
+{
+  "id" : "LanguageCodes",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/LanguageCodes",
+  "version" : "0.1.0",
+  "name" : "LanguageCodes"
+},
+{
+  "id" : "LocationTypes",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/LocationTypes",
+  "version" : "0.1.0",
+  "name" : "LocationTypes"
+},
+{
+  "id" : "NoImplVitalSignsObservationBloodPressureMeasurementMethod",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationBloodPressureMeasurementMethod",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationBloodPressureMeasurementMethod"
+},
+{
+  "id" : "NoImplVitalSignsObservationBodyMassIndexFormula",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationBodyMassIndexFormula",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationBodyMassIndexFormula"
+},
+{
+  "id" : "NoImplVitalSignsObservationConsciousness",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationConsciousness",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationConsciousness"
+},
+{
+  "id" : "NoImplVitalSignsObservationHeartRateMeasurementMethod",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationHeartRateMeasurementMethod",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationHeartRateMeasurementMethod"
+},
+{
+  "id" : "NoImplVitalSignsObservationPulseBodySite",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationPulseBodySite",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationPulseBodySite"
+},
+{
+  "id" : "NoImplVitalSignsObservationPulseMeasurementMethod",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationPulseMeasurementMethod",
+  "version" : "0.1.0",
+  "name" : "NoImplVitalSignsObservationPulseMeasurementMethod"
+},
+{
+  "id" : "NprLevelOfCare",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/NprLevelOfCare",
+  "version" : "0.1.0",
+  "name" : "NprLevelOfCare"
+},
+{
+  "id" : "OrganizationAccessTypes",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/OrganizationAccessTypes",
+  "version" : "0.1.0",
+  "name" : "OrganizationAccessTypes"
+},
+{
+  "id" : "OrganizationTypes",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/OrganizationTypes",
+  "version" : "0.1.0",
+  "name" : "OrganizationTypes"
+},
+{
+  "id" : "approvalType",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/approvalType",
+  "version" : "0.1.0",
+  "name" : "approvalType"
+},
+{
+  "id" : "healthPersonnelSpecialization",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/healthPersonnelSpecialization",
+  "version" : "0.1.0",
+  "name" : "healthPersonnelSpecialization"
+},
+{
+  "id" : "languageid",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/languageid",
+  "version" : "0.1.0",
+  "name" : "languageid"
+},
+{
+  "id" : "relatedperson-relationshiptype",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/relatedperson-relationshiptype",
+  "version" : "0.1.0",
+  "name" : "relatedperson-relationshiptype"
+},
+{
+  "id" : "NoDomainVitalSignsObservationBloodPressureMeasurementMethod",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBloodPressureMeasurementMethod",
+  "version" : "0.1.0",
+  "name" : "NoDomainVitalSignsObservationBloodPressureMeasurementMethod"
+},
+{
+  "id" : "NoDomainVitalSignsObservationBloodpressureBodyPosition",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBloodpressureBodyPosition",
+  "version" : "0.1.0",
+  "name" : "NoDomainVitalSignsObservationBloodpressureBodyPosition"
+},
+{
+  "id" : "NoDomainVitalSignsObservationBloodpressureBodySite",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBloodpressureBodySite",
+  "version" : "0.1.0",
+  "name" : "NoDomainVitalSignsObservationBloodpressureBodySite"
+},
+{
+  "id" : "NoDomainVitalSignsObservationBodyExposure",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBodyExposure",
+  "version" : "0.1.0",
+  "name" : "NoDomainVitalSignsObservationBodyExposure"
+},
+{
+  "id" : "NoDomainVitalSignsObservationBodyHeightBodyPosition",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBodyHeightBodyPosition",
+  "version" : "0.1.0",
+  "name" : "NoDomainVitalSignsObservationBodyHeightBodyPosition"
+},
+{
+  "id" : "NoDomainVitalSignsObservationBodyTempBodySite",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBodyTempBodySite",
+  "version" : "0.1.0",
+  "name" : "NoDomainVitalSignsObservationBodyTempBodySite"
+},
+{
+  "id" : "NoDomainVitalSignsObservationClothingState",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationClothingState",
+  "version" : "0.1.0",
+  "name" : "NoDomainVitalSignsObservationClothingState"
+},
+{
+  "id" : "NoDomainVitalSignsObservationCuffsize",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationCuffsize",
+  "version" : "0.1.0",
+  "name" : "NoDomainVitalSignsObservationCuffsize"
+},
+{
+  "id" : "NoDomainVitalSignsObservationDiastolicendPoint",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationDiastolicendPoint",
+  "version" : "0.1.0",
+  "name" : "NoDomainVitalSignsObservationDiastolicendPoint"
+},
+{
+  "id" : "NoDomainVitalSignsObservationHeartRateBodySite",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationHeartRateBodySite",
+  "version" : "0.1.0",
+  "name" : "NoDomainVitalSignsObservationHeartRateBodySite"
+},
+{
+  "id" : "NoDomainVitalSignsObservationHeartRateMeasurementMethod",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationHeartRateMeasurementMethod",
+  "version" : "0.1.0",
+  "name" : "NoDomainVitalSignsObservationHeartRateMeasurementMethod"
+},
+{
+  "id" : "NoDomainVitalSignsObservationHeartRatePulseBodyPosition",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationHeartRatePulseBodyPosition",
+  "version" : "0.1.0",
+  "name" : "NoDomainVitalSignsObservationHeartRatePulseBodyPosition"
+},
+{
+  "id" : "NoDomainVitalSignsObservationHeartRhythmIrregularity",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationHeartRhythmIrregularity",
+  "version" : "0.1.0",
+  "name" : "NoDomainVitalSignsObservationHeartRhythmIrregularity"
+},
+{
+  "id" : "NoDomainVitalSignsObservationPulseBodySite",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationPulseBodySite",
+  "version" : "0.1.0",
+  "name" : "NoDomainVitalSignsObservationPulseBodySite"
+},
+{
+  "id" : "NoDomainVitalSignsObservationPulseMeasurementMethod",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationPulseMeasurementMethod",
+  "version" : "0.1.0",
+  "name" : "NoDomainVitalSignsObservationPulseMeasurementMethod"
+},
+{
+  "id" : "NoDomainVitalSignsObservationPulseRhythm",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationPulseRhythm",
+  "version" : "0.1.0",
+  "name" : "NoDomainVitalSignsObservationPulseRhythm"
+},
+{
+  "id" : "NoDomainVitalSignsObservationPulseRhythmIrregularity",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationPulseRhythmIrregularity",
+  "version" : "0.1.0",
+  "name" : "NoDomainVitalSignsObservationPulseRhythmIrregularity"
+},
+{
+  "id" : "NoDomainVitalSignsObservationRespirationRateBodyPosition",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationRespirationRateBodyPosition",
+  "version" : "0.1.0",
+  "name" : "NoDomainVitalSignsObservationRespirationRateBodyPosition"
+},
+{
+  "id" : "NoDomainVitalSignsObservationRespirationRateDepth",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationRespirationRateDepth",
+  "version" : "0.1.0",
+  "name" : "NoDomainVitalSignsObservationRespirationRateDepth"
+},
+{
+  "id" : "NoDomainVitalSignsObservationRespirationRegularity",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationRespirationRegularity",
+  "version" : "0.1.0",
+  "name" : "NoDomainVitalSignsObservationRespirationRegularity"
+},
+{
+  "id" : "NoDomainVitalSignsObservationSleepStatus",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationSleepStatus",
+  "version" : "0.1.0",
+  "name" : "NoDomainVitalSignsObservationSleepStatus"
+},
+{
+  "id" : "NoDomainVitalSignsObservationSpontaneousBreathing",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationSpontaneousBreathing",
+  "version" : "0.1.0",
+  "name" : "NoDomainVitalSignsObservationSpontaneousBreathing"
+}]

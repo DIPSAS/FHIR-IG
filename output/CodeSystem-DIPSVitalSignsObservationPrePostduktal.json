@@ -1,0 +1,49 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "DIPSVitalSignsObservationPrePostduktal",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DIPSVitalSignsObservationPrePostduktal</b></p><a name=\"DIPSVitalSignsObservationPrePostduktal\"> </a><a name=\"hcDIPSVitalSignsObservationPrePostduktal\"> </a><p>This  code system <code>http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">D0009<a name=\"DIPSVitalSignsObservationPrePostduktal-D0009\"> </a></td><td>Preduktal</td><td>Preduktal</td></tr><tr><td style=\"white-space:nowrap\">D0010<a name=\"DIPSVitalSignsObservationPrePostduktal-D0010\"> </a></td><td>Postduktalt</td><td>Postduktalt</td></tr><tr><td style=\"white-space:nowrap\">D0011<a name=\"DIPSVitalSignsObservationPrePostduktal-D0011\"> </a></td><td>Ubestemmelig</td><td>Ubestemmelig</td></tr></table></div>"
+  },
+  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal",
+  "identifier" : [{
+    "system" : "http://dips.no/fhir/namingsystem/dips-prepostduktal"
+  }],
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationPrePostduktal",
+  "status" : "draft",
+  "date" : "2026-08-20T12:37:22+05:30",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "Lars-Andreas Nystad",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "mailto:lan@dips.no",
+      "use" : "work"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "D0009",
+    "display" : "Preduktal",
+    "definition" : "Preduktal"
+  },
+  {
+    "code" : "D0010",
+    "display" : "Postduktalt",
+    "definition" : "Postduktalt"
+  },
+  {
+    "code" : "D0011",
+    "display" : "Ubestemmelig",
+    "definition" : "Ubestemmelig"
+  }]
+}

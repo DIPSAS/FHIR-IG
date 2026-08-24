@@ -1,0 +1,827 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/R4/ValueSet/KithHealthcareServiceTypes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "KithHealthcareServiceTypes"] ;
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ] ;
+     fhir:Meta.lastUpdated [ fhir:value "2020-04-17T00:33:33.219-04:00"^^xsd:dateTime ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KithHealthcareServiceTypes</b></p><a name=\"KithHealthcareServiceTypes\"> </a><a name=\"hcKithHealthcareServiceTypes\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1; Last updated: 2020-04-17 00:33:33-0400</p></div><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>urn:oid:2.16.578.1.12.4.1.1.8654</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>L06</td><td>Patologi</td></tr><tr><td>L07</td><td>Klinisk nevrofysiologi</td></tr><tr><td>L08</td><td>Nevrovaskulært laboratorium</td></tr><tr><td>L09</td><td>Nevroimmunologisk laboratorium</td></tr><tr><td>L10</td><td>Cytogenetikk og molekylærgenetikk</td></tr><tr><td>B</td><td>Radiologi og billeddiagnostikk</td></tr><tr><td>B01</td><td>Røntgen</td></tr><tr><td>B04</td><td>Tomografi MR</td></tr><tr><td>B05</td><td>Tomografi CT</td></tr><tr><td>B06</td><td>Nukleærmedisin</td></tr><tr><td>B07</td><td>Nevroradiologi</td></tr><tr><td>B08</td><td>Intervensjonsradiologi</td></tr><tr><td>L</td><td>Laboratoriefag</td></tr><tr><td>L01</td><td>Klinisk farmakologi</td></tr><tr><td>L02</td><td>Immunologi, allergologi og transfusjonsmedisin</td></tr><tr><td>L03</td><td>Medisinsk biokjemi</td></tr><tr><td>L04</td><td>Medisinsk mikrobiologi</td></tr><tr><td>L05</td><td>Nukleærmedisin</td></tr><tr><td>B02</td><td>Ultralyd</td></tr><tr><td>B03</td><td>Angiografi</td></tr><tr><td>L0201</td><td>Immunologi og allergologi</td></tr><tr><td>L0202</td><td>Transfusjonsmedisin</td></tr></table></li><li>Include these codes as defined in <code>urn:oid:2.16.578.1.12.4.1.1.8655</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>R01</td><td>Spilleavhengighet og annen avhengighet</td></tr><tr><td>R02</td><td>Rusmiddelavhengighet med alvorlig psykiatrisk sykdom (dobbeldiagnose)</td></tr><tr><td>R</td><td>Helsehjelp knyttet til rusmiddelavhengighet og annen avhengighet</td></tr><tr><td>R03</td><td>Rusmiddelavhengighet med langvarig funksjonssvikt</td></tr><tr><td>R04</td><td>Førstegangspsykose knyttet til rusmiddelavhengighet</td></tr><tr><td>R05</td><td>Utredning av rusmiddelavhengighet eller annen avhengighet</td></tr><tr><td>R06</td><td>Avrusning/ avgiftning/ stabilisering</td></tr><tr><td>R07</td><td>Familieterapi, parterapi og pårørendeterapi</td></tr><tr><td>R08</td><td>Legemiddelassistert rehabilitering (LAR)</td></tr><tr><td>R09</td><td>Terapeutisk samfunn, kollektiv osv.</td></tr><tr><td>R10</td><td>Innsatte under paragraf 12-soning</td></tr><tr><td>P</td><td>Psykisk helsevern</td></tr><tr><td>PB</td><td>Psykisk helsevern for barn og unge (BUP)</td></tr><tr><td>PB01</td><td>Familieterapi</td></tr><tr><td>PB02</td><td>Spiseforstyrrelser hos barn</td></tr><tr><td>PV</td><td>Psykisk helsevern for voksne</td></tr><tr><td>PV01</td><td>Spiseforstyrrelser hos voksne</td></tr><tr><td>PV02</td><td>Psykiatrisk helsehjelp til døve</td></tr><tr><td>PV03</td><td>Unge schizofrene</td></tr><tr><td>PV04</td><td>Alderspsykiatrisk behandling</td></tr><tr><td>PV05</td><td>Psykiatrisk helsehjelp til asylsøkere og flyktninger</td></tr><tr><td>PV06</td><td>Tidlig intervensjon</td></tr><tr><td>PV07</td><td>Pasienter med langvarig funksjonssvikt</td></tr><tr><td>PV08</td><td>Førstegangspsykose</td></tr><tr><td>PV09</td><td>Habilitering/Rehabilitering (psykisk helsevern for voksne)</td></tr><tr><td>PV10</td><td>Familieterapi/behandling</td></tr><tr><td>H</td><td>Helsehjelp knyttet til habilitering og rehabilitering</td></tr><tr><td>H07</td><td>Barnehabilitering</td></tr><tr><td>H08</td><td>Voksenhabilitering</td></tr><tr><td>H09</td><td>Rehabilitering</td></tr><tr><td>S</td><td>Helsehjelp knyttet til somatisk sykdom</td></tr><tr><td>S01</td><td>Allmennmedisin</td></tr><tr><td>S02</td><td>Kirurgi</td></tr><tr><td>S0201</td><td>Generell kirurgi</td></tr><tr><td>S0202</td><td>Barnekirurgi</td></tr><tr><td>S0203</td><td>Bryst og endokrin kirurgi</td></tr><tr><td>S0204</td><td>Gastroenterologisk kirurgi</td></tr><tr><td>S0205</td><td>Karkirurgi</td></tr><tr><td>S0206</td><td>Kjevekirurgi og munnhulesykdommer</td></tr><tr><td>S0207</td><td>Nevrokirurgi</td></tr><tr><td>S0208</td><td>Ortopedisk kirurgi</td></tr><tr><td>S0209</td><td>Plastikkirurgi</td></tr><tr><td>S0210</td><td>Thoraxkirurgi</td></tr><tr><td>S0211</td><td>Urologi</td></tr><tr><td>S03</td><td>Indremedisin</td></tr><tr><td>S0301</td><td>Endokrinologi</td></tr><tr><td>S0302</td><td>Fordøyelsessykdommer</td></tr><tr><td>S0303</td><td>Geriatri</td></tr><tr><td>S0304</td><td>Blodsykdommer</td></tr><tr><td>S0305</td><td>Infeksjonsmedisin</td></tr><tr><td>S0306</td><td>Hjertesykdommer</td></tr><tr><td>S030601</td><td>Hjerterytmeforstyrrelser</td></tr><tr><td>S030602</td><td>Ekkokardiografi og bildediagnostikk</td></tr><tr><td>S030603</td><td>Klinisk kardiologi</td></tr><tr><td>S030604</td><td>Forebyggende kardiologi</td></tr><tr><td>S030605</td><td>Invasiv kardiologi</td></tr><tr><td>S0307</td><td>Lungesykdommer</td></tr><tr><td>S0308</td><td>Nyresykdommer</td></tr><tr><td>S0309</td><td>Dialyse</td></tr><tr><td>S04</td><td>Fødselshjelp og kvinnesykdommer</td></tr><tr><td>S0401</td><td>Generell gynekologi</td></tr><tr><td>S0402</td><td>Gynekologisk onkologi</td></tr><tr><td>S0403</td><td>Obstetrikk</td></tr><tr><td>S05</td><td>Hud- og veneriske sykdommer</td></tr><tr><td>S06</td><td>Barnesykdommer</td></tr><tr><td>S0601</td><td>Nyfødtmedisin</td></tr><tr><td>S0602</td><td>Intensivbehandling av barn</td></tr><tr><td>S07</td><td>Nevrologi</td></tr><tr><td>S0701</td><td>Generell nevrologi</td></tr><tr><td>S0702</td><td>Cerebrovaskulære sykdommer</td></tr><tr><td>S0703</td><td>Epilepsi</td></tr><tr><td>S08</td><td>Anestesiologi Inklusiv smertebehandling</td></tr><tr><td>S09</td><td>Øre-nese-halssykdommer</td></tr><tr><td>S0901</td><td>Audiologi</td></tr><tr><td>S0902</td><td>Laryngologi/Foniatri</td></tr><tr><td>S0903</td><td>Balansemedisin</td></tr><tr><td>S0904</td><td>Søvnrelaterte sykdommer</td></tr><tr><td>S0905</td><td>Nese- og bihulesykdommer</td></tr><tr><td>S0906</td><td>Otologi</td></tr><tr><td>S0907</td><td>Hode- og halskirurgi</td></tr><tr><td>S0908</td><td>Allergologi</td></tr><tr><td>S0909</td><td>Pediatriske øre-nese-halssykdommer</td></tr><tr><td>S10</td><td>Øyesykdommer</td></tr><tr><td>S11</td><td>Onkologi</td></tr><tr><td>S12</td><td>Revmatologi</td></tr><tr><td>S13</td><td>Tverrfaglig ryggbehandling</td></tr><tr><td>S14</td><td>Palliativ medisin</td></tr><tr><td>S15</td><td>Medisinsk genetikk</td></tr><tr><td>S16</td><td>Fysikalsk medisin og rehabilitering</td></tr><tr><td>A</td><td>Andre  helsehjelpsområder</td></tr><tr><td>A01</td><td>Sosionomtjenester</td></tr><tr><td>A02</td><td>Ergoterapi</td></tr><tr><td>A03</td><td>Fysioterapi</td></tr><tr><td>A04</td><td>Kiropraktikk</td></tr><tr><td>A05</td><td>Ernæringsfysiologi</td></tr><tr><td>A06</td><td>Tannhelse</td></tr><tr><td>A07</td><td>Audiografi</td></tr><tr><td>A08</td><td>Spesialpedagogikk</td></tr><tr><td>A09</td><td>Logopedi</td></tr><tr><td>A10</td><td>Farmasi</td></tr><tr><td>A11</td><td>Yrkes- og arbeidsmedisin</td></tr><tr><td>PV11</td><td>Sikkerhetspsykiatri</td></tr><tr><td>R11</td><td>Tverrfaglig spesialisert behandling av rusmiddelmisbruk</td></tr><tr><td>S0404</td><td>Assistert befruktning</td></tr><tr><td>S0405</td><td>Fostermedisin</td></tr><tr><td>S0501</td><td>Hudsykdommer</td></tr><tr><td>S0502</td><td>Veneriske sykdommer</td></tr><tr><td>S0704</td><td>Nevrofysiologi</td></tr><tr><td>S1101</td><td>Sarkomer</td></tr></table></li><li>Include these codes as defined in <code>urn:oid:2.16.578.1.12.4.1.1.8656</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>01</td><td>Somatikk plo meldingsmottak</td></tr><tr><td>02</td><td>Psykiatri plo meldingsmottak</td></tr><tr><td>03</td><td>Meldeordning Kunnskapssenteret</td></tr><tr><td>04</td><td>Teknisk avsenderadresse</td></tr></table></li><li>Include these codes as defined in <code>urn:oid:2.16.578.1.12.4.1.1.8657</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>01</td><td>Raskere tilbake somatikk</td></tr><tr><td>02</td><td>Raskere tilbake psykiatri</td></tr><tr><td>03</td><td>Brystdiagnostikk</td></tr><tr><td>04</td><td>Sykelig overvekt</td></tr><tr><td>05</td><td>Brannskadebehandling</td></tr><tr><td>06</td><td>Hyperbarmedisinsk behandling</td></tr><tr><td>07</td><td>Benskjørhet</td></tr><tr><td>08</td><td>Læring og mestring</td></tr><tr><td>09</td><td>Døvblindhet</td></tr><tr><td>10</td><td>Inkontinens</td></tr><tr><td>11</td><td>Diagnostikk uavklart alvorlig sykdom</td></tr></table></li><li>Include these codes as defined in <code>urn:oid:2.16.578.1.12.4.1.1.8663</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>KP</td><td>Pleie- og omsorgstjeneste (ikke i bruk)</td></tr><tr><td>KA02</td><td>Legevakttjeneste</td></tr><tr><td>KA03</td><td>Kommunelegetjeneste</td></tr><tr><td>KA04</td><td>Flyktningehelsetjeneste</td></tr><tr><td>KP01</td><td>Legetjeneste, pleie- og omsorg</td></tr><tr><td>KP02</td><td>Sykepleietjeneste, pleie- og omsorg</td></tr><tr><td>KP03</td><td>Psykisk kommunehelsetjeneste</td></tr><tr><td>KF01</td><td>Helsestasjons- og skolehelsetjeneste</td></tr><tr><td>KF0103</td><td>Helsestasjon for ungdom</td></tr><tr><td>KF0104</td><td>Jordmortjeneste</td></tr><tr><td>KD01</td><td>Sosialkontortjeneste</td></tr><tr><td>KD0501</td><td>Saksbehandler pleie, omsorg, rehab.</td></tr><tr><td>KD0601</td><td>Sakbehandler bolig</td></tr><tr><td>KR</td><td>Rehabilitering</td></tr><tr><td>KR01</td><td>Fysioterapitjeneste</td></tr><tr><td>KR02</td><td>Ergoterapitjeneste</td></tr><tr><td>KX</td><td>Andre tjenestetyper</td></tr><tr><td>KX01</td><td>Fengselshelsetjeneste</td></tr><tr><td>KX02</td><td>Helseteam (Overdoseteam)</td></tr><tr><td>KX03</td><td>Sosialmedisinsk senter, helsetjeneste</td></tr><tr><td>KA01</td><td>Fastlegetjeneste</td></tr><tr><td>KA0301</td><td>Smitteverntjeneste</td></tr><tr><td>KP04</td><td>Økonomi/oppgjørstjeneste, pleie- og omsorg</td></tr><tr><td>KF0105</td><td>Fysioterapi, helsestasjon</td></tr><tr><td>KF0106</td><td>Ergoterapi, helsestasjon</td></tr><tr><td>KF0107</td><td>Psykolog, helsestasjon</td></tr><tr><td>KP05</td><td>Psykolog, pleie og omsorg</td></tr><tr><td>KX04</td><td>Frisklivssentral</td></tr><tr><td>KX05</td><td>Heldøgn medisinsk akuttberedskap</td></tr><tr><td>KX06</td><td>Kreftkoordinator</td></tr><tr><td>KX07</td><td>Demenskoordinator</td></tr><tr><td>KX08</td><td>Diabeteskoordinator</td></tr><tr><td>KX09</td><td>Synskontakt</td></tr><tr><td>KX10</td><td>Hørselskontakt</td></tr><tr><td>KX11</td><td>Logopedi</td></tr><tr><td>KX12</td><td>Familieteam</td></tr></table></li><li>Include these codes as defined in <code>urn:oid:2.16.578.1.12.4.1.1.8664</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>PA</td><td>Apotektjenestetype</td></tr><tr><td>PB</td><td>Bandagisttjenestetype</td></tr><tr><td>PM</td><td>E-dose-mottak</td></tr><tr><td>PR</td><td>Reseptformidler</td></tr><tr><td>PX</td><td>Andre tjenestetyper</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://dips.no/fhir/R4/ValueSet/KithHealthcareServiceTypes"] ;
+  fhir:ValueSet.version [ fhir:value "0.1.0"] ;
+  fhir:ValueSet.name [ fhir:value "KithHealthcareServiceTypes"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2026-08-20T12:37:22+05:30"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "DIPS AS"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Lars-Andreas Nystad" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "mailto:lan@dips.no" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Value Sets of KithHealthcareServiceTypes"] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NO" ] ;
+       fhir:Coding.display [ fhir:value "Norway" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.1.8654" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "L06" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patologi" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "L07" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Klinisk nevrofysiologi" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "L08" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nevrovaskulært laboratorium" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "L09" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nevroimmunologisk laboratorium" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "L10" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytogenetikk og molekylærgenetikk" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "B" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Radiologi og billeddiagnostikk" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "B01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Røntgen" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "B04" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tomografi MR" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "B05" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tomografi CT" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "B06" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nukleærmedisin" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "B07" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nevroradiologi" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "B08" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intervensjonsradiologi" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "L" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Laboratoriefag" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "L01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Klinisk farmakologi" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "L02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immunologi, allergologi og transfusjonsmedisin" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "L03" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medisinsk biokjemi" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "L04" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medisinsk mikrobiologi" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "L05" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nukleærmedisin" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "B02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ultralyd" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "B03" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Angiografi" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "L0201" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immunologi og allergologi" ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "L0202" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Transfusjonsmedisin" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.1.8655" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "R01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spilleavhengighet og annen avhengighet" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "R02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rusmiddelavhengighet med alvorlig psykiatrisk sykdom (dobbeldiagnose)" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "R" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Helsehjelp knyttet til rusmiddelavhengighet og annen avhengighet" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "R03" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rusmiddelavhengighet med langvarig funksjonssvikt" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "R04" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Førstegangspsykose knyttet til rusmiddelavhengighet" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "R05" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Utredning av rusmiddelavhengighet eller annen avhengighet" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "R06" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Avrusning/ avgiftning/ stabilisering" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "R07" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Familieterapi, parterapi og pårørendeterapi" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "R08" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Legemiddelassistert rehabilitering (LAR)" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "R09" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Terapeutisk samfunn, kollektiv osv." ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "R10" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Innsatte under paragraf 12-soning" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "P" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Psykisk helsevern" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PB" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Psykisk helsevern for barn og unge (BUP)" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PB01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Familieterapi" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PB02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spiseforstyrrelser hos barn" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PV" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Psykisk helsevern for voksne" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PV01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spiseforstyrrelser hos voksne" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PV02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Psykiatrisk helsehjelp til døve" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PV03" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unge schizofrene" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PV04" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alderspsykiatrisk behandling" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PV05" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Psykiatrisk helsehjelp til asylsøkere og flyktninger" ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PV06" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tidlig intervensjon" ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PV07" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pasienter med langvarig funksjonssvikt" ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PV08" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Førstegangspsykose" ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PV09" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Habilitering/Rehabilitering (psykisk helsevern for voksne)" ]
+       ], [
+         fhir:index 25 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PV10" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Familieterapi/behandling" ]
+       ], [
+         fhir:index 26 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "H" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Helsehjelp knyttet til habilitering og rehabilitering" ]
+       ], [
+         fhir:index 27 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "H07" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Barnehabilitering" ]
+       ], [
+         fhir:index 28 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "H08" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Voksenhabilitering" ]
+       ], [
+         fhir:index 29 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "H09" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rehabilitering" ]
+       ], [
+         fhir:index 30 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Helsehjelp knyttet til somatisk sykdom" ]
+       ], [
+         fhir:index 31 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allmennmedisin" ]
+       ], [
+         fhir:index 32 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kirurgi" ]
+       ], [
+         fhir:index 33 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0201" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Generell kirurgi" ]
+       ], [
+         fhir:index 34 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0202" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Barnekirurgi" ]
+       ], [
+         fhir:index 35 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0203" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bryst og endokrin kirurgi" ]
+       ], [
+         fhir:index 36 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0204" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gastroenterologisk kirurgi" ]
+       ], [
+         fhir:index 37 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0205" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Karkirurgi" ]
+       ], [
+         fhir:index 38 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0206" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kjevekirurgi og munnhulesykdommer" ]
+       ], [
+         fhir:index 39 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0207" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nevrokirurgi" ]
+       ], [
+         fhir:index 40 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0208" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ortopedisk kirurgi" ]
+       ], [
+         fhir:index 41 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0209" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plastikkirurgi" ]
+       ], [
+         fhir:index 42 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0210" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thoraxkirurgi" ]
+       ], [
+         fhir:index 43 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0211" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urologi" ]
+       ], [
+         fhir:index 44 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S03" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Indremedisin" ]
+       ], [
+         fhir:index 45 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0301" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Endokrinologi" ]
+       ], [
+         fhir:index 46 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0302" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fordøyelsessykdommer" ]
+       ], [
+         fhir:index 47 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0303" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Geriatri" ]
+       ], [
+         fhir:index 48 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0304" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blodsykdommer" ]
+       ], [
+         fhir:index 49 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0305" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Infeksjonsmedisin" ]
+       ], [
+         fhir:index 50 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0306" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hjertesykdommer" ]
+       ], [
+         fhir:index 51 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S030601" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hjerterytmeforstyrrelser" ]
+       ], [
+         fhir:index 52 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S030602" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ekkokardiografi og bildediagnostikk" ]
+       ], [
+         fhir:index 53 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S030603" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Klinisk kardiologi" ]
+       ], [
+         fhir:index 54 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S030604" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Forebyggende kardiologi" ]
+       ], [
+         fhir:index 55 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S030605" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Invasiv kardiologi" ]
+       ], [
+         fhir:index 56 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0307" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lungesykdommer" ]
+       ], [
+         fhir:index 57 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0308" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nyresykdommer" ]
+       ], [
+         fhir:index 58 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0309" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dialyse" ]
+       ], [
+         fhir:index 59 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S04" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fødselshjelp og kvinnesykdommer" ]
+       ], [
+         fhir:index 60 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0401" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Generell gynekologi" ]
+       ], [
+         fhir:index 61 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0402" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gynekologisk onkologi" ]
+       ], [
+         fhir:index 62 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0403" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Obstetrikk" ]
+       ], [
+         fhir:index 63 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S05" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hud- og veneriske sykdommer" ]
+       ], [
+         fhir:index 64 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S06" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Barnesykdommer" ]
+       ], [
+         fhir:index 65 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0601" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nyfødtmedisin" ]
+       ], [
+         fhir:index 66 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0602" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intensivbehandling av barn" ]
+       ], [
+         fhir:index 67 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S07" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nevrologi" ]
+       ], [
+         fhir:index 68 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0701" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Generell nevrologi" ]
+       ], [
+         fhir:index 69 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0702" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cerebrovaskulære sykdommer" ]
+       ], [
+         fhir:index 70 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0703" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Epilepsi" ]
+       ], [
+         fhir:index 71 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S08" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anestesiologi Inklusiv smertebehandling" ]
+       ], [
+         fhir:index 72 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S09" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Øre-nese-halssykdommer" ]
+       ], [
+         fhir:index 73 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0901" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Audiologi" ]
+       ], [
+         fhir:index 74 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0902" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Laryngologi/Foniatri" ]
+       ], [
+         fhir:index 75 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0903" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Balansemedisin" ]
+       ], [
+         fhir:index 76 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0904" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Søvnrelaterte sykdommer" ]
+       ], [
+         fhir:index 77 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0905" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nese- og bihulesykdommer" ]
+       ], [
+         fhir:index 78 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0906" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Otologi" ]
+       ], [
+         fhir:index 79 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0907" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hode- og halskirurgi" ]
+       ], [
+         fhir:index 80 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0908" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergologi" ]
+       ], [
+         fhir:index 81 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0909" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatriske øre-nese-halssykdommer" ]
+       ], [
+         fhir:index 82 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S10" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Øyesykdommer" ]
+       ], [
+         fhir:index 83 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S11" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Onkologi" ]
+       ], [
+         fhir:index 84 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S12" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Revmatologi" ]
+       ], [
+         fhir:index 85 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S13" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tverrfaglig ryggbehandling" ]
+       ], [
+         fhir:index 86 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S14" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Palliativ medisin" ]
+       ], [
+         fhir:index 87 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S15" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medisinsk genetikk" ]
+       ], [
+         fhir:index 88 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S16" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fysikalsk medisin og rehabilitering" ]
+       ], [
+         fhir:index 89 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "A" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Andre  helsehjelpsområder" ]
+       ], [
+         fhir:index 90 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "A01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sosionomtjenester" ]
+       ], [
+         fhir:index 91 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "A02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ergoterapi" ]
+       ], [
+         fhir:index 92 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "A03" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fysioterapi" ]
+       ], [
+         fhir:index 93 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "A04" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kiropraktikk" ]
+       ], [
+         fhir:index 94 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "A05" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ernæringsfysiologi" ]
+       ], [
+         fhir:index 95 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "A06" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tannhelse" ]
+       ], [
+         fhir:index 96 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "A07" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Audiografi" ]
+       ], [
+         fhir:index 97 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "A08" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spesialpedagogikk" ]
+       ], [
+         fhir:index 98 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "A09" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Logopedi" ]
+       ], [
+         fhir:index 99 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "A10" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Farmasi" ]
+       ], [
+         fhir:index 100 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "A11" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Yrkes- og arbeidsmedisin" ]
+       ], [
+         fhir:index 101 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PV11" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sikkerhetspsykiatri" ]
+       ], [
+         fhir:index 102 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "R11" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tverrfaglig spesialisert behandling av rusmiddelmisbruk" ]
+       ], [
+         fhir:index 103 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0404" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Assistert befruktning" ]
+       ], [
+         fhir:index 104 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0405" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fostermedisin" ]
+       ], [
+         fhir:index 105 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0501" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hudsykdommer" ]
+       ], [
+         fhir:index 106 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0502" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Veneriske sykdommer" ]
+       ], [
+         fhir:index 107 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S0704" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nevrofysiologi" ]
+       ], [
+         fhir:index 108 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "S1101" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sarkomer" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.1.8656" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Somatikk plo meldingsmottak" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Psykiatri plo meldingsmottak" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "03" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Meldeordning Kunnskapssenteret" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "04" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Teknisk avsenderadresse" ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.1.8657" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Raskere tilbake somatikk" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Raskere tilbake psykiatri" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "03" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Brystdiagnostikk" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "04" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sykelig overvekt" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Brannskadebehandling" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hyperbarmedisinsk behandling" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Benskjørhet" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Læring og mestring" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Døvblindhet" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inkontinens" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Diagnostikk uavklart alvorlig sykdom" ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.1.8663" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KP" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pleie- og omsorgstjeneste (ikke i bruk)" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KA02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Legevakttjeneste" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KA03" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kommunelegetjeneste" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KA04" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Flyktningehelsetjeneste" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KP01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Legetjeneste, pleie- og omsorg" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KP02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sykepleietjeneste, pleie- og omsorg" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KP03" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Psykisk kommunehelsetjeneste" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KF01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Helsestasjons- og skolehelsetjeneste" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KF0103" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Helsestasjon for ungdom" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KF0104" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Jordmortjeneste" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KD01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sosialkontortjeneste" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KD0501" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Saksbehandler pleie, omsorg, rehab." ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KD0601" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sakbehandler bolig" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KR" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rehabilitering" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KR01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fysioterapitjeneste" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KR02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ergoterapitjeneste" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KX" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Andre tjenestetyper" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KX01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fengselshelsetjeneste" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KX02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Helseteam (Overdoseteam)" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KX03" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sosialmedisinsk senter, helsetjeneste" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KA01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fastlegetjeneste" ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KA0301" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Smitteverntjeneste" ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KP04" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Økonomi/oppgjørstjeneste, pleie- og omsorg" ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KF0105" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fysioterapi, helsestasjon" ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KF0106" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ergoterapi, helsestasjon" ]
+       ], [
+         fhir:index 25 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KF0107" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Psykolog, helsestasjon" ]
+       ], [
+         fhir:index 26 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KP05" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Psykolog, pleie og omsorg" ]
+       ], [
+         fhir:index 27 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KX04" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Frisklivssentral" ]
+       ], [
+         fhir:index 28 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KX05" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Heldøgn medisinsk akuttberedskap" ]
+       ], [
+         fhir:index 29 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KX06" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kreftkoordinator" ]
+       ], [
+         fhir:index 30 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KX07" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Demenskoordinator" ]
+       ], [
+         fhir:index 31 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KX08" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Diabeteskoordinator" ]
+       ], [
+         fhir:index 32 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KX09" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Synskontakt" ]
+       ], [
+         fhir:index 33 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KX10" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hørselskontakt" ]
+       ], [
+         fhir:index 34 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KX11" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Logopedi" ]
+       ], [
+         fhir:index 35 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "KX12" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Familieteam" ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.1.8664" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PA" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Apotektjenestetype" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PB" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bandagisttjenestetype" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PM" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "E-dose-mottak" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PR" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Reseptformidler" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PX" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Andre tjenestetyper" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://dips.no/fhir/R4/ValueSet/KithHealthcareServiceTypes.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

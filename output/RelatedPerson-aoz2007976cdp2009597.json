@@ -1,0 +1,91 @@
+{
+  "resourceType" : "RelatedPerson",
+  "id" : "aoz2007976cdp2009597",
+  "meta" : {
+    "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPerson",
+    "http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson aoz2007976cdp2009597</b></p><a name=\"aoz2007976cdp2009597\"> </a><a name=\"hcaoz2007976cdp2009597\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-DIPSRelatedPerson.html\">DIPSRelatedPerson</a>, <a href=\"https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;canonical=http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson\">no-basis-RelatedPerson</a></p></div><p><b>DIPSRelatedPersonKinship</b>: sÃ¸ster</p><p><b>DIPSRelatedPersonParentalResponsibility</b>: false</p><p><b>identifier</b>: FellesHjelpenummer/01486848800\u00a0(use:\u00a0temp,\u00a0), <code>http://dips.no/fhir/namingsystem/dips-relativeid</code>/aoz2007976cdp2009597\u00a0(use:\u00a0official,\u00a0)</p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"Patient-cdp2009597.html\">Anonymous Patient (no stated gender), DoB Unknown</a></p><p><b>relationship</b>: <span title=\"Codes:{urn:oid:1.3.6.1.4.1.9038.52.1045 104501}\">Annen pÃ¥rÃ¸rende</span></p><p><b>name</b>: SammenslÃ¥s, SynnÃ¸ve Skal Slettes</p><p><b>gender</b>: Female</p><p><b>birthDate</b>: 1968-08-01</p><p><b>address</b>: Hjemme Oslo 03 0870 Norway (home)</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonKinship",
+    "valueString" : "sÃ¸ster"
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonParentalResponsibility",
+    "valueBoolean" : false
+  }],
+  "identifier" : [{
+    "use" : "temp",
+    "system" : "urn:oid:2.16.578.1.12.4.1.4.3",
+    "value" : "01486848800"
+  },
+  {
+    "use" : "official",
+    "system" : "http://dips.no/fhir/namingsystem/dips-relativeid",
+    "value" : "aoz2007976cdp2009597"
+  }],
+  "active" : true,
+  "patient" : {
+    "reference" : "Patient/cdp2009597",
+    "identifier" : {
+      "use" : "official",
+      "system" : "http://dips.no/fhir/namingsystem/dips-patientid",
+      "value" : "2009597"
+    }
+  },
+  "relationship" : [{
+    "coding" : [{
+      "system" : "urn:oid:1.3.6.1.4.1.9038.52.1045",
+      "code" : "104501",
+      "display" : "Annen pÃ¥rÃ¸rende"
+    }]
+  }],
+  "name" : [{
+    "text" : "SammenslÃ¥s, SynnÃ¸ve Skal Slettes",
+    "family" : "SammenslÃ¥s",
+    "given" : ["SynnÃ¸ve Skal Slettes"]
+  }],
+  "gender" : "female",
+  "birthDate" : "1968-08-01",
+  "address" : [{
+    "extension" : [{
+      "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-urban-district",
+      "valueCoding" : {
+        "system" : "urn:oid:1.3.6.1.4.1.9038.52.1065",
+        "code" : "08",
+        "display" : "Nordre Aker"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "municipality",
+        "valueCoding" : {
+          "system" : "urn:oid:1.3.6.1.4.1.9038.52.5",
+          "code" : "0301",
+          "display" : "Oslo"
+        }
+      }],
+      "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation"
+    }],
+    "use" : "home",
+    "line" : ["Hjemme"],
+    "city" : "Oslo",
+    "district" : "OSLO FYLKESKOMMUNE",
+    "_district" : {
+      "extension" : [{
+        "url" : "http://dips.no/fhir/R4/StructureDefinition/MunicipalityCode",
+        "valueCoding" : {
+          "system" : "urn:oid:1.3.6.1.4.1.9038.52.5",
+          "code" : "0301",
+          "display" : "Oslo"
+        }
+      }]
+    },
+    "state" : "03",
+    "postalCode" : "0870",
+    "country" : "Norway"
+  }]
+}

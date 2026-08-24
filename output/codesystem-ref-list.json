@@ -1,0 +1,249 @@
+{
+  "codeSystems" : [{
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSLocationTopLevel",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSLocationTopLevel",
+    "title" : null,
+    "description" : "",
+    "uses" : {
+    },
+    "ValueSet-LocationTypes.html" : "LocationTypes"
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoImplBodyMassIndexMeasurementMethod",
+    "title" : null,
+    "description" : "",
+    "uses" : {
+    },
+    "ValueSet-NoImplVitalSignsObservationBodyMassIndexFormula.html" : "NoImplVitalSignsObservationBodyMassIndexFormula"
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplMeasurementMethod",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoImplMeasurementMethod",
+    "title" : null,
+    "description" : "",
+    "uses" : {
+    },
+    "ValueSet-NoImplVitalSignsObservationBloodPressureMeasurementMethod.html" : "NoImplVitalSignsObservationBloodPressureMeasurementMethod",
+    "ValueSet-NoImplVitalSignsObservationHeartRateMeasurementMethod.html" : "NoImplVitalSignsObservationHeartRateMeasurementMethod",
+    "ValueSet-NoImplVitalSignsObservationPulseMeasurementMethod.html" : "NoImplVitalSignsObservationPulseMeasurementMethod"
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoImplVitalSignsObservationConsciousness",
+    "title" : null,
+    "description" : "",
+    "uses" : {
+    },
+    "ValueSet-NoImplVitalSignsObservationConsciousness.html" : "SNOMED CT Consciousness Structures"
+  },
+  {
+    "url" : "http://hl7.org/fhir/address-type",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "AddressType",
+    "title" : "AddressType",
+    "description" : "The type of an address (physical / postal).",
+    "oids" : ["2.16.840.1.113883.4.642.4.70"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-address-type.html" : "AddressType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/address-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "AddressUse",
+    "title" : "AddressUse",
+    "description" : "The use of an address.",
+    "oids" : ["2.16.840.1.113883.4.642.4.68"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-address-use.html" : "AddressUse"
+  },
+  {
+    "url" : "http://hl7.org/fhir/appointmentstatus",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "AppointmentStatus",
+    "title" : "AppointmentStatus",
+    "description" : "The free/busy status of an appointment.",
+    "oids" : ["2.16.840.1.113883.4.642.4.485"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-appointmentstatus.html" : "AppointmentStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/contact-point-system",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ContactPointSystem",
+    "title" : "ContactPointSystem",
+    "description" : "Telecommunications form for contact point.",
+    "oids" : ["2.16.840.1.113883.4.642.4.72"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-contact-point-system.html" : "ContactPointSystem"
+  },
+  {
+    "url" : "http://hl7.org/fhir/contact-point-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ContactPointUse",
+    "title" : "ContactPointUse",
+    "description" : "Use of contact point.",
+    "oids" : ["2.16.840.1.113883.4.642.4.74"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-contact-point-use.html" : "ContactPointUse"
+  },
+  {
+    "url" : "http://hl7.org/fhir/encounter-location-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "EncounterLocationStatus",
+    "title" : "EncounterLocationStatus",
+    "description" : "The status of the location.",
+    "oids" : ["2.16.840.1.113883.4.642.4.263"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-location-status.html" : "EncounterLocationStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/encounter-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "EncounterStatus",
+    "title" : "EncounterStatus",
+    "description" : "Current state of the encounter.",
+    "oids" : ["2.16.840.1.113883.4.642.4.247"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-status.html" : "EncounterStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/identifier-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "IdentifierUse",
+    "title" : "IdentifierUse",
+    "description" : "Identifies the purpose for this identifier, if known .",
+    "oids" : ["2.16.840.1.113883.4.642.4.58"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
+  },
+  {
+    "url" : "http://hl7.org/fhir/narrative-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "NarrativeStatus",
+    "title" : "NarrativeStatus",
+    "description" : "The status of a resource narrative.",
+    "oids" : ["2.16.840.1.113883.4.642.4.56"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-narrative-status.html" : "NarrativeStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/participationstatus",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ParticipationStatus",
+    "title" : "ParticipationStatus",
+    "description" : "The Participation status of an appointment.",
+    "oids" : ["2.16.840.1.113883.4.642.4.487"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-participationstatus.html" : "ParticipationStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/slotstatus",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SlotStatus",
+    "title" : "SlotStatus",
+    "description" : "The free/busy status of the slot.",
+    "oids" : ["2.16.840.1.113883.4.642.4.483"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-slotstatus.html" : "SlotStatus"
+  },
+  {
+    "url" : "http://snomed.info/sct",
+    "version" : null,
+    "status" : "active",
+    "name" : "SNOMED_CT",
+    "title" : "SNOMED CT (all versions)",
+    "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+    "oids" : ["2.16.840.1.113883.6.96"],
+    "uses" : {
+    },
+    "ValueSet-NoDomainVitalSignsObservationBloodpressureBodySite.html" : "NoDomainVitalSignsObservationBloodpressureBodySite",
+    "ValueSet-NoDomainVitalSignsObservationRespirationRateBodyPosition.html" : "NoDomainVitalSignsObservationRespirationRateBodyPosition",
+    "ValueSet-NoDomainVitalSignsObservationBodyTempBodySite.html" : "NoDomainVitalSignsObservationBodyTempBodySite",
+    "ValueSet-NoDomainVitalSignsObservationHeartRateBodySite.html" : "NoDomainVitalSignsObservationHeartRateBodySite",
+    "ValueSet-NoDomainVitalSignsObservationHeartRatePulseBodyPosition.html" : "NoDomainVitalSignsObservationHeartRatePulseBodyPosition",
+    "ValueSet-NoDomainVitalSignsObservationPulseRhythmIrregularity.html" : "NoDomainVitalSignsObservationPulseRhythmIrregularity",
+    "ValueSet-NoDomainVitalSignsObservationCuffsize.html" : "NoDomainVitalSignsObservationCuffsize",
+    "ValueSet-NoDomainVitalSignsObservationBloodPressureMeasurementMethod.html" : "NoDomainVitalSignsObservationBloodPressureMeasurementMethod",
+    "ValueSet-NoDomainVitalSignsObservationBloodpressureBodyPosition.html" : "NoDomainVitalSignsObservationBloodpressureBodyPosition",
+    "ValueSet-NoDomainVitalSignsObservationHeartRateMeasurementMethod.html" : "NoDomainVitalSignsObservationHeartRateMeasurementMethod",
+    "ValueSet-NoDomainVitalSignsObservationPulseBodySite.html" : "NoDomainVitalSignsObservationPulseBodySite",
+    "ValueSet-NoDomainVitalSignsObservationClothingState.html" : "NoDomainVitalSignsObservationClothingState",
+    "ValueSet-NoDomainVitalSignsObservationDiastolicendPoint.html" : "NoDomainVitalSignsObservationDiastolicendPoint",
+    "ValueSet-NoDomainVitalSignsObservationSpontaneousBreathing.html" : "NoDomainVitalSignsObservationSpontaneousBreathing",
+    "ValueSet-NoDomainVitalSignsObservationHeartRhythmIrregularity.html" : "NoDomainVitalSignsObservationHeartRhythmIrregularity",
+    "ValueSet-NoDomainVitalSignsObservationPulseMeasurementMethod.html" : "NoDomainVitalSignsObservationPulseMeasurementMethod",
+    "ValueSet-NoDomainVitalSignsObservationRespirationRegularity.html" : "NoDomainVitalSignsObservationRespirationRegularity",
+    "ValueSet-NoDomainVitalSignsObservationSleepStatus.html" : "NoDomainVitalSignsObservationSleepStatus",
+    "ValueSet-NoDomainVitalSignsObservationBodyExposure.html" : "NoDomainVitalSignsObservationBodyExposure",
+    "ValueSet-NoDomainVitalSignsObservationBodyHeightBodyPosition.html" : "NoDomainVitalSignsObservationBodyHeightBodyPosition",
+    "ValueSet-NoDomainVitalSignsObservationPulseRhythm.html" : "NoDomainVitalSignsObservationPulseRhythm",
+    "ValueSet-NoDomainVitalSignsObservationRespirationRateDepth.html" : "NoDomainVitalSignsObservationRespirationRateDepth"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "LocationType",
+    "title" : "Location type",
+    "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.\r\rThis includes several 'non physical' codes which are still considered a location.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1108"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-location-physical-type.html" : "Location type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "version" : "11.0.0",
+    "status" : "active",
+    "name" : "ActCode",
+    "title" : "ActCode",
+    "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.\r\n\r\n*Constraints:* The kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems. The coding system will depend on the class of Act, such as LOINC for observations, etc.\r\n\r\nConceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure.\r\n\r\nAct.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+    "oids" : ["2.16.840.1.113883.5.4"],
+    "uses" : {
+    },
+    "ValueSet-DIPSEncounterV3.html" : "DIPSEncounterV3"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "Confidentiality",
+    "title" : "Confidentiality",
+    "description" : "A set of codes specifying the security classification of acts and roles in accordance with the definition for concept domain \"Confidentiality\".",
+    "oids" : ["2.16.840.1.113883.5.25"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/v3/ConfidentialityClassification/vs.html" : "V3 Value SetConfidentialityClassification"
+  }]
+}

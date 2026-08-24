@@ -1,0 +1,299 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/R4/ValueSet/healthPersonnelSpecialization> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "healthPersonnelSpecialization"] ;
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2021-03-17T00:00:00+00:00"^^xsd:dateTime ] ;
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablevalueset" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablevalueset>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet healthPersonnelSpecialization</b></p><a name=\"healthPersonnelSpecialization\"> </a><a name=\"hchealthPersonnelSpecialization\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2021-03-17 00:00:00+0000</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <code>urn:oid:2.16.578.1.12.4.1.1.7426</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Allmennmedisin</td></tr><tr><td>2</td><td>Anestesiologi</td></tr><tr><td>3</td><td>Barnesykdommer</td></tr><tr><td>4</td><td>Barne- og ungdomspsykiatri</td></tr><tr><td>5</td><td>Arbeidsmedisin</td></tr><tr><td>6</td><td>Fysikalsk medisin og rehabilitering</td></tr><tr><td>7</td><td>Fødselshjelp og kvinnesykdommer</td></tr><tr><td>16</td><td>Hud og veneriske sykdommer</td></tr><tr><td>18</td><td>Immunologi og transfusjonsmedisin</td></tr><tr><td>28</td><td>Maxillofacial kirurgi</td></tr><tr><td>31</td><td>Medisinsk biokjemi</td></tr><tr><td>32</td><td>Klinisk nevrofysiologi</td></tr><tr><td>33</td><td>Medisinsk genetikk</td></tr><tr><td>34</td><td>Medisinsk mikrobiologi</td></tr><tr><td>35</td><td>Radiologi</td></tr><tr><td>36</td><td>Nevrokirurgi</td></tr><tr><td>37</td><td>Nevrologi</td></tr><tr><td>38</td><td>Patologi</td></tr><tr><td>39</td><td>Plastikkirurgi</td></tr><tr><td>40</td><td>Psykiatri</td></tr><tr><td>41</td><td>Revmatologi</td></tr><tr><td>42</td><td>Samfunnsmedisin</td></tr><tr><td>43</td><td>Onkologi</td></tr><tr><td>45</td><td>Øre-, nese-, halssykdommer</td></tr><tr><td>46</td><td>Øyesykdommer</td></tr><tr><td>57</td><td>Klinisk farmakologi</td></tr><tr><td>80</td><td>Generell Kirurgi</td></tr><tr><td>81</td><td>Barnekirurgi</td></tr><tr><td>82</td><td>Gastroenterologisk kirurgi</td></tr><tr><td>83</td><td>Karkirurgi</td></tr><tr><td>85</td><td>Thoraxkirurgi</td></tr><tr><td>86</td><td>Urologi</td></tr><tr><td>87</td><td>Bryst- og endokrinkirurgi</td></tr><tr><td>152</td><td>Ortopedisk kirurgi</td></tr><tr><td>151</td><td>Nukleærmedisin</td></tr><tr><td>190</td><td>Indremedisin</td></tr><tr><td>191</td><td>Blodsykdommer</td></tr><tr><td>192</td><td>Endokrinologi</td></tr><tr><td>193</td><td>Fordøyelsessykdommer</td></tr><tr><td>194</td><td>Geriatri</td></tr><tr><td>195</td><td>Hjertesykdommer</td></tr><tr><td>196</td><td>Infeksjonssykdommer</td></tr><tr><td>197</td><td>Lungesykdommer</td></tr><tr><td>198</td><td>Nyresykdommer</td></tr><tr><td>199</td><td>Rus- og avhengighetsmedisin</td></tr><tr><td>301</td><td>Akutt- og mottaksmedisin</td></tr><tr><td>515</td><td>Kjeveortopedi</td></tr><tr><td>523</td><td>Pedodonti</td></tr><tr><td>531</td><td>Periodonti</td></tr><tr><td>558</td><td>Oral-kirurgi og oralmedisin</td></tr><tr><td>559</td><td>Kjeve- og ansiktsradiologi</td></tr><tr><td>560</td><td>Endodonti</td></tr><tr><td>561</td><td>Oral protetikk</td></tr><tr><td>575</td><td>Kontaktlinsekompetanse</td></tr><tr><td>601</td><td>Klinisk allmennsykepleie</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg" ] ;
+     fhir:Extension.valueCode [ fhir:value "oo" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
+     fhir:Extension.valueCode [ fhir:value "draft" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ] ;
+     fhir:Extension.valueInteger [ fhir:value "1"^^xsd:integer ]
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://dips.no/fhir/R4/ValueSet/healthPersonnelSpecialization"] ;
+  fhir:ValueSet.version [ fhir:value "0.1.0"] ;
+  fhir:ValueSet.name [ fhir:value "healthPersonnelSpecialization"] ;
+  fhir:ValueSet.title [ fhir:value "healthPersonnelSpecialization"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-08-20T12:37:22+05:30"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "DIPS AS"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Lars-Andreas Nystad" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "mailto:lan@dips.no" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Have volven codesystems and rest of the namesystem"] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NO" ] ;
+       fhir:Coding.display [ fhir:value "Norway" ]
+     ]
+  ] ;
+  fhir:ValueSet.copyright [ fhir:value "© 2021 DIPS AS\nAll rights reserved.\n\n  No part of this publication may be reproduced,\n  stored in a retrieval system, transmitted, or \n  published to a third party, in any\n  form or by any means, mechanical, electronic,\n  photocopying, recording, or otherwise, without\n  prior written permission of DIPS AS.\n  \n  OpenEHR is a registered trademark of OpenEHR Foundation.\n  HL7®, CDA®, FHIR® and the FHIR (FLAME DESIGN)® are the registered trademarks of Health Level Seven International.\n\n  All other trademarks mentioned herein are the property of their\n  respective owners.\n\n  DIPS AS\n  Postboks 1435\n  8037 Bodø\n  Norway\n  [www.dips.no](www.dips.no)\n  +47 75 59 20 00"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.1.7426" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allmennmedisin" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anestesiologi" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Barnesykdommer" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Barne- og ungdomspsykiatri" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "5" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arbeidsmedisin" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "6" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fysikalsk medisin og rehabilitering" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fødselshjelp og kvinnesykdommer" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hud og veneriske sykdommer" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "18" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immunologi og transfusjonsmedisin" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "28" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Maxillofacial kirurgi" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "31" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medisinsk biokjemi" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Klinisk nevrofysiologi" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "33" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medisinsk genetikk" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medisinsk mikrobiologi" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "35" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Radiologi" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "36" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nevrokirurgi" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "37" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nevrologi" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "38" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patologi" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "39" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plastikkirurgi" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "40" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Psykiatri" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "41" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Revmatologi" ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "42" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Samfunnsmedisin" ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "43" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Onkologi" ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "45" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Øre-, nese-, halssykdommer" ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "46" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Øyesykdommer" ]
+       ], [
+         fhir:index 25 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "57" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Klinisk farmakologi" ]
+       ], [
+         fhir:index 26 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "80" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Generell Kirurgi" ]
+       ], [
+         fhir:index 27 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "81" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Barnekirurgi" ]
+       ], [
+         fhir:index 28 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "82" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gastroenterologisk kirurgi" ]
+       ], [
+         fhir:index 29 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "83" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Karkirurgi" ]
+       ], [
+         fhir:index 30 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "85" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thoraxkirurgi" ]
+       ], [
+         fhir:index 31 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "86" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urologi" ]
+       ], [
+         fhir:index 32 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "87" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bryst- og endokrinkirurgi" ]
+       ], [
+         fhir:index 33 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "152" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ortopedisk kirurgi" ]
+       ], [
+         fhir:index 34 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "151" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nukleærmedisin" ]
+       ], [
+         fhir:index 35 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "190" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Indremedisin" ]
+       ], [
+         fhir:index 36 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "191" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blodsykdommer" ]
+       ], [
+         fhir:index 37 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "192" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Endokrinologi" ]
+       ], [
+         fhir:index 38 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "193" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fordøyelsessykdommer" ]
+       ], [
+         fhir:index 39 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "194" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Geriatri" ]
+       ], [
+         fhir:index 40 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "195" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hjertesykdommer" ]
+       ], [
+         fhir:index 41 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "196" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Infeksjonssykdommer" ]
+       ], [
+         fhir:index 42 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "197" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lungesykdommer" ]
+       ], [
+         fhir:index 43 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "198" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nyresykdommer" ]
+       ], [
+         fhir:index 44 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "199" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rus- og avhengighetsmedisin" ]
+       ], [
+         fhir:index 45 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "301" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Akutt- og mottaksmedisin" ]
+       ], [
+         fhir:index 46 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "515" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kjeveortopedi" ]
+       ], [
+         fhir:index 47 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "523" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pedodonti" ]
+       ], [
+         fhir:index 48 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "531" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Periodonti" ]
+       ], [
+         fhir:index 49 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "558" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oral-kirurgi og oralmedisin" ]
+       ], [
+         fhir:index 50 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "559" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kjeve- og ansiktsradiologi" ]
+       ], [
+         fhir:index 51 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "560" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Endodonti" ]
+       ], [
+         fhir:index 52 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "561" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oral protetikk" ]
+       ], [
+         fhir:index 53 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "575" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kontaktlinsekompetanse" ]
+       ], [
+         fhir:index 54 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "601" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Klinisk allmennsykepleie" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://dips.no/fhir/R4/ValueSet/healthPersonnelSpecialization.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

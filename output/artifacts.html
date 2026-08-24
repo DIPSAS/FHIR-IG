@@ -1,0 +1,2508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - DIPS Core Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
+    <style>
+        /* Visual continuity with the developer.dips.no GitBook portal this IG is linked from.
+           TODO: swap --dips-portal-accent for the portal's real brand color, and confirm the
+           font stack against developer.dips.no's actual theme (see PLACEHOLDER note below). */
+        :root {
+            --dips-portal-accent: #0b3d91; /* PLACEHOLDER - replace with the real developer.dips.no accent color */
+        }
+        body {
+            font-family: -apple-system, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+        }
+        .dips-portal-banner {
+            background: var(--dips-portal-accent);
+            color: #fff;
+            padding: 8px 20px;
+            font-size: 14px;
+        }
+        .dips-portal-banner a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .dips-portal-banner a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+            <div class="dips-portal-banner">
+                <a href="https://developer.dips.no/9fvgRTzUE0KCH4ohQuiM/api/fhir-r4/README.md">&larr; Back to DIPS Developer Portal</a>
+            </div>
+
+            
+<div id="family-nav">
+	<a id="logo" no-external="true" href="http://hl7.org/fhir"> <img
+		alt="logo fhir" height="50" src="assets/images/fhir-logo-www.png" />
+	</a>
+</div>
+
+
+            
+<div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="https://github.com/HL7Norway">
+        <img alt="visit the hl7 website" height="60" src="assets/images/logo-dips.png" />
+    </a>            
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">DIPS Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  Norway
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="toc.html">TOC</a>
+  </li>
+  <li>
+    <a href="changes.html">Change Log</a>
+  </li>
+  <li>
+    <a href="documentation.html">Documentation</a>
+  </li>
+  <li>
+    <a href="download.html">Download</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">DIPS Core Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/R4/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Norwegian Implementations of Vitalsign</a>
+      </li>
+      <li>
+         <a href="#2">Examples of Norwegian VitalSign Profiles</a>
+      </li>
+      <li>
+         <a href="#3">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#4">Structures: Data Type Profiles</a>
+      </li>
+      <li>
+         <a href="#5">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#6">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#7">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#8">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Norwegian Implementations of Vitalsign </h3>
+    <p>These are the Profiles of Vitalsigns</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationBloodpressure.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationBloodpressure">NoImplVitalSignsObservationBloodpressure</a>
+            </td>
+            <td>
+<p>The local measurement of arterial blood pressure, which is a surrogate for arterial pressure in the systemic circulation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationBodyHeight.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationBodyHeight">NoImplVitalSignsObservationBodyHeight</a>
+            </td>
+            <td>
+<p>Height, or body length, is measured from crown of head to sole of foot.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationBodyMassIndex.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationBodyMassIndex">NoImplVitalSignsObservationBodyMassIndex</a>
+            </td>
+            <td>
+<p>Calculated measurement which compares a person's weight and height.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationBodyTemp.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationBodyTemp">NoImplVitalSignsObservationBodyTemp</a>
+            </td>
+            <td>
+<p>A measurement of the body temperature, which is a surrogate for the core body temperature of the individual.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationBodyWeight.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationBodyWeight">NoImplVitalSignsObservationBodyWeight</a>
+            </td>
+            <td>
+<p>Measurement of the body weight of an individual.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationConsciousness.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationConsciousness">NoImplVitalSignsObservationConsciousness</a>
+            </td>
+            <td>
+<p>Simple scale used as part of an assessment to measure and record an individual's level of consciousness</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationGCS.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationGCS">NoImplVitalSignsObservationGCS</a>
+            </td>
+            <td>
+<p>Fifteen point scale used to assess impairment of consciousness in response to defined stimuli. More correctly known as the Modified Glasgow coma scale.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationHeartRate.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationHeartRate">NoImplVitalSignsObservationHeartRate</a>
+            </td>
+            <td>
+<p>The rate and associated attributes for a heart beat.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationNews2Score.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationNews2Score">NoImplVitalSignsObservationNews2Score</a>
+            </td>
+            <td>
+<p>A simple assessment score used to identify clinical deterioration in a patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationOxygenSaturation.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationOxygenSaturation">NoImplVitalSignsObservationOxygenSaturation</a>
+            </td>
+            <td>
+<p>Blood oxygen and related measurements, measured by pulse oximetry or pulse CO-oximetry.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationPulse.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationPulse">NoImplVitalSignsObservationPulse</a>
+            </td>
+            <td>
+<p>The rate and associated attributes for a pulse.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationQSOFAScore.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationQSOFAScore">NoImplVitalSignsObservationQSOFAScore</a>
+            </td>
+            <td>
+<p>Quick Sepsis-related Organ Failure Assessment (qSOFA) is a simplified version of the SOFA score, which is used outside intensive care units to quickly assess sepsis risk in adults.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationRespirationRate.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationRespirationRate">NoImplVitalSignsObservationRespirationRate</a>
+            </td>
+            <td>
+<p>The characteristics of spontaneous breathing by an individual.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Examples of Norwegian VitalSign Profiles </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-noimpl-bloodpressure-instance.html"
+                  title="Observation/noimpl-bloodpressure-instance">noimpl-bloodpressure-instance</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-noimpl-body-height-create.html"
+                  title="Observation/noimpl-body-height-create">noimpl-body-height-create</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-noimpl-body-mass-index-create.html"
+                  title="Observation/noimpl-body-mass-index-create">noimpl-body-mass-index-create</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-noimpl-body-temperature-create.html"
+                  title="Observation/noimpl-body-temperature-create">noimpl-body-temperature-create</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-noimpl-body-weight-create.html"
+                  title="Observation/noimpl-body-weight-create">noimpl-body-weight-create</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-noImpl-consciousness-create.html"
+                  title="Observation/noImpl-consciousness-create">noImpl-consciousness-create</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-noImpl-GCS-create.html"
+                  title="Observation/noImpl-GCS-create">noImpl-GCS-create</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-noimpl-heart-rate-create.html"
+                  title="Observation/noimpl-heart-rate-create">noimpl-heart-rate-create</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-noimpl-news2-create.html"
+                  title="Observation/noimpl-news2-create">noimpl-news2-create</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-noimpl-oxygen-saturation-create.html"
+                  title="Observation/noimpl-oxygen-saturation-create">noimpl-oxygen-saturation-create</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-noimpl-pulse-rate.html"
+                  title="Observation/noimpl-pulse-rate">noimpl-pulse-rate</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-noImpl-QSOFAScore-create.html"
+                  title="Observation/noImpl-QSOFAScore-create">noImpl-QSOFAScore-create</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-noImpl-respiratory-rate-create.html"
+                  title="Observation/noImpl-respiratory-rate-create">noImpl-respiratory-rate-create</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSAppointment.html"
+                  title="StructureDefinition/DIPSAppointment">DIPSAppointment</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSAppointmentSchedule.html"
+                  title="StructureDefinition/DIPSAppointmentSchedule">DIPSAppointmentSchedule</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSBasisPractitionerR4.html"
+                  title="StructureDefinition/DIPSBasisPractitionerR4">DIPSBasisPractitionerR4</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSEncounterLocation.html"
+                  title="StructureDefinition/DIPSEncounterLocation">DIPSEncounterLocation</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSEncounterOrganization.html"
+                  title="StructureDefinition/DIPSEncounterOrganization">DIPSEncounterOrganization</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSEncounterPractitionerReference.html"
+                  title="StructureDefinition/DIPSEncounterPractitionerReference">DIPSEncounterPractitionerReference</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSEncounterServiceRequest.html"
+                  title="StructureDefinition/DIPSEncounterServiceRequest">DIPSEncounterServiceRequest</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSEncounterSubjectReference.html"
+                  title="StructureDefinition/DIPSEncounterSubjectReference">DIPSEncounterSubjectReference</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSHealthcareService.html"
+                  title="StructureDefinition/DIPSHealthcareService">DIPSHealthcareService</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSHospitalStayEncounter.html"
+                  title="StructureDefinition/DIPSHospitalStayEncounter">DIPSHospitalStayEncounter</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSLocation.html"
+                  title="StructureDefinition/DIPSLocation">DIPSLocation</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSLocationReference.html"
+                  title="StructureDefinition/DIPSLocationReference">DIPSLocationReference</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSOrganization.html"
+                  title="StructureDefinition/DIPSOrganization">DIPSOrganization</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPatient.html"
+                  title="StructureDefinition/DIPSPatient">DIPSPatient</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPerson.html"
+                  title="StructureDefinition/DIPSPerson">DIPSPerson</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPractitioner.html"
+                  title="StructureDefinition/DIPSPractitioner">DIPSPractitioner</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPractitionerRole.html"
+                  title="StructureDefinition/DIPSPractitionerRole">DIPSPractitionerRole</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSR4Encounter.html"
+                  title="StructureDefinition/DIPSR4Encounter">DIPSR4Encounter</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSRelatedPerson.html"
+                  title="StructureDefinition/DIPSRelatedPerson">DIPSRelatedPerson</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSSubjectReference.html"
+                  title="StructureDefinition/DIPSSubjectReference">DIPSSubjectReference</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DipsOrganizationRef.html"
+                  title="StructureDefinition/DipsOrganizationRef">DipsOrganizationRef</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SelfBookingSlot.html"
+                  title="StructureDefinition/SelfBookingSlot">SelfBookingSlot</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Structures: Data Type Profiles </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSBasisPatientR4Reference.html"
+                  title="StructureDefinition/DIPSBasisPatientR4Reference">DIPSBasisPatientR4Reference</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSOrganizationReference.html"
+                  title="StructureDefinition/DIPSOrganizationReference">DIPSOrganizationReference</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPractitionerReference.html"
+                  title="StructureDefinition/DIPSPractitionerReference">DIPSPractitionerReference</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPractitionerRoleReference.html"
+                  title="StructureDefinition/DIPSPractitionerRoleReference">DIPSPractitionerRoleReference</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-AppointmentReschedulingPeriodExtension.html"
+                  title="StructureDefinition/AppointmentReschedulingPeriodExtension">AppointmentReschedulingPeriodExtension</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-BankAccountNumber1.html"
+                  title="StructureDefinition/BankAccountNumber1">BankAccountNumber1</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-BankAccountNumber2.html"
+                  title="StructureDefinition/BankAccountNumber2">BankAccountNumber2</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-BedTime.html"
+                  title="StructureDefinition/BedTime">BedTime</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-BedTypeId.html"
+                  title="StructureDefinition/BedTypeId">BedTypeId</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ContactTypeExtension.html"
+                  title="StructureDefinition/ContactTypeExtension">ContactTypeExtension</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSHealthcareServiceAddress.html"
+                  title="StructureDefinition/DIPSHealthcareServiceAddress">DIPSHealthcareServiceAddress</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSHealthcareServiceCommunicationProtocol.html"
+                  title="StructureDefinition/DIPSHealthcareServiceCommunicationProtocol">DIPSHealthcareServiceCommunicationProtocol</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSHealthcareServiceDepartment.html"
+                  title="StructureDefinition/DIPSHealthcareServiceDepartment">DIPSHealthcareServiceDepartment</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSHealthcareServiceHospital.html"
+                  title="StructureDefinition/DIPSHealthcareServiceHospital">DIPSHealthcareServiceHospital</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSHealthcareServiceIsPaperCopy.html"
+                  title="StructureDefinition/DIPSHealthcareServiceIsPaperCopy">DIPSHealthcareServiceIsPaperCopy</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSHealthcareServiceSection.html"
+                  title="StructureDefinition/DIPSHealthcareServiceSection">DIPSHealthcareServiceSection</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSHealthcareServiceWard.html"
+                  title="StructureDefinition/DIPSHealthcareServiceWard">DIPSHealthcareServiceWard</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPatientContactIdentifier.html"
+                  title="StructureDefinition/DIPSPatientContactIdentifier">DIPSPatientContactIdentifier</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPatientContactPractitionerRoleName.html"
+                  title="StructureDefinition/DIPSPatientContactPractitionerRoleName">DIPSPatientContactPractitionerRoleName</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPersonDeathComment.html"
+                  title="StructureDefinition/DIPSPersonDeathComment">DIPSPersonDeathComment</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPersonDeathRegisteredBy.html"
+                  title="StructureDefinition/DIPSPersonDeathRegisteredBy">DIPSPersonDeathRegisteredBy</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPersonDeathRegisteredTime.html"
+                  title="StructureDefinition/DIPSPersonDeathRegisteredTime">DIPSPersonDeathRegisteredTime</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPersonHospitalSectorId.html"
+                  title="StructureDefinition/DIPSPersonHospitalSectorId">DIPSPersonHospitalSectorId</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPersonHospitalSectorName.html"
+                  title="StructureDefinition/DIPSPersonHospitalSectorName">DIPSPersonHospitalSectorName</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPersonLanguage.html"
+                  title="StructureDefinition/DIPSPersonLanguage">DIPSPersonLanguage</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPersonLastOfficialAddressSyncTime.html"
+                  title="StructureDefinition/DIPSPersonLastOfficialAddressSyncTime">DIPSPersonLastOfficialAddressSyncTime</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPersonMunicipality.html"
+                  title="StructureDefinition/DIPSPersonMunicipality">DIPSPersonMunicipality</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPersonStateName.html"
+                  title="StructureDefinition/DIPSPersonStateName">DIPSPersonStateName</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPractitionerRoleCommunicationProtocol.html"
+                  title="StructureDefinition/DIPSPractitionerRoleCommunicationProtocol">DIPSPractitionerRoleCommunicationProtocol</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPractitionerRoleCommunicationType.html"
+                  title="StructureDefinition/DIPSPractitionerRoleCommunicationType">DIPSPractitionerRoleCommunicationType</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPractitionerRoleCommunicationTypeId.html"
+                  title="StructureDefinition/DIPSPractitionerRoleCommunicationTypeId">DIPSPractitionerRoleCommunicationTypeId</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPractitionerRoleDipsSignature.html"
+                  title="StructureDefinition/DIPSPractitionerRoleDipsSignature">DIPSPractitionerRoleDipsSignature</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPractitionerRoleHcpRoleName.html"
+                  title="StructureDefinition/DIPSPractitionerRoleHcpRoleName">DIPSPractitionerRoleHcpRoleName</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPractitionerRoleHealthCarePartyDepartment.html"
+                  title="StructureDefinition/DIPSPractitionerRoleHealthCarePartyDepartment">DIPSPractitionerRoleHealthCarePartyDepartment</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPractitionerRoleHealthCarePartyType.html"
+                  title="StructureDefinition/DIPSPractitionerRoleHealthCarePartyType">DIPSPractitionerRoleHealthCarePartyType</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPractitionerRoleHealthCarePosition.html"
+                  title="StructureDefinition/DIPSPractitionerRoleHealthCarePosition">DIPSPractitionerRoleHealthCarePosition</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPractitionerRoleHospital.html"
+                  title="StructureDefinition/DIPSPractitionerRoleHospital">DIPSPractitionerRoleHospital</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPractitionerRoleIsPaperCopy.html"
+                  title="StructureDefinition/DIPSPractitionerRoleIsPaperCopy">DIPSPractitionerRoleIsPaperCopy</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPractitionerRoleSection.html"
+                  title="StructureDefinition/DIPSPractitionerRoleSection">DIPSPractitionerRoleSection</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPractitionerRoleUserRoleDepartment.html"
+                  title="StructureDefinition/DIPSPractitionerRoleUserRoleDepartment">DIPSPractitionerRoleUserRoleDepartment</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPractitionerRoleUserRoleId.html"
+                  title="StructureDefinition/DIPSPractitionerRoleUserRoleId">DIPSPractitionerRoleUserRoleId</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPractitionerRoleUserRoleLastUpdated.html"
+                  title="StructureDefinition/DIPSPractitionerRoleUserRoleLastUpdated">DIPSPractitionerRoleUserRoleLastUpdated</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPractitionerRoleUserRoleName.html"
+                  title="StructureDefinition/DIPSPractitionerRoleUserRoleName">DIPSPractitionerRoleUserRoleName</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPractitionerRoleWard.html"
+                  title="StructureDefinition/DIPSPractitionerRoleWard">DIPSPractitionerRoleWard</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSPractitionerSpecialist.html"
+                  title="StructureDefinition/DIPSPractitionerSpecialist">DIPSPractitionerSpecialist</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSRelatedPersonAdditionalInformation.html"
+                  title="StructureDefinition/DIPSRelatedPersonAdditionalInformation">DIPSRelatedPersonAdditionalInformation</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSRelatedPersonAppointedByMunicipality.html"
+                  title="StructureDefinition/DIPSRelatedPersonAppointedByMunicipality">DIPSRelatedPersonAppointedByMunicipality</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSRelatedPersonKinship.html"
+                  title="StructureDefinition/DIPSRelatedPersonKinship">DIPSRelatedPersonKinship</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSRelatedPersonParentalResponsibility.html"
+                  title="StructureDefinition/DIPSRelatedPersonParentalResponsibility">DIPSRelatedPersonParentalResponsibility</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DIPSRelatedPersonResponsibleRequisitioner.html"
+                  title="StructureDefinition/DIPSRelatedPersonResponsibleRequisitioner">DIPSRelatedPersonResponsibleRequisitioner</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Department.html"
+                  title="StructureDefinition/Department">Department</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DepartmentExtension.html"
+                  title="StructureDefinition/DepartmentExtension">DepartmentExtension</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DepartmentTypeCodeId.html"
+                  title="StructureDefinition/DepartmentTypeCodeId">DepartmentTypeCodeId</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DiagnoseGroupExtension.html"
+                  title="StructureDefinition/DiagnoseGroupExtension">DiagnoseGroupExtension</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DipsLocationExtension.html"
+                  title="StructureDefinition/DipsLocationExtension">DipsLocationExtension</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DipsPatientDeathComment.html"
+                  title="StructureDefinition/DipsPatientDeathComment">DipsPatientDeathComment</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DipsPatientDeathRegisteredBy.html"
+                  title="StructureDefinition/DipsPatientDeathRegisteredBy">DipsPatientDeathRegisteredBy</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DipsPatientDeathRegisteredTime.html"
+                  title="StructureDefinition/DipsPatientDeathRegisteredTime">DipsPatientDeathRegisteredTime</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DipsPatientHospitalSectorId.html"
+                  title="StructureDefinition/DipsPatientHospitalSectorId">DipsPatientHospitalSectorId</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DipsPatientHospitalSectorName.html"
+                  title="StructureDefinition/DipsPatientHospitalSectorName">DipsPatientHospitalSectorName</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DipsPatientMunicipality.html"
+                  title="StructureDefinition/DipsPatientMunicipality">DipsPatientMunicipality</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DipsPatientPhoneTypeId.html"
+                  title="StructureDefinition/DipsPatientPhoneTypeId">DipsPatientPhoneTypeId</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DipsPatientStateName.html"
+                  title="StructureDefinition/DipsPatientStateName">DipsPatientStateName</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-IsSpecialistExtension.html"
+                  title="StructureDefinition/IsSpecialistExtension">IsSpecialistExtension</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-IsUpdatedByPopulationRegister.html"
+                  title="StructureDefinition/IsUpdatedByPopulationRegister">IsUpdatedByPopulationRegister</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-LastOfficialAddressSyncTime.html"
+                  title="StructureDefinition/LastOfficialAddressSyncTime">LastOfficialAddressSyncTime</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-LevelOfCareExtension.html"
+                  title="StructureDefinition/LevelOfCareExtension">LevelOfCareExtension</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-LocationAddressId.html"
+                  title="StructureDefinition/LocationAddressId">LocationAddressId</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-LocationExtension.html"
+                  title="StructureDefinition/LocationExtension">LocationExtension</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-LocationLabLocalizationId.html"
+                  title="StructureDefinition/LocationLabLocalizationId">LocationLabLocalizationId</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-LocationTypeCodeId.html"
+                  title="StructureDefinition/LocationTypeCodeId">LocationTypeCodeId</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-LocationTypeId.html"
+                  title="StructureDefinition/LocationTypeId">LocationTypeId</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-LocationValidPeriod.html"
+                  title="StructureDefinition/LocationValidPeriod">LocationValidPeriod</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-LocationWorkplaceLocalizationId.html"
+                  title="StructureDefinition/LocationWorkplaceLocalizationId">LocationWorkplaceLocalizationId</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-MunicipalityCode.html"
+                  title="StructureDefinition/MunicipalityCode">MunicipalityCode</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-MustOccurBefore.html"
+                  title="StructureDefinition/MustOccurBefore">MustOccurBefore</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationClothingState.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationClothingState">NoImplVitalSignsObservationClothingState</a>
+            </td>
+            <td>
+<p>Description of the state of dress of the person at the time of weighing.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationFiO2.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationFiO2">NoImplVitalSignsObservationFiO2</a>
+            </td>
+            <td>
+<p>Fraction of oxygen in inspired air.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationFlow.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationFlow">NoImplVitalSignsObservationFlow</a>
+            </td>
+            <td>
+<p>Oxygen flow rate given to an individual.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationInspiredOxygen.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationInspiredOxygen">NoImplVitalSignsObservationInspiredOxygen</a>
+            </td>
+            <td>
+<p>Details of the amount of oxygen available to the subject at the time of observation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationMethodofOxygenDelivery.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationMethodofOxygenDelivery">NoImplVitalSignsObservationMethodofOxygenDelivery</a>
+            </td>
+            <td>
+<p>The method used to deliver the oxygen.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationOnAir.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationOnAir">NoImplVitalSignsObservationOnAir</a>
+            </td>
+            <td>
+<p>The patient is receiving air, equivalent to 21% O₂ or 0.21 FiO₂ and an oxygen flow rate of 0 litres per minute.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationProsentO2.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationProsentO2">NoImplVitalSignsObservationProsentO2</a>
+            </td>
+            <td>
+<p>Percentage of oxygen in inspired air.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationPulseRhythm.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationPulseRhythm">NoImplVitalSignsObservationPulseRhythm</a>
+            </td>
+            <td>
+<p>Regularity of the pulse</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationRespirationDepth.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationRespirationDepth">NoImplVitalSignsObservationRespirationDepth</a>
+            </td>
+            <td>
+<p>The depth of spontaneous breathing.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoImplVitalSignsObservationRespirationRegularity.html"
+                  title="StructureDefinition/NoImplVitalSignsObservationRespirationRegularity">NoImplVitalSignsObservationRespirationRegularity</a>
+            </td>
+            <td>
+<p>The regularity of spontaneous breathing.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NprLevelOfCareExtension.html"
+                  title="StructureDefinition/NprLevelOfCareExtension">NprLevelOfCareExtension</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-OrganizationAddressId.html"
+                  title="StructureDefinition/OrganizationAddressId">OrganizationAddressId</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-OrganizationPaymentCode.html"
+                  title="StructureDefinition/OrganizationPaymentCode">OrganizationPaymentCode</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-OrganizationTypeCodeId.html"
+                  title="StructureDefinition/OrganizationTypeCodeId">OrganizationTypeCodeId</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-OrganizationValidPeriod.html"
+                  title="StructureDefinition/OrganizationValidPeriod">OrganizationValidPeriod</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PartOfDepartment.html"
+                  title="StructureDefinition/PartOfDepartment">PartOfDepartment</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PartOfSection.html"
+                  title="StructureDefinition/PartOfSection">PartOfSection</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PlannedContactEndTimeExtension.html"
+                  title="StructureDefinition/PlannedContactEndTimeExtension">PlannedContactEndTimeExtension</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ReferredBy.html"
+                  title="StructureDefinition/ReferredBy">ReferredBy</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Reminder.html"
+                  title="StructureDefinition/Reminder">Reminder</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SectionExtension.html"
+                  title="StructureDefinition/SectionExtension">SectionExtension</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SectionProfessionCodeId.html"
+                  title="StructureDefinition/SectionProfessionCodeId">SectionProfessionCodeId</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-TeamTypeId.html"
+                  title="StructureDefinition/TeamTypeId">TeamTypeId</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-TerminationExtension.html"
+                  title="StructureDefinition/TerminationExtension">TerminationExtension</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-VideoUrl.html"
+                  title="StructureDefinition/VideoUrl">VideoUrl</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-WardExtension.html"
+                  title="StructureDefinition/WardExtension">WardExtension</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-WardTypeCodeId.html"
+                  title="StructureDefinition/WardTypeCodeId">WardTypeCodeId</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DipsPatientLanguageId.html"
+                  title="StructureDefinition/DipsPatientLanguageId">dips-patient-language-id</a>
+            </td>
+            <td>
+<p>Defines the Id of the language that patient speaks</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-DIPSEncounterTypeCom.html"
+                  title="ValueSet/DIPSEncounterTypeCom">DIPSEncounterTypeCom</a>
+            </td>
+            <td>
+<p>Have volven codesystems and rest of the namesystem</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-DIPSEncounterV3.html" title="ValueSet/DIPSEncounterV3">DIPSEncounterV3</a>
+            </td>
+            <td>
+<p>Codes representing body site for blood pressure</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-DIPSHealthcareServiceTypes.html"
+                  title="ValueSet/DIPSHealthcareServiceTypes">DIPSHealthcareServiceTypes</a>
+            </td>
+            <td>
+<p>Value Sets of DIPSHealthcareServiceTypes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-DipsCoding1003ValueSet.html"
+                  title="ValueSet/DipsCoding1003ValueSet">DipsCoding1003ValueSet</a>
+            </td>
+            <td>
+<p>Value Sets of DipsCoding1003ValueSet</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-HealthPersonallCategoryValueset.html"
+                  title="ValueSet/HealthPersonallCategoryValueset">HealthPersonallCategoryValueset</a>
+            </td>
+            <td>
+<p>Have volven codesystems and rest of the namesystem</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-KithCoding9040ValueSet.html"
+                  title="ValueSet/KithCoding9040ValueSet">KithCoding9040ValueSet</a>
+            </td>
+            <td>
+<p>Value Sets of KithCoding9040ValueSet</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-KithHealthcareServiceTypes.html"
+                  title="ValueSet/KithHealthcareServiceTypes">KithHealthcareServiceTypes</a>
+            </td>
+            <td>
+<p>Value Sets of KithHealthcareServiceTypes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-LanguageCodes.html" title="ValueSet/LanguageCodes">LanguageCodes</a>
+            </td>
+            <td>
+<p>Valesets of LanguageCodes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-LocationTypes.html" title="ValueSet/LocationTypes">LocationTypes</a>
+            </td>
+            <td>
+<p>Valesets of Location Types</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoDomainVitalSignsObservationBloodPressureMeasurementMethod.html"
+                  title="ValueSet/NoDomainVitalSignsObservationBloodPressureMeasurementMethod">NoDomainVitalSignsObservationBloodPressureMeasurementMethod</a>
+            </td>
+            <td>
+<p>Codes representing measurement method for HeartRate</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoDomainVitalSignsObservationBloodpressureBodyPosition.html"
+                  title="ValueSet/NoDomainVitalSignsObservationBloodpressureBodyPosition">NoDomainVitalSignsObservationBloodpressureBodyPosition</a>
+            </td>
+            <td>
+<p>Codes representing body position for blood pressure</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoDomainVitalSignsObservationBloodpressureBodySite.html"
+                  title="ValueSet/NoDomainVitalSignsObservationBloodpressureBodySite">NoDomainVitalSignsObservationBloodpressureBodySite</a>
+            </td>
+            <td>
+<p>Codes representing body site for blood pressure</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoDomainVitalSignsObservationBodyExposure.html"
+                  title="ValueSet/NoDomainVitalSignsObservationBodyExposure">NoDomainVitalSignsObservationBodyExposure</a>
+            </td>
+            <td>
+<p>Codes representing body exposure</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoDomainVitalSignsObservationBodyHeightBodyPosition.html"
+                  title="ValueSet/NoDomainVitalSignsObservationBodyHeightBodyPosition">NoDomainVitalSignsObservationBodyHeightBodyPosition</a>
+            </td>
+            <td>
+<p>Codes representing body position for body height</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoDomainVitalSignsObservationBodyTempBodySite.html"
+                  title="ValueSet/NoDomainVitalSignsObservationBodyTempBodySite">NoDomainVitalSignsObservationBodyTempBodySite</a>
+            </td>
+            <td>
+<p>Codes representing body site for body temperature</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoDomainVitalSignsObservationClothingState.html"
+                  title="ValueSet/NoDomainVitalSignsObservationClothingState">NoDomainVitalSignsObservationClothingState</a>
+            </td>
+            <td>
+<p>Codes representing level of clothing</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoDomainVitalSignsObservationCuffsize.html"
+                  title="ValueSet/NoDomainVitalSignsObservationCuffsize">NoDomainVitalSignsObservationCuffsize</a>
+            </td>
+            <td>
+<p>Codes representing cuff size</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoDomainVitalSignsObservationDiastolicendPoint.html"
+                  title="ValueSet/NoDomainVitalSignsObservationDiastolicendPoint">NoDomainVitalSignsObservationDiastolicendPoint</a>
+            </td>
+            <td>
+<p>Codes representing Diastolic end point</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoDomainVitalSignsObservationHeartRateBodySite.html"
+                  title="ValueSet/NoDomainVitalSignsObservationHeartRateBodySite">NoDomainVitalSignsObservationHeartRateBodySite</a>
+            </td>
+            <td>
+<p>Codes representing body site for heart rate</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoDomainVitalSignsObservationHeartRateMeasurementMethod.html"
+                  title="ValueSet/NoDomainVitalSignsObservationHeartRateMeasurementMethod">NoDomainVitalSignsObservationHeartRateMeasurementMethod</a>
+            </td>
+            <td>
+<p>Codes representing measurement method for HeartRate</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoDomainVitalSignsObservationHeartRatePulseBodyPosition.html"
+                  title="ValueSet/NoDomainVitalSignsObservationHeartRatePulseBodyPosition">NoDomainVitalSignsObservationHeartRatePulseBodyPosition</a>
+            </td>
+            <td>
+<p>Codes representing body position for heart rate or Pulse</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoDomainVitalSignsObservationHeartRhythmIrregularity.html"
+                  title="ValueSet/NoDomainVitalSignsObservationHeartRhythmIrregularity">NoDomainVitalSignsObservationHeartRhythmIrregularity</a>
+            </td>
+            <td>
+<p>Codes representing heart rhythm irregularity for heart rate</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoDomainVitalSignsObservationPulseBodySite.html"
+                  title="ValueSet/NoDomainVitalSignsObservationPulseBodySite">NoDomainVitalSignsObservationPulseBodySite</a>
+            </td>
+            <td>
+<p>Codes representing body site for pulse</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoDomainVitalSignsObservationPulseMeasurementMethod.html"
+                  title="ValueSet/NoDomainVitalSignsObservationPulseMeasurementMethod">NoDomainVitalSignsObservationPulseMeasurementMethod</a>
+            </td>
+            <td>
+<p>Codes representing measurement method for HeartRate</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoDomainVitalSignsObservationPulseRhythm.html"
+                  title="ValueSet/NoDomainVitalSignsObservationPulseRhythm">NoDomainVitalSignsObservationPulseRhythm</a>
+            </td>
+            <td>
+<p>Codes representing  rhythm of Pulse</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoDomainVitalSignsObservationPulseRhythmIrregularity.html"
+                  title="ValueSet/NoDomainVitalSignsObservationPulseRhythmIrregularity">NoDomainVitalSignsObservationPulseRhythmIrregularity</a>
+            </td>
+            <td>
+<p>Codes representing heart rhythm irregularity for Pulse</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoDomainVitalSignsObservationRespirationRateBodyPosition.html"
+                  title="ValueSet/NoDomainVitalSignsObservationRespirationRateBodyPosition">NoDomainVitalSignsObservationRespirationRateBodyPosition</a>
+            </td>
+            <td>
+<p>Codes representing body position for respiration rate</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoDomainVitalSignsObservationRespirationRateDepth.html"
+                  title="ValueSet/NoDomainVitalSignsObservationRespirationRateDepth">NoDomainVitalSignsObservationRespirationRateDepth</a>
+            </td>
+            <td>
+<p>Codes representing depth for respiration rate</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoDomainVitalSignsObservationRespirationRegularity.html"
+                  title="ValueSet/NoDomainVitalSignsObservationRespirationRegularity">NoDomainVitalSignsObservationRespirationRegularity</a>
+            </td>
+            <td>
+<p>Codes representing Respiration Regularity</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoDomainVitalSignsObservationSleepStatus.html"
+                  title="ValueSet/NoDomainVitalSignsObservationSleepStatus">NoDomainVitalSignsObservationSleepStatus</a>
+            </td>
+            <td>
+<p>Codes representing Sleep Status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoDomainVitalSignsObservationSpontaneousBreathing.html"
+                  title="ValueSet/NoDomainVitalSignsObservationSpontaneousBreathing">NoDomainVitalSignsObservationSpontaneousBreathing</a>
+            </td>
+            <td>
+<p>Codes representing Respiration Spontaneous breathing</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoImplVitalSignsObservationBloodPressureMeasurementMethod.html"
+                  title="ValueSet/NoImplVitalSignsObservationBloodPressureMeasurementMethod">NoImplVitalSignsObservationBloodPressureMeasurementMethod</a>
+            </td>
+            <td>
+<p>Codes representing measurement method for heart rate</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoImplVitalSignsObservationBodyMassIndexFormula.html"
+                  title="ValueSet/NoImplVitalSignsObservationBodyMassIndexFormula">NoImplVitalSignsObservationBodyMassIndexFormula</a>
+            </td>
+            <td>
+<p>Value set for DIPS Body Mass Index Formula Measurment methods</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoImplVitalSignsObservationHeartRateMeasurementMethod.html"
+                  title="ValueSet/NoImplVitalSignsObservationHeartRateMeasurementMethod">NoImplVitalSignsObservationHeartRateMeasurementMethod</a>
+            </td>
+            <td>
+<p>Codes representing measurement method for heart rate</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoImplVitalSignsObservationPulseBodySite.html"
+                  title="ValueSet/NoImplVitalSignsObservationPulseBodySite">NoImplVitalSignsObservationPulseBodySite</a>
+            </td>
+            <td>
+<p>Codes representing Body site for Pulse</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoImplVitalSignsObservationPulseMeasurementMethod.html"
+                  title="ValueSet/NoImplVitalSignsObservationPulseMeasurementMethod">NoImplVitalSignsObservationPulseMeasurementMethod</a>
+            </td>
+            <td>
+<p>Codes representing measurement method for heart rate</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NprLevelOfCare.html" title="ValueSet/NprLevelOfCare">NprLevelOfCare</a>
+            </td>
+            <td>
+<p>Have volven codesystems and rest of the namesystem</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-OrganizationAccessTypes.html"
+                  title="ValueSet/OrganizationAccessTypes">OrganizationAccessTypes</a>
+            </td>
+            <td>
+<p>Value Sets of AccessTypes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-OrganizationTypes.html"
+                  title="ValueSet/OrganizationTypes">OrganizationTypes</a>
+            </td>
+            <td>
+<p>Value Sets of OrganizationTypes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoImplVitalSignsObservationConsciousness.html"
+                  title="ValueSet/NoImplVitalSignsObservationConsciousness">SNOMED CT Consciousness Structures</a>
+            </td>
+            <td>
+<p>Codes representing consciousness</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-approvalType.html" title="ValueSet/approvalType">approvalType</a>
+            </td>
+            <td>
+<p>approvalType</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-healthPersonnelSpecialization.html"
+                  title="ValueSet/healthPersonnelSpecialization">healthPersonnelSpecialization</a>
+            </td>
+            <td>
+<p>Have volven codesystems and rest of the namesystem</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-languageid.html" title="ValueSet/languageid">languageid</a>
+            </td>
+            <td>
+<p>Valesets of languageid</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-relatedperson-relationshiptype.html"
+                  title="ValueSet/relatedperson-relationshiptype">relatedperson-relationshiptype</a>
+            </td>
+            <td>
+<p>Valesets of Guardian</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="7"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-DIPSLocation.html" title="CodeSystem/DIPSLocation">DIPSLocation</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-DIPSLocationTopLevel.html"
+                  title="CodeSystem/DIPSLocationTopLevel">DIPSLocationTopLevel</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-DIPSVitalSignsObservationPrePostduktal.html"
+                  title="CodeSystem/DIPSVitalSignsObservationPrePostduktal">DIPSVitalSignsObservationPrePostduktal</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-NoImplBodyMassIndexMeasurementMethod.html"
+                  title="CodeSystem/NoImplBodyMassIndexMeasurementMethod">NoImplBodyMassIndexMeasurementMethod</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-NoImplMeasurementMethod.html"
+                  title="CodeSystem/NoImplMeasurementMethod">NoImplMeasurementMethod</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-NoImplQSOFAcomponentCodes.html"
+                  title="CodeSystem/NoImplQSOFAcomponentCodes">NoImplQSOFAcomponentCodes</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-NoImplVitalSignsObservationConsciousness.html"
+                  title="CodeSystem/NoImplVitalSignsObservationConsciousness">NoImplVitalSignsObservationConsciousness</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="8"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-agy100247.html" title="Encounter/agy100247">100247</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-agy1000245.html" title="Encounter/agy1000245">Encounter details of agy1000245</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-agy1002679.html" title="Encounter/agy1002679">Encounter details of agy1002679</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="HealthcareService-HealthcareService-1.html"
+                  title="HealthcareService/HealthcareService-1">HealthcareService-1</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="HealthcareService-HealthcareService-Emergency-Room.html"
+                  title="HealthcareService/HealthcareService-Emergency-Room">HealthcareService-Emergency-Room</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-aea1000021.html" title="Location/aea1000021">Location details of aea1000021</a>
+            </td>
+            <td>
+<p>Location details of aea1000021</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-afm1.html" title="Location/afm1">Location details of afm8</a>
+            </td>
+            <td>
+<p>Location details of afm8</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-ahl25.html" title="Location/ahl25">Location details of ahl25</a>
+            </td>
+            <td>
+<p>Location details of ahl25</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-stf2007723.html" title="Practitioner/stf2007723">Location details of stf2007723</a>
+            </td>
+            <td>
+<p>Location details of stf2007723</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-Location-Bed-aie1000048.html"
+                  title="Location/Location-Bed-aie1000048">Location-Bed-aie1000048</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-Location-Team-aew1000027.html"
+                  title="Location/Location-Team-aew1000027">Location-Team-aew1000027</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-Location-Ward-ahl1000139.html"
+                  title="Location/Location-Ward-ahl1000139">Location-Ward-ahl1000139</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-afa1000061.html" title="Organization/afa1000061">Organization details of afa1000061</a>
+            </td>
+            <td>
+<p>Organization details of afa1000061</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-afa22.html" title="Organization/afa22">Organization details of afa22</a>
+            </td>
+            <td>
+<p>Organization details of afa22</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-ahl1000057.html" title="Organization/ahl1000057">Organization details of ahl1000057</a>
+            </td>
+            <td>
+<p>Organization details of ahl1000057</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-aks1.html" title="Organization/aks1">Organization details of aks1</a>
+            </td>
+            <td>
+<p>Organization details of aks1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-aks1000004.html" title="Organization/aks1000004">Organization details of aks1000004</a>
+            </td>
+            <td>
+<p>Organization details of aks1000004</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-aks1000174.html" title="Organization/aks1000174">Organization details of aks1000174</a>
+            </td>
+            <td>
+<p>Organization details of aks1000174</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-Organization-aks1.html"
+                  title="Organization/Organization-aks1">Organization-aks1</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-Organizationaks2.html"
+                  title="Organization/Organizationaks2">Organizationaks2</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-cdp1000063.html" title="Patient/cdp1000063">Patient details of cdp1000063</a>
+            </td>
+            <td>
+<p>Patient details of cdp1000063</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-cdp1000239.html" title="Patient/cdp1000239">Patient details of cdp1000239</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-cdp1000807.html" title="Patient/cdp1000807">Patient details of cdp1000807</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-cdp2007860.html" title="Patient/cdp2007860">Patient details of cdp2007860</a>
+            </td>
+            <td>
+<p>Patient details of cdp2007860</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-cdp2009597.html" title="Patient/cdp2009597">Patient details of cdp2009597</a>
+            </td>
+            <td>
+<p>Patient details of cdp2009597</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-agb103.html" title="PractitionerRole/agb103">Practioner details of agb103</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-Practitioner-stf39.html"
+                  title="Practitioner/Practitioner-stf39">Practitioner-stf39</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-agb1000043.html"
+                  title="PractitionerRole/agb1000043">PractitionerRole details of agb1000043</a>
+            </td>
+            <td>
+<p>PractitionerRole details of agb1000043</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-agb1000456.html"
+                  title="PractitionerRole/agb1000456">PractitionerRole details of agb1000456</a>
+            </td>
+            <td>
+<p>PractitionerRole details of agb1000456</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-agb27.html" title="PractitionerRole/agb27">PractitionerRole details of agb27</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-agb57.html" title="PractitionerRole/agb57">PractitionerRole details of agb57</a>
+            </td>
+            <td>
+<p>PractitionerRole details of agb57</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-agb59.html" title="PractitionerRole/agb59">PractitionerRole details of agb59</a>
+            </td>
+            <td>
+<p>PractitionerRole details of agb59</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-PractitionerRole-Physiotherapist.html"
+                  title="PractitionerRole/PractitionerRole-Physiotherapist">PractitionerRole-Physiotherapist</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-PractitionerRole-agb1000203.html"
+                  title="PractitionerRole/PractitionerRole-agb1000203">PractitionerRole-agb1000203</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-agb1000204.html"
+                  title="PractitionerRole/agb1000204">agb1000204</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-agb42.html" title="PractitionerRole/agb42">agb42</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-agb61.html" title="PractitionerRole/agb61">agb61</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-agc1002251.html" title="ServiceRequest/agc1002251">agc1002251</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-agc48.html" title="ServiceRequest/agc48">agc48</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-agy1002135.html" title="Encounter/agy1002135">agy1002135</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-agy27.html" title="Encounter/agy27">agy27</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Appointment-ahi1004667.html" title="Appointment/ahi1004667">ahi1004667</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Appointment-ahi38.html" title="Appointment/ahi38">ahi38</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-ahl21.html" title="Location/ahl21">ahl21</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-aie1000000.html" title="Location/aie1000000">aie1000000</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-aie1000050.html" title="Location/aie1000050">aie1000050</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-ain1000001.html" title="RelatedPerson/ain1000001">ain1000001</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-ain1000003.html" title="RelatedPerson/ain1000003">ain1000003</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Person-ajf1000001.html" title="Person/ajf1000001">ajf1000001</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Person-ajf242.html" title="Person/ajf242">ajf242</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DocumentReference-ako1041394.html"
+                  title="DocumentReference/ako1041394">ako1041394</a>
+            </td>
+            <td>
+<p>DocumentReference</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DocumentReference-ako124.html" title="DocumentReference/ako124">ako124</a>
+            </td>
+            <td>
+<p>DocumentReference</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-aoz1000067cdp1000063.html"
+                  title="RelatedPerson/aoz1000067cdp1000063">aoz1000067cdp1000063</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-aoz2007976cdp2009597.html"
+                  title="RelatedPerson/aoz2007976cdp2009597">aoz2007976cdp2009597</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-cdp1000001.html" title="Patient/cdp1000001">cdp1000001</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-cdp1000007.html" title="Patient/cdp1000007">cdp1000007</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-cdp138.html" title="Patient/cdp138">cdp138</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-cdp2007964.html" title="Patient/cdp2007964">cdp2007964</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-cdp2008844.html" title="Patient/cdp2008844">cdp2008844</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 20, 2026 12:37+0530">2026-08-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

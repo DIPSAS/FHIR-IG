@@ -1,0 +1,50 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "DIPSLocationTopLevel",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DIPSLocationTopLevel</b></p><a name=\"DIPSLocationTopLevel\"> </a><a name=\"hcDIPSLocationTopLevel\"> </a><p>This  code system <code>http://dips.no/fhir/R4/CodeSystem/DIPSLocationTopLevel</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">L<a name=\"DIPSLocationTopLevel-L\"> </a></td><td>Location</td></tr><tr><td style=\"white-space:nowrap\">T<a name=\"DIPSLocationTopLevel-T\"> </a></td><td>Team</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"DIPSLocationTopLevel-B\"> </a></td><td>Bed</td></tr><tr><td style=\"white-space:nowrap\">08<a name=\"DIPSLocationTopLevel-08\"> </a></td><td>Post</td></tr></table></div>"
+  },
+  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSLocationTopLevel",
+  "identifier" : [{
+    "system" : "http://dips.no/fhir/R4/ValueSet/locationtoplevel"
+  }],
+  "version" : "0.1.0",
+  "name" : "DIPSLocationTopLevel",
+  "status" : "draft",
+  "date" : "2026-08-20T12:37:22+05:30",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "Lars-Andreas Nystad",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "mailto:lan@dips.no",
+      "use" : "work"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "L",
+    "display" : "Location"
+  },
+  {
+    "code" : "T",
+    "display" : "Team"
+  },
+  {
+    "code" : "B",
+    "display" : "Bed"
+  },
+  {
+    "code" : "08",
+    "display" : "Post"
+  }]
+}

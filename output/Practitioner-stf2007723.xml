@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="stf2007723"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner stf2007723</b></p><a name="stf2007723"> </a><a name="hcstf2007723"> </a><p><b>identifier</b>: HelsepersonellregisteretNummer/1215</p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.578.1.12.4.1.4.4"/>
+    <value value="1215"/>
+  </identifier>
+</Practitioner>

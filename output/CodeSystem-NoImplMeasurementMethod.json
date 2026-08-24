@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "NoImplMeasurementMethod",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem NoImplMeasurementMethod</b></p><a name=\"NoImplMeasurementMethod\"> </a><a name=\"hcNoImplMeasurementMethod\"> </a><p>This  code system <code>http://dips.no/fhir/R4/CodeSystem/NoImplMeasurementMethod</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">An<a name=\"NoImplMeasurementMethod-An\"> </a></td><td>Automatisk, non-invasivt</td><td>Automatisk, non-invasivt</td></tr><tr><td style=\"white-space:nowrap\">Ai<a name=\"NoImplMeasurementMethod-Ai\"> </a></td><td>Automatisk, invasivt</td><td>Automatisk, invasivt</td></tr></table></div>"
+  },
+  "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplMeasurementMethod",
+  "identifier" : [{
+    "system" : "http://dips.no/fhir/namingsystem/NoImpl-measurementmethod"
+  }],
+  "version" : "0.1.0",
+  "name" : "NoImplMeasurementMethod",
+  "status" : "draft",
+  "date" : "2026-08-20T12:37:22+05:30",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "Lars-Andreas Nystad",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "mailto:lan@dips.no",
+      "use" : "work"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "An",
+    "display" : "Automatisk, non-invasivt",
+    "definition" : "Automatisk, non-invasivt"
+  },
+  {
+    "code" : "Ai",
+    "display" : "Automatisk, invasivt",
+    "definition" : "Automatisk, invasivt"
+  }]
+}

@@ -1,0 +1,12 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "stf2007723",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner stf2007723</b></p><a name=\"stf2007723\"> </a><a name=\"hcstf2007723\"> </a><p><b>identifier</b>: HelsepersonellregisteretNummer/1215</p></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:oid:2.16.578.1.12.4.1.4.4",
+    "value" : "1215"
+  }]
+}

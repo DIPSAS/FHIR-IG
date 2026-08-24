@@ -1,0 +1,4219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Documentation - DIPS Core Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
+    <style>
+        /* Visual continuity with the developer.dips.no GitBook portal this IG is linked from.
+           TODO: swap --dips-portal-accent for the portal's real brand color, and confirm the
+           font stack against developer.dips.no's actual theme (see PLACEHOLDER note below). */
+        :root {
+            --dips-portal-accent: #0b3d91; /* PLACEHOLDER - replace with the real developer.dips.no accent color */
+        }
+        body {
+            font-family: -apple-system, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+        }
+        .dips-portal-banner {
+            background: var(--dips-portal-accent);
+            color: #fff;
+            padding: 8px 20px;
+            font-size: 14px;
+        }
+        .dips-portal-banner a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .dips-portal-banner a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+            <div class="dips-portal-banner">
+                <a href="https://developer.dips.no/9fvgRTzUE0KCH4ohQuiM/api/fhir-r4/README.md">&larr; Back to DIPS Developer Portal</a>
+            </div>
+
+            
+<div id="family-nav">
+	<a id="logo" no-external="true" href="http://hl7.org/fhir"> <img
+		alt="logo fhir" height="50" src="assets/images/fhir-logo-www.png" />
+	</a>
+</div>
+
+
+            
+<div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="https://github.com/HL7Norway">
+        <img alt="visit the hl7 website" height="60" src="assets/images/logo-dips.png" />
+    </a>            
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">DIPS Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  Norway
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="toc.html">TOC</a>
+  </li>
+  <li>
+    <a href="changes.html">Change Log</a>
+  </li>
+  <li>
+    <a href="documentation.html">Documentation</a>
+  </li>
+  <li>
+    <a href="download.html">Download</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Documentation</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">DIPS Core Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/R4/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Documentation</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#authentication" id="markdown-toc-authentication">Authentication</a></li>
+  <li><a href="#fhir-organization" id="markdown-toc-fhir-organization">FHIR Organization</a></li>
+  <li><a href="#fhir-location" id="markdown-toc-fhir-location">FHIR Location</a></li>
+  <li><a href="#fhir-patient" id="markdown-toc-fhir-patient">FHIR Patient</a></li>
+  <li><a href="#profiles" id="markdown-toc-profiles">Profiles</a></li>
+  <li><a href="#fhir-person" id="markdown-toc-fhir-person">FHIR Person</a></li>
+  <li><a href="#fhir-practitioner" id="markdown-toc-fhir-practitioner">FHIR Practitioner</a></li>
+  <li><a href="#fhir-practitionerrole" id="markdown-toc-fhir-practitionerrole">FHIR PractitionerRole</a></li>
+  <li><a href="#fhir-healthcareservice" id="markdown-toc-fhir-healthcareservice">FHIR HealthcareService</a></li>
+  <li><a href="#fhir-related-person" id="markdown-toc-fhir-related-person">FHIR Related Person</a></li>
+  <li><a href="#fhir-valueset-dipsr4valueset" id="markdown-toc-fhir-valueset-dipsr4valueset">FHIR ValueSet (DIPSR4ValueSet)</a></li>
+</ul>
+
+</div>
+<h3 id="introduction">Introduction</h3>
+
+<p>The intended audience for this document is personnel developing integrations to FHIR R4 modules.
+This document contains information about the implemented API and authentication.
+All integration through this resource is subjected to the access control mechanisms in DIPS. This means
+that results of operations reflect the access level of the calling user; e.g. the number of Procedures
+returned will be limited if the calling user is not authorized to view some of DIPS Procedures.</p>
+
+<h3 id="authentication">Authentication</h3>
+
+<p>All communications with FHIR R4 Core are required to be secure at the transport level. In addition,
+every interaction with a FHIR R4 Core application requires a token to identify the caller. The caller must
+be a known user entity in DIPS.</p>
+
+<h4 id="transport-security">Transport Security</h4>
+
+<p>By default, all FHIR R4 Core applications are installed with security requirements. This means that the
+use of SSL is required for communicating with the services. The server is required to provide an SSL
+certificate when negotiating security with clients.
+The use of client certificates is not a required feature of FHIR R4 Core, so any client certificate
+requirement should be considered at each separate deployment. The base URL for all requests is
+where the FHIR R4 server is installed.</p>
+
+<h4 id="security-tokens">Security Tokens</h4>
+
+<p>FHIR R4 Core requires the usage of “security tokens”. To find out which type of security token you are
+required to send, contact the organization you are integrating with. Different methods to add security
+tokens are described in chapter below.</p>
+
+<h5 id="forms-of-security-token">Forms of Security Token</h5>
+
+<p>The security framework in FHIR R4 Core supports TicketHeader and OAuth token schemes, including
+the DIPS authentication ticket (AKA “ticket”) and federated security, using an OAuth 2.0 Bearer token.
+Failure to provide a security token, regardless of the mechanism used by FHIR R4 Core, will result in a
+failed request. The HTTP response status will be HTTP 401 “Unauthorized”. Details on failed
+authentication and authorization can also be found for each resource.</p>
+
+<h5 id="dips-ticket">DIPS Ticket</h5>
+
+<p>This security token is the security token generated by the DIPS core system when a user is
+authenticated. The token is passed along with each call.
+The ticket can be attached to the call in the following ways:</p>
+
+<ul>
+  <li>As a custom HTTP header</li>
+  <li>In the standard HTTP “Authorization” header</li>
+</ul>
+
+<h6 id="ticket-in-a-custom-http-header">Ticket in a Custom HTTP Header</h6>
+
+<p>The ticket is sent in a custom HTTP header called “Auth-Ticket”:</p>
+
+<p><code class="language-plaintext highlighter-rouge">POST https://localhost/DIPS-WebAPI/HL7/FHIR-R4/&lt;resource&gt; HTTP/1.1 
+Accept-Encoding: gzip,deflate
+Auth-Ticket: E73CA55A-F8C7-4D81-8F55-A2C6FBD88C62</code></p>
+
+<h6 id="ticket-in-an-http-authorize-header">Ticket in an HTTP Authorize Header</h6>
+
+<p>The ticket is sent in the standard HTTP Authorization header, with a scheme named “Auth-Ticket”</p>
+
+<p><code class="language-plaintext highlighter-rouge">POST https://localhost/DIPS-WebAPI/HL7/FHIR-R4/&lt;resource&gt; HTTP/1.1
+Authorization: Auth-Ticket E73CA55A-F8C7-4D81-8F55-A2C6FBD88C62</code></p>
+
+<h5 id="federated-security-with-oauth-20-bearer-token">Federated Security with OAuth 2.0 Bearer Token</h5>
+
+<p>Federated security in FHIR R4 Core requires Bearer tokens obtained from an OAuth 2.0 enabled
+authorization server if federated security is enabled.</p>
+
+<p>See the section "Enable Federated Security" below for information about enabling federated security.</p>
+
+<p>For a detailed description of federated security in FHIR R4 Core, please see the Administrator’s Guide.</p>
+
+<p>A detailed description of OAuth 2.0 can be found here: https://tools.ietf.org/html/rfc6749</p>
+
+<p>A detailed description of the Bearer Token usage can be found here: https://tools.ietf.org/html/rfc6750</p>
+
+<p>A request for a FHIR resource using the Bearer token will use the standard HTTP Authorization header,
+but with the scheme Bearer:</p>
+
+<p><code class="language-plaintext highlighter-rouge">POST https://localhost/DIPS-WebAPI/HL7/FHIR-R4/&lt;resource&gt; HTTP/1.1
+Authorization: Bearer
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYW
+RtaW4iOnRydWV9.TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ</code></p>
+
+<p>The Bearer token must be a Base64-encoded JSON Web Token (JWT). For detailed info about the JWT,
+please see here:( https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-32)</p>
+
+<p><code class="language-plaintext highlighter-rouge">When federated security is enabled, all other forms of authentication will be
+disabled</code></p>
+
+<h4 id="http-status-codes">HTTP Status Codes</h4>
+
+<p>The service will respond with HTTP status codes which describe the result of the call to the service:</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Code</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OK</td>
+      <td>200</td>
+      <td>The request succeeded.</td>
+    </tr>
+    <tr>
+      <td>Bad Request</td>
+      <td>400</td>
+      <td>Invalid Request.</td>
+    </tr>
+    <tr>
+      <td>Unauthorized</td>
+      <td>401</td>
+      <td>The caller is not authorized to access the resource.</td>
+    </tr>
+    <tr>
+      <td>NotFound</td>
+      <td>404</td>
+      <td>Data not in the database.</td>
+    </tr>
+    <tr>
+      <td>Unprocessable Entity</td>
+      <td>422</td>
+      <td>The request contained values which were not accepted, or missing required properties.</td>
+    </tr>
+    <tr>
+      <td>Unprocessable Entity</td>
+      <td>500</td>
+      <td>A validation error or an unknown error occurred while processing the request.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="fhir-organization">FHIR Organization</h3>
+
+<p>FHIR Organization is a shared registry of contact and other information for various organizations. It can
+be used as a support for other resources that need to reference organizations, perhaps as a document,
+message or as a contained resource.</p>
+
+<p>The service implements the following FHIR resources in conformance with FHIR R4.</p>
+
+<ul>
+  <li>Organization (profile DIPSOrganization and NoBasisOrganization)
+This document describes how to call the FHIR service, and how values are mapped to DIPS.
+The base URL for all requests is where the FHIR R4 server is installed.</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">https://{server}/DIPS-WebAPI/HL7/FHIR-R4/organization/</code></p>
+
+<h4 id="organization-resource">Organization Resource</h4>
+
+<p>The Organization resource may be used in a shared registry of contact and other information for
+various organizations. It can be used as a support for other resources that need to reference
+organizations.</p>
+
+<p>It implements the DIPSOrganization profile with the following interactions:</p>
+
+<ul>
+  <li>Search</li>
+  <li>Read</li>
+</ul>
+
+<p>The following organizational units are included in the Organization:</p>
+
+<ul>
+  <li>Organization internal</li>
+  <li>Organization external</li>
+  <li>Section</li>
+  <li>Department</li>
+  <li>Hospital</li>
+  <li>Ward</li>
+  <li>Location</li>
+</ul>
+
+<p>To represent the whole organization hierarchy, partOf on a Organization resource is pointing to its
+parent in the hierarchy:</p>
+
+<ul>
+  <li>Department → Hospital</li>
+  <li>Section → Hospital</li>
+  <li>Ward → Hospital</li>
+  <li>Hospital → Organization</li>
+  <li>Organization → Organization</li>
+</ul>
+
+<h5 id="access-control">Access control</h5>
+
+<p>Access is checked for the DIPS user in the provided ticket or the config file (depending on the
+authorization method used). Only the records that the user has access to are returned.</p>
+
+<h5 id="authorization">Authorization</h5>
+
+<p>These codes must be used in security attributes returned in each resource entity:</p>
+
+<p>P=Permit</p>
+
+<p>D=Deny</p>
+
+<p>U=Unknown</p>
+
+<p>A=ALL</p>
+
+<p>Example requests</p>
+
+<p><code class="language-plaintext highlighter-rouge">_security=http://dips.no/fhir/ValueSet/v1-OrgAccess|PERMIT</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">_security=http://dips.no/fhir/ValueSet/v1-OrgAccess|DENY</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">_security=http://dips.no/fhir/ValueSet/v1-OrgAccess|ALL</code></p>
+
+<p>This code must be returned in every resource returned in the field: Organization.meta.security</p>
+
+<h5 id="request-search">Request: Search</h5>
+
+<p>Search for an organization by organization ID, ReshID, name, business registration number, part of,
+StdNumber and type.</p>
+
+<p>Request format</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../Organization?&lt;parameters&gt;</code></p>
+
+<p>Table 1. Parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>_id</td>
+      <td>Search for an organization by given logical ID</td>
+    </tr>
+    <tr>
+      <td>identifier</td>
+      <td>Supports search for RESH ID, Organization ID and Standard department number</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>Search by phrase, contains at the beginning of the organization name</td>
+    </tr>
+    <tr>
+      <td>name:contains</td>
+      <td>Returns results that include the supplied parameter value anywhere within the field being searched</td>
+    </tr>
+    <tr>
+      <td>name:exact</td>
+      <td>Returns results that match the entire supplied parameter, including casing and accents</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>Search for organization by type</td>
+    </tr>
+    <tr>
+      <td>partOf</td>
+      <td>Returns organizations that are part of the given organization</td>
+    </tr>
+    <tr>
+      <td>_security</td>
+      <td>Search parameter for an organization’s authorization</td>
+    </tr>
+    <tr>
+      <td>_pretty</td>
+      <td>Format the case of the response strings. Available statuses are true and false</td>
+    </tr>
+    <tr>
+      <td>_summary</td>
+      <td>Change the content of the response. Available stauses are true, false, data, text and count</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Valid coding systems for search with "identifier"</p>
+
+<p>Table 2. Valid OIDs and identifiers</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>OID/System</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>urn:oid:1.3.6.1.4.1.9038.70.1</td>
+      <td>Organization ID</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>urn:oid:1.3.6.1.4.1.9038.70.2</td>
+      <td>Hospital ID</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>urn:oid:1.3.6.1.4.1.9038.70.3</td>
+      <td>Department ID</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>urn:oid:1.3.6.1.4.1.9038.70.4</td>
+      <td>Ward ID</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>urn:oid:1.3.6.1.4.1.9038.70.5</td>
+      <td>Section ID</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>urn:oid:1.3.6.1.4.1.9038.70.6</td>
+      <td>Location ID</td>
+      <td>1000021</td>
+    </tr>
+    <tr>
+      <td>urn:oid:2.16.578.1.12.4.1.4.101</td>
+      <td>Business registration number</td>
+      <td>000000000</td>
+    </tr>
+    <tr>
+      <td>urn:oid:2.16.578.1.12.4.1.4.102</td>
+      <td>RESH-ID</td>
+      <td>10013</td>
+    </tr>
+    <tr>
+      <td>http://dips.no/fhir/namingsystem/dipsdepartmentshortname</td>
+      <td>Department short name</td>
+      <td>KIR</td>
+    </tr>
+    <tr>
+      <td>http://dips.no/fhir/namingsystem/dipswardshortname</td>
+      <td>Ward short name</td>
+      <td>K1</td>
+    </tr>
+    <tr>
+      <td>http://dips.no/fhir/namingsystem/dipssectionshortname</td>
+      <td>Section short name</td>
+      <td>URO</td>
+    </tr>
+    <tr>
+      <td>http://dips.no/fhir/namingsystem/dipslocationshortname</td>
+      <td>Location short name</td>
+      <td>TDBYGGA</td>
+    </tr>
+    <tr>
+      <td>http://dips.no/fhir/namingsystem/dipsstandardnumber</td>
+      <td>Standard number</td>
+      <td>70008</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="organization-search-with-query-by-authorizedorgunits">Organization search with query by AuthorizedOrgUnits</h4>
+
+<p>Use the AuthorizedOrgUnits query to search for organizations by userroleid to get authorized
+organizations.</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../Organization?_query=AuthorizedOrgUnits&amp;userroleid={user role ID}</code></p>
+
+<p>Table 3. Parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>userroleid</td>
+      <td>Search organizations by user role id</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Includes</p>
+<ul>
+  <li>_include=Organization:partof - The organization of which this organization forms a part</li>
+</ul>
+
+<p>Example requests</p>
+
+<p>Search for organizations with organization ID aks1000090:</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../Organization?_id=aks1000090</code></p>
+
+<p>Search for organizations with organization ID 1000090:</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../Organization?identifier=urn:oid:1.3.6.1.4.1.9038.70.1|1000090</code></p>
+
+<p>Search for organizations with organization number (business registration number) 883974832:</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../Organization?identifier=urn:oid:2.16.578.1.12.4.1.4.101|883974832</code></p>
+
+<p>Search for organizations with Resh ID 5004:</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../Organization?identifier=urn:oid:2.16.578.1.12.4.1.4.102|5004</code></p>
+
+<p>Search for organizations with standardnumber 8180:</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../Organization?identifier=http://dips.no/fhir/namingsystem/dips-standardnumber|8180</code></p>
+
+<p>Search for organizations with short name Med Kn:</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../Organization?identifier=http://dips.no/fhir/namingsystem/dips-departmentshortname|Med Kn</code></p>
+
+<p>Search for organizations where name starts with ABC:</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../Organization?name=ABC</code></p>
+
+<p>Search for organizations with organization name containing the string HF in any place:</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../Organization?name:contains=HF</code></p>
+
+<p>Search for organizations with exact name Testsykehuset HF</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../Organization?name:exact=Testsykehuset FH</code></p>
+
+<p>Search for organizations with organization type urn:oid:2.16.578.1.12.4.1.1.8628|1 and organization
+name contains "HF:</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../Organization?type=urn:oid:2.16.578.1.12.4.1.1.8628|1&amp;name:contains=HF</code></p>
+
+<p>Search for organizations which are part of the aks1000176 organization :</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../Organization?partof=Organization/aks1000176</code></p>
+
+<p>Search for organizations with organization identifier and pretty enabled:</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../Organization?identifier=urn:oid:2.16.578.1.12.4.1.4.101|883974832&amp;_pretty=true</code></p>
+
+<p>Search for organizations with organization identifier and summary=data:</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../Organization?identifier=urn:oid:2.16.578.1.12.4.1.4.101|883974832&amp;_summary=data</code></p>
+
+<h3 id="fhir-location">FHIR Location</h3>
+
+<p>FHIR Location includes both incidental locations (a place which is used for healthcare without prior
+designation or authorization) and dedicated, formally appointed locations. Locations may be private,
+public, mobile or fixed and scale from small freezers to full hospital buildings or parking garages. The
+Location resource represents location, team and bed in DIPS.</p>
+
+<p>The service implements the following FHIR resources in conformance with FHIR R4.</p>
+
+<ul>
+  <li>Location (profile DIPSLocation and NoBasisLocation)</li>
+</ul>
+
+<p>This document describes how to call the FHIR service, and how values are mapped to DIPS.</p>
+
+<p>The base URL for all requests is where the FHIR R4 server is installed.</p>
+
+<p><code class="language-plaintext highlighter-rouge">https://{server}/DIPS-WebAPI/HL7/FHIR-R4/Location/&lt;id&gt;</code></p>
+
+<h4 id="location-resource">Location Resource</h4>
+
+<p>The location resource implements the DIPSLocation profile with these interactions. It can represent a
+bed, ward, or location in DIPS.</p>
+
+<ul>
+  <li>Search</li>
+  <li>Read</li>
+</ul>
+
+<p>The following organizational units are included in Location:</p>
+
+<ul>
+  <li>Location</li>
+  <li>Team</li>
+  <li>Bed</li>
+  <li>Ward</li>
+</ul>
+
+<h5 id="access-control-1">Access control</h5>
+
+<p>Access is checked for the DIPS user in the provided ticket or the config file (depending on the
+authorization method used). Only records the user has access to are returned.</p>
+
+<h5 id="authorization-1">Authorization</h5>
+
+<p>These codes must be used in security attributes returned in each resource entity.</p>
+
+<ul>
+  <li>P=Permit</li>
+  <li>D=Deny</li>
+  <li>U=Unknown</li>
+  <li>A=ALL</li>
+</ul>
+
+<p>Example requests</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>_security=http://dips.no/fhir/ValueSet/v1-OrgAccess</td>
+      <td>PERMIT</td>
+    </tr>
+    <tr>
+      <td>_security=http://dips.no/fhir/ValueSet/v1-OrgAccess</td>
+      <td>DENY</td>
+    </tr>
+    <tr>
+      <td>_security=http://dips.no/fhir/ValueSet/v1-OrgAccess</td>
+      <td>ALL</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This code must be returned in every resource returned in the field:
+Organization.meta.security</p>
+
+<h5 id="request-search-1">Request: Search</h5>
+
+<p>Search for a location by location ID, ReshID, name, part of, StdNumber and type.</p>
+
+<p>Request format</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../Location?&lt;parameters&gt;</code></p>
+
+<p>Table 4. Parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>_id</td>
+      <td>Search for an location by given logical ID</td>
+    </tr>
+    <tr>
+      <td>identifier</td>
+      <td>Supports search RESH ID, short name and standard location number</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>Search by phrase, contains at the beginning of the location name</td>
+    </tr>
+    <tr>
+      <td>name:contains</td>
+      <td>Returns results that include the supplied parameter value anywhere within the field being searched</td>
+    </tr>
+    <tr>
+      <td>name:exact</td>
+      <td>Returns results that match the entire supplied parameter, including casing and accents</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>Search by location by type</td>
+    </tr>
+    <tr>
+      <td>organization</td>
+      <td>The organization responsible for the provisioning and upkeep of the location</td>
+    </tr>
+    <tr>
+      <td>_pretty</td>
+      <td>Format the case of the response strings. Available statuses are true and false</td>
+    </tr>
+    <tr>
+      <td>_summary</td>
+      <td>Change the content of the response. Available statuses are: true, false, data, text and count</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Includes</p>
+
+<p>• _include=Location:organization - The organization of which this location forms a part</p>
+
+<p>Valid coding systems for search with "identifier"</p>
+
+<p>Table 5. Valid OIDs and identifiers</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>OID/System</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>http://dips.no/fhir/namingsystem/dipslocationshortname</td>
+      <td>Location short name</td>
+      <td>TDBYGGA</td>
+    </tr>
+    <tr>
+      <td>http://dips.no/fhir/namingsystem/dipswardshortname</td>
+      <td>Ward short name</td>
+      <td>K1</td>
+    </tr>
+    <tr>
+      <td>urn:oid:1.3.6.1.4.1.9038.70.6</td>
+      <td>Location ID</td>
+      <td>1000159</td>
+    </tr>
+    <tr>
+      <td>urn:oid:1.3.6.1.4.1.9038.70.4</td>
+      <td>Ward ID</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>http://dips.no/fhir/namingsystem/dips-bedid</td>
+      <td>Bed ID</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>http://dips.no/fhir/namingsystem/dips-teamid</td>
+      <td>Team ID</td>
+      <td>86</td>
+    </tr>
+    <tr>
+      <td>http://dips.no/fhir/namingsystem/dipsstandardlocationnumber</td>
+      <td>Standard location number</td>
+      <td>70002</td>
+    </tr>
+    <tr>
+      <td>urn:oid:2.16.578.1.12.4.1.4.102</td>
+      <td>RESH-ID</td>
+      <td>70001</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example requests</p>
+
+<p>Search locations with location ID "aea1000148":
+<code class="language-plaintext highlighter-rouge">GET .../Location?_id=aea1000148</code></p>
+
+<p>Search locations with location ID "1000148":
+<code class="language-plaintext highlighter-rouge">GET .../Location?identifier=urn:oid:1.3.6.1.4.1.9038.70.6|1000148</code></p>
+
+<p>Search location with short name "habygga":
+<code class="language-plaintext highlighter-rouge">GET .../Location?identifier=http://dips.no/fhir/namingsystem/dips-locationshortname|habygga</code></p>
+
+<p>Search locations with Resh ID "10003":
+<code class="language-plaintext highlighter-rouge">GET .../Location?identifier=Location?identifier=urn:oid:2.16.578.1.12.4.1.4.102|10003</code></p>
+
+<p>Search locations with standard location number "70003":
+<code class="language-plaintext highlighter-rouge">GET ...Location?identifier=http://dips.no/fhir/namingsystem/dips-standardlocationnumber|70003</code></p>
+
+<p>Search locations where name starts with "ABC":
+<code class="language-plaintext highlighter-rouge">GET .../Location?name=ABC</code></p>
+
+<p>Search locations where name contains "medisinsk"
+<code class="language-plaintext highlighter-rouge">GET .../Location?name:contains=medisinsk</code></p>
+
+<p>Search locations where exact name is "Medisinsk Pol 1H"
+<code class="language-plaintext highlighter-rouge">GET .../Location?name:exact=Medisinsk Pol 1H</code></p>
+
+<p>Search locations by location type
+<code class="language-plaintext highlighter-rouge">GET ...Location?type=http://dips.no/fhir/namingsystem/dips-locationtype|Ventelistested</code></p>
+
+<p>Search location where name contains "medisinsk", with pretty enabled:
+<code class="language-plaintext highlighter-rouge">GET .../Location?name:contains=medisinsk&amp;_pretty=true</code></p>
+
+<p>Search location where exact name is "Medisinsk Pol 1H" and summary=data:
+<code class="language-plaintext highlighter-rouge">GET .../Location?name:exact=Medisinsk Pol 1H&amp;_summary=data</code></p>
+
+<p>Read location by ward ID "ahl1000139":
+<code class="language-plaintext highlighter-rouge">GET .../Location/ahl1000139</code></p>
+
+<p>Search for locations by ward ID "ahl1000139":
+<code class="language-plaintext highlighter-rouge">GET .../Location?_id=ahl1000139</code></p>
+
+<p>Search locations by ward identifier "1000139":
+<code class="language-plaintext highlighter-rouge">GET .../Location?identifier=urn:oid:1.3.6.1.4.1.9038.70.4|1000139</code></p>
+
+<p>Search location with short ward name "IN IT":
+<code class="language-plaintext highlighter-rouge">GET .../Location?identifier=http://dips.no/fhir/namingsystem/dips-wardshortname|IN IT</code></p>
+
+<p>Search location with ward name "Ikke ":
+<code class="language-plaintext highlighter-rouge">GET .../Location?name=Ikke</code></p>
+
+<p>Search locations with standard ward number "1010":
+<code class="language-plaintext highlighter-rouge">GET ...Location?identifier=http://dips.no/fhir/namingsystem/dips-standardlocationnumber|1010</code></p>
+
+<p>Search locations by ward type
+<code class="language-plaintext highlighter-rouge">GET ...Location?type=http://dips.no/fhir/namingsystem/dips-wardtype|212779</code></p>
+
+<h3 id="fhir-patient">FHIR Patient</h3>
+
+<p>Table 6. Supported FHIR Operations</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Operation</th>
+      <th>Supported</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Read</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>VRead</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Create</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Update</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>History</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Search</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Delete</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Patch</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Operation</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 7. OIDs used in Patient R4 Resource</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>OID</th>
+      <th>Description</th>
+      <th>Used in</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2.16.578.1.12.4.1.4.1</td>
+      <td>Norwegian National Identity Number</td>
+      <td>Patient.Identifier.System</td>
+    </tr>
+    <tr>
+      <td>2.16.578.1.12.4.1.4.2</td>
+      <td>Norwegian D-number</td>
+      <td>Patient.Identifier.System</td>
+    </tr>
+    <tr>
+      <td>2.16.578.1.12.4.1.4.3</td>
+      <td>Norwegian Common Help Number</td>
+      <td>Patient.Identifier.System</td>
+    </tr>
+    <tr>
+      <td>2.16.578.1.12.4.1.4.4</td>
+      <td>Norwegian Healthcare Practitioner Identificator (HPR)</td>
+      <td>Patient.generalPractitioner.identifier:HPR.system</td>
+    </tr>
+    <tr>
+      <td>1.3.6.1.4.1.9038.51</td>
+      <td>DIPS Requisitioner number</td>
+      <td>Patient.Contact.Extension.ValueCodeableConcept.Coding.System</td>
+    </tr>
+    <tr>
+      <td>2.16.578.1.12.4.1.4.101</td>
+      <td>Organizational number in Brønnøysundregisteret</td>
+      <td>Organization.Identifier.System</td>
+    </tr>
+    <tr>
+      <td>2.16.578.1.12.4.1.2</td>
+      <td>HER identifier by Norsk Helsenett</td>
+      <td>Patient.Contact.Extension.ValueCodeableConcept.Coding.System and Organization.Identifier.System</td>
+    </tr>
+    <tr>
+      <td>2.16.578.1.12.4.1.1.9034</td>
+      <td>Healthcare Practitioner Role to Patient</td>
+      <td>Patient.contact.relationship.coding:HCPFunctionInRelationToPatient.system</td>
+    </tr>
+    <tr>
+      <td>2.16.578.1.12.4.1.2.101</td>
+      <td>Organization ENH Identifier</td>
+      <td>Patient.contact.organization.identifier:ENH /Patient.managingOrganization.identifier:ENH.system</td>
+    </tr>
+    <tr>
+      <td>2.16.578.1.12.4.1.2.102</td>
+      <td>Organizational RSH Identifier</td>
+      <td>Patient.contact.organization.identifier:RSH /Patient.managingOrganization.identifier:RSH.system</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="read-operation">Read Operation</h4>
+
+<p>Table 8. OperationInformation</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://{server}/DIPS-WebAPI/HL7/FHIR-R4/Patient/{ID}</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>GET</td>
+    </tr>
+    <tr>
+      <td>Auth-Ticket</td>
+      <td>Valid ticket from database</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json or application/xml</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>Norwegian National Identity Number / Norwegian D-Number / Local temporary Identity</td>
+    </tr>
+    <tr>
+      <td>HTTP response codes</td>
+      <td>200,404,500</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="sample-response">Sample Response</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+   "resourceType":"Patient",
+   "id":"cdp1000811",
+   "meta":{
+      "profile":[
+         "DIPSPatient",
+         "NoBasisPatient"
+      ]
+   },
+   "identifier":[
+      {
+         "use":"official",
+         "system":"urn:oid:2.16.578.1.12.4.1.4.1",
+         "value":"01048900000"
+      },
+      {
+         "system":"http://dips.no/fhir/namingsystem/dips-patientid",
+         "value":"1000811"
+      }
+   ],
+   "active":true,
+   "name":[
+      {
+         "use":"official",
+         "text":"Telokk, Gry",
+         "family":"Telokk",
+         "given":[
+            "Gry"
+         ]
+      }
+   ],
+   "telecom":[
+      {
+         "extension":[
+            {
+               "url":"http://dips.no/fhir/StructureDefinition/R4/DIPSPatientPhoneTypeId",
+               "valueDecimal":268903
+            }
+         ],
+         "system":"phone",
+         "value":"22334455",
+         "use":"home"
+      },
+      {
+         "system":"email",
+         "value":"email@example.com",
+         "use":"home"
+      },
+      {
+         "extension":[
+            {
+               "url":"http://dips.no/fhir/StructureDefinition/R4/DIPSPatientPhoneTypeId",
+               "valueDecimal":268905
+            }
+         ],
+         "system":"phone",
+         "value":"90909090",
+         "use":"mobile"
+      }
+   ],
+   "gender":"female",
+   "birthDate":"1979-05-12",
+   "deceasedBoolean":false,
+   "address":[
+      {
+         "extension":[
+            {
+               "extension":[
+                  {
+                     "url":"http://dips.no/fhir/StructureDefinition/R4/DIPSPatientMunicipality",
+                     "valueCoding":{
+                        "system":"urn:oid:2.16.578.1.12.4.1.1.3402",
+                        "code":"1201",
+                        "display":"Bergen"
+                     }
+                  }
+               ],
+               "url":"http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation"
+            },
+            {
+               "url":"http://dips.no/fhir/StructureDefinition/R4/DIPSPatientStateName",
+               "valueString":"HORDALAND FYLKESKOMMUNE"
+            }
+         ],
+         "use":"home",
+         "line":[
+            "Lungegaardsbakken 13"
+         ],
+         "city":"Bergen",
+         "district":"Bergen",
+         "_district":{
+            "extension":[
+               {
+                  "url":"http://dips.no/fhir/StructureDefinition/R4/DIPSPatientMunicipality",
+                  "valueCoding":{
+                     "system":"urn:oid:2.16.578.1.12.4.1.1.3402",
+                     "code":"1201",
+                     "display":"Bergen"
+                  }
+               }
+            ]
+         },
+         "state":"12",
+         "postalCode":"5020",
+         "country":"Norge"
+      }
+   ],
+   "generalPractitioner":[
+      {
+         "reference":"PractitionerRole/agb1000944"
+      }
+   ]
+}
+</code></pre></div></div>
+
+<h4 id="search-operation">Search Operation</h4>
+
+<p>Table 9. OperationInformation</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td>SEARCH</td>
+      <td>https://{server}/DIPS-WebAPI/HL7/FHIR-R4/Patient?{SearchParameters}</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>GET</td>
+    </tr>
+    <tr>
+      <td>Auth-Ticket</td>
+      <td>Valid ticket from database</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json or application/xml</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>Norwegian National Identity Number / Norwegian D-Number / Local temporary Identity</td>
+    </tr>
+    <tr>
+      <td>HTTP response codes</td>
+      <td>200,404,500</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A successful search will return 200 with a Bundle containing patients matching the search criteria. If
+no patients were found, the service returns 200 and an OperationOutcome containing details
+about the issue. A search without any valid parameters will return 400 with an
+OperationOutcome. Parameters can either be used alone or together. Valid search parameters are
+listed below.</p>
+
+<p>Table 10. SearchParameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Valid values</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>identifier</td>
+      <td>Norwegian National Identity Number / Norwegian D-Number/ Local temporary Identity/Patient Id</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>given</td>
+      <td>String matching Patient.Name.Given</td>
+      <td>/patient?given=Geir</td>
+    </tr>
+    <tr>
+      <td>family</td>
+      <td>String matching Patient.Name.Family</td>
+      <td>/patient?family=Hansen</td>
+    </tr>
+    <tr>
+      <td>birthdate</td>
+      <td>Date formatted as yyyy-MM-dd</td>
+      <td>/patient?birthdate=1993-02-06</td>
+    </tr>
+    <tr>
+      <td>gender</td>
+      <td>"Male", "M", "Female", "F","K" "Other", "?", "Unknown", "U"</td>
+      <td>/patient?gender=F</td>
+    </tr>
+    <tr>
+      <td>deceased</td>
+      <td>true, false, yyyy-MM-dd</td>
+      <td>/patient?deceased=true</td>
+    </tr>
+    <tr>
+      <td>address</td>
+      <td>String matching Patient.Address.Line</td>
+      <td>/patient?address=Morenevegen58</td>
+    </tr>
+    <tr>
+      <td>zip</td>
+      <td>String matching Patient.Address.PostalCode</td>
+      <td>/patient?zip=9027</td>
+    </tr>
+    <tr>
+      <td>district</td>
+      <td>String matching Patient.Address.District</td>
+      <td>/patient?district=Ramfjord</td>
+    </tr>
+    <tr>
+      <td>urban-district</td>
+      <td>String matching the urban district of the patient</td>
+      <td>/patient?urban-district=Sagene</td>
+    </tr>
+    <tr>
+      <td>municipal</td>
+      <td>String matching Patient.Address.State</td>
+      <td>/patient?municipal=Tromsø</td>
+    </tr>
+    <tr>
+      <td>email</td>
+      <td>String matching Patient.Telecom.Value, where System=email</td>
+      <td>/patient?email=email@example.com</td>
+    </tr>
+    <tr>
+      <td>fax</td>
+      <td>String matching Patient.Telecom.Value, where System=fax</td>
+      <td>/patient?fax=12345666</td>
+    </tr>
+    <tr>
+      <td>phone</td>
+      <td>String matching Patient.Telecom.Value, where System=phone</td>
+      <td>/patient?phone=12345455</td>
+    </tr>
+    <tr>
+      <td>_include:Patient:general:practitioner</td>
+      <td> </td>
+      <td>/patient?_include=Patient:Patient:generalpractitioner&amp;_id=urn:oid:2.16.578.1.12.4.1.4.3</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The Identifier can be kept standalone or be prefixed with a Norwegian National Identity Number
+(urn:oid:2.16.578.1.12.4.1.4.1) or Norwegian D-Number
+(urn:oid:2.16.578.1.12.4.1.4.2). String matching for name parameters is case insensitive</p>
+
+<p>If an Identifier is specified, any other search parameters will be ignored.</p>
+
+<p>Table 11. Search modifiers</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Modifier</th>
+      <th>Valid Parameters</th>
+      <th>Behaviour</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>:contains</td>
+      <td>given, family</td>
+      <td>Wild card search for the string supplied</td>
+      <td>/patient?given:contains=Eve</td>
+    </tr>
+    <tr>
+      <td>:exact</td>
+      <td>given, family</td>
+      <td>Any patients with a name that is exactly same as the search string</td>
+      <td>/patient?given:exact=Eve</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Parameter names may specify a modifier as a suffix. Modifiers are separated from the parameter name
+by a colon.</p>
+
+<h4 id="update-contact-information-operation">Update Contact Information Operation</h4>
+
+<p>Contact Information can be updated according to the Social Security Number of a Patient. Upon a
+successful update, this operation returns Patient details with updated contact information in the
+response itself. Supported Contact information details are as follows:</p>
+
+<p>• Mobile Number
+• Email Address
+• Consent</p>
+
+<p> Social Security Number is a mandatory field for updating contact information.</p>
+
+<p>Table 12. OperationInformation</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://{server}/DIPS-WebAPI/HL7/FHIR-R4/patient/$updatecontactinformation</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>POST</td>
+    </tr>
+    <tr>
+      <td>Auth-Ticket</td>
+      <td>Valid ticket from database</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+    <tr>
+      <td>HTTP response codes</td>
+      <td>200,400,500</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="sample-post-request-for-update-email-mobile-number-and-consent-of-a-patient">Sample POST Request for update Email, Mobile Number and Consent of a Patient.</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+   "resourceType":"Parameters",
+   "parameter":[
+      {
+         "name":"OfficialNumber",
+         "valuestring":"14502063562"
+      },
+      {
+         "name":"MobileNumber",
+         "valuestring":"911111111"
+      },
+      {
+         "name":"EmailAddress",
+         "valuestring":"abcd@dips.com"
+      },
+      {
+         "name":"consent",
+         "valuestring":"1"
+      }
+   ]
+}
+</code></pre></div></div>
+
+<h4 id="update-official-number-operation">Update Official Number Operation</h4>
+
+<p>A Patient’s Official Number / Social Security Number can be updated from this operation. In order to
+do so, a new Official Number needs to be provided along with the current Official Number to the
+operation as inputs.</p>
+
+<p>
+Current Official Number’s Identifier must contain a system value describing it as
+either Norwegian National Identity Number (urn:oid:2.16.578.1.12.4.1.4.1) or
+Norwegian D-Number (urn:oid:2.16.578.1.12.4.1.4.2) and a matching value for
+New Official Number.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://{server}/DIPS-WebAPI/HL7/FHIR-R4/patient/$changeOfficialNumber</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>POST</td>
+    </tr>
+    <tr>
+      <td>Auth-Ticket</td>
+      <td>Valid ticket from database</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+    <tr>
+      <td>HTTP response codes</td>
+      <td>200,400,500</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="sample-post-request-for-update-patients-official-number">Sample POST Request for update patients Official Number</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+   "resourceType":"Parameters",
+   "parameter":[
+      {
+         "name":"oldofficialnumber",
+         "valuestring":"19046233533"
+      },
+      {
+         "name":"NewOfficialNumber",
+         "valuestring":"19046243849"
+      }
+   ]
+}
+</code></pre></div></div>
+
+<h4 id="query-ispatient">Query IsPatient</h4>
+
+<p>Custom query IsPatient is used to check if a person is a patient, and can check if the patient has
+documents or referrals. Output values are returned as Parameter resource. IsPatient supports both
+HTTP GET with query parameters and HTTP POST with query parameters as application/x-www-formurlencoded
+form. HTTP POST is the preferred method as national identifier will be logged in Internet
+Information Services logs if HTTP GET is used as query method. See sample request for more
+information.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Datatype</th>
+      <th>Cardinality</th>
+      <th>Direction</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>nationalidentifier</td>
+      <td>string</td>
+      <td>1..1</td>
+      <td>in</td>
+      <td>Norwegian National Identity Number /Norwegian D-Number / Local temporary Identity</td>
+    </tr>
+    <tr>
+      <td>checkfordocuments</td>
+      <td>boolean</td>
+      <td>0..1</td>
+      <td>in</td>
+      <td>If true checks if patient has documents, if false or not in request no check is run</td>
+    </tr>
+    <tr>
+      <td>checkforreferrals</td>
+      <td>boolean</td>
+      <td>0..1</td>
+      <td>in</td>
+      <td>If true checks if patient has referrals, if false or not in request no check is run</td>
+    </tr>
+    <tr>
+      <td>ispatient</td>
+      <td>boolean</td>
+      <td>1..1</td>
+      <td>out</td>
+      <td>Returns true if person is patient, false if person is not patient</td>
+    </tr>
+    <tr>
+      <td>hasdocuments</td>
+      <td>boolean</td>
+      <td>0..1</td>
+      <td>out</td>
+      <td>Returns true if patient has documents, false if no documents. No value if checkfordocuments is false or not in query</td>
+    </tr>
+    <tr>
+      <td>hasreferrals</td>
+      <td>boolean</td>
+      <td>0..1</td>
+      <td>out</td>
+      <td>Returns true if patient has referrals, false if no referrals. No value if checkforreferrals is false or not in query</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="sample-request">Sample request</h4>
+
+<p>Following requests are equal for FHIR-R4</p>
+
+<p>Query with HTTP GET</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET
+.../Patient?_query=IsPatient&amp;nationalidentifier=12497847379&amp;checkfordocuments=true&amp;checkforrefe
+rrals=true</code></p>
+
+<p>Query with HTTP POST</p>
+
+<p><code class="language-plaintext highlighter-rouge">POST .../Patient/_search HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+_query=IsPatient&amp;nationalidentifier=12497847379&amp;checkfordocuments=true&amp;checkforreferrals=true</code></p>
+
+<p>Response</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+   "resourceType":"Parameters",
+   "parameter":[
+      {
+         "name":"ispatient",
+         "valueBoolean":true
+      },
+      {
+         "name":"hasdocuments",
+         "valueBoolean":true
+      },
+      {
+         "name":"hasreferrals",
+         "valueBoolean":true
+      }
+   ]
+}
+</code></pre></div></div>
+
+<h3 id="profiles">Profiles</h3>
+
+<p>Profiles used in this implementation of FHIR Patient R4 Resource are as follows. All profiles will be
+available on the server after installation and on DIPS Customer Portal as an appendix to the
+documentation as well.</p>
+
+<p>Table 13. Profiles</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Use</th>
+      <th>Element</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DIPSPatient</td>
+      <td>Main profile for Patient</td>
+      <td>Patient</td>
+    </tr>
+    <tr>
+      <td>ContactIdentifier</td>
+      <td>Extension used at patient.contact</td>
+      <td>patient.contact.ContactIdentifier</td>
+    </tr>
+    <tr>
+      <td>ContactPractitionerRoleName</td>
+      <td>Extension used at patient.contact</td>
+      <td>patient.contact.ContactPractitionerRoleName</td>
+    </tr>
+    <tr>
+      <td>PatientContactOrganization</td>
+      <td>Profile for contained contact organization</td>
+      <td>patient.contact.organization</td>
+    </tr>
+    <tr>
+      <td>DIPSPatientDeathRegistered</td>
+      <td>Optional Extension</td>
+      <td>patient.extension:deathRegisteredTime</td>
+    </tr>
+    <tr>
+      <td>DipsPatientLanguageId</td>
+      <td>Profile showing the language id of the patient</td>
+      <td>patient.communication.language.coding.extension:LanguageId</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="create-operation">Create Operation</h4>
+
+<p>The create operation (https://www.hl7.org/fhir/http.html#create) creates a new resource at the server.
+The payload is a FHIR Organization resource.</p>
+
+<h4 id="create-request-information-for-patient">Create Request Information for patient</h4>
+
+<p>• Auth-Ticket = Valid ticket from the database
+• Content-Type = application/json
+• Method = POST
+• URL = https://{SERVER}/DIPS-WebAPI/HL7/FHIR-R4/patient</p>
+
+<h5 id="sample-post-request-body-minimal-for-creating-a-patient-by-national-temporary-identifier-hnr">Sample POST Request body (minimal) for creating a patient by National Temporary Identifier (HNR)</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+   "resourceType":"Patient",
+   "identifier":[
+      {
+         "system":"urn:oid:2.16.578.1.12.4.1.4.3",
+         "value":"80434218415"
+      }
+   ],
+   "gender":"male"
+}
+</code></pre></div></div>
+<h5 id="sample-post-request-body-minimal-for-creating-a-patient-by-norwegian-national-identity-number">Sample POST Request body (minimal) for creating a patient by Norwegian National Identity number</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+   "resourceType":"Patient",
+   "identifier":[
+      {
+         "system":"urn:oid:2.16.578.1.12.4.1.4.1",
+         "value":"01048900000 "
+      }
+   ],
+   "active":true,
+   "name":[
+      {
+         "use":"official",
+         "text":"Telokk, Gry",
+         "family":"Telokk",
+         "given":[
+            "Gry"
+         ]
+      }
+   ],
+   "address":[
+      {
+         "extension":[
+            {
+               "extension":[
+                  {
+                     "url":"http://dips.no/fhir/StructureDefinition/R4/DIPSPatientMunicipality",
+                     "valueCoding":{
+                        "system":"urn:oid:2.16.578.1.12.4.1.1.3402",
+                        "code":"1804"
+                     }
+                  }
+               ],
+               "url":"http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation"
+            }
+         ],
+         "use":"home",
+         "postalCode":"6800"
+      }
+   ]
+}
+</code></pre></div></div>
+
+<h5 id="sample-post-request-body-complete">Sample POST Request body (complete)</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+   "resourceType":"Patient",
+   "identifier":[
+      {
+         "system":"urn:oid:2.16.578.1.12.4.1.4.1",
+         "value":"01048900000 "
+      }
+   ],
+   "active":true,
+   "name":[
+      {
+         "use":"official",
+         "text":"Telokk, Gry",
+         "family":"Telokk",
+         "given":[
+            "Gry"
+         ]
+      }
+   ],
+   "telecom":[
+      {
+         "extension":[
+            {
+               "url":"http://dips.no/fhir/StructureDefinition/R4/DIPSPatientPhoneTypeId",
+               "valueDecimal":268903
+            }
+         ],
+         "system":"phone",
+         "value":"77635429",
+         "use":"home"
+      }
+   ],
+   "gender":"male",
+   "deceasedBoolean":false,
+   "address":[
+      {
+         "extension":[
+            {
+               "extension":[
+                  {
+                     "url":"http://dips.no/fhir/StructureDefinition/R4/DIPSPatientMunicipality",
+                     "valueCoding":{
+                        "system":"urn:oid:2.16.578.1.12.4.1.1.3402",
+                        "code":"0301",
+                        "display":"Bodø"
+                     }
+                  }
+               ],
+               "url":"http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation"
+            },
+            {
+               "url":"http://dips.no/fhir/StructureDefinition/R4/DIPSPatientStateName",
+               "valueString":"NORDLAND FYLKESKOMMUNE"
+            }
+         ],
+         "use":"home",
+         "city":"Førde",
+         "district":"Bodø",
+         "_district":{
+            "extension":[
+               {
+                  "url":"http://dips.no/fhir/StructureDefinition/R4/DIPSPatientMunicipality",
+                  "valueCoding":{
+                     "system":"urn:oid:2.16.578.1.12.4.1.1.3402",
+                     "code":"0301",
+                     "display":"Bodø"
+                  }
+               }
+            ]
+         },
+         "state":"18",
+         "postalCode":"6800"
+      }
+   ]
+}
+</code></pre></div></div>
+
+<h4 id="request-update">Request: Update</h4>
+
+<p>Update patient information</p>
+
+<p>Table 14. OperationInformation</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://{SERVER}/DIPS-WebAPI/HL7/FHIR-R4/patient/{patient ID}</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>PUT</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 15. Updatable Parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>given</td>
+      <td>Update patient’s existing First Name with a new String</td>
+    </tr>
+    <tr>
+      <td>family</td>
+      <td>Update patient’s exsisting Family Name with a new String</td>
+    </tr>
+    <tr>
+      <td>address-line</td>
+      <td>Update patient’s address line with a new String</td>
+    </tr>
+    <tr>
+      <td>address-city</td>
+      <td>Update patient’s city. This can be done by updating the city along with the relevant PostalCode</td>
+    </tr>
+    <tr>
+      <td>postalCode</td>
+      <td>Update patient’s postalCode. City gets updated along with this</td>
+    </tr>
+    <tr>
+      <td>district</td>
+      <td>Update patient’s district with a new valid district</td>
+    </tr>
+    <tr>
+      <td>Municipality Code</td>
+      <td>Update patient’s municipality code (when the municipality code is changed the relevant municipality name is also updated)</td>
+    </tr>
+    <tr>
+      <td>fax</td>
+      <td>Update patient’s fax number</td>
+    </tr>
+    <tr>
+      <td>phone</td>
+      <td>Update patient’s phone number</td>
+    </tr>
+    <tr>
+      <td>email</td>
+      <td>Update patient’s email address</td>
+    </tr>
+    <tr>
+      <td>active</td>
+      <td>Update patient’s status. Available statuses are true and false</td>
+    </tr>
+    <tr>
+      <td>Language id</td>
+      <td>Update patient’s Language code</td>
+    </tr>
+    <tr>
+      <td>urban-district</td>
+      <td>Update patient’s urban-district</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 16. Non-Updatable Parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>patient ID cannot be updated</td>
+    </tr>
+    <tr>
+      <td>identifier</td>
+      <td>Patient information by an identifier cannot be updated</td>
+    </tr>
+    <tr>
+      <td>birthdate</td>
+      <td>Date of birth of a patient cannot be updated</td>
+    </tr>
+    <tr>
+      <td>State</td>
+      <td>country specified in a patient cannot be updated</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>Gender of a patient cannot be updated</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="fhir-person">FHIR Person</h3>
+
+<p>The service implements the following FHIR resources in conformance with FHIR R4.
+The profiles are available on the server after installation, and on DIPS customer portal as an appendix
+to the documentation.</p>
+
+<h4 id="request-read">Request: Read</h4>
+
+<p>Get person information by providing a person ID.</p>
+
+<p>Table 17. OperationInformation</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://{server}/DIPS-WebAPI/HL7/FHIR-R4/person/{id}?_profile={Profile name}</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>GET</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>Person ID</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="request-search-2">Request: Search</h4>
+
+<p>Search for person information</p>
+
+<p>Table 18. OperationInformation</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://{server}/DIPS-WebAPI/HL7/FHIR-R4/person?{SearchParameters}</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>GET</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 19. Parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter VERB</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>identifier</td>
+      <td>Search for person information by a human identifier for this person.This supports the following URNs. http://dips.no/fhir/namingsystem/dipspersonid, urn:oid:2.16.578.1.12.4.1.4.1 and + urn:oid:2.16.578.1.12.4.1.4.2</td>
+    </tr>
+    <tr>
+      <td>_id</td>
+      <td>Search with person ID</td>
+    </tr>
+    <tr>
+      <td>given</td>
+      <td>Search person by the first name that starts with the given string</td>
+    </tr>
+    <tr>
+      <td>family</td>
+      <td>Search person by the last name that starts with the given string</td>
+    </tr>
+    <tr>
+      <td>address</td>
+      <td>Persons' address</td>
+    </tr>
+    <tr>
+      <td>address-city</td>
+      <td>A city specified in an address</td>
+    </tr>
+    <tr>
+      <td>address-state</td>
+      <td>A state specified in an address</td>
+    </tr>
+    <tr>
+      <td>address-statecode</td>
+      <td>A state code specified in an address</td>
+    </tr>
+    <tr>
+      <td>address-use</td>
+      <td>A use code specified in an address. Available statuses are true and false</td>
+    </tr>
+    <tr>
+      <td>municipal</td>
+      <td>The municipal of the person</td>
+    </tr>
+    <tr>
+      <td>zip</td>
+      <td>zip code of the person</td>
+    </tr>
+    <tr>
+      <td>district</td>
+      <td>The district of the person</td>
+    </tr>
+    <tr>
+      <td>urban-district</td>
+      <td>String matching urban district information</td>
+    </tr>
+    <tr>
+      <td>birthdate</td>
+      <td>The person’s date of birth</td>
+    </tr>
+    <tr>
+      <td>phone</td>
+      <td>A value in a phone contact</td>
+    </tr>
+    <tr>
+      <td>email</td>
+      <td>A value in an email contact</td>
+    </tr>
+    <tr>
+      <td>telecom</td>
+      <td>The value in any kind of contact such as Email, Mobile Phone, Phone and fax</td>
+    </tr>
+    <tr>
+      <td>gender</td>
+      <td>The gender of the person (M,m,male,Mann,K,k,Kvinne,Female,f,F,unknown,u,?,other,ukjent,ubestemt)</td>
+    </tr>
+    <tr>
+      <td>active</td>
+      <td>Search person by status. Available statuses are true and false</td>
+    </tr>
+    <tr>
+      <td>_page</td>
+      <td>Search by The page number of the person results</td>
+    </tr>
+    <tr>
+      <td>_count</td>
+      <td>Search by The number of records to display for the given page</td>
+    </tr>
+    <tr>
+      <td>_pretty</td>
+      <td>Format the case of the response strings. Available statuses are true and false</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 20. Search Modifiers</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Modifier</th>
+      <th>Valid Parameters</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>:contains</td>
+      <td>given, family</td>
+      <td>wild card search for the string supplied</td>
+    </tr>
+    <tr>
+      <td>:exact</td>
+      <td>given, family</td>
+      <td>Any person with a name that is exactly same as the search string</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="example-response">Example response</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+   "resourceType":"Person",
+   "id":"ajf2014791",
+   "meta":{
+      "profile":[
+         "DIPSPerson",
+         "NoBasisPerson"
+      ]
+   },
+   "identifier":[
+      {
+         "use":"official",
+         "system":"urn:oid:2.16.578.1.12.4.1.4.1",
+         "value":"01048900000"
+      },
+      {
+         "system":"http://dips.no/fhir/namingsystem/dips-personid",
+         "value":"2014791"
+      }
+   ],
+   "name":[
+      {
+         "text":"Nystad, John",
+         "family":"Nystad",
+         "given":[
+            "John"
+         ]
+      }
+   ],
+   "gender":"male",
+   "address":[
+      {
+         "extension":[
+            {
+               "extension":[
+                  {
+                     "url":"http://dips.no/fhir/StructureDefinition/R4/DIPSPersonMunicipality",
+                     "valueCoding":{
+                        "system":"urn:oid:2.16.578.1.12.4.1.1.3402",
+                        "code":"1804",
+                        "display":"Bodø"
+                     }
+                  }
+               ],
+               "url":"http://dips.no/fhir/StructureDefinition/R4/no-basis-propertyinformation"
+            },
+            {
+               "url":"http://dips.no/fhir/StructureDefinition/R4/DIPSPersonStateName",
+               "valueString":"NORDLAND FYLKESKOMMUNE"
+            }
+         ],
+         "use":"home",
+         "city":"Bodø",
+         "district":"Bodø",
+         "_district":{
+            "extension":[
+               {
+                  "url":"http://dips.no/fhir/StructureDefinition/R4/DIPSPersonMunicipality",
+                  "valueCoding":{
+                     "system":"urn:oid:2.16.578.1.12.4.1.1.3402",
+                     "code":"1804",
+                     "display":"Bodø"
+                  }
+               }
+            ]
+         },
+         "state":"18",
+         "postalCode":"8001",
+         "country":"Norway"
+      }
+   ],
+   "active":true
+}
+</code></pre></div></div>
+
+<h5 id="example-requests">Example requests</h5>
+
+<p>Read person info by person ID ajf1000024:
+<code class="language-plaintext highlighter-rouge">GET .../person/ajf1000024</code></p>
+
+<p>Search for person by person identifier:
+<code class="language-plaintext highlighter-rouge">GET .../person?identifier=urn:oid:2.16.578.1.12.4.1.4.3|01048900000</code></p>
+
+<p>Search for person first name starts with:
+<code class="language-plaintext highlighter-rouge">GET .../person?given=POL</code></p>
+
+<p>Search for person first name contains:
+<code class="language-plaintext highlighter-rouge">GET .../person?given:contains=ROL</code></p>
+
+<p>Search for person by a string which exactly matches with the first name: (_pretty default setting is
+"true". You must send _pretty=false to match result case with the search string case.)
+<code class="language-plaintext highlighter-rouge">GET .../person?given:exact=ROL&amp;_pretty=false</code></p>
+
+<p>Search for person family name starts with:
+<code class="language-plaintext highlighter-rouge">GET .../person?family=COM</code></p>
+
+<p>Search for person family name contains:
+<code class="language-plaintext highlighter-rouge">GET .../person?family:contains=ko</code></p>
+
+<p>Search for person by a string which exactly matches with the family name: (_pretty default setting is
+"true". You must send _pretty=false to match result case with the search string case.)
+<code class="language-plaintext highlighter-rouge">GET .../person?family:exact=Utskrevet&amp;_pretty=false</code></p>
+
+<p>Search for person by a string which matches with first name and active status is true:
+<code class="language-plaintext highlighter-rouge">GET .../person?given=POL&amp;active=true</code></p>
+
+<p>Search for person by a string which matches with first name and active status is false:
+<code class="language-plaintext highlighter-rouge">GET .../person?given=POL&amp;active=false</code></p>
+
+<p>Search for person by Person ID:
+<code class="language-plaintext highlighter-rouge">GET .../person?_id=ajf1000024</code></p>
+
+<p>Search for person by Address:
+<code class="language-plaintext highlighter-rouge">GET .../person?address=Girogata 9</code></p>
+
+<p>Search for person by Address - City:
+<code class="language-plaintext highlighter-rouge">GET .../person?address-city=Bodø</code></p>
+
+<p>Search for person by Address - state:
+<code class="language-plaintext highlighter-rouge">GET .../person?address-state=NORDLAND FYLKESKOMMUNE</code></p>
+
+<p>Search for person by Address - state code:
+<code class="language-plaintext highlighter-rouge">GET .../person?address-statecode=18</code></p>
+
+<p>Search for person by Address - use:
+<code class="language-plaintext highlighter-rouge">GET .../person?address=Mystery Road 1249&amp;address-use=true</code></p>
+
+<p>Search for person by municipal:
+<code class="language-plaintext highlighter-rouge">GET .../person?municipal=Oslo</code></p>
+
+<p>Search for person by district:
+<code class="language-plaintext highlighter-rouge">GET .../person?district=Oslo</code></p>
+
+<p>Search for person by urban district:
+<code class="language-plaintext highlighter-rouge">GET .../person?urban-district=Sagene</code></p>
+
+<p>Search for person by zip:
+<code class="language-plaintext highlighter-rouge">GET .../person?zip=8037</code></p>
+
+<p>Search for person by a value in email contact:
+<code class="language-plaintext highlighter-rouge">GET .../person?email=name1@domain.com</code></p>
+
+<p>Search for person by a value in phone contact:
+<code class="language-plaintext highlighter-rouge">GET .../person?phone=77635429</code></p>
+
+<p>Search for person by a value in any Email, Mobile Phone, Phone and fax for the individual (telecom):
+<code class="language-plaintext highlighter-rouge">GET .../person?telecom=77635429</code></p>
+
+<p>Search for person by a value in birthdate:
+<code class="language-plaintext highlighter-rouge">GET .../person?birthdate=1925-02-15</code></p>
+
+<p>Search for person by a value in gender:
+<code class="language-plaintext highlighter-rouge">GET .../person?gender=kvinne</code></p>
+
+<h4 id="create-operation-1">Create Operation</h4>
+
+<p>The create operation (https://www.hl7.org/fhir/http.html#create) creates a new resource at the server.
+The payload is a FHIR Person resource.</p>
+
+<h5 id="create-request-information-for-person">Create Request Information for Person</h5>
+
+<p>• Auth-Ticket = Valid ticket from the database
+• Content-Type = application/json
+• Method = POST
+• URL = https://{SERVER}/DIPS-WebAPI/HL7/FHIR-R4/Person</p>
+
+<h6 id="sample-post-request-body-minimal-for-creating-a-person-by-national-temporary-identifier">Sample POST Request body (minimal) for creating a person by National Temporary Identifier</h6>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+   "resourceType":"Person",
+   "identifier":[
+      {
+         "system":"urn:oid:2.16.578.1.12.4.1.4.1",
+         "value":"80434218415"
+      }
+   ],
+   "gender":"male"
+}
+</code></pre></div></div>
+
+<h6 id="sample-post-request-body-minimal-for-creating-a-person-by-norwegian-national-identity-number">Sample POST Request body (minimal) for creating a person by Norwegian national identity number</h6>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+   "resourceType":"Person",
+   "identifier":[
+      {
+         "system":"urn:oid:2.16.578.1.12.4.1.4.1",
+         "value":"01048900000"
+      }
+   ],
+   "name":[
+      {
+         "use":"official",
+         "text":"Nystad, John",
+         "family":"Nystad",
+         "given":[
+            "John"
+         ]
+      }
+   ],
+   "address":[
+      {
+         "extension":[
+            {
+               "extension":[
+                  {
+                     "url":"http://dips.no/fhir/StructureDefinition/R4/DIPSPersonMunicipality",
+                     "valueCoding":{
+                        "system":"urn:oid:2.16.578.1.12.4.1.1.3402",
+                        "code":"1804",
+                        "display":"Bodø"
+                     }
+                  }
+               ],
+               "url":"http://dips.no/fhir/StructureDefinition/R4/no-basis-propertyinformation"
+            }
+         ],
+         "use":"home",
+         "postalCode":"8001"
+      }
+   ]
+}
+</code></pre></div></div>
+
+<h6 id="sample-post-request-body-complete-1">Sample POST Request body (complete)</h6>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+   "resourceType":"Person",
+   "identifier":[
+      {
+         "use":"official",
+         "system":"urn:oid:2.16.578.1.12.4.1.4.1",
+         "value":"01048900000"
+      },
+      {
+         "system":"http://dips.no/fhir/namingsystem/dips-personid",
+         "value":"2014819"
+      }
+   ],
+   "name":[
+      {
+         "text":"Nystad, John",
+         "family":"Nystad",
+         "given":[
+            "John"
+         ]
+      }
+   ],
+   "gender":"male",
+   "address":[
+      {
+         "extension":[
+            {
+               "extension":[
+                  {
+                     "url":"http://dips.no/fhir/StructureDefinition/R4/DIPSPersonMunicipality",
+                     "valueCoding":{
+                        "system":"urn:oid:2.16.578.1.12.4.1.1.3402",
+                        "code":"1804",
+                        "display":"Bodø"
+                     }
+                  }
+               ],
+               "url":"http://dips.no/fhir/StructureDefinition/R4/no-basis-propertyinformation"
+            },
+            {
+               "url":"http://dips.no/fhir/StructureDefinition/R4/DIPSPersonStateName",
+               "valueString":"NORDLAND FYLKESKOMMUNE"
+            }
+         ],
+         "use":"home",
+         "city":"Bodø",
+         "district":"Bodø",
+         "_district":{
+            "extension":[
+               {
+                  "url":"http://dips.no/fhir/StructureDefinition/R4/DIPSPersonMunicipality",
+                  "valueCoding":{
+                     "system":"urn:oid:2.16.578.1.12.4.1.1.3402",
+                     "code":"1804",
+                     "display":"Bodø"
+                  }
+               }
+            ]
+         },
+         "state":"18",
+         "postalCode":"8001",
+         "country":"Norway"
+      }
+   ],
+   "active":true
+}
+</code></pre></div></div>
+
+<h4 id="request-update-1">Request: Update</h4>
+
+<p>Update person information</p>
+
+<p>Table 21. OperationInformation</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://{SERVER}/DIPS-WebAPI/HL7/FHIR-R4/Person/{Person ID}</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>PUT</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 22. Updatable Parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>given</td>
+      <td>Update person’s existing First Name with a new String</td>
+    </tr>
+    <tr>
+      <td>family</td>
+      <td>Update person’s existing Family Name with a new String</td>
+    </tr>
+    <tr>
+      <td>address-line</td>
+      <td>Update person’s address line with a new String</td>
+    </tr>
+    <tr>
+      <td>address-city</td>
+      <td>Update person’s city. This can be done by updating the city along with the relevant PostalCode</td>
+    </tr>
+    <tr>
+      <td>postalCode</td>
+      <td>Update person’s postalCode. City gets updated along with this</td>
+    </tr>
+    <tr>
+      <td>district</td>
+      <td>Update person’s district with a new valid district</td>
+    </tr>
+    <tr>
+      <td>Municipality Code</td>
+      <td>Update person’s municipality code (when the municipality code is changed the relevant municipality name is also updated.)</td>
+    </tr>
+    <tr>
+      <td>fax</td>
+      <td>Update person’s fax number</td>
+    </tr>
+    <tr>
+      <td>phone</td>
+      <td>Update person’s phone number</td>
+    </tr>
+    <tr>
+      <td>email</td>
+      <td>Update person’s email address</td>
+    </tr>
+    <tr>
+      <td>active</td>
+      <td>Update person’s status. Available statuses are true and false</td>
+    </tr>
+    <tr>
+      <td>Language id</td>
+      <td>Update person’s Language code</td>
+    </tr>
+    <tr>
+      <td>urban-district</td>
+      <td>Update person’s urban district</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 23. Non-Updatable Parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>Person ID cannot be updated</td>
+    </tr>
+    <tr>
+      <td>identifier</td>
+      <td>Person information by a human identifier cannot be updated</td>
+    </tr>
+    <tr>
+      <td>birthdate</td>
+      <td>Date of birth of a person cannot be updated</td>
+    </tr>
+    <tr>
+      <td>State</td>
+      <td>State specified in a person’s address cannot be updated</td>
+    </tr>
+    <tr>
+      <td>Country</td>
+      <td>Country specified in a person’s id cannot be updated</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="fhir-practitioner">FHIR Practitioner</h3>
+
+<p>The Practitioner resource implements the Norwegian Basis Practitioner and DIPSPractitioner profile
+with the following interactions:</p>
+
+<p>Table 24. Supported FHIR Operations</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Operation</th>
+      <th>Supported</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Read</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>VRead</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Create</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Update</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>History</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Search</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Delete</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Patch</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="request-read-1">Request: Read</h4>
+
+<p>Get practitioner by providing a person ID.</p>
+
+<p>Table 25. OperationInformation</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://{server}/DIPS-WebAPI/HL7/FHIR-R4/practitioner/{id}</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>GET</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>Person ID</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="request-search-3">Request: Search</h4>
+
+<p>Table 26. OperationInformation</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://{server}/DIPS-WebAPI/HL7/FHIR-R4/practitioner?{SearchParameters}</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>GET</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 27. Parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>identifier</td>
+      <td>Search for practitioner by identifier. This supports the following identifier searches: - 1. DIPSHPRIdentifier - urn:oid:2.16.578.1.12.4.1.4.4 - 2. DIPSFNRIdentifier - urn:oid:2.16.578.1.12.4.1.4.1 - 3. DIPSDNRIdentifier - urn:oid:2.16.578.1.12.4.1.4.2 - 4. Person identifier - http://dips.no/fhir/namingsystem/dips-personid</td>
+    </tr>
+    <tr>
+      <td>given</td>
+      <td>Search practitioner by the first name that starts with the given string</td>
+    </tr>
+    <tr>
+      <td>given:contains</td>
+      <td>Returns results that include the supplied parameter value anywhere within the first name field</td>
+    </tr>
+    <tr>
+      <td>given:exact</td>
+      <td>Returns results with the first name that matches the entire supplied parameter, including casing</td>
+    </tr>
+    <tr>
+      <td>family</td>
+      <td>Search practitioner by the last name that starts with the given string</td>
+    </tr>
+    <tr>
+      <td>family:contains</td>
+      <td>Returns results that include the supplied parameter value anywhere within the last name field</td>
+    </tr>
+    <tr>
+      <td>family:exact</td>
+      <td>Returns results with the last name that matches the entire supplied parameter, including casing</td>
+    </tr>
+    <tr>
+      <td>active</td>
+      <td>Search practitioner by status. Available statuses are true and false</td>
+    </tr>
+    <tr>
+      <td>_id</td>
+      <td>Search with person ID</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example requests
+Read practitioner info by person ID:
+<code class="language-plaintext highlighter-rouge">GET .../practitioner/stf39</code></p>
+
+<p>Search for practitioner by DIPSHPRIdentifier:
+<code class="language-plaintext highlighter-rouge">GET .../practitioner?identifier=urn:oid:2.16.578.1.12.4.1.4.4|1234567</code></p>
+
+<p>Search for practitioner by DIPSFNRIdentifier:
+<code class="language-plaintext highlighter-rouge">GET .../practitioner?identifier=urn:oid:2.16.578.1.12.4.1.4.1|04056600324</code></p>
+
+<p>Search for practitioner by DIPSDNRIdentifier:
+<code class="language-plaintext highlighter-rouge">GET .../practitioner?identifier=urn:oid:2.16.578.1.12.4.1.4.2|30507300000</code></p>
+
+<p>Search for practitioner by person Identifier:
+<code class="language-plaintext highlighter-rouge">GET .../practitioner?identifier=http://dips.no/fhir/namingsystem/dips-personid|267</code></p>
+
+<p>Search for practitioner first name starts with:
+<code class="language-plaintext highlighter-rouge">GET .../practitioner?given=Kommunelegen</code></p>
+
+<p>Search for practitioner first name contains:
+<code class="language-plaintext highlighter-rouge">GET .../practitioner?given:contains=munelegen</code></p>
+
+<p>Search for practitioner by a string which exactly matches with the first name: (_pretty default setting is
+"true". You must send _pretty=false to match result case with the search string case.)
+<code class="language-plaintext highlighter-rouge">GET .../practitioner?given:exact=KOMMUNELEGEN&amp;_pretty=false</code></p>
+
+<p>Search for practitioner family name starts with:
+<code class="language-plaintext highlighter-rouge">GET .../practitioner?family=HANS</code></p>
+
+<p>Search for practitioner family name contains:
+<code class="language-plaintext highlighter-rouge">GET .../practitioner?family:contains=ANSEN</code></p>
+
+<p>Search for practitioner by a string which exactly matches with the family name: (_pretty default setting
+is "true". You must send _pretty=false to match result case with the search string case.)
+<code class="language-plaintext highlighter-rouge">GET .../practitioner?family:exact=HANSEMANN&amp;_pretty=false</code></p>
+
+<p>Search for practitioner by a string which matches with first name and active status is true:
+<code class="language-plaintext highlighter-rouge">GET .../practitioner?given=Frank&amp;active=true</code></p>
+
+<p>Search for practitioner by a string which matches with first name and active status is false:
+<code class="language-plaintext highlighter-rouge">GET .../practitioner?given=Frank&amp;active=false</code></p>
+
+<p>Search for practitioner by Person ID:
+<code class="language-plaintext highlighter-rouge">GET .../practitioner?_id=stf39</code></p>
+
+<h3 id="fhir-practitionerrole">FHIR PractitionerRole</h3>
+
+<h4 id="request-read-2">Request: Read</h4>
+<p>Read practitioner role information by providing HCP ID.</p>
+
+<p>Table 28. OperationInformation</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://{server}/DIPS-WebAPI/HL7/FHIR-R4/PractitionerRole/{id}</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>GET</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>HCP ID</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="request-search-4">Request: Search</h4>
+
+<p>Table 29. OperationInformation</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://{server}/DIPS-WebAPI/HL7/FHIR-R4/PractitionerRole?{SearchParameters}</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>GET</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 30. Parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>identifier</td>
+      <td>Search for practitioner role by identifier. This supports the following identifier searches:1. DIPSHCPIdentifier - urn:oid:1.3.6.1.4.1.9038.51.1 2. DIPSHERIdentifier - urn:oid:2.16.578.1.12.4.1.2 3. DIPSHCPCodeIdentifier - urn:oid:1.3.6.1.4.1.9038.51 4. DIPSHPRIdentifier - urn:oid:2.16.578.1.12.4.1.4.4</td>
+    </tr>
+    <tr>
+      <td>organization</td>
+      <td>Search by organization ID which is associated with practitioner role</td>
+    </tr>
+    <tr>
+      <td>organization.identifier</td>
+      <td>This parameter is used to filter practitioner roles by organization number, when search by HPR identifier</td>
+    </tr>
+    <tr>
+      <td>organization.herid</td>
+      <td>Search by organization HER ID which is associated with practitioner role</td>
+    </tr>
+    <tr>
+      <td>organization.name</td>
+      <td>Search by organization name associated with practitioner role</td>
+    </tr>
+    <tr>
+      <td>organization.name:contains</td>
+      <td>Returns results with a portion of the organization’s name at any place</td>
+    </tr>
+    <tr>
+      <td>organization.name:exact</td>
+      <td>Returns results with organization name that matches the entire supplied parameter, including casing</td>
+    </tr>
+    <tr>
+      <td>active</td>
+      <td>Search practitioner role by status. Available statuses are true and false</td>
+    </tr>
+    <tr>
+      <td>_ID</td>
+      <td>Search with HCP ID</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- all this Bootstrap html for getting an image to fit nicely in text - 640 pix wide -->
+
+<div>
+<figure class="figure">
+<figcaption class="figure-caption"><strong></strong></figcaption>
+  <img src="warning7.png" class="img-responsive img-rounded center-block" alt="warning7.png" width="75%" />
+</figure>
+
+<p></p>
+</div>
+
+<p>Table 31. Includes</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Include</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>_include=PractitionerRole:Organization</td>
+      <td>Include organization details which are associated with practitioner role</td>
+    </tr>
+    <tr>
+      <td>_include=PractitionerRole:practitioner</td>
+      <td>Include practitioner details which are associated with practitioner role</td>
+    </tr>
+    <tr>
+      <td>_include=PractitionerRole:location</td>
+      <td>Include location details which are associated with practitioner role</td>
+    </tr>
+    <tr>
+      <td>_include=PractitionerRole:service</td>
+      <td>Include HealthcareService details which are associated with practitioner role</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example requests</p>
+
+<p>Read practitioner role info by HCP ID:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole/agb1000203</code></p>
+
+<p>Search for practitioner role by HCPIdentifier:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?identifier=urn:oid:1.3.6.1.4.1.9038.51.1|1000203</code></p>
+
+<p>Search for practitioner role by HERIdentifier:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?identifier=urn:oid:2.16.578.1.12.4.1.2|889911</code></p>
+
+<p>Search for practitioner role by HPRIdentifier:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?identifier=urn:oid:2.16.578.1.12.4.1.4.4|1234567</code></p>
+
+<p>Search for practitioner role by HCPCodeIdentifier:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?identifier=urn:oid:1.3.6.1.4.1.9038.51|HA1</code></p>
+
+<p>Search for practitioner role by Organization ID:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?organization=aks1</code></p>
+
+<p>Filter practitioner roles by organization number when search by HPR identifier.(Here organization
+number should search with HPRIdentifier)</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET
+.../PractitionerRole??organization.identifier=urn:oid:2.16.578.1.12.4.1.4.101|970948139&amp;identifier=ur
+n:oid:2.16.578.1.12.4.1.4.4|1234567</code></p>
+
+<p>Search for practitioner role by organization.herid:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?organization.herid=80624</code></p>
+
+<p>Search for practitioner role by organization.name:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?organization.name=Andenes</code></p>
+
+<p>Search for practitioner role by organization.name:contains:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?organization.name:contains=ak</code></p>
+
+<p>Search for practitioner role by organization.name:exact:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?organization.name:exact=Andenes legekontor</code></p>
+
+<p>Read practitioner role info by HCP ID and Include associated organization:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_id=agb1000203&amp;_include=PractitionerRole:Organization</code></p>
+
+<p>Search for practitioner role by organization aks1 and enable pagination showing two records per page
+and show page 2 results:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?organization=aks1&amp;page=2&amp;_count=2</code></p>
+
+<h4 id="practitioner-role-operational-search">Practitioner role operational search</h4>
+<h4 id="operation-search-based-on-getcurrentuser">Operation search based on $GetCurrentUser</h4>
+
+<p>Operation search using GetCurrentUser as the operation id will return the current logged in
+practitioner role with user role information.
+Operation ID - $GetCurrentUser</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../PractitionerRole/$GetCurrentUser</code></p>
+
+<p>Table 32. Parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>active</td>
+      <td>Search practitioner role by status. Available statuses are true and false</td>
+    </tr>
+    <tr>
+      <td>_pretty</td>
+      <td>Format the case of the response strings. Available statuses are true and false. The default status is false</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example requests</p>
+
+<p>Search for practitioner role associated with the current user:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole/$GetCurrentUser</code></p>
+
+<p>Search for active practitioner role data associated with the current user:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole/$GetCurrentUser?active=true</code></p>
+
+<p>Search for inactive practitioner role data which associated with the current user:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole/$GetCurrentUser?active=false</code></p>
+
+<p>Apply pretty for practitioner role information which associated with current user:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole/$GetCurrentUser?_pretty=true</code></p>
+
+<p>Search for active practitioner role data associated with the current user and apply pretty:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole/$GetCurrentUser?active=true&amp;_pretty=true</code></p>
+
+<h4 id="practitioner-role-advanced-search-by-getuserrole">Practitioner role Advanced search by GetUserRole</h4>
+
+<p>Use the GetUserRole query to search for Practitioner role by userroleid, dipssignature, userrolename &amp;
+healthcareposition.</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=GetUserRole&amp;{SearchParameters}</code></p>
+
+<p>Table 33. Parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>userroleid</td>
+      <td>Search practitioner role by user role id</td>
+    </tr>
+    <tr>
+      <td>dipssignature</td>
+      <td>Search practitioner role by Dips signature. Need to provide a full string</td>
+    </tr>
+    <tr>
+      <td>userrolename</td>
+      <td>Search practitioner role by user role name</td>
+    </tr>
+    <tr>
+      <td>userrolename:exact</td>
+      <td>Match the entire supplied user role name, including casing</td>
+    </tr>
+    <tr>
+      <td>userrolename:contains</td>
+      <td>A portion of the user role name at any place</td>
+    </tr>
+    <tr>
+      <td>healthcareposition</td>
+      <td>Search practitioner role by healthcare position</td>
+    </tr>
+    <tr>
+      <td>healthcareposition:exact</td>
+      <td>Match the entire supplied healthcare position, including casing</td>
+    </tr>
+    <tr>
+      <td>healthcareposition:contains</td>
+      <td>A portion of the healthcare position name at any place</td>
+    </tr>
+    <tr>
+      <td>active</td>
+      <td>Search by status. Available statuses are true and false</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Practitioner role Operation search examples based on $GetUserRole</p>
+
+<p>Search practitioner role by user role ID:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=GetUserRole&amp;userroleid=100</code></p>
+
+<p>Search practitioner role by dips signature
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=GetUserRole&amp;dipssignature=KRE</code></p>
+
+<p>Search practitioner role by healthcare position:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=GetUserRole&amp;healthcareposition=Fysi</code></p>
+
+<p>Search practitioner role by exact healthcare position:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=GetUserRole&amp;healthcareposition:exact=Fysioterapeut</code></p>
+
+<p>Search practitioner role by a portion of the healthcare position name:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=GetUserRole&amp;healthcareposition:contains=Overlege</code></p>
+
+<p>Search practitioner role by user role name:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=GetUserRole&amp;userrolename=KRE</code></p>
+
+<p>Search practitioner role by exact user role name:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=GetUserRole&amp;userrolename:exact=KRE: Testplan for medikasjon</code></p>
+
+<p>Search practitioner role by a portion of the healthcare position name and user role ID:
+<code class="language-plaintext highlighter-rouge">GET
+.../PractitionerRole?_query=GetUserRole&amp;userroleid=1000750&amp;healthcareposition:contains=Overlege</code></p>
+
+<h4 id="practitioner-role-advanced-search-by-getbyhcprolename">Practitioner role Advanced search by GetByHcpRoleName</h4>
+
+<p>Use the GetByHcpRoleName query to search for a Practitioner role by hcprolename</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=GetByHcpRoleName&amp;{SearchParameters}</code></p>
+
+<p>Table 34. Parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>hcprolename</td>
+      <td>Search practitioner role by the healthcare position role name</td>
+    </tr>
+    <tr>
+      <td>hcprolename:exact</td>
+      <td>Match the entire supplied healthcare position role name, including casing</td>
+    </tr>
+    <tr>
+      <td>hcprolename:contains</td>
+      <td>A portion of the healthcare position role name at any place</td>
+    </tr>
+    <tr>
+      <td>active</td>
+      <td>Search by status. Available statuses are true and false</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Practitioner role advanced search examples based on GetByHcpRoleName</p>
+
+<p>Search practitioner role by the healthcare position role name:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=GetByHcpRoleName&amp;hcprolename=Onkolog</code></p>
+
+<p>Search practitioner role by the exact healthcare position role name:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=GetByHcpRoleName&amp;hcprolename:exact=Onkolog</code></p>
+
+<p>Search practitioner role by a portion of the healthcare position role name:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=GetByHcpRoleName&amp;hcprolename:contains=Onko</code></p>
+
+<p>Search practitioner role by a portion of the healthcare position role name and enable pagination and
+filter by active Practitioner:
+<code class="language-plaintext highlighter-rouge">GET
+.../PractitionerRole?_query=GetByHcpRoleName&amp;hcprolename:contains=On&amp;active=true&amp;page=1&amp;_c
+ount=2</code></p>
+
+<h4 id="practitioner-role-advanced-search-by-userroleprofile">Practitioner role Advanced search by UserRoleProfile</h4>
+
+<p>Use the UserRoleProfile query to Search for Practitioner role based on user role id or ticket.</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=UserRoleProfile&amp;userrole=&lt;userrole ID Or Ticket&gt;</code></p>
+
+<p>Table 35. Parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>userrole</td>
+      <td>This parameter is required. User role ID or ticket</td>
+    </tr>
+    <tr>
+      <td>active</td>
+      <td>Search practitioner role by status. Available statuses are true and false</td>
+    </tr>
+    <tr>
+      <td>_pretty</td>
+      <td>Format the case of the response strings. Available statuses are true and false.The default status is false</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Practitioner role advanced search examples based on UserRoleProfile</p>
+
+<p>Search for practitioner data associated with user role ID 78:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=UserRoleProfile&amp;userrole=78</code></p>
+
+<p>Search for active practitioner data associated with user role ID 78:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=UserRoleProfile&amp;userrole=78</code></p>
+
+<p>Search for inactive practitioner data associated with user role ID 78 and status is true:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=UserRoleProfile&amp;userrole=78&amp;active=true</code></p>
+
+<p>Search for inactive practitioner data associated with user role ID 78 and status is false:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=UserRoleProfile&amp;userrole=78&amp;active=false</code></p>
+
+<h4 id="practitioner-role-advanced-search-by-userroleprofilebyposition">Practitioner role Advanced search by UserRoleProfileByPosition</h4>
+
+<p>Use the UserRoleProfileByPosition query to search for Practitioner role by healthcareposition,
+healthcareposition:exact, healthcareposition:contains, type and partof.</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=UserRoleProfileByPosition&amp;&lt;Other supported parameters&gt;</code></p>
+
+<p>Table 36. Parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>healthcareposition</td>
+      <td>Search practitioner role by healthcare position</td>
+    </tr>
+    <tr>
+      <td>healthcareposition:exact</td>
+      <td>match the entire supplied healthcare position, including casing</td>
+    </tr>
+    <tr>
+      <td>healthcareposition:contains</td>
+      <td>A portion of the healthcare position name at any place</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>Search practitioner role by healthcare position CodeId</td>
+    </tr>
+    <tr>
+      <td>partof</td>
+      <td>Search practitioner role which is part of the Organization</td>
+    </tr>
+    <tr>
+      <td>active</td>
+      <td>Search by status. Available statuses are true and false</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Practitioner role advanced search examples based on UserRoleProfileByPosition</p>
+
+<p>search for practitioner role by healthcareposition name:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=UserRoleProfileByPosition&amp;healthcareposition=overlege</code></p>
+
+<p>Search for practitioner role by exact healthcareposition name:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=UserRoleProfileByPosition&amp;healthcareposition:exact=Overlege</code></p>
+
+<p>Search practitioner role by portion of healthcare position name:
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=UserRoleProfileByPosition&amp;healthcareposition:contains=lege</code></p>
+
+<p>Search for practitioner role by multiple exact names of healthcarepositions:
+<code class="language-plaintext highlighter-rouge">GET
+.../PractitionerRole?_query=UserRoleProfileByPosition&amp;healthcareposition:exact=Overlege&amp;healthcare
+position:exact=Lege</code></p>
+
+<p>Search for practitioner role by mutiple healthcarepositions:
+<code class="language-plaintext highlighter-rouge">GET
+.../PractitionerRole?_query=UserRoleProfileByPosition&amp;healthcareposition=overlege&amp;&amp;healthcareposi
+tion=Lege</code></p>
+
+<p>Search for practitioner role by healthcare position CodeId:
+<code class="language-plaintext highlighter-rouge">GET
+.../PractitionerRole?_query=UserRoleProfileByPosition&amp;type=urn:oid:1.3.6.1.4.1.9038.52.3018|219505</code></p>
+
+<p>Search for practitioner role by multiple healthcare position CodeId:
+<code class="language-plaintext highlighter-rouge">GET
+.../PractitionerRole?_query=UserRoleProfileByPosition&amp;type=urn:oid:1.3.6.1.4.1.9038.52.3018|219505
+&amp;type=urn:oid:1.3.6.1.4.1.9038.52.3018|219469</code></p>
+
+<p>Search for practitioner role by Type and part of Organization:
+<code class="language-plaintext highlighter-rouge">GET
+.../PractitionerRole?_query=UserRoleProfileByPosition&amp;type=urn:oid:1.3.6.1.4.1.9038.52.3018|219505
+&amp;partof=Organization/aks1</code></p>
+
+<p>Search practitioner role by portion of healthcare position name and enable pagination to show 10
+results per page and show 2nd page:
+<code class="language-plaintext highlighter-rouge">GET
+.../PractitionerRole?_query=UserRoleProfileByPosition&amp;healthcareposition:contains=Lege&amp;page=2&amp;_c
+ount=10</code></p>
+
+<p>Search for practitioner role by healthcareposition name and status=true :
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=UserRoleProfileByPosition&amp;healthcareposition=Lege&amp;active=true</code></p>
+
+<p>Search for practitioner role by healthcareposition name and status=false :
+<code class="language-plaintext highlighter-rouge">GET .../PractitionerRole?_query=UserRoleProfileByPosition&amp;healthcareposition=Lege&amp;active=false</code></p>
+
+<h3 id="fhir-healthcareservice">FHIR HealthcareService</h3>
+
+<p>Table 37. Supported FHIR Operations</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Operation</th>
+      <th>Supported</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Read</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>VRead</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Create</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Update</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>History</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Search</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Delete</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Patch</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="request-read-3">Request: Read</h4>
+
+<p>Read HealthcareService by providing a HealthcareService ID.</p>
+
+<p>Table 38. OperationInformation</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://{server}/DIPS-WebAPI/HL7/FHIR-R4/HealthcareService/{id}</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>GET</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>HealthcareService ID</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="request-search-5">Request: Search</h4>
+
+<p>Table 39. OperationInformation</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://{server}/DIPS-WebAPI/HL7/FHIR-R4/HealthcareService?{SearchParameters}</td>
+    </tr>
+    <tr>
+      <td>HTTP</td>
+      <td>VERB GET</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 40. Parameters</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>identifier Search for HealthcareService by identifier. This supports the following identifier searches. 1. DIPSHCPIdentifier-urn:oid:1.3.6.1.4.1.9038.51.1 2. DIPSHERIdentifier-urn:oid:2.16.578.1.12.4.1.2 3. HealthcareServiceIdentifierhttp://dips.no/fhir/namingsystem/healthcareserviceId</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>Search healthcare service by name which starts with the given value</td>
+    </tr>
+    <tr>
+      <td>name:contains</td>
+      <td>Returns results that include the supplied parameter value anywhere within the healthcare service name field</td>
+    </tr>
+    <tr>
+      <td>name:exact</td>
+      <td>Returns results that match the entire supplied parameter, including casing and accents</td>
+    </tr>
+    <tr>
+      <td>organization</td>
+      <td>Search healthcare service by organization ID</td>
+    </tr>
+    <tr>
+      <td>service-type</td>
+      <td>Search healthcare service by service type</td>
+    </tr>
+    <tr>
+      <td>active</td>
+      <td>Search healthcare service by status. Available statuses are true and false</td>
+    </tr>
+    <tr>
+      <td>_pretty</td>
+      <td>Format the case of the response strings. Available statuses are true and false</td>
+    </tr>
+    <tr>
+      <td>_page</td>
+      <td>Get the response by providing the page number</td>
+    </tr>
+    <tr>
+      <td>_count</td>
+      <td>The number of records to display for the given page</td>
+    </tr>
+    <tr>
+      <td>_id</td>
+      <td>Search with HealthcareService ID</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 41. Includes</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Include</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>_include=HealthcareService:organization</td>
+    </tr>
+    <tr>
+      <td>_include=HealthcareService:department</td>
+    </tr>
+    <tr>
+      <td>_include=HealthcareService:section</td>
+    </tr>
+    <tr>
+      <td>_include=HealthcareService:ward</td>
+    </tr>
+    <tr>
+      <td>_include=HealthcareService:hospital</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example requests</p>
+
+<p>Read healthcare service by HealthcareService ID:
+<code class="language-plaintext highlighter-rouge">GET .../HealthcareService/avcF64B2E39B7237702E043146A000A273D</code></p>
+
+<p>Search healthcare service by DIPSHCPIdentifier:
+<code class="language-plaintext highlighter-rouge">GET .../HealthcareService?identifier=urn:oid:1.3.6.1.4.1.9038.51.1|12995</code></p>
+
+<p>Search healthcare service by DIPSHERIdentifier:
+<code class="language-plaintext highlighter-rouge">GET .../HealthcareService?identifier=urn:oid:2.16.578.1.12.4.1.2|997635</code></p>
+
+<p>Search healthcare service by Healthcare Service Identifier:
+<code class="language-plaintext highlighter-rouge">GET
+.../HealthcareService?identifier=http://dips.no/fhir/namingsystem/healthcareserviceId|F1E097119EF5
+4BCE8675892FF91641B2</code></p>
+
+<p>Search healthcare service by name:
+<code class="language-plaintext highlighter-rouge">GET .../HealthcareService?name=Avsenderadresse</code></p>
+
+<p>Search healthcare service by name:contains:
+<code class="language-plaintext highlighter-rouge">GET .../HealthcareService?name:contains=senderadresse</code></p>
+
+<p>Search healthcare service by name:exact:
+<code class="language-plaintext highlighter-rouge">GET .../HealthcareService?name:exact=Avsenderadresse</code></p>
+
+<p>Search healthcare service by Organization ID:
+<code class="language-plaintext highlighter-rouge">GET .../HealthcareService?organization=Organization/aks1
+GET .../HealthcareService?organization=aks1</code></p>
+
+<p>Search healthcare service by name which contains given string and active status is true:
+<code class="language-plaintext highlighter-rouge">GET .../HealthcareService?name:contains=deradr&amp;active=true</code></p>
+
+<p>Search healthcare service by organization aks1 and see the 3rd page and page record count is 5:
+<code class="language-plaintext highlighter-rouge">GET .../HealthcareService?organization=Organization/aks1&amp;page=3&amp;_count=5</code></p>
+
+<p>Search healthcare service by service name starts with "Avsenderadresse" and view as it is stored in the
+database:
+<code class="language-plaintext highlighter-rouge">GET .../HealthcareService?name=Avsenderadresse&amp;_pretty=false</code></p>
+
+<p>Search healthcare service by service name that starts with "Avsenderadresse" and apply pretty for the
+name string:
+<code class="language-plaintext highlighter-rouge">GET .../HealthcareService?name=Avsenderadresse&amp;_pretty=true</code></p>
+
+<p>Search healthcare service by service-type:
+<code class="language-plaintext highlighter-rouge">GET .../HealthcareService?service-type=263142</code></p>
+
+<p>Search healthcare service with healthcare service ID:
+<code class="language-plaintext highlighter-rouge">GET .../HealthcareService?_id=avcF64B2E39B7237702E043146A000A273D</code></p>
+
+<h3 id="fhir-related-person">FHIR Related Person</h3>
+
+<p>The RelatedPersons typically have a personal or non-healthcare-specific professional relationship to
+the patient.</p>
+
+<h4 id="request-read-4">Request: Read</h4>
+
+<p>Get person information by providing a person ID.</p>
+
+<p>Table 42. OperationInformation</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://{server}/DIPS-WebAPI/HL7/FHIR-R4/RelatedPerson/{id}</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>GET</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>Related person ID</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="request-search-6">Request: Search</h4>
+
+<p>Search for person information</p>
+
+<p>Table 43. OperationInformation</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://https://{server}/DIPS-WebAPI/HL7/FHIR-R4/RelatedPerson?{SearchParameters}</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>GET</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 44. Parameters</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>identifier</td>
+      <td>Search for related person information by a human identifier for this person. This supports the following URNs. http://dips.no/fhir/namingsystem/dipsguardianid, http://dips.no/fhir/namingsystem/dips-relativeid or urn:oid:2.16.578.1.12.4.1.4.1 or urn:oid:2.16.578.1.12.4.1.4.2 or urn:oid:2.16.578.1.12.4.1.4.3</td>
+    </tr>
+    <tr>
+      <td>_id</td>
+      <td>Search with related person ID</td>
+    </tr>
+    <tr>
+      <td>given</td>
+      <td>Search related person by the first name that starts with the given string</td>
+    </tr>
+    <tr>
+      <td>family</td>
+      <td>Search related person by the last name that starts with the given string</td>
+    </tr>
+    <tr>
+      <td>address</td>
+      <td>Related Persons' address</td>
+    </tr>
+    <tr>
+      <td>address-city</td>
+      <td>A city specified in an address</td>
+    </tr>
+    <tr>
+      <td>address-state</td>
+      <td>A state specified in an address</td>
+    </tr>
+    <tr>
+      <td>address-postalcode</td>
+      <td>A postal code specified in an address</td>
+    </tr>
+    <tr>
+      <td>birthdate</td>
+      <td>The person’s date of birth</td>
+    </tr>
+    <tr>
+      <td>phone</td>
+      <td>A value in a phone contact</td>
+    </tr>
+    <tr>
+      <td>email</td>
+      <td>A value in an email contact</td>
+    </tr>
+    <tr>
+      <td>gender</td>
+      <td>The gender of the person.(M,m,male,Mann,K,k,Kvinne,Female,f,F,unknown,u,?,other,ukjent,ubestemt)</td>
+    </tr>
+    <tr>
+      <td>active</td>
+      <td>Search person by status. Available statuses are true and false</td>
+    </tr>
+    <tr>
+      <td>relationship</td>
+      <td>Search by The relationship of the person to the patient</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 45. Search Modifiers</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Modifier</th>
+      <th>Valid Parameters</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>:contains</td>
+      <td>given, family</td>
+      <td>wild card search for the string supplied</td>
+    </tr>
+    <tr>
+      <td>:exact</td>
+      <td>given, family</td>
+      <td>Any person with a name that is exactly same as the search string</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="example-response-1">Example response</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+   "resourceType":"RelatedPerson",
+   "id":"aoz2015095cdp2015093",
+   "meta":{
+      "profile":[
+         "DIPSRelatedPerson",
+         "NoBasisRelatedPerson"
+      ]
+   },
+   "extension":[
+      {
+         "url":"http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonParentalResponsibility",
+         "valueBoolean":true
+      }
+   ],
+   "identifier":[
+      {
+         "use":"official",
+         "system":"http://dips.no/fhir/namingsystem/dips-relativeid",
+         "value":"aoz2015095cdp2015093"
+      }
+   ],
+   "patient":{
+      "reference":"Patient/cdp2015093",
+      "identifier":{
+         "use":"official",
+         "system":"http://dips.no/fhir/namingsystem/dips-patientid",
+         "value":"2015093"
+      }
+   },
+   "relationship":[
+      {
+         "coding":[
+            {
+               "system":"urn:oid:1.3.6.1.4.1.9038.52.4353",
+               "code":"1",
+               "display":"Forelder/foresatt"
+            }
+         ]
+      },
+      {
+         "coding":[
+            {
+               "system":"urn:oid:1.3.6.1.4.1.9038.52.1045",
+               "code":"104501",
+               "display":"Annen pÃ¥rÃ¸rende"
+            }
+         ]
+      },
+      {
+         "coding":[
+            {
+               "system":"urn:oid:1.3.6.1.4.1.9038.52.3210",
+               "code":"7",
+               "display":"Fostermor"
+            }
+         ]
+      },
+      {
+         "coding":[
+            {
+               "system":"http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype",
+               "code":"MTHFOST",
+               "display":"foster mother"
+            }
+         ]
+      }
+   ],
+   "name":[
+      {
+         "text":"Micheal, John",
+         "family":"Micheal",
+         "given":[
+            "John"
+         ]
+      }
+   ],
+   "telecom":[
+      {
+         "system":"phone",
+         "value":"123456789",
+         "use":"home"
+      },
+      {
+         "system":"email",
+         "value":"name1@domain.com",
+         "use":"home"
+      },
+      {
+         "system":"phone",
+         "value":"123456789",
+         "use":"mobile"
+      }
+   ],
+   "gender":"male",
+   "birthDate":"2021-07-31",
+   "address":[
+      {
+         "extension":[
+            {
+               "url":"http://hl7.no/fhir/StructureDefinition/no-basis-urban-district",
+               "valueCoding":{
+                  "system":"urn:oid:1.3.6.1.4.1.9038.52.1065",
+                  "display":"HundvÃ¥g"
+               }
+            },
+            {
+               "url":"http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation",
+               "valueCoding":{
+                  "system":"urn:oid:1.3.6.1.4.1.9038.52.5",
+                  "code":"1103",
+                  "display":"Stavanger"
+               }
+            }
+         ],
+         "use":"home",
+         "line":[
+            "No 100, Down Street"
+         ],
+         "city":"Hafrsfjord",
+         "district":"ROGALAND FYLKESKOMMUNE",
+         "_district":{
+            "extension":[
+               {
+                  "url":"http://dips.no/fhir/StructureDefinition/R4/MunicipalityCode",
+                  "valueCoding":{
+                     "system":"urn:oid:1.3.6.1.4.1.9038.52.5",
+                     "code":"1103",
+                     "display":"Stavanger"
+                  }
+               }
+            ]
+         },
+         "state":"11",
+         "postalCode":"4041",
+         "country":"Norway"
+      }
+   ]
+}
+</code></pre></div></div>
+
+<h5 id="example-requests-1">Example requests</h5>
+
+<p>Read related person info by relative ID aoz1000067cdp1000063:
+<code class="language-plaintext highlighter-rouge">GET .../RelatedPerson/ajf1000024</code></p>
+
+<p>Read related person info by guardian ID ain1000005:
+<code class="language-plaintext highlighter-rouge">GET .../RelatedPerson/ain1000005</code></p>
+
+<p>Search for related person by relative identifier:
+<code class="language-plaintext highlighter-rouge">GET .../RelatedPerson?identifier=http://dips.no/fhir/namingsystem/dipsrelativeid|
+aoz1000067cdp1000063</code></p>
+
+<p>Search for related person by guardian identifier:
+<code class="language-plaintext highlighter-rouge">GET .../RelatedPerson?identifier=http://dips.no/fhir/namingsystem/dips-guardianid|1000005</code></p>
+
+<p>Search for related person first name starts with:
+<code class="language-plaintext highlighter-rouge">GET .../RelatedPerson?given=POL</code></p>
+
+<p>Search for related person first name contains:
+<code class="language-plaintext highlighter-rouge">GET .../RelatedPerson?given:contains=ROL</code></p>
+
+<p>Search for related person by a string which exactly matches with the first name: (_pretty default setting
+is "true". You must send _pretty=false to match result case with the search string case.)
+<code class="language-plaintext highlighter-rouge">GET .../RelatedPerson?given:exact=ROL&amp;_pretty=false</code></p>
+
+<p>Search for related person family name starts with:
+<code class="language-plaintext highlighter-rouge">GET .../RelatedPerson?family=COM</code></p>
+
+<p>Search for related person family name contains:
+<code class="language-plaintext highlighter-rouge">GET .../RelatedPerson?family:contains=ko</code></p>
+
+<p>Search for related person by a string which exactly matches with the family name: (_pretty default
+setting is "true". You must send _pretty=false to match result case with the search string case.)
+<code class="language-plaintext highlighter-rouge">GET .../RelatedPerson?family:exact=Utskrevet&amp;_pretty=false</code></p>
+
+<p>Search for related person by a string which matches with first name and active status is true:
+<code class="language-plaintext highlighter-rouge">GET .../RelatedPerson?given=POL&amp;active=true</code></p>
+
+<p>Search for related person by a string which matches with first name and active status is false:
+<code class="language-plaintext highlighter-rouge">GET .../RelatedPerson?given=POL&amp;active=false</code></p>
+
+<p>Search for related person by Person ID:
+<code class="language-plaintext highlighter-rouge">GET .../RelatedPerson?_id=ajf1000024</code></p>
+
+<p>Search for related person by Address:
+<code class="language-plaintext highlighter-rouge">GET .../RelatedPerson?address=Girogata 9</code></p>
+
+<p>Search for related person by Address - City:
+<code class="language-plaintext highlighter-rouge">GET .../RelatedPerson?address-city=Bodø</code></p>
+
+<p>Search for related person by Address - state:
+<code class="language-plaintext highlighter-rouge">GET .../RelatedPerson?address-state=NORDLAND FYLKESKOMMUNE</code></p>
+
+<p>Search for related person by Address -postal code:
+<code class="language-plaintext highlighter-rouge">GET ...RelatedPerson?address-postal=18</code></p>
+
+<p>Search for related person by a email contact:
+<code class="language-plaintext highlighter-rouge">GET .../RelatedPerson?email=name1@domain.com</code></p>
+
+<p>Search for related person by contact number:
+<code class="language-plaintext highlighter-rouge">GET .../RelatedPerson?phone=77635429</code></p>
+
+<p>Search for related person by a value in birthdate:
+<code class="language-plaintext highlighter-rouge">GET .../RelatedPerson?birthdate=1925-02-15</code></p>
+
+<p>Search for related person by a value in gender:
+<code class="language-plaintext highlighter-rouge">GET .../RelatedPerson?gender=kvinne</code></p>
+
+<p>Search for related person by a relationship:
+<code class="language-plaintext highlighter-rouge">GET .../RelatedPerson?relationship=urn:oid:1.3.6.1.4.1.9038.52.3508|3</code></p>
+
+<h3 id="fhir-valueset-dipsr4valueset">FHIR ValueSet (DIPSR4ValueSet)</h3>
+
+<p>DIPS FHIR R4 ValueSet resource instance specifies a set of codes drawn from one or more code
+systems, intended for use in a particular context. ValueSets link between CodeSystem definitions and
+their use in coded elements. It also contains coding systems and limitations to coding systems in FHIR.
+Examples are medical coding systems as NCRP, NCSP, NCMP, and DIPS internal coding systems found in
+our administration user interface and coding systems used in FHIR R4 profiles.</p>
+
+<h4 id="supported-resources">Supported Resources</h4>
+
+<p>Supports the following resources and operations.</p>
+
+<p>Table 46. Supported FHIR resources</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Resources</th>
+      <th>Supported Interactions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ValueSet</td>
+      <td>Read, Search, Create, Update, VRead, Operations Search</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="read-operation-1">Read Operation</h4>
+<p>The read operation (https://www.hl7.org/fhir/http.html#read) gets a ValueSet by its Logical ID.</p>
+
+<h5 id="read-request-information-for-valueset">Read Request Information for ValueSet</h5>
+
+<p>• Auth-Ticket = Valid ticket from database
+• Content-Type = application/json
+• Method = GET
+• URL = https://{SERVER}/DIPS-WebAPI/HL7/FHIR-R4/ValueSet/{id}?_profile=DIPSR4ValueSet</p>
+
+<h4 id="search-operation-1">Search Operation</h4>
+
+<p>Searching for ValueSets in DIPS FHIR follows the basic FHIR searching principles. ValueSets support the
+following subset of search parameters defined in the HL7 FHIR specification. (https://www.hl7.org/fhir/
+http.html#search)</p>
+
+<h5 id="search-request-information-for-valueset">Search Request Information for ValueSet</h5>
+
+<p>Auth-Ticket = Valid ticket from database
+• Content-Type = application/json
+• Method = GET
+• URL = https://{SERVER}/DIPS-WebAPI/HL7/FHIR-R4/ValueSet?{SearchParameters}&amp;
+_profile=DIPSR4ValueSet</p>
+
+<p>Table 47. Search Parameters</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>code</td>
+      <td>Search ValueSet by code</td>
+    </tr>
+    <tr>
+      <td>code:contains</td>
+      <td>Search ValueSet by a portion of given code</td>
+    </tr>
+    <tr>
+      <td>code:exact</td>
+      <td>Search ValueSet by exact given code</td>
+    </tr>
+    <tr>
+      <td>identifier</td>
+      <td>Search ValueSet by code list identifier</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>Search ValueSet by Phrase, contains at the beginning of the code list name defined in the value set</td>
+    </tr>
+    <tr>
+      <td>name:contains</td>
+      <td>Search ValueSet by Phrase, contains at any position of the code list name defined in the ValueSet</td>
+    </tr>
+    <tr>
+      <td>name:exact</td>
+      <td>Search ValueSet by an exact code list name defined in the value set</td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td>Search ValueSet by statuses. Available statuses are "active" and "retired"</td>
+    </tr>
+    <tr>
+      <td>_pretty</td>
+      <td>Decides if the pretty output is true or false</td>
+    </tr>
+    <tr>
+      <td>reference</td>
+      <td>A code system included or excluded in the value set or an imported ValueSet</td>
+    </tr>
+    <tr>
+      <td>url</td>
+      <td>The logical URL for the ValueSet</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>Text search in the description of the ValueSet</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="create-operation-2">Create Operation</h4>
+
+<p>This section describes the input, output and explanation of properties of the Create method in FHIR
+ValueSet.</p>
+
+<h5 id="create-request-information-for-valueset">Create Request Information for ValueSet</h5>
+
+<ul>
+  <li>Auth-Ticket = Valid ticket from the database</li>
+  <li>Content-Type = application/json</li>
+  <li>Method = POST</li>
+  <li>URL = https://{SERVER}/DIPS-WebAPI/HL7/FHIR-R4/ValueSet</li>
+</ul>
+
+<h6 id="sample-post-request-body-for-creating-a-valueset">Sample POST Request body for creating a ValueSet</h6>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+   "resourceType":"ValueSet",
+   "id":"",
+   "meta":{
+      "profile":[
+         "DIPSValueSet"
+      ]
+   },
+   "identifier":[
+      {
+         "system":"http://dips.no/fhir/namingsystem/codelist",
+         "value":"224"
+      }
+   ],
+   "name":"TESTVALUESETCODES_224",
+   "url":"http://dips.no/fhir/ValueSet/TESTVALUESETCODES_224",
+   "date":"2020-11-19T22:40:00",
+   "contact":[
+      {
+         "name":"DIPS AS"
+      }
+   ],
+   "status":"active",
+   "description":"This is a test valueset's descriptiopn 224",
+   "compose":{
+      "include":[
+         {
+            "system":"urn:oid:1.3.6.1.4.1.9038.52.224",
+            "concept":[
+               {
+                  "code":"101",
+                  "display":"1. Test 101"
+               },
+               {
+                  "code":"202",
+                  "display":"2. Test 202"
+               },
+               {
+                  "code":"303",
+                  "display":"Test 303"
+               },
+               {
+                  "code":"404",
+                  "display":"Test 404"
+               }
+            ]
+         }
+      ]
+   }
+}
+</code></pre></div></div>
+
+<h6 id="sample-post-response-for-valueset">Sample POST Response for ValueSet</h6>
+
+<p>Output
+A complete ValueSet object is received from the JSON response, and it can be viewed from a Read Operation request.</p>
+
+<h5 id="mandatory-properties">Mandatory Properties</h5>
+
+<p>Table 48. Mandatory Properties</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>status</td>
+      <td>The status of the ValueSet</td>
+      <td>"active", "preliminary" or "draft"</td>
+    </tr>
+    <tr>
+      <td>compose→include→code</td>
+      <td>One of the codes in the valueset</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="optional-properties">Optional Properties</h5>
+
+<p>Table 49. Optional Properties</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>identifier</td>
+      <td>Identifier for the ValueSet</td>
+      <td>"identifier": [ { "system":"http://dips.no/fhir/namingsystem/codelist", "value": "224"}]</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>Name of the ValueSet</td>
+      <td>DipsCoding1003ValueSet</td>
+    </tr>
+    <tr>
+      <td>url</td>
+      <td>URL used to identify ValueSet</td>
+      <td>http://dips.no/fhir/ValueSet/TESTVALUESETCODES_236</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>Description of the ValueSet</td>
+      <td>"ValueSet of DIPS Coding 3226"</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- all this Bootstrap html for getting an image to fit nicely in text - 640 pix wide -->
+
+<div>
+<figure class="figure">
+<figcaption class="figure-caption"><strong></strong></figcaption>
+  <img src="warning8.png" class="img-responsive img-rounded center-block" alt="warning8.png" width="75%" />
+</figure>
+
+<p></p>
+</div>
+
+<h4 id="update-operation">Update Operation</h4>
+
+<p>The Update operation helps to update a Valueset by its Logical ID.</p>
+
+<h5 id="update-request-information-for-valueset">Update Request Information for ValueSet</h5>
+
+<ul>
+  <li>Auth-Ticket = Valid ticket from the database</li>
+  <li>Content-Type = application/json</li>
+  <li>Method = PUT</li>
+  <li>URL = https://{SERVER}/DIPS-WebAPI/HL7/FHIR-R4/ValueSet/{id}</li>
+</ul>
+
+<!-- all this Bootstrap html for getting an image to fit nicely in text - 640 pix wide -->
+
+<div>
+<figure class="figure">
+<figcaption class="figure-caption"><strong></strong></figcaption>
+  <img src="warning9.png" class="img-responsive img-rounded center-block" alt="warning9.png" width="75%" />
+</figure>
+
+<p></p>
+</div>
+
+<h4 id="vread-operation">VRead Operation</h4>
+<p>The VRead operation helps to read a Valueset by its Version ID itself.</p>
+
+<h5 id="vread-request-information-for-valueset">VRead Request Information for ValueSet</h5>
+
+<ul>
+  <li>Auth-Ticket = Valid ticket from the database</li>
+  <li>Content-Type = application/json</li>
+  <li>Method = GET</li>
+  <li>URL = https://{SERVER}/DIPS-WebAPI/HL7/FHIR-R4/ValueSet/{id}/_history/{versionNo}&amp;_profile=DIPSR4ValueSet</li>
+</ul>
+
+<h4 id="operations-search">Operations Search</h4>
+
+<p>ValueSet supports paging coded values included in the ValueSet. This can be used on larger ValueSets
+to reduce the amount of data returned. The operation used is stated as follows:</p>
+
+<p>• additionalPagination</p>
+
+<h5 id="operations-search-request-information-for-valueset">Operations Search Request Information for ValueSet</h5>
+
+<ul>
+  <li>Auth-Ticket = Valid ticket from database</li>
+  <li>Content-Type = application/json</li>
+  <li>Method = GET</li>
+  <li>URL = https://{SERVER}/DIPS-WebAPI/HL7/FHIR-R4/ValueSet/{id}/$additionalPagination?{parameters}&amp;_profile=DIPSR4ValueSet</li>
+</ul>
+
+<p>Table 50. Operations Search Parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Direction</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>codeValuePageSize</td>
+      <td>in</td>
+      <td>Size of the page for included codes</td>
+    </tr>
+    <tr>
+      <td>codeValuePageNumber</td>
+      <td>in</td>
+      <td>Page of codes returned by the operation</td>
+    </tr>
+    <tr>
+      <td>codeValueIsValid</td>
+      <td>in</td>
+      <td>Filter codes of given code list ID by active/retired statuses</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>• Representation of the ValueSet with coded values filtered by in parameters is received in the
+out direction as a ValueSet object.</p>
+
+<h4 id="example-requests-2">Example Requests</h4>
+
+<h5 id="read-a-valueset-by-codeid">Read a ValueSet by CodeId</h5>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../ValueSet/agm510?_profile=DIPSR4ValueSet</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../ValueSet/agt542?_profile=DIPSR4ValueSet</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../ValueSet/{GUID}?_profile=DIPSR4ValueSet</code></p>
+
+<h5 id="search-valueset-by-code">Search ValueSet by code:</h5>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../ValueSet?code=1&amp;_profile=DIPSR4ValueSet</code></p>
+
+<h5 id="search-valueset-by-codecontains">Search ValueSet by code:contains:</h5>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../ValueSet?code:contains=201&amp;_profile=DIPSR4ValueSet</code></p>
+
+<h5 id="search-valueset-by-codeexact">Search ValueSet by code:exact:</h5>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../ValueSet?code:exact=215580&amp;_profile=DIPSR4ValueSet</code></p>
+
+<h5 id="search-valueset-by-code-list-id">Search ValueSet by code list ID:</h5>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../ValueSet?_id=agm510&amp;_profile=DIPSR4ValueSet</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../ValueSet?_id=agt277&amp;_profile=DIPSR4ValueSet</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../ValueSet?_id={GUID}&amp;_profile=DIPSR4ValueSet</code></p>
+
+<h5 id="search-valueset-by-status">Search ValueSet by status:</h5>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../ValueSet?status=active&amp;_profile=DIPSR4ValueSet</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../ValueSet?status=retired&amp;_profile=DIPSR4ValueSet</code></p>
+
+<h5 id="search-valueset-by-code-list-identifier">Search ValueSet by code list identifier:</h5>
+
+<p><code class="language-plaintext highlighter-rouge">GET DIPS internal value set
+.../ValueSet?identifier=http://dips.no/fhir/namingsystem/codelist|510&amp;_profile=DIPSR4ValueSet</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">GET Medical Coding value
+set.../ValueSet?identifier=http://dips.no/fhir/namingsystem/medicinecode|277&amp;_profile=DIPSR4Value
+Set</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">GET GUID .../ValueSet?identifier=http://dips.no/fhir/namingsystem/dips-valueset|b0983ac1-a115-
+41c2-94fb-cbee1f62c384&amp;_profile=DIPSR4ValueSet</code></p>
+
+<h5 id="search-valueset-by-code-list-name">Search ValueSet by code list name:</h5>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../ValueSet?name=BW-STATUS&amp;_profile=DIPSR4ValueSet</code></p>
+
+<h5 id="search-valueset-by-code-list-namecontains">Search ValueSet by code list name:contains:</h5>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../ValueSet?name:contains=STATUS&amp;_profile=DIPSR4ValueSet</code></p>
+
+<h5 id="search-valueset-by-code-list-nameexact">Search ValueSet by code list name:exact:</h5>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../ValueSet?name:exact=BW-STATUS&amp;_profile=DIPSR4ValueSet</code></p>
+
+<h5 id="search-valueset-by-url">Search ValueSet by URL:</h5>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../ValueSet?url=http://dips.no/fhir/valueset/v1-OrgAccess&amp;_profile=DIPSR4ValueSet</code></p>
+
+<h5 id="search-valueset-by-description">Search ValueSet by description:</h5>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../ValueSet?description=ValueSet of DIPS Coding 3230&amp;_profile=DIPSR4ValueSet</code></p>
+
+<h5 id="search-valueset-by-multiple-parameters">Search ValueSet by multiple parameters:</h5>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../ValueSet?code=2&amp;status=active&amp;_profile=DIPSR4ValueSet</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../ValueSet?code=2&amp;status=active&amp;name:contains=SYS-LOGOUTCODES&amp;_profile=DIPSR4ValueSet</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../ValueSet?code=2&amp;status=active&amp;page=2&amp;_count=5&amp;_profile=DIPSR4ValueSet</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../ValueSet?code=2&amp;status=active&amp;_id=agm510&amp;_profile=DIPSR4ValueSet</code></p>
+
+<h5 id="search-valueset-with-paging">Search ValueSet with Paging</h5>
+
+<p>• Paging works independently of search parameters, where if not specified explicitly, default
+paging parameter values are taken from the web.config file.
+• Count &amp; Page Standard Parameters common for any kind of search: http://www.hl7.org/fhir/
+search.html</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../ValueSet?status=active&amp;_count=&lt;NoOfRecords&gt;&amp;page=&lt;PageNo&gt;</code>
+◦ _count : NoOfRecords = No of records Per single page (DEFAULT = 100)</p>
+
+<h5 id="get-a-list-of-active-codes-associated-with-code-list-id-agm510-and-apply-pagination-to-display-a-single-record-and-display-page-number-1">Get a list of active codes associated with code list ID "agm510" and apply pagination to display a single record and display page number 1:</h5>
+
+<p><code class="language-plaintext highlighter-rouge">GET
+.../ValueSet/agm510/$additionalPagination?codeValuePageSize=1&amp;codeValuePageNumber=1&amp;codeVa
+lueIsValid=1&amp;_profile=DIPSR4ValueSet</code></p>
+
+<h5 id="get-a-list-of-all-the-code-lists-and-apply-pagination-to-display-5-codes-per-page-and-display-page-number-2">Get a list of all the code lists and apply pagination to display 5 codes per page and display page number 2:</h5>
+
+<p><code class="language-plaintext highlighter-rouge">GET
+.../ValueSet/$additionalPagination?codeValuePageSize=5&amp;codeValuePageNumber=2&amp;_profile=DIPSR4
+ValueSet</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>© 2023 DIPS AS
+All rights reserved.
+No part of this publication may be reproduced, stored in a retrieval system, transmitted, or
+published to a third party, in any form or by any means, mechanical, electronic, photocopying,
+recording, or otherwise, without prior written permission of DIPS AS.
+OpenEHR is a registered trademark of OpenEHR Foundation. HL7®, CDA®, FHIR® and the FHIR
+[FLAME DESIGN]® are the registered trademarks of Health Level Seven International.
+All other trademarks mentioned herein are the property of their respective owners.
+DIPS AS
+Postboks 1435
+8037 Bodø
+Norway
+https://www.dips.no
++47 75 59 20 00
+</code></pre></div></div>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 20, 2026 12:37+0530">2026-08-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

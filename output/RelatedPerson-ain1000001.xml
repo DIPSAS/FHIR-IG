@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelatedPerson xmlns="http://hl7.org/fhir">
+  <id value="ain1000001"/>
+  <meta>
+    <profile value="http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPerson"/>
+    <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RelatedPerson ain1000001</b></p><a name="ain1000001"> </a><a name="hcain1000001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-DIPSRelatedPerson.html">DIPSRelatedPerson</a>, <a href="https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;canonical=http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson">no-basis-RelatedPerson</a></p></div><p><b>DIPSRelatedPersonAppointedByMunicipality</b>: [not stated]: 524 (Mandal)</p><p><b>DIPSRelatedPersonAdditionalInformation</b>: Dette er vergetype 'Hjelpeverge' for pasient &quot;Mange Verger&quot;</p><p><b>DIPSRelatedPersonResponsibleRequisitioner</b>: <a href="PractitionerRole-agb1000456.html">KIRURG, HOFTE, TESTSYKEHUSET HF</a></p><p><b>identifier</b>: <code>http://dips.no/fhir/namingsystem/dips-guardianid</code>/1000001 (use: official, )</p><p><b>active</b>: false</p><p><b>patient</b>: <a href="Patient-cdp2007860.html">Anonymous Patient (no stated gender), DoB Unknown ( http://dips.no/fhir/namingsystem/dips-patientid#2007860)</a></p><p><b>relationship</b>: <span title="Codes:{urn:oid:1.3.6.1.4.1.9038.52.3508 2}">Hjelpeverge</span></p><p><b>name</b>: Verge, Hjelpe</p><p><b>telecom</b>: ph: 45122255(Home)</p><p><b>gender</b>: Unknown</p><p><b>address</b>: Hjelpeveien Mandal 4504 </p><p><b>period</b>: 2008-02-04 00:00:00+0000 --&gt; 2015-05-12 00:00:00+0000</p></div>
+  </text>
+  <extension url="http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAppointedByMunicipality">
+    <valueCoding>
+      <code value="524"/>
+      <display value="Mandal"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAdditionalInformation">
+    <valueString value="Dette er vergetype 'Hjelpeverge' for pasient &quot;Mange Verger&quot;"/>
+  </extension>
+  <extension url="http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonResponsibleRequisitioner">
+    <valueReference>
+      <reference value="PractitionerRole/agb1000456"/>
+      <display value="KIRURG, HOFTE, TESTSYKEHUSET HF"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <system value="http://dips.no/fhir/namingsystem/dips-guardianid"/>
+    <value value="1000001"/>
+  </identifier>
+  <active value="false"/>
+  <patient>
+    <reference value="Patient/cdp2007860"/>
+    <identifier>
+      <use value="official"/>
+      <system value="http://dips.no/fhir/namingsystem/dips-patientid"/>
+      <value value="2007860"/>
+    </identifier>
+  </patient>
+  <relationship>
+    <coding>
+      <system value="urn:oid:1.3.6.1.4.1.9038.52.3508"/>
+      <code value="2"/>
+      <display value="Hjelpeverge"/>
+    </coding>
+  </relationship>
+  <name>
+    <text value="Verge, Hjelpe"/>
+    <family value="Verge"/>
+    <given value="Hjelpe"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="45122255"/>
+    <use value="home"/>
+  </telecom>
+  <gender value="unknown"/>
+  <address>
+    <line value="Hjelpeveien"/>
+    <city value="Mandal"/>
+    <postalCode value="4504"/>
+  </address>
+  <period>
+    <start value="2008-02-04T00:00:00+00:00"/>
+    <end value="2015-05-12T00:00:00+00:00"/>
+  </period>
+</RelatedPerson>

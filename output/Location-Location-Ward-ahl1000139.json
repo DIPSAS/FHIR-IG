@@ -1,0 +1,66 @@
+{
+  "resourceType" : "Location",
+  "id" : "Location-Ward-ahl1000139",
+  "meta" : {
+    "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSLocation",
+    "http://hl7.no/fhir/StructureDefinition/no-basis-Location"],
+    "security" : [{
+      "system" : "http://dips.no/fhir/InternalSecurityAccess",
+      "code" : "A",
+      "display" : "ALL"
+    }],
+    "tag" : [{
+      "system" : "http://dips.no/fhir/namingsystem/locationsource",
+      "code" : "ward"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location Location-Ward-ahl1000139</b></p><a name=\"Location-Ward-ahl1000139\"> </a><a name=\"hcLocation-Ward-ahl1000139\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-DIPSLocation.html\">DIPSLocation</a>, <a href=\"https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;canonical=http://hl7.no/fhir/StructureDefinition/no-basis-Location\">no-basis-Location</a></p><p style=\"margin-bottom: 0px\">Tag: </p><p style=\"margin-bottom: 0px\">Security Label: </p></div><p><b>identifier</b>: <code>urn:oid:1.3.6.1.4.1.9038.70.4</code>/1000139\u00a0(use:\u00a0official,\u00a0), <code>http://dips.no/fhir/namingsystem/dips-wardshortname</code>/K2 Sd\u00a0(use:\u00a0official,\u00a0)</p><p><b>status</b>: Active</p><p><b>name</b>: Kirurgisk Post 2, Sd</p><p><b>mode</b>: Instance</p><p><b>type</b>: <span title=\"Codes:{http://dips.no/fhir/namingsystem/dips-disasterward 0}\">0</span>, <span title=\"Codes:{http://dips.no/fhir/ValueSet/locationtoplevel 08}\">Post</span></p><p><b>address</b>: (work)</p><p><b>physicalType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/location-physical-type wa}\">Ward</span></p></div>"
+  },
+  "identifier" : [{
+    "use" : "official",
+    "system" : "urn:oid:1.3.6.1.4.1.9038.70.4",
+    "value" : "1000139"
+  },
+  {
+    "use" : "official",
+    "system" : "http://dips.no/fhir/namingsystem/dips-wardshortname",
+    "value" : "K2 Sd"
+  }],
+  "status" : "active",
+  "name" : "Kirurgisk Post 2, Sd",
+  "mode" : "instance",
+  "type" : [{
+    "coding" : [{
+      "system" : "http://dips.no/fhir/namingsystem/dips-disasterward",
+      "code" : "0"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://dips.no/fhir/ValueSet/locationtoplevel",
+      "code" : "08",
+      "display" : "Post"
+    }]
+  }],
+  "address" : {
+    "extension" : [{
+      "url" : "http://dips.no/fhir/R4/StructureDefinition/LocationAddressId",
+      "valueIdentifier" : {
+        "use" : "official",
+        "system" : "http://dips.no/fhir/namingsystem/dips-addressid",
+        "value" : "1001177"
+      }
+    }],
+    "use" : "work",
+    "type" : "physical"
+  },
+  "physicalType" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
+      "code" : "wa",
+      "display" : "Ward"
+    }]
+  }
+}

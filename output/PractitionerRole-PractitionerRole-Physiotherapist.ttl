@@ -1,0 +1,263 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/R4/PractitionerRole/PractitionerRole-Physiotherapist> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "PractitionerRole-Physiotherapist"] ;
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2011-06-29T15:25:06+05:30"^^xsd:dateTime ] ;
+     fhir:Meta.profile [
+       fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRole" ;
+       fhir:index 0 ;
+       fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRole>
+     ], [
+       fhir:value "http://dips.no/fhir/R4/StructureDefinition/NoBasisPractitionerRole" ;
+       fhir:index 1 ;
+       fhir:link <http://dips.no/fhir/R4/StructureDefinition/NoBasisPractitionerRole>
+     ] ;
+     fhir:Meta.tag [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://dips.no/fhir/namingsystem/practitionerrolesource" ] ;
+       fhir:Coding.code [ fhir:value "practitionerRole" ]
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole PractitionerRole-Physiotherapist</b></p><a name=\"PractitionerRole-Physiotherapist\"> </a><a name=\"hcPractitionerRole-Physiotherapist\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2011-06-29 15:25:06+0530</p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-DIPSPractitionerRole.html\">DIPSPractitionerRole</a>, <a href=\"https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;canonical=http://dips.no/fhir/R4/StructureDefinition/NoBasisPractitionerRole\">http://dips.no/fhir/R4/StructureDefinition/NoBasisPractitionerRole</a></p><p style=\"margin-bottom: 0px\">Tag: </p></div><p><b>DIPSPractitionerRoleHealthCarePartyType</b>: Person</p><p><b>DIPSPractitionerRoleCommunicationType</b>: <span title=\"Codes:{http://dips.no/fhir/namingsystem/communication-type EP}, {http://dips.no/fhir/namingsystem/communication-type RTG}, {http://dips.no/fhir/namingsystem/communication-type RTGHV}, {http://dips.no/fhir/namingsystem/communication-type HENV}\">Epikrise</span></p><p><b>DIPSPractitionerRoleHealthCarePartyDepartment</b>: <a href=\"Organization-afa1000061.html\">Organization: identifier = urn:oid:1.3.6.1.4.1.9038.70.3#1000061</a></p><p><b>DIPSPractitionerRoleHospital</b>: <a href=\"https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;canonical=http://fhir.org/packages/hl7.fhir.no.basis/Organization/afm1\">Organization/afm1</a></p><p><b>DIPSPractitionerRoleUserRoleDepartment</b>: <a href=\"Organization-afa1000061.html\">Organization: identifier = urn:oid:1.3.6.1.4.1.9038.70.3#1000061</a></p><p><b>DIPSPractitionerRoleDipsSignature</b>: REKV2</p><p><b>DIPSPractitionerRoleUserRoleLastUpdated</b>: 2019-10-17 13:55:24+0000</p><p><b>DIPSPractitionerRoleHealthCarePosition</b>: unknown: 219473 (Fysioterapeut)</p><p><b>DIPSPractitionerRoleUserRoleName</b>: REKV2: Standard rolle for Rekvirent (SammenslÃ¥ing), Harry Ola</p><p><b>DIPSPractitionerRoleUserRoleId</b>: 1001240</p><p><b>identifier</b>: <code>urn:oid:1.3.6.1.4.1.9038.51</code>/REKV2 (use: official, ), <code>urn:oid:1.3.6.1.4.1.9038.51.1</code>/1000609 (use: official, ), HelsepersonellregisteretNummer/1215 (use: official, )</p><p><b>active</b>: true</p><p><b>period</b>: ?? --&gt; 2056-01-31 11:52:56+0000</p><p><b>practitioner</b>: <a href=\"Practitioner-stf2007723.html\">Practitioner: identifier = urn:oid:2.16.578.1.12.4.1.4.4#HelsepersonellregisteretNummer#1215</a></p><p><b>organization</b>: <a href=\"Organization-aks1.html\">Testsykehuset HF</a></p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.3.6.1.4.1.9038.52.1012 9}\">Ikke lege</span></p><p><b>location</b>: <a href=\"Location-aea1000021.html\">Location: identifier = urn:oid:1.3.6.1.4.1.9038.70.6#1000021</a></p><p><b>telecom</b>: ph: 75505000(Work)</p><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Practitioner </b></p><p><b>identifier</b>: HelsepersonellregisteretNummer/1215 (use: official, )</p><p><b>name</b>: HARRY OLA REKVIRENT (SAMMENSLÃ…ING) </p></blockquote></div>"
+  ] ;
+  fhir:DomainResource.contained [
+     a fhir:Practitioner ;
+     fhir:index 0 ;
+     fhir:Practitioner.identifier [
+       fhir:index 0 ;
+       fhir:Identifier.use [ fhir:value "official" ] ;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.4" ] ;
+       fhir:Identifier.value [ fhir:value "1215" ]
+     ] ;
+     fhir:Practitioner.name [
+       fhir:index 0 ;
+       fhir:HumanName.family [ fhir:value "REKVIRENT (SAMMENSLÃ…ING)" ] ;
+       fhir:HumanName.given [
+         fhir:value "HARRY OLA" ;
+         fhir:index 0
+       ]
+     ]
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHealthCarePartyType" ] ;
+     fhir:Extension.valueString [ fhir:value "Person" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationType" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationProtocol" ] ;
+           fhir:Extension.valueCoding [
+             fhir:Coding.system [ fhir:value "http://dips.no/fhir/namingsystem/communication-protocol" ] ;
+             fhir:Coding.code [ fhir:value "ARBFLYT" ] ;
+             fhir:Coding.display [ fhir:value "Dokument til signering i DIPS Arbeidsflyt" ]
+           ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationTypeId" ] ;
+           fhir:Extension.valueString [ fhir:value "110700" ]
+         ] ;
+         fhir:Coding.system [ fhir:value "http://dips.no/fhir/namingsystem/communication-type" ] ;
+         fhir:Coding.code [ fhir:value "EP" ] ;
+         fhir:Coding.display [ fhir:value "Epikrise" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationProtocol" ] ;
+           fhir:Extension.valueCoding [
+             fhir:Coding.system [ fhir:value "http://dips.no/fhir/namingsystem/communication-protocol" ] ;
+             fhir:Coding.code [ fhir:value "RTGXML" ] ;
+             fhir:Coding.display [ fhir:value "KITH XML 1.2  Svarmelding (EDI Broker)" ]
+           ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationTypeId" ] ;
+           fhir:Extension.valueString [ fhir:value "110701" ]
+         ], [
+           fhir:index 2 ;
+           fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleIsPaperCopy" ] ;
+           fhir:Extension.valueDecimal [ fhir:value "1"^^xsd:decimal ]
+         ] ;
+         fhir:Coding.system [ fhir:value "http://dips.no/fhir/namingsystem/communication-type" ] ;
+         fhir:Coding.code [ fhir:value "RTG" ] ;
+         fhir:Coding.display [ fhir:value "RÃ¸ntgensvar" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationProtocol" ] ;
+           fhir:Extension.valueCoding [
+             fhir:Coding.system [ fhir:value "http://dips.no/fhir/namingsystem/communication-protocol" ] ;
+             fhir:Coding.code [ fhir:value "XMLMSBRO" ] ;
+             fhir:Coding.display [ fhir:value "KITH XML (MessageBroker)" ]
+           ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationTypeId" ] ;
+           fhir:Extension.valueString [ fhir:value "224536" ]
+         ] ;
+         fhir:Coding.system [ fhir:value "http://dips.no/fhir/namingsystem/communication-type" ] ;
+         fhir:Coding.code [ fhir:value "RTGHV" ] ;
+         fhir:Coding.display [ fhir:value "RÃ¸ntgenhenvisning" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationProtocol" ] ;
+           fhir:Extension.valueCoding [
+             fhir:Coding.system [ fhir:value "http://dips.no/fhir/namingsystem/communication-protocol" ] ;
+             fhir:Coding.code [ fhir:value "XMLKITHHV" ] ;
+             fhir:Coding.display [ fhir:value "KITH Henvisning XML versjon 1.0" ]
+           ]
+         ], [
+           fhir:index 1 ;
+           fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationTypeId" ] ;
+           fhir:Extension.valueString [ fhir:value "262135" ]
+         ] ;
+         fhir:Coding.system [ fhir:value "http://dips.no/fhir/namingsystem/communication-type" ] ;
+         fhir:Coding.code [ fhir:value "HENV" ] ;
+         fhir:Coding.display [ fhir:value "Henvisning" ]
+       ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHealthCarePartyDepartment" ] ;
+     fhir:Extension.valueReference [
+       fhir:link <http://dips.no/fhir/R4/Organization/afa1000061> ;
+       fhir:Reference.reference [ fhir:value "Organization/afa1000061" ] ;
+       fhir:Reference.identifier [
+         fhir:Identifier.use [ fhir:value "official" ] ;
+         fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.70.3" ] ;
+         fhir:Identifier.value [ fhir:value "1000061" ]
+       ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHospital" ] ;
+     fhir:Extension.valueReference [
+       fhir:link <http://dips.no/fhir/R4/Organization/afm1> ;
+       fhir:Reference.reference [ fhir:value "Organization/afm1" ] ;
+       fhir:Reference.identifier [
+         fhir:Identifier.use [ fhir:value "official" ] ;
+         fhir:Identifier.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.101" ] ;
+         fhir:Identifier.value [ fhir:value "970948139" ]
+       ]
+     ]
+  ], [
+     fhir:index 4 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleUserRoleDepartment" ] ;
+     fhir:Extension.valueReference [
+       fhir:link <http://dips.no/fhir/R4/Organization/afa1000061> ;
+       fhir:Reference.reference [ fhir:value "Organization/afa1000061" ] ;
+       fhir:Reference.identifier [
+         fhir:Identifier.use [ fhir:value "official" ] ;
+         fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.70.3" ] ;
+         fhir:Identifier.value [ fhir:value "1000061" ]
+       ]
+     ]
+  ], [
+     fhir:index 5 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleDipsSignature" ] ;
+     fhir:Extension.valueString [ fhir:value "REKV2" ]
+  ], [
+     fhir:index 6 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleUserRoleLastUpdated" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2019-10-17T13:55:24+00:00"^^xsd:dateTime ]
+  ], [
+     fhir:index 7 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHealthCarePosition" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.52.3018" ] ;
+       fhir:Coding.code [ fhir:value "219473" ] ;
+       fhir:Coding.display [ fhir:value "Fysioterapeut" ]
+     ]
+  ], [
+     fhir:index 8 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleUserRoleName" ] ;
+     fhir:Extension.valueString [ fhir:value "REKV2: Standard rolle for Rekvirent (SammenslÃ¥ing), Harry Ola" ]
+  ], [
+     fhir:index 9 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleUserRoleId" ] ;
+     fhir:Extension.valueString [ fhir:value "1001240" ]
+  ] ;
+  fhir:PractitionerRole.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.51" ] ;
+     fhir:Identifier.value [ fhir:value "REKV2" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.51.1" ] ;
+     fhir:Identifier.value [ fhir:value "1000609" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.4" ] ;
+     fhir:Identifier.value [ fhir:value "1215" ]
+  ] ;
+  fhir:PractitionerRole.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:PractitionerRole.period [
+     fhir:Period.end [ fhir:value "2056-01-31T11:52:56+00:00"^^xsd:dateTime ]
+  ] ;
+  fhir:PractitionerRole.practitioner [
+     fhir:link <http://dips.no/fhir/R4/Practitioner/stf2007723> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/stf2007723" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.use [ fhir:value "official" ] ;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.4" ] ;
+       fhir:Identifier.value [ fhir:value "1215" ]
+     ]
+  ] ;
+  fhir:PractitionerRole.organization [
+     fhir:link <http://dips.no/fhir/R4/Organization/aks1> ;
+     fhir:Reference.reference [ fhir:value "Organization/aks1" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.use [ fhir:value "official" ] ;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.101" ] ;
+       fhir:Identifier.value [ fhir:value "970948139" ]
+     ] ;
+     fhir:Reference.display [ fhir:value "Testsykehuset HF" ]
+  ] ;
+  fhir:PractitionerRole.code [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.52.1012" ] ;
+       fhir:Coding.code [ fhir:value "9" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Ikke lege" ]
+  ] ;
+  fhir:PractitionerRole.location [
+     fhir:index 0 ;
+     fhir:link <http://dips.no/fhir/R4/Location/aea1000021> ;
+     fhir:Reference.reference [ fhir:value "Location/aea1000021" ]
+  ] ;
+  fhir:PractitionerRole.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "75505000" ] ;
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://dips.no/fhir/R4/PractitionerRole/PractitionerRole-Physiotherapist.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

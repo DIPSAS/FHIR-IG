@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="aks1000174"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization aks1000174</b></p><a name="aks1000174"> </a><a name="hcaks1000174"> </a><p><b>identifier</b>: <code>urn:oid:1.3.6.1.4.1.9038.70.1</code>/1000174</p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:1.3.6.1.4.1.9038.70.1"/>
+    <value value="1000174"/>
+  </identifier>
+</Organization>

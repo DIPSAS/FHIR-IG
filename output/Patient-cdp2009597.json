@@ -1,0 +1,8 @@
+{
+  "resourceType" : "Patient",
+  "id" : "cdp2009597",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient cdp2009597</b></p><a name=\"cdp2009597\"> </a><a name=\"hccdp2009597\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown</p><hr/></div>"
+  }
+}

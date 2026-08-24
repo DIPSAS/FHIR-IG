@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="LanguageCodes"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2020-04-17T00:33:33.219-04:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet LanguageCodes</b></p><a name="LanguageCodes"> </a><a name="hcLanguageCodes"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: 1; Last updated: 2020-04-17 00:33:33-0400</p></div><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>urn:ietf:bcp:47</code><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>nb-nob</td><td>Norwegian Bokmål</td></tr><tr><td>nn-nno</td><td>Norwegian Nynorsk</td></tr><tr><td>en-eng</td><td>Engelsk</td></tr><tr><td>fr-fre</td><td>Fransk</td></tr><tr><td>de-ger</td><td>Tysk</td></tr><tr><td>es-spa</td><td>Spansk</td></tr></table></li><li>Include these codes as defined in <code>urn:oid:0.1.2.3.4</code><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>17</td><td>Location</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://dips.no/fhir/R4/ValueSet/LanguageCodes"/>
+  <version value="0.1.0"/>
+  <name value="LanguageCodes"/>
+  <status value="active"/>
+  <date value="2026-08-20T12:37:22+05:30"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="Lars-Andreas Nystad"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:lan@dips.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Valesets of LanguageCodes"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="urn:ietf:bcp:47"/>
+      <concept>
+        <code value="nb-nob"/>
+        <display value="Norwegian Bokmål"/>
+      </concept>
+      <concept>
+        <code value="nn-nno"/>
+        <display value="Norwegian Nynorsk"/>
+      </concept>
+      <concept>
+        <code value="en-eng"/>
+        <display value="Engelsk"/>
+      </concept>
+      <concept>
+        <code value="fr-fre"/>
+        <display value="Fransk"/>
+      </concept>
+      <concept>
+        <code value="de-ger"/>
+        <display value="Tysk"/>
+      </concept>
+      <concept>
+        <code value="es-spa"/>
+        <display value="Spansk"/>
+      </concept>
+    </include>
+    <include>
+      <system value="urn:oid:0.1.2.3.4"/>
+      <concept>
+        <code value="17"/>
+        <display value="Location"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

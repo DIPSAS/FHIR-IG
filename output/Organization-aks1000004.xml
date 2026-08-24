@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="aks1000004"/>
+  <meta>
+    <profile value="http://dips.no/fhir/R4/StructureDefinition/DIPSOrganization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization aks1000004</b></p><a name="aks1000004"> </a><a name="hcaks1000004"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-DIPSOrganization.html">DIPSOrganization</a></p></div><p><b>identifier</b>: <code>urn:oid:1.3.6.1.4.1.9038.70.1</code>/1000004</p><p><b>active</b>: true</p><p><b>name</b>: Helse Nord</p><p><b>address</b>: Bankgata 12 Bodø NORDLAND FYLKESKOMMUNE 8012 (work)</p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:1.3.6.1.4.1.9038.70.1"/>
+    <value value="1000004"/>
+  </identifier>
+  <active value="true"/>
+  <name value="Helse Nord"/>
+  <address>
+    <extension url="http://dips.no/fhir/R4/StructureDefinition/OrganizationAddressId">
+      <valueIdentifier>
+        <use value="official"/>
+        <system value="http://dips.no/fhir/namingsystem/dips-addressid"/>
+        <value value="1000018"/>
+      </valueIdentifier>
+    </extension>
+    <extension url="http://hl7.no/fhir/StructureDefinition/R4/no-basis-propertyinformation">
+      <valueCoding>
+        <system value="urn:oid:2.16.578.1.12.4.1.1.3402"/>
+        <code value="1804"/>
+        <display value="BODØ"/>
+      </valueCoding>
+    </extension>
+    <use value="work"/>
+    <type value="physical"/>
+    <line value="Bankgata 12"/>
+    <city value="Bodø"/>
+    <district value="BODØ"/>
+    <state value="NORDLAND FYLKESKOMMUNE"/>
+    <postalCode value="8012"/>
+  </address>
+</Organization>

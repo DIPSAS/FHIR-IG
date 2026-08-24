@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelatedPerson xmlns="http://hl7.org/fhir">
+  <id value="aoz1000067cdp1000063"/>
+  <meta>
+    <profile value="http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPerson"/>
+    <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RelatedPerson aoz1000067cdp1000063</b></p><a name="aoz1000067cdp1000063"> </a><a name="hcaoz1000067cdp1000063"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-DIPSRelatedPerson.html">DIPSRelatedPerson</a>, <a href="https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;canonical=http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson">no-basis-RelatedPerson</a></p></div><p><b>DIPSRelatedPersonKinship</b>: Mor</p><p><b>identifier</b>: FellesHjelpenummer/12526845852 (use: temp, ), <code>http://dips.no/fhir/namingsystem/dips-relativeid</code>/aoz1000067cdp1000063 (use: official, )</p><p><b>active</b>: true</p><p><b>patient</b>: <a href="Patient-cdp1000063.html">Anonymous Patient (no stated gender), DoB Unknown ( http://dips.no/fhir/namingsystem/dips-patientid#1000063)</a></p><p><b>relationship</b>: <span title="Codes:{urn:oid:1.3.6.1.4.1.9038.52.1045 104500}">HovedpÃ¥rÃ¸rende</span></p><p><b>name</b>: Voksen (Testplan - Bas-Team), Dame</p><p><b>gender</b>: Female</p><p><b>birthDate</b>: 1968-12-12</p><p><b>address</b>: Gravdal 18 8372 Norway (home)</p></div>
+  </text>
+  <extension url="http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonKinship">
+    <valueString value="Mor"/>
+  </extension>
+  <identifier>
+    <use value="temp"/>
+    <system value="urn:oid:2.16.578.1.12.4.1.4.3"/>
+    <value value="12526845852"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <system value="http://dips.no/fhir/namingsystem/dips-relativeid"/>
+    <value value="aoz1000067cdp1000063"/>
+  </identifier>
+  <active value="true"/>
+  <patient>
+    <reference value="Patient/cdp1000063"/>
+    <identifier>
+      <use value="official"/>
+      <system value="http://dips.no/fhir/namingsystem/dips-patientid"/>
+      <value value="1000063"/>
+    </identifier>
+  </patient>
+  <relationship>
+    <coding>
+      <system value="urn:oid:1.3.6.1.4.1.9038.52.1045"/>
+      <code value="104500"/>
+      <display value="HovedpÃ¥rÃ¸rende"/>
+    </coding>
+  </relationship>
+  <name>
+    <text value="Voksen (Testplan - Bas-Team), Dame"/>
+    <family value="Voksen (Testplan - Bas-Team)"/>
+    <given value="Dame"/>
+  </name>
+  <gender value="female"/>
+  <birthDate value="1968-12-12"/>
+  <address>
+    <extension url="http://hl7.no/fhir/StructureDefinition/no-basis-urban-district">
+      <valueCoding>
+        <system value="urn:oid:1.3.6.1.4.1.9038.52.1065"/>
+      </valueCoding>
+    </extension>
+    <extension url="http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation">
+      <extension url="municipality">
+        <valueCoding>
+          <system value="urn:oid:1.3.6.1.4.1.9038.52.5"/>
+          <code value="1860"/>
+          <display value="VestvÃ¥gÃ¸y"/>
+        </valueCoding>
+      </extension>
+    </extension>
+    <use value="home"/>
+    <city value="Gravdal"/>
+    <district value="NORDLAND FYLKESKOMMUNE">
+      <extension url="http://dips.no/fhir/R4/StructureDefinition/MunicipalityCode">
+        <valueCoding>
+          <system value="urn:oid:1.3.6.1.4.1.9038.52.5"/>
+          <code value="1860"/>
+          <display value="VestvÃ¥gÃ¸y"/>
+        </valueCoding>
+      </extension>
+    </district>
+    <state value="18"/>
+    <postalCode value="8372"/>
+    <country value="Norway"/>
+  </address>
+</RelatedPerson>

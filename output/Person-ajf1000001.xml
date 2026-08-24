@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Person xmlns="http://hl7.org/fhir">
+  <id value="ajf1000001"/>
+  <meta>
+    <profile value="http://dips.no/fhir/R4/StructureDefinition/DIPSPerson"/>
+    <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Person"/>
+  </meta>
+  <language value="Engelsk"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="Engelsk" lang="Engelsk"><p class="res-header-id"><b>Generated Narrative: Person ajf1000001</b></p><a name="ajf1000001"> </a><a name="hcajf1000001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: Engelsk</p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-DIPSPerson.html">DIPSPerson</a>, <a href="https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;canonical=http://hl7.no/fhir/StructureDefinition/no-basis-Person">no-basis-Person</a></p></div><p><b>DIPSPersonLanguage</b>: <span title="Codes:">Engelsk</span></p><p><b>identifier</b>: FellesHjelpenummer/23445949728 (use: temp, ), <code>http://dips.no/fhir/namingsystem/dips-personid</code>/1000001</p><p><b>name</b>: Skålsvik (Testplan Edi), Eddie</p><p><b>gender</b>: Male</p><p><b>birthDate</b>: 1959-04-23</p><p><b>address</b>: Bestemorenga Bodø 18 8013 Norway (home)</p><p><b>active</b>: true</p><h3>Links</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Target</b></td></tr><tr><td style="display: none">*</td><td><a href="#hcajf1000001/23445949728">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.3#FellesHjelpenummer#23445949728 (use: temp, ))</a></td></tr></table><hr/><blockquote><p class="res-header-id"><b>Generated Narrative: Patient #23445949728</b></p><a name="ajf1000001/23445949728"> </a><a name="hcajf1000001/23445949728"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-DIPSPatient.html">DIPSPatient</a>, <a href="https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;canonical=http://hl7.no/fhir/StructureDefinition/no-basis-Patient">no-basis-Patient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.3#FellesHjelpenummer#23445949728 (use: temp, ))</p><hr/></blockquote></div>
+  </text>
+  <contained>
+    <Patient>
+      <id value="23445949728"/>
+      <meta>
+        <profile value="http://dips.no/fhir/R4/StructureDefinition/DIPSPatient"/>
+        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient"/>
+      </meta>
+      <identifier>
+        <use value="temp"/>
+        <system value="urn:oid:2.16.578.1.12.4.1.4.3"/>
+        <value value="23445949728"/>
+      </identifier>
+    </Patient>
+  </contained>
+  <extension url="http://dips.no/fhir/R4/StructureDefinition/DIPSPersonLanguage">
+    <valueCodeableConcept>
+      <extension url="http://dips.no/fhir/R4/ValueSet/languageid">
+        <valueId value="204436"/>
+      </extension>
+      <coding>
+        <system value="urn:oid:1.3.6.1.4.1.9038.52.1587"/>
+        <display value="Engelsk"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <use value="temp"/>
+    <system value="urn:oid:2.16.578.1.12.4.1.4.3"/>
+    <value value="23445949728"/>
+  </identifier>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/dips-personid"/>
+    <value value="1000001"/>
+  </identifier>
+  <name>
+    <text value="Skålsvik (Testplan Edi), Eddie"/>
+    <family value="Skålsvik (Testplan Edi)"/>
+    <given value="Eddie"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1959-04-23"/>
+  <address>
+    <extension url="http://hl7.no/fhir/StructureDefinition/no-basis-address-official">
+      <valueBoolean value="false"/>
+    </extension>
+    <use value="home"/>
+    <line value="Bestemorenga"/>
+    <city value="Bodø"/>
+    <district value="Bodø">
+      <extension url="http://dips.no/fhir/R4/StructureDefinition/DIPSPersonMunicipality">
+        <valueCoding>
+          <system value="urn:oid:2.16.578.1.12.4.1.1.3402"/>
+          <code value="1804"/>
+          <display value="Bodø"/>
+        </valueCoding>
+      </extension>
+    </district>
+    <state value="18"/>
+    <postalCode value="8013"/>
+    <country value="Norway"/>
+  </address>
+  <active value="true"/>
+  <link>
+    <target>
+      <reference value="#23445949728"/>
+    </target>
+  </link>
+</Person>

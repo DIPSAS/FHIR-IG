@@ -1,0 +1,58 @@
+{
+  "codeSystems" : [{
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSLocation",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSLocation",
+    "title" : null,
+    "description" : ""
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSLocationTopLevel",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSLocationTopLevel",
+    "title" : null,
+    "description" : ""
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSVitalSignsObservationPrePostduktal",
+    "title" : null,
+    "description" : ""
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoImplBodyMassIndexMeasurementMethod",
+    "title" : null,
+    "description" : ""
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplMeasurementMethod",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoImplMeasurementMethod",
+    "title" : null,
+    "description" : ""
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplQSOFAcomponentCodes",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoImplQSOFAcomponentCodes",
+    "title" : null,
+    "description" : ""
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NoImplVitalSignsObservationConsciousness",
+    "title" : null,
+    "description" : ""
+  }]
+}

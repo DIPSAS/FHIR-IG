@@ -1,0 +1,12 @@
+{
+  "resourceType" : "Organization",
+  "id" : "aks1000174",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization aks1000174</b></p><a name=\"aks1000174\"> </a><a name=\"hcaks1000174\"> </a><p><b>identifier</b>: <code>urn:oid:1.3.6.1.4.1.9038.70.1</code>/1000174</p></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:oid:1.3.6.1.4.1.9038.70.1",
+    "value" : "1000174"
+  }]
+}

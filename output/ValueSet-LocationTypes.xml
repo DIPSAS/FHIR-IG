@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="LocationTypes"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2020-04-17T00:33:33.219-04:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet LocationTypes</b></p><a name="LocationTypes"> </a><a name="hcLocationTypes"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: 1; Last updated: 2020-04-17 00:33:33-0400</p></div><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>urn:oid:1.3.6.1.4.1.9038.52.3297</code><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>223163</td><td>Arbeidssted</td></tr><tr><td>222868</td><td>Labsted</td></tr><tr><td>223165</td><td>Røntgensted</td></tr><tr><td>223161</td><td>Operasjonssted</td></tr><tr><td>223167</td><td>Ventelistested</td></tr></table></li><li>Include these codes as defined in <code>urn:oid:1.3.6.1.4.1.9038.52.1010</code><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>P</td><td>Poliklinisk omsorg</td></tr><tr><td>I</td><td>Vanlig innleggelse</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-DIPSLocationTopLevel.html"><code>http://dips.no/fhir/R4/CodeSystem/DIPSLocationTopLevel</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-DIPSLocationTopLevel.html#DIPSLocationTopLevel-L">L</a></td><td>Location</td></tr><tr><td><a href="CodeSystem-DIPSLocationTopLevel.html#DIPSLocationTopLevel-T">T</a></td><td>Team</td></tr><tr><td><a href="CodeSystem-DIPSLocationTopLevel.html#DIPSLocationTopLevel-B">B</a></td><td>Bed</td></tr><tr><td><a href="CodeSystem-DIPSLocationTopLevel.html#DIPSLocationTopLevel-08">08</a></td><td>Post</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://dips.no/fhir/R4/ValueSet/LocationTypes"/>
+  <version value="0.1.0"/>
+  <name value="LocationTypes"/>
+  <status value="active"/>
+  <date value="2026-08-20T12:37:22+05:30"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="Lars-Andreas Nystad"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:lan@dips.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Valesets of Location Types"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="urn:oid:1.3.6.1.4.1.9038.52.3297"/>
+      <concept>
+        <code value="223163"/>
+        <display value="Arbeidssted"/>
+      </concept>
+      <concept>
+        <code value="222868"/>
+        <display value="Labsted"/>
+      </concept>
+      <concept>
+        <code value="223165"/>
+        <display value="Røntgensted"/>
+      </concept>
+      <concept>
+        <code value="223161"/>
+        <display value="Operasjonssted"/>
+      </concept>
+      <concept>
+        <code value="223167"/>
+        <display value="Ventelistested"/>
+      </concept>
+    </include>
+    <include>
+      <system value="urn:oid:1.3.6.1.4.1.9038.52.1010"/>
+      <concept>
+        <code value="P"/>
+        <display value="Poliklinisk omsorg"/>
+      </concept>
+      <concept>
+        <code value="I"/>
+        <display value="Vanlig innleggelse"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://dips.no/fhir/R4/CodeSystem/DIPSLocationTopLevel"/>
+      <concept>
+        <code value="L"/>
+        <display value="Location"/>
+      </concept>
+      <concept>
+        <code value="T"/>
+        <display value="Team"/>
+      </concept>
+      <concept>
+        <code value="B"/>
+        <display value="Bed"/>
+      </concept>
+      <concept>
+        <code value="08"/>
+        <display value="Post"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

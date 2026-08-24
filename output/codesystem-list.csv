@@ -1,0 +1,8 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://dips.no/fhir/R4/CodeSystem/DIPSLocation,0.1.0,draft,,DIPSLocation,,"",
+http://dips.no/fhir/R4/CodeSystem/DIPSLocationTopLevel,0.1.0,draft,,DIPSLocationTopLevel,,"",
+http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal,0.1.0,draft,,DIPSVitalSignsObservationPrePostduktal,,"",
+http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod,0.1.0,draft,,NoImplBodyMassIndexMeasurementMethod,,"",
+http://dips.no/fhir/R4/CodeSystem/NoImplMeasurementMethod,0.1.0,draft,,NoImplMeasurementMethod,,"",
+http://dips.no/fhir/R4/CodeSystem/NoImplQSOFAcomponentCodes,0.1.0,draft,,NoImplQSOFAcomponentCodes,,"",
+http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness,0.1.0,draft,,NoImplVitalSignsObservationConsciousness,,"",

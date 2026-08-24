@@ -1,0 +1,161 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/R4/Observation/noImpl-GCS-create> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "noImpl-GCS-create"] ;
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "0" ] ;
+     fhir:Meta.lastUpdated [ fhir:value "2014-01-30T11:35:23+00:00"^^xsd:dateTime ] ;
+     fhir:Meta.source [ fhir:value "NoImpl" ] ;
+     fhir:Meta.profile [
+       fhir:value "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationGCS" ;
+       fhir:index 0 ;
+       fhir:link <http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationGCS>
+     ]
+  ] ;
+  fhir:Observation.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-RelativeEhrUri" ] ;
+     fhir:Identifier.value [ fhir:value "ehr:compositions/6c41D37f-f173-45d6-8504-17c40454b9ee::default::1/content[openEHR-EHR-OBSERVATION.news2.v1 and name/value='NEWS2-Basic-Vitals']" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-ObservationId" ] ;
+     fhir:Identifier.value [ fhir:value "dfdcd132-f0c0-e84a-a9b0-937bcb93c008" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-VersionIndependentId" ] ;
+     fhir:Identifier.value [ fhir:value "bd96cd32-3bdb-f448-9d65-265828cae8c8" ]
+  ], [
+     fhir:index 3 ;
+     fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/externalId" ] ;
+     fhir:Identifier.value [ fhir:value "testBPexternalId1" ]
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "survey" ] ;
+       fhir:Coding.display [ fhir:value "Survey" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:9269-2 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "9269-2" ] ;
+       fhir:Coding.display [ fhir:value "Glasgow coma score total" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <http://dips.no/fhir/R4/Patient/cdp2007964> ;
+     fhir:Reference.reference [ fhir:value "Patient/cdp2007964" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-patientid" ] ;
+       fhir:Identifier.value [ fhir:value "1002679" ]
+     ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2021-10-25T09:30:33+05:30"^^xsd:dateTime] ;
+  fhir:Observation.performer [
+     fhir:index 0 ;
+     fhir:link <http://dips.no/fhir/R4/PractitionerRole/agb1000204> ;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/agb1000204" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.51.1" ] ;
+       fhir:Identifier.value [ fhir:value "1000204" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:link <http://dips.no/fhir/R4/Organization/Organizationaks2> ;
+     fhir:Reference.reference [ fhir:value "Organization/Organizationaks2" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.70.1" ] ;
+       fhir:Identifier.value [ fhir:value "2" ]
+     ]
+  ] ;
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "13"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "ScoreOf" ] ;
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+     fhir:Quantity.code [ fhir:value "{ScoreOf}" ]
+  ] ;
+  fhir:Observation.component [
+     fhir:index 0 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:9267-6 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "9267-6" ] ;
+         fhir:Coding.display [ fhir:value "Glasgow coma score eye opening" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "4"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "ScoreOf" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "{ScoreOf}" ]
+     ] ;
+     fhir:Observation.component.interpretation [
+       fhir:index 0 ;
+       fhir:CodeableConcept.text [ fhir:value "4 (Opens eyes spontaneously)" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:9268-4 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "9268-4" ] ;
+         fhir:Coding.display [ fhir:value "Glasgow coma score motor" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "5"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "ScoreOf" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "{ScoreOf}" ]
+     ] ;
+     fhir:Observation.component.interpretation [
+       fhir:index 0 ;
+       fhir:CodeableConcept.text [ fhir:value "5 (Localizes painful stimuli)" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:9270-0 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "9270-0" ] ;
+         fhir:Coding.display [ fhir:value "Glasgow coma score verbal" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "4"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "ScoreOf" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "{ScoreOf}" ]
+     ] ;
+     fhir:Observation.component.interpretation [
+       fhir:index 0 ;
+       fhir:CodeableConcept.text [ fhir:value "4 (Confused, disoriented)" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://dips.no/fhir/R4/Observation/noImpl-GCS-create.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

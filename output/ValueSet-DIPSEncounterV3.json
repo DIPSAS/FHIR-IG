@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "DIPSEncounterV3",
+  "meta" : {
+    "lastUpdated" : "2021-03-17T00:00:00+00:00",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet DIPSEncounterV3</b></p><a name=\"DIPSEncounterV3\"> </a><a name=\"hcDIPSEncounterV3\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2021-03-17 00:00:00+0000</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html\"><code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 11.0.0, the version found through the package references\"> version &#x1F4E6;11.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP\">IMP</a></td><td>inpatient encounter</td><td>A patient encounter where a patient is admitted by a hospital or equivalent facility, assigned to a location where patients generally stay at least overnight and provided with room, board, and continuous nursing service.</td></tr><tr><td><a href=\"http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">AMB</a></td><td>ambulatory</td><td>A comprehensive term for health care provided in a healthcare facility (e.g. a practitioneraTMs office, clinic setting, or hospital) on a nonresident basis. The term ambulatory usually implies that the patient has come to the location and is not assigned to a bed. Sometimes referred to as an outpatient encounter.</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "oo"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  }],
+  "url" : "http://dips.no/fhir/R4/ValueSet/DIPSEncounterV3",
+  "version" : "0.1.0",
+  "name" : "DIPSEncounterV3",
+  "title" : "DIPSEncounterV3",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-08-20T12:37:22+05:30",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "Lars-Andreas Nystad",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "mailto:lan@dips.no",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Codes representing body site for blood pressure",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "copyright" : "© 2021 DIPS AS\nAll rights reserved.\n\n  No part of this publication may be reproduced,\n  stored in a retrieval system, transmitted, or \n  published to a third party, in any\n  form or by any means, mechanical, electronic,\n  photocopying, recording, or otherwise, without\n  prior written permission of DIPS AS.\n  \n  OpenEHR is a registered trademark of OpenEHR Foundation.\n  HL7®, CDA®, FHIR® and the FHIR (FLAME DESIGN)® are the registered trademarks of Health Level Seven International.\n\n  All other trademarks mentioned herein are the property of their\n  respective owners.\n\n  DIPS AS\n  Postboks 1435\n  8037 Bodø\n  Norway\n  [www.dips.no](www.dips.no)\n  +47 75 59 20 00",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "concept" : [{
+        "code" : "IMP",
+        "display" : "inpatient encounter"
+      },
+      {
+        "code" : "AMB",
+        "display" : "ambulatory"
+      }]
+    }]
+  }
+}

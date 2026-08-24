@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="agy27"/>
+  <meta>
+    <profile value="http://dips.no/fhir/R4/StructureDefinition/DIPSR4Encounter"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality"/>
+      <code value="N"/>
+    </security>
+    <tag>
+      <system value="http://dips.no/fhir/namingsystem/encountersource"/>
+      <code value="episodeofcare"/>
+    </tag>
+  </meta>
+  <contained>
+    <Encounter>
+      <id value="amw38"/>
+      <meta>
+        <profile value="http://dips.no/fhir/R4/StructureDefinition/DIPSHospitalStayEncounter"/>
+        <tag>
+          <system value="http://dips.no/fhir/namingsystem/encountersource"/>
+          <code value="hospitalstay"/>
+        </tag>
+      </meta>
+      <identifier>
+        <system value="http://dips.no/fhir/namingsystem/dips-hospitalstayid"/>
+        <value value="38"/>
+      </identifier>
+      <status value="in-progress"/>
+      <class>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+        <code value="IMP"/>
+        <display value="inpatient encounter"/>
+      </class>
+    </Encounter>
+  </contained>
+  <extension url="http://dips.no/fhir/R4/StructureDefinition/ReferredBy">
+    <valueReference>
+      <reference value="PractitionerRole/agb61"/>
+      <identifier>
+        <system value="urn:oid:1.3.6.1.4.1.9038.51.1"/>
+        <value value="61"/>
+      </identifier>
+    </valueReference>
+  </extension>
+  <extension url="http://dips.no/fhir/R4/StructureDefinition/TerminationExtension">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://dips.no/fhir/namingsystem/dips-terminationcodeid"/>
+        <code value="315"/>
+        <display value="Tilh. annet sykehus"/>
+      </coding>
+      <coding>
+        <system value="http://dips.no/fhir/namingsystem/dips-terminationcode"/>
+        <code value="TA"/>
+        <display value="Tilh. annet sykehus"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://dips.no/fhir/R4/StructureDefinition/PlannedContactEndTimeExtension">
+    <valueDateTime value="2003-11-01T00:00:00+00:00"/>
+  </extension>
+  <extension url="http://dips.no/fhir/R4/StructureDefinition/Department">
+    <valueReference>
+      <reference value="Organization/afa22"/>
+      <identifier>
+        <system value="urn:oid:1.3.6.1.4.1.9038.70.3"/>
+        <value value="22"/>
+      </identifier>
+      <display value="Kirurgisk avdeling"/>
+    </valueReference>
+  </extension>
+  <extension url="http://dips.no/fhir/R4/StructureDefinition/DipsLocationExtension">
+    <valueReference>
+      <reference value="Location/aea1000021"/>
+      <identifier>
+        <system value="urn:oid:1.3.6.1.4.1.9038.70.6"/>
+        <value value="1000021"/>
+      </identifier>
+      <display value="Testsykehuset bygg A"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid"/>
+    <value value="27"/>
+  </identifier>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/dips-plannedcontactid"/>
+    <value value="38"/>
+  </identifier>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/dips-bookingid"/>
+    <value value="62377f66-377e-9148-9db2-55a920ffb907"/>
+  </identifier>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="IMP"/>
+    <display value="inpatient encounter"/>
+  </class>
+  <type id="ContactType">
+    <coding>
+      <system value="http://dips.no/fhir/namingsystem/dips-contacttypecodeid"/>
+      <code value="106800"/>
+      <display value="Heldøgn"/>
+    </coding>
+    <coding>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.8240"/>
+      <code value="01"/>
+      <display value="Heldøgn"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/cdp138"/>
+    <identifier>
+      <system value="http://dips.no/fhir/namingsystem/dips-patientid"/>
+      <value value="138"/>
+    </identifier>
+    <display value="Spelemann (Testplan - Journal), Per"/>
+  </subject>
+  <basedOn>
+    <reference value="ServiceRequest/agc48"/>
+    <identifier>
+      <system value="http://dips.no/fhir/namingsystem/dips-referralid"/>
+      <value value="48"/>
+    </identifier>
+  </basedOn>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://dips.no/fhir/encounter/participanttype"/>
+        <code value="attending-doctor"/>
+      </coding>
+    </type>
+    <individual>
+      <reference value="PractitionerRole/agb42"/>
+      <identifier>
+        <system value="urn:oid:1.3.6.1.4.1.9038.51.1"/>
+        <value value="42"/>
+      </identifier>
+    </individual>
+  </participant>
+  <appointment>
+    <reference value="Appointment/ahi38"/>
+    <identifier>
+      <system value="http://dips.no/fhir/namingsystem/dips-plannedcontactid"/>
+      <value value="38"/>
+    </identifier>
+  </appointment>
+  <period>
+    <start value="2003-10-29T14:18:53+00:00"/>
+    <end value="2003-11-01T15:21:42+00:00"/>
+  </period>
+  <reasonCode>
+    <text value="Kronsik bronkitt"/>
+  </reasonCode>
+  <location>
+    <location>
+      <reference value="Location/ahl25"/>
+      <identifier>
+        <system value="urn:oid:2.16.578.1.12.4.1.4.102"/>
+        <value value="10068"/>
+      </identifier>
+      <display value="Intensiv post 1"/>
+    </location>
+    <status value="active"/>
+    <physicalType>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+        <code value="wa"/>
+        <display value="Ward"/>
+      </coding>
+    </physicalType>
+    <period>
+      <start value="2003-10-29T14:18:53+00:00"/>
+      <end value="2003-11-01T15:21:42+00:00"/>
+    </period>
+  </location>
+  <serviceProvider>
+    <reference value="Organization/afa22"/>
+    <identifier>
+      <system value="urn:oid:2.16.578.1.12.4.1.4.102"/>
+      <value value="10013"/>
+    </identifier>
+    <display value="Kirurgisk avdeling | Testsykehuset DIPS"/>
+  </serviceProvider>
+  <partOf>
+    <reference value="#amw38"/>
+  </partOf>
+</Encounter>

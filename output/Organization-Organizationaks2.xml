@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="Organizationaks2"/>
+  <meta>
+    <profile value="http://dips.no/fhir/R4/StructureDefinition/DIPSOrganization"/>
+    <security>
+      <system value="http://dips.no/fhir/InternalSecurityAccess"/>
+      <code value="A"/>
+      <display value="ALL"/>
+    </security>
+    <tag>
+      <system value="http://dips.no/fhir/namingsystem/organizationsource"/>
+      <code value="organization"/>
+    </tag>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization Organizationaks2</b></p><a name="Organizationaks2"> </a><a name="hcOrganizationaks2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-DIPSOrganization.html">DIPSOrganization</a></p><p style="margin-bottom: 0px">Tag: </p><p style="margin-bottom: 0px">Security Label: </p></div><p><b>BankAccountNumber1</b>: 1 234 567001</p><p><b>BankAccountNumber2</b>: 1234567</p><p><b>identifier</b>: <code>urn:oid:1.3.6.1.4.1.9038.70.1</code>/2 (use: official, ), <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/970948139 (use: official, ), <code>urn:oid:2.16.578.1.12.4.1.2</code>/79744 (use: official, )</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes:">Helseforetak</span>, <span title="Codes:{urn:oid:2.16.578.1.12.4.1.1.8628 2}">HF|Helseforetak</span></p><p><b>name</b>: Testsykehuset Hf</p><p><b>telecom</b>: ph: 75505000(Work)</p><p><b>address</b>: </p><ul><li>Testveien 10 Bodø NORDLAND FYLKESKOMMUNE 8015 (work)</li><li>Legeveien 22 Bodø 8009 (billing)</li></ul><p><b>partOf</b>: Identifier: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/970948100 (use: official, )</p></div>
+  </text>
+  <extension url="http://dips.no/fhir/R4/StructureDefinition/BankAccountNumber1">
+    <valueString value="1 234 567001"/>
+  </extension>
+  <extension url="http://dips.no/fhir/R4/StructureDefinition/BankAccountNumber2">
+    <valueString value="1234567"/>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <system value="urn:oid:1.3.6.1.4.1.9038.70.1"/>
+    <value value="2"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <system value="urn:oid:2.16.578.1.12.4.1.4.101"/>
+    <value value="970948139"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <system value="urn:oid:2.16.578.1.12.4.1.2"/>
+    <value value="79744"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <extension url="http://dips.no/fhir/R4/StructureDefinition/OrganizationTypeCodeId">
+        <valueCoding>
+          <system value="http://dips.no/fhir/namingsystem/dips-organizationtypecodeid"/>
+          <display value="100310"/>
+        </valueCoding>
+      </extension>
+      <system value="http://dips.no/fhir/namingsystem/dips-organizationtype"/>
+      <display value="Helseforetak"/>
+    </coding>
+    <text value="Helseforetak"/>
+  </type>
+  <type>
+    <coding>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.8628"/>
+      <code value="2"/>
+      <display value="HF|Helseforetak"/>
+    </coding>
+  </type>
+  <name value="Testsykehuset Hf"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="75505000"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <extension url="http://dips.no/fhir/R4/StructureDefinition/OrganizationAddressId">
+      <valueIdentifier>
+        <use value="official"/>
+        <system value="http://dips.no/fhir/namingsystem/dips-addressid"/>
+        <value value="1"/>
+      </valueIdentifier>
+    </extension>
+    <extension url="http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation">
+      <extension url="municipality">
+        <valueCoding>
+          <system value="urn:oid:2.16.578.1.12.4.1.1.3402"/>
+          <code value="1804"/>
+          <display value="BODØ"/>
+        </valueCoding>
+      </extension>
+    </extension>
+    <use value="work"/>
+    <type value="physical"/>
+    <line value="Testveien 10"/>
+    <city value="Bodø"/>
+    <district value="BODØ"/>
+    <state value="NORDLAND FYLKESKOMMUNE"/>
+    <postalCode value="8015"/>
+  </address>
+  <address>
+    <extension url="http://dips.no/fhir/R4/StructureDefinition/OrganizationAddressId">
+      <valueIdentifier>
+        <use value="official"/>
+        <system value="http://dips.no/fhir/namingsystem/dips-addressid"/>
+        <value value="2"/>
+      </valueIdentifier>
+    </extension>
+    <use value="billing"/>
+    <type value="postal"/>
+    <line value="Legeveien 22"/>
+    <city value="Bodø"/>
+    <postalCode value="8009"/>
+  </address>
+  <partOf>
+    <identifier>
+      <use value="official"/>
+      <system value="urn:oid:2.16.578.1.12.4.1.4.101"/>
+      <value value="970948100"/>
+    </identifier>
+  </partOf>
+</Organization>

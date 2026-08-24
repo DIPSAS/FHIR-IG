@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/R4/Encounter/agy100247> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agy100247"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSR4Encounter" ;
+       fhir:index 0 ;
+       fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSR4Encounter>
+     ]
+  ] ;
+  fhir:Encounter.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid" ] ;
+     fhir:Identifier.value [ fhir:value "agy100247" ]
+  ] ;
+  fhir:Encounter.status [ fhir:value "arrived"] ;
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
+     fhir:Coding.code [ fhir:value "AMB" ]
+  ] ;
+  fhir:Encounter.subject [
+     fhir:link <http://dips.no/fhir/R4/Patient/cdp138> ;
+     fhir:Reference.reference [ fhir:value "Patient/cdp138" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-patientid" ] ;
+       fhir:Identifier.value [ fhir:value "138" ]
+     ] ;
+     fhir:Reference.display [ fhir:value "Spelemann (Testplan - Journal), Per" ]
+  ] ;
+  fhir:Encounter.serviceProvider [
+     fhir:link <http://dips.no/fhir/R4/Organization/afa22> ;
+     fhir:Reference.reference [ fhir:value "Organization/afa22" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.102" ] ;
+       fhir:Identifier.value [ fhir:value "10013" ]
+     ] ;
+     fhir:Reference.display [ fhir:value "Kirurgisk avdeling | Testsykehuset DIPS" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://dips.no/fhir/R4/Encounter/agy100247.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

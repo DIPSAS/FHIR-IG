@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DipsCoding1003ValueSet"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2020-04-17T00:33:33.219-04:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet DipsCoding1003ValueSet</b></p><a name="DipsCoding1003ValueSet"> </a><a name="hcDipsCoding1003ValueSet"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: 1; Last updated: 2020-04-17 00:33:33-0400</p></div><ul><li>Include these codes as defined in <code>urn:oid:1.3.6.1.4.1.9038.52.1003</code><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>100300</td><td>Sykehus</td></tr><tr><td>100302</td><td>Aldershjem</td></tr><tr><td>100304</td><td>Bo- og behandlingsenhet</td></tr><tr><td>100305</td><td>Legekontor/Legesenter</td></tr><tr><td>100307</td><td>Forsikringsselskap</td></tr><tr><td>100309</td><td>Fylkeskommune</td></tr><tr><td>100301</td><td>Sykehjem</td></tr><tr><td>100303</td><td>Syke- og aldershjem</td></tr><tr><td>100306</td><td>Trygdekontor</td></tr><tr><td>100308</td><td>Annet</td></tr><tr><td>100310</td><td>Helseforetak</td></tr><tr><td>100311</td><td>Regionalt helseforetak</td></tr><tr><td>220418</td><td>Sosialkontor</td></tr><tr><td>220420</td><td>Hjemmesykepleien</td></tr><tr><td>220422</td><td>Familierådgivningskontor</td></tr><tr><td>220424</td><td>Bandagistforretning</td></tr><tr><td>220426</td><td>Medisingrossist</td></tr><tr><td>220428</td><td>Sykehotell</td></tr><tr><td>220430</td><td>Apotek/Medisinutsalg</td></tr><tr><td>220432</td><td>Departement</td></tr><tr><td>220484</td><td>Personlig organisasjon</td></tr><tr><td>100312</td><td>Helseinstitusjon</td></tr><tr><td>223908</td><td>Pasienthotell</td></tr><tr><td>268593</td><td>Kommune</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://dips.no/fhir/R4/ValueSet/DipsCoding1003ValueSet"/>
+  <version value="0.1.0"/>
+  <name value="DipsCoding1003ValueSet"/>
+  <status value="active"/>
+  <date value="2026-08-20T12:37:22+05:30"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="Lars-Andreas Nystad"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:lan@dips.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Value Sets of DipsCoding1003ValueSet"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="urn:oid:1.3.6.1.4.1.9038.52.1003"/>
+      <concept>
+        <code value="100300"/>
+        <display value="Sykehus"/>
+      </concept>
+      <concept>
+        <code value="100302"/>
+        <display value="Aldershjem"/>
+      </concept>
+      <concept>
+        <code value="100304"/>
+        <display value="Bo- og behandlingsenhet"/>
+      </concept>
+      <concept>
+        <code value="100305"/>
+        <display value="Legekontor/Legesenter"/>
+      </concept>
+      <concept>
+        <code value="100307"/>
+        <display value="Forsikringsselskap"/>
+      </concept>
+      <concept>
+        <code value="100309"/>
+        <display value="Fylkeskommune"/>
+      </concept>
+      <concept>
+        <code value="100301"/>
+        <display value="Sykehjem"/>
+      </concept>
+      <concept>
+        <code value="100303"/>
+        <display value="Syke- og aldershjem"/>
+      </concept>
+      <concept>
+        <code value="100306"/>
+        <display value="Trygdekontor"/>
+      </concept>
+      <concept>
+        <code value="100308"/>
+        <display value="Annet"/>
+      </concept>
+      <concept>
+        <code value="100310"/>
+        <display value="Helseforetak"/>
+      </concept>
+      <concept>
+        <code value="100311"/>
+        <display value="Regionalt helseforetak"/>
+      </concept>
+      <concept>
+        <code value="220418"/>
+        <display value="Sosialkontor"/>
+      </concept>
+      <concept>
+        <code value="220420"/>
+        <display value="Hjemmesykepleien"/>
+      </concept>
+      <concept>
+        <code value="220422"/>
+        <display value="Familierådgivningskontor"/>
+      </concept>
+      <concept>
+        <code value="220424"/>
+        <display value="Bandagistforretning"/>
+      </concept>
+      <concept>
+        <code value="220426"/>
+        <display value="Medisingrossist"/>
+      </concept>
+      <concept>
+        <code value="220428"/>
+        <display value="Sykehotell"/>
+      </concept>
+      <concept>
+        <code value="220430"/>
+        <display value="Apotek/Medisinutsalg"/>
+      </concept>
+      <concept>
+        <code value="220432"/>
+        <display value="Departement"/>
+      </concept>
+      <concept>
+        <code value="220484"/>
+        <display value="Personlig organisasjon"/>
+      </concept>
+      <concept>
+        <code value="100312"/>
+        <display value="Helseinstitusjon"/>
+      </concept>
+      <concept>
+        <code value="223908"/>
+        <display value="Pasienthotell"/>
+      </concept>
+      <concept>
+        <code value="268593"/>
+        <display value="Kommune"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

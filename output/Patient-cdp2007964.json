@@ -1,0 +1,72 @@
+{
+  "resourceType" : "Patient",
+  "id" : "cdp2007964",
+  "meta" : {
+    "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPatient",
+    "http://dips.no/fhir/R4/StructureDefinition/NoBasisPatient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient cdp2007964</b></p><a name=\"cdp2007964\"> </a><a name=\"hccdp2007964\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-DIPSPatient.html\">DIPSPatient</a>, <a href=\"https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;canonical=http://dips.no/fhir/R4/StructureDefinition/NoBasisPatient\">http://dips.no/fhir/R4/StructureDefinition/NoBasisPatient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Kommune (Testplan Elin-K), Elin(official) Female, DoB: 1977-06-26 ( http://dips.no/fhir/namingsystem/dips-patientid#2007964)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\">FellesHjelpenummer/26467749659\u00a0(use:\u00a0temp,\u00a0)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">Dipsbyen 2 Bodø 18 8037 Norge (home)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>General Practitioner: <a href=\"PractitionerRole-agb59.html\">PractitionerRole: identifier = urn:oid:1.3.6.1.4.1.9038.60.1#59</a></li></ul></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "use" : "temp",
+    "system" : "urn:oid:2.16.578.1.12.4.1.4.3",
+    "value" : "26467749659"
+  },
+  {
+    "system" : "http://dips.no/fhir/namingsystem/dips-patientid",
+    "value" : "2007964"
+  }],
+  "active" : true,
+  "name" : [{
+    "use" : "official",
+    "text" : "Kommune (Testplan Elin-K), Elin",
+    "family" : "Kommune (Testplan Elin-K)",
+    "given" : ["Elin"]
+  }],
+  "gender" : "female",
+  "birthDate" : "1977-06-26",
+  "deceasedBoolean" : false,
+  "address" : [{
+    "extension" : [{
+      "extension" : [{
+        "url" : "municipality",
+        "valueCoding" : {
+          "system" : "urn:oid:2.16.578.1.12.4.1.1.3402",
+          "code" : "1804",
+          "display" : "Bodø"
+        }
+      }],
+      "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation"
+    },
+    {
+      "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientStateName",
+      "valueString" : "NORDLAND FYLKESKOMMUNE"
+    },
+    {
+      "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-address-official",
+      "valueBoolean" : false
+    }],
+    "use" : "home",
+    "line" : ["Dipsbyen 2"],
+    "city" : "Bodø",
+    "district" : "Bodø",
+    "_district" : {
+      "extension" : [{
+        "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientMunicipality",
+        "valueCoding" : {
+          "system" : "urn:oid:2.16.578.1.12.4.1.1.3402",
+          "code" : "1804",
+          "display" : "Bodø"
+        }
+      }]
+    },
+    "state" : "18",
+    "postalCode" : "8037",
+    "country" : "Norge"
+  }],
+  "generalPractitioner" : [{
+    "reference" : "PractitionerRole/agb59"
+  }]
+}

@@ -1,0 +1,198 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "HealthPersonallCategoryValueset",
+  "meta" : {
+    "lastUpdated" : "2021-03-17T00:00:00+00:00",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet HealthPersonallCategoryValueset</b></p><a name=\"HealthPersonallCategoryValueset\"> </a><a name=\"hcHealthPersonallCategoryValueset\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2021-03-17 00:00:00+0000</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <code>urn:oid:2.16.578.1.12.4.1.1.9060</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>AA</td><td>Ambulansearbeider</td></tr><tr><td>AT</td><td>Apotektekniker</td></tr><tr><td>AU</td><td>Audiograf</td></tr><tr><td>BI</td><td>Bioingeniør</td></tr><tr><td>ET</td><td>Ergoterapeut</td></tr><tr><td>FA1</td><td>Provisorfarmasøyt</td></tr><tr><td>FA2</td><td>Reseptarfarmasøyt</td></tr><tr><td>FB</td><td>Fiskehelsebiolog</td></tr><tr><td>FO</td><td>Fotterapeut</td></tr><tr><td>FT</td><td>Fysioterapeut</td></tr><tr><td>HE</td><td>Helsesekretær</td></tr><tr><td>HF</td><td>Helsefagarbeider</td></tr><tr><td>HP</td><td>Hjelpepleier</td></tr><tr><td>JO</td><td>Jordmor</td></tr><tr><td>KE</td><td>Klinisk ernæringsfysiolog</td></tr><tr><td>KI</td><td>Kiropraktor</td></tr><tr><td>LE</td><td>Lege</td></tr><tr><td>NP</td><td>Naprapat</td></tr><tr><td>OA</td><td>Omsorgsarbeider</td></tr><tr><td>OI</td><td>Ortopediingeniør</td></tr><tr><td>OP</td><td>Optiker</td></tr><tr><td>OR</td><td>Ortoptist</td></tr><tr><td>OS</td><td>Osteopat</td></tr><tr><td>PE</td><td>Perfusjonist</td></tr><tr><td>PM</td><td>Paramedisiner</td></tr><tr><td>PS</td><td>Psykolog</td></tr><tr><td>RA</td><td>Radiograf</td></tr><tr><td>SP</td><td>Sykepleier</td></tr><tr><td>TH</td><td>Tannhelsesekretær</td></tr><tr><td>TL</td><td>Tannlege</td></tr><tr><td>TP</td><td>Tannpleier</td></tr><tr><td>TT</td><td>Tanntekniker</td></tr><tr><td>VE</td><td>Veterinær</td></tr><tr><td>VP</td><td>Vernepleier</td></tr><tr><td>XX</td><td>Ukjent/uspesifisert</td></tr><tr><td>MT</td><td>Manuellterapeut</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "oo"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  }],
+  "url" : "http://dips.no/fhir/R4/ValueSet/HealthPersonallCategoryValueset",
+  "version" : "0.1.0",
+  "name" : "HealthPersonallCategoryValueset",
+  "title" : "HealthPersonallCategoryValueset",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-08-20T12:37:22+05:30",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "Lars-Andreas Nystad",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "mailto:lan@dips.no",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Have volven codesystems and rest of the namesystem",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "copyright" : "© 2021 DIPS AS\nAll rights reserved.\n\n  No part of this publication may be reproduced,\n  stored in a retrieval system, transmitted, or \n  published to a third party, in any\n  form or by any means, mechanical, electronic,\n  photocopying, recording, or otherwise, without\n  prior written permission of DIPS AS.\n  \n  OpenEHR is a registered trademark of OpenEHR Foundation.\n  HL7®, CDA®, FHIR® and the FHIR (FLAME DESIGN)® are the registered trademarks of Health Level Seven International.\n\n  All other trademarks mentioned herein are the property of their\n  respective owners.\n\n  DIPS AS\n  Postboks 1435\n  8037 Bodø\n  Norway\n  [www.dips.no](www.dips.no)\n  +47 75 59 20 00",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.9060",
+      "concept" : [{
+        "code" : "AA",
+        "display" : "Ambulansearbeider"
+      },
+      {
+        "code" : "AT",
+        "display" : "Apotektekniker"
+      },
+      {
+        "code" : "AU",
+        "display" : "Audiograf"
+      },
+      {
+        "code" : "BI",
+        "display" : "Bioingeniør"
+      },
+      {
+        "code" : "ET",
+        "display" : "Ergoterapeut"
+      },
+      {
+        "code" : "FA1",
+        "display" : "Provisorfarmasøyt"
+      },
+      {
+        "code" : "FA2",
+        "display" : "Reseptarfarmasøyt"
+      },
+      {
+        "code" : "FB",
+        "display" : "Fiskehelsebiolog"
+      },
+      {
+        "code" : "FO",
+        "display" : "Fotterapeut"
+      },
+      {
+        "code" : "FT",
+        "display" : "Fysioterapeut"
+      },
+      {
+        "code" : "HE",
+        "display" : "Helsesekretær"
+      },
+      {
+        "code" : "HF",
+        "display" : "Helsefagarbeider"
+      },
+      {
+        "code" : "HP",
+        "display" : "Hjelpepleier"
+      },
+      {
+        "code" : "JO",
+        "display" : "Jordmor"
+      },
+      {
+        "code" : "KE",
+        "display" : "Klinisk ernæringsfysiolog"
+      },
+      {
+        "code" : "KI",
+        "display" : "Kiropraktor"
+      },
+      {
+        "code" : "LE",
+        "display" : "Lege"
+      },
+      {
+        "code" : "NP",
+        "display" : "Naprapat"
+      },
+      {
+        "code" : "OA",
+        "display" : "Omsorgsarbeider"
+      },
+      {
+        "code" : "OI",
+        "display" : "Ortopediingeniør"
+      },
+      {
+        "code" : "OP",
+        "display" : "Optiker"
+      },
+      {
+        "code" : "OR",
+        "display" : "Ortoptist"
+      },
+      {
+        "code" : "OS",
+        "display" : "Osteopat"
+      },
+      {
+        "code" : "PE",
+        "display" : "Perfusjonist"
+      },
+      {
+        "code" : "PM",
+        "display" : "Paramedisiner"
+      },
+      {
+        "code" : "PS",
+        "display" : "Psykolog"
+      },
+      {
+        "code" : "RA",
+        "display" : "Radiograf"
+      },
+      {
+        "code" : "SP",
+        "display" : "Sykepleier"
+      },
+      {
+        "code" : "TH",
+        "display" : "Tannhelsesekretær"
+      },
+      {
+        "code" : "TL",
+        "display" : "Tannlege"
+      },
+      {
+        "code" : "TP",
+        "display" : "Tannpleier"
+      },
+      {
+        "code" : "TT",
+        "display" : "Tanntekniker"
+      },
+      {
+        "code" : "VE",
+        "display" : "Veterinær"
+      },
+      {
+        "code" : "VP",
+        "display" : "Vernepleier"
+      },
+      {
+        "code" : "XX",
+        "display" : "Ukjent/uspesifisert"
+      },
+      {
+        "code" : "MT",
+        "display" : "Manuellterapeut"
+      }]
+    }]
+  }
+}

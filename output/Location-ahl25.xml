@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="ahl25"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location ahl25</b></p><a name="ahl25"> </a><a name="hcahl25"> </a><p><b>identifier</b>: <code>urn:oid:1.3.6.1.4.1.9038.70.4</code>/25</p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:1.3.6.1.4.1.9038.70.4"/>
+    <value value="25"/>
+  </identifier>
+</Location>

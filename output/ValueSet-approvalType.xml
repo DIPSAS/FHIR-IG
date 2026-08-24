@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="approvalType"/>
+  <meta>
+    <lastUpdated value="2021-03-17T00:00:00+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet approvalType</b></p><a name="approvalType"> </a><a name="hcapprovalType"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2021-03-17 00:00:00+0000</p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <code>urn:oid:2.16.578.1.12.4.1.1.7704</code><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Autorisasjon</td></tr><tr><td>17</td><td>Autorisasjon med vilkår</td></tr><tr><td>4</td><td>Lisens</td></tr><tr><td>3</td><td>Studentlisens</td></tr><tr><td>2</td><td>Turnuslisens</td></tr><tr><td>14</td><td>Midlertidig tjenesteyting</td></tr><tr><td>18</td><td>LIS1-Lisens</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="oo"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="http://dips.no/fhir/R4/ValueSet/approvalType"/>
+  <version value="0.1.0"/>
+  <name value="approvalType"/>
+  <title value="approvalType"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-08-20T12:37:22+05:30"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="Lars-Andreas Nystad"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:lan@dips.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="approvalType"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="© 2021 DIPS AS&#xA;All rights reserved.&#xA;&#xA;  No part of this publication may be reproduced,&#xA;  stored in a retrieval system, transmitted, or &#xA;  published to a third party, in any&#xA;  form or by any means, mechanical, electronic,&#xA;  photocopying, recording, or otherwise, without&#xA;  prior written permission of DIPS AS.&#xA;  &#xA;  OpenEHR is a registered trademark of OpenEHR Foundation.&#xA;  HL7®, CDA®, FHIR® and the FHIR (FLAME DESIGN)® are the registered trademarks of Health Level Seven International.&#xA;&#xA;  All other trademarks mentioned herein are the property of their&#xA;  respective owners.&#xA;&#xA;  DIPS AS&#xA;  Postboks 1435&#xA;  8037 Bodø&#xA;  Norway&#xA;  [www.dips.no](www.dips.no)&#xA;  +47 75 59 20 00"/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.7704"/>
+      <concept>
+        <code value="1"/>
+        <display value="Autorisasjon"/>
+      </concept>
+      <concept>
+        <code value="17"/>
+        <display value="Autorisasjon med vilkår"/>
+      </concept>
+      <concept>
+        <code value="4"/>
+        <display value="Lisens"/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="Studentlisens"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="Turnuslisens"/>
+      </concept>
+      <concept>
+        <code value="14"/>
+        <display value="Midlertidig tjenesteyting"/>
+      </concept>
+      <concept>
+        <code value="18"/>
+        <display value="LIS1-Lisens"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

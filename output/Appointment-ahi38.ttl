@@ -1,0 +1,36 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/R4/Appointment/ahi38> a fhir:Appointment ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ahi38"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Appointment ahi38</b></p><a name=\"ahi38\"> </a><a name=\"hcahi38\"> </a><p><b>status</b>: Booked</p><p><b>start</b>: 2023-06-30 10:00:00+0000</p><p><b>end</b>: 2023-06-30 11:00:00+0000</p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">CON</span></td><td>Accepted</td></tr></table></div>"
+  ] ;
+  fhir:Appointment.status [ fhir:value "booked"] ;
+  fhir:Appointment.start [ fhir:value "2023-06-30T10:00:00Z"^^xsd:dateTime] ;
+  fhir:Appointment.end [ fhir:value "2023-06-30T11:00:00Z"^^xsd:dateTime] ;
+  fhir:Appointment.participant [
+     fhir:index 0 ;
+     fhir:Appointment.participant.type [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.code [ fhir:value "CON" ]
+       ]
+     ] ;
+     fhir:Appointment.participant.status [ fhir:value "accepted" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://dips.no/fhir/R4/Appointment/ahi38.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

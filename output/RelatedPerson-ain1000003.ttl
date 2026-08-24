@@ -1,0 +1,107 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/R4/RelatedPerson/ain1000003> a fhir:RelatedPerson ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ain1000003"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPerson" ;
+       fhir:index 0 ;
+       fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPerson>
+     ], [
+       fhir:value "http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson" ;
+       fhir:index 1 ;
+       fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson ain1000003</b></p><a name=\"ain1000003\"> </a><a name=\"hcain1000003\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-DIPSRelatedPerson.html\">DIPSRelatedPerson</a>, <a href=\"https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;canonical=http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson\">no-basis-RelatedPerson</a></p></div><p><b>DIPSRelatedPersonAppointedByMunicipality</b>: [not stated]: 688 (Namsos)</p><p><b>DIPSRelatedPersonAdditionalInformation</b>: Dette er vergetype \"Setteverge\"</p><p><b>DIPSRelatedPersonResponsibleRequisitioner</b>: <a href=\"PractitionerRole-agb1000043.html\">KIRURG (TESTPLAN RESSURS), KJELL, TESTSYKEHUSET HF</a></p><p><b>identifier</b>: <code>http://dips.no/fhir/namingsystem/dips-guardianid</code>/1000003 (use: official, )</p><p><b>active</b>: false</p><p><b>patient</b>: <a href=\"Patient-cdp2007860.html\">Anonymous Patient (no stated gender), DoB Unknown ( http://dips.no/fhir/namingsystem/dips-patientid#2007860)</a></p><p><b>relationship</b>: <span title=\"Codes:{urn:oid:1.3.6.1.4.1.9038.52.3508 3}\">Setteverge</span></p><p><b>name</b>: Verge, Setteverge</p><p><b>telecom</b>: ph: 12455689(Home)</p><p><b>gender</b>: Unknown</p><p><b>address</b>: Vergveien 23 Namsos 7800 </p><p><b>period</b>: 2008-02-13 00:00:00+0000 --&gt; 2018-02-28 00:00:00+0000</p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAppointedByMunicipality" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.code [ fhir:value "688" ] ;
+       fhir:Coding.display [ fhir:value "Namsos" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAdditionalInformation" ] ;
+     fhir:Extension.valueString [ fhir:value "Dette er vergetype \"Setteverge\"" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonResponsibleRequisitioner" ] ;
+     fhir:Extension.valueReference [
+       fhir:link <http://dips.no/fhir/R4/PractitionerRole/agb1000043> ;
+       fhir:Reference.reference [ fhir:value "PractitionerRole/agb1000043" ] ;
+       fhir:Reference.display [ fhir:value "KIRURG (TESTPLAN RESSURS), KJELL, TESTSYKEHUSET HF" ]
+     ]
+  ] ;
+  fhir:RelatedPerson.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-guardianid" ] ;
+     fhir:Identifier.value [ fhir:value "1000003" ]
+  ] ;
+  fhir:RelatedPerson.active [ fhir:value "false"^^xsd:boolean] ;
+  fhir:RelatedPerson.patient [
+     fhir:link <http://dips.no/fhir/R4/Patient/cdp2007860> ;
+     fhir:Reference.reference [ fhir:value "Patient/cdp2007860" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.use [ fhir:value "official" ] ;
+       fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-patientid" ] ;
+       fhir:Identifier.value [ fhir:value "2007860" ]
+     ]
+  ] ;
+  fhir:RelatedPerson.relationship [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.52.3508" ] ;
+       fhir:Coding.code [ fhir:value "3" ] ;
+       fhir:Coding.display [ fhir:value "Setteverge" ]
+     ]
+  ] ;
+  fhir:RelatedPerson.name [
+     fhir:index 0 ;
+     fhir:HumanName.text [ fhir:value "Verge, Setteverge" ] ;
+     fhir:HumanName.family [ fhir:value "Verge" ] ;
+     fhir:HumanName.given [
+       fhir:value "Setteverge" ;
+       fhir:index 0
+     ]
+  ] ;
+  fhir:RelatedPerson.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "12455689" ] ;
+     fhir:ContactPoint.use [ fhir:value "home" ]
+  ] ;
+  fhir:RelatedPerson.gender [ fhir:value "unknown"] ;
+  fhir:RelatedPerson.address [
+     fhir:index 0 ;
+     fhir:Address.line [
+       fhir:value "Vergveien 23" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "Namsos" ] ;
+     fhir:Address.postalCode [ fhir:value "7800" ]
+  ] ;
+  fhir:RelatedPerson.period [
+     fhir:Period.start [ fhir:value "2008-02-13T00:00:00+00:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2018-02-28T00:00:00+00:00"^^xsd:dateTime ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://dips.no/fhir/R4/RelatedPerson/ain1000003.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

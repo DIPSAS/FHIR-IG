@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="agb42"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PractitionerRole agb42</b></p><a name="agb42"> </a><a name="hcagb42"> </a><p><b>identifier</b>: <code>urn:oid:1.3.6.1.4.1.9038.51.1</code>/42</p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:1.3.6.1.4.1.9038.51.1"/>
+    <value value="42"/>
+  </identifier>
+</PractitionerRole>

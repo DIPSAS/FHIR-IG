@@ -1,0 +1,80 @@
+{
+  "resourceType" : "Person",
+  "id" : "ajf242",
+  "meta" : {
+    "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPerson",
+    "http://hl7.no/fhir/StructureDefinition/no-basis-Person"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Person ajf242</b></p><a name=\"ajf242\"> </a><a name=\"hcajf242\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-DIPSPerson.html\">DIPSPerson</a>, <a href=\"https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;canonical=http://hl7.no/fhir/StructureDefinition/no-basis-Person\">no-basis-Person</a></p></div><p><b>identifier</b>: FellesHjelpenummer/04496839396\u00a0(use:\u00a0temp,\u00a0), <code>http://dips.no/fhir/namingsystem/dips-personid</code>/242</p><p><b>name</b>: Rolfsen (Testplan Automatisert Testing), Rolf</p><p><b>telecom</b>: ph: 56678990(Home), <a href=\"mailto:rrolf@start.no\">rrolf@start.no</a></p><p><b>gender</b>: Male</p><p><b>birthDate</b>: 1968-09-04</p><p><b>address</b>: Testaddress Bodø 18 8012 Norway (home)</p><p><b>active</b>: true</p><h3>Links</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Target</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#hcajf242/04496839396\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.3#FellesHjelpenummer#04496839396\u00a0(use:\u00a0temp,\u00a0))</a></td></tr></table><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Patient #04496839396</b></p><a name=\"ajf242/04496839396\"> </a><a name=\"hcajf242/04496839396\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-DIPSPatient.html\">DIPSPatient</a>, <a href=\"https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;canonical=http://hl7.no/fhir/StructureDefinition/no-basis-Patient\">no-basis-Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.3#FellesHjelpenummer#04496839396\u00a0(use:\u00a0temp,\u00a0))</p><hr/></blockquote></div>"
+  },
+  "contained" : [{
+    "resourceType" : "Patient",
+    "id" : "04496839396",
+    "meta" : {
+      "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPatient",
+      "http://hl7.no/fhir/StructureDefinition/no-basis-Patient"]
+    },
+    "identifier" : [{
+      "use" : "temp",
+      "system" : "urn:oid:2.16.578.1.12.4.1.4.3",
+      "value" : "04496839396"
+    }]
+  }],
+  "identifier" : [{
+    "use" : "temp",
+    "system" : "urn:oid:2.16.578.1.12.4.1.4.3",
+    "value" : "04496839396"
+  },
+  {
+    "system" : "http://dips.no/fhir/namingsystem/dips-personid",
+    "value" : "242"
+  }],
+  "name" : [{
+    "text" : "Rolfsen (Testplan Automatisert Testing), Rolf",
+    "family" : "Rolfsen (Testplan Automatisert Testing)",
+    "given" : ["Rolf"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "56678990",
+    "use" : "home"
+  },
+  {
+    "system" : "email",
+    "value" : "rrolf@start.no",
+    "use" : "home"
+  }],
+  "gender" : "male",
+  "birthDate" : "1968-09-04",
+  "address" : [{
+    "extension" : [{
+      "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-address-official",
+      "valueBoolean" : false
+    }],
+    "use" : "home",
+    "line" : ["Testaddress"],
+    "city" : "Bodø",
+    "district" : "Bodø",
+    "_district" : {
+      "extension" : [{
+        "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonMunicipality",
+        "valueCoding" : {
+          "system" : "urn:oid:2.16.578.1.12.4.1.1.3402",
+          "code" : "1804",
+          "display" : "Bodø"
+        }
+      }]
+    },
+    "state" : "18",
+    "postalCode" : "8012",
+    "country" : "Norway"
+  }],
+  "active" : true,
+  "link" : [{
+    "target" : {
+      "reference" : "#04496839396"
+    }
+  }]
+}

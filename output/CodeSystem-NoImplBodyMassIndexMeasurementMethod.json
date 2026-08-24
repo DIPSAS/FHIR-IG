@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "NoImplBodyMassIndexMeasurementMethod",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem NoImplBodyMassIndexMeasurementMethod</b></p><a name=\"NoImplBodyMassIndexMeasurementMethod\"> </a><a name=\"hcNoImplBodyMassIndexMeasurementMethod\"> </a><p>This  code system <code>http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">AR<a name=\"NoImplBodyMassIndexMeasurementMethod-AR\"> </a></td><td>Automatisk registrering</td><td>Automatisk registrering</td></tr><tr><td style=\"white-space:nowrap\">MR<a name=\"NoImplBodyMassIndexMeasurementMethod-MR\"> </a></td><td>Manuell registrering</td><td>Manuell registrering</td></tr></table></div>"
+  },
+  "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod",
+  "identifier" : [{
+    "system" : "http://dips.no/fhir/namingsystem/NoImpl-bodymassindex"
+  }],
+  "version" : "0.1.0",
+  "name" : "NoImplBodyMassIndexMeasurementMethod",
+  "status" : "draft",
+  "date" : "2026-08-20T12:37:22+05:30",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "Lars-Andreas Nystad",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "mailto:lan@dips.no",
+      "use" : "work"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "AR",
+    "display" : "Automatisk registrering",
+    "definition" : "Automatisk registrering"
+  },
+  {
+    "code" : "MR",
+    "display" : "Manuell registrering",
+    "definition" : "Manuell registrering"
+  }]
+}

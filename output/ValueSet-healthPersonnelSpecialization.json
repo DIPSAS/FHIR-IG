@@ -1,0 +1,274 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "healthPersonnelSpecialization",
+  "meta" : {
+    "lastUpdated" : "2021-03-17T00:00:00+00:00",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet healthPersonnelSpecialization</b></p><a name=\"healthPersonnelSpecialization\"> </a><a name=\"hchealthPersonnelSpecialization\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2021-03-17 00:00:00+0000</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <code>urn:oid:2.16.578.1.12.4.1.1.7426</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Allmennmedisin</td></tr><tr><td>2</td><td>Anestesiologi</td></tr><tr><td>3</td><td>Barnesykdommer</td></tr><tr><td>4</td><td>Barne- og ungdomspsykiatri</td></tr><tr><td>5</td><td>Arbeidsmedisin</td></tr><tr><td>6</td><td>Fysikalsk medisin og rehabilitering</td></tr><tr><td>7</td><td>Fødselshjelp og kvinnesykdommer</td></tr><tr><td>16</td><td>Hud og veneriske sykdommer</td></tr><tr><td>18</td><td>Immunologi og transfusjonsmedisin</td></tr><tr><td>28</td><td>Maxillofacial kirurgi</td></tr><tr><td>31</td><td>Medisinsk biokjemi</td></tr><tr><td>32</td><td>Klinisk nevrofysiologi</td></tr><tr><td>33</td><td>Medisinsk genetikk</td></tr><tr><td>34</td><td>Medisinsk mikrobiologi</td></tr><tr><td>35</td><td>Radiologi</td></tr><tr><td>36</td><td>Nevrokirurgi</td></tr><tr><td>37</td><td>Nevrologi</td></tr><tr><td>38</td><td>Patologi</td></tr><tr><td>39</td><td>Plastikkirurgi</td></tr><tr><td>40</td><td>Psykiatri</td></tr><tr><td>41</td><td>Revmatologi</td></tr><tr><td>42</td><td>Samfunnsmedisin</td></tr><tr><td>43</td><td>Onkologi</td></tr><tr><td>45</td><td>Øre-, nese-, halssykdommer</td></tr><tr><td>46</td><td>Øyesykdommer</td></tr><tr><td>57</td><td>Klinisk farmakologi</td></tr><tr><td>80</td><td>Generell Kirurgi</td></tr><tr><td>81</td><td>Barnekirurgi</td></tr><tr><td>82</td><td>Gastroenterologisk kirurgi</td></tr><tr><td>83</td><td>Karkirurgi</td></tr><tr><td>85</td><td>Thoraxkirurgi</td></tr><tr><td>86</td><td>Urologi</td></tr><tr><td>87</td><td>Bryst- og endokrinkirurgi</td></tr><tr><td>152</td><td>Ortopedisk kirurgi</td></tr><tr><td>151</td><td>Nukleærmedisin</td></tr><tr><td>190</td><td>Indremedisin</td></tr><tr><td>191</td><td>Blodsykdommer</td></tr><tr><td>192</td><td>Endokrinologi</td></tr><tr><td>193</td><td>Fordøyelsessykdommer</td></tr><tr><td>194</td><td>Geriatri</td></tr><tr><td>195</td><td>Hjertesykdommer</td></tr><tr><td>196</td><td>Infeksjonssykdommer</td></tr><tr><td>197</td><td>Lungesykdommer</td></tr><tr><td>198</td><td>Nyresykdommer</td></tr><tr><td>199</td><td>Rus- og avhengighetsmedisin</td></tr><tr><td>301</td><td>Akutt- og mottaksmedisin</td></tr><tr><td>515</td><td>Kjeveortopedi</td></tr><tr><td>523</td><td>Pedodonti</td></tr><tr><td>531</td><td>Periodonti</td></tr><tr><td>558</td><td>Oral-kirurgi og oralmedisin</td></tr><tr><td>559</td><td>Kjeve- og ansiktsradiologi</td></tr><tr><td>560</td><td>Endodonti</td></tr><tr><td>561</td><td>Oral protetikk</td></tr><tr><td>575</td><td>Kontaktlinsekompetanse</td></tr><tr><td>601</td><td>Klinisk allmennsykepleie</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "oo"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  }],
+  "url" : "http://dips.no/fhir/R4/ValueSet/healthPersonnelSpecialization",
+  "version" : "0.1.0",
+  "name" : "healthPersonnelSpecialization",
+  "title" : "healthPersonnelSpecialization",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-08-20T12:37:22+05:30",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "Lars-Andreas Nystad",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "mailto:lan@dips.no",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Have volven codesystems and rest of the namesystem",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "copyright" : "© 2021 DIPS AS\nAll rights reserved.\n\n  No part of this publication may be reproduced,\n  stored in a retrieval system, transmitted, or \n  published to a third party, in any\n  form or by any means, mechanical, electronic,\n  photocopying, recording, or otherwise, without\n  prior written permission of DIPS AS.\n  \n  OpenEHR is a registered trademark of OpenEHR Foundation.\n  HL7®, CDA®, FHIR® and the FHIR (FLAME DESIGN)® are the registered trademarks of Health Level Seven International.\n\n  All other trademarks mentioned herein are the property of their\n  respective owners.\n\n  DIPS AS\n  Postboks 1435\n  8037 Bodø\n  Norway\n  [www.dips.no](www.dips.no)\n  +47 75 59 20 00",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.7426",
+      "concept" : [{
+        "code" : "1",
+        "display" : "Allmennmedisin"
+      },
+      {
+        "code" : "2",
+        "display" : "Anestesiologi"
+      },
+      {
+        "code" : "3",
+        "display" : "Barnesykdommer"
+      },
+      {
+        "code" : "4",
+        "display" : "Barne- og ungdomspsykiatri"
+      },
+      {
+        "code" : "5",
+        "display" : "Arbeidsmedisin"
+      },
+      {
+        "code" : "6",
+        "display" : "Fysikalsk medisin og rehabilitering"
+      },
+      {
+        "code" : "7",
+        "display" : "Fødselshjelp og kvinnesykdommer"
+      },
+      {
+        "code" : "16",
+        "display" : "Hud og veneriske sykdommer"
+      },
+      {
+        "code" : "18",
+        "display" : "Immunologi og transfusjonsmedisin"
+      },
+      {
+        "code" : "28",
+        "display" : "Maxillofacial kirurgi"
+      },
+      {
+        "code" : "31",
+        "display" : "Medisinsk biokjemi"
+      },
+      {
+        "code" : "32",
+        "display" : "Klinisk nevrofysiologi"
+      },
+      {
+        "code" : "33",
+        "display" : "Medisinsk genetikk"
+      },
+      {
+        "code" : "34",
+        "display" : "Medisinsk mikrobiologi"
+      },
+      {
+        "code" : "35",
+        "display" : "Radiologi"
+      },
+      {
+        "code" : "36",
+        "display" : "Nevrokirurgi"
+      },
+      {
+        "code" : "37",
+        "display" : "Nevrologi"
+      },
+      {
+        "code" : "38",
+        "display" : "Patologi"
+      },
+      {
+        "code" : "39",
+        "display" : "Plastikkirurgi"
+      },
+      {
+        "code" : "40",
+        "display" : "Psykiatri"
+      },
+      {
+        "code" : "41",
+        "display" : "Revmatologi"
+      },
+      {
+        "code" : "42",
+        "display" : "Samfunnsmedisin"
+      },
+      {
+        "code" : "43",
+        "display" : "Onkologi"
+      },
+      {
+        "code" : "45",
+        "display" : "Øre-, nese-, halssykdommer"
+      },
+      {
+        "code" : "46",
+        "display" : "Øyesykdommer"
+      },
+      {
+        "code" : "57",
+        "display" : "Klinisk farmakologi"
+      },
+      {
+        "code" : "80",
+        "display" : "Generell Kirurgi"
+      },
+      {
+        "code" : "81",
+        "display" : "Barnekirurgi"
+      },
+      {
+        "code" : "82",
+        "display" : "Gastroenterologisk kirurgi"
+      },
+      {
+        "code" : "83",
+        "display" : "Karkirurgi"
+      },
+      {
+        "code" : "85",
+        "display" : "Thoraxkirurgi"
+      },
+      {
+        "code" : "86",
+        "display" : "Urologi"
+      },
+      {
+        "code" : "87",
+        "display" : "Bryst- og endokrinkirurgi"
+      },
+      {
+        "code" : "152",
+        "display" : "Ortopedisk kirurgi"
+      },
+      {
+        "code" : "151",
+        "display" : "Nukleærmedisin"
+      },
+      {
+        "code" : "190",
+        "display" : "Indremedisin"
+      },
+      {
+        "code" : "191",
+        "display" : "Blodsykdommer"
+      },
+      {
+        "code" : "192",
+        "display" : "Endokrinologi"
+      },
+      {
+        "code" : "193",
+        "display" : "Fordøyelsessykdommer"
+      },
+      {
+        "code" : "194",
+        "display" : "Geriatri"
+      },
+      {
+        "code" : "195",
+        "display" : "Hjertesykdommer"
+      },
+      {
+        "code" : "196",
+        "display" : "Infeksjonssykdommer"
+      },
+      {
+        "code" : "197",
+        "display" : "Lungesykdommer"
+      },
+      {
+        "code" : "198",
+        "display" : "Nyresykdommer"
+      },
+      {
+        "code" : "199",
+        "display" : "Rus- og avhengighetsmedisin"
+      },
+      {
+        "code" : "301",
+        "display" : "Akutt- og mottaksmedisin"
+      },
+      {
+        "code" : "515",
+        "display" : "Kjeveortopedi"
+      },
+      {
+        "code" : "523",
+        "display" : "Pedodonti"
+      },
+      {
+        "code" : "531",
+        "display" : "Periodonti"
+      },
+      {
+        "code" : "558",
+        "display" : "Oral-kirurgi og oralmedisin"
+      },
+      {
+        "code" : "559",
+        "display" : "Kjeve- og ansiktsradiologi"
+      },
+      {
+        "code" : "560",
+        "display" : "Endodonti"
+      },
+      {
+        "code" : "561",
+        "display" : "Oral protetikk"
+      },
+      {
+        "code" : "575",
+        "display" : "Kontaktlinsekompetanse"
+      },
+      {
+        "code" : "601",
+        "display" : "Klinisk allmennsykepleie"
+      }]
+    }]
+  }
+}

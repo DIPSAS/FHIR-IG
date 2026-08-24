@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DIPSHealthcareServiceTypes"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2020-04-17T00:33:33.219-04:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet DIPSHealthcareServiceTypes</b></p><a name="DIPSHealthcareServiceTypes"> </a><a name="hcDIPSHealthcareServiceTypes"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: 1; Last updated: 2020-04-17 00:33:33-0400</p></div><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>urn:oid:1.3.6.1.4.1.9038.52.4379</code><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>264864</td><td>Patologi</td></tr><tr><td>264866</td><td>Klinisk nevrofysiologi</td></tr><tr><td>264868</td><td>Nevrovaskulært laboratorium</td></tr><tr><td>264870</td><td>Nevroimmunologisk laboratorium</td></tr><tr><td>264872</td><td>Cytogenetikk og molekylærgenetikk</td></tr><tr><td>264834</td><td>Radiologi og billeddiagnostikk</td></tr><tr><td>264836</td><td>Røntgen</td></tr><tr><td>264842</td><td>Tomografi MR</td></tr><tr><td>264844</td><td>Tomografi CT</td></tr><tr><td>264846</td><td>Nukleærmedisin</td></tr><tr><td>264848</td><td>Nevroradiologi</td></tr><tr><td>264850</td><td>Intervensjonsradiologi</td></tr><tr><td>264852</td><td>Laboratoriefag</td></tr><tr><td>264854</td><td>Klinisk farmakologi</td></tr><tr><td>264856</td><td>Immunologi, allergologi og transfusjonsmedisin</td></tr><tr><td>264858</td><td>Medisinsk biokjemi</td></tr><tr><td>264860</td><td>Medisinsk mikrobiologi</td></tr><tr><td>264862</td><td>Nukleærmedisin</td></tr><tr><td>268523</td><td>Ultralyd</td></tr><tr><td>268524</td><td>Angiografi</td></tr><tr><td>268525</td><td>Immunologi og allergologi</td></tr><tr><td>268526</td><td>Transfusjonsmedisin</td></tr></table></li><li>Include these codes as defined in <code>urn:oid:1.3.6.1.4.1.9038.52.4357</code><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>264876</td><td>Spilleavhengighet og annen avhengighet</td></tr><tr><td>264878</td><td>Rusmiddelavhengighet med alvorlig psykiatrisk sykdom (dobbeldiagnose)</td></tr><tr><td>264874</td><td>Helsehjelp knyttet til rusmiddelavhengighet og annen avhengighet</td></tr><tr><td>264880</td><td>Rusmiddelavhengighet med langvarig funksjonssvikt</td></tr><tr><td>264882</td><td>Førstegangspsykose knyttet til rusmiddelavhengighet</td></tr><tr><td>264884</td><td>Utredning av rusmiddelavhengighet eller annen avhengighet</td></tr><tr><td>264886</td><td>Avrusning/ avgiftning/ stabilisering</td></tr><tr><td>264888</td><td>Familieterapi, parterapi og pårørendeterapi</td></tr><tr><td>264890</td><td>Legemiddelassistert rehabilitering (LAR)</td></tr><tr><td>264892</td><td>Terapeutisk samfunn, kollektiv osv.</td></tr><tr><td>264894</td><td>Innsatte under paragraf 12-soning</td></tr><tr><td>264896</td><td>Psykisk helsevern</td></tr><tr><td>264898</td><td>Psykisk helsevern for barn og unge (BUP)</td></tr><tr><td>264900</td><td>Familieterapi</td></tr><tr><td>264902</td><td>Spiseforstyrrelser hos barn</td></tr><tr><td>264904</td><td>Psykisk helsevern for voksne</td></tr><tr><td>264906</td><td>Spiseforstyrrelser hos voksne</td></tr><tr><td>264908</td><td>Psykiatrisk helsehjelp til døve</td></tr><tr><td>264910</td><td>Unge schizofrene</td></tr><tr><td>264912</td><td>Alderspsykiatrisk behandling</td></tr><tr><td>264914</td><td>Psykiatrisk helsehjelp til asylsøkere og flyktninger</td></tr><tr><td>264916</td><td>Tidlig intervensjon</td></tr><tr><td>264918</td><td>Pasienter med langvarig funksjonssvikt</td></tr><tr><td>264920</td><td>Førstegangspsykose</td></tr><tr><td>264922</td><td>Habilitering/Rehabilitering (psykisk helsevern for voksne)</td></tr><tr><td>264924</td><td>Familieterapi/behandling</td></tr><tr><td>264926</td><td>Helsehjelp knyttet til habilitering og rehabilitering</td></tr><tr><td>264928</td><td>Barnehabilitering</td></tr><tr><td>264930</td><td>Voksenhabilitering</td></tr><tr><td>264932</td><td>Rehabilitering</td></tr><tr><td>264934</td><td>Helsehjelp knyttet til somatisk sykdom</td></tr><tr><td>264936</td><td>Allmennmedisin</td></tr><tr><td>264938</td><td>Kirurgi</td></tr><tr><td>264940</td><td>Generell kirurgi</td></tr><tr><td>264942</td><td>Barnekirurgi</td></tr><tr><td>264944</td><td>Bryst og endokrin kirurgi</td></tr><tr><td>264946</td><td>Gastroenterologisk kirurgi</td></tr><tr><td>264948</td><td>Karkirurgi</td></tr><tr><td>264950</td><td>Kjevekirurgi og munnhulesykdommer</td></tr><tr><td>264952</td><td>Nevrokirurgi</td></tr><tr><td>264954</td><td>Ortopedisk kirurgi</td></tr><tr><td>264956</td><td>Plastikkirurgi</td></tr><tr><td>264958</td><td>Thoraxkirurgi</td></tr><tr><td>264960</td><td>Urologi</td></tr><tr><td>264962</td><td>Indremedisin</td></tr><tr><td>264964</td><td>Endokrinologi</td></tr><tr><td>264966</td><td>Fordøyelsessykdommer</td></tr><tr><td>264968</td><td>Geriatri</td></tr><tr><td>264970</td><td>Blodsykdommer</td></tr><tr><td>264972</td><td>Infeksjonsmedisin</td></tr><tr><td>264974</td><td>Hjertesykdommer</td></tr><tr><td>264976</td><td>Hjerterytmeforstyrrelser</td></tr><tr><td>264978</td><td>Ekkokardiografi og bildediagnostikk</td></tr><tr><td>264980</td><td>Klinisk kardiologi</td></tr><tr><td>264982</td><td>Forebyggende kardiologi</td></tr><tr><td>264984</td><td>Invasiv kardiologi</td></tr><tr><td>264986</td><td>Lungesykdommer</td></tr><tr><td>264988</td><td>Nyresykdommer</td></tr><tr><td>264990</td><td>Dialyse</td></tr><tr><td>264992</td><td>Fødselshjelp og kvinnesykdommer</td></tr><tr><td>264994</td><td>Generell gynekologi</td></tr><tr><td>264996</td><td>Gynekologisk onkologi</td></tr><tr><td>264998</td><td>Obstetrikk</td></tr><tr><td>265000</td><td>Hud- og veneriske sykdommer</td></tr><tr><td>265002</td><td>Barnesykdommer</td></tr><tr><td>265004</td><td>Nyfødtmedisin</td></tr><tr><td>265006</td><td>Intensivbehandling av barn</td></tr><tr><td>265008</td><td>Nevrologi</td></tr><tr><td>265010</td><td>Generell nevrologi</td></tr><tr><td>265012</td><td>Cerebrovaskulære sykdommer</td></tr><tr><td>265014</td><td>Epilepsi</td></tr><tr><td>265016</td><td>Anestesiologi Inklusiv smertebehandling</td></tr><tr><td>265018</td><td>Øre-nese-halssykdommer</td></tr><tr><td>265020</td><td>Audiologi</td></tr><tr><td>265022</td><td>Laryngologi/Foniatri</td></tr><tr><td>265024</td><td>Balansemedisin</td></tr><tr><td>265026</td><td>Søvnrelaterte sykdommer</td></tr><tr><td>265028</td><td>Nese- og bihulesykdommer</td></tr><tr><td>265030</td><td>Otologi</td></tr><tr><td>265032</td><td>Hode- og halskirurgi</td></tr><tr><td>265034</td><td>Allergologi</td></tr><tr><td>265036</td><td>Pediatriske øre-nese-halssykdommer</td></tr><tr><td>265038</td><td>Øyesykdommer</td></tr><tr><td>265040</td><td>Onkologi</td></tr><tr><td>265042</td><td>Revmatologi</td></tr><tr><td>265044</td><td>Tverrfaglig ryggbehandling</td></tr><tr><td>265046</td><td>Palliativ medisin</td></tr><tr><td>265048</td><td>Medisinsk genetikk</td></tr><tr><td>265050</td><td>Fysikalsk medisin og rehabilitering</td></tr><tr><td>265052</td><td>Andre  helsehjelpsområder</td></tr><tr><td>265054</td><td>Sosionomtjenester</td></tr><tr><td>265056</td><td>Ergoterapi</td></tr><tr><td>265058</td><td>Fysioterapi</td></tr><tr><td>265060</td><td>Kiropraktikk</td></tr><tr><td>265062</td><td>Ernæringsfysiologi</td></tr><tr><td>265064</td><td>Tannhelse</td></tr><tr><td>265066</td><td>Audiografi</td></tr><tr><td>265068</td><td>Spesialpedagogikk</td></tr><tr><td>265070</td><td>Logopedi</td></tr><tr><td>265072</td><td>Farmasi</td></tr><tr><td>265074</td><td>Yrkes- og arbeidsmedisin</td></tr><tr><td>268707</td><td>Sikkerhetspsykiatri</td></tr><tr><td>268531</td><td>Tverrfaglig spesialisert behandling av rusmiddelmisbruk</td></tr><tr><td>268532</td><td>Assistert befruktning</td></tr><tr><td>268533</td><td>Fostermedisin</td></tr><tr><td>268534</td><td>Hudsykdommer</td></tr><tr><td>268535</td><td>Veneriske sykdommer</td></tr><tr><td>268536</td><td>Nevrofysiologi</td></tr><tr><td>268708</td><td>Sarkomer</td></tr></table></li><li>Include these codes as defined in <code>urn:oid:1.3.6.1.4.1.9038.52.4582</code><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>268409</td><td>Somatikk plo meldingsmottak</td></tr><tr><td>268411</td><td>Psykiatri plo meldingsmottak</td></tr><tr><td>268413</td><td>Meldeordning Kunnskapssenteret</td></tr><tr><td>268734</td><td>Teknisk avsenderadresse</td></tr></table></li><li>Include these codes as defined in <code>urn:oid:1.3.6.1.4.1.9038.52.4584</code><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>268415</td><td>Raskere tilbake somatikk</td></tr><tr><td>268417</td><td>Raskere tilbake psykiatri</td></tr><tr><td>268419</td><td>Brystdiagnostikk</td></tr><tr><td>268421</td><td>Sykelig overvekt</td></tr><tr><td>268423</td><td>Brannskadebehandling</td></tr><tr><td>268425</td><td>Hyperbarmedisinsk behandling</td></tr><tr><td>268427</td><td>Benskjørhet</td></tr><tr><td>268429</td><td>Læring og mestring</td></tr><tr><td>268431</td><td>Døvblindhet</td></tr><tr><td>268433</td><td>Inkontinens</td></tr><tr><td>268736</td><td>Diagnostikk uavklart alvorlig sykdom</td></tr></table></li><li>Include these codes as defined in <code>urn:oid:1.3.6.1.4.1.9038.52.4106</code><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>263142</td><td>Pleie- og omsorgstjeneste (ikke i bruk)</td></tr><tr><td>263139</td><td>Legevakttjeneste</td></tr><tr><td>263141</td><td>Kommunelegetjeneste</td></tr><tr><td>263143</td><td>Flyktningehelsetjeneste</td></tr><tr><td>263147</td><td>Legetjeneste, pleie- og omsorg</td></tr><tr><td>263149</td><td>Sykepleietjeneste, pleie- og omsorg</td></tr><tr><td>263151</td><td>Psykisk kommunehelsetjeneste</td></tr><tr><td>263153</td><td>Helsestasjons- og skolehelsetjeneste</td></tr><tr><td>263155</td><td>Helsestasjon for ungdom</td></tr><tr><td>263157</td><td>Jordmortjeneste</td></tr><tr><td>263159</td><td>Sosialkontortjeneste</td></tr><tr><td>263161</td><td>Saksbehandler pleie, omsorg, rehab.</td></tr><tr><td>263163</td><td>Sakbehandler bolig</td></tr><tr><td>263165</td><td>Rehabilitering</td></tr><tr><td>263167</td><td>Fysioterapitjeneste</td></tr><tr><td>263169</td><td>Ergoterapitjeneste</td></tr><tr><td>263171</td><td>Andre tjenestetyper</td></tr><tr><td>263173</td><td>Fengselshelsetjeneste</td></tr><tr><td>263175</td><td>Helseteam (Overdoseteam)</td></tr><tr><td>263177</td><td>Sosialmedisinsk senter, helsetjeneste</td></tr><tr><td>265138</td><td>Fastlegetjeneste</td></tr><tr><td>265140</td><td>Smitteverntjeneste</td></tr><tr><td>265142</td><td>Økonomi/oppgjørstjeneste, pleie- og omsorg</td></tr><tr><td>268711</td><td>Fysioterapi, helsestasjon</td></tr><tr><td>268712</td><td>Ergoterapi, helsestasjon</td></tr><tr><td>268713</td><td>Psykolog, helsestasjon</td></tr><tr><td>268714</td><td>Psykolog, pleie og omsorg</td></tr><tr><td>268543</td><td>Frisklivssentral</td></tr><tr><td>268544</td><td>Heldøgn medisinsk akuttberedskap</td></tr><tr><td>268715</td><td>Kreftkoordinator</td></tr><tr><td>268716</td><td>Demenskoordinator</td></tr><tr><td>268717</td><td>Diabeteskoordinator</td></tr><tr><td>268718</td><td>Synskontakt</td></tr><tr><td>268719</td><td>Hørselskontakt</td></tr><tr><td>268720</td><td>Logopedi</td></tr><tr><td>268721</td><td>Familieteam</td></tr></table></li><li>Include these codes as defined in <code>urn:oid:1.3.6.1.4.1.9038.52.4639</code><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>268549</td><td>Apotektjenestetype</td></tr><tr><td>268550</td><td>Bandagisttjenestetype</td></tr><tr><td>268738</td><td>E-dose-mottak</td></tr><tr><td>268551</td><td>Reseptformidler</td></tr><tr><td>268552</td><td>Andre tjenestetyper</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://dips.no/fhir/R4/ValueSet/DIPSHealthcareServiceTypes"/>
+  <version value="0.1.0"/>
+  <name value="DIPSHealthcareServiceTypes"/>
+  <status value="active"/>
+  <date value="2026-08-20T12:37:22+05:30"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="Lars-Andreas Nystad"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:lan@dips.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Value Sets of DIPSHealthcareServiceTypes"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="urn:oid:1.3.6.1.4.1.9038.52.4379"/>
+      <concept>
+        <code value="264864"/>
+        <display value="Patologi"/>
+      </concept>
+      <concept>
+        <code value="264866"/>
+        <display value="Klinisk nevrofysiologi"/>
+      </concept>
+      <concept>
+        <code value="264868"/>
+        <display value="Nevrovaskulært laboratorium"/>
+      </concept>
+      <concept>
+        <code value="264870"/>
+        <display value="Nevroimmunologisk laboratorium"/>
+      </concept>
+      <concept>
+        <code value="264872"/>
+        <display value="Cytogenetikk og molekylærgenetikk"/>
+      </concept>
+      <concept>
+        <code value="264834"/>
+        <display value="Radiologi og billeddiagnostikk"/>
+      </concept>
+      <concept>
+        <code value="264836"/>
+        <display value="Røntgen"/>
+      </concept>
+      <concept>
+        <code value="264842"/>
+        <display value="Tomografi MR"/>
+      </concept>
+      <concept>
+        <code value="264844"/>
+        <display value="Tomografi CT"/>
+      </concept>
+      <concept>
+        <code value="264846"/>
+        <display value="Nukleærmedisin"/>
+      </concept>
+      <concept>
+        <code value="264848"/>
+        <display value="Nevroradiologi"/>
+      </concept>
+      <concept>
+        <code value="264850"/>
+        <display value="Intervensjonsradiologi"/>
+      </concept>
+      <concept>
+        <code value="264852"/>
+        <display value="Laboratoriefag"/>
+      </concept>
+      <concept>
+        <code value="264854"/>
+        <display value="Klinisk farmakologi"/>
+      </concept>
+      <concept>
+        <code value="264856"/>
+        <display value="Immunologi, allergologi og transfusjonsmedisin"/>
+      </concept>
+      <concept>
+        <code value="264858"/>
+        <display value="Medisinsk biokjemi"/>
+      </concept>
+      <concept>
+        <code value="264860"/>
+        <display value="Medisinsk mikrobiologi"/>
+      </concept>
+      <concept>
+        <code value="264862"/>
+        <display value="Nukleærmedisin"/>
+      </concept>
+      <concept>
+        <code value="268523"/>
+        <display value="Ultralyd"/>
+      </concept>
+      <concept>
+        <code value="268524"/>
+        <display value="Angiografi"/>
+      </concept>
+      <concept>
+        <code value="268525"/>
+        <display value="Immunologi og allergologi"/>
+      </concept>
+      <concept>
+        <code value="268526"/>
+        <display value="Transfusjonsmedisin"/>
+      </concept>
+    </include>
+    <include>
+      <system value="urn:oid:1.3.6.1.4.1.9038.52.4357"/>
+      <concept>
+        <code value="264876"/>
+        <display value="Spilleavhengighet og annen avhengighet"/>
+      </concept>
+      <concept>
+        <code value="264878"/>
+        <display value="Rusmiddelavhengighet med alvorlig psykiatrisk sykdom (dobbeldiagnose)"/>
+      </concept>
+      <concept>
+        <code value="264874"/>
+        <display value="Helsehjelp knyttet til rusmiddelavhengighet og annen avhengighet"/>
+      </concept>
+      <concept>
+        <code value="264880"/>
+        <display value="Rusmiddelavhengighet med langvarig funksjonssvikt"/>
+      </concept>
+      <concept>
+        <code value="264882"/>
+        <display value="Førstegangspsykose knyttet til rusmiddelavhengighet"/>
+      </concept>
+      <concept>
+        <code value="264884"/>
+        <display value="Utredning av rusmiddelavhengighet eller annen avhengighet"/>
+      </concept>
+      <concept>
+        <code value="264886"/>
+        <display value="Avrusning/ avgiftning/ stabilisering"/>
+      </concept>
+      <concept>
+        <code value="264888"/>
+        <display value="Familieterapi, parterapi og pårørendeterapi"/>
+      </concept>
+      <concept>
+        <code value="264890"/>
+        <display value="Legemiddelassistert rehabilitering (LAR)"/>
+      </concept>
+      <concept>
+        <code value="264892"/>
+        <display value="Terapeutisk samfunn, kollektiv osv."/>
+      </concept>
+      <concept>
+        <code value="264894"/>
+        <display value="Innsatte under paragraf 12-soning"/>
+      </concept>
+      <concept>
+        <code value="264896"/>
+        <display value="Psykisk helsevern"/>
+      </concept>
+      <concept>
+        <code value="264898"/>
+        <display value="Psykisk helsevern for barn og unge (BUP)"/>
+      </concept>
+      <concept>
+        <code value="264900"/>
+        <display value="Familieterapi"/>
+      </concept>
+      <concept>
+        <code value="264902"/>
+        <display value="Spiseforstyrrelser hos barn"/>
+      </concept>
+      <concept>
+        <code value="264904"/>
+        <display value="Psykisk helsevern for voksne"/>
+      </concept>
+      <concept>
+        <code value="264906"/>
+        <display value="Spiseforstyrrelser hos voksne"/>
+      </concept>
+      <concept>
+        <code value="264908"/>
+        <display value="Psykiatrisk helsehjelp til døve"/>
+      </concept>
+      <concept>
+        <code value="264910"/>
+        <display value="Unge schizofrene"/>
+      </concept>
+      <concept>
+        <code value="264912"/>
+        <display value="Alderspsykiatrisk behandling"/>
+      </concept>
+      <concept>
+        <code value="264914"/>
+        <display value="Psykiatrisk helsehjelp til asylsøkere og flyktninger"/>
+      </concept>
+      <concept>
+        <code value="264916"/>
+        <display value="Tidlig intervensjon"/>
+      </concept>
+      <concept>
+        <code value="264918"/>
+        <display value="Pasienter med langvarig funksjonssvikt"/>
+      </concept>
+      <concept>
+        <code value="264920"/>
+        <display value="Førstegangspsykose"/>
+      </concept>
+      <concept>
+        <code value="264922"/>
+        <display value="Habilitering/Rehabilitering (psykisk helsevern for voksne)"/>
+      </concept>
+      <concept>
+        <code value="264924"/>
+        <display value="Familieterapi/behandling"/>
+      </concept>
+      <concept>
+        <code value="264926"/>
+        <display value="Helsehjelp knyttet til habilitering og rehabilitering"/>
+      </concept>
+      <concept>
+        <code value="264928"/>
+        <display value="Barnehabilitering"/>
+      </concept>
+      <concept>
+        <code value="264930"/>
+        <display value="Voksenhabilitering"/>
+      </concept>
+      <concept>
+        <code value="264932"/>
+        <display value="Rehabilitering"/>
+      </concept>
+      <concept>
+        <code value="264934"/>
+        <display value="Helsehjelp knyttet til somatisk sykdom"/>
+      </concept>
+      <concept>
+        <code value="264936"/>
+        <display value="Allmennmedisin"/>
+      </concept>
+      <concept>
+        <code value="264938"/>
+        <display value="Kirurgi"/>
+      </concept>
+      <concept>
+        <code value="264940"/>
+        <display value="Generell kirurgi"/>
+      </concept>
+      <concept>
+        <code value="264942"/>
+        <display value="Barnekirurgi"/>
+      </concept>
+      <concept>
+        <code value="264944"/>
+        <display value="Bryst og endokrin kirurgi"/>
+      </concept>
+      <concept>
+        <code value="264946"/>
+        <display value="Gastroenterologisk kirurgi"/>
+      </concept>
+      <concept>
+        <code value="264948"/>
+        <display value="Karkirurgi"/>
+      </concept>
+      <concept>
+        <code value="264950"/>
+        <display value="Kjevekirurgi og munnhulesykdommer"/>
+      </concept>
+      <concept>
+        <code value="264952"/>
+        <display value="Nevrokirurgi"/>
+      </concept>
+      <concept>
+        <code value="264954"/>
+        <display value="Ortopedisk kirurgi"/>
+      </concept>
+      <concept>
+        <code value="264956"/>
+        <display value="Plastikkirurgi"/>
+      </concept>
+      <concept>
+        <code value="264958"/>
+        <display value="Thoraxkirurgi"/>
+      </concept>
+      <concept>
+        <code value="264960"/>
+        <display value="Urologi"/>
+      </concept>
+      <concept>
+        <code value="264962"/>
+        <display value="Indremedisin"/>
+      </concept>
+      <concept>
+        <code value="264964"/>
+        <display value="Endokrinologi"/>
+      </concept>
+      <concept>
+        <code value="264966"/>
+        <display value="Fordøyelsessykdommer"/>
+      </concept>
+      <concept>
+        <code value="264968"/>
+        <display value="Geriatri"/>
+      </concept>
+      <concept>
+        <code value="264970"/>
+        <display value="Blodsykdommer"/>
+      </concept>
+      <concept>
+        <code value="264972"/>
+        <display value="Infeksjonsmedisin"/>
+      </concept>
+      <concept>
+        <code value="264974"/>
+        <display value="Hjertesykdommer"/>
+      </concept>
+      <concept>
+        <code value="264976"/>
+        <display value="Hjerterytmeforstyrrelser"/>
+      </concept>
+      <concept>
+        <code value="264978"/>
+        <display value="Ekkokardiografi og bildediagnostikk"/>
+      </concept>
+      <concept>
+        <code value="264980"/>
+        <display value="Klinisk kardiologi"/>
+      </concept>
+      <concept>
+        <code value="264982"/>
+        <display value="Forebyggende kardiologi"/>
+      </concept>
+      <concept>
+        <code value="264984"/>
+        <display value="Invasiv kardiologi"/>
+      </concept>
+      <concept>
+        <code value="264986"/>
+        <display value="Lungesykdommer"/>
+      </concept>
+      <concept>
+        <code value="264988"/>
+        <display value="Nyresykdommer"/>
+      </concept>
+      <concept>
+        <code value="264990"/>
+        <display value="Dialyse"/>
+      </concept>
+      <concept>
+        <code value="264992"/>
+        <display value="Fødselshjelp og kvinnesykdommer"/>
+      </concept>
+      <concept>
+        <code value="264994"/>
+        <display value="Generell gynekologi"/>
+      </concept>
+      <concept>
+        <code value="264996"/>
+        <display value="Gynekologisk onkologi"/>
+      </concept>
+      <concept>
+        <code value="264998"/>
+        <display value="Obstetrikk"/>
+      </concept>
+      <concept>
+        <code value="265000"/>
+        <display value="Hud- og veneriske sykdommer"/>
+      </concept>
+      <concept>
+        <code value="265002"/>
+        <display value="Barnesykdommer"/>
+      </concept>
+      <concept>
+        <code value="265004"/>
+        <display value="Nyfødtmedisin"/>
+      </concept>
+      <concept>
+        <code value="265006"/>
+        <display value="Intensivbehandling av barn"/>
+      </concept>
+      <concept>
+        <code value="265008"/>
+        <display value="Nevrologi"/>
+      </concept>
+      <concept>
+        <code value="265010"/>
+        <display value="Generell nevrologi"/>
+      </concept>
+      <concept>
+        <code value="265012"/>
+        <display value="Cerebrovaskulære sykdommer"/>
+      </concept>
+      <concept>
+        <code value="265014"/>
+        <display value="Epilepsi"/>
+      </concept>
+      <concept>
+        <code value="265016"/>
+        <display value="Anestesiologi Inklusiv smertebehandling"/>
+      </concept>
+      <concept>
+        <code value="265018"/>
+        <display value="Øre-nese-halssykdommer"/>
+      </concept>
+      <concept>
+        <code value="265020"/>
+        <display value="Audiologi"/>
+      </concept>
+      <concept>
+        <code value="265022"/>
+        <display value="Laryngologi/Foniatri"/>
+      </concept>
+      <concept>
+        <code value="265024"/>
+        <display value="Balansemedisin"/>
+      </concept>
+      <concept>
+        <code value="265026"/>
+        <display value="Søvnrelaterte sykdommer"/>
+      </concept>
+      <concept>
+        <code value="265028"/>
+        <display value="Nese- og bihulesykdommer"/>
+      </concept>
+      <concept>
+        <code value="265030"/>
+        <display value="Otologi"/>
+      </concept>
+      <concept>
+        <code value="265032"/>
+        <display value="Hode- og halskirurgi"/>
+      </concept>
+      <concept>
+        <code value="265034"/>
+        <display value="Allergologi"/>
+      </concept>
+      <concept>
+        <code value="265036"/>
+        <display value="Pediatriske øre-nese-halssykdommer"/>
+      </concept>
+      <concept>
+        <code value="265038"/>
+        <display value="Øyesykdommer"/>
+      </concept>
+      <concept>
+        <code value="265040"/>
+        <display value="Onkologi"/>
+      </concept>
+      <concept>
+        <code value="265042"/>
+        <display value="Revmatologi"/>
+      </concept>
+      <concept>
+        <code value="265044"/>
+        <display value="Tverrfaglig ryggbehandling"/>
+      </concept>
+      <concept>
+        <code value="265046"/>
+        <display value="Palliativ medisin"/>
+      </concept>
+      <concept>
+        <code value="265048"/>
+        <display value="Medisinsk genetikk"/>
+      </concept>
+      <concept>
+        <code value="265050"/>
+        <display value="Fysikalsk medisin og rehabilitering"/>
+      </concept>
+      <concept>
+        <code value="265052"/>
+        <display value="Andre  helsehjelpsområder"/>
+      </concept>
+      <concept>
+        <code value="265054"/>
+        <display value="Sosionomtjenester"/>
+      </concept>
+      <concept>
+        <code value="265056"/>
+        <display value="Ergoterapi"/>
+      </concept>
+      <concept>
+        <code value="265058"/>
+        <display value="Fysioterapi"/>
+      </concept>
+      <concept>
+        <code value="265060"/>
+        <display value="Kiropraktikk"/>
+      </concept>
+      <concept>
+        <code value="265062"/>
+        <display value="Ernæringsfysiologi"/>
+      </concept>
+      <concept>
+        <code value="265064"/>
+        <display value="Tannhelse"/>
+      </concept>
+      <concept>
+        <code value="265066"/>
+        <display value="Audiografi"/>
+      </concept>
+      <concept>
+        <code value="265068"/>
+        <display value="Spesialpedagogikk"/>
+      </concept>
+      <concept>
+        <code value="265070"/>
+        <display value="Logopedi"/>
+      </concept>
+      <concept>
+        <code value="265072"/>
+        <display value="Farmasi"/>
+      </concept>
+      <concept>
+        <code value="265074"/>
+        <display value="Yrkes- og arbeidsmedisin"/>
+      </concept>
+      <concept>
+        <code value="268707"/>
+        <display value="Sikkerhetspsykiatri"/>
+      </concept>
+      <concept>
+        <code value="268531"/>
+        <display value="Tverrfaglig spesialisert behandling av rusmiddelmisbruk"/>
+      </concept>
+      <concept>
+        <code value="268532"/>
+        <display value="Assistert befruktning"/>
+      </concept>
+      <concept>
+        <code value="268533"/>
+        <display value="Fostermedisin"/>
+      </concept>
+      <concept>
+        <code value="268534"/>
+        <display value="Hudsykdommer"/>
+      </concept>
+      <concept>
+        <code value="268535"/>
+        <display value="Veneriske sykdommer"/>
+      </concept>
+      <concept>
+        <code value="268536"/>
+        <display value="Nevrofysiologi"/>
+      </concept>
+      <concept>
+        <code value="268708"/>
+        <display value="Sarkomer"/>
+      </concept>
+    </include>
+    <include>
+      <system value="urn:oid:1.3.6.1.4.1.9038.52.4582"/>
+      <concept>
+        <code value="268409"/>
+        <display value="Somatikk plo meldingsmottak"/>
+      </concept>
+      <concept>
+        <code value="268411"/>
+        <display value="Psykiatri plo meldingsmottak"/>
+      </concept>
+      <concept>
+        <code value="268413"/>
+        <display value="Meldeordning Kunnskapssenteret"/>
+      </concept>
+      <concept>
+        <code value="268734"/>
+        <display value="Teknisk avsenderadresse"/>
+      </concept>
+    </include>
+    <include>
+      <system value="urn:oid:1.3.6.1.4.1.9038.52.4584"/>
+      <concept>
+        <code value="268415"/>
+        <display value="Raskere tilbake somatikk"/>
+      </concept>
+      <concept>
+        <code value="268417"/>
+        <display value="Raskere tilbake psykiatri"/>
+      </concept>
+      <concept>
+        <code value="268419"/>
+        <display value="Brystdiagnostikk"/>
+      </concept>
+      <concept>
+        <code value="268421"/>
+        <display value="Sykelig overvekt"/>
+      </concept>
+      <concept>
+        <code value="268423"/>
+        <display value="Brannskadebehandling"/>
+      </concept>
+      <concept>
+        <code value="268425"/>
+        <display value="Hyperbarmedisinsk behandling"/>
+      </concept>
+      <concept>
+        <code value="268427"/>
+        <display value="Benskjørhet"/>
+      </concept>
+      <concept>
+        <code value="268429"/>
+        <display value="Læring og mestring"/>
+      </concept>
+      <concept>
+        <code value="268431"/>
+        <display value="Døvblindhet"/>
+      </concept>
+      <concept>
+        <code value="268433"/>
+        <display value="Inkontinens"/>
+      </concept>
+      <concept>
+        <code value="268736"/>
+        <display value="Diagnostikk uavklart alvorlig sykdom"/>
+      </concept>
+    </include>
+    <include>
+      <system value="urn:oid:1.3.6.1.4.1.9038.52.4106"/>
+      <concept>
+        <code value="263142"/>
+        <display value="Pleie- og omsorgstjeneste (ikke i bruk)"/>
+      </concept>
+      <concept>
+        <code value="263139"/>
+        <display value="Legevakttjeneste"/>
+      </concept>
+      <concept>
+        <code value="263141"/>
+        <display value="Kommunelegetjeneste"/>
+      </concept>
+      <concept>
+        <code value="263143"/>
+        <display value="Flyktningehelsetjeneste"/>
+      </concept>
+      <concept>
+        <code value="263147"/>
+        <display value="Legetjeneste, pleie- og omsorg"/>
+      </concept>
+      <concept>
+        <code value="263149"/>
+        <display value="Sykepleietjeneste, pleie- og omsorg"/>
+      </concept>
+      <concept>
+        <code value="263151"/>
+        <display value="Psykisk kommunehelsetjeneste"/>
+      </concept>
+      <concept>
+        <code value="263153"/>
+        <display value="Helsestasjons- og skolehelsetjeneste"/>
+      </concept>
+      <concept>
+        <code value="263155"/>
+        <display value="Helsestasjon for ungdom"/>
+      </concept>
+      <concept>
+        <code value="263157"/>
+        <display value="Jordmortjeneste"/>
+      </concept>
+      <concept>
+        <code value="263159"/>
+        <display value="Sosialkontortjeneste"/>
+      </concept>
+      <concept>
+        <code value="263161"/>
+        <display value="Saksbehandler pleie, omsorg, rehab."/>
+      </concept>
+      <concept>
+        <code value="263163"/>
+        <display value="Sakbehandler bolig"/>
+      </concept>
+      <concept>
+        <code value="263165"/>
+        <display value="Rehabilitering"/>
+      </concept>
+      <concept>
+        <code value="263167"/>
+        <display value="Fysioterapitjeneste"/>
+      </concept>
+      <concept>
+        <code value="263169"/>
+        <display value="Ergoterapitjeneste"/>
+      </concept>
+      <concept>
+        <code value="263171"/>
+        <display value="Andre tjenestetyper"/>
+      </concept>
+      <concept>
+        <code value="263173"/>
+        <display value="Fengselshelsetjeneste"/>
+      </concept>
+      <concept>
+        <code value="263175"/>
+        <display value="Helseteam (Overdoseteam)"/>
+      </concept>
+      <concept>
+        <code value="263177"/>
+        <display value="Sosialmedisinsk senter, helsetjeneste"/>
+      </concept>
+      <concept>
+        <code value="265138"/>
+        <display value="Fastlegetjeneste"/>
+      </concept>
+      <concept>
+        <code value="265140"/>
+        <display value="Smitteverntjeneste"/>
+      </concept>
+      <concept>
+        <code value="265142"/>
+        <display value="Økonomi/oppgjørstjeneste, pleie- og omsorg"/>
+      </concept>
+      <concept>
+        <code value="268711"/>
+        <display value="Fysioterapi, helsestasjon"/>
+      </concept>
+      <concept>
+        <code value="268712"/>
+        <display value="Ergoterapi, helsestasjon"/>
+      </concept>
+      <concept>
+        <code value="268713"/>
+        <display value="Psykolog, helsestasjon"/>
+      </concept>
+      <concept>
+        <code value="268714"/>
+        <display value="Psykolog, pleie og omsorg"/>
+      </concept>
+      <concept>
+        <code value="268543"/>
+        <display value="Frisklivssentral"/>
+      </concept>
+      <concept>
+        <code value="268544"/>
+        <display value="Heldøgn medisinsk akuttberedskap"/>
+      </concept>
+      <concept>
+        <code value="268715"/>
+        <display value="Kreftkoordinator"/>
+      </concept>
+      <concept>
+        <code value="268716"/>
+        <display value="Demenskoordinator"/>
+      </concept>
+      <concept>
+        <code value="268717"/>
+        <display value="Diabeteskoordinator"/>
+      </concept>
+      <concept>
+        <code value="268718"/>
+        <display value="Synskontakt"/>
+      </concept>
+      <concept>
+        <code value="268719"/>
+        <display value="Hørselskontakt"/>
+      </concept>
+      <concept>
+        <code value="268720"/>
+        <display value="Logopedi"/>
+      </concept>
+      <concept>
+        <code value="268721"/>
+        <display value="Familieteam"/>
+      </concept>
+    </include>
+    <include>
+      <system value="urn:oid:1.3.6.1.4.1.9038.52.4639"/>
+      <concept>
+        <code value="268549"/>
+        <display value="Apotektjenestetype"/>
+      </concept>
+      <concept>
+        <code value="268550"/>
+        <display value="Bandagisttjenestetype"/>
+      </concept>
+      <concept>
+        <code value="268738"/>
+        <display value="E-dose-mottak"/>
+      </concept>
+      <concept>
+        <code value="268551"/>
+        <display value="Reseptformidler"/>
+      </concept>
+      <concept>
+        <code value="268552"/>
+        <display value="Andre tjenestetyper"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

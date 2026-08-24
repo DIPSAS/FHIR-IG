@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="noimpl-oxygen-saturation-create"/>
+  <meta>
+    <versionId value="0"/>
+    <lastUpdated value="2014-01-30T22:35:23+11:00"/>
+    <source value="NoImpl"/>
+    <profile value="http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationOxygenSaturation"/>
+  </meta>
+  <extension url="http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationInspiredOxygen">
+    <extension url="http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationOnAir">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationFlow">
+      <valueQuantity>
+        <value value="6100"/>
+        <unit value="ml/min"/>
+      </valueQuantity>
+    </extension>
+    <extension url="http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationMethodofOxygenDelivery">
+      <valueString value="Maske"/>
+    </extension>
+  </extension>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/dips-RelativeEhrUri"/>
+    <value value="ehr:compositions/6c41D37f-f173-45d6-8504-17c40454b9ee::default::1/content[openEHR-EHR-OBSERVATION.pulse_oximetry.v1 and name/value='Saturasjon']"/>
+  </identifier>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/dips-ObservationId"/>
+    <value value="dips-oxygen-saturation-create"/>
+  </identifier>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/dips-VersionIndependentId"/>
+    <value value="bd96cd32-3bdb-f448-9d65-265828cae8c8"/>
+  </identifier>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/externalId"/>
+    <value value="testBPexternalId1"/>
+  </identifier>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital Signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="2708-6"/>
+      <display value="Oxygen saturation in Arterial blood"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="431314004"/>
+      <display value="Peripheral oxygen saturation (observable entity)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/cdp2007964"/>
+    <identifier>
+      <system value="http://dips.no/fhir/namingsystem/dips-patientid"/>
+      <value value="1002679"/>
+    </identifier>
+  </subject>
+  <encounter>
+    <reference value="Encounter/agy1000245"/>
+    <identifier>
+      <system value="http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid"/>
+      <value value="1000245"/>
+    </identifier>
+  </encounter>
+  <effectiveDateTime value="2021-10-25T09:30:33+05:30"/>
+  <performer>
+    <reference value="PractitionerRole/agb1000204"/>
+    <identifier>
+      <system value="urn:oid:1.3.6.1.4.1.9038.51.1"/>
+      <value value="1000204"/>
+    </identifier>
+  </performer>
+  <performer>
+    <reference value="Organization/Organizationaks2"/>
+    <identifier>
+      <system value="urn:oid:1.3.6.1.4.1.9038.70.1"/>
+      <value value="2"/>
+    </identifier>
+  </performer>
+  <valueQuantity>
+    <value value="96"/>
+    <unit value="%"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="%"/>
+  </valueQuantity>
+  <note>
+    <text value="Demo pulse oxymetri"/>
+  </note>
+  <bodySite>
+    <text value="Demo pulse oxymetri bodysite"/>
+  </bodySite>
+  <referenceRange>
+    <low>
+      <value value="88"/>
+      <unit value="%"/>
+    </low>
+    <high>
+      <value value="92"/>
+      <unit value="%"/>
+    </high>
+  </referenceRange>
+</Observation>

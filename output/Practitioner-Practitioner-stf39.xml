@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="Practitioner-stf39"/>
+  <meta>
+    <lastUpdated value="2006-05-11T08:11:43+05:30"/>
+    <profile value="http://dips.no/fhir/R4/StructureDefinition/DIPSPractitioner"/>
+    <profile value="http://dips.no/fhir/R4/StructureDefinition/NoBasisPractitioner"/>
+    <tag>
+      <system value="http://dips.no/fhir/namingsystem/practitionersource"/>
+      <code value="practitioner"/>
+    </tag>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner Practitioner-stf39</b></p><a name="Practitioner-stf39"> </a><a name="hcPractitioner-stf39"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2006-05-11 08:11:43+0530</p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-DIPSPractitioner.html">DIPSPractitioner</a>, <a href="https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;canonical=http://dips.no/fhir/R4/StructureDefinition/NoBasisPractitioner">http://dips.no/fhir/R4/StructureDefinition/NoBasisPractitioner</a></p><p style="margin-bottom: 0px">Tag: </p></div><p><b>IsSpecialistExtension</b>: false</p><p><b>DIPSPractitionerSpecialist</b>: false</p><p><b>identifier</b>: HelsepersonellregisteretNummer/12256545 (use: official, ), <code>http://dips.no/fhir/namingsystem/dips-personid</code>/39 (use: official, )</p><p><b>active</b>: true</p><p><b>name</b>: Lasse Asslege (Testplan For Epj) </p><p><b>gender</b>: Unknown</p></div>
+  </text>
+  <extension url="http://dips.no/fhir/R4/StructureDefinition/IsSpecialistExtension">
+    <valueBoolean value="false"/>
+  </extension>
+  <extension url="http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerSpecialist">
+    <valueBoolean value="false"/>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <system value="urn:oid:2.16.578.1.12.4.1.4.4"/>
+    <value value="12256545"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <system value="http://dips.no/fhir/namingsystem/dips-personid"/>
+    <value value="39"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Asslege (Testplan For Epj)"/>
+    <given value="Lasse"/>
+  </name>
+  <gender value="unknown"/>
+</Practitioner>

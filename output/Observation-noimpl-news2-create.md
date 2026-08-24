@@ -1,0 +1,236 @@
+# noimpl-news2-create - DIPS Core Implementation Guide v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **noimpl-news2-create**
+
+## Example Observation: noimpl-news2-create
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Observation",
+  "id" : "noimpl-news2-create",
+  "meta" : {
+    "versionId" : "0",
+    "lastUpdated" : "2014-01-30T11:35:23+00:00",
+    "source" : "NoImpl",
+    "profile" : ["http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationNews2Score"]
+  },
+  "identifier" : [{
+    "system" : "http://dips.no/fhir/namingsystem/dips-RelativeEhrUri",
+    "value" : "ehr:compositions/6c41D37f-f173-45d6-8504-17c40454b9ee::default::1/content[openEHR-EHR-OBSERVATION.news2.v1 and name/value='NEWS2-Basic-Vitals']"
+  },
+  {
+    "system" : "http://dips.no/fhir/namingsystem/dips-ObservationId",
+    "value" : "dfdcd132-f0c0-e84a-a9b0-937bcb93c008"
+  },
+  {
+    "system" : "http://dips.no/fhir/namingsystem/dips-VersionIndependentId",
+    "value" : "bd96cd32-3bdb-f448-9d65-265828cae8c8"
+  },
+  {
+    "system" : "http://dips.no/fhir/namingsystem/externalId",
+    "value" : "testBPexternalId1"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey",
+      "display" : "Survey"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/45991000052106/version/20210531",
+      "code" : "1104051000000101",
+      "display" : "Royal College of Physicians National Early Warning Score 2 total score (observable entity)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/cdp2007964",
+    "identifier" : {
+      "system" : "http://dips.no/fhir/namingsystem/dips-patientid",
+      "value" : "1002679"
+    }
+  },
+  "effectiveDateTime" : "2021-10-25T09:30:33+05:30",
+  "performer" : [{
+    "reference" : "PractitionerRole/agb1000204",
+    "identifier" : {
+      "system" : "urn:oid:1.3.6.1.4.1.9038.51.1",
+      "value" : "1000204"
+    }
+  },
+  {
+    "reference" : "Organization/Organizationaks2",
+    "identifier" : {
+      "system" : "urn:oid:1.3.6.1.4.1.9038.70.1",
+      "value" : "2"
+    }
+  }],
+  "valueQuantity" : {
+    "value" : 6,
+    "unit" : "ScoreOf",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "{ScoreOf}"
+  },
+  "derivedFrom" : [{
+    "reference" : "Observation/noImpl-respiratory-rate-create"
+  },
+  {
+    "reference" : "Observation/noimpl-bloodpressure-instance"
+  },
+  {
+    "reference" : "Observation/noImpl-consciousness-create"
+  },
+  {
+    "reference" : "Observation/noimpl-oxygen-saturation-create"
+  },
+  {
+    "reference" : "Observation/noimpl-body-temperature-create"
+  },
+  {
+    "reference" : "Observation/noimpl-pulse-rate"
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/45991000052106/version/20210531",
+        "code" : "1104301000000104",
+        "display" : "Royal College of Physicians National Early Warning Score 2 - respiration rate score (observable entity)"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 2,
+      "unit" : "ScoreOf",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "{ScoreOf}"
+    },
+    "interpretation" : [{
+      "text" : "21-24"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/45991000052106/version/20210531",
+        "code" : "1104311000000102",
+        "display" : "Royal College of Physicians NEWS2 (National Early Warning Score 2) - SpO2 (oxygen saturation at periphery) scale 1 score"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 1,
+      "unit" : "ScoreOf",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "{ScoreOf}"
+    },
+    "interpretation" : [{
+      "text" : "≥96"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/45991000052106/version/20210531",
+        "code" : "1104331000000105",
+        "display" : "Royal College of Physicians National Early Warning Score 2 - air or oxygen score (observable entity)"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 0,
+      "unit" : "ScoreOf",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "{ScoreOf}"
+    },
+    "interpretation" : [{
+      "text" : "Air"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/45991000052106/version/20210531",
+        "code" : "1104341000000101",
+        "display" : "Royal College of Physicians National Early Warning Score 2 - systolic blood pressure score (observable entity)"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 0,
+      "unit" : "ScoreOf",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "{ScoreOf}"
+    },
+    "interpretation" : [{
+      "text" : "111-219"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/45991000052106/version/20210531",
+        "code" : "1104351000000103",
+        "display" : "Royal College of Physicians National Early Warning Score 2 - pulse score (observable entity)"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 0,
+      "unit" : "ScoreOf",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "{ScoreOf}"
+    },
+    "interpretation" : [{
+      "text" : "51-90"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/45991000052106/version/20210531",
+        "code" : "1104361000000100",
+        "display" : "Royal College of Physicians National Early Warning Score 2 - consciousness score (observable entity)"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 3,
+      "unit" : "ScoreOf",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "{ScoreOf}"
+    },
+    "interpretation" : [{
+      "text" : "C, V, P eller U"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/45991000052106/version/20210531",
+        "code" : "1104371000000107",
+        "display" : "Royal College of Physicians National Early Warning Score 2 - temperature score (observable entity)"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 0,
+      "unit" : "ScoreOf",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "{ScoreOf}"
+    },
+    "interpretation" : [{
+      "text" : "36.1-38.0"
+    }]
+  }]
+}
+
+```

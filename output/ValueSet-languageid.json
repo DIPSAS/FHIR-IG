@@ -1,0 +1,75 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "languageid",
+  "meta" : {
+    "versionId" : "1",
+    "lastUpdated" : "2020-04-17T00:33:33.219-04:00"
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet languageid</b></p><a name=\"languageid\"> </a><a name=\"hclanguageid\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1; Last updated: 2020-04-17 00:33:33-0400</p></div><ul><li>Include these codes as defined in <code>urn:oid:1.3.6.1.4.1.9038.52.1587</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>2213154</td><td>Norwegian Bokmål</td></tr><tr><td>204434</td><td>Norwegian Bokmål</td></tr><tr><td>2213343</td><td>Norwegian Nynorsk</td></tr><tr><td>213342</td><td>Norwegian Nynorsk</td></tr><tr><td>2213155</td><td>Engelsk</td></tr><tr><td>204436</td><td>Engelsk</td></tr><tr><td>223568</td><td>Fransk</td></tr><tr><td>204432</td><td>Tysk</td></tr><tr><td>223566</td><td>Spansk</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://dips.no/fhir/R4/ValueSet/languageid",
+  "version" : "0.1.0",
+  "name" : "languageid",
+  "status" : "active",
+  "date" : "2026-08-20T12:37:22+05:30",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "Lars-Andreas Nystad",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "mailto:lan@dips.no",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Valesets of languageid",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:1.3.6.1.4.1.9038.52.1587",
+      "concept" : [{
+        "code" : "2213154",
+        "display" : "Norwegian Bokmål"
+      },
+      {
+        "code" : "204434",
+        "display" : "Norwegian Bokmål"
+      },
+      {
+        "code" : "2213343",
+        "display" : "Norwegian Nynorsk"
+      },
+      {
+        "code" : "213342",
+        "display" : "Norwegian Nynorsk"
+      },
+      {
+        "code" : "2213155",
+        "display" : "Engelsk"
+      },
+      {
+        "code" : "204436",
+        "display" : "Engelsk"
+      },
+      {
+        "code" : "223568",
+        "display" : "Fransk"
+      },
+      {
+        "code" : "204432",
+        "display" : "Tysk"
+      },
+      {
+        "code" : "223566",
+        "display" : "Spansk"
+      }]
+    }]
+  }
+}

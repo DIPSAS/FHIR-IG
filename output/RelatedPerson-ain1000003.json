@@ -1,0 +1,71 @@
+{
+  "resourceType" : "RelatedPerson",
+  "id" : "ain1000003",
+  "meta" : {
+    "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPerson",
+    "http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson ain1000003</b></p><a name=\"ain1000003\"> </a><a name=\"hcain1000003\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-DIPSRelatedPerson.html\">DIPSRelatedPerson</a>, <a href=\"https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;canonical=http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson\">no-basis-RelatedPerson</a></p></div><p><b>DIPSRelatedPersonAppointedByMunicipality</b>: [not stated]: 688 (Namsos)</p><p><b>DIPSRelatedPersonAdditionalInformation</b>: Dette er vergetype &quot;Setteverge&quot;</p><p><b>DIPSRelatedPersonResponsibleRequisitioner</b>: <a href=\"PractitionerRole-agb1000043.html\">KIRURG (TESTPLAN RESSURS), KJELL, TESTSYKEHUSET HF</a></p><p><b>identifier</b>: <code>http://dips.no/fhir/namingsystem/dips-guardianid</code>/1000003\u00a0(use:\u00a0official,\u00a0)</p><p><b>active</b>: false</p><p><b>patient</b>: <a href=\"Patient-cdp2007860.html\">Anonymous Patient (no stated gender), DoB Unknown ( http://dips.no/fhir/namingsystem/dips-patientid#2007860)</a></p><p><b>relationship</b>: <span title=\"Codes:{urn:oid:1.3.6.1.4.1.9038.52.3508 3}\">Setteverge</span></p><p><b>name</b>: Verge, Setteverge</p><p><b>telecom</b>: ph: 12455689(Home)</p><p><b>gender</b>: Unknown</p><p><b>address</b>: Vergveien 23 Namsos 7800 </p><p><b>period</b>: 2008-02-13 00:00:00+0000 --&gt; 2018-02-28 00:00:00+0000</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAppointedByMunicipality",
+    "valueCoding" : {
+      "code" : "688",
+      "display" : "Namsos"
+    }
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAdditionalInformation",
+    "valueString" : "Dette er vergetype \"Setteverge\""
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonResponsibleRequisitioner",
+    "valueReference" : {
+      "reference" : "PractitionerRole/agb1000043",
+      "display" : "KIRURG (TESTPLAN RESSURS), KJELL, TESTSYKEHUSET HF"
+    }
+  }],
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://dips.no/fhir/namingsystem/dips-guardianid",
+    "value" : "1000003"
+  }],
+  "active" : false,
+  "patient" : {
+    "reference" : "Patient/cdp2007860",
+    "identifier" : {
+      "use" : "official",
+      "system" : "http://dips.no/fhir/namingsystem/dips-patientid",
+      "value" : "2007860"
+    }
+  },
+  "relationship" : [{
+    "coding" : [{
+      "system" : "urn:oid:1.3.6.1.4.1.9038.52.3508",
+      "code" : "3",
+      "display" : "Setteverge"
+    }]
+  }],
+  "name" : [{
+    "text" : "Verge, Setteverge",
+    "family" : "Verge",
+    "given" : ["Setteverge"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "12455689",
+    "use" : "home"
+  }],
+  "gender" : "unknown",
+  "address" : [{
+    "line" : ["Vergveien 23"],
+    "city" : "Namsos",
+    "postalCode" : "7800"
+  }],
+  "period" : {
+    "start" : "2008-02-13T00:00:00+00:00",
+    "end" : "2018-02-28T00:00:00+00:00"
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="aie1000050"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location aie1000050</b></p><a name="aie1000050"> </a><a name="hcaie1000050"> </a><p><b>identifier</b>: <code>http://dips.no/fhir/namingsystem/dips-bedid</code>/1000050</p></div>
+  </text>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/dips-bedid"/>
+    <value value="1000050"/>
+  </identifier>
+</Location>

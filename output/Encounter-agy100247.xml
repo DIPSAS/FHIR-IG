@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="agy100247"/>
+  <meta>
+    <profile value="http://dips.no/fhir/R4/StructureDefinition/DIPSR4Encounter"/>
+  </meta>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid"/>
+    <value value="agy100247"/>
+  </identifier>
+  <status value="arrived"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="AMB"/>
+  </class>
+  <subject>
+    <reference value="Patient/cdp138"/>
+    <identifier>
+      <system value="http://dips.no/fhir/namingsystem/dips-patientid"/>
+      <value value="138"/>
+    </identifier>
+    <display value="Spelemann (Testplan - Journal), Per"/>
+  </subject>
+  <serviceProvider>
+    <reference value="Organization/afa22"/>
+    <identifier>
+      <system value="urn:oid:2.16.578.1.12.4.1.4.102"/>
+      <value value="10013"/>
+    </identifier>
+    <display value="Kirurgisk avdeling | Testsykehuset DIPS"/>
+  </serviceProvider>
+</Encounter>

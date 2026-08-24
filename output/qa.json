@@ -1,0 +1,19 @@
+{
+  "url" : "http://dips.no/fhir/R4/ImplementationGuide/dips.fhir.no.core",
+  "name" : "DIPSCore",
+  "title" : "DIPS Core Implementation Guide",
+  "description" : "Example Implementation Guide for getting started with SUSHI",
+  "status" : "draft",
+  "package-id" : "dips.fhir.no.core",
+  "ig-ver" : "0.1.0",
+  "date" : "Thu, 20 Aug, 2026 12:37:22 +0530",
+  "dateISO8601" : "2026-08-20T12:37:22+05:30",
+  "errs" : 108,
+  "warnings" : 891,
+  "hints" : 540,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 2508027936
+}

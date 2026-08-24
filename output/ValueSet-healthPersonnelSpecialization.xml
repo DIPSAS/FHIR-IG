@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="healthPersonnelSpecialization"/>
+  <meta>
+    <lastUpdated value="2021-03-17T00:00:00+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet healthPersonnelSpecialization</b></p><a name="healthPersonnelSpecialization"> </a><a name="hchealthPersonnelSpecialization"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2021-03-17 00:00:00+0000</p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <code>urn:oid:2.16.578.1.12.4.1.1.7426</code><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Allmennmedisin</td></tr><tr><td>2</td><td>Anestesiologi</td></tr><tr><td>3</td><td>Barnesykdommer</td></tr><tr><td>4</td><td>Barne- og ungdomspsykiatri</td></tr><tr><td>5</td><td>Arbeidsmedisin</td></tr><tr><td>6</td><td>Fysikalsk medisin og rehabilitering</td></tr><tr><td>7</td><td>Fødselshjelp og kvinnesykdommer</td></tr><tr><td>16</td><td>Hud og veneriske sykdommer</td></tr><tr><td>18</td><td>Immunologi og transfusjonsmedisin</td></tr><tr><td>28</td><td>Maxillofacial kirurgi</td></tr><tr><td>31</td><td>Medisinsk biokjemi</td></tr><tr><td>32</td><td>Klinisk nevrofysiologi</td></tr><tr><td>33</td><td>Medisinsk genetikk</td></tr><tr><td>34</td><td>Medisinsk mikrobiologi</td></tr><tr><td>35</td><td>Radiologi</td></tr><tr><td>36</td><td>Nevrokirurgi</td></tr><tr><td>37</td><td>Nevrologi</td></tr><tr><td>38</td><td>Patologi</td></tr><tr><td>39</td><td>Plastikkirurgi</td></tr><tr><td>40</td><td>Psykiatri</td></tr><tr><td>41</td><td>Revmatologi</td></tr><tr><td>42</td><td>Samfunnsmedisin</td></tr><tr><td>43</td><td>Onkologi</td></tr><tr><td>45</td><td>Øre-, nese-, halssykdommer</td></tr><tr><td>46</td><td>Øyesykdommer</td></tr><tr><td>57</td><td>Klinisk farmakologi</td></tr><tr><td>80</td><td>Generell Kirurgi</td></tr><tr><td>81</td><td>Barnekirurgi</td></tr><tr><td>82</td><td>Gastroenterologisk kirurgi</td></tr><tr><td>83</td><td>Karkirurgi</td></tr><tr><td>85</td><td>Thoraxkirurgi</td></tr><tr><td>86</td><td>Urologi</td></tr><tr><td>87</td><td>Bryst- og endokrinkirurgi</td></tr><tr><td>152</td><td>Ortopedisk kirurgi</td></tr><tr><td>151</td><td>Nukleærmedisin</td></tr><tr><td>190</td><td>Indremedisin</td></tr><tr><td>191</td><td>Blodsykdommer</td></tr><tr><td>192</td><td>Endokrinologi</td></tr><tr><td>193</td><td>Fordøyelsessykdommer</td></tr><tr><td>194</td><td>Geriatri</td></tr><tr><td>195</td><td>Hjertesykdommer</td></tr><tr><td>196</td><td>Infeksjonssykdommer</td></tr><tr><td>197</td><td>Lungesykdommer</td></tr><tr><td>198</td><td>Nyresykdommer</td></tr><tr><td>199</td><td>Rus- og avhengighetsmedisin</td></tr><tr><td>301</td><td>Akutt- og mottaksmedisin</td></tr><tr><td>515</td><td>Kjeveortopedi</td></tr><tr><td>523</td><td>Pedodonti</td></tr><tr><td>531</td><td>Periodonti</td></tr><tr><td>558</td><td>Oral-kirurgi og oralmedisin</td></tr><tr><td>559</td><td>Kjeve- og ansiktsradiologi</td></tr><tr><td>560</td><td>Endodonti</td></tr><tr><td>561</td><td>Oral protetikk</td></tr><tr><td>575</td><td>Kontaktlinsekompetanse</td></tr><tr><td>601</td><td>Klinisk allmennsykepleie</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="oo"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="http://dips.no/fhir/R4/ValueSet/healthPersonnelSpecialization"/>
+  <version value="0.1.0"/>
+  <name value="healthPersonnelSpecialization"/>
+  <title value="healthPersonnelSpecialization"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-08-20T12:37:22+05:30"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="Lars-Andreas Nystad"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:lan@dips.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Have volven codesystems and rest of the namesystem"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="© 2021 DIPS AS&#xA;All rights reserved.&#xA;&#xA;  No part of this publication may be reproduced,&#xA;  stored in a retrieval system, transmitted, or &#xA;  published to a third party, in any&#xA;  form or by any means, mechanical, electronic,&#xA;  photocopying, recording, or otherwise, without&#xA;  prior written permission of DIPS AS.&#xA;  &#xA;  OpenEHR is a registered trademark of OpenEHR Foundation.&#xA;  HL7®, CDA®, FHIR® and the FHIR (FLAME DESIGN)® are the registered trademarks of Health Level Seven International.&#xA;&#xA;  All other trademarks mentioned herein are the property of their&#xA;  respective owners.&#xA;&#xA;  DIPS AS&#xA;  Postboks 1435&#xA;  8037 Bodø&#xA;  Norway&#xA;  [www.dips.no](www.dips.no)&#xA;  +47 75 59 20 00"/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.7426"/>
+      <concept>
+        <code value="1"/>
+        <display value="Allmennmedisin"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="Anestesiologi"/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="Barnesykdommer"/>
+      </concept>
+      <concept>
+        <code value="4"/>
+        <display value="Barne- og ungdomspsykiatri"/>
+      </concept>
+      <concept>
+        <code value="5"/>
+        <display value="Arbeidsmedisin"/>
+      </concept>
+      <concept>
+        <code value="6"/>
+        <display value="Fysikalsk medisin og rehabilitering"/>
+      </concept>
+      <concept>
+        <code value="7"/>
+        <display value="Fødselshjelp og kvinnesykdommer"/>
+      </concept>
+      <concept>
+        <code value="16"/>
+        <display value="Hud og veneriske sykdommer"/>
+      </concept>
+      <concept>
+        <code value="18"/>
+        <display value="Immunologi og transfusjonsmedisin"/>
+      </concept>
+      <concept>
+        <code value="28"/>
+        <display value="Maxillofacial kirurgi"/>
+      </concept>
+      <concept>
+        <code value="31"/>
+        <display value="Medisinsk biokjemi"/>
+      </concept>
+      <concept>
+        <code value="32"/>
+        <display value="Klinisk nevrofysiologi"/>
+      </concept>
+      <concept>
+        <code value="33"/>
+        <display value="Medisinsk genetikk"/>
+      </concept>
+      <concept>
+        <code value="34"/>
+        <display value="Medisinsk mikrobiologi"/>
+      </concept>
+      <concept>
+        <code value="35"/>
+        <display value="Radiologi"/>
+      </concept>
+      <concept>
+        <code value="36"/>
+        <display value="Nevrokirurgi"/>
+      </concept>
+      <concept>
+        <code value="37"/>
+        <display value="Nevrologi"/>
+      </concept>
+      <concept>
+        <code value="38"/>
+        <display value="Patologi"/>
+      </concept>
+      <concept>
+        <code value="39"/>
+        <display value="Plastikkirurgi"/>
+      </concept>
+      <concept>
+        <code value="40"/>
+        <display value="Psykiatri"/>
+      </concept>
+      <concept>
+        <code value="41"/>
+        <display value="Revmatologi"/>
+      </concept>
+      <concept>
+        <code value="42"/>
+        <display value="Samfunnsmedisin"/>
+      </concept>
+      <concept>
+        <code value="43"/>
+        <display value="Onkologi"/>
+      </concept>
+      <concept>
+        <code value="45"/>
+        <display value="Øre-, nese-, halssykdommer"/>
+      </concept>
+      <concept>
+        <code value="46"/>
+        <display value="Øyesykdommer"/>
+      </concept>
+      <concept>
+        <code value="57"/>
+        <display value="Klinisk farmakologi"/>
+      </concept>
+      <concept>
+        <code value="80"/>
+        <display value="Generell Kirurgi"/>
+      </concept>
+      <concept>
+        <code value="81"/>
+        <display value="Barnekirurgi"/>
+      </concept>
+      <concept>
+        <code value="82"/>
+        <display value="Gastroenterologisk kirurgi"/>
+      </concept>
+      <concept>
+        <code value="83"/>
+        <display value="Karkirurgi"/>
+      </concept>
+      <concept>
+        <code value="85"/>
+        <display value="Thoraxkirurgi"/>
+      </concept>
+      <concept>
+        <code value="86"/>
+        <display value="Urologi"/>
+      </concept>
+      <concept>
+        <code value="87"/>
+        <display value="Bryst- og endokrinkirurgi"/>
+      </concept>
+      <concept>
+        <code value="152"/>
+        <display value="Ortopedisk kirurgi"/>
+      </concept>
+      <concept>
+        <code value="151"/>
+        <display value="Nukleærmedisin"/>
+      </concept>
+      <concept>
+        <code value="190"/>
+        <display value="Indremedisin"/>
+      </concept>
+      <concept>
+        <code value="191"/>
+        <display value="Blodsykdommer"/>
+      </concept>
+      <concept>
+        <code value="192"/>
+        <display value="Endokrinologi"/>
+      </concept>
+      <concept>
+        <code value="193"/>
+        <display value="Fordøyelsessykdommer"/>
+      </concept>
+      <concept>
+        <code value="194"/>
+        <display value="Geriatri"/>
+      </concept>
+      <concept>
+        <code value="195"/>
+        <display value="Hjertesykdommer"/>
+      </concept>
+      <concept>
+        <code value="196"/>
+        <display value="Infeksjonssykdommer"/>
+      </concept>
+      <concept>
+        <code value="197"/>
+        <display value="Lungesykdommer"/>
+      </concept>
+      <concept>
+        <code value="198"/>
+        <display value="Nyresykdommer"/>
+      </concept>
+      <concept>
+        <code value="199"/>
+        <display value="Rus- og avhengighetsmedisin"/>
+      </concept>
+      <concept>
+        <code value="301"/>
+        <display value="Akutt- og mottaksmedisin"/>
+      </concept>
+      <concept>
+        <code value="515"/>
+        <display value="Kjeveortopedi"/>
+      </concept>
+      <concept>
+        <code value="523"/>
+        <display value="Pedodonti"/>
+      </concept>
+      <concept>
+        <code value="531"/>
+        <display value="Periodonti"/>
+      </concept>
+      <concept>
+        <code value="558"/>
+        <display value="Oral-kirurgi og oralmedisin"/>
+      </concept>
+      <concept>
+        <code value="559"/>
+        <display value="Kjeve- og ansiktsradiologi"/>
+      </concept>
+      <concept>
+        <code value="560"/>
+        <display value="Endodonti"/>
+      </concept>
+      <concept>
+        <code value="561"/>
+        <display value="Oral protetikk"/>
+      </concept>
+      <concept>
+        <code value="575"/>
+        <display value="Kontaktlinsekompetanse"/>
+      </concept>
+      <concept>
+        <code value="601"/>
+        <display value="Klinisk allmennsykepleie"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

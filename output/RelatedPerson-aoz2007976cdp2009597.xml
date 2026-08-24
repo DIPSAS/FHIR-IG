@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelatedPerson xmlns="http://hl7.org/fhir">
+  <id value="aoz2007976cdp2009597"/>
+  <meta>
+    <profile value="http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPerson"/>
+    <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RelatedPerson aoz2007976cdp2009597</b></p><a name="aoz2007976cdp2009597"> </a><a name="hcaoz2007976cdp2009597"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-DIPSRelatedPerson.html">DIPSRelatedPerson</a>, <a href="https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;canonical=http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson">no-basis-RelatedPerson</a></p></div><p><b>DIPSRelatedPersonKinship</b>: sÃ¸ster</p><p><b>DIPSRelatedPersonParentalResponsibility</b>: false</p><p><b>identifier</b>: FellesHjelpenummer/01486848800 (use: temp, ), <code>http://dips.no/fhir/namingsystem/dips-relativeid</code>/aoz2007976cdp2009597 (use: official, )</p><p><b>active</b>: true</p><p><b>patient</b>: <a href="Patient-cdp2009597.html">Anonymous Patient (no stated gender), DoB Unknown</a></p><p><b>relationship</b>: <span title="Codes:{urn:oid:1.3.6.1.4.1.9038.52.1045 104501}">Annen pÃ¥rÃ¸rende</span></p><p><b>name</b>: SammenslÃ¥s, SynnÃ¸ve Skal Slettes</p><p><b>gender</b>: Female</p><p><b>birthDate</b>: 1968-08-01</p><p><b>address</b>: Hjemme Oslo 03 0870 Norway (home)</p></div>
+  </text>
+  <extension url="http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonKinship">
+    <valueString value="sÃ¸ster"/>
+  </extension>
+  <extension url="http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonParentalResponsibility">
+    <valueBoolean value="false"/>
+  </extension>
+  <identifier>
+    <use value="temp"/>
+    <system value="urn:oid:2.16.578.1.12.4.1.4.3"/>
+    <value value="01486848800"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <system value="http://dips.no/fhir/namingsystem/dips-relativeid"/>
+    <value value="aoz2007976cdp2009597"/>
+  </identifier>
+  <active value="true"/>
+  <patient>
+    <reference value="Patient/cdp2009597"/>
+    <identifier>
+      <use value="official"/>
+      <system value="http://dips.no/fhir/namingsystem/dips-patientid"/>
+      <value value="2009597"/>
+    </identifier>
+  </patient>
+  <relationship>
+    <coding>
+      <system value="urn:oid:1.3.6.1.4.1.9038.52.1045"/>
+      <code value="104501"/>
+      <display value="Annen pÃ¥rÃ¸rende"/>
+    </coding>
+  </relationship>
+  <name>
+    <text value="SammenslÃ¥s, SynnÃ¸ve Skal Slettes"/>
+    <family value="SammenslÃ¥s"/>
+    <given value="SynnÃ¸ve Skal Slettes"/>
+  </name>
+  <gender value="female"/>
+  <birthDate value="1968-08-01"/>
+  <address>
+    <extension url="http://hl7.no/fhir/StructureDefinition/no-basis-urban-district">
+      <valueCoding>
+        <system value="urn:oid:1.3.6.1.4.1.9038.52.1065"/>
+        <code value="08"/>
+        <display value="Nordre Aker"/>
+      </valueCoding>
+    </extension>
+    <extension url="http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation">
+      <extension url="municipality">
+        <valueCoding>
+          <system value="urn:oid:1.3.6.1.4.1.9038.52.5"/>
+          <code value="0301"/>
+          <display value="Oslo"/>
+        </valueCoding>
+      </extension>
+    </extension>
+    <use value="home"/>
+    <line value="Hjemme"/>
+    <city value="Oslo"/>
+    <district value="OSLO FYLKESKOMMUNE">
+      <extension url="http://dips.no/fhir/R4/StructureDefinition/MunicipalityCode">
+        <valueCoding>
+          <system value="urn:oid:1.3.6.1.4.1.9038.52.5"/>
+          <code value="0301"/>
+          <display value="Oslo"/>
+        </valueCoding>
+      </extension>
+    </district>
+    <state value="03"/>
+    <postalCode value="0870"/>
+    <country value="Norway"/>
+  </address>
+</RelatedPerson>

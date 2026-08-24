@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="HealthPersonallCategoryValueset"/>
+  <meta>
+    <lastUpdated value="2021-03-17T00:00:00+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet HealthPersonallCategoryValueset</b></p><a name="HealthPersonallCategoryValueset"> </a><a name="hcHealthPersonallCategoryValueset"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2021-03-17 00:00:00+0000</p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <code>urn:oid:2.16.578.1.12.4.1.1.9060</code><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>AA</td><td>Ambulansearbeider</td></tr><tr><td>AT</td><td>Apotektekniker</td></tr><tr><td>AU</td><td>Audiograf</td></tr><tr><td>BI</td><td>Bioingeniør</td></tr><tr><td>ET</td><td>Ergoterapeut</td></tr><tr><td>FA1</td><td>Provisorfarmasøyt</td></tr><tr><td>FA2</td><td>Reseptarfarmasøyt</td></tr><tr><td>FB</td><td>Fiskehelsebiolog</td></tr><tr><td>FO</td><td>Fotterapeut</td></tr><tr><td>FT</td><td>Fysioterapeut</td></tr><tr><td>HE</td><td>Helsesekretær</td></tr><tr><td>HF</td><td>Helsefagarbeider</td></tr><tr><td>HP</td><td>Hjelpepleier</td></tr><tr><td>JO</td><td>Jordmor</td></tr><tr><td>KE</td><td>Klinisk ernæringsfysiolog</td></tr><tr><td>KI</td><td>Kiropraktor</td></tr><tr><td>LE</td><td>Lege</td></tr><tr><td>NP</td><td>Naprapat</td></tr><tr><td>OA</td><td>Omsorgsarbeider</td></tr><tr><td>OI</td><td>Ortopediingeniør</td></tr><tr><td>OP</td><td>Optiker</td></tr><tr><td>OR</td><td>Ortoptist</td></tr><tr><td>OS</td><td>Osteopat</td></tr><tr><td>PE</td><td>Perfusjonist</td></tr><tr><td>PM</td><td>Paramedisiner</td></tr><tr><td>PS</td><td>Psykolog</td></tr><tr><td>RA</td><td>Radiograf</td></tr><tr><td>SP</td><td>Sykepleier</td></tr><tr><td>TH</td><td>Tannhelsesekretær</td></tr><tr><td>TL</td><td>Tannlege</td></tr><tr><td>TP</td><td>Tannpleier</td></tr><tr><td>TT</td><td>Tanntekniker</td></tr><tr><td>VE</td><td>Veterinær</td></tr><tr><td>VP</td><td>Vernepleier</td></tr><tr><td>XX</td><td>Ukjent/uspesifisert</td></tr><tr><td>MT</td><td>Manuellterapeut</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="oo"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="http://dips.no/fhir/R4/ValueSet/HealthPersonallCategoryValueset"/>
+  <version value="0.1.0"/>
+  <name value="HealthPersonallCategoryValueset"/>
+  <title value="HealthPersonallCategoryValueset"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-08-20T12:37:22+05:30"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="Lars-Andreas Nystad"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:lan@dips.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Have volven codesystems and rest of the namesystem"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="© 2021 DIPS AS&#xA;All rights reserved.&#xA;&#xA;  No part of this publication may be reproduced,&#xA;  stored in a retrieval system, transmitted, or &#xA;  published to a third party, in any&#xA;  form or by any means, mechanical, electronic,&#xA;  photocopying, recording, or otherwise, without&#xA;  prior written permission of DIPS AS.&#xA;  &#xA;  OpenEHR is a registered trademark of OpenEHR Foundation.&#xA;  HL7®, CDA®, FHIR® and the FHIR (FLAME DESIGN)® are the registered trademarks of Health Level Seven International.&#xA;&#xA;  All other trademarks mentioned herein are the property of their&#xA;  respective owners.&#xA;&#xA;  DIPS AS&#xA;  Postboks 1435&#xA;  8037 Bodø&#xA;  Norway&#xA;  [www.dips.no](www.dips.no)&#xA;  +47 75 59 20 00"/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.9060"/>
+      <concept>
+        <code value="AA"/>
+        <display value="Ambulansearbeider"/>
+      </concept>
+      <concept>
+        <code value="AT"/>
+        <display value="Apotektekniker"/>
+      </concept>
+      <concept>
+        <code value="AU"/>
+        <display value="Audiograf"/>
+      </concept>
+      <concept>
+        <code value="BI"/>
+        <display value="Bioingeniør"/>
+      </concept>
+      <concept>
+        <code value="ET"/>
+        <display value="Ergoterapeut"/>
+      </concept>
+      <concept>
+        <code value="FA1"/>
+        <display value="Provisorfarmasøyt"/>
+      </concept>
+      <concept>
+        <code value="FA2"/>
+        <display value="Reseptarfarmasøyt"/>
+      </concept>
+      <concept>
+        <code value="FB"/>
+        <display value="Fiskehelsebiolog"/>
+      </concept>
+      <concept>
+        <code value="FO"/>
+        <display value="Fotterapeut"/>
+      </concept>
+      <concept>
+        <code value="FT"/>
+        <display value="Fysioterapeut"/>
+      </concept>
+      <concept>
+        <code value="HE"/>
+        <display value="Helsesekretær"/>
+      </concept>
+      <concept>
+        <code value="HF"/>
+        <display value="Helsefagarbeider"/>
+      </concept>
+      <concept>
+        <code value="HP"/>
+        <display value="Hjelpepleier"/>
+      </concept>
+      <concept>
+        <code value="JO"/>
+        <display value="Jordmor"/>
+      </concept>
+      <concept>
+        <code value="KE"/>
+        <display value="Klinisk ernæringsfysiolog"/>
+      </concept>
+      <concept>
+        <code value="KI"/>
+        <display value="Kiropraktor"/>
+      </concept>
+      <concept>
+        <code value="LE"/>
+        <display value="Lege"/>
+      </concept>
+      <concept>
+        <code value="NP"/>
+        <display value="Naprapat"/>
+      </concept>
+      <concept>
+        <code value="OA"/>
+        <display value="Omsorgsarbeider"/>
+      </concept>
+      <concept>
+        <code value="OI"/>
+        <display value="Ortopediingeniør"/>
+      </concept>
+      <concept>
+        <code value="OP"/>
+        <display value="Optiker"/>
+      </concept>
+      <concept>
+        <code value="OR"/>
+        <display value="Ortoptist"/>
+      </concept>
+      <concept>
+        <code value="OS"/>
+        <display value="Osteopat"/>
+      </concept>
+      <concept>
+        <code value="PE"/>
+        <display value="Perfusjonist"/>
+      </concept>
+      <concept>
+        <code value="PM"/>
+        <display value="Paramedisiner"/>
+      </concept>
+      <concept>
+        <code value="PS"/>
+        <display value="Psykolog"/>
+      </concept>
+      <concept>
+        <code value="RA"/>
+        <display value="Radiograf"/>
+      </concept>
+      <concept>
+        <code value="SP"/>
+        <display value="Sykepleier"/>
+      </concept>
+      <concept>
+        <code value="TH"/>
+        <display value="Tannhelsesekretær"/>
+      </concept>
+      <concept>
+        <code value="TL"/>
+        <display value="Tannlege"/>
+      </concept>
+      <concept>
+        <code value="TP"/>
+        <display value="Tannpleier"/>
+      </concept>
+      <concept>
+        <code value="TT"/>
+        <display value="Tanntekniker"/>
+      </concept>
+      <concept>
+        <code value="VE"/>
+        <display value="Veterinær"/>
+      </concept>
+      <concept>
+        <code value="VP"/>
+        <display value="Vernepleier"/>
+      </concept>
+      <concept>
+        <code value="XX"/>
+        <display value="Ukjent/uspesifisert"/>
+      </concept>
+      <concept>
+        <code value="MT"/>
+        <display value="Manuellterapeut"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,244 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/R4/Encounter/agy27> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agy27"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSR4Encounter" ;
+       fhir:index 0 ;
+       fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSR4Encounter>
+     ] ;
+     fhir:Meta.security [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-Confidentiality" ] ;
+       fhir:Coding.code [ fhir:value "N" ]
+     ] ;
+     fhir:Meta.tag [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://dips.no/fhir/namingsystem/encountersource" ] ;
+       fhir:Coding.code [ fhir:value "episodeofcare" ]
+     ]
+  ] ;
+  fhir:DomainResource.contained [
+     a fhir:Encounter ;
+     fhir:index 0 ;
+     fhir:Resource.id [ fhir:value "amw38" ] ;
+     fhir:Resource.meta [
+       fhir:Meta.profile [
+         fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSHospitalStayEncounter" ;
+         fhir:index 0 ;
+         fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSHospitalStayEncounter>
+       ] ;
+       fhir:Meta.tag [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://dips.no/fhir/namingsystem/encountersource" ] ;
+         fhir:Coding.code [ fhir:value "hospitalstay" ]
+       ]
+     ] ;
+     fhir:Encounter.identifier [
+       fhir:index 0 ;
+       fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-hospitalstayid" ] ;
+       fhir:Identifier.value [ fhir:value "38" ]
+     ] ;
+     fhir:Encounter.status [ fhir:value "in-progress" ] ;
+     fhir:Encounter.class [
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
+       fhir:Coding.code [ fhir:value "IMP" ] ;
+       fhir:Coding.display [ fhir:value "inpatient encounter" ]
+     ]
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/ReferredBy" ] ;
+     fhir:Extension.valueReference [
+       fhir:link <http://dips.no/fhir/R4/PractitionerRole/agb61> ;
+       fhir:Reference.reference [ fhir:value "PractitionerRole/agb61" ] ;
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.51.1" ] ;
+         fhir:Identifier.value [ fhir:value "61" ]
+       ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/TerminationExtension" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-terminationcodeid" ] ;
+         fhir:Coding.code [ fhir:value "315" ] ;
+         fhir:Coding.display [ fhir:value "Tilh. annet sykehus" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Coding.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-terminationcode" ] ;
+         fhir:Coding.code [ fhir:value "TA" ] ;
+         fhir:Coding.display [ fhir:value "Tilh. annet sykehus" ]
+       ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/PlannedContactEndTimeExtension" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2003-11-01T00:00:00+00:00"^^xsd:dateTime ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/Department" ] ;
+     fhir:Extension.valueReference [
+       fhir:link <http://dips.no/fhir/R4/Organization/afa22> ;
+       fhir:Reference.reference [ fhir:value "Organization/afa22" ] ;
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.70.3" ] ;
+         fhir:Identifier.value [ fhir:value "22" ]
+       ] ;
+       fhir:Reference.display [ fhir:value "Kirurgisk avdeling" ]
+     ]
+  ], [
+     fhir:index 4 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/R4/StructureDefinition/DipsLocationExtension" ] ;
+     fhir:Extension.valueReference [
+       fhir:link <http://dips.no/fhir/R4/Location/aea1000021> ;
+       fhir:Reference.reference [ fhir:value "Location/aea1000021" ] ;
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.70.6" ] ;
+         fhir:Identifier.value [ fhir:value "1000021" ]
+       ] ;
+       fhir:Reference.display [ fhir:value "Testsykehuset bygg A" ]
+     ]
+  ] ;
+  fhir:Encounter.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid" ] ;
+     fhir:Identifier.value [ fhir:value "27" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-plannedcontactid" ] ;
+     fhir:Identifier.value [ fhir:value "38" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-bookingid" ] ;
+     fhir:Identifier.value [ fhir:value "62377f66-377e-9148-9db2-55a920ffb907" ]
+  ] ;
+  fhir:Encounter.status [ fhir:value "finished"] ;
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
+     fhir:Coding.code [ fhir:value "IMP" ] ;
+     fhir:Coding.display [ fhir:value "inpatient encounter" ]
+  ] ;
+  fhir:Encounter.type [
+     fhir:index 0 ;
+     fhir:Element.id [ fhir:value "ContactType" ] ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-contacttypecodeid" ] ;
+       fhir:Coding.code [ fhir:value "106800" ] ;
+       fhir:Coding.display [ fhir:value "Heldøgn" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Coding.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.1.8240" ] ;
+       fhir:Coding.code [ fhir:value "01" ] ;
+       fhir:Coding.display [ fhir:value "Heldøgn" ]
+     ]
+  ] ;
+  fhir:Encounter.subject [
+     fhir:link <http://dips.no/fhir/R4/Patient/cdp138> ;
+     fhir:Reference.reference [ fhir:value "Patient/cdp138" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-patientid" ] ;
+       fhir:Identifier.value [ fhir:value "138" ]
+     ] ;
+     fhir:Reference.display [ fhir:value "Spelemann (Testplan - Journal), Per" ]
+  ] ;
+  fhir:Encounter.basedOn [
+     fhir:index 0 ;
+     fhir:link <http://dips.no/fhir/R4/ServiceRequest/agc48> ;
+     fhir:Reference.reference [ fhir:value "ServiceRequest/agc48" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-referralid" ] ;
+       fhir:Identifier.value [ fhir:value "48" ]
+     ]
+  ] ;
+  fhir:Encounter.participant [
+     fhir:index 0 ;
+     fhir:Encounter.participant.type [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://dips.no/fhir/encounter/participanttype" ] ;
+         fhir:Coding.code [ fhir:value "attending-doctor" ]
+       ]
+     ] ;
+     fhir:Encounter.participant.individual [
+       fhir:link <http://dips.no/fhir/R4/PractitionerRole/agb42> ;
+       fhir:Reference.reference [ fhir:value "PractitionerRole/agb42" ] ;
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.51.1" ] ;
+         fhir:Identifier.value [ fhir:value "42" ]
+       ]
+     ]
+  ] ;
+  fhir:Encounter.appointment [
+     fhir:index 0 ;
+     fhir:link <http://dips.no/fhir/R4/Appointment/ahi38> ;
+     fhir:Reference.reference [ fhir:value "Appointment/ahi38" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-plannedcontactid" ] ;
+       fhir:Identifier.value [ fhir:value "38" ]
+     ]
+  ] ;
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2003-10-29T14:18:53+00:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2003-11-01T15:21:42+00:00"^^xsd:dateTime ]
+  ] ;
+  fhir:Encounter.reasonCode [
+     fhir:index 0 ;
+     fhir:CodeableConcept.text [ fhir:value "Kronsik bronkitt" ]
+  ] ;
+  fhir:Encounter.location [
+     fhir:index 0 ;
+     fhir:Encounter.location.location [
+       fhir:link <http://dips.no/fhir/R4/Location/ahl25> ;
+       fhir:Reference.reference [ fhir:value "Location/ahl25" ] ;
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.102" ] ;
+         fhir:Identifier.value [ fhir:value "10068" ]
+       ] ;
+       fhir:Reference.display [ fhir:value "Intensiv post 1" ]
+     ] ;
+     fhir:Encounter.location.status [ fhir:value "active" ] ;
+     fhir:Encounter.location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ] ;
+         fhir:Coding.code [ fhir:value "wa" ] ;
+         fhir:Coding.display [ fhir:value "Ward" ]
+       ]
+     ] ;
+     fhir:Encounter.location.period [
+       fhir:Period.start [ fhir:value "2003-10-29T14:18:53+00:00"^^xsd:dateTime ] ;
+       fhir:Period.end [ fhir:value "2003-11-01T15:21:42+00:00"^^xsd:dateTime ]
+     ]
+  ] ;
+  fhir:Encounter.serviceProvider [
+     fhir:link <http://dips.no/fhir/R4/Organization/afa22> ;
+     fhir:Reference.reference [ fhir:value "Organization/afa22" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.102" ] ;
+       fhir:Identifier.value [ fhir:value "10013" ]
+     ] ;
+     fhir:Reference.display [ fhir:value "Kirurgisk avdeling | Testsykehuset DIPS" ]
+  ] ;
+  fhir:Encounter.partOf [
+     fhir:Reference.reference [ fhir:value "#amw38" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://dips.no/fhir/R4/Encounter/agy27.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

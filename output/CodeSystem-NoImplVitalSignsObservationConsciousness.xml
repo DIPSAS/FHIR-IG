@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="NoImplVitalSignsObservationConsciousness"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem NoImplVitalSignsObservationConsciousness</b></p><a name="NoImplVitalSignsObservationConsciousness"> </a><a name="hcNoImplVitalSignsObservationConsciousness"> </a><p>This  code system <code>http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">A<a name="NoImplVitalSignsObservationConsciousness-A"> </a></td><td>Våken</td><td>Våken</td></tr><tr><td style="white-space:nowrap">U<a name="NoImplVitalSignsObservationConsciousness-U"> </a></td><td>Tiltale</td><td>Tiltale</td></tr><tr><td style="white-space:nowrap">P<a name="NoImplVitalSignsObservationConsciousness-P"> </a></td><td>Smerte</td><td>Smerte</td></tr><tr><td style="white-space:nowrap">V<a name="NoImplVitalSignsObservationConsciousness-V"> </a></td><td>Reagerer ikke</td><td>Reagerer ikke</td></tr><tr><td style="white-space:nowrap">C<a name="NoImplVitalSignsObservationConsciousness-C"> </a></td><td>forvirring</td><td>forvirring</td></tr></table></div>
+  </text>
+  <url value="http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness"/>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/NoImpl-consciousness"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="NoImplVitalSignsObservationConsciousness"/>
+  <status value="draft"/>
+  <date value="2026-08-20T12:37:22+05:30"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="Lars-Andreas Nystad"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:lan@dips.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="A"/>
+    <display value="Våken"/>
+    <definition value="Våken"/>
+  </concept>
+  <concept>
+    <code value="U"/>
+    <display value="Tiltale"/>
+    <definition value="Tiltale"/>
+  </concept>
+  <concept>
+    <code value="P"/>
+    <display value="Smerte"/>
+    <definition value="Smerte"/>
+  </concept>
+  <concept>
+    <code value="V"/>
+    <display value="Reagerer ikke"/>
+    <definition value="Reagerer ikke"/>
+  </concept>
+  <concept>
+    <code value="C"/>
+    <display value="forvirring"/>
+    <definition value="forvirring"/>
+  </concept>
+</CodeSystem>

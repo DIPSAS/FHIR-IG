@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DIPSEncounterTypeCom"/>
+  <meta>
+    <lastUpdated value="2021-03-17T00:00:00+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet DIPSEncounterTypeCom</b></p><a name="DIPSEncounterTypeCom"> </a><a name="hcDIPSEncounterTypeCom"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2021-03-17 00:00:00+0000</p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <code>urn:oid:2.16.578.1.12.4.1.1.8240</code><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>12</td><td>Pasientadministrert behandling</td></tr><tr><td>13</td><td>Opplæring</td></tr><tr><td>UA</td><td>Uavklart</td></tr><tr><td>6</td><td>Videokonsultasjon</td></tr><tr><td>7</td><td>Telefonkonsultasjon</td></tr><tr><td>01</td><td>Heldøgn</td></tr><tr><td>3</td><td>Ledsager</td></tr><tr><td>9</td><td>Behandling innlagt pasient</td></tr><tr><td>2</td><td>Dagopphold</td></tr><tr><td>1</td><td>Utredning</td></tr><tr><td>5</td><td>Indirekte pasientkontakt</td></tr><tr><td>14</td><td>Screening</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="oo"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="http://dips.no/fhir/R4/ValueSet/DIPSEncounterTypeCom"/>
+  <version value="0.1.0"/>
+  <name value="DIPSEncounterTypeCom"/>
+  <title value="DIPSEncounterTypeCom"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-08-20T12:37:22+05:30"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="Lars-Andreas Nystad"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:lan@dips.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Have volven codesystems and rest of the namesystem"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="© 2021 DIPS AS&#xA;All rights reserved.&#xA;&#xA;  No part of this publication may be reproduced,&#xA;  stored in a retrieval system, transmitted, or &#xA;  published to a third party, in any&#xA;  form or by any means, mechanical, electronic,&#xA;  photocopying, recording, or otherwise, without&#xA;  prior written permission of DIPS AS.&#xA;  &#xA;  OpenEHR is a registered trademark of OpenEHR Foundation.&#xA;  HL7®, CDA®, FHIR® and the FHIR (FLAME DESIGN)® are the registered trademarks of Health Level Seven International.&#xA;&#xA;  All other trademarks mentioned herein are the property of their&#xA;  respective owners.&#xA;&#xA;  DIPS AS&#xA;  Postboks 1435&#xA;  8037 Bodø&#xA;  Norway&#xA;  [www.dips.no](www.dips.no)&#xA;  +47 75 59 20 00"/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.8240"/>
+      <concept>
+        <code value="12"/>
+        <display value="Pasientadministrert behandling"/>
+      </concept>
+      <concept>
+        <code value="13"/>
+        <display value="Opplæring"/>
+      </concept>
+      <concept>
+        <code value="UA"/>
+        <display value="Uavklart"/>
+      </concept>
+      <concept>
+        <code value="6"/>
+        <display value="Videokonsultasjon"/>
+      </concept>
+      <concept>
+        <code value="7"/>
+        <display value="Telefonkonsultasjon"/>
+      </concept>
+      <concept>
+        <code value="01"/>
+        <display value="Heldøgn"/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="Ledsager"/>
+      </concept>
+      <concept>
+        <code value="9"/>
+        <display value="Behandling innlagt pasient"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="Dagopphold"/>
+      </concept>
+      <concept>
+        <code value="1"/>
+        <display value="Utredning"/>
+      </concept>
+      <concept>
+        <code value="5"/>
+        <display value="Indirekte pasientkontakt"/>
+      </concept>
+      <concept>
+        <code value="14"/>
+        <display value="Screening"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

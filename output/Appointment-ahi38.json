@@ -1,0 +1,19 @@
+{
+  "resourceType" : "Appointment",
+  "id" : "ahi38",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Appointment ahi38</b></p><a name=\"ahi38\"> </a><a name=\"hcahi38\"> </a><p><b>status</b>: Booked</p><p><b>start</b>: 2023-06-30 10:00:00+0000</p><p><b>end</b>: 2023-06-30 11:00:00+0000</p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">CON</span></td><td>Accepted</td></tr></table></div>"
+  },
+  "status" : "booked",
+  "start" : "2023-06-30T10:00:00Z",
+  "end" : "2023-06-30T11:00:00Z",
+  "participant" : [{
+    "type" : [{
+      "coding" : [{
+        "code" : "CON"
+      }]
+    }],
+    "status" : "accepted"
+  }]
+}

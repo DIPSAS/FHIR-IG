@@ -1,0 +1,12 @@
+{
+  "resourceType" : "Location",
+  "id" : "aie1000000",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location aie1000000</b></p><a name=\"aie1000000\"> </a><a name=\"hcaie1000000\"> </a><p><b>identifier</b>: <code>http://dips.no/fhir/namingsystem/dips-bedid</code>/1000000</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://dips.no/fhir/namingsystem/dips-bedid",
+    "value" : "1000000"
+  }]
+}
