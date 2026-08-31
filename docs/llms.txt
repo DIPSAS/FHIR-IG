@@ -3,11 +3,11 @@
 ## Pages
 
 * [Home](index.md)
-* [Artifacts Summary](artifacts.md)
-* [Changes](changes.md)
-* [Documentation](documentation.md)
-* [Download](download.md)
 * [Reference Diagrams](reference-diagrams.md)
+* [Documentation](documentation.md)
+* [Changes](changes.md)
+* [Artifacts Summary](artifacts.md)
+* [Download](download.md)
 
 ## Resources
 

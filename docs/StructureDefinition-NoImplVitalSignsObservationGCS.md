@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationGCS | *Version*:0.1.0 |
-| Draft as of 2026-08-20 | *Computable Name*:NoImplVitalSignsObservationGCS |
+| Draft as of 2026-08-31 | *Computable Name*:NoImplVitalSignsObservationGCS |
 
  
 Fifteen point scale used to assess impairment of consciousness in response to defined stimuli. More correctly known as the Modified Glasgow coma scale. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-NoImplVitalSignsObse
   "name" : "NoImplVitalSignsObservationGCS",
   "title" : "NoImplVitalSignsObservationGCS",
   "status" : "draft",
-  "date" : "2026-08-20T12:37:22+05:30",
+  "date" : "2026-08-31T12:11:16+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -62,7 +62,7 @@ Other representations of profile: [CSV](StructureDefinition-NoImplVitalSignsObse
       "display" : "Norway"
     }]
   }],
-  "purpose" : "\t\r\nTo record clinical responses of the subject of care to defined stimuli as an objective assessment of the level of consciousness.",
+  "purpose" : "\t\nTo record clinical responses of the subject of care to defined stimuli as an objective assessment of the level of consciousness.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",

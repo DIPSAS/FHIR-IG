@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/SectionExtension | *Version*:0.1.0 |
-| Draft as of 2026-08-20 | *Computable Name*:SectionExtension |
+| Draft as of 2026-08-31 | *Computable Name*:SectionExtension |
 
 **Context of Use**
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-SectionExtension.csv
   "version" : "0.1.0",
   "name" : "SectionExtension",
   "status" : "draft",
-  "date" : "2026-08-20T12:37:22+05:30",
+  "date" : "2026-08-31T12:11:16+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

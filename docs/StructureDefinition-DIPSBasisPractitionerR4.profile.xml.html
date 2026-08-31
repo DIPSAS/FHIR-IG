@@ -30,31 +30,6 @@
     <!-- Placeholder for child template CSS declarations -->
     <link href="assets/css/hl7.css" rel="stylesheet"/>
     <link href="assets/css/fhir.css" rel="stylesheet"/>
-    <style>
-        /* Visual continuity with the developer.dips.no GitBook portal this IG is linked from.
-           TODO: swap --dips-portal-accent for the portal's real brand color, and confirm the
-           font stack against developer.dips.no's actual theme (see PLACEHOLDER note below). */
-        :root {
-            --dips-portal-accent: #0b3d91; /* PLACEHOLDER - replace with the real developer.dips.no accent color */
-        }
-        body {
-            font-family: -apple-system, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
-        }
-        .dips-portal-banner {
-            background: var(--dips-portal-accent);
-            color: #fff;
-            padding: 8px 20px;
-            font-size: 14px;
-        }
-        .dips-portal-banner a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .dips-portal-banner a:hover {
-            text-decoration: underline;
-        }
-    </style>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -82,10 +57,6 @@
       <div class="container">  <!-- container -->
 
         <!-- Placeholder for child template header declarations -->
-
-            <div class="dips-portal-banner">
-                <a href="https://developer.dips.no/9fvgRTzUE0KCH4ohQuiM/api/fhir-r4/README.md">&larr; Back to DIPS Developer Portal</a>
-            </div>
 
             
 <div id="family-nav">
@@ -253,7 +224,7 @@
         
           Draft
           
-            as of 2026-08-20
+            as of 2026-08-31
           
         
       </td>
@@ -314,7 +285,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.1.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DIPSBasisPractitionerR4&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-08-20T12:37:22+05:30&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-08-31T12:11:16+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DIPS AS&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Lars-Andreas Nystad&quot;/&gt;
@@ -2876,15 +2847,7 @@ The norwegian helsepersonellnummer for the practitioner. HPR as one of the possi
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The name(s) associated with the practitioner&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;The name(s) associated with the practitioner.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  
-
-In general, select the value to be used in the ResourceReference.display based on this:
-
-1. There is more than 1 name
-2. Use = usual
-3. Period is current to the date of the usage
-4. Use = official
-5. Other order as decided by internal business rules.&quot;/&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  In general, select the value to be used in the ResourceReference.display based on this:1. There is more than 1 name2. Use = usual3. Period is current to the date of the usage4. Use = official5. Other order as decided by internal business rules.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>
                     <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
@@ -3390,8 +3353,7 @@ Part of the name that is acquired as a title due to academic, legal, employment 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;http://hl7.no/fhir/StructureDefinition/no-basis-Address
 
-Address(es) of the practitioner that are not role specific (typically home address). 
-Work addresses are not typically entered in this property as they are usually role dependent.&quot;/&gt;
+Address(es) of the practitioner that are not role specific (typically home address). Work addresses are not typically entered in this property as they are usually role dependent.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;The PractitionerRole does not have an address value on it, as it is expected that the location property be used for this purpose (which has an address).&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>
@@ -5996,7 +5958,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 20, 2026 12:37+0530">2026-08-20</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 31, 2026 12:11+0000">2026-08-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
