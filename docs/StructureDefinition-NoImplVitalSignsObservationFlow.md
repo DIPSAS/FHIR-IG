@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationFlow | *Version*:0.1.0 |
-| Draft as of 2026-08-31 | *Computable Name*:NoImplVitalSignsObservationFlow |
+| Draft as of 2026-09-02 | *Computable Name*:NoImplVitalSignsObservationFlow |
 
 Oxygen flow rate given to an individual.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-NoImplVitalSignsObse
   "version" : "0.1.0",
   "name" : "NoImplVitalSignsObservationFlow",
   "status" : "draft",
-  "date" : "2026-08-31T12:11:16+00:00",
+  "date" : "2026-09-02T05:31:41+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

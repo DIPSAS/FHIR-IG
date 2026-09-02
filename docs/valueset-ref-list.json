@@ -22,8 +22,8 @@
     "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
     "uses" : {
     },
-    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
-    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter"
+    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
+    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter"
   },
   {
     "url" : "http://dips.no/fhir/R4/ValueSet/DIPSHealthcareServiceTypes",
@@ -599,8 +599,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.57"],
     "uses" : {
     },
-    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization",
-    "StructureDefinition-DIPSOrganizationReference.html" : "DIPSOrganizationReference"
+    "StructureDefinition-DIPSOrganizationReference.html" : "DIPSOrganizationReference",
+    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",

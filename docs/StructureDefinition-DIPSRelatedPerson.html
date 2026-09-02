@@ -26,6 +26,25 @@
     <!-- Placeholder for child template CSS declarations -->
     <link href="assets/css/hl7.css" rel="stylesheet"/>
     <link href="assets/css/fhir.css" rel="stylesheet"/>
+    <style>
+        /* Match the menu bar to the DIPS logo's navy background (hl7.css ships #505050). */
+        .navbar-inverse {
+            background-color: #0A0D30;
+        }
+        .navbar-inverse .navbar-nav > li > a:hover {
+            background-color: #1B2050;
+        }
+        /* Match the footer bar to the same navy (fhir.css ships #d32d28 red). */
+        #segment-footer > .container {
+            background-color: #0A0D30;
+        }
+        /* Light-blue "local development build" publish-box and Contents/TOC side
+           boxes, matching dips.com's site background (project.css ships yellow for both). */
+        :root {
+            --publish-box-bg-color: #B3E0E6;
+            --toc-box-bg-color: #B3E0E6;
+        }
+    </style>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -65,7 +84,7 @@
             
 <div id="hl7-nav">
     <a id="hl7-logo" no-external="true" href="https://github.com/HL7Norway">
-        <img alt="visit the hl7 website" height="60" src="assets/images/logo-dips.png" />
+        <img alt="visit the hl7 website" height="60" src="assets/images/dips_logo.jpg" />
     </a>            
 </div>
 
@@ -253,7 +272,7 @@
         
           Draft
           
-            as of 2026-08-31
+            as of 2026-09-02
           
         
       </td>
@@ -611,7 +630,7 @@ The nature of the relationship between a patient and the related person." data-n
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The date on which the related person was born</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 87d7d316-dd65-424c-8c0c-ae2b6152f8a3
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 48555139-e340-4d13-9ebe-f2596c9be745
 document.getElementById('cbDIPSRelatedPersonK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DIPSRelatedPersonK'), 'binding', document.getElementById('cbDIPSRelatedPersonK-binding').checked, document.getElementById('ppDIPSRelatedPersonK'));
 document.getElementById('cbDIPSRelatedPersonK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1248,7 +1267,7 @@ filterDesc(document.getElementById('DIPSRelatedPersonK'), 'obligation', document
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"></span><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic">A language which may be used to communicate with about the patient's health</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 87d7d316-dd65-424c-8c0c-ae2b6152f8a3
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 48555139-e340-4d13-9ebe-f2596c9be745
 document.getElementById('cbDIPSRelatedPersonD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DIPSRelatedPersonD'), 'binding', document.getElementById('cbDIPSRelatedPersonD-binding').checked, document.getElementById('ppDIPSRelatedPersonD'));
 document.getElementById('cbDIPSRelatedPersonD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2343,7 +2362,7 @@ Mapping of values to other Norwegian CodeSystems is documented in the implementa
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Period of time that this relationship is considered valid</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 87d7d316-dd65-424c-8c0c-ae2b6152f8a3
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 48555139-e340-4d13-9ebe-f2596c9be745
 document.getElementById('cbDIPSRelatedPersonS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DIPSRelatedPersonS'), 'binding', document.getElementById('cbDIPSRelatedPersonS-binding').checked, document.getElementById('ppDIPSRelatedPersonS'));
 document.getElementById('cbDIPSRelatedPersonS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3434,7 +3453,7 @@ The nature of the relationship between a patient and the related person." data-n
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The date on which the related person was born</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 87d7d316-dd65-424c-8c0c-ae2b6152f8a3
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 48555139-e340-4d13-9ebe-f2596c9be745
 document.getElementById('cbDIPSRelatedPersonKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DIPSRelatedPersonKA'), 'binding', document.getElementById('cbDIPSRelatedPersonKA-binding').checked, document.getElementById('ppDIPSRelatedPersonKA'));
 document.getElementById('cbDIPSRelatedPersonKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -4071,7 +4090,7 @@ filterDesc(document.getElementById('DIPSRelatedPersonKA'), 'obligation', documen
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"></span><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic">A language which may be used to communicate with about the patient's health</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 87d7d316-dd65-424c-8c0c-ae2b6152f8a3
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 48555139-e340-4d13-9ebe-f2596c9be745
 document.getElementById('cbDIPSRelatedPersonDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DIPSRelatedPersonDA'), 'binding', document.getElementById('cbDIPSRelatedPersonDA-binding').checked, document.getElementById('ppDIPSRelatedPersonDA'));
 document.getElementById('cbDIPSRelatedPersonDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -5165,7 +5184,7 @@ Mapping of values to other Norwegian CodeSystems is documented in the implementa
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Period of time that this relationship is considered valid</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 87d7d316-dd65-424c-8c0c-ae2b6152f8a3
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 48555139-e340-4d13-9ebe-f2596c9be745
 document.getElementById('cbDIPSRelatedPersonSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DIPSRelatedPersonSA'), 'binding', document.getElementById('cbDIPSRelatedPersonSA-binding').checked, document.getElementById('ppDIPSRelatedPersonSA'));
 document.getElementById('cbDIPSRelatedPersonSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -6273,7 +6292,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 31, 2026 12:11+0000">2026-08-31</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 05:31+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

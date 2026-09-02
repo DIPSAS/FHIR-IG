@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/ImplementationGuide/dips.fhir.no.core | *Version*:0.1.0 |
-| Draft as of 2026-08-31 | *Computable Name*:DIPSCore |
+| Draft as of 2026-09-02 | *Computable Name*:DIPSCore |
 
 # DIPS Core Implementation Guide
 
@@ -40,7 +40,7 @@ This guide is intended for developers and integrators building or consuming inte
   "name" : "DIPSCore",
   "title" : "DIPS Core Implementation Guide",
   "status" : "draft",
-  "date" : "2026-08-31T12:11:16+00:00",
+  "date" : "2026-09-02T05:31:41+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -1989,6 +1989,21 @@ This guide is intended for developers and integrators building or consuming inte
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSMonitoringNotes.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSMonitoringNotes"
+      },
+      "name" : "DIPSMonitoringNotes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       },
       {
@@ -2679,6 +2694,51 @@ This guide is intended for developers and integrators building or consuming inte
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSReferenceLocation.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSReferenceLocation"
+      },
+      "name" : "DIPSReferenceLocation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSReferenceSection.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSReferenceSection"
+      },
+      "name" : "DIPSReferenceSection",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSReferenceWard.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSReferenceWard"
+      },
+      "name" : "DIPSReferenceWard",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       },
       {
@@ -2764,6 +2824,21 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSRelatedPersonResponsibleRequisitioner"
       },
       "name" : "DIPSRelatedPersonResponsibleRequisitioner",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSRemoteMonitoring.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSRemoteMonitoring"
+      },
+      "name" : "DIPSRemoteMonitoring",
       "exampleBoolean" : false
     },
     {

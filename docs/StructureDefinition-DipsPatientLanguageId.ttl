@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DipsPatientLanguageId"] ;
   fhir:StructureDefinition.title [ fhir:value "dips-patient-language-id"] ;
   fhir:StructureDefinition.status [ fhir:value "draft"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-08-31T12:11:16+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-09-02T05:31:41+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "DIPS AS"] ;
   fhir:StructureDefinition.contact [
      fhir:index 0 ;

@@ -428,6 +428,13 @@
       ]
     },
     {
+      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSMonitoringNotes",
+      "title": "DIPSMonitoringNotes",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPatientContactIdentifier",
       "title": "DIPSPatientContactIdentifier",
       "types": [
@@ -1241,6 +1248,27 @@
       "title": "DIPSPractitionerSpecialist",
       "types": [
         "boolean"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceLocation",
+      "title": "DIPSReferenceLocation",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceSection",
+      "title": "DIPSReferenceSection",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceWard",
+      "title": "DIPSReferenceWard",
+      "types": [
+        "Reference"
       ]
     },
     {
@@ -2061,6 +2089,12 @@
         "title": "DIPSRelatedPerson"
       }
     ],
+    "EpisodeOfCare": [
+      {
+        "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSRemoteMonitoring",
+        "title": "DIPSRemoteMonitoring"
+      }
+    ],
     "Observation": [
       {
         "url": "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationBloodpressure",
@@ -2159,6 +2193,9 @@
     "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceWard": [
       "HealthcareService"
     ],
+    "http://dips.no/fhir/R4/StructureDefinition/DIPSMonitoringNotes": [
+      "EpisodeOfCare"
+    ],
     "http://dips.no/fhir/R4/StructureDefinition/DIPSPatientContactIdentifier": [
       "Patient.contact"
     ],
@@ -2242,6 +2279,15 @@
     ],
     "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerSpecialist": [
       "Practitioner"
+    ],
+    "http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceLocation": [
+      "EpisodeOfCare"
+    ],
+    "http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceSection": [
+      "EpisodeOfCare"
+    ],
+    "http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceWard": [
+      "EpisodeOfCare"
     ],
     "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAdditionalInformation": [
       "RelatedPerson"

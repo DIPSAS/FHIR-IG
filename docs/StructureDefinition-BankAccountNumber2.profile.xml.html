@@ -30,6 +30,25 @@
     <!-- Placeholder for child template CSS declarations -->
     <link href="assets/css/hl7.css" rel="stylesheet"/>
     <link href="assets/css/fhir.css" rel="stylesheet"/>
+    <style>
+        /* Match the menu bar to the DIPS logo's navy background (hl7.css ships #505050). */
+        .navbar-inverse {
+            background-color: #0A0D30;
+        }
+        .navbar-inverse .navbar-nav > li > a:hover {
+            background-color: #1B2050;
+        }
+        /* Match the footer bar to the same navy (fhir.css ships #d32d28 red). */
+        #segment-footer > .container {
+            background-color: #0A0D30;
+        }
+        /* Light-blue "local development build" publish-box and Contents/TOC side
+           boxes, matching dips.com's site background (project.css ships yellow for both). */
+        :root {
+            --publish-box-bg-color: #B3E0E6;
+            --toc-box-bg-color: #B3E0E6;
+        }
+    </style>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -51,8 +70,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"6.55"}
-    h3,h4,h5,h6{--heading-prefix:"6.55"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.56"}
+    h3,h4,h5,h6{--heading-prefix:"6.56"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -69,7 +88,7 @@
             
 <div id="hl7-nav">
     <a id="hl7-logo" no-external="true" href="https://github.com/HL7Norway">
-        <img alt="visit the hl7 website" height="60" src="assets/images/logo-dips.png" />
+        <img alt="visit the hl7 website" height="60" src="assets/images/dips_logo.jpg" />
     </a>            
 </div>
 
@@ -224,7 +243,7 @@
         
           Draft
           
-            as of 2026-08-31
+            as of 2026-09-02
           
         
       </td>
@@ -257,7 +276,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.1.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BankAccountNumber2&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-08-31T12:11:16+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-09-02T05:31:41+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DIPS AS&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Lars-Andreas Nystad&quot;/&gt;
@@ -506,7 +525,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 31, 2026 12:11+0000">2026-08-31</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 05:31+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

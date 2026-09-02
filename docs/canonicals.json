@@ -237,6 +237,13 @@
   "name" : "DIPSLocationReference"
 },
 {
+  "id" : "DIPSMonitoringNotes",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSMonitoringNotes",
+  "version" : "0.1.0",
+  "name" : "DIPSMonitoringNotes"
+},
+{
   "id" : "DIPSOrganization",
   "type" : "StructureDefinition",
   "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSOrganization",
@@ -496,6 +503,27 @@
   "name" : "DIPSR4Encounter"
 },
 {
+  "id" : "DIPSReferenceLocation",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceLocation",
+  "version" : "0.1.0",
+  "name" : "DIPSReferenceLocation"
+},
+{
+  "id" : "DIPSReferenceSection",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceSection",
+  "version" : "0.1.0",
+  "name" : "DIPSReferenceSection"
+},
+{
+  "id" : "DIPSReferenceWard",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceWard",
+  "version" : "0.1.0",
+  "name" : "DIPSReferenceWard"
+},
+{
   "id" : "DIPSRelatedPerson",
   "type" : "StructureDefinition",
   "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPerson",
@@ -536,6 +564,13 @@
   "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonResponsibleRequisitioner",
   "version" : "0.1.0",
   "name" : "DIPSRelatedPersonResponsibleRequisitioner"
+},
+{
+  "id" : "DIPSRemoteMonitoring",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRemoteMonitoring",
+  "version" : "0.1.0",
+  "name" : "DIPSRemoteMonitoring"
 },
 {
   "id" : "DIPSSubjectReference",

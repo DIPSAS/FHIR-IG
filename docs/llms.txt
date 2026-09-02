@@ -3,11 +3,11 @@
 ## Pages
 
 * [Home](index.md)
-* [Reference Diagrams](reference-diagrams.md)
-* [Documentation](documentation.md)
 * [Changes](changes.md)
-* [Artifacts Summary](artifacts.md)
+* [Documentation](documentation.md)
 * [Download](download.md)
+* [Artifacts Summary](artifacts.md)
+* [Reference Diagrams](reference-diagrams.md)
 
 ## Resources
 
@@ -96,6 +96,7 @@
 * [DIPSPractitionerRole](StructureDefinition-DIPSPractitionerRole.md)
 * [DIPSR4Encounter](StructureDefinition-DIPSR4Encounter.md)
 * [DIPSRelatedPerson](StructureDefinition-DIPSRelatedPerson.md)
+* [DIPSRemoteMonitoring](StructureDefinition-DIPSRemoteMonitoring.md)
 * [DIPSSubjectReference](StructureDefinition-DIPSSubjectReference.md)
 * [DipsOrganizationRef](StructureDefinition-DipsOrganizationRef.md)
 * [NoImplVitalSignsObservationBloodpressure](StructureDefinition-NoImplVitalSignsObservationBloodpressure.md)
@@ -128,6 +129,7 @@
 * [DIPSHealthcareServiceIsPaperCopy](StructureDefinition-DIPSHealthcareServiceIsPaperCopy.md)
 * [DIPSHealthcareServiceSection](StructureDefinition-DIPSHealthcareServiceSection.md)
 * [DIPSHealthcareServiceWard](StructureDefinition-DIPSHealthcareServiceWard.md)
+* [DIPSMonitoringNotes](StructureDefinition-DIPSMonitoringNotes.md)
 * [DIPSPatientContactIdentifier](StructureDefinition-DIPSPatientContactIdentifier.md)
 * [DIPSPatientContactPractitionerRoleName](StructureDefinition-DIPSPatientContactPractitionerRoleName.md)
 * [DIPSPersonDeathComment](StructureDefinition-DIPSPersonDeathComment.md)
@@ -156,6 +158,9 @@
 * [DIPSPractitionerRoleUserRoleName](StructureDefinition-DIPSPractitionerRoleUserRoleName.md)
 * [DIPSPractitionerRoleWard](StructureDefinition-DIPSPractitionerRoleWard.md)
 * [DIPSPractitionerSpecialist](StructureDefinition-DIPSPractitionerSpecialist.md)
+* [DIPSReferenceLocation](StructureDefinition-DIPSReferenceLocation.md)
+* [DIPSReferenceSection](StructureDefinition-DIPSReferenceSection.md)
+* [DIPSReferenceWard](StructureDefinition-DIPSReferenceWard.md)
 * [DIPSRelatedPersonAdditionalInformation](StructureDefinition-DIPSRelatedPersonAdditionalInformation.md)
 * [DIPSRelatedPersonAppointedByMunicipality](StructureDefinition-DIPSRelatedPersonAppointedByMunicipality.md)
 * [DIPSRelatedPersonKinship](StructureDefinition-DIPSRelatedPersonKinship.md)

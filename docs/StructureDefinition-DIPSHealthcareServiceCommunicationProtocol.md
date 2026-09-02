@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceCommunicationProtocol | *Version*:0.1.0 |
-| Draft as of 2026-08-31 | *Computable Name*:DIPSHealthcareServiceCommunicationProtocol |
+| Draft as of 2026-09-02 | *Computable Name*:DIPSHealthcareServiceCommunicationProtocol |
 
 **Context of Use**
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSHealthcareServic
   "version" : "0.1.0",
   "name" : "DIPSHealthcareServiceCommunicationProtocol",
   "status" : "draft",
-  "date" : "2026-08-31T12:11:16+00:00",
+  "date" : "2026-09-02T05:31:41+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

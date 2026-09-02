@@ -70,6 +70,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [DIPSPractitionerRole](StructureDefinition-DIPSPractitionerRole.md) |
 | [DIPSR4Encounter](StructureDefinition-DIPSR4Encounter.md) |
 | [DIPSRelatedPerson](StructureDefinition-DIPSRelatedPerson.md) |
+| [DIPSRemoteMonitoring](StructureDefinition-DIPSRemoteMonitoring.md) |
 | [DIPSSubjectReference](StructureDefinition-DIPSSubjectReference.md) |
 | [DipsOrganizationRef](StructureDefinition-DipsOrganizationRef.md) |
 | [SelfBookingSlot](StructureDefinition-SelfBookingSlot.md) |
@@ -104,6 +105,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [DIPSHealthcareServiceIsPaperCopy](StructureDefinition-DIPSHealthcareServiceIsPaperCopy.md) |  |
 | [DIPSHealthcareServiceSection](StructureDefinition-DIPSHealthcareServiceSection.md) |  |
 | [DIPSHealthcareServiceWard](StructureDefinition-DIPSHealthcareServiceWard.md) |  |
+| [DIPSMonitoringNotes](StructureDefinition-DIPSMonitoringNotes.md) |  |
 | [DIPSPatientContactIdentifier](StructureDefinition-DIPSPatientContactIdentifier.md) |  |
 | [DIPSPatientContactPractitionerRoleName](StructureDefinition-DIPSPatientContactPractitionerRoleName.md) |  |
 | [DIPSPersonDeathComment](StructureDefinition-DIPSPersonDeathComment.md) |  |
@@ -132,6 +134,9 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [DIPSPractitionerRoleUserRoleName](StructureDefinition-DIPSPractitionerRoleUserRoleName.md) |  |
 | [DIPSPractitionerRoleWard](StructureDefinition-DIPSPractitionerRoleWard.md) |  |
 | [DIPSPractitionerSpecialist](StructureDefinition-DIPSPractitionerSpecialist.md) |  |
+| [DIPSReferenceLocation](StructureDefinition-DIPSReferenceLocation.md) |  |
+| [DIPSReferenceSection](StructureDefinition-DIPSReferenceSection.md) |  |
+| [DIPSReferenceWard](StructureDefinition-DIPSReferenceWard.md) |  |
 | [DIPSRelatedPersonAdditionalInformation](StructureDefinition-DIPSRelatedPersonAdditionalInformation.md) |  |
 | [DIPSRelatedPersonAppointedByMunicipality](StructureDefinition-DIPSRelatedPersonAppointedByMunicipality.md) |  |
 | [DIPSRelatedPersonKinship](StructureDefinition-DIPSRelatedPersonKinship.md) |  |

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSAppointment | *Version*:0.1.0 |
-| Draft as of 2026-08-31 | *Computable Name*:DIPSAppointment |
+| Draft as of 2026-09-02 | *Computable Name*:DIPSAppointment |
 
 **Usages:**
 
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSAppointment.csv)
   "version" : "0.1.0",
   "name" : "DIPSAppointment",
   "status" : "draft",
-  "date" : "2026-08-31T12:11:16+00:00",
+  "date" : "2026-09-02T05:31:41+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

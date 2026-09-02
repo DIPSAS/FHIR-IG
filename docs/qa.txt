@@ -1,10 +1,10 @@
 DIPSCore : Validation Results
 =========================================
 
-err = 92, warn = 1094, info = 375
+err = 92, warn = 1109, info = 380
 IG Publisher Version: 2.3.3
-Generated Mon Aug 31 12:28:28 UTC 2026. FHIR version 4.0.1 for dips.fhir.no.core#0.1.0 (canonical = http://dips.no/fhir/R4)
- Build Errors : 6 / 188 / 0
+Generated Wed Sep 02 05:48:43 UTC 2026. FHIR version 4.0.1 for dips.fhir.no.core#0.1.0 (canonical = http://dips.no/fhir/R4)
+ Build Errors : 6 / 193 / 0
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Appointment-ahi1004667 : 0 / 1 / 1
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Appointment-ahi38 : 0 / 1 / 1
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/CodeSystem-DIPSLocation : 0 / 7 / 2
@@ -111,6 +111,7 @@ Generated Mon Aug 31 12:28:28 UTC 2026. FHIR version 4.0.1 for dips.fhir.no.core
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSHospitalStayEncounter : 0 / 1 / 3
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSLocation : 0 / 1 / 3
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSLocationReference : 0 / 23 / 2
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSMonitoringNotes : 0 / 2 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSOrganization : 0 / 5 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSOrganizationReference : 0 / 2 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSPatient : 0 / 8 / 2
@@ -148,12 +149,16 @@ Generated Mon Aug 31 12:28:28 UTC 2026. FHIR version 4.0.1 for dips.fhir.no.core
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSPractitionerRoleWard : 0 / 1 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSPractitionerSpecialist : 0 / 1 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSR4Encounter : 0 / 1 / 2
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSReferenceLocation : 0 / 2 / 2
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSReferenceSection : 0 / 2 / 2
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSReferenceWard : 0 / 2 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSRelatedPerson : 0 / 4 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSRelatedPersonAdditionalInformation : 0 / 1 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSRelatedPersonAppointedByMunicipality : 0 / 1 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSRelatedPersonKinship : 0 / 1 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSRelatedPersonParentalResponsibility : 0 / 1 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSRelatedPersonResponsibleRequisitioner : 0 / 1 / 2
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSRemoteMonitoring : 0 / 2 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSSubjectReference : 0 / 2 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-Department : 0 / 2 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DepartmentExtension : 0 / 3 / 2
@@ -302,6 +307,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DIPSPractitionerRole.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DIPSR4Encounter.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DIPSRelatedPerson.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DIPSRemoteMonitoring.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DIPSSubjectReference.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DipsOrganizationRef.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/SelfBookingSlot.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -322,6 +328,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DIPSHealthcareServiceIsPaperCopy.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DIPSHealthcareServiceSection.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DIPSHealthcareServiceWard.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DIPSMonitoringNotes.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DIPSPatientContactIdentifier.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DIPSPatientContactPractitionerRoleName.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DIPSPersonDeathComment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -350,6 +357,9 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DIPSPractitionerRoleUserRoleName.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DIPSPractitionerRoleWard.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DIPSPractitionerSpecialist.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DIPSReferenceLocation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DIPSReferenceSection.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DIPSReferenceWard.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DIPSRelatedPersonAdditionalInformation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DIPSRelatedPersonAppointedByMunicipality.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DIPSRelatedPersonKinship.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -454,12 +464,12 @@ WARNING: Practitioner.qualification.code.coding: The reference urn:oid:2.16.578.
 WARNING: Practitioner.qualification.code.coding: The reference urn:oid:2.16.578.1.12.4.1.1.7426 could not be resolved
 WARNING: PractitionerRole.code: The reference urn:oid:2.16.578.1.12.4.1.1.9034 could not be resolved
 WARNING: PractitionerRole.specialty: The reference urn:oid:2.16.578.1.12.4.1.1.8451 could not be resolved
-ERROR: ValueSet-DIPSEncounterTypeCom.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 255, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
-ERROR: ValueSet-DIPSEncounterV3.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 255, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
-ERROR: ValueSet-HealthPersonallCategoryValueset.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 255, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
-ERROR: ValueSet-NprLevelOfCare.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 255, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
-ERROR: ValueSet-approvalType.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 255, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
-ERROR: ValueSet-healthPersonnelSpecialization.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 255, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
+ERROR: ValueSet-DIPSEncounterTypeCom.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 274, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
+ERROR: ValueSet-DIPSEncounterV3.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 274, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
+ERROR: ValueSet-HealthPersonallCategoryValueset.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 274, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
+ERROR: ValueSet-NprLevelOfCare.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 274, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
+ERROR: ValueSet-approvalType.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 274, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
+ERROR: ValueSet-healthPersonnelSpecialization.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 274, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
@@ -1336,6 +1346,10 @@ WARNING: StructureDefinition/DIPSLocationReference: StructureDefinition.snapshot
 WARNING: StructureDefinition/DIPSLocationReference: StructureDefinition.snapshot.element[64].fixed.ofType(Identifier): For the complex type Identifier, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 INFORMATION: Resource: The resource StructureDefinition/DIPSLocationReference could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: StructureDefinition.where(url = 'http://dips.no/fhir/R4/StructureDefinition/DIPSLocationReference'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-DIPSMonitoringNotes.json ==
+WARNING: StructureDefinition/DIPSMonitoringNotes: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+INFORMATION: Resource: The resource StructureDefinition/DIPSMonitoringNotes could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'http://dips.no/fhir/R4/StructureDefinition/DIPSMonitoringNotes'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-DIPSOrganization.json ==
 WARNING: StructureDefinition/DIPSOrganization: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/DIPSOrganization: StructureDefinition.snapshot.element[120].binding.valueSet: A definition could not be found for Canonical URL 'urn:oid:2.16.578.1.12.4.1.1.8628'
@@ -1479,6 +1493,18 @@ INFORMATION: Resource: The resource StructureDefinition/DIPSPractitionerSpeciali
 == fsh-generated/resources/StructureDefinition-DIPSR4Encounter.json ==
 WARNING: StructureDefinition/DIPSR4Encounter: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
 INFORMATION: Resource: The resource StructureDefinition/DIPSR4Encounter could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-DIPSReferenceLocation.json ==
+WARNING: StructureDefinition/DIPSReferenceLocation: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+INFORMATION: Resource: The resource StructureDefinition/DIPSReferenceLocation could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceLocation'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-DIPSReferenceSection.json ==
+WARNING: StructureDefinition/DIPSReferenceSection: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+INFORMATION: Resource: The resource StructureDefinition/DIPSReferenceSection could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceSection'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-DIPSReferenceWard.json ==
+WARNING: StructureDefinition/DIPSReferenceWard: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+INFORMATION: Resource: The resource StructureDefinition/DIPSReferenceWard could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceWard'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-DIPSRelatedPerson.json ==
 WARNING: StructureDefinition/DIPSRelatedPerson: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/DIPSRelatedPerson: StructureDefinition.snapshot.element[65].binding: The definition for the element 'RelatedPerson.relationship' binds to the value set 'http://hl7.no/fhir/ValueSet/no-basis-marital-status' which is experimental, but this structure is not labeled as experimental
@@ -1500,6 +1526,10 @@ INFORMATION: Resource: The resource StructureDefinition/DIPSRelatedPersonParenta
 == fsh-generated/resources/StructureDefinition-DIPSRelatedPersonResponsibleRequisitioner.json ==
 WARNING: StructureDefinition/DIPSRelatedPersonResponsibleRequisitioner: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
 INFORMATION: Resource: The resource StructureDefinition/DIPSRelatedPersonResponsibleRequisitioner could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-DIPSRemoteMonitoring.json ==
+WARNING: StructureDefinition/DIPSRemoteMonitoring: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+INFORMATION: Resource: The resource StructureDefinition/DIPSRemoteMonitoring could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'http://dips.no/fhir/R4/StructureDefinition/DIPSRemoteMonitoring'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-DIPSSubjectReference.json ==
 WARNING: StructureDefinition/DIPSSubjectReference: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
 INFORMATION: Resource: The resource StructureDefinition/DIPSSubjectReference could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

@@ -22,6 +22,25 @@
       <!-- Placeholder for child template CSS declarations -->
     <link rel="stylesheet" href="assets/css/hl7.css"/>
     <link rel="stylesheet" href="assets/css/fhir.css"/>
+    <style>
+        /* Match the menu bar to the DIPS logo's navy background (hl7.css ships #505050). */
+        .navbar-inverse {
+            background-color: #0A0D30;
+        }
+        .navbar-inverse .navbar-nav > li > a:hover {
+            background-color: #1B2050;
+        }
+        /* Match the footer bar to the same navy (fhir.css ships #d32d28 red). */
+        #segment-footer > .container {
+            background-color: #0A0D30;
+        }
+        /* Light-blue "local development build" publish-box and Contents/TOC side
+           boxes, matching dips.com's site background (project.css ships yellow for both). */
+        :root {
+            --publish-box-bg-color: #B3E0E6;
+            --toc-box-bg-color: #B3E0E6;
+        }
+    </style>
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
@@ -43,8 +62,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"6.153"}
-    h3,h4,h5,h6{--heading-prefix:"6.153"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.158"}
+    h3,h4,h5,h6{--heading-prefix:"6.158"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
 
@@ -60,7 +79,7 @@
             
 <div id="hl7-nav">
     <a no-external="true" id="hl7-logo" href="https://github.com/HL7Norway">
-        <img src="assets/images/logo-dips.png" alt="visit the hl7 website" height="60"/>
+        <img src="assets/images/dips_logo.jpg" alt="visit the hl7 website" height="60"/>
     </a>            
 </div>
 
@@ -247,7 +266,7 @@ All rights reserved.</p>
 <p>All other trademarks mentioned herein are the property of their
   respective owners.</p>
 
-<p><a name="l364">​</a>DIPS AS
+<p><a name="l367">​</a>DIPS AS
   Postboks 1435
   8037 Bodø
   Norway
@@ -350,7 +369,7 @@ All rights reserved.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 31, 2026 12:11+0000">2026-08-31</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 05:31+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

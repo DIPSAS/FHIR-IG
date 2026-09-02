@@ -30,8 +30,8 @@
     "description" : "",
     "uses" : {
     },
-    "ValueSet-NoImplVitalSignsObservationHeartRateMeasurementMethod.html" : "NoImplVitalSignsObservationHeartRateMeasurementMethod",
     "ValueSet-NoImplVitalSignsObservationBloodPressureMeasurementMethod.html" : "NoImplVitalSignsObservationBloodPressureMeasurementMethod",
+    "ValueSet-NoImplVitalSignsObservationHeartRateMeasurementMethod.html" : "NoImplVitalSignsObservationHeartRateMeasurementMethod",
     "ValueSet-NoImplVitalSignsObservationPulseMeasurementMethod.html" : "NoImplVitalSignsObservationPulseMeasurementMethod"
   },
   {
@@ -185,6 +185,18 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-encounter-status.html" : "EncounterStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/episode-of-care-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "EpisodeOfCareStatus",
+    "title" : "EpisodeOfCareStatus",
+    "description" : "The status of the episode of care.",
+    "oids" : ["2.16.840.1.113883.4.642.4.665"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-episode-of-care-status.html" : "EpisodeOfCareStatus"
   },
   {
     "url" : "http://hl7.org/fhir/identifier-use",
@@ -387,40 +399,40 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "ValueSet-NoDomainVitalSignsObservationRespirationRateDepth.html" : "NoDomainVitalSignsObservationRespirationRateDepth",
-    "ValueSet-NoDomainVitalSignsObservationPulseMeasurementMethod.html" : "NoDomainVitalSignsObservationPulseMeasurementMethod",
-    "ValueSet-NoDomainVitalSignsObservationSpontaneousBreathing.html" : "NoDomainVitalSignsObservationSpontaneousBreathing",
-    "ValueSet-NoDomainVitalSignsObservationPulseBodySite.html" : "NoDomainVitalSignsObservationPulseBodySite",
-    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-    "ValueSet-NoDomainVitalSignsObservationCuffsize.html" : "NoDomainVitalSignsObservationCuffsize",
-    "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-    "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
-    "ValueSet-NoDomainVitalSignsObservationSleepStatus.html" : "NoDomainVitalSignsObservationSleepStatus",
-    "ValueSet-NoDomainVitalSignsObservationHeartRhythmIrregularity.html" : "NoDomainVitalSignsObservationHeartRhythmIrregularity",
     "ValueSet-NoDomainVitalSignsObservationHeartRatePulseBodyPosition.html" : "NoDomainVitalSignsObservationHeartRatePulseBodyPosition",
+    "ValueSet-NoDomainVitalSignsObservationSleepStatus.html" : "NoDomainVitalSignsObservationSleepStatus",
+    "ValueSet-NoDomainVitalSignsObservationPulseBodySite.html" : "NoDomainVitalSignsObservationPulseBodySite",
+    "ValueSet-NoDomainVitalSignsObservationRespirationRegularity.html" : "NoDomainVitalSignsObservationRespirationRegularity",
     "ValueSet-NoDomainVitalSignsObservationBodyHeightBodyPosition.html" : "NoDomainVitalSignsObservationBodyHeightBodyPosition",
-    "ValueSet-NoDomainVitalSignsObservationRespirationRateBodyPosition.html" : "NoDomainVitalSignsObservationRespirationRateBodyPosition",
+    "ValueSet-NoDomainVitalSignsObservationBloodpressureBodySite.html" : "NoDomainVitalSignsObservationBloodpressureBodySite",
     "ValueSet-NoDomainVitalSignsObservationDiastolicendPoint.html" : "NoDomainVitalSignsObservationDiastolicendPoint",
-    "ValueSet-NoDomainVitalSignsObservationPulseRhythmIrregularity.html" : "NoDomainVitalSignsObservationPulseRhythmIrregularity",
-    "ValueSet-NoDomainVitalSignsObservationClothingState.html" : "NoDomainVitalSignsObservationClothingState",
-    "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+    "ValueSet-NoDomainVitalSignsObservationSpontaneousBreathing.html" : "NoDomainVitalSignsObservationSpontaneousBreathing",
+    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+    "ValueSet-NoDomainVitalSignsObservationBloodpressureBodyPosition.html" : "NoDomainVitalSignsObservationBloodpressureBodyPosition",
+    "ValueSet-NoDomainVitalSignsObservationHeartRateMeasurementMethod.html" : "NoDomainVitalSignsObservationHeartRateMeasurementMethod",
+    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+    "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
     "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
     "ValueSet-NoDomainVitalSignsObservationBloodPressureMeasurementMethod.html" : "NoDomainVitalSignsObservationBloodPressureMeasurementMethod",
-    "ValueSet-NoDomainVitalSignsObservationHeartRateBodySite.html" : "NoDomainVitalSignsObservationHeartRateBodySite",
+    "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+    "ValueSet-NoDomainVitalSignsObservationRespirationRateDepth.html" : "NoDomainVitalSignsObservationRespirationRateDepth",
     "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "ValueSet-NoDomainVitalSignsObservationBodyTempBodySite.html" : "NoDomainVitalSignsObservationBodyTempBodySite",
-    "ValueSet-NoDomainVitalSignsObservationPulseRhythm.html" : "NoDomainVitalSignsObservationPulseRhythm",
-    "ValueSet-NoDomainVitalSignsObservationBloodpressureBodySite.html" : "NoDomainVitalSignsObservationBloodpressureBodySite",
-    "ValueSet-NoDomainVitalSignsObservationHeartRateMeasurementMethod.html" : "NoDomainVitalSignsObservationHeartRateMeasurementMethod",
-    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-    "ValueSet-NoDomainVitalSignsObservationBodyExposure.html" : "NoDomainVitalSignsObservationBodyExposure",
-    "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
-    "ValueSet-NoDomainVitalSignsObservationRespirationRegularity.html" : "NoDomainVitalSignsObservationRespirationRegularity",
     "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
-    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
     "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
-    "ValueSet-NoDomainVitalSignsObservationBloodpressureBodyPosition.html" : "NoDomainVitalSignsObservationBloodpressureBodyPosition"
+    "ValueSet-NoDomainVitalSignsObservationBodyTempBodySite.html" : "NoDomainVitalSignsObservationBodyTempBodySite",
+    "ValueSet-NoDomainVitalSignsObservationPulseRhythmIrregularity.html" : "NoDomainVitalSignsObservationPulseRhythmIrregularity",
+    "ValueSet-NoDomainVitalSignsObservationClothingState.html" : "NoDomainVitalSignsObservationClothingState",
+    "ValueSet-NoDomainVitalSignsObservationBodyExposure.html" : "NoDomainVitalSignsObservationBodyExposure",
+    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+    "ValueSet-NoDomainVitalSignsObservationHeartRhythmIrregularity.html" : "NoDomainVitalSignsObservationHeartRhythmIrregularity",
+    "ValueSet-NoDomainVitalSignsObservationHeartRateBodySite.html" : "NoDomainVitalSignsObservationHeartRateBodySite",
+    "ValueSet-NoDomainVitalSignsObservationPulseRhythm.html" : "NoDomainVitalSignsObservationPulseRhythm",
+    "ValueSet-NoDomainVitalSignsObservationPulseMeasurementMethod.html" : "NoDomainVitalSignsObservationPulseMeasurementMethod",
+    "ValueSet-NoDomainVitalSignsObservationCuffsize.html" : "NoDomainVitalSignsObservationCuffsize",
+    "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
+    "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+    "ValueSet-NoDomainVitalSignsObservationRespirationRateBodyPosition.html" : "NoDomainVitalSignsObservationRespirationRateBodyPosition"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -541,6 +553,18 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-encounter-type.html" : "Encounter type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/episodeofcare-type",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "EpisodeOfCareType",
+    "title" : "Episode of care type",
+    "description" : "This example value set defines a set of codes that can be used to express the usage type of an EpisodeOfCare record.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1189"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-episodeofcare-type.html" : "Episode of care type"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
@@ -708,8 +732,8 @@
     "oids" : ["2.16.840.1.113883.18.58"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type",
-    "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
+    "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship ",
+    "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
@@ -843,7 +867,7 @@
     "oids" : ["2.16.840.1.113883.5.111"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type",
-    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
+    "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
   }]
 }
