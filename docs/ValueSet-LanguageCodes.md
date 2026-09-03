@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/ValueSet/LanguageCodes | *Version*:0.1.0 |
-| Active as of 2026-09-02 | *Computable Name*:LanguageCodes |
+| Active as of 2026-09-03 | *Computable Name*:LanguageCodes |
 
  
 Valesets of LanguageCodes 
@@ -55,7 +55,7 @@ No Expansion for this valueset (Unknown Code System)
   "version" : "0.1.0",
   "name" : "LanguageCodes",
   "status" : "active",
-  "date" : "2026-09-02T05:31:41+00:00",
+  "date" : "2026-09-03T11:16:58+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

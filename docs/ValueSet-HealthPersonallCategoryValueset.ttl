@@ -39,7 +39,7 @@
   fhir:ValueSet.title [ fhir:value "HealthPersonallCategoryValueset"] ;
   fhir:ValueSet.status [ fhir:value "draft"] ;
   fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
-  fhir:ValueSet.date [ fhir:value "2026-09-02T05:31:41+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.date [ fhir:value "2026-09-03T11:16:58+00:00"^^xsd:dateTime] ;
   fhir:ValueSet.publisher [ fhir:value "DIPS AS"] ;
   fhir:ValueSet.contact [
      fhir:index 0 ;

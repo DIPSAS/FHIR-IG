@@ -262,7 +262,7 @@
         
           Draft
           
-            as of 2026-09-02
+            as of 2026-09-03
           
         
       </td>
@@ -280,6 +280,22 @@
 
 
 <!-- insert intro if present -->
+
+
+
+
+<div style="display:inline-block" markdown="1">
+
+<p>The DIPS Remote Monitoring Profile inherits from the FHIR EpisodeOfCare resource; refer to it for scope and usage definitions</p>
+
+<p><strong>Example Usage Scenarios:</strong></p>
+
+<p>The following are example usage scenarios for this profile:</p>
+
+<p>Query by patient, status, or external system identifier</p>
+
+
+</div>
 
 
 
@@ -461,7 +477,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/patient.html">Patient</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The patient who is the focus of this episode of care</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 48555139-e340-4d13-9ebe-f2596c9be745
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf8cca1a-248e-4e23-ae63-f6bc72ea4c99
 document.getElementById('cbDIPSRemoteMonitoringK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DIPSRemoteMonitoringK'), 'binding', document.getElementById('cbDIPSRemoteMonitoringK-binding').checked, document.getElementById('ppDIPSRemoteMonitoringK'));
 document.getElementById('cbDIPSRemoteMonitoringK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1199,7 +1215,7 @@ filterDesc(document.getElementById('DIPSRemoteMonitoringK'), 'obligation', docum
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"></span><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic">The set of accounts that may be used for billing for this EpisodeOfCare</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 48555139-e340-4d13-9ebe-f2596c9be745
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf8cca1a-248e-4e23-ae63-f6bc72ea4c99
 document.getElementById('cbDIPSRemoteMonitoringD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DIPSRemoteMonitoringD'), 'binding', document.getElementById('cbDIPSRemoteMonitoringD-binding').checked, document.getElementById('ppDIPSRemoteMonitoringD'));
 document.getElementById('cbDIPSRemoteMonitoringD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1694,7 +1710,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Text alternative for the resource</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 48555139-e340-4d13-9ebe-f2596c9be745
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf8cca1a-248e-4e23-ae63-f6bc72ea4c99
 document.getElementById('cbDIPSRemoteMonitoringS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DIPSRemoteMonitoringS'), 'binding', document.getElementById('cbDIPSRemoteMonitoringS-binding').checked, document.getElementById('ppDIPSRemoteMonitoringS'));
 document.getElementById('cbDIPSRemoteMonitoringS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2212,7 +2228,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/patient.html">Patient</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The patient who is the focus of this episode of care</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 48555139-e340-4d13-9ebe-f2596c9be745
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf8cca1a-248e-4e23-ae63-f6bc72ea4c99
 document.getElementById('cbDIPSRemoteMonitoringKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DIPSRemoteMonitoringKA'), 'binding', document.getElementById('cbDIPSRemoteMonitoringKA-binding').checked, document.getElementById('ppDIPSRemoteMonitoringKA'));
 document.getElementById('cbDIPSRemoteMonitoringKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2950,7 +2966,7 @@ filterDesc(document.getElementById('DIPSRemoteMonitoringKA'), 'obligation', docu
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"></span><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic">The set of accounts that may be used for billing for this EpisodeOfCare</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 48555139-e340-4d13-9ebe-f2596c9be745
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf8cca1a-248e-4e23-ae63-f6bc72ea4c99
 document.getElementById('cbDIPSRemoteMonitoringDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DIPSRemoteMonitoringDA'), 'binding', document.getElementById('cbDIPSRemoteMonitoringDA-binding').checked, document.getElementById('ppDIPSRemoteMonitoringDA'));
 document.getElementById('cbDIPSRemoteMonitoringDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3444,7 +3460,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Text alternative for the resource</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 48555139-e340-4d13-9ebe-f2596c9be745
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf8cca1a-248e-4e23-ae63-f6bc72ea4c99
 document.getElementById('cbDIPSRemoteMonitoringSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DIPSRemoteMonitoringSA'), 'binding', document.getElementById('cbDIPSRemoteMonitoringSA-binding').checked, document.getElementById('ppDIPSRemoteMonitoringSA'));
 document.getElementById('cbDIPSRemoteMonitoringSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3834,6 +3850,92 @@ Summary
 <!-- insert notes if present -->
 
 
+<h3>Notes:</h3>
+
+
+<div style="display:inline-block" markdown="1">
+
+<p><strong>Read Operation:</strong></p>
+
+<ol>
+  <li>
+    <p><strong>SHALL</strong> support reading EpisodeOfCare using its resource id:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">GET [base]/EpisodeOfCare/[id]</code></p>
+
+    <p>Example:</p>
+
+    <ol>
+      <li>GET [base]/EpisodeOfCare/1000024</li>
+    </ol>
+
+    <p><em>Implementation Notes:</em> Fetches the EpisodeOfCare resource that matches the given resource reference id.</p>
+  </li>
+</ol>
+
+<p><strong>Search Parameters:</strong></p>
+
+<p>The following search parameters and search parameter combinations SHALL be supported:</p>
+
+<ol>
+  <li>
+    <p><strong>SHALL</strong> support searching EpisodeOfCare using the <code class="language-plaintext highlighter-rouge">patient</code> search parameter:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">GET [base]/EpisodeOfCare?patient=[id]</code></p>
+
+    <p>Example:</p>
+
+    <ol>
+      <li>GET [base]/EpisodeOfCare?patient=1000001</li>
+    </ol>
+
+    <p><em>Implementation Notes:</em> Fetches a bundle of all EpisodeOfCare resources for the patient who is related to the EpisodeOfCare ([how to search by reference])</p>
+  </li>
+  <li>
+    <p><strong>SHALL</strong> support searching EpisodeOfCare using the <code class="language-plaintext highlighter-rouge">patient</code> and <code class="language-plaintext highlighter-rouge">status</code> search parameters, where <code class="language-plaintext highlighter-rouge">status</code> is a status code:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">GET [base]/EpisodeOfCare?patient=[id]&amp;status=[code]</code></p>
+
+    <p>Example:</p>
+
+    <ol>
+      <li>GET [base]/EpisodeOfCare?patient=1000001&amp;status=283670</li>
+    </ol>
+
+    <p><em>Implementation Notes:</em> Fetches a bundle of all EpisodeOfCare resources for the patient that match the given status code ([how to search by token])</p>
+  </li>
+  <li>
+    <p><strong>SHALL</strong> support searching EpisodeOfCare using the <code class="language-plaintext highlighter-rouge">patient</code> and <code class="language-plaintext highlighter-rouge">status</code> search parameters, where <code class="language-plaintext highlighter-rouge">status</code> is the status text:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">GET [base]/EpisodeOfCare?patient=[id]&amp;status=[string]</code></p>
+
+    <p>Example:</p>
+
+    <ol>
+      <li>GET [base]/EpisodeOfCare?patient=1000001&amp;status=planned</li>
+    </ol>
+
+    <p><em>Implementation Notes:</em> Fetches a bundle of all EpisodeOfCare resources for the patient that match the given status ([how to search by string])</p>
+  </li>
+  <li>
+    <p><strong>SHALL</strong> support searching EpisodeOfCare using the <code class="language-plaintext highlighter-rouge">externalsystemid</code> and <code class="language-plaintext highlighter-rouge">externalid</code> search parameters:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">GET [base]/EpisodeOfCare?externalsystemid=[string]&amp;externalid=[string]</code></p>
+
+    <p>Example:</p>
+
+    <ol>
+      <li>GET [base]/EpisodeOfCare?externalsystemid=1027472&amp;externalid=2334343</li>
+    </ol>
+
+    <p><em>Implementation Notes:</em> Fetches a bundle of all EpisodeOfCare resources that match the given external system id and external id ([how to search by string])</p>
+  </li>
+</ol>
+
+
+</div>
+
+
 
 
 </div>
@@ -3855,7 +3957,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 05:31+0000">2026-09-02</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 3, 2026 11:16+0000">2026-09-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

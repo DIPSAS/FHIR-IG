@@ -20,7 +20,7 @@
   fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
   fhir:CodeSystem.name [ fhir:value "DIPSLocation"] ;
   fhir:CodeSystem.status [ fhir:value "draft"] ;
-  fhir:CodeSystem.date [ fhir:value "2026-09-02T05:31:41+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-09-03T11:16:58+00:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "DIPS AS"] ;
   fhir:CodeSystem.contact [
      fhir:index 0 ;

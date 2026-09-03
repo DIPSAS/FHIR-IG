@@ -3,7 +3,7 @@ DIPSCore : Validation Results
 
 err = 92, warn = 1109, info = 380
 IG Publisher Version: 2.3.3
-Generated Wed Sep 02 05:48:43 UTC 2026. FHIR version 4.0.1 for dips.fhir.no.core#0.1.0 (canonical = http://dips.no/fhir/R4)
+Generated Thu Sep 03 11:35:54 UTC 2026. FHIR version 4.0.1 for dips.fhir.no.core#0.1.0 (canonical = http://dips.no/fhir/R4)
  Build Errors : 6 / 193 / 0
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Appointment-ahi1004667 : 0 / 1 / 1
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Appointment-ahi38 : 0 / 1 / 1

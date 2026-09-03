@@ -9,7 +9,15 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSRemoteMonitoring | *Version*:0.1.0 |
-| Draft as of 2026-09-02 | *Computable Name*:DIPSRemoteMonitoring |
+| Draft as of 2026-09-03 | *Computable Name*:DIPSRemoteMonitoring |
+
+The DIPS Remote Monitoring Profile inherits from the FHIR EpisodeOfCare resource; refer to it for scope and usage definitions
+
+**Example Usage Scenarios:**
+
+The following are example usage scenarios for this profile:
+
+Query by patient, status, or external system identifier
 
 **Usages:**
 
@@ -25,6 +33,31 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-DIPSRemoteMonitoring.csv), [Excel](StructureDefinition-DIPSRemoteMonitoring.xlsx), [Schematron](StructureDefinition-DIPSRemoteMonitoring.sch) 
 
+### Notes:
+
+**Read Operation:**
+
+1. **SHALL** support reading EpisodeOfCare using its resource id:`GET [base]/EpisodeOfCare/[id]`Example:
+1. GET [base]/EpisodeOfCare/1000024
+**Implementation Notes:** Fetches the EpisodeOfCare resource that matches the given resource reference id.
+
+**Search Parameters:**
+
+The following search parameters and search parameter combinations SHALL be supported:
+
+1. **SHALL** support searching EpisodeOfCare using the `patient` search parameter:`GET [base]/EpisodeOfCare?patient=[id]`Example:
+1. GET [base]/EpisodeOfCare?patient=1000001
+**Implementation Notes:** Fetches a bundle of all EpisodeOfCare resources for the patient who is related to the EpisodeOfCare ([how to search by reference])
+1. **SHALL** support searching EpisodeOfCare using the `patient` and `status` search parameters, where `status` is a status code:`GET [base]/EpisodeOfCare?patient=[id]&status=[code]`Example:
+1. GET [base]/EpisodeOfCare?patient=1000001&status=283670
+**Implementation Notes:** Fetches a bundle of all EpisodeOfCare resources for the patient that match the given status code ([how to search by token])
+1. **SHALL** support searching EpisodeOfCare using the `patient` and `status` search parameters, where `status` is the status text:`GET [base]/EpisodeOfCare?patient=[id]&status=[string]`Example:
+1. GET [base]/EpisodeOfCare?patient=1000001&status=planned
+**Implementation Notes:** Fetches a bundle of all EpisodeOfCare resources for the patient that match the given status ([how to search by string])
+1. **SHALL** support searching EpisodeOfCare using the `externalsystemid` and `externalid` search parameters:`GET [base]/EpisodeOfCare?externalsystemid=[string]&externalid=[string]`Example:
+1. GET [base]/EpisodeOfCare?externalsystemid=1027472&externalid=2334343
+**Implementation Notes:** Fetches a bundle of all EpisodeOfCare resources that match the given external system id and external id ([how to search by string])
+
 
 
 ## Resource Content
@@ -37,7 +70,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSRemoteMonitoring
   "version" : "0.1.0",
   "name" : "DIPSRemoteMonitoring",
   "status" : "draft",
-  "date" : "2026-09-02T05:31:41+00:00",
+  "date" : "2026-09-03T11:16:58+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
