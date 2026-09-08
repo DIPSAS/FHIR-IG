@@ -12,15 +12,15 @@ Profiles: [DIPSPractitionerRole](StructureDefinition-DIPSPractitionerRole.md), [
 
 Tag: 
 
-**DIPSPractitionerRoleHealthCarePartyType**: Ward
+**no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHealthCarePartyType**: Ward
 
-**DIPSPractitionerRoleCommunicationType**: Epikrise
+**no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationType**: Epikrise
 
-**DIPSPractitionerRoleWard**: Identifier: `urn:oid:1.3.6.1.4.1.9038.70.4`/1000057 (use: official, )
+**no/fhir/R4/StructureDefinition/DIPSPractitionerRoleWard**: Identifier: `urn:oid:1.3.6.1.4.1.9038.70.4`/1000057 (use: official, )
 
-**DIPSPractitionerRoleHospital**: Identifier: `urn:oid:2.16.578.1.12.4.1.4.101`/970948139 (use: official, )
+**no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHospital**: Identifier: `urn:oid:2.16.578.1.12.4.1.4.101`/970948139 (use: official, )
 
-**DIPSPractitionerRoleHcpRoleName**: Habiliteringspost
+**no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHcpRoleName**: Habiliteringspost
 
 **identifier**: `urn:oid:1.3.6.1.4.1.9038.51`/HA1 (use: official, ), `urn:oid:1.3.6.1.4.1.9038.51.1`/1000204 (use: official, )
 

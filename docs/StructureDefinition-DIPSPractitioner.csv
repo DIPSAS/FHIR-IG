@@ -24,11 +24,11 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Practitioner.extension:specialist","Practitioner.extension","specialist","","",0,*,"","","","Extension {[CanonicalType[http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerSpecialist]]} {[]}
+"Practitioner.extension:specialist","Practitioner.extension","specialist","","",0,*,"","","","Extension {[CanonicalType[http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerSpecialist]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"Practitioner.extension:isASpecialist","Practitioner.extension","isASpecialist","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/R4/StructureDefinition/IsSpecialistExtension]]} {[]}
+"Practitioner.extension:isASpecialist","Practitioner.extension","isASpecialist","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/StructureDefinition/R4/IsSpecialistExtension]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"

@@ -4835,9 +4835,9 @@
          fhir:index 0 ;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ] ;
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSPatient" ;
+           fhir:value "http://dips.no/fhir/StructureDefinition/R4/DIPSPatient" ;
            fhir:index 0 ;
-           fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSPatient>
+           fhir:link <http://dips.no/fhir/StructureDefinition/R4/DIPSPatient>
          ]
        ] ;
        fhir:ElementDefinition.constraint [
@@ -7901,9 +7901,9 @@
          fhir:index 0 ;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ] ;
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSPatient" ;
+           fhir:value "http://dips.no/fhir/StructureDefinition/R4/DIPSPatient" ;
            fhir:index 0 ;
-           fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSPatient>
+           fhir:link <http://dips.no/fhir/StructureDefinition/R4/DIPSPatient>
          ]
        ]
      ], [

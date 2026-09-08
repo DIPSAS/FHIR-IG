@@ -118,14 +118,40 @@
             </button>
             <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <!-- menu.xml  -->
-
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
-  <li>
-    <a href="artifacts.html">Artifacts</a>
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      FHIR Artifacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Vitalsign Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Resource Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Data Type Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#5">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#6">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#7">Code Systems</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Vitalsign Examples</a>
+      </li>
+      <li>
+        <a href="artifacts.html#8">Example Instances</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="toc.html">TOC</a>
@@ -140,6 +166,7 @@
     <a href="download.html">Download</a>
   </li>
 </ul>
+
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
         </nav>  <!-- /.navbar -->
@@ -231,7 +258,7 @@
 
 &lt;http://hl7.org/fhir/Observation/noImpl-QSOFAScore-create&gt; a fhir:Observation ;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/resource.html#Observation.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;noImpl-QSOFAScore-create&quot;] ;
+  <a href="http://hl7.org/fhir/R4/resource.html#Observation.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;noImpl-QSOFAScore-create&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">fhir:Meta.versionId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;0&quot; ] ;
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">fhir:Meta.lastUpdated</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:value</a> &quot;2014-01-30T11:35:23+00:00&quot;^^xsd:dateTime ] ;
@@ -428,7 +455,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 3, 2026 11:16+0000">2026-09-03</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 8, 2026 11:30+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

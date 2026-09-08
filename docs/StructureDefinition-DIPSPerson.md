@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSPerson | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DIPSPerson |
+| Draft as of 2026-09-08 | *Computable Name*:DIPSPerson |
 
 The DIPS Person Profile inherits from the FHIR Person resource; refer to it for scope and usage definitions
 
@@ -35,10 +35,19 @@ Other representations of profile: [CSV](StructureDefinition-DIPSPerson.csv), [Ex
 
 ### Notes:
 
+**Read Operation:**
+
+1. **SHALL** support reading Person using its resource id:`GET [base]/Person/[id]`Example:
+1. GET [base]/Person/ajf2007964
+**Implementation Notes:** Fetches the Person resource that matches the given resource reference id. The id must carry the `ajf` table prefix followed by the numeric person id (e.g. `ajf2007964`); a bare numeric id is not a valid resource id for this endpoint.
+
 **Search Parameters:**
 
 The following search parameters and search parameter combinations SHALL be supported:
 
+1. **SHALL** support searching person using the `active` search parameter:`GET [base]/Person?active=[boolean]`Example:
+1. GET [base]/Person?active=false
+**Implementation Notes:** Fetches a bundle of all Person resources filtered by active status. Person search results are active-only by default; passing `active=false` includes inactive persons. This search parameter is supported by the service but is not currently declared in the CapabilityStatement.
 1. **SHALL** support searching person using the `address` search parameter:`GET [base]/Person?address=[string]`Example:
 1. GET [base]/Person?address=Girogata 9
 **Implementation Notes:** Fetches a bundle of all Person resources that match the address ([how to search by string])
@@ -49,11 +58,11 @@ The following search parameters and search parameter combinations SHALL be suppo
 1. GET [base]/Person?address-state=Health
 **Implementation Notes:** Fetches a bundle of all Person resources that match the address state ([how to search by string])
 1. **SHALL** support searching person using the `address-statecode` search parameter:`GET [base]/Person?address-statecode=[string]`Example:
-1. GET [base]/address-statecode?name=18
+1. GET [base]/Person?address-statecode=18
 **Implementation Notes:** Fetches a bundle of all Person resources that match the address statecode ([how to search by string])
 1. **SHALL** support searching person using the `address-use` search parameter:`GET [base]/Person?address-use=[boolean]`Example:
-1. GET [base]/Person?address-use=true
-**Implementation Notes:** Fetches a bundle of all Person resources that match the address use ([how to search by string])
+1. GET [base]/Person?address=Girogata 9&address-use=true
+**Implementation Notes:** Fetches a bundle of all Person resources that match the address use. Must be combined with the `address` search parameter; using `address-use` without `address` returns an error.
 1. **SHALL** support searching person using the `birthdate` search parameter:`GET [base]/Person?birthdate=[date]`Example:
 1. GET [base]/Person?birthdate=1976-03-12
 **Implementation Notes:** Fetches a bundle of all Person resources that match the birthdate ([how to search by string])
@@ -66,11 +75,11 @@ The following search parameters and search parameter combinations SHALL be suppo
 1. **SHALL** support searching person using the `family` search parameter:`GET [base]/Person?family=[string]`Example:
 1. GET [base]/Person?family=KOM
 **Implementation Notes:** Fetches a bundle of all Person resources that match the family ([how to search by string])
-1. **SHALL** support searching person using the `family-contains` search parameter:`GET [base]/Person?family-contains=[string]`Example:
-1. GET [base]/Person?family-contains=ko
+1. **SHALL** support searching person using the `family:contains` search parameter:`GET [base]/Person?family:contains=[string]`Example:
+1. GET [base]/Person?family:contains=ko
 **Implementation Notes:** Fetches a bundle of all Person resources that match the family name contains ([how to search by string])
-1. **SHALL** support searching person using the `family-exact` search parameter:`GET [base]/Person?family-exact=[string]`Example:
-1. GET [base]/Person?family-exact=Utskrevet
+1. **SHALL** support searching person using the `family:exact` search parameter:`GET [base]/Person?family:exact=[string]`Example:
+1. GET [base]/Person?family:exact=Utskrevet
 **Implementation Notes:** Fetches a bundle of all Person resources that match the exact family name ([how to search by string])
 1. **SHALL** support searching person using the `gender` search parameter:`GET [base]/Person?gender=[string]`Example:
 1. GET [base]/Person?gender=Male
@@ -78,11 +87,11 @@ The following search parameters and search parameter combinations SHALL be suppo
 1. **SHALL** support searching person using the `given` search parameter:`GET [base]/Person?given=[string]`Example:
 1. GET [base]/Person?given=Elin
 **Implementation Notes:** Fetches a bundle of all Person resources that match the given name ([how to search by string])
-1. **SHALL** support searching person using the `given-contains` search parameter:`GET [base]/Person?given-contains=[string]`Example:
-1. GET [base]/Person?given-contains=Eli
+1. **SHALL** support searching person using the `given:contains` search parameter:`GET [base]/Person?given:contains=[string]`Example:
+1. GET [base]/Person?given:contains=Eli
 **Implementation Notes:** Fetches a bundle of all Person resources that match the given name contains ([how to search by string])
-1. **SHALL** support searching person using the `given-exact` search parameter:`GET [base]/Person?given-exact=[string]`Example:
-1. GET [base]/Person?given-exact=Elin
+1. **SHALL** support searching person using the `given:exact` search parameter:`GET [base]/Person?given:exact=[string]`Example:
+1. GET [base]/Person?given:exact=Elin
 **Implementation Notes:** Fetches a bundle of all Person resources that match the exact given name ([how to search by string])
 1. **SHALL** support searching person using the `identifier` search parameter:`GET [base]/Person?identifier={system|}[code]`Example:
 1. 
@@ -102,7 +111,7 @@ The following search parameters and search parameter combinations SHALL be suppo
 1. **SHALL** support searching person using the `urban-district` search parameter:`GET [base]/Person?urban-district=[string]`Example:
 1. GET [base]/Person?urban-district=Sagene
 **Implementation Notes:** Fetches a bundle of all Person resources that match the urban district ([how to search by string])
-1. **SHALL** support searching person using the `zip` search parameter:`GET [base]/Person?zip=[code]`Example:
+1. **SHALL** support searching person using the `zip` search parameter:`GET [base]/Person?zip=[string]`Example:
 1. GET [base]/Person?zip=8037
 **Implementation Notes:** Fetches a bundle of all Person resources that match the zip ([how to search by string])
 
@@ -118,7 +127,7 @@ The following search parameters and search parameter combinations SHALL be suppo
   "version" : "0.1.0",
   "name" : "DIPSPerson",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -211,7 +220,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPersonLanguage"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPersonLanguage"]
       }]
     },
     {
@@ -237,7 +246,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathRegisteredTime"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPersonDeathRegisteredTime"]
       }]
     },
     {
@@ -248,7 +257,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathComment"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPersonDeathComment"]
       }]
     },
     {
@@ -259,7 +268,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathRegisteredBy"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPersonDeathRegisteredBy"]
       }]
     },
     {
@@ -270,7 +279,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPersonHospitalSectorId"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPersonHospitalSectorId"]
       }]
     },
     {
@@ -281,7 +290,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPersonHospitalSectorName"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPersonHospitalSectorName"]
       }]
     },
     {
@@ -416,7 +425,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPersonStateName"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPersonStateName"]
       }]
     },
     {
@@ -427,7 +436,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPersonLastOfficialAddressSyncTime"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPersonLastOfficialAddressSyncTime"]
       }]
     },
     {
@@ -458,7 +467,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPersonMunicipality"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPersonMunicipality"]
       }]
     },
     {

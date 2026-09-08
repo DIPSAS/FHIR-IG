@@ -120,14 +120,40 @@
             </button>
             <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <!-- menu.xml  -->
-
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
-  <li>
-    <a href="artifacts.html">Artifacts</a>
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      FHIR Artifacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Vitalsign Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Resource Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Data Type Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#5">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#6">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#7">Code Systems</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Vitalsign Examples</a>
+      </li>
+      <li>
+        <a href="artifacts.html#8">Example Instances</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="toc.html">TOC</a>
@@ -142,6 +168,7 @@
     <a href="download.html">Download</a>
   </li>
 </ul>
+
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
         </nav>  <!-- /.navbar -->
@@ -272,7 +299,7 @@
         
           Draft
           
-            as of 2026-09-03
+            as of 2026-09-08
           
         
       </td>
@@ -750,7 +777,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Plain text representation of the concept</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf8cca1a-248e-4e23-ae63-f6bc72ea4c99
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 68cfe44e-11c6-4f75-8bcf-3df509161615
 document.getElementById('cbNoImplVitalSignsObservationGCSK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('NoImplVitalSignsObservationGCSK'), 'binding', document.getElementById('cbNoImplVitalSignsObservationGCSK-binding').checked, document.getElementById('ppNoImplVitalSignsObservationGCSK'));
 document.getElementById('cbNoImplVitalSignsObservationGCSK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1816,7 +1843,7 @@ filterDesc(document.getElementById('NoImplVitalSignsObservationGCSK'), 'obligati
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"></span><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic">Provides guide for interpretation of component result</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf8cca1a-248e-4e23-ae63-f6bc72ea4c99
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 68cfe44e-11c6-4f75-8bcf-3df509161615
 document.getElementById('cbNoImplVitalSignsObservationGCSD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('NoImplVitalSignsObservationGCSD'), 'binding', document.getElementById('cbNoImplVitalSignsObservationGCSD-binding').checked, document.getElementById('ppNoImplVitalSignsObservationGCSD'));
 document.getElementById('cbNoImplVitalSignsObservationGCSD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2549,7 +2576,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Plain text representation of the concept</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf8cca1a-248e-4e23-ae63-f6bc72ea4c99
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 68cfe44e-11c6-4f75-8bcf-3df509161615
 document.getElementById('cbNoImplVitalSignsObservationGCSS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('NoImplVitalSignsObservationGCSS'), 'binding', document.getElementById('cbNoImplVitalSignsObservationGCSS-binding').checked, document.getElementById('ppNoImplVitalSignsObservationGCSS'));
 document.getElementById('cbNoImplVitalSignsObservationGCSS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2991,7 +3018,7 @@ filterDesc(document.getElementById('NoImplVitalSignsObservationGCSS'), 'obligati
         }
       ],
     },
-    "<a href="StructureDefinition-NoImplVitalSignsObservationGCS.html#Observation.subject" title="The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[http://dips.no/fhir/R4/StructureDefinition/DIPSPatient]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Who and/or what the observation is about</span>
+    "<a href="StructureDefinition-NoImplVitalSignsObservationGCS.html#Observation.subject" title="The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[http://dips.no/fhir/StructureDefinition/R4/DIPSPatient]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Who and/or what the observation is about</span>
     "<a href="StructureDefinition-NoImplVitalSignsObservationGCS.html#Observation.encounter" title="The healthcare event  (e.g. a patient and healthcare provider interaction) during which this observation is made" class="dict"><span style="text-decoration: underline">encounter</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[http://dips.no/fhir/R4/StructureDefinition/DIPSR4Encounter]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Healthcare event during which this observation is made</span>
     "<a href="StructureDefinition-NoImplVitalSignsObservationGCS.html#Observation.effectiveDateTime" title="The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the &quot;physiologically relevant time&quot;. This is usually either the time of the procedure or of specimen collection, but very often the source of the date/time is not known, only the date/time itself" class="dict"><span style="text-decoration: underline">effectiveDateTime</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Clinically relevant time/time-period for observation</span>
     "<a href="StructureDefinition-NoImplVitalSignsObservationGCS.html#Observation.performer" title="Who was responsible for asserting the observed value as &quot;true&quot;" class="dict"><span style="text-decoration: underline">performer</span></a>" : [ <span style="color: navy"> // sliced by type:type in the specified order Open</span>
@@ -3137,7 +3164,7 @@ Summary
 <p>Mandatory: 41 elements(11 nested mandatory elements)<br/> Fixed: 17 elements<br/> Prohibited: 85 elements</p><p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-DIPSPatient.html">DIPSPatient <span style="font-size: 8px">(http://dips.no/fhir/R4/StructureDefinition/DIPSPatient)</span></a></li>
+<li><a href="StructureDefinition-DIPSPatient.html">DIPSPatient <span style="font-size: 8px">(http://dips.no/fhir/StructureDefinition/R4/DIPSPatient)</span></a></li>
 <li><a href="StructureDefinition-DIPSR4Encounter.html">DIPSR4Encounter <span style="font-size: 8px">(http://dips.no/fhir/R4/StructureDefinition/DIPSR4Encounter)</span></a></li>
 <li><a href="StructureDefinition-DIPSPractitionerRole.html">DIPSPractitionerRole <span style="font-size: 8px">(http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRole)</span></a></li>
 <li><a href="StructureDefinition-DIPSPractitioner.html">DIPSPractitioner <span style="font-size: 8px">(http://dips.no/fhir/R4/StructureDefinition/DIPSPractitioner)</span></a></li>
@@ -3562,7 +3589,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Plain text representation of the concept</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf8cca1a-248e-4e23-ae63-f6bc72ea4c99
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 68cfe44e-11c6-4f75-8bcf-3df509161615
 document.getElementById('cbNoImplVitalSignsObservationGCSKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('NoImplVitalSignsObservationGCSKA'), 'binding', document.getElementById('cbNoImplVitalSignsObservationGCSKA-binding').checked, document.getElementById('ppNoImplVitalSignsObservationGCSKA'));
 document.getElementById('cbNoImplVitalSignsObservationGCSKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -4628,7 +4655,7 @@ filterDesc(document.getElementById('NoImplVitalSignsObservationGCSKA'), 'obligat
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"></span><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic">Provides guide for interpretation of component result</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf8cca1a-248e-4e23-ae63-f6bc72ea4c99
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 68cfe44e-11c6-4f75-8bcf-3df509161615
 document.getElementById('cbNoImplVitalSignsObservationGCSDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('NoImplVitalSignsObservationGCSDA'), 'binding', document.getElementById('cbNoImplVitalSignsObservationGCSDA-binding').checked, document.getElementById('ppNoImplVitalSignsObservationGCSDA'));
 document.getElementById('cbNoImplVitalSignsObservationGCSDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -5360,7 +5387,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Plain text representation of the concept</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf8cca1a-248e-4e23-ae63-f6bc72ea4c99
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 68cfe44e-11c6-4f75-8bcf-3df509161615
 document.getElementById('cbNoImplVitalSignsObservationGCSSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('NoImplVitalSignsObservationGCSSA'), 'binding', document.getElementById('cbNoImplVitalSignsObservationGCSSA-binding').checked, document.getElementById('ppNoImplVitalSignsObservationGCSSA'));
 document.getElementById('cbNoImplVitalSignsObservationGCSSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -5802,7 +5829,7 @@ filterDesc(document.getElementById('NoImplVitalSignsObservationGCSSA'), 'obligat
         }
       ],
     },
-    "<a href="StructureDefinition-NoImplVitalSignsObservationGCS.html#Observation.subject" title="The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[http://dips.no/fhir/R4/StructureDefinition/DIPSPatient]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Who and/or what the observation is about</span>
+    "<a href="StructureDefinition-NoImplVitalSignsObservationGCS.html#Observation.subject" title="The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[http://dips.no/fhir/StructureDefinition/R4/DIPSPatient]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Who and/or what the observation is about</span>
     "<a href="StructureDefinition-NoImplVitalSignsObservationGCS.html#Observation.encounter" title="The healthcare event  (e.g. a patient and healthcare provider interaction) during which this observation is made" class="dict"><span style="text-decoration: underline">encounter</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[http://dips.no/fhir/R4/StructureDefinition/DIPSR4Encounter]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Healthcare event during which this observation is made</span>
     "<a href="StructureDefinition-NoImplVitalSignsObservationGCS.html#Observation.effectiveDateTime" title="The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the &quot;physiologically relevant time&quot;. This is usually either the time of the procedure or of specimen collection, but very often the source of the date/time is not known, only the date/time itself" class="dict"><span style="text-decoration: underline">effectiveDateTime</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Clinically relevant time/time-period for observation</span>
     "<a href="StructureDefinition-NoImplVitalSignsObservationGCS.html#Observation.performer" title="Who was responsible for asserting the observed value as &quot;true&quot;" class="dict"><span style="text-decoration: underline">performer</span></a>" : [ <span style="color: navy"> // sliced by type:type in the specified order Open</span>
@@ -5944,7 +5971,7 @@ Summary
 <p>Mandatory: 41 elements(11 nested mandatory elements)<br/> Fixed: 17 elements<br/> Prohibited: 85 elements</p><p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-DIPSPatient.html">DIPSPatient <span style="font-size: 8px">(http://dips.no/fhir/R4/StructureDefinition/DIPSPatient)</span></a></li>
+<li><a href="StructureDefinition-DIPSPatient.html">DIPSPatient <span style="font-size: 8px">(http://dips.no/fhir/StructureDefinition/R4/DIPSPatient)</span></a></li>
 <li><a href="StructureDefinition-DIPSR4Encounter.html">DIPSR4Encounter <span style="font-size: 8px">(http://dips.no/fhir/R4/StructureDefinition/DIPSR4Encounter)</span></a></li>
 <li><a href="StructureDefinition-DIPSPractitionerRole.html">DIPSPractitionerRole <span style="font-size: 8px">(http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRole)</span></a></li>
 <li><a href="StructureDefinition-DIPSPractitioner.html">DIPSPractitioner <span style="font-size: 8px">(http://dips.no/fhir/R4/StructureDefinition/DIPSPractitioner)</span></a></li>
@@ -5998,7 +6025,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 3, 2026 11:16+0000">2026-09-03</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 8, 2026 11:30+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -62,8 +62,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"6.68"}
-    h3,h4,h5,h6{--heading-prefix:"6.68"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.76"}
+    h3,h4,h5,h6{--heading-prefix:"6.76"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -116,14 +116,40 @@
             </button>
             <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <!-- menu.xml  -->
-
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
-  <li>
-    <a href="artifacts.html">Artifacts</a>
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      FHIR Artifacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Vitalsign Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Resource Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Data Type Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#5">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#6">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#7">Code Systems</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Vitalsign Examples</a>
+      </li>
+      <li>
+        <a href="artifacts.html#8">Example Instances</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="toc.html">TOC</a>
@@ -138,6 +164,7 @@
     <a href="download.html">Download</a>
   </li>
 </ul>
+
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
         </nav>  <!-- /.navbar -->
@@ -232,10 +259,10 @@
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceHospital<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceHospital"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceHospital<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceHospital"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceHospital|0.1.0"/></span>
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceHospital|0.1.0"/></span>
       </td>
     </tr>
 
@@ -251,7 +278,7 @@
         
           Draft
           
-            as of 2026-09-03
+            as of 2026-09-08
           
         
       </td>
@@ -288,7 +315,6 @@ Element ID:     <code>
   <p><b>Usages:</b></p>
 <ul>
  <li>Use this Extension: <a href="StructureDefinition-DIPSHealthcareService.html">DIPSHealthcareService</a></li>
- <li>Examples for this Extension: <a href="HealthcareService-HealthcareService-Emergency-Room.html">Hs-8663 Kommunale Helse- Og Sosialtjenester</a></li>
 </ul>
 <p>You can also check for <a href="https://packages2.fhir.org/xig/resource/dips.fhir.no.core|current/StructureDefinition/StructureDefinition-DIPSHealthcareServiceHospital.json">usages in the FHIR IG Statistics</a></p>
 
@@ -349,7 +375,7 @@ Element ID:     <code>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceHospital"</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceHospital"</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Definition" class="hierarchy"/> <a style="font-style: italic; font-style: italic" no-external="true" href="StructureDefinition-DIPSHealthcareServiceHospital-definitions.html#Extension.value[x]" data-no-external="true">Slices for value[x]</a><a name="Extension.value_x_"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic"></span><span style="opacity: 0.5; font-style: italic">0</span><span style="opacity: 0.5; font-style: italic">..</span><span style="opacity: 0.5; font-style: italic">1</span></td>
@@ -360,7 +386,7 @@ Element ID:     <code>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>()</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Value of extension</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf8cca1a-248e-4e23-ae63-f6bc72ea4c99
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 68cfe44e-11c6-4f75-8bcf-3df509161615
 document.getElementById('cbDIPSHealthcareServiceHospitalD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DIPSHealthcareServiceHospitalD'), 'binding', document.getElementById('cbDIPSHealthcareServiceHospitalD-binding').checked, document.getElementById('ppDIPSHealthcareServiceHospitalD'));
 document.getElementById('cbDIPSHealthcareServiceHospitalD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -395,7 +421,7 @@ filterDesc(document.getElementById('DIPSHealthcareServiceHospitalD'), 'obligatio
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceHospital"</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceHospital"</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice.png" alt="." style="background-color: white; background-color: inherit" title="Slice Definition" class="hierarchy"/> <a style="font-style: italic; font-style: italic" no-external="true" href="StructureDefinition-DIPSHealthcareServiceHospital-definitions.html#Extension.value[x]" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list)." data-no-external="true">Slices for value[x]</a><a name="s-Extension.value_x_"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic"></span><span style="font-style: italic">0</span><span style="font-style: italic">..</span><span style="font-style: italic">1</span></td>
@@ -656,7 +682,7 @@ filterDesc(document.getElementById('DIPSHealthcareServiceHospitalD'), 'obligatio
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>()</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value of extension</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf8cca1a-248e-4e23-ae63-f6bc72ea4c99
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 68cfe44e-11c6-4f75-8bcf-3df509161615
 document.getElementById('cbDIPSHealthcareServiceHospitalS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DIPSHealthcareServiceHospitalS'), 'binding', document.getElementById('cbDIPSHealthcareServiceHospitalS-binding').checked, document.getElementById('ppDIPSHealthcareServiceHospitalS'));
 document.getElementById('cbDIPSHealthcareServiceHospitalS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -686,7 +712,7 @@ filterDesc(document.getElementById('DIPSHealthcareServiceHospitalS'), 'obligatio
            // <span style="color: navy; opacity: 0.8"></span>
  {
     "<a href="StructureDefinition-DIPSHealthcareServiceHospital.html#Extension.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces" class="dict"><span style="text-decoration: underline">id</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Unique id for inter-element referencing</span>
-    "<a href="StructureDefinition-DIPSHealthcareServiceHospital.html#Extension.url" title="Source of the definition for the extension code - a logical name or a URL" class="dict"><span style="text-decoration: underline">url</span></a>" : "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceHospital", <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span>
+    "<a href="StructureDefinition-DIPSHealthcareServiceHospital.html#Extension.url" title="Source of the definition for the extension code - a logical name or a URL" class="dict"><span style="text-decoration: underline">url</span></a>" : "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceHospital", <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span>
     "<a href="StructureDefinition-DIPSHealthcareServiceHospital.html#Extension.valueBase64Binary" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueBase64Binary</span></a>" : [ <span style="color: navy"> // sliced by type:$this in the specified order Open</span>
       { // <span style="color: navy; opacity: 0.8">Value of extension</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span>
       // from Element: <a href="http://hl7.org/fhir/R4/extensibility.html">extension</a>
@@ -748,7 +774,7 @@ Summary
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceHospital"</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceHospital"</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Definition" class="hierarchy"/> <a style="font-style: italic; font-style: italic" no-external="true" href="StructureDefinition-DIPSHealthcareServiceHospital-definitions.html#Extension.value[x]" data-no-external="true">Slices for value[x]</a><a name="a-Extension.value_x_"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic"></span><span style="opacity: 0.5; font-style: italic">0</span><span style="opacity: 0.5; font-style: italic">..</span><span style="opacity: 0.5; font-style: italic">1</span></td>
@@ -759,7 +785,7 @@ Summary
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>()</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Value of extension</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf8cca1a-248e-4e23-ae63-f6bc72ea4c99
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 68cfe44e-11c6-4f75-8bcf-3df509161615
 document.getElementById('cbDIPSHealthcareServiceHospitalDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DIPSHealthcareServiceHospitalDA'), 'binding', document.getElementById('cbDIPSHealthcareServiceHospitalDA-binding').checked, document.getElementById('ppDIPSHealthcareServiceHospitalDA'));
 document.getElementById('cbDIPSHealthcareServiceHospitalDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -794,7 +820,7 @@ filterDesc(document.getElementById('DIPSHealthcareServiceHospitalDA'), 'obligati
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceHospital"</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceHospital"</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice.png" alt="." style="background-color: white; background-color: inherit" title="Slice Definition" class="hierarchy"/> <a style="font-style: italic; font-style: italic" no-external="true" href="StructureDefinition-DIPSHealthcareServiceHospital-definitions.html#Extension.value[x]" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list)." data-no-external="true">Slices for value[x]</a><a name="sa-Extension.value_x_"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic"></span><span style="font-style: italic">0</span><span style="font-style: italic">..</span><span style="font-style: italic">1</span></td>
@@ -1055,7 +1081,7 @@ filterDesc(document.getElementById('DIPSHealthcareServiceHospitalDA'), 'obligati
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>()</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value of extension</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf8cca1a-248e-4e23-ae63-f6bc72ea4c99
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 68cfe44e-11c6-4f75-8bcf-3df509161615
 document.getElementById('cbDIPSHealthcareServiceHospitalSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DIPSHealthcareServiceHospitalSA'), 'binding', document.getElementById('cbDIPSHealthcareServiceHospitalSA-binding').checked, document.getElementById('ppDIPSHealthcareServiceHospitalSA'));
 document.getElementById('cbDIPSHealthcareServiceHospitalSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1085,7 +1111,7 @@ filterDesc(document.getElementById('DIPSHealthcareServiceHospitalSA'), 'obligati
            // <span style="color: navy; opacity: 0.8"></span>
  {
     "<a href="StructureDefinition-DIPSHealthcareServiceHospital.html#Extension.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces" class="dict"><span style="text-decoration: underline">id</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Unique id for inter-element referencing</span>
-    "<a href="StructureDefinition-DIPSHealthcareServiceHospital.html#Extension.url" title="Source of the definition for the extension code - a logical name or a URL" class="dict"><span style="text-decoration: underline">url</span></a>" : "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceHospital", <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span>
+    "<a href="StructureDefinition-DIPSHealthcareServiceHospital.html#Extension.url" title="Source of the definition for the extension code - a logical name or a URL" class="dict"><span style="text-decoration: underline">url</span></a>" : "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceHospital", <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span>
     "<a href="StructureDefinition-DIPSHealthcareServiceHospital.html#Extension.valueBase64Binary" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueBase64Binary</span></a>" : [ <span style="color: navy"> // sliced by type:$this in the specified order Open</span>
       { // <span style="color: navy; opacity: 0.8">Value of extension</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span>
       // from Element: <a href="http://hl7.org/fhir/R4/extensibility.html">extension</a>
@@ -1201,7 +1227,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 3, 2026 11:16+0000">2026-09-03</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 8, 2026 11:30+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

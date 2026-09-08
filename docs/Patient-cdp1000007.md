@@ -6,7 +6,7 @@
 
 ## Example Patient: cdp1000007
 
-Profiles: [DIPSPatient](StructureDefinition-DIPSPatient.md), [http://dips.no/fhir/R4/StructureDefinition/NoBasisPatient](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&canonical=http://dips.no/fhir/R4/StructureDefinition/NoBasisPatient)
+Profiles: [http://dips.no/fhir/R4/StructureDefinition/DIPSPatient](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&canonical=http://dips.no/fhir/R4/StructureDefinition/DIPSPatient), [http://dips.no/fhir/R4/StructureDefinition/NoBasisPatient](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&canonical=http://dips.no/fhir/R4/StructureDefinition/NoBasisPatient)
 
 Person (Dips Api Unittest), Død(official) Male, DoB: 1956-08-05 ( http://dips.no/fhir/namingsystem/dips-patientid#1000007)
 
@@ -21,8 +21,6 @@ Person (Dips Api Unittest), Død(official) Male, DoB: 1956-08-05 ( http://dips.n
 * ph: 75532557(Home)
 * Sandnessjøen 18 8800 Norge (home)
  | | |
-|  | Test | | |
-|  | 2004-03-23 00:00:00+0530 | | |
 
 
 

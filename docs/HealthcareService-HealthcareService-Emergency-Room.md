@@ -12,9 +12,9 @@ Profiles: [DIPSHealthcareService](StructureDefinition-DIPSHealthcareService.md),
 
 Tag: 
 
-**DIPSHealthcareServiceDepartment**: [Organization: identifier = urn:oid:1.3.6.1.4.1.9038.70.3#22](Organization-afa22.md)
+**no/fhir/R4/StructureDefinition/DIPSHealthcareServiceDepartment**: [Organization: identifier = urn:oid:1.3.6.1.4.1.9038.70.3#22](Organization-afa22.md)
 
-**DIPSHealthcareServiceHospital**: [Organization/afm1](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&canonical=http://fhir.org/packages/hl7.fhir.no.basis/Organization/afm1)
+**no/fhir/R4/StructureDefinition/DIPSHealthcareServiceHospital**: [Organization/afm1](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&canonical=http://fhir.org/packages/hl7.fhir.no.basis/Organization/afm1)
 
 **identifier**: `urn:oid:1.3.6.1.4.1.9038.51.1`/1003604 (use: official, ), `urn:oid:2.16.578.1.12.4.1.2`/155204 (use: official, ), `http://dips.no/fhir/namingsystem/healthcareserviceId`/F1E097119EF54BCE8675892FF91641B2 (use: official, )
 

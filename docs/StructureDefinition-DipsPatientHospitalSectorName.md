@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DipsPatientHospitalSectorName | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DipsPatientHospitalSectorName |
+| *Official URL*:http://dips.no/fhir/StructureDefinition/R4/DIPSPatientHospitalSectorName | *Version*:0.1.0 |
+| Draft as of 2026-09-08 | *Computable Name*:DipsPatientHospitalSectorName |
 
 **Context of Use**
 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-DipsPatientHospitalS
 {
   "resourceType" : "StructureDefinition",
   "id" : "DipsPatientHospitalSectorName",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientHospitalSectorName",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientHospitalSectorName",
   "version" : "0.1.0",
   "name" : "DipsPatientHospitalSectorName",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -84,7 +84,7 @@ Other representations of profile: [CSV](StructureDefinition-DipsPatientHospitalS
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientHospitalSectorName"
+      "fixedUri" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientHospitalSectorName"
     },
     {
       "id" : "Extension.value[x]",

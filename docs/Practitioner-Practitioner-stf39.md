@@ -12,9 +12,9 @@ Profiles: [DIPSPractitioner](StructureDefinition-DIPSPractitioner.md), [http://d
 
 Tag: 
 
-**IsSpecialistExtension**: false
+**no/fhir/R4/StructureDefinition/IsSpecialistExtension**: false
 
-**DIPSPractitionerSpecialist**: false
+**no/fhir/R4/StructureDefinition/DIPSPractitionerSpecialist**: false
 
 **identifier**: HelsepersonellregisteretNummer/12256545 (use: official, ), `http://dips.no/fhir/namingsystem/dips-personid`/39 (use: official, )
 

@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonParentalResponsibility | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DIPSRelatedPersonParentalResponsibility |
+| *Official URL*:http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonParentalResponsibility | *Version*:0.1.0 |
+| Draft as of 2026-09-08 | *Computable Name*:DIPSRelatedPersonParentalResponsibility |
 
 **Context of Use**
 
@@ -18,7 +18,6 @@
 **Usages:**
 
 * Use this Extension: [DIPSRelatedPerson](StructureDefinition-DIPSRelatedPerson.md)
-* Examples for this Extension: [RelatedPerson/aoz2007976cdp2009597](RelatedPerson-aoz2007976cdp2009597.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.no.core|current/StructureDefinition/StructureDefinition-DIPSRelatedPersonParentalResponsibility.json)
 
@@ -40,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-DIPSRelatedPersonPar
 {
   "resourceType" : "StructureDefinition",
   "id" : "DIPSRelatedPersonParentalResponsibility",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonParentalResponsibility",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonParentalResponsibility",
   "version" : "0.1.0",
   "name" : "DIPSRelatedPersonParentalResponsibility",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -85,7 +84,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSRelatedPersonPar
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonParentalResponsibility"
+      "fixedUri" : "http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonParentalResponsibility"
     },
     {
       "id" : "Extension.value[x]",

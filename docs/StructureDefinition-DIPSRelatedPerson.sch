@@ -12,9 +12,9 @@
   <sch:pattern>
     <sch:title>f:RelatedPerson</sch:title>
     <sch:rule context="f:RelatedPerson">
-      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAppointedByMunicipality']) &lt;= 1">extension with URL = 'http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAppointedByMunicipality': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonResponsibleRequisitioner']) &lt;= 1">extension with URL = 'http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonResponsibleRequisitioner': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAdditionalInformation']) &lt;= 1">extension with URL = 'http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAdditionalInformation': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonAppointedByMunicipality']) &lt;= 1">extension with URL = 'http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonAppointedByMunicipality': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonResponsibleRequisitioner']) &lt;= 1">extension with URL = 'http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonResponsibleRequisitioner': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonAdditionalInformation']) &lt;= 1">extension with URL = 'http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonAdditionalInformation': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:photo) &lt;= 0">photo: maximum cardinality of 'photo' is 0</sch:assert>
       <sch:assert test="count(f:communication) &lt;= 0">communication: maximum cardinality of 'communication' is 0</sch:assert>
     </sch:rule>

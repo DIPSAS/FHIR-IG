@@ -8,11 +8,11 @@
 
 Profiles: [DIPSRelatedPerson](StructureDefinition-DIPSRelatedPerson.md), [no-basis-RelatedPerson](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&canonical=http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson)
 
-**DIPSRelatedPersonAppointedByMunicipality**: [not stated]: 688 (Namsos)
+**no/fhir/R4/StructureDefinition/DIPSRelatedPersonAppointedByMunicipality**: [not stated]: 688 (Namsos)
 
-**DIPSRelatedPersonAdditionalInformation**: Dette er vergetype "Setteverge"
+**no/fhir/R4/StructureDefinition/DIPSRelatedPersonAdditionalInformation**: Dette er vergetype "Setteverge"
 
-**DIPSRelatedPersonResponsibleRequisitioner**: [KIRURG (TESTPLAN RESSURS), KJELL, TESTSYKEHUSET HF](PractitionerRole-agb1000043.md)
+**no/fhir/R4/StructureDefinition/DIPSRelatedPersonResponsibleRequisitioner**: [KIRURG (TESTPLAN RESSURS), KJELL, TESTSYKEHUSET HF](PractitionerRole-agb1000043.md)
 
 **identifier**: `http://dips.no/fhir/namingsystem/dips-guardianid`/1000003 (use: official, )
 

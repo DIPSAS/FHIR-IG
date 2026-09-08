@@ -12,7 +12,7 @@
   <sch:pattern>
     <sch:title>f:Practitioner</sch:title>
     <sch:rule context="f:Practitioner">
-      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/R4/StructureDefinition/IsSpecialistExtension']) &lt;= 1">extension with URL = 'http://dips.no/fhir/R4/StructureDefinition/IsSpecialistExtension': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/StructureDefinition/R4/IsSpecialistExtension']) &lt;= 1">extension with URL = 'http://dips.no/fhir/StructureDefinition/R4/IsSpecialistExtension': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:photo) &lt;= 0">photo: maximum cardinality of 'photo' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>

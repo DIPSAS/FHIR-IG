@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPerson | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DIPSRelatedPerson |
+| Draft as of 2026-09-08 | *Computable Name*:DIPSRelatedPerson |
 
 The DIPS Related Person Profile inherits from the FHIR Related Person resource; refer to it for scope and usage definitions
 
@@ -54,10 +54,13 @@ The following search parameters and search parameter combinations SHALL be suppo
 1. **SHALL** support searching Related Person using the `address-state` search parameter:`GET [base]/RelatedPerson?address-state=[number]`Example:
 1. GET [base]/RelatedPerson?address-state=03
 **Implementation Notes:** Fetches a bundle of all Related Person resources that match the address state ([how to search by string])
+1. **SHALL** support searching Related Person using the `birthdate` search parameter:`GET [base]/RelatedPerson?birthdate=[date]`Example:
+1. GET [base]/RelatedPerson?birthdate=1980-05-12
+**Implementation Notes:** Fetches a bundle of all Related Person resources that match the exact date of birth ([how to search by string])
 1. **SHALL** support searching Related Person using the `email` search parameter:`GET [base]/RelatedPerson?email=[string]`Example:
 1. GET [base]/RelatedPerson?email=james.jare@gmail.com
 **Implementation Notes:** Fetches a bundle of all Related Person resources that match email ([how to search by string])
-1. **SHALL** support searching Related Person using the `family-name` search parameter:`GET [base]/RelatedPerson?family=[string]`Example:
+1. **SHALL** support searching Related Person using the `family` search parameter:`GET [base]/RelatedPerson?family=[string]`Example:
 1. GET [base]/RelatedPerson?family=Autorisasjon
 **Implementation Notes:** Fetches a bundle of all Related Person resources that match the family name ([how to search by string])
 1. **SHALL** support searching Related Person using the `family-contains` search parameter:`GET [base]/RelatedPerson?family:contains=[string]`Example:
@@ -118,7 +121,7 @@ The following search parameters and search parameter combinations SHALL be suppo
   "version" : "0.1.0",
   "name" : "DIPSRelatedPerson",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -181,7 +184,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonKinship"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonKinship"]
       }]
     },
     {
@@ -192,7 +195,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonParentalResponsibility"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonParentalResponsibility"]
       }]
     },
     {
@@ -203,7 +206,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAppointedByMunicipality"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonAppointedByMunicipality"]
       }]
     },
     {
@@ -229,7 +232,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonResponsibleRequisitioner"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonResponsibleRequisitioner"]
       }]
     },
     {
@@ -240,7 +243,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAdditionalInformation"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonAdditionalInformation"]
       }]
     },
     {
@@ -407,7 +410,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/MunicipalityCode"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/MunicipalityCode"]
       }]
     },
     {

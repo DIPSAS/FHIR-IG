@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHealthCarePosition | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DIPSPractitionerRoleHealthCarePosition |
+| *Official URL*:http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHealthCarePosition | *Version*:0.1.0 |
+| Draft as of 2026-09-08 | *Computable Name*:DIPSPractitionerRoleHealthCarePosition |
 
 **Context of Use**
 
@@ -18,7 +18,6 @@
 **Usages:**
 
 * Use this Extension: [DIPSPractitionerRole](StructureDefinition-DIPSPractitionerRole.md)
-* Examples for this Extension: [PractitionerRole/PractitionerRole-Physiotherapist](PractitionerRole-PractitionerRole-Physiotherapist.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.no.core|current/StructureDefinition/StructureDefinition-DIPSPractitionerRoleHealthCarePosition.json)
 
@@ -40,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-DIPSPractitionerRole
 {
   "resourceType" : "StructureDefinition",
   "id" : "DIPSPractitionerRoleHealthCarePosition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHealthCarePosition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHealthCarePosition",
   "version" : "0.1.0",
   "name" : "DIPSPractitionerRoleHealthCarePosition",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -85,7 +84,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSPractitionerRole
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHealthCarePosition"
+      "fixedUri" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHealthCarePosition"
     },
     {
       "id" : "Extension.value[x]",

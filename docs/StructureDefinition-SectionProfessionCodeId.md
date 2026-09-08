@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/StructureDefinition/SectionProfessionCodeId | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:SectionProfessionCodeId |
+| *Official URL*:http://DIPS.no/fhir/StructureDefinition/R4/SectionProfessionCodeId | *Version*:0.1.0 |
+| Draft as of 2026-09-08 | *Computable Name*:SectionProfessionCodeId |
 
 **Context of Use**
 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-SectionProfessionCod
 {
   "resourceType" : "StructureDefinition",
   "id" : "SectionProfessionCodeId",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/SectionProfessionCodeId",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/SectionProfessionCodeId",
   "version" : "0.1.0",
   "name" : "SectionProfessionCodeId",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -84,7 +84,7 @@ Other representations of profile: [CSV](StructureDefinition-SectionProfessionCod
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://dips.no/fhir/R4/StructureDefinition/SectionProfessionCodeId"
+      "fixedUri" : "http://DIPS.no/fhir/StructureDefinition/R4/SectionProfessionCodeId"
     },
     {
       "id" : "Extension.value[x]",

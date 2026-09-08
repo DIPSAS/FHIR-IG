@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/StructureDefinition/LocationLabLocalizationId | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:LocationLabLocalizationId |
+| *Official URL*:http://DIPS.no/fhir/StructureDefinition/R4/Location-labLocalizationId | *Version*:0.1.0 |
+| Draft as of 2026-09-08 | *Computable Name*:LocationLabLocalizationId |
 
 **Context of Use**
 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-LocationLabLocalizat
 {
   "resourceType" : "StructureDefinition",
   "id" : "LocationLabLocalizationId",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/LocationLabLocalizationId",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/Location-labLocalizationId",
   "version" : "0.1.0",
   "name" : "LocationLabLocalizationId",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -84,7 +84,7 @@ Other representations of profile: [CSV](StructureDefinition-LocationLabLocalizat
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://dips.no/fhir/R4/StructureDefinition/LocationLabLocalizationId"
+      "fixedUri" : "http://DIPS.no/fhir/StructureDefinition/R4/Location-labLocalizationId"
     },
     {
       "id" : "Extension.value[x]",

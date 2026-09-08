@@ -9,8 +9,8 @@
     "systems" : ["urn:oid:2.16.578.1.12.4.1.1.8240"],
     "uses" : {
     },
-    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
-    "StructureDefinition-ContactTypeExtension.html" : "ContactTypeExtension"
+    "StructureDefinition-ContactTypeExtension.html" : "ContactTypeExtension",
+    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter"
   },
   {
     "url" : "http://dips.no/fhir/R4/ValueSet/DIPSEncounterV3",
@@ -194,8 +194,8 @@
     "systems" : ["urn:oid:2.16.578.1.12.4.1.1.8406"],
     "uses" : {
     },
-    "StructureDefinition-NprLevelOfCareExtension.html" : "NprLevelOfCareExtension",
-    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter"
+    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
+    "StructureDefinition-NprLevelOfCareExtension.html" : "NprLevelOfCareExtension"
   },
   {
     "url" : "http://dips.no/fhir/R4/ValueSet/OrganizationAccessTypes",
@@ -614,8 +614,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.328"],
     "uses" : {
     },
-    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation",
-    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter"
+    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
+    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/narrative-status",

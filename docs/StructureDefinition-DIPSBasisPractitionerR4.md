@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSBasisPractitionerR4 | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DIPSBasisPractitionerR4 |
+| Draft as of 2026-09-08 | *Computable Name*:DIPSBasisPractitionerR4 |
 
 **Usages:**
 
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSBasisPractitione
   "version" : "0.1.0",
   "name" : "DIPSBasisPractitionerR4",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -104,7 +104,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSBasisPractitione
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerSpecialist"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerSpecialist"]
       }]
     },
     {
@@ -115,7 +115,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSBasisPractitione
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/IsSpecialistExtension"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/IsSpecialistExtension"]
       }]
     },
     {

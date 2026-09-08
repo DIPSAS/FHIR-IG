@@ -8,11 +8,11 @@
 
 Profiles: [DIPSRelatedPerson](StructureDefinition-DIPSRelatedPerson.md), [no-basis-RelatedPerson](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&canonical=http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson)
 
-**DIPSRelatedPersonAppointedByMunicipality**: [not stated]: 524 (Mandal)
+**no/fhir/R4/StructureDefinition/DIPSRelatedPersonAppointedByMunicipality**: [not stated]: 524 (Mandal)
 
-**DIPSRelatedPersonAdditionalInformation**: Dette er vergetype 'Hjelpeverge' for pasient "Mange Verger"
+**no/fhir/R4/StructureDefinition/DIPSRelatedPersonAdditionalInformation**: Dette er vergetype 'Hjelpeverge' for pasient "Mange Verger"
 
-**DIPSRelatedPersonResponsibleRequisitioner**: [KIRURG, HOFTE, TESTSYKEHUSET HF](PractitionerRole-agb1000456.md)
+**no/fhir/R4/StructureDefinition/DIPSRelatedPersonResponsibleRequisitioner**: [KIRURG, HOFTE, TESTSYKEHUSET HF](PractitionerRole-agb1000456.md)
 
 **identifier**: `http://dips.no/fhir/namingsystem/dips-guardianid`/1000001 (use: official, )
 

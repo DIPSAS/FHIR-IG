@@ -8,7 +8,7 @@
 
 Profiles: [DIPSRelatedPerson](StructureDefinition-DIPSRelatedPerson.md), [no-basis-RelatedPerson](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&canonical=http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson)
 
-**DIPSRelatedPersonKinship**: Mor
+**no/fhir/R4/StructureDefinition/DIPSRelatedPersonKinship**: Mor
 
 **identifier**: FellesHjelpenummer/12526845852 (use: temp, ), `http://dips.no/fhir/namingsystem/dips-relativeid`/aoz1000067cdp1000063 (use: official, )
 

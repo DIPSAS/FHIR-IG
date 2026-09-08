@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRole | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DIPSPractitionerRole |
+| Draft as of 2026-09-08 | *Computable Name*:DIPSPractitionerRole |
 
 The DIPS Practitioner Role Profile inherits from the FHIR Practitioner Role resource; refer to it for scope and usage definitions
 
@@ -17,7 +17,7 @@ The DIPS Practitioner Role Profile inherits from the FHIR Practitioner Role reso
 
 The following are example usage scenarios for this profile:
 
-Query by Practitioner Role name or NPI
+Query by Practitioner Role name or HPR number
 
 **Usages:**
 
@@ -85,7 +85,7 @@ The following search parameters and search parameter combinations SHALL be suppo
 1. **SHALL** support searching Practitioner Role using the `page` search parameter:`GET [base]/PractitionerRole?page=[number]`Example:
 1. GET [base]/PractitionerRole?page=3
 **Implementation Notes:** Fetches a bundle of all PractitionerRole resources that match the page ([how to search by string])
-1. **SHALL** support searching Practitioner Role using the `name` search parameter:`GET [base]/PractitionerRole?_pretty=[boolean]`Example:
+1. **SHALL** support searching Practitioner Role using the `_pretty` search parameter:`GET [base]/PractitionerRole?_pretty=[boolean]`Example:
 1. GET [base]/PractitionerRole?_pretty=true
 **Implementation Notes:** Fetches a bundle of all PractitionerRole resources with pretty text or not ([how to search by string])
 
@@ -101,7 +101,7 @@ The following search parameters and search parameter combinations SHALL be suppo
   "version" : "0.1.0",
   "name" : "DIPSPractitionerRole",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -175,7 +175,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHealthCarePartyType"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHealthCarePartyType"]
       }]
     },
     {
@@ -187,7 +187,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationType"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleCommunicationType"]
       }]
     },
     {
@@ -198,7 +198,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHealthCarePartyDepartment"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHealthcarePartyDepartment"]
       }]
     },
     {
@@ -222,7 +222,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleWard"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleWard"]
       }]
     },
     {
@@ -246,7 +246,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleSection"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleSection"]
       }]
     },
     {
@@ -270,7 +270,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHospital"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHospital"]
       }]
     },
     {
@@ -294,7 +294,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHcpRoleName"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHcpRoleName"]
       }]
     },
     {
@@ -315,7 +315,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleUserRoleDepartment"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleUserRoleDepartment"]
       }]
     },
     {
@@ -339,7 +339,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleDipsSignature"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleDipsSignature"]
       }]
     },
     {
@@ -359,7 +359,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleUserRoleLastUpdated"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleUserRoleLastUpdated"]
       }]
     },
     {
@@ -380,7 +380,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHealthCarePosition"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHealthCarePosition"]
       }]
     },
     {
@@ -424,7 +424,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleUserRoleName"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleUserRoleName"]
       }]
     },
     {
@@ -444,7 +444,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleUserRoleId"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleUserRoleId"]
       }]
     },
     {

@@ -1,15 +1,17 @@
-# DIPSReferenceSection - DIPS Core Implementation Guide v0.1.0
+# DIPS Reference Section - DIPS Core Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DIPSReferenceSection**
+* **DIPS Reference Section**
 
-## Extension: DIPSReferenceSection 
+## Extension: DIPS Reference Section 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceSection | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DIPSReferenceSection |
+| *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSReferenceSection | *Version*:0.1.0 |
+| Draft as of 2026-09-08 | *Computable Name*:DIPSReferenceSection |
+
+A reference to the DIPS hospital Section, modelled as an Organization, associated with this remote monitoring episode of care.
 
 **Context of Use**
 
@@ -17,7 +19,7 @@
 
 **Usages:**
 
-* Use this Extension: [DIPSRemoteMonitoring](StructureDefinition-DIPSRemoteMonitoring.md)
+* Use this Extension: [DIPS Remote Monitoring](StructureDefinition-DIPSRemoteMonitoring.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.no.core|current/StructureDefinition/StructureDefinition-DIPSReferenceSection.json)
 
@@ -39,11 +41,12 @@ Other representations of profile: [CSV](StructureDefinition-DIPSReferenceSection
 {
   "resourceType" : "StructureDefinition",
   "id" : "DIPSReferenceSection",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceSection",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSReferenceSection",
   "version" : "0.1.0",
   "name" : "DIPSReferenceSection",
+  "title" : "DIPS Reference Section",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -53,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSReferenceSection
       "use" : "work"
     }]
   }],
+  "description" : "A reference to the DIPS hospital Section, modelled as an Organization, associated with this remote monitoring episode of care.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -78,7 +82,9 @@ Other representations of profile: [CSV](StructureDefinition-DIPSReferenceSection
   "differential" : {
     "element" : [{
       "id" : "Extension",
-      "path" : "Extension"
+      "path" : "Extension",
+      "short" : "DIPS Reference Section",
+      "definition" : "A reference to the DIPS hospital Section, modelled as an Organization, associated with this remote monitoring episode of care."
     },
     {
       "id" : "Extension.extension",
@@ -88,7 +94,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSReferenceSection
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceSection"
+      "fixedUri" : "http://dips.no/fhir/StructureDefinition/DIPSReferenceSection"
     },
     {
       "id" : "Extension.value[x]",

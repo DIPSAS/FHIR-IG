@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSPersonMunicipality | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DIPSPersonMunicipality |
+| *Official URL*:http://dips.no/fhir/StructureDefinition/R4/DIPSPersonMunicipality | *Version*:0.1.0 |
+| Draft as of 2026-09-08 | *Computable Name*:DIPSPersonMunicipality |
 
 **Context of Use**
 
@@ -18,7 +18,6 @@
 **Usages:**
 
 * Use this Extension: [DIPSPerson](StructureDefinition-DIPSPerson.md)
-* Examples for this Extension: [Person/ajf1000001](Person-ajf1000001.md) and [Person/ajf242](Person-ajf242.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.no.core|current/StructureDefinition/StructureDefinition-DIPSPersonMunicipality.json)
 
@@ -40,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-DIPSPersonMunicipali
 {
   "resourceType" : "StructureDefinition",
   "id" : "DIPSPersonMunicipality",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonMunicipality",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonMunicipality",
   "version" : "0.1.0",
   "name" : "DIPSPersonMunicipality",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -85,7 +84,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSPersonMunicipali
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonMunicipality"
+      "fixedUri" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonMunicipality"
     },
     {
       "id" : "Extension.value[x]",

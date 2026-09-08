@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/StructureDefinition/WardTypeCodeId | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:WardTypeCodeId |
+| *Official URL*:http://dips.no/fhir/StructureDefinition/R4/WardTypeCodeId | *Version*:0.1.0 |
+| Draft as of 2026-09-08 | *Computable Name*:WardTypeCodeId |
 
 **Context of Use**
 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-WardTypeCodeId.csv),
 {
   "resourceType" : "StructureDefinition",
   "id" : "WardTypeCodeId",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/WardTypeCodeId",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/WardTypeCodeId",
   "version" : "0.1.0",
   "name" : "WardTypeCodeId",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -88,7 +88,7 @@ Other representations of profile: [CSV](StructureDefinition-WardTypeCodeId.csv),
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://dips.no/fhir/R4/StructureDefinition/WardTypeCodeId"
+      "fixedUri" : "http://dips.no/fhir/StructureDefinition/R4/WardTypeCodeId"
     },
     {
       "id" : "Extension.value[x]",

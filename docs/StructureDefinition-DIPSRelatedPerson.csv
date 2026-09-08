@@ -24,15 +24,15 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"RelatedPerson.extension:kinship","RelatedPerson.extension","kinship","","",0,*,"","","","Extension {[CanonicalType[http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonKinship]]} {[]}
+"RelatedPerson.extension:kinship","RelatedPerson.extension","kinship","","",0,*,"","","","Extension {[CanonicalType[http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonKinship]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"RelatedPerson.extension:parentalResponsibility","RelatedPerson.extension","parentalResponsibility","","",0,*,"","","","Extension {[CanonicalType[http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonParentalResponsibility]]} {[]}
+"RelatedPerson.extension:parentalResponsibility","RelatedPerson.extension","parentalResponsibility","","",0,*,"","","","Extension {[CanonicalType[http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonParentalResponsibility]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"RelatedPerson.extension:appointedByMunicipality","RelatedPerson.extension","appointedByMunicipality","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAppointedByMunicipality]]} {[]}
+"RelatedPerson.extension:appointedByMunicipality","RelatedPerson.extension","appointedByMunicipality","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonAppointedByMunicipality]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
@@ -43,7 +43,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "RelatedPerson.extension:appointedByMunicipality.url","RelatedPerson.extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAppointedByMunicipality""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonAppointedByMunicipality""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
 "RelatedPerson.extension:appointedByMunicipality.value[x]","RelatedPerson.extension.value[x]","","","",0,1,"","","","Coding {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
@@ -69,11 +69,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "RelatedPerson.extension:appointedByMunicipality.value[x].userSelected","RelatedPerson.extension.value[x].userSelected","","","",0,0,"","","Y","boolean {[]} {[]}
 ","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CD.codingRationale","Sometimes implied by being first"
-"RelatedPerson.extension:responsibleRequisitioner","RelatedPerson.extension","responsibleRequisitioner","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonResponsibleRequisitioner]]} {[]}
+"RelatedPerson.extension:responsibleRequisitioner","RelatedPerson.extension","responsibleRequisitioner","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonResponsibleRequisitioner]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"RelatedPerson.extension:additionalInformation","RelatedPerson.extension","additionalInformation","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAdditionalInformation]]} {[]}
+"RelatedPerson.extension:additionalInformation","RelatedPerson.extension","additionalInformation","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonAdditionalInformation]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
@@ -682,7 +682,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "RelatedPerson.address.district.extension:municipalitycode","RelatedPerson.address.district.extension","municipalitycode","","",0,1,"","","","Extension {[CanonicalType[http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode]]} {[]}
 ","Coded value for municipality/county Norwegian kommune","Coded value for municipality/county Norwegian kommune","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"RelatedPerson.address.district.extension:municipalityCode","RelatedPerson.address.district.extension","municipalityCode","","",0,*,"","","","Extension {[CanonicalType[http://dips.no/fhir/R4/StructureDefinition/MunicipalityCode]]} {[]}
+"RelatedPerson.address.district.extension:municipalityCode","RelatedPerson.address.district.extension","municipalityCode","","",0,*,"","","","Extension {[CanonicalType[http://dips.no/fhir/StructureDefinition/R4/MunicipalityCode]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "RelatedPerson.address.district.value","RelatedPerson.address.district.value","","","",0,1,"","","","string {[]} {[]}

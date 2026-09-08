@@ -1,15 +1,17 @@
-# DIPSMonitoringNotes - DIPS Core Implementation Guide v0.1.0
+# DIPS Monitoring Notes - DIPS Core Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DIPSMonitoringNotes**
+* **DIPS Monitoring Notes**
 
-## Extension: DIPSMonitoringNotes 
+## Extension: DIPS Monitoring Notes 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSMonitoringNotes | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DIPSMonitoringNotes |
+| *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSMonitoringNotes | *Version*:0.1.0 |
+| Draft as of 2026-09-08 | *Computable Name*:DIPSMonitoringNotes |
+
+Free-text clinical notes recorded against this remote monitoring episode of care.
 
 **Context of Use**
 
@@ -17,7 +19,7 @@
 
 **Usages:**
 
-* Use this Extension: [DIPSRemoteMonitoring](StructureDefinition-DIPSRemoteMonitoring.md)
+* Use this Extension: [DIPS Remote Monitoring](StructureDefinition-DIPSRemoteMonitoring.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.no.core|current/StructureDefinition/StructureDefinition-DIPSMonitoringNotes.json)
 
@@ -39,11 +41,12 @@ Other representations of profile: [CSV](StructureDefinition-DIPSMonitoringNotes.
 {
   "resourceType" : "StructureDefinition",
   "id" : "DIPSMonitoringNotes",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSMonitoringNotes",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSMonitoringNotes",
   "version" : "0.1.0",
   "name" : "DIPSMonitoringNotes",
+  "title" : "DIPS Monitoring Notes",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -53,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSMonitoringNotes.
       "use" : "work"
     }]
   }],
+  "description" : "Free-text clinical notes recorded against this remote monitoring episode of care.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -78,7 +82,9 @@ Other representations of profile: [CSV](StructureDefinition-DIPSMonitoringNotes.
   "differential" : {
     "element" : [{
       "id" : "Extension",
-      "path" : "Extension"
+      "path" : "Extension",
+      "short" : "DIPS Monitoring Notes",
+      "definition" : "Free-text clinical notes recorded against this remote monitoring episode of care."
     },
     {
       "id" : "Extension.extension",
@@ -88,7 +94,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSMonitoringNotes.
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://dips.no/fhir/R4/StructureDefinition/DIPSMonitoringNotes"
+      "fixedUri" : "http://dips.no/fhir/StructureDefinition/DIPSMonitoringNotes"
     },
     {
       "id" : "Extension.value[x]",

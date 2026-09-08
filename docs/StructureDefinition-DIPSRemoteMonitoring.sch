@@ -12,11 +12,10 @@
   <sch:pattern>
     <sch:title>f:EpisodeOfCare</sch:title>
     <sch:rule context="f:EpisodeOfCare">
-      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/R4/StructureDefinition/DIPSMonitoringNotes']) &lt;= 1">extension with URL = 'http://dips.no/fhir/R4/StructureDefinition/DIPSMonitoringNotes': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceLocation']) &lt;= 1">extension with URL = 'http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceLocation': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceSection']) &lt;= 1">extension with URL = 'http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceSection': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceWard']) &lt;= 1">extension with URL = 'http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceWard': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:statusHistory) &lt;= 0">statusHistory: maximum cardinality of 'statusHistory' is 0</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/StructureDefinition/DIPSMonitoringNotes']) &lt;= 1">extension with URL = 'http://dips.no/fhir/StructureDefinition/DIPSMonitoringNotes': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/StructureDefinition/DIPSReferenceLocation']) &lt;= 1">extension with URL = 'http://dips.no/fhir/StructureDefinition/DIPSReferenceLocation': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/StructureDefinition/DIPSReferenceSection']) &lt;= 1">extension with URL = 'http://dips.no/fhir/StructureDefinition/DIPSReferenceSection': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/StructureDefinition/DIPSReferenceWard']) &lt;= 1">extension with URL = 'http://dips.no/fhir/StructureDefinition/DIPSReferenceWard': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:diagnosis) &lt;= 0">diagnosis: maximum cardinality of 'diagnosis' is 0</sch:assert>
       <sch:assert test="count(f:team) &lt;= 0">team: maximum cardinality of 'team' is 0</sch:assert>
       <sch:assert test="count(f:account) &lt;= 0">account: maximum cardinality of 'account' is 0</sch:assert>
@@ -209,6 +208,7 @@
     <sch:title>f:EpisodeOfCare/f:careManager</sch:title>
     <sch:rule context="f:EpisodeOfCare/f:careManager">
       <sch:assert test="count(f:id) &lt;= 0">id: maximum cardinality of 'id' is 0</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/StructureDefinition/DIPSIsResponsible']) &lt;= 1">extension with URL = 'http://dips.no/fhir/StructureDefinition/DIPSIsResponsible': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:reference) &lt;= 1">reference: maximum cardinality of 'reference' is 1</sch:assert>
       <sch:assert test="count(f:type) &lt;= 0">type: maximum cardinality of 'type' is 0</sch:assert>
       <sch:assert test="count(f:identifier) &lt;= 0">identifier: maximum cardinality of 'identifier' is 0</sch:assert>

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSPractitioner | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DIPSPractitioner |
+| Draft as of 2026-09-08 | *Computable Name*:DIPSPractitioner |
 
 The DIPS Practitioner Profile inherits from the FHIR Practitioner resource; refer to it for scope and usage definitions
 
@@ -17,7 +17,7 @@ The DIPS Practitioner Profile inherits from the FHIR Practitioner resource; refe
 
 The following are example usage scenarios for this profile:
 
-Query by Practitioner name or NPI
+Query by Practitioner name or HPR number
 
 **Usages:**
 
@@ -43,6 +43,9 @@ The following search parameters and search parameter combinations SHALL be suppo
 1. **SHALL** support searching Practitioner using the `active` search parameter:`GET [base]/Practitioner?active=[boolean]`Example:
 1. GET [base]/Practitioner?active=true
 **Implementation Notes:** Fetches a bundle of all Practitioner resources that match the state of the practitioner.active or inactive ([how to search by string])
+1. **SHALL** support searching Practitioner using the `count` search parameter:`GET [base]/Practitioner?_count=[number]`Example:
+1. GET [base]/Practitioner?_count=3
+**Implementation Notes:** Fetches a bundle of all Practitioner resources that match the count ([how to search by string])
 1. **SHALL** support searching Practitioner using the `family` search parameter:`GET [base]/Practitioner?family=[string]`Example:
 1. GET [base]/Practitioner?family=Utskrevet
 **Implementation Notes:** Fetches a bundle of all Practitioner resources that match the family name ([how to search by string])
@@ -73,6 +76,9 @@ The following search parameters and search parameter combinations SHALL be suppo
 
 
 **Implementation Notes:** Fetches a bundle of all Practitioner resources that match the identifier ([how to search by string])
+1. **SHALL** support searching Practitioner using the `page` search parameter:`GET [base]/Practitioner?page=[number]`Example:
+1. GET [base]/Practitioner?page=1
+**Implementation Notes:** Fetches a bundle of all Practitioner resources that match the page ([how to search by string])
 1. **SHALL** support searching Practitioner using the `pretty` search parameter:`GET [base]/Practitioner?_pretty=[boolean]`Example:
 1. GET [base]/Practitioner?_pretty=true
 **Implementation Notes:** Fetches a bundle of all Practitioner resources with pretty text or not ([how to search by string])
@@ -89,7 +95,7 @@ The following search parameters and search parameter combinations SHALL be suppo
   "version" : "0.1.0",
   "name" : "DIPSPractitioner",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -163,7 +169,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerSpecialist"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerSpecialist"]
       }]
     },
     {
@@ -174,7 +180,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/IsSpecialistExtension"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/IsSpecialistExtension"]
       }]
     },
     {

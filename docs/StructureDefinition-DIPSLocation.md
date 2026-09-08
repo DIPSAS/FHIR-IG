@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSLocation | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DIPSLocation |
+| Draft as of 2026-09-08 | *Computable Name*:DIPSLocation |
 
 The DIPS Location Profile inherits from the FHIR Location resource; refer to it for scope and usage definitions
 
@@ -17,7 +17,7 @@ The DIPS Location Profile inherits from the FHIR Location resource; refer to it 
 
 The following are example usage scenarios for this profile:
 
-Query by Location name or NPI
+Query by Location name or identifier (e.g. DIPS location id, bed id, team id, standard location number, or Resh-id)
 
 **Usages:**
 
@@ -49,7 +49,7 @@ The following search parameters and search parameter combinations SHALL be suppo
 
 **Implementation Notes:** Fetches a bundle of all Location resources that match the identifier ([how to search by string])
 1. **SHALL** support searching location based on the `name` search parameter:`GET [base]/Location?name=[string]`Example:
-1. GET [base]/Location?name=Barn Og Ungdom - 2. Etg
+1. GET [base]/Location?name=Barn og ungdom - 2. etg
 **Implementation Notes:** Fetches a bundle of all Location resources that match the name string ([how to search by string])
 1. **SHALL** support searching location based on the `name-contains` search parameter:`GET [base]/Location?name:contains=[string]`Example:
 1. GET [base]/Location?name:contains=Barn Og
@@ -60,8 +60,8 @@ The following search parameters and search parameter combinations SHALL be suppo
 1. **SHALL** support searching location based on the `organization` search parameter:`GET [base]/Location?organization=[organization]`Example:
 1. GET [base]/Location?organization=Organization/aks1
 **Implementation Notes:** Fetches a bundle of all Location resources that match the organization ([how to search by string])
-1. **SHALL** support searching location based on the `pretty` search parameter:`GET [base]/Location?pretty=[boolean]`Example:
-1. GET [base]/Location?pretty=true
+1. **SHALL** support searching location based on the `pretty` search parameter:`GET [base]/Location?_pretty=[boolean]`Example:
+1. GET [base]/Location?_pretty=true
 **Implementation Notes:** Fetches a bundle of all Location resources with pretty text ([how to search by string])
 1. **SHALL** support searching location based on the `profile` search parameter:`GET [base]/Location?_profile=[profile]`Example:
 1. GET [base]/Location?_profile=DIPSLocation
@@ -97,7 +97,7 @@ The following search parameters and search parameter combinations SHALL be suppo
   "version" : "0.1.0",
   "name" : "DIPSLocation",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -155,7 +155,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/LocationValidPeriod"]
+        "profile" : ["http://DIPS.no/fhir/StructureDefinition/R4/Location-validPeriod"]
       }]
     },
     {
@@ -166,7 +166,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/LocationLabLocalizationId"]
+        "profile" : ["http://DIPS.no/fhir/StructureDefinition/R4/Location-labLocalizationId"]
       }]
     },
     {
@@ -177,7 +177,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/LocationWorkplaceLocalizationId"]
+        "profile" : ["http://DIPS.no/fhir/StructureDefinition/R4/Location-workplaceLocalizationId"]
       }]
     },
     {
@@ -407,7 +407,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/LocationTypeId"]
+        "profile" : ["http://DIPS.no/fhir/StructureDefinition/R4/LocationTypeId"]
       }]
     },
     {
@@ -442,7 +442,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/BedTypeId"]
+        "profile" : ["http://DIPS.no/fhir/StructureDefinition/R4/BedTypeId"]
       }]
     },
     {
@@ -477,7 +477,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/TeamTypeId"]
+        "profile" : ["http://DIPS.no/fhir/StructureDefinition/R4/TeamTypeId"]
       }]
     },
     {
@@ -531,7 +531,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/WardTypeCodeId"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/WardTypeCodeId"]
       }]
     },
     {
@@ -583,7 +583,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/LocationAddressId"]
+        "profile" : ["http://DIPS.no/fhir/StructureDefinition/R4/Location-addressId"]
       }]
     },
     {

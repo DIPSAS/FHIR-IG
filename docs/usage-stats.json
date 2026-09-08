@@ -5,6 +5,132 @@
   "jurisdiction": "NO",
   "extensions": [
     {
+      "url": "http://DIPS.no/fhir/StructureDefinition/R4/BedTypeId",
+      "title": "BedTypeId",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://DIPS.no/fhir/StructureDefinition/R4/DepartmentTypeCodeId",
+      "title": "DepartmentTypeCodeId",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://DIPS.no/fhir/StructureDefinition/R4/Location-addressId",
+      "title": "LocationAddressId",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://DIPS.no/fhir/StructureDefinition/R4/Location-labLocalizationId",
+      "title": "LocationLabLocalizationId",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://DIPS.no/fhir/StructureDefinition/R4/Location-validPeriod",
+      "title": "LocationValidPeriod",
+      "types": [
+        "Period"
+      ]
+    },
+    {
+      "url": "http://DIPS.no/fhir/StructureDefinition/R4/Location-workplaceLocalizationId",
+      "title": "LocationWorkplaceLocalizationId",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://DIPS.no/fhir/StructureDefinition/R4/LocationTypeCodeId",
+      "title": "LocationTypeCodeId",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://DIPS.no/fhir/StructureDefinition/R4/LocationTypeId",
+      "title": "LocationTypeId",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://DIPS.no/fhir/StructureDefinition/R4/Organization-addressId",
+      "title": "OrganizationAddressId",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://DIPS.no/fhir/StructureDefinition/R4/Organization-bankAccountNumber1",
+      "title": "BankAccountNumber1",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://DIPS.no/fhir/StructureDefinition/R4/Organization-bankAccountNumber2",
+      "title": "BankAccountNumber2",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://DIPS.no/fhir/StructureDefinition/R4/Organization-partOfDepartment",
+      "title": "PartOfDepartment",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://DIPS.no/fhir/StructureDefinition/R4/Organization-partOfSection",
+      "title": "PartOfSection",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://DIPS.no/fhir/StructureDefinition/R4/Organization-paymentCode",
+      "title": "OrganizationPaymentCode",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://DIPS.no/fhir/StructureDefinition/R4/Organization-validPeriod",
+      "title": "OrganizationValidPeriod",
+      "types": [
+        "Period"
+      ]
+    },
+    {
+      "url": "http://DIPS.no/fhir/StructureDefinition/R4/OrganizationTypeCodeId",
+      "title": "OrganizationTypeCodeId",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://DIPS.no/fhir/StructureDefinition/R4/SectionProfessionCodeId",
+      "title": "SectionProfessionCodeId",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://DIPS.no/fhir/StructureDefinition/R4/TeamTypeId",
+      "title": "TeamTypeId",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
       "url": "http://dips.no/fhir/R4/StructureDefinition/AppointmentReschedulingPeriodExtension",
       "title": "AppointmentReschedulingPeriodExtension",
       "types": [
@@ -12,31 +138,10 @@
       ]
     },
     {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/BankAccountNumber1",
-      "title": "BankAccountNumber1",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/BankAccountNumber2",
-      "title": "BankAccountNumber2",
-      "types": [
-        "string"
-      ]
-    },
-    {
       "url": "http://dips.no/fhir/R4/StructureDefinition/BedTime",
       "title": "BedTime",
       "types": [
         "dateTime"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/BedTypeId",
-      "title": "BedTypeId",
-      "types": [
-        "Coding"
       ]
     },
     {
@@ -64,1246 +169,6 @@
         "string",
         "boolean",
         "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceAddress",
-      "title": "DIPSHealthcareServiceAddress",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "Address",
-        "string",
-        "Extension",
-        "code",
-        "code",
-        "string",
-        "string",
-        "string",
-        "string",
-        "string",
-        "string",
-        "string",
-        "Period"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceCommunicationProtocol",
-      "title": "DIPSHealthcareServiceCommunicationProtocol",
-      "types": [
-        "Coding"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceDepartment",
-      "title": "DIPSHealthcareServiceDepartment",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "Reference"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceHospital",
-      "title": "DIPSHealthcareServiceHospital",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "Reference"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceIsPaperCopy",
-      "title": "DIPSHealthcareServiceIsPaperCopy",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "boolean"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceSection",
-      "title": "DIPSHealthcareServiceSection",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "Reference"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceWard",
-      "title": "DIPSHealthcareServiceWard",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "Reference"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSMonitoringNotes",
-      "title": "DIPSMonitoringNotes",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPatientContactIdentifier",
-      "title": "DIPSPatientContactIdentifier",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPatientContactPractitionerRoleName",
-      "title": "DIPSPatientContactPractitionerRoleName",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathComment",
-      "title": "DIPSPersonDeathComment",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathRegisteredBy",
-      "title": "DIPSPersonDeathRegisteredBy",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathRegisteredTime",
-      "title": "DIPSPersonDeathRegisteredTime",
-      "types": [
-        "dateTime"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonHospitalSectorId",
-      "title": "DIPSPersonHospitalSectorId",
-      "types": [
-        "id"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonHospitalSectorName",
-      "title": "DIPSPersonHospitalSectorName",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonLanguage",
-      "title": "DIPSPersonLanguage",
-      "types": [
-        "Coding"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonLastOfficialAddressSyncTime",
-      "title": "DIPSPersonLastOfficialAddressSyncTime",
-      "types": [
-        "dateTime"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonMunicipality",
-      "title": "DIPSPersonMunicipality",
-      "types": [
-        "Coding"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonStateName",
-      "title": "DIPSPersonStateName",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationProtocol",
-      "title": "DIPSPractitionerRoleCommunicationProtocol",
-      "types": [
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationType",
-      "title": "DIPSPractitionerRoleCommunicationType",
-      "types": [
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string",
-        "Extension",
-        "Extension",
-        "Extension",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean",
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationTypeId",
-      "title": "DIPSPractitionerRoleCommunicationTypeId",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleDipsSignature",
-      "title": "DIPSPractitionerRoleDipsSignature",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHcpRoleName",
-      "title": "DIPSPractitionerRoleHcpRoleName",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHealthCarePartyDepartment",
-      "title": "DIPSPractitionerRoleHealthCarePartyDepartment",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "Reference"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHealthCarePartyType",
-      "title": "DIPSPractitionerRoleHealthCarePartyType",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHealthCarePosition",
-      "title": "DIPSPractitionerRoleHealthCarePosition",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "Coding"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHospital",
-      "title": "DIPSPractitionerRoleHospital",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "Reference"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleIsPaperCopy",
-      "title": "DIPSPractitionerRoleIsPaperCopy",
-      "types": [
-        "decimal"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleSection",
-      "title": "DIPSPractitionerRoleSection",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "Reference"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleUserRoleDepartment",
-      "title": "DIPSPractitionerRoleUserRoleDepartment",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "Reference"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleUserRoleId",
-      "title": "DIPSPractitionerRoleUserRoleId",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleUserRoleLastUpdated",
-      "title": "DIPSPractitionerRoleUserRoleLastUpdated",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "dateTime"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleUserRoleName",
-      "title": "DIPSPractitionerRoleUserRoleName",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleWard",
-      "title": "DIPSPractitionerRoleWard",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "Reference"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerSpecialist",
-      "title": "DIPSPractitionerSpecialist",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceLocation",
-      "title": "DIPSReferenceLocation",
-      "types": [
-        "Reference"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceSection",
-      "title": "DIPSReferenceSection",
-      "types": [
-        "Reference"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceWard",
-      "title": "DIPSReferenceWard",
-      "types": [
-        "Reference"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAdditionalInformation",
-      "title": "DIPSRelatedPersonAdditionalInformation",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAppointedByMunicipality",
-      "title": "DIPSRelatedPersonAppointedByMunicipality",
-      "types": [
-        "Coding"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonKinship",
-      "title": "DIPSRelatedPersonKinship",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonParentalResponsibility",
-      "title": "DIPSRelatedPersonParentalResponsibility",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonResponsibleRequisitioner",
-      "title": "DIPSRelatedPersonResponsibleRequisitioner",
-      "types": [
-        "Reference"
       ]
     },
     {
@@ -1346,13 +211,6 @@
         "Period",
         "Reference",
         "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DepartmentTypeCodeId",
-      "title": "DepartmentTypeCodeId",
-      "types": [
-        "Coding"
       ]
     },
     {
@@ -1404,190 +262,6 @@
       ]
     },
     {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DipsPatientDeathComment",
-      "title": "DipsPatientDeathComment",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DipsPatientDeathRegisteredBy",
-      "title": "DipsPatientDeathRegisteredBy",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DipsPatientDeathRegisteredTime",
-      "title": "DipsPatientDeathRegisteredTime",
-      "types": [
-        "dateTime"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DipsPatientHospitalSectorId",
-      "title": "DipsPatientHospitalSectorId",
-      "types": [
-        "decimal"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DipsPatientHospitalSectorName",
-      "title": "DipsPatientHospitalSectorName",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DipsPatientLanguageId",
-      "title": "dips-patient-language-id",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "id"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DipsPatientMunicipality",
-      "title": "DipsPatientMunicipality",
-      "types": [
-        "Coding"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DipsPatientPhoneTypeId",
-      "title": "DipsPatientPhoneTypeId",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "decimal"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/DipsPatientStateName",
-      "title": "DipsPatientStateName",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/IsSpecialistExtension",
-      "title": "IsSpecialistExtension",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/IsUpdatedByPopulationRegister",
-      "title": "IsUpdatedByPopulationRegister",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/LastOfficialAddressSyncTime",
-      "title": "LastOfficialAddressSyncTime",
-      "types": [
-        "dateTime"
-      ]
-    },
-    {
       "url": "http://dips.no/fhir/R4/StructureDefinition/LevelOfCareExtension",
       "title": "LevelOfCareExtension",
       "types": [
@@ -1615,13 +289,6 @@
       ]
     },
     {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/LocationAddressId",
-      "title": "LocationAddressId",
-      "types": [
-        "Identifier"
-      ]
-    },
-    {
       "url": "http://dips.no/fhir/R4/StructureDefinition/LocationExtension",
       "title": "LocationExtension",
       "types": [
@@ -1640,48 +307,6 @@
         "Period",
         "Reference",
         "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/LocationLabLocalizationId",
-      "title": "LocationLabLocalizationId",
-      "types": [
-        "Identifier"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/LocationTypeCodeId",
-      "title": "LocationTypeCodeId",
-      "types": [
-        "Coding"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/LocationTypeId",
-      "title": "LocationTypeId",
-      "types": [
-        "Coding"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/LocationValidPeriod",
-      "title": "LocationValidPeriod",
-      "types": [
-        "Period"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/LocationWorkplaceLocalizationId",
-      "title": "LocationWorkplaceLocalizationId",
-      "types": [
-        "Identifier"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/MunicipalityCode",
-      "title": "MunicipalityCode",
-      "types": [
-        "Coding"
       ]
     },
     {
@@ -1838,48 +463,6 @@
       ]
     },
     {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/OrganizationAddressId",
-      "title": "OrganizationAddressId",
-      "types": [
-        "Identifier"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/OrganizationPaymentCode",
-      "title": "OrganizationPaymentCode",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/OrganizationTypeCodeId",
-      "title": "OrganizationTypeCodeId",
-      "types": [
-        "Coding"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/OrganizationValidPeriod",
-      "title": "OrganizationValidPeriod",
-      "types": [
-        "Period"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/PartOfDepartment",
-      "title": "PartOfDepartment",
-      "types": [
-        "Reference"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/PartOfSection",
-      "title": "PartOfSection",
-      "types": [
-        "Reference"
-      ]
-    },
-    {
       "url": "http://dips.no/fhir/R4/StructureDefinition/PlannedContactEndTimeExtension",
       "title": "PlannedContactEndTimeExtension",
       "types": [
@@ -1933,20 +516,6 @@
         "Period",
         "Reference",
         "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/SectionProfessionCodeId",
-      "title": "SectionProfessionCodeId",
-      "types": [
-        "Coding"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/TeamTypeId",
-      "title": "TeamTypeId",
-      "types": [
-        "Coding"
       ]
     },
     {
@@ -2005,10 +574,1469 @@
       ]
     },
     {
-      "url": "http://dips.no/fhir/R4/StructureDefinition/WardTypeCodeId",
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentTypeId",
+      "title": "DIPS Document Type Id",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSIsResponsible",
+      "title": "DIPS Is Responsible",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSMonitoringNotes",
+      "title": "DIPS Monitoring Notes",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSReferenceLocation",
+      "title": "DIPS Reference Location",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSReferenceSection",
+      "title": "DIPS Reference Section",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSReferenceWard",
+      "title": "DIPS Reference Ward",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSCanReceiveSms",
+      "title": "DIPS Can Receive SMS",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSCommentText",
+      "title": "DIPS Comment Text",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceAddress",
+      "title": "DIPSHealthcareServiceAddress",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "Address",
+        "string",
+        "Extension",
+        "code",
+        "code",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "Period"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceCommunicationProtocol",
+      "title": "DIPSHealthcareServiceCommunicationProtocol",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceDepartment",
+      "title": "DIPSHealthcareServiceDepartment",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceHospital",
+      "title": "DIPSHealthcareServiceHospital",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceIsPaperCopy",
+      "title": "DIPSHealthcareServiceIsPaperCopy",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceSection",
+      "title": "DIPSHealthcareServiceSection",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceWard",
+      "title": "DIPSHealthcareServiceWard",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientContactIdentifier",
+      "title": "DIPSPatientContactIdentifier",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientContactPractitionerRoleName",
+      "title": "DIPSPatientContactPractitionerRoleName",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientDeathComment",
+      "title": "DipsPatientDeathComment",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientDeathRegisteredTime",
+      "title": "DipsPatientDeathRegisteredTime",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientHospitalSectorId",
+      "title": "DipsPatientHospitalSectorId",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientHospitalSectorName",
+      "title": "DipsPatientHospitalSectorName",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientMunicipality",
+      "title": "DipsPatientMunicipality",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientPhoneTypeId",
+      "title": "DipsPatientPhoneTypeId",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientStateName",
+      "title": "DipsPatientStateName",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonDeathComment",
+      "title": "DIPSPersonDeathComment",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonDeathRegisteredBy",
+      "title": "DIPSPersonDeathRegisteredBy",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonDeathRegisteredTime",
+      "title": "DIPSPersonDeathRegisteredTime",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonHospitalSectorId",
+      "title": "DIPSPersonHospitalSectorId",
+      "types": [
+        "id"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonHospitalSectorName",
+      "title": "DIPSPersonHospitalSectorName",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonLanguage",
+      "title": "DIPSPersonLanguage",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonLastOfficialAddressSyncTime",
+      "title": "DIPSPersonLastOfficialAddressSyncTime",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonMunicipality",
+      "title": "DIPSPersonMunicipality",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonStateName",
+      "title": "DIPSPersonStateName",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleCommunicationProtocol",
+      "title": "DIPSPractitionerRoleCommunicationProtocol",
+      "types": [
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleCommunicationType",
+      "title": "DIPSPractitionerRoleCommunicationType",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "Extension",
+        "Extension",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleCommunicationTypeId",
+      "title": "DIPSPractitionerRoleCommunicationTypeId",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleDipsSignature",
+      "title": "DIPSPractitionerRoleDipsSignature",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHcpRoleName",
+      "title": "DIPSPractitionerRoleHcpRoleName",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHealthCarePartyType",
+      "title": "DIPSPractitionerRoleHealthCarePartyType",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHealthCarePosition",
+      "title": "DIPSPractitionerRoleHealthCarePosition",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHealthcarePartyDepartment",
+      "title": "DIPSPractitionerRoleHealthCarePartyDepartment",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHospital",
+      "title": "DIPSPractitionerRoleHospital",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleIsPaperCopy",
+      "title": "DIPSPractitionerRoleIsPaperCopy",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleSection",
+      "title": "DIPSPractitionerRoleSection",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleUserRoleDepartment",
+      "title": "DIPSPractitionerRoleUserRoleDepartment",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleUserRoleId",
+      "title": "DIPSPractitionerRoleUserRoleId",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleUserRoleLastUpdated",
+      "title": "DIPSPractitionerRoleUserRoleLastUpdated",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleUserRoleName",
+      "title": "DIPSPractitionerRoleUserRoleName",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleWard",
+      "title": "DIPSPractitionerRoleWard",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerSpecialist",
+      "title": "DIPSPractitionerSpecialist",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonAdditionalInformation",
+      "title": "DIPSRelatedPersonAdditionalInformation",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonAppointedByMunicipality",
+      "title": "DIPSRelatedPersonAppointedByMunicipality",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonKinship",
+      "title": "DIPSRelatedPersonKinship",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonParentalResponsibility",
+      "title": "DIPSRelatedPersonParentalResponsibility",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonResponsibleRequisitioner",
+      "title": "DIPSRelatedPersonResponsibleRequisitioner",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/DeathRegisteredBy",
+      "title": "DipsPatientDeathRegisteredBy",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/IsSpecialistExtension",
+      "title": "IsSpecialistExtension",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/IsUpdatedByPopulationRegister",
+      "title": "IsUpdatedByPopulationRegister",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/LastOfficialAddressSyncTime",
+      "title": "LastOfficialAddressSyncTime",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/MunicipalityCode",
+      "title": "MunicipalityCode",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/R4/WardTypeCodeId",
       "title": "WardTypeCodeId",
       "types": [
         "Coding"
+      ]
+    },
+    {
+      "url": "http://hl7.no/fhir/StructureDefinition/dips-patient-language-id",
+      "title": "dips-patient-language-id",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "id"
       ]
     }
   ],
@@ -2061,8 +2089,8 @@
     ],
     "Patient": [
       {
-        "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSSubjectReference",
-        "title": "DIPSSubjectReference"
+        "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSPatient",
+        "title": "DIPSPatient"
       }
     ],
     "HealthcareService": [
@@ -2087,12 +2115,6 @@
       {
         "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPerson",
         "title": "DIPSRelatedPerson"
-      }
-    ],
-    "EpisodeOfCare": [
-      {
-        "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSRemoteMonitoring",
-        "title": "DIPSRemoteMonitoring"
       }
     ],
     "Observation": [
@@ -2154,9 +2176,69 @@
         "url": "http://dips.no/fhir/R4/StructureDefinition/SelfBookingSlot",
         "title": "SelfBookingSlot"
       }
+    ],
+    "EpisodeOfCare": [
+      {
+        "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSRemoteMonitoring",
+        "title": "DIPS Remote Monitoring"
+      }
     ]
   },
   "usage": {
+    "http://DIPS.no/fhir/StructureDefinition/R4/BedTypeId": [
+      "Location.type.coding"
+    ],
+    "http://DIPS.no/fhir/StructureDefinition/R4/DepartmentTypeCodeId": [
+      "Organization.type.coding"
+    ],
+    "http://DIPS.no/fhir/StructureDefinition/R4/Location-addressId": [
+      "Location.address"
+    ],
+    "http://DIPS.no/fhir/StructureDefinition/R4/Location-labLocalizationId": [
+      "Location"
+    ],
+    "http://DIPS.no/fhir/StructureDefinition/R4/Location-validPeriod": [
+      "Location"
+    ],
+    "http://DIPS.no/fhir/StructureDefinition/R4/Location-workplaceLocalizationId": [
+      "Location"
+    ],
+    "http://DIPS.no/fhir/StructureDefinition/R4/LocationTypeCodeId": [
+      "Organization.type.coding"
+    ],
+    "http://DIPS.no/fhir/StructureDefinition/R4/LocationTypeId": [
+      "Location.type.coding"
+    ],
+    "http://DIPS.no/fhir/StructureDefinition/R4/Organization-addressId": [
+      "Organization.address"
+    ],
+    "http://DIPS.no/fhir/StructureDefinition/R4/Organization-bankAccountNumber1": [
+      "Organization"
+    ],
+    "http://DIPS.no/fhir/StructureDefinition/R4/Organization-bankAccountNumber2": [
+      "Organization"
+    ],
+    "http://DIPS.no/fhir/StructureDefinition/R4/Organization-partOfDepartment": [
+      "Organization"
+    ],
+    "http://DIPS.no/fhir/StructureDefinition/R4/Organization-partOfSection": [
+      "Organization"
+    ],
+    "http://DIPS.no/fhir/StructureDefinition/R4/Organization-paymentCode": [
+      "Organization"
+    ],
+    "http://DIPS.no/fhir/StructureDefinition/R4/Organization-validPeriod": [
+      "Organization"
+    ],
+    "http://DIPS.no/fhir/StructureDefinition/R4/OrganizationTypeCodeId": [
+      "Organization.type.coding"
+    ],
+    "http://DIPS.no/fhir/StructureDefinition/R4/SectionProfessionCodeId": [
+      "Organization.type.coding"
+    ],
+    "http://DIPS.no/fhir/StructureDefinition/R4/TeamTypeId": [
+      "Location.type.coding"
+    ],
     "http://dips.no/fhir/R4/StructureDefinition/BankAccountNumber1": [
       "Organization"
     ],
@@ -2172,9 +2254,6 @@
     "http://dips.no/fhir/R4/StructureDefinition/ContactTypeExtension": [
       "Appointment"
     ],
-    "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceAddress": [
-      "HealthcareService"
-    ],
     "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceCommunicationProtocol": [
       "HealthcareService.communication.coding"
     ],
@@ -2187,56 +2266,14 @@
     "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceIsPaperCopy": [
       "HealthcareService.communication.coding"
     ],
-    "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceSection": [
-      "HealthcareService"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceWard": [
-      "HealthcareService"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/DIPSMonitoringNotes": [
-      "EpisodeOfCare"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/DIPSPatientContactIdentifier": [
-      "Patient.contact"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/DIPSPatientContactPractitionerRoleName": [
-      "Patient.contact"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathComment": [
-      "Person"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathRegisteredBy": [
-      "Person"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathRegisteredTime": [
-      "Person"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonHospitalSectorId": [
-      "Person"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonHospitalSectorName": [
-      "Person"
-    ],
     "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonLanguage": [
       "Person"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonLastOfficialAddressSyncTime": [
-      "Person.address"
     ],
     "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonMunicipality": [
       "Person.address.district"
     ],
-    "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonStateName": [
-      "Person.address"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationProtocol": [
-      "Extension.value[x].coding"
-    ],
     "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationType": [
       "PractitionerRole"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationTypeId": [
-      "Extension.value[x].coding"
     ],
     "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleDipsSignature": [
       "PractitionerRole"
@@ -2256,12 +2293,6 @@
     "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHospital": [
       "PractitionerRole"
     ],
-    "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleIsPaperCopy": [
-      "Extension.value[x].coding"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleSection": [
-      "PractitionerRole"
-    ],
     "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleUserRoleDepartment": [
       "PractitionerRole"
     ],
@@ -2279,15 +2310,6 @@
     ],
     "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerSpecialist": [
       "Practitioner"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceLocation": [
-      "EpisodeOfCare"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceSection": [
-      "EpisodeOfCare"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceWard": [
-      "EpisodeOfCare"
     ],
     "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAdditionalInformation": [
       "RelatedPerson"
@@ -2310,9 +2332,6 @@
     "http://dips.no/fhir/R4/StructureDefinition/DepartmentExtension": [
       "Appointment"
     ],
-    "http://dips.no/fhir/R4/StructureDefinition/DepartmentTypeCodeId": [
-      "Organization.type.coding"
-    ],
     "http://dips.no/fhir/R4/StructureDefinition/DiagnoseGroupExtension": [
       "Appointment",
       "Encounter"
@@ -2323,20 +2342,8 @@
     "http://dips.no/fhir/R4/StructureDefinition/DipsPatientDeathComment": [
       "Patient"
     ],
-    "http://dips.no/fhir/R4/StructureDefinition/DipsPatientDeathRegisteredBy": [
-      "Patient"
-    ],
     "http://dips.no/fhir/R4/StructureDefinition/DipsPatientDeathRegisteredTime": [
       "Patient"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/DipsPatientHospitalSectorId": [
-      "Patient"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/DipsPatientHospitalSectorName": [
-      "Patient"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/DipsPatientLanguageId": [
-      "Patient.communication.language.coding"
     ],
     "http://dips.no/fhir/R4/StructureDefinition/DipsPatientMunicipality": [
       "Patient.address.district"
@@ -2350,12 +2357,6 @@
     "http://dips.no/fhir/R4/StructureDefinition/IsSpecialistExtension": [
       "Practitioner"
     ],
-    "http://dips.no/fhir/R4/StructureDefinition/IsUpdatedByPopulationRegister": [
-      "Patient"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/LastOfficialAddressSyncTime": [
-      "Patient.address"
-    ],
     "http://dips.no/fhir/R4/StructureDefinition/LevelOfCareExtension": [
       "Appointment"
     ],
@@ -2364,21 +2365,6 @@
     ],
     "http://dips.no/fhir/R4/StructureDefinition/LocationExtension": [
       "Appointment"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/LocationLabLocalizationId": [
-      "Location"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/LocationTypeCodeId": [
-      "Organization.type.coding"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/LocationTypeId": [
-      "Location.type.coding"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/LocationValidPeriod": [
-      "Location"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/LocationWorkplaceLocalizationId": [
-      "Location"
     ],
     "http://dips.no/fhir/R4/StructureDefinition/MunicipalityCode": [
       "RelatedPerson.address.district"
@@ -2422,20 +2408,8 @@
     "http://dips.no/fhir/R4/StructureDefinition/OrganizationAddressId": [
       "Organization.address"
     ],
-    "http://dips.no/fhir/R4/StructureDefinition/OrganizationPaymentCode": [
-      "Organization"
-    ],
     "http://dips.no/fhir/R4/StructureDefinition/OrganizationTypeCodeId": [
       "Organization.type.coding"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/OrganizationValidPeriod": [
-      "Organization"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/PartOfDepartment": [
-      "Organization"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/PartOfSection": [
-      "Organization"
     ],
     "http://dips.no/fhir/R4/StructureDefinition/PlannedContactEndTimeExtension": [
       "Encounter"
@@ -2451,12 +2425,6 @@
       "Appointment",
       "Encounter"
     ],
-    "http://dips.no/fhir/R4/StructureDefinition/SectionProfessionCodeId": [
-      "Organization.type.coding"
-    ],
-    "http://dips.no/fhir/R4/StructureDefinition/TeamTypeId": [
-      "Location.type.coding"
-    ],
     "http://dips.no/fhir/R4/StructureDefinition/TerminationExtension": [
       "Appointment",
       "Encounter"
@@ -2468,12 +2436,195 @@
     "http://dips.no/fhir/R4/StructureDefinition/WardExtension": [
       "Appointment"
     ],
-    "http://dips.no/fhir/R4/StructureDefinition/WardTypeCodeId": [
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentTypeId": [
+      "EpisodeOfCare"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSIsResponsible": [
+      "EpisodeOfCare.careManager"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSMonitoringNotes": [
+      "EpisodeOfCare"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSReferenceLocation": [
+      "EpisodeOfCare"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSReferenceSection": [
+      "EpisodeOfCare"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSReferenceWard": [
+      "EpisodeOfCare"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSCanReceiveSms": [
+      "Patient.telecom"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSCommentText": [
+      "Patient.telecom"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceAddress": [
+      "HealthcareService"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceCommunicationProtocol": [
+      "HealthcareService.communication.coding"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceDepartment": [
+      "HealthcareService"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceHospital": [
+      "HealthcareService"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceIsPaperCopy": [
+      "HealthcareService.communication.coding"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceSection": [
+      "HealthcareService"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceWard": [
+      "HealthcareService"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientContactIdentifier": [
+      "Patient.contact"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientContactPractitionerRoleName": [
+      "Patient.contact"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientDeathComment": [
+      "Patient"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientDeathRegisteredTime": [
+      "Patient"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientHospitalSectorId": [
+      "Patient"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientHospitalSectorName": [
+      "Patient"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientMunicipality": [
+      "Patient.address.district"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientPhoneTypeId": [
+      "Patient.telecom"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientStateName": [
+      "Patient.address"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonDeathComment": [
+      "Person"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonDeathRegisteredBy": [
+      "Person"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonDeathRegisteredTime": [
+      "Person"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonHospitalSectorId": [
+      "Person"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonHospitalSectorName": [
+      "Person"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonLanguage": [
+      "Person"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonLastOfficialAddressSyncTime": [
+      "Person.address"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonMunicipality": [
+      "Person.address.district"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonStateName": [
+      "Person.address"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleCommunicationProtocol": [
+      "Extension.value[x].coding"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleCommunicationType": [
+      "PractitionerRole"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleCommunicationTypeId": [
+      "Extension.value[x].coding"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleDipsSignature": [
+      "PractitionerRole"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHcpRoleName": [
+      "PractitionerRole"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHealthCarePartyType": [
+      "PractitionerRole"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHealthCarePosition": [
+      "PractitionerRole"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHealthcarePartyDepartment": [
+      "PractitionerRole"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHospital": [
+      "PractitionerRole"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleIsPaperCopy": [
+      "Extension.value[x].coding"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleSection": [
+      "PractitionerRole"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleUserRoleDepartment": [
+      "PractitionerRole"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleUserRoleId": [
+      "PractitionerRole"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleUserRoleLastUpdated": [
+      "PractitionerRole"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleUserRoleName": [
+      "PractitionerRole"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleWard": [
+      "PractitionerRole"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerSpecialist": [
+      "Practitioner"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonAdditionalInformation": [
+      "RelatedPerson"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonAppointedByMunicipality": [
+      "RelatedPerson"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonKinship": [
+      "RelatedPerson"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonParentalResponsibility": [
+      "RelatedPerson"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonResponsibleRequisitioner": [
+      "RelatedPerson"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/DeathRegisteredBy": [
+      "Patient"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/IsSpecialistExtension": [
+      "Practitioner"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/IsUpdatedByPopulationRegister": [
+      "Patient"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/LastOfficialAddressSyncTime": [
+      "Patient.address"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/MunicipalityCode": [
+      "RelatedPerson.address.district"
+    ],
+    "http://dips.no/fhir/StructureDefinition/R4/WardTypeCodeId": [
       "Location.type.coding",
       "Organization.type.coding"
     ],
     "http://hl7.no/fhir/StructureDefinition/R4/no-basis-propertyinformation": [
       "Organization.address"
+    ],
+    "http://hl7.no/fhir/StructureDefinition/dips-patient-language-id": [
+      "Patient.communication.language.coding"
     ],
     "http://hl7.no/fhir/StructureDefinition/no-basis-address-official": [
       "Location.address",

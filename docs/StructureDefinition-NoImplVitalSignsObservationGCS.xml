@@ -162,7 +162,7 @@
   <name value="NoImplVitalSignsObservationGCS"/>
   <title value="NoImplVitalSignsObservationGCS"/>
   <status value="draft"/>
-  <date value="2026-09-03T11:16:58+00:00"/>
+  <date value="2026-09-08T11:30:20+00:00"/>
   <publisher value="DIPS AS"/>
   <contact>
     <name value="Lars-Andreas Nystad"/>
@@ -3610,7 +3610,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://dips.no/fhir/R4/StructureDefinition/DIPSPatient"/>
+        <targetProfile value="http://dips.no/fhir/StructureDefinition/R4/DIPSPatient"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -9490,7 +9490,7 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://dips.no/fhir/R4/StructureDefinition/DIPSPatient"/>
+        <targetProfile value="http://dips.no/fhir/StructureDefinition/R4/DIPSPatient"/>
       </type>
     </element>
     <element id="Observation.focus">

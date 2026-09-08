@@ -64,8 +64,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"6.228"}
-    h3,h4,h5,h6{--heading-prefix:"6.228"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.232"}
+    h3,h4,h5,h6{--heading-prefix:"6.232"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -118,14 +118,40 @@
             </button>
             <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <!-- menu.xml  -->
-
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
-  <li>
-    <a href="artifacts.html">Artifacts</a>
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      FHIR Artifacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Vitalsign Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Resource Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Data Type Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#5">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#6">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#7">Code Systems</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Vitalsign Examples</a>
+      </li>
+      <li>
+        <a href="artifacts.html#8">Example Instances</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="toc.html">TOC</a>
@@ -140,6 +166,7 @@
     <a href="download.html">Download</a>
   </li>
 </ul>
+
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
         </nav>  <!-- /.navbar -->
@@ -244,7 +271,7 @@
   ] ;
   <a href="http://hl7.org/fhir/R4/domainresource.html#RelatedPerson.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;extensions&quot; ] ;
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: RelatedPerson aoz1000067cdp1000063&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;aoz1000067cdp1000063\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcaoz1000067cdp1000063\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profiles: &lt;a href=\&quot;StructureDefinition-DIPSRelatedPerson.html\&quot;&gt;DIPSRelatedPerson&lt;/a&gt;, &lt;a href=\&quot;https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;amp;canonical=http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson\&quot;&gt;no-basis-RelatedPerson&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;DIPSRelatedPersonKinship&lt;/b&gt;: Mor&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: FellesHjelpenummer/12526845852 (use: temp, ), &lt;code&gt;http://dips.no/fhir/namingsystem/dips-relativeid&lt;/code&gt;/aoz1000067cdp1000063 (use: official, )&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;Patient-cdp1000063.html\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( http://dips.no/fhir/namingsystem/dips-patientid#1000063)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;relationship&lt;/b&gt;: &lt;span title=\&quot;Codes:{urn:oid:1.3.6.1.4.1.9038.52.1045 104500}\&quot;&gt;HovedpÃ¥rÃ¸rende&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Voksen (Testplan - Bas-Team), Dame&lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: Female&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 1968-12-12&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Gravdal 18 8372 Norway (home)&lt;/p&gt;&lt;/div&gt;&quot;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: RelatedPerson aoz1000067cdp1000063&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;aoz1000067cdp1000063\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcaoz1000067cdp1000063\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profiles: &lt;a href=\&quot;StructureDefinition-DIPSRelatedPerson.html\&quot;&gt;DIPSRelatedPerson&lt;/a&gt;, &lt;a href=\&quot;https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;amp;canonical=http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson\&quot;&gt;no-basis-RelatedPerson&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;no/fhir/R4/StructureDefinition/DIPSRelatedPersonKinship&lt;/b&gt;: Mor&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: FellesHjelpenummer/12526845852 (use: temp, ), &lt;code&gt;http://dips.no/fhir/namingsystem/dips-relativeid&lt;/code&gt;/aoz1000067cdp1000063 (use: official, )&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;Patient-cdp1000063.html\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( http://dips.no/fhir/namingsystem/dips-patientid#1000063)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;relationship&lt;/b&gt;: &lt;span title=\&quot;Codes:{urn:oid:1.3.6.1.4.1.9038.52.1045 104500}\&quot;&gt;HovedpÃ¥rÃ¸rende&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Voksen (Testplan - Bas-Team), Dame&lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: Female&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 1968-12-12&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Gravdal 18 8372 Norway (home)&lt;/p&gt;&lt;/div&gt;&quot;
   ] ;
   <a href="http://hl7.org/fhir/R4/domainresource.html#RelatedPerson.extension">fhir:DomainResource.extension</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
@@ -365,7 +392,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 3, 2026 11:16+0000">2026-09-03</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 8, 2026 11:30+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

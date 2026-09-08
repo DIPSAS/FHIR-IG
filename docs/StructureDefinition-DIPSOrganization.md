@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSOrganization | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DIPSOrganization |
+| Draft as of 2026-09-08 | *Computable Name*:DIPSOrganization |
 
 The DIPS Organization Profile inherits from the FHIR Organization resource; refer to it for scope and usage definitions
 
@@ -17,7 +17,7 @@ The DIPS Organization Profile inherits from the FHIR Organization resource; refe
 
 The following are example usage scenarios for this profile:
 
-Query by organization name or NPI
+Query by organization name or identifier (e.g. HER-id, organization number, or Resh-id)
 
 **Usages:**
 
@@ -35,6 +35,12 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 Other representations of profile: [CSV](StructureDefinition-DIPSOrganization.csv), [Excel](StructureDefinition-DIPSOrganization.xlsx), [Schematron](StructureDefinition-DIPSOrganization.sch) 
 
 ### Notes:
+
+**Read Operation:**
+
+1. **SHALL** support reading Organization using its resource id:`GET [base]/Organization/[id]`Example:
+1. GET [base]/Organization/aks1000176
+**Implementation Notes:** Fetches the Organization (or Ward/Section/Department/Clinic/Hospital/Location) resource that matches the given resource reference id. The id must carry a three-character DIPS table prefix identifying which underlying entity it maps to, followed by the numeric id: `aks` for Organization, `afm` for Hospital, `afa` for Department, `aju` for Section, `ahl` for Ward, `aea` for Location, `amu` for Clinic (e.g. `aks1000176`). A bare numeric id or an unrecognized prefix is rejected as an invalid/unknown id type.
 
 **Search Parameters:**
 
@@ -57,7 +63,7 @@ The following search parameters and search parameter combinations SHALL be suppo
 | GET [base]/Organization?identifier=urn:oid:1.3.6.1.4.1.9038.70.1 | 1 |
 
 
-**Implementation Notes:** Fetches a bundle of all Organization resources that match the identifier string ([how to search by string])
+**Implementation Notes:** Fetches a bundle of all Organization resources that match the identifier string ([how to search by string]). Which sub-resource is returned (Organization, Hospital, Department, Section, Ward, Clinic, or Location) is determined by the identifier's system (the part before `|`): a distinct DIPS-internal OID identifies each entity's own numeric id (Organization/Hospital/Department/Section/Ward/Clinic/Location id), while other supported systems carry the organization's business registration number, Norwegian Resh-id, HER-id, or a department/section/ward/clinic/location short name. The numeric-id systems require a purely numeric value; short-name and HER-id systems accept free-text values.
 1. **SHALL** support searching organization based on type using the `type` search parameter:`GET [base]/Organization?type={system|}[code]`Example:
 1. 
 
@@ -98,7 +104,7 @@ The following search parameters and search parameter combinations SHALL be suppo
   "version" : "0.1.0",
   "name" : "DIPSOrganization",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -166,7 +172,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/OrganizationValidPeriod"]
+        "profile" : ["http://DIPS.no/fhir/StructureDefinition/R4/Organization-validPeriod"]
       }]
     },
     {
@@ -177,7 +183,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/OrganizationPaymentCode"]
+        "profile" : ["http://DIPS.no/fhir/StructureDefinition/R4/Organization-paymentCode"]
       }]
     },
     {
@@ -188,7 +194,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/PartOfSection"]
+        "profile" : ["http://DIPS.no/fhir/StructureDefinition/R4/Organization-partOfSection"]
       }]
     },
     {
@@ -199,7 +205,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/PartOfDepartment"]
+        "profile" : ["http://DIPS.no/fhir/StructureDefinition/R4/Organization-partOfDepartment"]
       }]
     },
     {
@@ -210,7 +216,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/BankAccountNumber1"]
+        "profile" : ["http://DIPS.no/fhir/StructureDefinition/R4/Organization-bankAccountNumber1"]
       }]
     },
     {
@@ -221,7 +227,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/BankAccountNumber2"]
+        "profile" : ["http://DIPS.no/fhir/StructureDefinition/R4/Organization-bankAccountNumber2"]
       }]
     },
     {
@@ -580,7 +586,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/OrganizationTypeCodeId"]
+        "profile" : ["http://DIPS.no/fhir/StructureDefinition/R4/OrganizationTypeCodeId"]
       }]
     },
     {
@@ -619,7 +625,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DepartmentTypeCodeId"]
+        "profile" : ["http://DIPS.no/fhir/StructureDefinition/R4/DepartmentTypeCodeId"]
       }]
     },
     {
@@ -648,7 +654,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/LocationTypeCodeId"]
+        "profile" : ["http://DIPS.no/fhir/StructureDefinition/R4/LocationTypeCodeId"]
       }]
     },
     {
@@ -677,7 +683,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/SectionProfessionCodeId"]
+        "profile" : ["http://DIPS.no/fhir/StructureDefinition/R4/SectionProfessionCodeId"]
       }]
     },
     {
@@ -719,7 +725,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/WardTypeCodeId"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/WardTypeCodeId"]
       }]
     },
     {
@@ -788,7 +794,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/OrganizationAddressId"]
+        "profile" : ["http://DIPS.no/fhir/StructureDefinition/R4/Organization-addressId"]
       }]
     },
     {

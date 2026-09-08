@@ -11,7 +11,7 @@
   <name value="DIPSCore"/>
   <title value="DIPS Core Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-09-03T11:16:58+00:00"/>
+  <date value="2026-09-08T11:30:20+00:00"/>
   <publisher value="DIPS AS"/>
   <contact>
     <name value="Lars-Andreas Nystad"/>
@@ -1001,7 +1001,7 @@
         <reference value="Patient/cdp1000001"/>
       </reference>
       <name value="cdp1000001"/>
-      <exampleCanonical value="http://dips.no/fhir/R4/StructureDefinition/DIPSPatient"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1011,7 +1011,7 @@
         <reference value="Patient/cdp1000007"/>
       </reference>
       <name value="cdp1000007"/>
-      <exampleCanonical value="http://dips.no/fhir/R4/StructureDefinition/DIPSPatient"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1031,7 +1031,7 @@
         <reference value="Patient/cdp2007964"/>
       </reference>
       <name value="cdp2007964"/>
-      <exampleCanonical value="http://dips.no/fhir/R4/StructureDefinition/DIPSPatient"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1091,6 +1091,105 @@
         <reference value="StructureDefinition/DiagnoseGroupExtension"/>
       </reference>
       <name value="DiagnoseGroupExtension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DipsCanReceiveSms"/>
+      </reference>
+      <name value="DIPS Can Receive SMS"/>
+      <description value="Indicates whether this phone number can receive SMS messages."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DipsCommentText"/>
+      </reference>
+      <name value="DIPS Comment Text"/>
+      <description value="A free-text comment associated with this phone number."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentTypeId"/>
+      </reference>
+      <name value="DIPS Document Type Id"/>
+      <description value="The id of a document type associated with the monitoring type of this remote monitoring episode of care. Repeats once per associated document type."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSIsResponsible"/>
+      </reference>
+      <name value="DIPS Is Responsible"/>
+      <description value="Indicates whether this healthcare party is the responsible care manager for the remote monitoring episode of care."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSMonitoringNotes"/>
+      </reference>
+      <name value="DIPS Monitoring Notes"/>
+      <description value="Free-text clinical notes recorded against this remote monitoring episode of care."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSReferenceLocation"/>
+      </reference>
+      <name value="DIPS Reference Location"/>
+      <description value="A reference to the DIPS hospital Location, modelled as an Organization, associated with this remote monitoring episode of care."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSReferenceSection"/>
+      </reference>
+      <name value="DIPS Reference Section"/>
+      <description value="A reference to the DIPS hospital Section, modelled as an Organization, associated with this remote monitoring episode of care."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSReferenceWard"/>
+      </reference>
+      <name value="DIPS Reference Ward"/>
+      <description value="A reference to the DIPS hospital Ward, modelled as an Organization, associated with this remote monitoring episode of care."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSRemoteMonitoring"/>
+      </reference>
+      <name value="DIPS Remote Monitoring"/>
+      <description value="An EpisodeOfCare used to track a patient's remote monitoring period, including free-text monitoring notes and references to the responsible hospital Location, Section, and Ward."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1376,16 +1475,6 @@
         <reference value="CodeSystem/DIPSLocationTopLevel"/>
       </reference>
       <name value="DIPSLocationTopLevel"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DIPSMonitoringNotes"/>
-      </reference>
-      <name value="DIPSMonitoringNotes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1850,36 +1939,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DIPSReferenceLocation"/>
-      </reference>
-      <name value="DIPSReferenceLocation"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DIPSReferenceSection"/>
-      </reference>
-      <name value="DIPSReferenceSection"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DIPSReferenceWard"/>
-      </reference>
-      <name value="DIPSReferenceWard"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1936,16 +1995,6 @@
         <reference value="StructureDefinition/DIPSRelatedPersonResponsibleRequisitioner"/>
       </reference>
       <name value="DIPSRelatedPersonResponsibleRequisitioner"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DIPSRemoteMonitoring"/>
-      </reference>
-      <name value="DIPSRemoteMonitoring"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

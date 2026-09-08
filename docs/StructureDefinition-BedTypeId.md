@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/StructureDefinition/BedTypeId | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:BedTypeId |
+| *Official URL*:http://DIPS.no/fhir/StructureDefinition/R4/BedTypeId | *Version*:0.1.0 |
+| Draft as of 2026-09-08 | *Computable Name*:BedTypeId |
 
 **Context of Use**
 
@@ -18,7 +18,6 @@
 **Usages:**
 
 * Use this Extension: [DIPSLocation](StructureDefinition-DIPSLocation.md)
-* Examples for this Extension: [Gul 2](Location-Location-Bed-aie1000048.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.no.core|current/StructureDefinition/StructureDefinition-BedTypeId.json)
 
@@ -40,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-BedTypeId.csv), [Exc
 {
   "resourceType" : "StructureDefinition",
   "id" : "BedTypeId",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/BedTypeId",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/BedTypeId",
   "version" : "0.1.0",
   "name" : "BedTypeId",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -89,7 +88,7 @@ Other representations of profile: [CSV](StructureDefinition-BedTypeId.csv), [Exc
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://dips.no/fhir/R4/StructureDefinition/BedTypeId"
+      "fixedUri" : "http://DIPS.no/fhir/StructureDefinition/R4/BedTypeId"
     },
     {
       "id" : "Extension.value[x]",

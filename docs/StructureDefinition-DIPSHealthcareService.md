@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareService | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DIPSHealthcareService |
+| Draft as of 2026-09-08 | *Computable Name*:DIPSHealthcareService |
 
 The DIPS HealthcareService Profile inherits from the FHIR HealthcareService resource; refer to it for scope and usage definitions
 
@@ -48,7 +48,7 @@ The following search parameters and search parameter combinations SHALL be suppo
 1. **SHALL** support searching by HealthcareService using the `_id` search parameter:`GET [base]/HealthcareService?_id=[id]`Example:
 1. GET [base]/HealthcareService?_id=avcF1E097119EF54BCE8675892FF91641B2
 **Implementation Notes:** Fetches a bundle of all HealthcareService resources that match the id ([how to search by string])
-1. **SHALL** support searching by HealthcareService using the `identifier` search parameter:`GET [base]/HealthcareService?identifier=={system|}[code]`Example:
+1. **SHALL** support searching by HealthcareService using the `identifier` search parameter:`GET [base]/HealthcareService?identifier={system|}[code]`Example:
 1. 
 
 | | |
@@ -58,16 +58,16 @@ The following search parameters and search parameter combinations SHALL be suppo
 
 **Implementation Notes:** Fetches a bundle of all HealthcareService resources that match the identifier ([how to search by string])
 1. **SHALL** support searching by HealthcareService name using the `name` search parameter:`GET [base]/HealthcareService?name=[string]`Example:
-1. GET [base]/HealthcareService?name=Hs-8663
+1. GET [base]/HealthcareService?name=Digitale innbyggertjenester
 **Implementation Notes:** Fetches a bundle of all HealthcareService resources that match the name ([how to search by string])
 1. **SHALL** support searching by HealthcareService name using the `name-contains` search parameter:`GET [base]/HealthcareService?name:contains=[string]`Example:
-1. GET [base]/HealthcareService?name:contains=Hs-
+1. GET [base]/HealthcareService?name:contains=Digitale
 **Implementation Notes:** Fetches a bundle of all HealthcareService resources that match the name contains ([how to search by string])
 1. **SHALL** support searching by HealthcareService name using the `name-exact` search parameter:`GET [base]/HealthcareService?name:exact=[string]`Example:
-1. GET [base]/HealthcareService?name:exact=HS-8663 KOMMUNALE HELSE- OG SOSIALTJENESTER
+1. GET [base]/HealthcareService?name:exact=Digitale innbyggertjenester
 **Implementation Notes:** Fetches a bundle of all HealthcareService resources that match the exact name ([how to search by string])
 1. **SHALL** support searching by HealthcareService using the `organization` search parameter:`GET [base]/HealthcareService?organization=[organization]`Example:
-1. GET [base]/HealthcareService?organization=Organization/aks1
+1. GET [base]/HealthcareService?organization=Organization/aks52631
 **Implementation Notes:** Fetches a bundle of all HealthcareService resources that match the organization id ([how to search by string])
 1. **SHALL** support searching by HealthcareService using the `page` search parameter:`GET [base]/HealthcareService?page=[number]`Example:
 1. GET [base]/HealthcareService?page=1
@@ -91,7 +91,7 @@ The following search parameters and search parameter combinations SHALL be suppo
   "version" : "0.1.0",
   "name" : "DIPSHealthcareService",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -149,7 +149,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceWard"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceWard"]
       }]
     },
     {
@@ -173,7 +173,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceSection"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceSection"]
       }]
     },
     {
@@ -197,7 +197,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceDepartment"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceDepartment"]
       }]
     },
     {
@@ -221,7 +221,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceHospital"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceHospital"]
       }]
     },
     {
@@ -245,7 +245,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceAddress"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceAddress"]
       }]
     },
     {
@@ -624,7 +624,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceCommunicationProtocol"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceCommunicationProtocol"]
       }]
     },
     {
@@ -650,7 +650,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceIsPaperCopy"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceIsPaperCopy"]
       }]
     },
     {

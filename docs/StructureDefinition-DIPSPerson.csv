@@ -79,7 +79,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Person.extension:language","Person.extension","language","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/R4/StructureDefinition/DIPSPersonLanguage]]} {[]}
+"Person.extension:language","Person.extension","language","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/StructureDefinition/R4/DIPSPersonLanguage]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
@@ -90,7 +90,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Person.extension:language.url","Person.extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://dips.no/fhir/R4/StructureDefinition/DIPSPersonLanguage""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://dips.no/fhir/StructureDefinition/R4/DIPSPersonLanguage""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
 "Person.extension:language.value[x]","Person.extension.value[x]","","","",0,1,"","","","Coding {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
@@ -116,23 +116,23 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Person.extension:language.value[x].userSelected","Person.extension.value[x].userSelected","","","",0,0,"","","Y","boolean {[]} {[]}
 ","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CD.codingRationale","Sometimes implied by being first"
-"Person.extension:deathRegisteredTime","Person.extension","deathRegisteredTime","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathRegisteredTime]]} {[]}
+"Person.extension:deathRegisteredTime","Person.extension","deathRegisteredTime","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/StructureDefinition/R4/DIPSPersonDeathRegisteredTime]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"Person.extension:deathComment","Person.extension","deathComment","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathComment]]} {[]}
+"Person.extension:deathComment","Person.extension","deathComment","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/StructureDefinition/R4/DIPSPersonDeathComment]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"Person.extension:deathRegisteredBy","Person.extension","deathRegisteredBy","","",0,*,"","","","Extension {[CanonicalType[http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathRegisteredBy]]} {[]}
+"Person.extension:deathRegisteredBy","Person.extension","deathRegisteredBy","","",0,*,"","","","Extension {[CanonicalType[http://dips.no/fhir/StructureDefinition/R4/DIPSPersonDeathRegisteredBy]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"Person.extension:hospitalSectorId","Person.extension","hospitalSectorId","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/R4/StructureDefinition/DIPSPersonHospitalSectorId]]} {[]}
+"Person.extension:hospitalSectorId","Person.extension","hospitalSectorId","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/StructureDefinition/R4/DIPSPersonHospitalSectorId]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"Person.extension:hospitalSectorName","Person.extension","hospitalSectorName","","",0,*,"","","","Extension {[CanonicalType[http://dips.no/fhir/R4/StructureDefinition/DIPSPersonHospitalSectorName]]} {[]}
+"Person.extension:hospitalSectorName","Person.extension","hospitalSectorName","","",0,*,"","","","Extension {[CanonicalType[http://dips.no/fhir/StructureDefinition/R4/DIPSPersonHospitalSectorName]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
@@ -336,10 +336,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Person.address.extension:propertyInformation","Person.address.extension","propertyInformation","","",0,*,"","","","Extension {[CanonicalType[http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation]]} {[]}
 ","Real property identification","Identification of a real property in Norway is defined using gårdsnummer, bruksnummer and kommunenummer. In addition real property can be rented out, the area of the real property that is rented is measured and is further identified by its festenummer. In addition some real property is split into sections identified by its seksjonsnummer","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Person.address.extension:stateName","Person.address.extension","stateName","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/R4/StructureDefinition/DIPSPersonStateName]]} {[]}
+"Person.address.extension:stateName","Person.address.extension","stateName","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/StructureDefinition/R4/DIPSPersonStateName]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"Person.address.extension:lastOfficialAddressSyncTime","Person.address.extension","lastOfficialAddressSyncTime","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/R4/StructureDefinition/DIPSPersonLastOfficialAddressSyncTime]]} {[]}
+"Person.address.extension:lastOfficialAddressSyncTime","Person.address.extension","lastOfficialAddressSyncTime","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/StructureDefinition/R4/DIPSPersonLastOfficialAddressSyncTime]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Person.address.use","Person.address.use","","","",0,1,"","Y","Y","code {[]} {[]}
@@ -391,7 +391,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Person.address.district.extension:municipalitycode","Person.address.district.extension","municipalitycode","","",0,1,"","","","Extension {[CanonicalType[http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode]]} {[]}
 ","Coded value for municipality/county Norwegian kommune","Coded value for municipality/county Norwegian kommune","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Person.address.district.extension:muniplaity","Person.address.district.extension","muniplaity","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/R4/StructureDefinition/DIPSPersonMunicipality]]} {[]}
+"Person.address.district.extension:muniplaity","Person.address.district.extension","muniplaity","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/StructureDefinition/R4/DIPSPersonMunicipality]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Person.address.district.extension:muniplaity.id","Person.address.district.extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -401,7 +401,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Person.address.district.extension:muniplaity.url","Person.address.district.extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://dips.no/fhir/R4/StructureDefinition/DIPSPersonMunicipality""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://dips.no/fhir/StructureDefinition/R4/DIPSPersonMunicipality""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
 "Person.address.district.extension:muniplaity.value[x]","Person.address.district.extension.value[x]","","","",0,1,"","","","Coding {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"

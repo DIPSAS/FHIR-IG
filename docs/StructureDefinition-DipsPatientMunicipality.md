@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DipsPatientMunicipality | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DipsPatientMunicipality |
+| *Official URL*:http://dips.no/fhir/StructureDefinition/R4/DIPSPatientMunicipality | *Version*:0.1.0 |
+| Draft as of 2026-09-08 | *Computable Name*:DipsPatientMunicipality |
 
 **Context of Use**
 
@@ -18,7 +18,6 @@
 **Usages:**
 
 * Use this Extension: [DIPSPatient](StructureDefinition-DIPSPatient.md)
-* Examples for this Extension: [Patient/cdp1000001](Patient-cdp1000001.md), [Patient/cdp1000007](Patient-cdp1000007.md) and [Patient/cdp2007964](Patient-cdp2007964.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.no.core|current/StructureDefinition/StructureDefinition-DipsPatientMunicipality.json)
 
@@ -40,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-DipsPatientMunicipal
 {
   "resourceType" : "StructureDefinition",
   "id" : "DipsPatientMunicipality",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientMunicipality",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientMunicipality",
   "version" : "0.1.0",
   "name" : "DipsPatientMunicipality",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -85,7 +84,7 @@ Other representations of profile: [CSV](StructureDefinition-DipsPatientMunicipal
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientMunicipality"
+      "fixedUri" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientMunicipality"
     },
     {
       "id" : "Extension.value[x]",

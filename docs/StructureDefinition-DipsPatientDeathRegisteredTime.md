@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DipsPatientDeathRegisteredTime | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DipsPatientDeathRegisteredTime |
+| *Official URL*:http://dips.no/fhir/StructureDefinition/R4/DIPSPatientDeathRegisteredTime | *Version*:0.1.0 |
+| Draft as of 2026-09-08 | *Computable Name*:DipsPatientDeathRegisteredTime |
 
 **Context of Use**
 
@@ -18,7 +18,6 @@
 **Usages:**
 
 * Use this Extension: [DIPSPatient](StructureDefinition-DIPSPatient.md)
-* Examples for this Extension: [Patient/cdp1000007](Patient-cdp1000007.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.no.core|current/StructureDefinition/StructureDefinition-DipsPatientDeathRegisteredTime.json)
 
@@ -40,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-DipsPatientDeathRegi
 {
   "resourceType" : "StructureDefinition",
   "id" : "DipsPatientDeathRegisteredTime",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientDeathRegisteredTime",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientDeathRegisteredTime",
   "version" : "0.1.0",
   "name" : "DipsPatientDeathRegisteredTime",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -85,7 +84,7 @@ Other representations of profile: [CSV](StructureDefinition-DipsPatientDeathRegi
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientDeathRegisteredTime"
+      "fixedUri" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientDeathRegisteredTime"
     },
     {
       "id" : "Extension.value[x]",

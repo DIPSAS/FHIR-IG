@@ -12,15 +12,15 @@ Profiles: [DIPSPractitionerRole](StructureDefinition-DIPSPractitionerRole.md), [
 
 Tag: 
 
-**DIPSPractitionerRoleHealthCarePartyType**: Ward
+**no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHealthCarePartyType**: Ward
 
-**DIPSPractitionerRoleCommunicationType**: Epikrise
+**no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationType**: Epikrise
 
-**DIPSPractitionerRoleWard**: [Organization: identifier = urn:oid:1.3.6.1.4.1.9038.70.4#1000057](Organization-ahl1000057.md)
+**no/fhir/R4/StructureDefinition/DIPSPractitionerRoleWard**: [Organization: identifier = urn:oid:1.3.6.1.4.1.9038.70.4#1000057](Organization-ahl1000057.md)
 
-**DIPSPractitionerRoleHospital**: [Organization/afm1](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&canonical=http://fhir.org/packages/hl7.fhir.no.basis/Organization/afm1)
+**no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHospital**: [Organization/afm1](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&canonical=http://fhir.org/packages/hl7.fhir.no.basis/Organization/afm1)
 
-**DIPSPractitionerRoleHcpRoleName**: Habiliteringspost
+**no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHcpRoleName**: Habiliteringspost
 
 **identifier**: `urn:oid:1.3.6.1.4.1.9038.51`/HA1 (use: official, ), `urn:oid:1.3.6.1.4.1.9038.51.1`/1000203 (use: official, )
 

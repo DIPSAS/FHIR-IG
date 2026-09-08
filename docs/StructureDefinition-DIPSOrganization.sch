@@ -37,11 +37,11 @@
   <sch:pattern>
     <sch:title>f:Organization/f:type/f:coding</sch:title>
     <sch:rule context="f:Organization/f:type/f:coding">
-      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/R4/StructureDefinition/OrganizationTypeCodeId']) &lt;= 1">extension with URL = 'http://dips.no/fhir/R4/StructureDefinition/OrganizationTypeCodeId': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/R4/StructureDefinition/DepartmentTypeCodeId']) &lt;= 1">extension with URL = 'http://dips.no/fhir/R4/StructureDefinition/DepartmentTypeCodeId': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/R4/StructureDefinition/LocationTypeCodeId']) &lt;= 1">extension with URL = 'http://dips.no/fhir/R4/StructureDefinition/LocationTypeCodeId': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/R4/StructureDefinition/SectionProfessionCodeId']) &lt;= 1">extension with URL = 'http://dips.no/fhir/R4/StructureDefinition/SectionProfessionCodeId': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/R4/StructureDefinition/WardTypeCodeId']) &lt;= 1">extension with URL = 'http://dips.no/fhir/R4/StructureDefinition/WardTypeCodeId': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://DIPS.no/fhir/StructureDefinition/R4/OrganizationTypeCodeId']) &lt;= 1">extension with URL = 'http://DIPS.no/fhir/StructureDefinition/R4/OrganizationTypeCodeId': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://DIPS.no/fhir/StructureDefinition/R4/DepartmentTypeCodeId']) &lt;= 1">extension with URL = 'http://DIPS.no/fhir/StructureDefinition/R4/DepartmentTypeCodeId': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://DIPS.no/fhir/StructureDefinition/R4/LocationTypeCodeId']) &lt;= 1">extension with URL = 'http://DIPS.no/fhir/StructureDefinition/R4/LocationTypeCodeId': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://DIPS.no/fhir/StructureDefinition/R4/SectionProfessionCodeId']) &lt;= 1">extension with URL = 'http://DIPS.no/fhir/StructureDefinition/R4/SectionProfessionCodeId': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/StructureDefinition/R4/WardTypeCodeId']) &lt;= 1">extension with URL = 'http://dips.no/fhir/StructureDefinition/R4/WardTypeCodeId': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -120,7 +120,7 @@
     <sch:rule context="f:Organization/f:address">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.no/fhir/StructureDefinition/no-basis-urban-district']) &lt;= 1">extension with URL = 'http://hl7.no/fhir/StructureDefinition/no-basis-urban-district': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/R4/StructureDefinition/OrganizationAddressId']) &lt;= 1">extension with URL = 'http://dips.no/fhir/R4/StructureDefinition/OrganizationAddressId': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://DIPS.no/fhir/StructureDefinition/R4/Organization-addressId']) &lt;= 1">extension with URL = 'http://DIPS.no/fhir/StructureDefinition/R4/Organization-addressId': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:use) &lt;= 1">use: maximum cardinality of 'use' is 1</sch:assert>
       <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
       <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>

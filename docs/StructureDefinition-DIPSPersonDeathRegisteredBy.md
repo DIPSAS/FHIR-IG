@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathRegisteredBy | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DIPSPersonDeathRegisteredBy |
+| *Official URL*:http://dips.no/fhir/StructureDefinition/R4/DIPSPersonDeathRegisteredBy | *Version*:0.1.0 |
+| Draft as of 2026-09-08 | *Computable Name*:DIPSPersonDeathRegisteredBy |
 
 **Context of Use**
 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-DIPSPersonDeathRegis
 {
   "resourceType" : "StructureDefinition",
   "id" : "DIPSPersonDeathRegisteredBy",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathRegisteredBy",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonDeathRegisteredBy",
   "version" : "0.1.0",
   "name" : "DIPSPersonDeathRegisteredBy",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -84,7 +84,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSPersonDeathRegis
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathRegisteredBy"
+      "fixedUri" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonDeathRegisteredBy"
     },
     {
       "id" : "Extension.value[x]",

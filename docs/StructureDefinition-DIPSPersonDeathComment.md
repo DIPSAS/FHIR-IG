@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathComment | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DIPSPersonDeathComment |
+| *Official URL*:http://dips.no/fhir/StructureDefinition/R4/DIPSPersonDeathComment | *Version*:0.1.0 |
+| Draft as of 2026-09-08 | *Computable Name*:DIPSPersonDeathComment |
 
 **Context of Use**
 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-DIPSPersonDeathComme
 {
   "resourceType" : "StructureDefinition",
   "id" : "DIPSPersonDeathComment",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathComment",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonDeathComment",
   "version" : "0.1.0",
   "name" : "DIPSPersonDeathComment",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -84,7 +84,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSPersonDeathComme
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathComment"
+      "fixedUri" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonDeathComment"
     },
     {
       "id" : "Extension.value[x]",

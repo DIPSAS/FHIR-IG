@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerSpecialist | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DIPSPractitionerSpecialist |
+| *Official URL*:http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerSpecialist | *Version*:0.1.0 |
+| Draft as of 2026-09-08 | *Computable Name*:DIPSPractitionerSpecialist |
 
 **Context of Use**
 
@@ -18,7 +18,6 @@
 **Usages:**
 
 * Use this Extension: [DIPSBasisPractitionerR4](StructureDefinition-DIPSBasisPractitionerR4.md) and [DIPSPractitioner](StructureDefinition-DIPSPractitioner.md)
-* Examples for this Extension: [Practitioner/Practitioner-stf39](Practitioner-Practitioner-stf39.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.no.core|current/StructureDefinition/StructureDefinition-DIPSPractitionerSpecialist.json)
 
@@ -40,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-DIPSPractitionerSpec
 {
   "resourceType" : "StructureDefinition",
   "id" : "DIPSPractitionerSpecialist",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerSpecialist",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerSpecialist",
   "version" : "0.1.0",
   "name" : "DIPSPractitionerSpecialist",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -85,7 +84,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSPractitionerSpec
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerSpecialist"
+      "fixedUri" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerSpecialist"
     },
     {
       "id" : "Extension.value[x]",

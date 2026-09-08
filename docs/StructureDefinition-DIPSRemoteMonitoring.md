@@ -1,15 +1,18 @@
-# DIPSRemoteMonitoring - DIPS Core Implementation Guide v0.1.0
+# DIPS Remote Monitoring - DIPS Core Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DIPSRemoteMonitoring**
+* **DIPS Remote Monitoring**
 
-## Resource Profile: DIPSRemoteMonitoring 
+## Resource Profile: DIPS Remote Monitoring 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSRemoteMonitoring | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DIPSRemoteMonitoring |
+| *Official URL*:http://dips.no/fhir/StructureDefinition/R4/DIPSRemoteMonitoring | *Version*:0.1.0 |
+| Draft as of 2026-09-08 | *Computable Name*:DIPSRemoteMonitoring |
+
+ 
+An EpisodeOfCare used to track a patient's remote monitoring period, including free-text monitoring notes and references to the responsible hospital Location, Section, and Ward. 
 
 The DIPS Remote Monitoring Profile inherits from the FHIR EpisodeOfCare resource; refer to it for scope and usage definitions
 
@@ -54,9 +57,9 @@ The following search parameters and search parameter combinations SHALL be suppo
 1. **SHALL** support searching EpisodeOfCare using the `patient` and `status` search parameters, where `status` is the status text:`GET [base]/EpisodeOfCare?patient=[id]&status=[string]`Example:
 1. GET [base]/EpisodeOfCare?patient=1000001&status=planned
 **Implementation Notes:** Fetches a bundle of all EpisodeOfCare resources for the patient that match the given status ([how to search by string])
-1. **SHALL** support searching EpisodeOfCare using the `externalsystemid` and `externalid` search parameters:`GET [base]/EpisodeOfCare?externalsystemid=[string]&externalid=[string]`Example:
-1. GET [base]/EpisodeOfCare?externalsystemid=1027472&externalid=2334343
-**Implementation Notes:** Fetches a bundle of all EpisodeOfCare resources that match the given external system id and external id ([how to search by string])
+1. **SHALL** support searching EpisodeOfCare using the `externalSystemId` and `externalId` search parameters:`GET [base]/EpisodeOfCare?externalSystemId=[number]&externalId=[string]`Example:
+1. GET [base]/EpisodeOfCare?externalSystemId=1027472&externalId=2334343
+**Implementation Notes:** Fetches a bundle of all EpisodeOfCare resources that match the given external system id and external id. Both parameter names are case-sensitive ([how to search by string])
 
 
 
@@ -66,11 +69,12 @@ The following search parameters and search parameter combinations SHALL be suppo
 {
   "resourceType" : "StructureDefinition",
   "id" : "DIPSRemoteMonitoring",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRemoteMonitoring",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSRemoteMonitoring",
   "version" : "0.1.0",
   "name" : "DIPSRemoteMonitoring",
+  "title" : "DIPS Remote Monitoring",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -80,6 +84,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "use" : "work"
     }]
   }],
+  "description" : "An EpisodeOfCare used to track a patient's remote monitoring period, including free-text monitoring notes and references to the responsible hospital Location, Section, and Ward.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -133,7 +138,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSMonitoringNotes"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/DIPSMonitoringNotes"]
       }]
     },
     {
@@ -144,7 +149,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceLocation"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/DIPSReferenceLocation"]
       }]
     },
     {
@@ -215,7 +220,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceSection"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/DIPSReferenceSection"]
       }]
     },
     {
@@ -286,7 +291,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceWard"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/DIPSReferenceWard"]
       }]
     },
     {
@@ -348,6 +353,17 @@ The following search parameters and search parameter combinations SHALL be suppo
       "id" : "EpisodeOfCare.extension:dipsReferenceWard.value[x].display",
       "path" : "EpisodeOfCare.extension.value[x].display",
       "max" : "0"
+    },
+    {
+      "id" : "EpisodeOfCare.extension:dipsDocumentTypeId",
+      "path" : "EpisodeOfCare.extension",
+      "sliceName" : "dipsDocumentTypeId",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://dips.no/fhir/StructureDefinition/DIPSDocumentTypeId"]
+      }]
     },
     {
       "id" : "EpisodeOfCare.identifier",
@@ -417,11 +433,6 @@ The following search parameters and search parameter combinations SHALL be suppo
       "fixedUri" : "http://extern.no/fhir/namingsystem/external-identifier"
     },
     {
-      "id" : "EpisodeOfCare.statusHistory",
-      "path" : "EpisodeOfCare.statusHistory",
-      "max" : "0"
-    },
-    {
       "id" : "EpisodeOfCare.type.id",
       "path" : "EpisodeOfCare.type.id",
       "max" : "0"
@@ -442,14 +453,34 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "0"
     },
     {
+      "id" : "EpisodeOfCare.type.coding.system",
+      "path" : "EpisodeOfCare.type.coding.system",
+      "fixedUri" : "http://terminology.hl7.org/CodeSystem/episodeofcare-type"
+    },
+    {
       "id" : "EpisodeOfCare.type.coding.version",
       "path" : "EpisodeOfCare.type.coding.version",
       "max" : "0"
     },
     {
+      "id" : "EpisodeOfCare.type.coding.code",
+      "path" : "EpisodeOfCare.type.coding.code",
+      "fixedCode" : "HACC"
+    },
+    {
+      "id" : "EpisodeOfCare.type.coding.display",
+      "path" : "EpisodeOfCare.type.coding.display",
+      "fixedString" : "Home and Community Care"
+    },
+    {
       "id" : "EpisodeOfCare.type.coding.userSelected",
       "path" : "EpisodeOfCare.type.coding.userSelected",
       "max" : "0"
+    },
+    {
+      "id" : "EpisodeOfCare.type.text",
+      "path" : "EpisodeOfCare.type.text",
+      "fixedString" : "Home and Community Care"
     },
     {
       "id" : "EpisodeOfCare.diagnosis",
@@ -612,9 +643,15 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "0"
     },
     {
-      "id" : "EpisodeOfCare.careManager.extension",
+      "id" : "EpisodeOfCare.careManager.extension:dipsIsResponsible",
       "path" : "EpisodeOfCare.careManager.extension",
-      "max" : "0"
+      "sliceName" : "dipsIsResponsible",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://dips.no/fhir/StructureDefinition/DIPSIsResponsible"]
+      }]
     },
     {
       "id" : "EpisodeOfCare.careManager.type",

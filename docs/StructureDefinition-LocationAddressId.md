@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/StructureDefinition/LocationAddressId | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:LocationAddressId |
+| *Official URL*:http://DIPS.no/fhir/StructureDefinition/R4/Location-addressId | *Version*:0.1.0 |
+| Draft as of 2026-09-08 | *Computable Name*:LocationAddressId |
 
 **Context of Use**
 
@@ -18,7 +18,6 @@
 **Usages:**
 
 * Use this Extension: [DIPSLocation](StructureDefinition-DIPSLocation.md)
-* Examples for this Extension: [Kirurgisk Post 2, Sd](Location-Location-Ward-ahl1000139.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.no.core|current/StructureDefinition/StructureDefinition-LocationAddressId.json)
 
@@ -40,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-LocationAddressId.cs
 {
   "resourceType" : "StructureDefinition",
   "id" : "LocationAddressId",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/LocationAddressId",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/Location-addressId",
   "version" : "0.1.0",
   "name" : "LocationAddressId",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -85,7 +84,7 @@ Other representations of profile: [CSV](StructureDefinition-LocationAddressId.cs
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://dips.no/fhir/R4/StructureDefinition/LocationAddressId"
+      "fixedUri" : "http://DIPS.no/fhir/StructureDefinition/R4/Location-addressId"
     },
     {
       "id" : "Extension.value[x]",

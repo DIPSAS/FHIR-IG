@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/ImplementationGuide/dips.fhir.no.core | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DIPSCore |
+| Draft as of 2026-09-08 | *Computable Name*:DIPSCore |
 
 # DIPS Core Implementation Guide
 
@@ -40,7 +40,7 @@ This guide is intended for developers and integrators building or consuming inte
   "name" : "DIPSCore",
   "title" : "DIPS Core Implementation Guide",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -1424,7 +1424,7 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "Patient/cdp1000001"
       },
       "name" : "cdp1000001",
-      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPatient"
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1439,7 +1439,7 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "Patient/cdp1000007"
       },
       "name" : "cdp1000007",
-      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPatient"
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1469,7 +1469,7 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "Patient/cdp2007964"
       },
       "name" : "cdp2007964",
-      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPatient"
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1559,6 +1559,150 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DiagnoseGroupExtension"
       },
       "name" : "DiagnoseGroupExtension",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DipsCanReceiveSms.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DipsCanReceiveSms"
+      },
+      "name" : "DIPS Can Receive SMS",
+      "description" : "Indicates whether this phone number can receive SMS messages.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DipsCommentText.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DipsCommentText"
+      },
+      "name" : "DIPS Comment Text",
+      "description" : "A free-text comment associated with this phone number.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentTypeId.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentTypeId"
+      },
+      "name" : "DIPS Document Type Id",
+      "description" : "The id of a document type associated with the monitoring type of this remote monitoring episode of care. Repeats once per associated document type.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSIsResponsible.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSIsResponsible"
+      },
+      "name" : "DIPS Is Responsible",
+      "description" : "Indicates whether this healthcare party is the responsible care manager for the remote monitoring episode of care.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSMonitoringNotes.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSMonitoringNotes"
+      },
+      "name" : "DIPS Monitoring Notes",
+      "description" : "Free-text clinical notes recorded against this remote monitoring episode of care.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSReferenceLocation.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSReferenceLocation"
+      },
+      "name" : "DIPS Reference Location",
+      "description" : "A reference to the DIPS hospital Location, modelled as an Organization, associated with this remote monitoring episode of care.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSReferenceSection.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSReferenceSection"
+      },
+      "name" : "DIPS Reference Section",
+      "description" : "A reference to the DIPS hospital Section, modelled as an Organization, associated with this remote monitoring episode of care.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSReferenceWard.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSReferenceWard"
+      },
+      "name" : "DIPS Reference Ward",
+      "description" : "A reference to the DIPS hospital Ward, modelled as an Organization, associated with this remote monitoring episode of care.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSRemoteMonitoring.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSRemoteMonitoring"
+      },
+      "name" : "DIPS Remote Monitoring",
+      "description" : "An EpisodeOfCare used to track a patient's remote monitoring period, including free-text monitoring notes and references to the responsible hospital Location, Section, and Ward.",
       "exampleBoolean" : false
     },
     {
@@ -1984,21 +2128,6 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "CodeSystem/DIPSLocationTopLevel"
       },
       "name" : "DIPSLocationTopLevel",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-DIPSMonitoringNotes.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/DIPSMonitoringNotes"
-      },
-      "name" : "DIPSMonitoringNotes",
       "exampleBoolean" : false
     },
     {
@@ -2694,51 +2823,6 @@ This guide is intended for developers and integrators building or consuming inte
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-DIPSReferenceLocation.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/DIPSReferenceLocation"
-      },
-      "name" : "DIPSReferenceLocation",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-DIPSReferenceSection.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/DIPSReferenceSection"
-      },
-      "name" : "DIPSReferenceSection",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-DIPSReferenceWard.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/DIPSReferenceWard"
-      },
-      "name" : "DIPSReferenceWard",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       },
       {
@@ -2824,21 +2908,6 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSRelatedPersonResponsibleRequisitioner"
       },
       "name" : "DIPSRelatedPersonResponsibleRequisitioner",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-DIPSRemoteMonitoring.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/DIPSRemoteMonitoring"
-      },
-      "name" : "DIPSRemoteMonitoring",
       "exampleBoolean" : false
     },
     {

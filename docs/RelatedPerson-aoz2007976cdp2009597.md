@@ -8,9 +8,9 @@
 
 Profiles: [DIPSRelatedPerson](StructureDefinition-DIPSRelatedPerson.md), [no-basis-RelatedPerson](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&canonical=http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson)
 
-**DIPSRelatedPersonKinship**: sÃ¸ster
+**no/fhir/R4/StructureDefinition/DIPSRelatedPersonKinship**: sÃ¸ster
 
-**DIPSRelatedPersonParentalResponsibility**: false
+**no/fhir/R4/StructureDefinition/DIPSRelatedPersonParentalResponsibility**: false
 
 **identifier**: FellesHjelpenummer/01486848800 (use: temp, ), `http://dips.no/fhir/namingsystem/dips-relativeid`/aoz2007976cdp2009597 (use: official, )
 

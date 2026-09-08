@@ -455,7 +455,7 @@ Other representations of profile: [CSV](StructureDefinition-NoImplVitalSignsObse
       "min" : 1,
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPatient"]
+        "targetProfile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPatient"]
       }]
     },
     {

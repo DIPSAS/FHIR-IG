@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSPatient | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DIPSPatient |
+| *Official URL*:http://dips.no/fhir/StructureDefinition/R4/DIPSPatient | *Version*:0.1.0 |
+| Draft as of 2026-09-08 | *Computable Name*:DIPSPatient |
 
 The DIPS Patient Profile inherits from the FHIR Patient resource; refer to it for scope and usage definitions
 
@@ -22,7 +22,6 @@ Query by Patient name or NPI
 **Usages:**
 
 * Refer to this Profile: [NoImplVitalSignsObservationBloodpressure](StructureDefinition-NoImplVitalSignsObservationBloodpressure.md), [NoImplVitalSignsObservationBodyHeight](StructureDefinition-NoImplVitalSignsObservationBodyHeight.md), [NoImplVitalSignsObservationBodyMassIndex](StructureDefinition-NoImplVitalSignsObservationBodyMassIndex.md), [NoImplVitalSignsObservationBodyTemp](StructureDefinition-NoImplVitalSignsObservationBodyTemp.md)... Show 9 more, [NoImplVitalSignsObservationBodyWeight](StructureDefinition-NoImplVitalSignsObservationBodyWeight.md), [NoImplVitalSignsObservationConsciousness](StructureDefinition-NoImplVitalSignsObservationConsciousness.md), [NoImplVitalSignsObservationGCS](StructureDefinition-NoImplVitalSignsObservationGCS.md), [NoImplVitalSignsObservationHeartRate](StructureDefinition-NoImplVitalSignsObservationHeartRate.md), [NoImplVitalSignsObservationNews2Score](StructureDefinition-NoImplVitalSignsObservationNews2Score.md), [NoImplVitalSignsObservationOxygenSaturation](StructureDefinition-NoImplVitalSignsObservationOxygenSaturation.md), [NoImplVitalSignsObservationPulse](StructureDefinition-NoImplVitalSignsObservationPulse.md), [NoImplVitalSignsObservationQSOFAScore](StructureDefinition-NoImplVitalSignsObservationQSOFAScore.md) and [NoImplVitalSignsObservationRespirationRate](StructureDefinition-NoImplVitalSignsObservationRespirationRate.md)
-* Examples for this Profile: [Patient/cdp1000001](Patient-cdp1000001.md), [Patient/cdp1000007](Patient-cdp1000007.md) and [Patient/cdp2007964](Patient-cdp2007964.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.no.core|current/StructureDefinition/StructureDefinition-DIPSPatient.json)
 
@@ -41,7 +40,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSPatient.csv), [E
 The following search parameters and search parameter combinations SHALL be supported:
 
 1. **SHALL** support searching Patient using the `address` search parameter:`GET [base]/Patient?address=[string]`Example:
-1. GET [base]/Patient?address=FL�KLYPA 31
+1. GET [base]/Patient?address=Flaklypa 31
 **Implementation Notes:** Fetches a bundle of all Patient resources that match the address ([how to search by string])
 1. **SHALL** support searching Patient using the `birthdate` search parameter:`GET [base]/Patient?birthdate=[date]`Example:
 1. GET [base]/Patient?birthdate=1925-02-15
@@ -106,11 +105,11 @@ The following search parameters and search parameter combinations SHALL be suppo
 {
   "resourceType" : "StructureDefinition",
   "id" : "DIPSPatient",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPatient",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPatient",
   "version" : "0.1.0",
   "name" : "DIPSPatient",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -207,7 +206,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DipsPatientDeathRegisteredTime"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPatientDeathRegisteredTime"]
       }]
     },
     {
@@ -218,7 +217,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DipsPatientDeathComment"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPatientDeathComment"]
       }]
     },
     {
@@ -229,7 +228,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/IsUpdatedByPopulationRegister"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/IsUpdatedByPopulationRegister"]
       }]
     },
     {
@@ -240,7 +239,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DipsPatientDeathRegisteredBy"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DeathRegisteredBy"]
       }]
     },
     {
@@ -251,7 +250,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DipsPatientHospitalSectorId"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPatientHospitalSectorId"]
       }]
     },
     {
@@ -262,7 +261,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DipsPatientHospitalSectorName"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPatientHospitalSectorName"]
       }]
     },
     {
@@ -320,7 +319,29 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DipsPatientPhoneTypeId"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPatientPhoneTypeId"]
+      }]
+    },
+    {
+      "id" : "Patient.telecom.extension:canReceiveSms",
+      "path" : "Patient.telecom.extension",
+      "sliceName" : "canReceiveSms",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSCanReceiveSms"]
+      }]
+    },
+    {
+      "id" : "Patient.telecom.extension:commentText",
+      "path" : "Patient.telecom.extension",
+      "sliceName" : "commentText",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSCommentText"]
       }]
     },
     {
@@ -331,7 +352,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DipsPatientStateName"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPatientStateName"]
       }]
     },
     {
@@ -342,7 +363,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/LastOfficialAddressSyncTime"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/LastOfficialAddressSyncTime"]
       }]
     },
     {
@@ -368,7 +389,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DipsPatientMunicipality"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPatientMunicipality"]
       }]
     },
     {
@@ -416,7 +437,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPatientContactIdentifier"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPatientContactIdentifier"]
       }]
     },
     {
@@ -427,7 +448,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPatientContactPractitionerRoleName"]
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPatientContactPractitionerRoleName"]
       }]
     },
     {
@@ -459,7 +480,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "path" : "Patient.contact.organization",
       "type" : [{
         "code" : "Reference",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSOrganizationReference"],
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSOrganizationReference"],
         "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"]
       }]
     },
@@ -489,7 +510,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DipsPatientLanguageId"]
+        "profile" : ["http://hl7.no/fhir/StructureDefinition/dips-patient-language-id"]
       }]
     },
     {
@@ -528,7 +549,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "path" : "Patient.generalPractitioner",
       "type" : [{
         "code" : "Reference",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleReference"],
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleReference"],
         "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization",
         "http://hl7.org/fhir/StructureDefinition/Practitioner",
         "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
@@ -542,7 +563,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       "path" : "Patient.managingOrganization",
       "type" : [{
         "code" : "Reference",
-        "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSOrganizationReference"],
+        "profile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSOrganizationReference"],
         "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization",
         "http://hl7.no/fhir/StructureDefinition/no-basis-Organization"]
       }]

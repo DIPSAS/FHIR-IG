@@ -3603,7 +3603,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://dips.no/fhir/R4/StructureDefinition/DIPSPatient"/>
+        <targetProfile value="http://dips.no/fhir/StructureDefinition/R4/DIPSPatient"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -5891,7 +5891,7 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://dips.no/fhir/R4/StructureDefinition/DIPSPatient"/>
+        <targetProfile value="http://dips.no/fhir/StructureDefinition/R4/DIPSPatient"/>
       </type>
     </element>
     <element id="Observation.focus">

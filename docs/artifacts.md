@@ -49,31 +49,31 @@ These are the Profiles of Vitalsigns
 
 These define constraints on FHIR resources for systems conforming to this implementation guide.
 
-| |
-| :--- |
-| [DIPSAppointment](StructureDefinition-DIPSAppointment.md) |
-| [DIPSAppointmentSchedule](StructureDefinition-DIPSAppointmentSchedule.md) |
-| [DIPSBasisPractitionerR4](StructureDefinition-DIPSBasisPractitionerR4.md) |
-| [DIPSEncounterLocation](StructureDefinition-DIPSEncounterLocation.md) |
-| [DIPSEncounterOrganization](StructureDefinition-DIPSEncounterOrganization.md) |
-| [DIPSEncounterPractitionerReference](StructureDefinition-DIPSEncounterPractitionerReference.md) |
-| [DIPSEncounterServiceRequest](StructureDefinition-DIPSEncounterServiceRequest.md) |
-| [DIPSEncounterSubjectReference](StructureDefinition-DIPSEncounterSubjectReference.md) |
-| [DIPSHealthcareService](StructureDefinition-DIPSHealthcareService.md) |
-| [DIPSHospitalStayEncounter](StructureDefinition-DIPSHospitalStayEncounter.md) |
-| [DIPSLocation](StructureDefinition-DIPSLocation.md) |
-| [DIPSLocationReference](StructureDefinition-DIPSLocationReference.md) |
-| [DIPSOrganization](StructureDefinition-DIPSOrganization.md) |
-| [DIPSPatient](StructureDefinition-DIPSPatient.md) |
-| [DIPSPerson](StructureDefinition-DIPSPerson.md) |
-| [DIPSPractitioner](StructureDefinition-DIPSPractitioner.md) |
-| [DIPSPractitionerRole](StructureDefinition-DIPSPractitionerRole.md) |
-| [DIPSR4Encounter](StructureDefinition-DIPSR4Encounter.md) |
-| [DIPSRelatedPerson](StructureDefinition-DIPSRelatedPerson.md) |
-| [DIPSRemoteMonitoring](StructureDefinition-DIPSRemoteMonitoring.md) |
-| [DIPSSubjectReference](StructureDefinition-DIPSSubjectReference.md) |
-| [DipsOrganizationRef](StructureDefinition-DipsOrganizationRef.md) |
-| [SelfBookingSlot](StructureDefinition-SelfBookingSlot.md) |
+| | |
+| :--- | :--- |
+| [DIPS Remote Monitoring](StructureDefinition-DIPSRemoteMonitoring.md) | An EpisodeOfCare used to track a patient's remote monitoring period, including free-text monitoring notes and references to the responsible hospital Location, Section, and Ward. |
+| [DIPSAppointment](StructureDefinition-DIPSAppointment.md) |  |
+| [DIPSAppointmentSchedule](StructureDefinition-DIPSAppointmentSchedule.md) |  |
+| [DIPSBasisPractitionerR4](StructureDefinition-DIPSBasisPractitionerR4.md) |  |
+| [DIPSEncounterLocation](StructureDefinition-DIPSEncounterLocation.md) |  |
+| [DIPSEncounterOrganization](StructureDefinition-DIPSEncounterOrganization.md) |  |
+| [DIPSEncounterPractitionerReference](StructureDefinition-DIPSEncounterPractitionerReference.md) |  |
+| [DIPSEncounterServiceRequest](StructureDefinition-DIPSEncounterServiceRequest.md) |  |
+| [DIPSEncounterSubjectReference](StructureDefinition-DIPSEncounterSubjectReference.md) |  |
+| [DIPSHealthcareService](StructureDefinition-DIPSHealthcareService.md) |  |
+| [DIPSHospitalStayEncounter](StructureDefinition-DIPSHospitalStayEncounter.md) |  |
+| [DIPSLocation](StructureDefinition-DIPSLocation.md) |  |
+| [DIPSLocationReference](StructureDefinition-DIPSLocationReference.md) |  |
+| [DIPSOrganization](StructureDefinition-DIPSOrganization.md) |  |
+| [DIPSPatient](StructureDefinition-DIPSPatient.md) |  |
+| [DIPSPerson](StructureDefinition-DIPSPerson.md) |  |
+| [DIPSPractitioner](StructureDefinition-DIPSPractitioner.md) |  |
+| [DIPSPractitionerRole](StructureDefinition-DIPSPractitionerRole.md) |  |
+| [DIPSR4Encounter](StructureDefinition-DIPSR4Encounter.md) |  |
+| [DIPSRelatedPerson](StructureDefinition-DIPSRelatedPerson.md) |  |
+| [DIPSSubjectReference](StructureDefinition-DIPSSubjectReference.md) |  |
+| [DipsOrganizationRef](StructureDefinition-DipsOrganizationRef.md) |  |
+| [SelfBookingSlot](StructureDefinition-SelfBookingSlot.md) |  |
 
 ### Structures: Data Type Profiles 
 
@@ -98,6 +98,14 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [BedTime](StructureDefinition-BedTime.md) |  |
 | [BedTypeId](StructureDefinition-BedTypeId.md) |  |
 | [ContactTypeExtension](StructureDefinition-ContactTypeExtension.md) |  |
+| [DIPS Can Receive SMS](StructureDefinition-DipsCanReceiveSms.md) | Indicates whether this phone number can receive SMS messages. |
+| [DIPS Comment Text](StructureDefinition-DipsCommentText.md) | A free-text comment associated with this phone number. |
+| [DIPS Document Type Id](StructureDefinition-DIPSDocumentTypeId.md) | The id of a document type associated with the monitoring type of this remote monitoring episode of care. Repeats once per associated document type. |
+| [DIPS Is Responsible](StructureDefinition-DIPSIsResponsible.md) | Indicates whether this healthcare party is the responsible care manager for the remote monitoring episode of care. |
+| [DIPS Monitoring Notes](StructureDefinition-DIPSMonitoringNotes.md) | Free-text clinical notes recorded against this remote monitoring episode of care. |
+| [DIPS Reference Location](StructureDefinition-DIPSReferenceLocation.md) | A reference to the DIPS hospital Location, modelled as an Organization, associated with this remote monitoring episode of care. |
+| [DIPS Reference Section](StructureDefinition-DIPSReferenceSection.md) | A reference to the DIPS hospital Section, modelled as an Organization, associated with this remote monitoring episode of care. |
+| [DIPS Reference Ward](StructureDefinition-DIPSReferenceWard.md) | A reference to the DIPS hospital Ward, modelled as an Organization, associated with this remote monitoring episode of care. |
 | [DIPSHealthcareServiceAddress](StructureDefinition-DIPSHealthcareServiceAddress.md) |  |
 | [DIPSHealthcareServiceCommunicationProtocol](StructureDefinition-DIPSHealthcareServiceCommunicationProtocol.md) |  |
 | [DIPSHealthcareServiceDepartment](StructureDefinition-DIPSHealthcareServiceDepartment.md) |  |
@@ -105,7 +113,6 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [DIPSHealthcareServiceIsPaperCopy](StructureDefinition-DIPSHealthcareServiceIsPaperCopy.md) |  |
 | [DIPSHealthcareServiceSection](StructureDefinition-DIPSHealthcareServiceSection.md) |  |
 | [DIPSHealthcareServiceWard](StructureDefinition-DIPSHealthcareServiceWard.md) |  |
-| [DIPSMonitoringNotes](StructureDefinition-DIPSMonitoringNotes.md) |  |
 | [DIPSPatientContactIdentifier](StructureDefinition-DIPSPatientContactIdentifier.md) |  |
 | [DIPSPatientContactPractitionerRoleName](StructureDefinition-DIPSPatientContactPractitionerRoleName.md) |  |
 | [DIPSPersonDeathComment](StructureDefinition-DIPSPersonDeathComment.md) |  |
@@ -134,9 +141,6 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [DIPSPractitionerRoleUserRoleName](StructureDefinition-DIPSPractitionerRoleUserRoleName.md) |  |
 | [DIPSPractitionerRoleWard](StructureDefinition-DIPSPractitionerRoleWard.md) |  |
 | [DIPSPractitionerSpecialist](StructureDefinition-DIPSPractitionerSpecialist.md) |  |
-| [DIPSReferenceLocation](StructureDefinition-DIPSReferenceLocation.md) |  |
-| [DIPSReferenceSection](StructureDefinition-DIPSReferenceSection.md) |  |
-| [DIPSReferenceWard](StructureDefinition-DIPSReferenceWard.md) |  |
 | [DIPSRelatedPersonAdditionalInformation](StructureDefinition-DIPSRelatedPersonAdditionalInformation.md) |  |
 | [DIPSRelatedPersonAppointedByMunicipality](StructureDefinition-DIPSRelatedPersonAppointedByMunicipality.md) |  |
 | [DIPSRelatedPersonKinship](StructureDefinition-DIPSRelatedPersonKinship.md) |  |

@@ -140,7 +140,7 @@
       <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
       <sch:assert test="count(f:userSelected) &lt;= 1">userSelected: maximum cardinality of 'userSelected' is 1</sch:assert>
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/R4/StructureDefinition/LocationTypeId']) &lt;= 1">extension with URL = 'http://dips.no/fhir/R4/StructureDefinition/LocationTypeId': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://DIPS.no/fhir/StructureDefinition/R4/LocationTypeId']) &lt;= 1">extension with URL = 'http://DIPS.no/fhir/StructureDefinition/R4/LocationTypeId': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:system) &gt;= 1">system: minimum cardinality of 'system' is 1</sch:assert>
       <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
       <sch:assert test="count(f:version) &lt;= 1">version: maximum cardinality of 'version' is 1</sch:assert>
@@ -148,7 +148,7 @@
       <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
       <sch:assert test="count(f:userSelected) &lt;= 1">userSelected: maximum cardinality of 'userSelected' is 1</sch:assert>
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/R4/StructureDefinition/BedTypeId']) &lt;= 1">extension with URL = 'http://dips.no/fhir/R4/StructureDefinition/BedTypeId': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://DIPS.no/fhir/StructureDefinition/R4/BedTypeId']) &lt;= 1">extension with URL = 'http://DIPS.no/fhir/StructureDefinition/R4/BedTypeId': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:system) &gt;= 1">system: minimum cardinality of 'system' is 1</sch:assert>
       <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
       <sch:assert test="count(f:version) &lt;= 1">version: maximum cardinality of 'version' is 1</sch:assert>
@@ -156,7 +156,7 @@
       <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
       <sch:assert test="count(f:userSelected) &lt;= 1">userSelected: maximum cardinality of 'userSelected' is 1</sch:assert>
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/R4/StructureDefinition/TeamTypeId']) &lt;= 1">extension with URL = 'http://dips.no/fhir/R4/StructureDefinition/TeamTypeId': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://DIPS.no/fhir/StructureDefinition/R4/TeamTypeId']) &lt;= 1">extension with URL = 'http://DIPS.no/fhir/StructureDefinition/R4/TeamTypeId': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:system) &gt;= 1">system: minimum cardinality of 'system' is 1</sch:assert>
       <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
       <sch:assert test="count(f:version) &lt;= 1">version: maximum cardinality of 'version' is 1</sch:assert>
@@ -171,7 +171,7 @@
       <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
       <sch:assert test="count(f:userSelected) &lt;= 1">userSelected: maximum cardinality of 'userSelected' is 1</sch:assert>
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/R4/StructureDefinition/WardTypeCodeId']) &lt;= 1">extension with URL = 'http://dips.no/fhir/R4/StructureDefinition/WardTypeCodeId': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/StructureDefinition/R4/WardTypeCodeId']) &lt;= 1">extension with URL = 'http://dips.no/fhir/StructureDefinition/R4/WardTypeCodeId': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:system) &gt;= 1">system: minimum cardinality of 'system' is 1</sch:assert>
       <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
       <sch:assert test="count(f:version) &lt;= 1">version: maximum cardinality of 'version' is 1</sch:assert>
@@ -242,7 +242,7 @@
     <sch:rule context="f:Location/f:address">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.no/fhir/StructureDefinition/no-basis-urban-district']) &lt;= 1">extension with URL = 'http://hl7.no/fhir/StructureDefinition/no-basis-urban-district': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/R4/StructureDefinition/LocationAddressId']) &lt;= 1">extension with URL = 'http://dips.no/fhir/R4/StructureDefinition/LocationAddressId': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://DIPS.no/fhir/StructureDefinition/R4/Location-addressId']) &lt;= 1">extension with URL = 'http://DIPS.no/fhir/StructureDefinition/R4/Location-addressId': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:use) &lt;= 1">use: maximum cardinality of 'use' is 1</sch:assert>
       <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
       <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>

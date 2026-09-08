@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/StructureDefinition/BankAccountNumber1 | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:BankAccountNumber1 |
+| *Official URL*:http://DIPS.no/fhir/StructureDefinition/R4/Organization-bankAccountNumber1 | *Version*:0.1.0 |
+| Draft as of 2026-09-08 | *Computable Name*:BankAccountNumber1 |
 
 **Context of Use**
 
@@ -18,7 +18,6 @@
 **Usages:**
 
 * Use this Extension: [DIPSOrganization](StructureDefinition-DIPSOrganization.md)
-* Examples for this Extension: [Testsykehuset Hf](Organization-Organization-aks1.md) and [Testsykehuset Hf](Organization-Organizationaks2.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.no.core|current/StructureDefinition/StructureDefinition-BankAccountNumber1.json)
 
@@ -40,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-BankAccountNumber1.c
 {
   "resourceType" : "StructureDefinition",
   "id" : "BankAccountNumber1",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/BankAccountNumber1",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/Organization-bankAccountNumber1",
   "version" : "0.1.0",
   "name" : "BankAccountNumber1",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -89,7 +88,7 @@ Other representations of profile: [CSV](StructureDefinition-BankAccountNumber1.c
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://dips.no/fhir/R4/StructureDefinition/BankAccountNumber1"
+      "fixedUri" : "http://DIPS.no/fhir/StructureDefinition/R4/Organization-bankAccountNumber1"
     },
     {
       "id" : "Extension.value[x]",

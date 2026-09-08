@@ -4009,7 +4009,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPatient"]
+        "targetProfile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPatient"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -6682,7 +6682,7 @@
       "path" : "Observation.subject",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSPatient"]
+        "targetProfile" : ["http://dips.no/fhir/StructureDefinition/R4/DIPSPatient"]
       }]
     },
     {

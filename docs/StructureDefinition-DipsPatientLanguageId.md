@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DipsPatientLanguageId | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:DipsPatientLanguageId |
+| *Official URL*:http://hl7.no/fhir/StructureDefinition/dips-patient-language-id | *Version*:0.1.0 |
+| Draft as of 2026-09-08 | *Computable Name*:DipsPatientLanguageId |
 
 Defines the Id of the language that patient speaks
 
@@ -41,12 +41,12 @@ Other representations of profile: [CSV](StructureDefinition-DipsPatientLanguageI
 {
   "resourceType" : "StructureDefinition",
   "id" : "DipsPatientLanguageId",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientLanguageId",
+  "url" : "http://hl7.no/fhir/StructureDefinition/dips-patient-language-id",
   "version" : "0.1.0",
   "name" : "DipsPatientLanguageId",
   "title" : "dips-patient-language-id",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -94,7 +94,7 @@ Other representations of profile: [CSV](StructureDefinition-DipsPatientLanguageI
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientLanguageId"
+      "fixedUri" : "http://hl7.no/fhir/StructureDefinition/dips-patient-language-id"
     },
     {
       "id" : "Extension.value[x]",

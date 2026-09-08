@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/StructureDefinition/OrganizationPaymentCode | *Version*:0.1.0 |
-| Draft as of 2026-09-03 | *Computable Name*:OrganizationPaymentCode |
+| *Official URL*:http://DIPS.no/fhir/StructureDefinition/R4/Organization-paymentCode | *Version*:0.1.0 |
+| Draft as of 2026-09-08 | *Computable Name*:OrganizationPaymentCode |
 
 **Context of Use**
 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-OrganizationPaymentC
 {
   "resourceType" : "StructureDefinition",
   "id" : "OrganizationPaymentCode",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/OrganizationPaymentCode",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/Organization-paymentCode",
   "version" : "0.1.0",
   "name" : "OrganizationPaymentCode",
   "status" : "draft",
-  "date" : "2026-09-03T11:16:58+00:00",
+  "date" : "2026-09-08T11:30:20+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -84,7 +84,7 @@ Other representations of profile: [CSV](StructureDefinition-OrganizationPaymentC
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://dips.no/fhir/R4/StructureDefinition/OrganizationPaymentCode"
+      "fixedUri" : "http://DIPS.no/fhir/StructureDefinition/R4/Organization-paymentCode"
     },
     {
       "id" : "Extension.value[x]",

@@ -1,4 +1,130 @@
 [{
+  "id" : "BedTypeId",
+  "type" : "StructureDefinition",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/BedTypeId",
+  "version" : "0.1.0",
+  "name" : "BedTypeId"
+},
+{
+  "id" : "DepartmentTypeCodeId",
+  "type" : "StructureDefinition",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/DepartmentTypeCodeId",
+  "version" : "0.1.0",
+  "name" : "DepartmentTypeCodeId"
+},
+{
+  "id" : "LocationAddressId",
+  "type" : "StructureDefinition",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/Location-addressId",
+  "version" : "0.1.0",
+  "name" : "LocationAddressId"
+},
+{
+  "id" : "LocationLabLocalizationId",
+  "type" : "StructureDefinition",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/Location-labLocalizationId",
+  "version" : "0.1.0",
+  "name" : "LocationLabLocalizationId"
+},
+{
+  "id" : "LocationValidPeriod",
+  "type" : "StructureDefinition",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/Location-validPeriod",
+  "version" : "0.1.0",
+  "name" : "LocationValidPeriod"
+},
+{
+  "id" : "LocationWorkplaceLocalizationId",
+  "type" : "StructureDefinition",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/Location-workplaceLocalizationId",
+  "version" : "0.1.0",
+  "name" : "LocationWorkplaceLocalizationId"
+},
+{
+  "id" : "LocationTypeCodeId",
+  "type" : "StructureDefinition",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/LocationTypeCodeId",
+  "version" : "0.1.0",
+  "name" : "LocationTypeCodeId"
+},
+{
+  "id" : "LocationTypeId",
+  "type" : "StructureDefinition",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/LocationTypeId",
+  "version" : "0.1.0",
+  "name" : "LocationTypeId"
+},
+{
+  "id" : "OrganizationAddressId",
+  "type" : "StructureDefinition",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/Organization-addressId",
+  "version" : "0.1.0",
+  "name" : "OrganizationAddressId"
+},
+{
+  "id" : "BankAccountNumber1",
+  "type" : "StructureDefinition",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/Organization-bankAccountNumber1",
+  "version" : "0.1.0",
+  "name" : "BankAccountNumber1"
+},
+{
+  "id" : "BankAccountNumber2",
+  "type" : "StructureDefinition",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/Organization-bankAccountNumber2",
+  "version" : "0.1.0",
+  "name" : "BankAccountNumber2"
+},
+{
+  "id" : "PartOfDepartment",
+  "type" : "StructureDefinition",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/Organization-partOfDepartment",
+  "version" : "0.1.0",
+  "name" : "PartOfDepartment"
+},
+{
+  "id" : "PartOfSection",
+  "type" : "StructureDefinition",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/Organization-partOfSection",
+  "version" : "0.1.0",
+  "name" : "PartOfSection"
+},
+{
+  "id" : "OrganizationPaymentCode",
+  "type" : "StructureDefinition",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/Organization-paymentCode",
+  "version" : "0.1.0",
+  "name" : "OrganizationPaymentCode"
+},
+{
+  "id" : "OrganizationValidPeriod",
+  "type" : "StructureDefinition",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/Organization-validPeriod",
+  "version" : "0.1.0",
+  "name" : "OrganizationValidPeriod"
+},
+{
+  "id" : "OrganizationTypeCodeId",
+  "type" : "StructureDefinition",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/OrganizationTypeCodeId",
+  "version" : "0.1.0",
+  "name" : "OrganizationTypeCodeId"
+},
+{
+  "id" : "SectionProfessionCodeId",
+  "type" : "StructureDefinition",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/SectionProfessionCodeId",
+  "version" : "0.1.0",
+  "name" : "SectionProfessionCodeId"
+},
+{
+  "id" : "TeamTypeId",
+  "type" : "StructureDefinition",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/R4/TeamTypeId",
+  "version" : "0.1.0",
+  "name" : "TeamTypeId"
+},
+{
   "id" : "DIPSLocation",
   "type" : "CodeSystem",
   "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSLocation",
@@ -62,32 +188,11 @@
   "name" : "AppointmentReschedulingPeriodExtension"
 },
 {
-  "id" : "BankAccountNumber1",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/BankAccountNumber1",
-  "version" : "0.1.0",
-  "name" : "BankAccountNumber1"
-},
-{
-  "id" : "BankAccountNumber2",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/BankAccountNumber2",
-  "version" : "0.1.0",
-  "name" : "BankAccountNumber2"
-},
-{
   "id" : "BedTime",
   "type" : "StructureDefinition",
   "url" : "http://dips.no/fhir/R4/StructureDefinition/BedTime",
   "version" : "0.1.0",
   "name" : "BedTime"
-},
-{
-  "id" : "BedTypeId",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/BedTypeId",
-  "version" : "0.1.0",
-  "name" : "BedTypeId"
 },
 {
   "id" : "ContactTypeExtension",
@@ -167,55 +272,6 @@
   "name" : "DIPSHealthcareService"
 },
 {
-  "id" : "DIPSHealthcareServiceAddress",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceAddress",
-  "version" : "0.1.0",
-  "name" : "DIPSHealthcareServiceAddress"
-},
-{
-  "id" : "DIPSHealthcareServiceCommunicationProtocol",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceCommunicationProtocol",
-  "version" : "0.1.0",
-  "name" : "DIPSHealthcareServiceCommunicationProtocol"
-},
-{
-  "id" : "DIPSHealthcareServiceDepartment",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceDepartment",
-  "version" : "0.1.0",
-  "name" : "DIPSHealthcareServiceDepartment"
-},
-{
-  "id" : "DIPSHealthcareServiceHospital",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceHospital",
-  "version" : "0.1.0",
-  "name" : "DIPSHealthcareServiceHospital"
-},
-{
-  "id" : "DIPSHealthcareServiceIsPaperCopy",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceIsPaperCopy",
-  "version" : "0.1.0",
-  "name" : "DIPSHealthcareServiceIsPaperCopy"
-},
-{
-  "id" : "DIPSHealthcareServiceSection",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceSection",
-  "version" : "0.1.0",
-  "name" : "DIPSHealthcareServiceSection"
-},
-{
-  "id" : "DIPSHealthcareServiceWard",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareServiceWard",
-  "version" : "0.1.0",
-  "name" : "DIPSHealthcareServiceWard"
-},
-{
   "id" : "DIPSHospitalStayEncounter",
   "type" : "StructureDefinition",
   "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSHospitalStayEncounter",
@@ -237,13 +293,6 @@
   "name" : "DIPSLocationReference"
 },
 {
-  "id" : "DIPSMonitoringNotes",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSMonitoringNotes",
-  "version" : "0.1.0",
-  "name" : "DIPSMonitoringNotes"
-},
-{
   "id" : "DIPSOrganization",
   "type" : "StructureDefinition",
   "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSOrganization",
@@ -251,102 +300,11 @@
   "name" : "DIPSOrganization"
 },
 {
-  "id" : "DIPSOrganizationReference",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSOrganizationReference",
-  "version" : "0.1.0",
-  "name" : "DIPSOrganizationReference"
-},
-{
-  "id" : "DIPSPatient",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPatient",
-  "version" : "0.1.0",
-  "name" : "DIPSPatient"
-},
-{
-  "id" : "DIPSPatientContactIdentifier",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPatientContactIdentifier",
-  "version" : "0.1.0",
-  "name" : "DIPSPatientContactIdentifier"
-},
-{
-  "id" : "DIPSPatientContactPractitionerRoleName",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPatientContactPractitionerRoleName",
-  "version" : "0.1.0",
-  "name" : "DIPSPatientContactPractitionerRoleName"
-},
-{
   "id" : "DIPSPerson",
   "type" : "StructureDefinition",
   "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPerson",
   "version" : "0.1.0",
   "name" : "DIPSPerson"
-},
-{
-  "id" : "DIPSPersonDeathComment",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathComment",
-  "version" : "0.1.0",
-  "name" : "DIPSPersonDeathComment"
-},
-{
-  "id" : "DIPSPersonDeathRegisteredBy",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathRegisteredBy",
-  "version" : "0.1.0",
-  "name" : "DIPSPersonDeathRegisteredBy"
-},
-{
-  "id" : "DIPSPersonDeathRegisteredTime",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonDeathRegisteredTime",
-  "version" : "0.1.0",
-  "name" : "DIPSPersonDeathRegisteredTime"
-},
-{
-  "id" : "DIPSPersonHospitalSectorId",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonHospitalSectorId",
-  "version" : "0.1.0",
-  "name" : "DIPSPersonHospitalSectorId"
-},
-{
-  "id" : "DIPSPersonHospitalSectorName",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonHospitalSectorName",
-  "version" : "0.1.0",
-  "name" : "DIPSPersonHospitalSectorName"
-},
-{
-  "id" : "DIPSPersonLanguage",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonLanguage",
-  "version" : "0.1.0",
-  "name" : "DIPSPersonLanguage"
-},
-{
-  "id" : "DIPSPersonLastOfficialAddressSyncTime",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonLastOfficialAddressSyncTime",
-  "version" : "0.1.0",
-  "name" : "DIPSPersonLastOfficialAddressSyncTime"
-},
-{
-  "id" : "DIPSPersonMunicipality",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonMunicipality",
-  "version" : "0.1.0",
-  "name" : "DIPSPersonMunicipality"
-},
-{
-  "id" : "DIPSPersonStateName",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPersonStateName",
-  "version" : "0.1.0",
-  "name" : "DIPSPersonStateName"
 },
 {
   "id" : "DIPSPractitioner",
@@ -370,132 +328,6 @@
   "name" : "DIPSPractitionerRole"
 },
 {
-  "id" : "DIPSPractitionerRoleCommunicationProtocol",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationProtocol",
-  "version" : "0.1.0",
-  "name" : "DIPSPractitionerRoleCommunicationProtocol"
-},
-{
-  "id" : "DIPSPractitionerRoleCommunicationType",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationType",
-  "version" : "0.1.0",
-  "name" : "DIPSPractitionerRoleCommunicationType"
-},
-{
-  "id" : "DIPSPractitionerRoleCommunicationTypeId",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationTypeId",
-  "version" : "0.1.0",
-  "name" : "DIPSPractitionerRoleCommunicationTypeId"
-},
-{
-  "id" : "DIPSPractitionerRoleDipsSignature",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleDipsSignature",
-  "version" : "0.1.0",
-  "name" : "DIPSPractitionerRoleDipsSignature"
-},
-{
-  "id" : "DIPSPractitionerRoleHcpRoleName",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHcpRoleName",
-  "version" : "0.1.0",
-  "name" : "DIPSPractitionerRoleHcpRoleName"
-},
-{
-  "id" : "DIPSPractitionerRoleHealthCarePartyDepartment",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHealthCarePartyDepartment",
-  "version" : "0.1.0",
-  "name" : "DIPSPractitionerRoleHealthCarePartyDepartment"
-},
-{
-  "id" : "DIPSPractitionerRoleHealthCarePartyType",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHealthCarePartyType",
-  "version" : "0.1.0",
-  "name" : "DIPSPractitionerRoleHealthCarePartyType"
-},
-{
-  "id" : "DIPSPractitionerRoleHealthCarePosition",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHealthCarePosition",
-  "version" : "0.1.0",
-  "name" : "DIPSPractitionerRoleHealthCarePosition"
-},
-{
-  "id" : "DIPSPractitionerRoleHospital",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHospital",
-  "version" : "0.1.0",
-  "name" : "DIPSPractitionerRoleHospital"
-},
-{
-  "id" : "DIPSPractitionerRoleIsPaperCopy",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleIsPaperCopy",
-  "version" : "0.1.0",
-  "name" : "DIPSPractitionerRoleIsPaperCopy"
-},
-{
-  "id" : "DIPSPractitionerRoleReference",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleReference",
-  "version" : "0.1.0",
-  "name" : "DIPSPractitionerRoleReference"
-},
-{
-  "id" : "DIPSPractitionerRoleSection",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleSection",
-  "version" : "0.1.0",
-  "name" : "DIPSPractitionerRoleSection"
-},
-{
-  "id" : "DIPSPractitionerRoleUserRoleDepartment",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleUserRoleDepartment",
-  "version" : "0.1.0",
-  "name" : "DIPSPractitionerRoleUserRoleDepartment"
-},
-{
-  "id" : "DIPSPractitionerRoleUserRoleId",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleUserRoleId",
-  "version" : "0.1.0",
-  "name" : "DIPSPractitionerRoleUserRoleId"
-},
-{
-  "id" : "DIPSPractitionerRoleUserRoleLastUpdated",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleUserRoleLastUpdated",
-  "version" : "0.1.0",
-  "name" : "DIPSPractitionerRoleUserRoleLastUpdated"
-},
-{
-  "id" : "DIPSPractitionerRoleUserRoleName",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleUserRoleName",
-  "version" : "0.1.0",
-  "name" : "DIPSPractitionerRoleUserRoleName"
-},
-{
-  "id" : "DIPSPractitionerRoleWard",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRoleWard",
-  "version" : "0.1.0",
-  "name" : "DIPSPractitionerRoleWard"
-},
-{
-  "id" : "DIPSPractitionerSpecialist",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerSpecialist",
-  "version" : "0.1.0",
-  "name" : "DIPSPractitionerSpecialist"
-},
-{
   "id" : "DIPSR4Encounter",
   "type" : "StructureDefinition",
   "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSR4Encounter",
@@ -503,74 +335,11 @@
   "name" : "DIPSR4Encounter"
 },
 {
-  "id" : "DIPSReferenceLocation",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceLocation",
-  "version" : "0.1.0",
-  "name" : "DIPSReferenceLocation"
-},
-{
-  "id" : "DIPSReferenceSection",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceSection",
-  "version" : "0.1.0",
-  "name" : "DIPSReferenceSection"
-},
-{
-  "id" : "DIPSReferenceWard",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceWard",
-  "version" : "0.1.0",
-  "name" : "DIPSReferenceWard"
-},
-{
   "id" : "DIPSRelatedPerson",
   "type" : "StructureDefinition",
   "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPerson",
   "version" : "0.1.0",
   "name" : "DIPSRelatedPerson"
-},
-{
-  "id" : "DIPSRelatedPersonAdditionalInformation",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAdditionalInformation",
-  "version" : "0.1.0",
-  "name" : "DIPSRelatedPersonAdditionalInformation"
-},
-{
-  "id" : "DIPSRelatedPersonAppointedByMunicipality",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonAppointedByMunicipality",
-  "version" : "0.1.0",
-  "name" : "DIPSRelatedPersonAppointedByMunicipality"
-},
-{
-  "id" : "DIPSRelatedPersonKinship",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonKinship",
-  "version" : "0.1.0",
-  "name" : "DIPSRelatedPersonKinship"
-},
-{
-  "id" : "DIPSRelatedPersonParentalResponsibility",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonParentalResponsibility",
-  "version" : "0.1.0",
-  "name" : "DIPSRelatedPersonParentalResponsibility"
-},
-{
-  "id" : "DIPSRelatedPersonResponsibleRequisitioner",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPersonResponsibleRequisitioner",
-  "version" : "0.1.0",
-  "name" : "DIPSRelatedPersonResponsibleRequisitioner"
-},
-{
-  "id" : "DIPSRemoteMonitoring",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSRemoteMonitoring",
-  "version" : "0.1.0",
-  "name" : "DIPSRemoteMonitoring"
 },
 {
   "id" : "DIPSSubjectReference",
@@ -594,13 +363,6 @@
   "name" : "DepartmentExtension"
 },
 {
-  "id" : "DepartmentTypeCodeId",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DepartmentTypeCodeId",
-  "version" : "0.1.0",
-  "name" : "DepartmentTypeCodeId"
-},
-{
   "id" : "DiagnoseGroupExtension",
   "type" : "StructureDefinition",
   "url" : "http://dips.no/fhir/R4/StructureDefinition/DiagnoseGroupExtension",
@@ -622,90 +384,6 @@
   "name" : "DipsOrganizationRef"
 },
 {
-  "id" : "DipsPatientDeathComment",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientDeathComment",
-  "version" : "0.1.0",
-  "name" : "DipsPatientDeathComment"
-},
-{
-  "id" : "DipsPatientDeathRegisteredBy",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientDeathRegisteredBy",
-  "version" : "0.1.0",
-  "name" : "DipsPatientDeathRegisteredBy"
-},
-{
-  "id" : "DipsPatientDeathRegisteredTime",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientDeathRegisteredTime",
-  "version" : "0.1.0",
-  "name" : "DipsPatientDeathRegisteredTime"
-},
-{
-  "id" : "DipsPatientHospitalSectorId",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientHospitalSectorId",
-  "version" : "0.1.0",
-  "name" : "DipsPatientHospitalSectorId"
-},
-{
-  "id" : "DipsPatientHospitalSectorName",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientHospitalSectorName",
-  "version" : "0.1.0",
-  "name" : "DipsPatientHospitalSectorName"
-},
-{
-  "id" : "DipsPatientLanguageId",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientLanguageId",
-  "version" : "0.1.0",
-  "name" : "DipsPatientLanguageId"
-},
-{
-  "id" : "DipsPatientMunicipality",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientMunicipality",
-  "version" : "0.1.0",
-  "name" : "DipsPatientMunicipality"
-},
-{
-  "id" : "DipsPatientPhoneTypeId",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientPhoneTypeId",
-  "version" : "0.1.0",
-  "name" : "DipsPatientPhoneTypeId"
-},
-{
-  "id" : "DipsPatientStateName",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/DipsPatientStateName",
-  "version" : "0.1.0",
-  "name" : "DipsPatientStateName"
-},
-{
-  "id" : "IsSpecialistExtension",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/IsSpecialistExtension",
-  "version" : "0.1.0",
-  "name" : "IsSpecialistExtension"
-},
-{
-  "id" : "IsUpdatedByPopulationRegister",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/IsUpdatedByPopulationRegister",
-  "version" : "0.1.0",
-  "name" : "IsUpdatedByPopulationRegister"
-},
-{
-  "id" : "LastOfficialAddressSyncTime",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/LastOfficialAddressSyncTime",
-  "version" : "0.1.0",
-  "name" : "LastOfficialAddressSyncTime"
-},
-{
   "id" : "LevelOfCareExtension",
   "type" : "StructureDefinition",
   "url" : "http://dips.no/fhir/R4/StructureDefinition/LevelOfCareExtension",
@@ -713,60 +391,11 @@
   "name" : "LevelOfCareExtension"
 },
 {
-  "id" : "LocationAddressId",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/LocationAddressId",
-  "version" : "0.1.0",
-  "name" : "LocationAddressId"
-},
-{
   "id" : "LocationExtension",
   "type" : "StructureDefinition",
   "url" : "http://dips.no/fhir/R4/StructureDefinition/LocationExtension",
   "version" : "0.1.0",
   "name" : "LocationExtension"
-},
-{
-  "id" : "LocationLabLocalizationId",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/LocationLabLocalizationId",
-  "version" : "0.1.0",
-  "name" : "LocationLabLocalizationId"
-},
-{
-  "id" : "LocationTypeCodeId",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/LocationTypeCodeId",
-  "version" : "0.1.0",
-  "name" : "LocationTypeCodeId"
-},
-{
-  "id" : "LocationTypeId",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/LocationTypeId",
-  "version" : "0.1.0",
-  "name" : "LocationTypeId"
-},
-{
-  "id" : "LocationValidPeriod",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/LocationValidPeriod",
-  "version" : "0.1.0",
-  "name" : "LocationValidPeriod"
-},
-{
-  "id" : "LocationWorkplaceLocalizationId",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/LocationWorkplaceLocalizationId",
-  "version" : "0.1.0",
-  "name" : "LocationWorkplaceLocalizationId"
-},
-{
-  "id" : "MunicipalityCode",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/MunicipalityCode",
-  "version" : "0.1.0",
-  "name" : "MunicipalityCode"
 },
 {
   "id" : "MustOccurBefore",
@@ -944,48 +573,6 @@
   "name" : "NprLevelOfCareExtension"
 },
 {
-  "id" : "OrganizationAddressId",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/OrganizationAddressId",
-  "version" : "0.1.0",
-  "name" : "OrganizationAddressId"
-},
-{
-  "id" : "OrganizationPaymentCode",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/OrganizationPaymentCode",
-  "version" : "0.1.0",
-  "name" : "OrganizationPaymentCode"
-},
-{
-  "id" : "OrganizationTypeCodeId",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/OrganizationTypeCodeId",
-  "version" : "0.1.0",
-  "name" : "OrganizationTypeCodeId"
-},
-{
-  "id" : "OrganizationValidPeriod",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/OrganizationValidPeriod",
-  "version" : "0.1.0",
-  "name" : "OrganizationValidPeriod"
-},
-{
-  "id" : "PartOfDepartment",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/PartOfDepartment",
-  "version" : "0.1.0",
-  "name" : "PartOfDepartment"
-},
-{
-  "id" : "PartOfSection",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/PartOfSection",
-  "version" : "0.1.0",
-  "name" : "PartOfSection"
-},
-{
   "id" : "PlannedContactEndTimeExtension",
   "type" : "StructureDefinition",
   "url" : "http://dips.no/fhir/R4/StructureDefinition/PlannedContactEndTimeExtension",
@@ -1014,25 +601,11 @@
   "name" : "SectionExtension"
 },
 {
-  "id" : "SectionProfessionCodeId",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/SectionProfessionCodeId",
-  "version" : "0.1.0",
-  "name" : "SectionProfessionCodeId"
-},
-{
   "id" : "SelfBookingSlot",
   "type" : "StructureDefinition",
   "url" : "http://dips.no/fhir/R4/StructureDefinition/SelfBookingSlot",
   "version" : "0.1.0",
   "name" : "SelfBookingSlot"
-},
-{
-  "id" : "TeamTypeId",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/TeamTypeId",
-  "version" : "0.1.0",
-  "name" : "TeamTypeId"
 },
 {
   "id" : "TerminationExtension",
@@ -1054,13 +627,6 @@
   "url" : "http://dips.no/fhir/R4/StructureDefinition/WardExtension",
   "version" : "0.1.0",
   "name" : "WardExtension"
-},
-{
-  "id" : "WardTypeCodeId",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/WardTypeCodeId",
-  "version" : "0.1.0",
-  "name" : "WardTypeCodeId"
 },
 {
   "id" : "DIPSEncounterTypeCom",
@@ -1215,6 +781,468 @@
   "url" : "http://dips.no/fhir/R4/ValueSet/relatedperson-relationshiptype",
   "version" : "0.1.0",
   "name" : "relatedperson-relationshiptype"
+},
+{
+  "id" : "DIPSDocumentTypeId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentTypeId",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentTypeId"
+},
+{
+  "id" : "DIPSIsResponsible",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSIsResponsible",
+  "version" : "0.1.0",
+  "name" : "DIPSIsResponsible"
+},
+{
+  "id" : "DIPSMonitoringNotes",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSMonitoringNotes",
+  "version" : "0.1.0",
+  "name" : "DIPSMonitoringNotes"
+},
+{
+  "id" : "DIPSReferenceLocation",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSReferenceLocation",
+  "version" : "0.1.0",
+  "name" : "DIPSReferenceLocation"
+},
+{
+  "id" : "DIPSReferenceSection",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSReferenceSection",
+  "version" : "0.1.0",
+  "name" : "DIPSReferenceSection"
+},
+{
+  "id" : "DIPSReferenceWard",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSReferenceWard",
+  "version" : "0.1.0",
+  "name" : "DIPSReferenceWard"
+},
+{
+  "id" : "DipsCanReceiveSms",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSCanReceiveSms",
+  "version" : "0.1.0",
+  "name" : "DipsCanReceiveSms"
+},
+{
+  "id" : "DipsCommentText",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSCommentText",
+  "version" : "0.1.0",
+  "name" : "DipsCommentText"
+},
+{
+  "id" : "DIPSHealthcareServiceAddress",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceAddress",
+  "version" : "0.1.0",
+  "name" : "DIPSHealthcareServiceAddress"
+},
+{
+  "id" : "DIPSHealthcareServiceCommunicationProtocol",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceCommunicationProtocol",
+  "version" : "0.1.0",
+  "name" : "DIPSHealthcareServiceCommunicationProtocol"
+},
+{
+  "id" : "DIPSHealthcareServiceDepartment",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceDepartment",
+  "version" : "0.1.0",
+  "name" : "DIPSHealthcareServiceDepartment"
+},
+{
+  "id" : "DIPSHealthcareServiceHospital",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceHospital",
+  "version" : "0.1.0",
+  "name" : "DIPSHealthcareServiceHospital"
+},
+{
+  "id" : "DIPSHealthcareServiceIsPaperCopy",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceIsPaperCopy",
+  "version" : "0.1.0",
+  "name" : "DIPSHealthcareServiceIsPaperCopy"
+},
+{
+  "id" : "DIPSHealthcareServiceSection",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceSection",
+  "version" : "0.1.0",
+  "name" : "DIPSHealthcareServiceSection"
+},
+{
+  "id" : "DIPSHealthcareServiceWard",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSHealthcareServiceWard",
+  "version" : "0.1.0",
+  "name" : "DIPSHealthcareServiceWard"
+},
+{
+  "id" : "DIPSOrganizationReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSOrganizationReference",
+  "version" : "0.1.0",
+  "name" : "DIPSOrganizationReference"
+},
+{
+  "id" : "DIPSPatient",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPatient",
+  "version" : "0.1.0",
+  "name" : "DIPSPatient"
+},
+{
+  "id" : "DIPSPatientContactIdentifier",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientContactIdentifier",
+  "version" : "0.1.0",
+  "name" : "DIPSPatientContactIdentifier"
+},
+{
+  "id" : "DIPSPatientContactPractitionerRoleName",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientContactPractitionerRoleName",
+  "version" : "0.1.0",
+  "name" : "DIPSPatientContactPractitionerRoleName"
+},
+{
+  "id" : "DipsPatientDeathComment",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientDeathComment",
+  "version" : "0.1.0",
+  "name" : "DipsPatientDeathComment"
+},
+{
+  "id" : "DipsPatientDeathRegisteredTime",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientDeathRegisteredTime",
+  "version" : "0.1.0",
+  "name" : "DipsPatientDeathRegisteredTime"
+},
+{
+  "id" : "DipsPatientHospitalSectorId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientHospitalSectorId",
+  "version" : "0.1.0",
+  "name" : "DipsPatientHospitalSectorId"
+},
+{
+  "id" : "DipsPatientHospitalSectorName",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientHospitalSectorName",
+  "version" : "0.1.0",
+  "name" : "DipsPatientHospitalSectorName"
+},
+{
+  "id" : "DipsPatientMunicipality",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientMunicipality",
+  "version" : "0.1.0",
+  "name" : "DipsPatientMunicipality"
+},
+{
+  "id" : "DipsPatientPhoneTypeId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientPhoneTypeId",
+  "version" : "0.1.0",
+  "name" : "DipsPatientPhoneTypeId"
+},
+{
+  "id" : "DipsPatientStateName",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPatientStateName",
+  "version" : "0.1.0",
+  "name" : "DipsPatientStateName"
+},
+{
+  "id" : "DIPSPersonDeathComment",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonDeathComment",
+  "version" : "0.1.0",
+  "name" : "DIPSPersonDeathComment"
+},
+{
+  "id" : "DIPSPersonDeathRegisteredBy",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonDeathRegisteredBy",
+  "version" : "0.1.0",
+  "name" : "DIPSPersonDeathRegisteredBy"
+},
+{
+  "id" : "DIPSPersonDeathRegisteredTime",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonDeathRegisteredTime",
+  "version" : "0.1.0",
+  "name" : "DIPSPersonDeathRegisteredTime"
+},
+{
+  "id" : "DIPSPersonHospitalSectorId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonHospitalSectorId",
+  "version" : "0.1.0",
+  "name" : "DIPSPersonHospitalSectorId"
+},
+{
+  "id" : "DIPSPersonHospitalSectorName",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonHospitalSectorName",
+  "version" : "0.1.0",
+  "name" : "DIPSPersonHospitalSectorName"
+},
+{
+  "id" : "DIPSPersonLanguage",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonLanguage",
+  "version" : "0.1.0",
+  "name" : "DIPSPersonLanguage"
+},
+{
+  "id" : "DIPSPersonLastOfficialAddressSyncTime",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonLastOfficialAddressSyncTime",
+  "version" : "0.1.0",
+  "name" : "DIPSPersonLastOfficialAddressSyncTime"
+},
+{
+  "id" : "DIPSPersonMunicipality",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonMunicipality",
+  "version" : "0.1.0",
+  "name" : "DIPSPersonMunicipality"
+},
+{
+  "id" : "DIPSPersonStateName",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPersonStateName",
+  "version" : "0.1.0",
+  "name" : "DIPSPersonStateName"
+},
+{
+  "id" : "DIPSPractitionerRoleCommunicationProtocol",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleCommunicationProtocol",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleCommunicationProtocol"
+},
+{
+  "id" : "DIPSPractitionerRoleCommunicationType",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleCommunicationType",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleCommunicationType"
+},
+{
+  "id" : "DIPSPractitionerRoleCommunicationTypeId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleCommunicationTypeId",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleCommunicationTypeId"
+},
+{
+  "id" : "DIPSPractitionerRoleDipsSignature",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleDipsSignature",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleDipsSignature"
+},
+{
+  "id" : "DIPSPractitionerRoleHcpRoleName",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHcpRoleName",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleHcpRoleName"
+},
+{
+  "id" : "DIPSPractitionerRoleHealthCarePartyType",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHealthCarePartyType",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleHealthCarePartyType"
+},
+{
+  "id" : "DIPSPractitionerRoleHealthCarePosition",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHealthCarePosition",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleHealthCarePosition"
+},
+{
+  "id" : "DIPSPractitionerRoleHealthCarePartyDepartment",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHealthcarePartyDepartment",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleHealthCarePartyDepartment"
+},
+{
+  "id" : "DIPSPractitionerRoleHospital",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleHospital",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleHospital"
+},
+{
+  "id" : "DIPSPractitionerRoleIsPaperCopy",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleIsPaperCopy",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleIsPaperCopy"
+},
+{
+  "id" : "DIPSPractitionerRoleReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleReference",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleReference"
+},
+{
+  "id" : "DIPSPractitionerRoleSection",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleSection",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleSection"
+},
+{
+  "id" : "DIPSPractitionerRoleUserRoleDepartment",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleUserRoleDepartment",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleUserRoleDepartment"
+},
+{
+  "id" : "DIPSPractitionerRoleUserRoleId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleUserRoleId",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleUserRoleId"
+},
+{
+  "id" : "DIPSPractitionerRoleUserRoleLastUpdated",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleUserRoleLastUpdated",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleUserRoleLastUpdated"
+},
+{
+  "id" : "DIPSPractitionerRoleUserRoleName",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleUserRoleName",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleUserRoleName"
+},
+{
+  "id" : "DIPSPractitionerRoleWard",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleWard",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerRoleWard"
+},
+{
+  "id" : "DIPSPractitionerSpecialist",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerSpecialist",
+  "version" : "0.1.0",
+  "name" : "DIPSPractitionerSpecialist"
+},
+{
+  "id" : "DIPSRelatedPersonAdditionalInformation",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonAdditionalInformation",
+  "version" : "0.1.0",
+  "name" : "DIPSRelatedPersonAdditionalInformation"
+},
+{
+  "id" : "DIPSRelatedPersonAppointedByMunicipality",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonAppointedByMunicipality",
+  "version" : "0.1.0",
+  "name" : "DIPSRelatedPersonAppointedByMunicipality"
+},
+{
+  "id" : "DIPSRelatedPersonKinship",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonKinship",
+  "version" : "0.1.0",
+  "name" : "DIPSRelatedPersonKinship"
+},
+{
+  "id" : "DIPSRelatedPersonParentalResponsibility",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonParentalResponsibility",
+  "version" : "0.1.0",
+  "name" : "DIPSRelatedPersonParentalResponsibility"
+},
+{
+  "id" : "DIPSRelatedPersonResponsibleRequisitioner",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSRelatedPersonResponsibleRequisitioner",
+  "version" : "0.1.0",
+  "name" : "DIPSRelatedPersonResponsibleRequisitioner"
+},
+{
+  "id" : "DIPSRemoteMonitoring",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSRemoteMonitoring",
+  "version" : "0.1.0",
+  "name" : "DIPSRemoteMonitoring"
+},
+{
+  "id" : "DipsPatientDeathRegisteredBy",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DeathRegisteredBy",
+  "version" : "0.1.0",
+  "name" : "DipsPatientDeathRegisteredBy"
+},
+{
+  "id" : "IsSpecialistExtension",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/IsSpecialistExtension",
+  "version" : "0.1.0",
+  "name" : "IsSpecialistExtension"
+},
+{
+  "id" : "IsUpdatedByPopulationRegister",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/IsUpdatedByPopulationRegister",
+  "version" : "0.1.0",
+  "name" : "IsUpdatedByPopulationRegister"
+},
+{
+  "id" : "LastOfficialAddressSyncTime",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/LastOfficialAddressSyncTime",
+  "version" : "0.1.0",
+  "name" : "LastOfficialAddressSyncTime"
+},
+{
+  "id" : "MunicipalityCode",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/MunicipalityCode",
+  "version" : "0.1.0",
+  "name" : "MunicipalityCode"
+},
+{
+  "id" : "WardTypeCodeId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/WardTypeCodeId",
+  "version" : "0.1.0",
+  "name" : "WardTypeCodeId"
+},
+{
+  "id" : "DipsPatientLanguageId",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.no/fhir/StructureDefinition/dips-patient-language-id",
+  "version" : "0.1.0",
+  "name" : "DipsPatientLanguageId"
 },
 {
   "id" : "NoDomainVitalSignsObservationBloodPressureMeasurementMethod",

@@ -64,8 +64,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"6.230"}
-    h3,h4,h5,h6{--heading-prefix:"6.230"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.234"}
+    h3,h4,h5,h6{--heading-prefix:"6.234"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -118,14 +118,40 @@
             </button>
             <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <!-- menu.xml  -->
-
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
-  <li>
-    <a href="artifacts.html">Artifacts</a>
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      FHIR Artifacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Vitalsign Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Resource Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Data Type Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#5">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#6">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#7">Code Systems</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Vitalsign Examples</a>
+      </li>
+      <li>
+        <a href="artifacts.html#8">Example Instances</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="toc.html">TOC</a>
@@ -140,6 +166,7 @@
     <a href="download.html">Download</a>
   </li>
 </ul>
+
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
         </nav>  <!-- /.navbar -->
@@ -244,7 +271,7 @@
   ] ;
   <a href="http://hl7.org/fhir/R4/domainresource.html#Patient.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Patient cdp1000001&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cdp1000001\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccdp1000001\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profiles: &lt;a href=\&quot;StructureDefinition-DIPSPatient.html\&quot;&gt;DIPSPatient&lt;/a&gt;, &lt;a href=\&quot;https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;amp;canonical=http://dips.no/fhir/R4/StructureDefinition/NoBasisPatient\&quot;&gt;http://dips.no/fhir/R4/StructureDefinition/NoBasisPatient&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;Skålsvik (Testplan Edi), Eddie(official) Male, DoB: 1959-04-23 ( http://dips.no/fhir/namingsystem/dips-patientid#1000001)&lt;/p&gt;&lt;hr/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Record is active\&quot;&gt;Active:&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Known status of Patient\&quot;&gt;Deceased:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Other Id (see the one above)\&quot;&gt;Other Id:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;FellesHjelpenummer/23445949728 (use: temp, )&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Ways to contact the Patient\&quot;&gt;Contact Detail&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;Bestemorenga Bodø 18 8013 Norge (home)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Language spoken\&quot;&gt;Language:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;span title=\&quot;Codes:{urn:ietf:bcp:47 en-eng}\&quot;&gt;Engelsk&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Patient Links\&quot;&gt;Links:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;General Practitioner: &lt;a href=\&quot;PractitionerRole-agb57.html\&quot;&gt;PractitionerRole: identifier = urn:oid:1.3.6.1.4.1.9038.60.1#57&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Patient cdp1000001&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cdp1000001\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccdp1000001\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profiles: &lt;a href=\&quot;https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;amp;canonical=http://dips.no/fhir/R4/StructureDefinition/DIPSPatient\&quot;&gt;http://dips.no/fhir/R4/StructureDefinition/DIPSPatient&lt;/a&gt;, &lt;a href=\&quot;https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;amp;canonical=http://dips.no/fhir/R4/StructureDefinition/NoBasisPatient\&quot;&gt;http://dips.no/fhir/R4/StructureDefinition/NoBasisPatient&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;Skålsvik (Testplan Edi), Eddie(official) Male, DoB: 1959-04-23 ( http://dips.no/fhir/namingsystem/dips-patientid#1000001)&lt;/p&gt;&lt;hr/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Record is active\&quot;&gt;Active:&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Known status of Patient\&quot;&gt;Deceased:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Other Id (see the one above)\&quot;&gt;Other Id:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;FellesHjelpenummer/23445949728 (use: temp, )&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Ways to contact the Patient\&quot;&gt;Contact Detail&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;Bestemorenga Bodø 18 8013 Norge (home)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Language spoken\&quot;&gt;Language:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;span title=\&quot;Codes:{urn:ietf:bcp:47 en-eng}\&quot;&gt;Engelsk&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Patient Links\&quot;&gt;Links:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;General Practitioner: &lt;a href=\&quot;PractitionerRole-agb57.html\&quot;&gt;PractitionerRole: identifier = urn:oid:1.3.6.1.4.1.9038.60.1#57&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
   ] ;
   <a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">fhir:Patient.identifier</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
@@ -365,7 +392,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 3, 2026 11:16+0000">2026-09-03</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 8, 2026 11:30+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
