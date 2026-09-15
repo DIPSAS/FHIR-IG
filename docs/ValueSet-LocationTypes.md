@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/ValueSet/LocationTypes | *Version*:0.1.0 |
-| Active as of 2026-09-08 | *Computable Name*:LocationTypes |
+| Active as of 2026-09-15 | *Computable Name*:LocationTypes |
 
  
 Valesets of Location Types 
@@ -55,7 +55,7 @@ No Expansion for this valueset (Unknown Code System)
   "version" : "0.1.0",
   "name" : "LocationTypes",
   "status" : "active",
-  "date" : "2026-09-08T11:30:20+00:00",
+  "date" : "2026-09-15T05:06:55+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

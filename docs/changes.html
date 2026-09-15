@@ -158,6 +158,9 @@
     <a href="changes.html">Change Log</a>
   </li>
   <li>
+    <a href="implementation-status.html">Implementation Status</a>
+  </li>
+  <li>
     <a href="documentation.html">Documentation</a>
   </li>
   <li>
@@ -214,29 +217,80 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#version--010" id="markdown-toc-version--010">Version = 0.1.0</a></li>
-  <li><a href="#version--000" id="markdown-toc-version--000">Version = 0.0.0</a></li>
+  <li><a href="#2026-09-08--documentation-and-navigation-fixes" id="markdown-toc-2026-09-08--documentation-and-navigation-fixes">2026-09-08 — Documentation and navigation fixes</a></li>
+  <li><a href="#2026-09-02-to-2026-09-07--episodeofcare-profile" id="markdown-toc-2026-09-02-to-2026-09-07--episodeofcare-profile">2026-09-02 to 2026-09-07 — EpisodeOfCare profile</a></li>
+  <li><a href="#2026-08-11-to-2026-09-01--build-and-publishing-infrastructure" id="markdown-toc-2026-08-11-to-2026-09-01--build-and-publishing-infrastructure">2026-08-11 to 2026-09-01 — Build and publishing infrastructure</a></li>
+  <li><a href="#2025-03-12--vitalsign-value-sets" id="markdown-toc-2025-03-12--vitalsign-value-sets">2025-03-12 — VitalSign value sets</a></li>
+  <li><a href="#2025-01-06-to-2025-01-29--vitalsign-implementation-profiles" id="markdown-toc-2025-01-06-to-2025-01-29--vitalsign-implementation-profiles">2025-01-06 to 2025-01-29 — VitalSign implementation profiles</a></li>
+  <li><a href="#2024-12-05-to-2024-12-10--profile-refinements" id="markdown-toc-2024-12-05-to-2024-12-10--profile-refinements">2024-12-05 to 2024-12-10 — Profile refinements</a></li>
+  <li><a href="#2024-09-19-to-2024-10-18--search-parameters-and-navigation" id="markdown-toc-2024-09-19-to-2024-10-18--search-parameters-and-navigation">2024-09-19 to 2024-10-18 — Search parameters and navigation</a></li>
+  <li><a href="#2024-08-29-to-2024-09-11--initial-ig-scaffolding" id="markdown-toc-2024-08-29-to-2024-09-11--initial-ig-scaffolding">2024-08-29 to 2024-09-11 — Initial IG scaffolding</a></li>
 </ul>
 
 </div>
-<h3 id="version--010">Version = 0.1.0</h3>
+<p>This IG is published as a single continuous build at version <strong>0.1.0</strong> (status: draft) — there
+have been no versioned releases yet, so entries below are dated milestones within that ongoing
+0.1.0 development, newest first.</p>
+
+<h3 id="2026-09-08--documentation-and-navigation-fixes">2026-09-08 — Documentation and navigation fixes</h3>
 <ul>
-  <li>Publication Date: 2024-09-11</li>
-  <li>url: <a href="http://hl7.org/fhir/us/core/STU1">http://hl7.org/fhir/us/core/STU1</a></li>
-  <li>Based on FHIR version : 4.0.1</li>
+  <li>Fixed the "FHIR Artifacts" menu dropdown so each link jumps to the correct section of the
+artifacts page instead of the top of the page.</li>
+  <li>Aligned the IG's written documentation with what the <code class="language-plaintext highlighter-rouge">fhir.core.r4</code> service actually returns,
+correcting places where the two had drifted apart.</li>
 </ul>
 
-<h4 id="changes">Changes:</h4>
-<p>The first official published version of this IG published immediately following the release of FHIR R4</p>
-
-<hr />
-
-<h3 id="version--000">Version = 0.0.0</h3>
+<h3 id="2026-09-02-to-2026-09-07--episodeofcare-profile">2026-09-02 to 2026-09-07 — EpisodeOfCare profile</h3>
 <ul>
-  <li>Publication Date: 2024-09-06</li>
-  <li>url: <a href="http://hl7.org/fhir/us/core/2017Jan">http://hl7.org/fhir/us/core/2017Jan</a></li>
-  <li>Based on FHIR version : 4.0.1</li>
+  <li>Added the EpisodeOfCare profile, with accompanying intro notes.</li>
+  <li>Verified the profile against the <code class="language-plaintext highlighter-rouge">fhir.core.r4</code> implementation.</li>
 </ul>
+
+<h3 id="2026-08-11-to-2026-09-01--build-and-publishing-infrastructure">2026-08-11 to 2026-09-01 — Build and publishing infrastructure</h3>
+<ul>
+  <li>Fixed IG Publisher build failures, including a missing-snapshot error caused by an upstream
+defect in the <code class="language-plaintext highlighter-rouge">hl7.fhir.no.basis</code> package (worked around by regenerating and patching the
+cached snapshots locally).</li>
+  <li>Vendored the <code class="language-plaintext highlighter-rouge">dips.fhir.ig.template</code> package so CI can build without relying on the public
+registry, and installed Ruby/Jekyll in the CI pipeline so the publisher can render HTML.</li>
+  <li>Gave the IG Publisher an explicit <code class="language-plaintext highlighter-rouge">-Xmx</code> heap size to fix out-of-memory failures during the
+build, then lowered the default to avoid container-level OOM-kills.</li>
+  <li>Switched <code class="language-plaintext highlighter-rouge">publish-ig-site.sh</code> to deploy-key SSH auth and to sync published output into the
+<code class="language-plaintext highlighter-rouge">docs/</code> folder, matching how GitHub Pages is configured for the site.</li>
+  <li>Updated the site colour theme and removed the "back to portal" banner.</li>
+</ul>
+
+<h3 id="2025-03-12--vitalsign-value-sets">2025-03-12 — VitalSign value sets</h3>
+<ul>
+  <li>Added the latest NoDomain VitalSign ValueSet changes.</li>
+</ul>
+
+<h3 id="2025-01-06-to-2025-01-29--vitalsign-implementation-profiles">2025-01-06 to 2025-01-29 — VitalSign implementation profiles</h3>
+<ul>
+  <li>Refined the Norwegian VitalSign implementation profiles based on implementation feedback.</li>
+</ul>
+
+<h3 id="2024-12-05-to-2024-12-10--profile-refinements">2024-12-05 to 2024-12-10 — Profile refinements</h3>
+<ul>
+  <li>Added the "no impl" Vitalsign profiles and grouped their example instances.</li>
+  <li>Made the <code class="language-plaintext highlighter-rouge">bodySite</code> and <code class="language-plaintext highlighter-rouge">method</code> elements extensible rather than fixed.</li>
+  <li>Added GCS (Glasgow Coma Scale) example instance and corrected its placement in the IG.</li>
+  <li>Corrected profile descriptions and other documentation issues found during review.</li>
+</ul>
+
+<h3 id="2024-09-19-to-2024-10-18--search-parameters-and-navigation">2024-09-19 to 2024-10-18 — Search parameters and navigation</h3>
+<ul>
+  <li>Added search parameters for all profiles, then removed them from the artifacts page listing
+after review (search parameters remain defined on the profiles themselves).</li>
+  <li>Added additional navigation tabs to the site menu.</li>
+</ul>
+
+<h3 id="2024-08-29-to-2024-09-11--initial-ig-scaffolding">2024-08-29 to 2024-09-11 — Initial IG scaffolding</h3>
+<ul>
+  <li>Created the initial FSH project structure and build scripts.</li>
+  <li>Added the first intro notes and README.</li>
+</ul>
+
 
 
 
@@ -256,7 +310,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 8, 2026 11:30+0000">2026-09-08</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 15, 2026 05:06+0000">2026-09-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

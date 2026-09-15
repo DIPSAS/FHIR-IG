@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/VideoUrl | *Version*:0.1.0 |
-| Draft as of 2026-09-08 | *Computable Name*:VideoUrl |
+| Draft as of 2026-09-15 | *Computable Name*:VideoUrl |
 
 **Context of Use**
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-VideoUrl.csv), [Exce
   "version" : "0.1.0",
   "name" : "VideoUrl",
   "status" : "draft",
-  "date" : "2026-09-08T11:30:20+00:00",
+  "date" : "2026-09-15T05:06:55+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

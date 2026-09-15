@@ -10,7 +10,7 @@
   "name" : "DIPSCore",
   "title" : "DIPS Core Implementation Guide",
   "status" : "draft",
-  "date" : "2026-09-08T11:30:20+00:00",
+  "date" : "2026-09-15T05:06:55+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -4118,6 +4118,15 @@
         }],
         "nameUrl" : "download.html",
         "title" : "Download",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "implementation-status.html"
+        }],
+        "nameUrl" : "implementation-status.html",
+        "title" : "Implementation Status",
         "generation" : "markdown"
       },
       {

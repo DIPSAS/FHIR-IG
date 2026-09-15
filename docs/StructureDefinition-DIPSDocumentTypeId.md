@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSDocumentTypeId | *Version*:0.1.0 |
-| Draft as of 2026-09-08 | *Computable Name*:DIPSDocumentTypeId |
+| Draft as of 2026-09-15 | *Computable Name*:DIPSDocumentTypeId |
 
 The id of a document type associated with the monitoring type of this remote monitoring episode of care. Repeats once per associated document type.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSDocumentTypeId.c
   "name" : "DIPSDocumentTypeId",
   "title" : "DIPS Document Type Id",
   "status" : "draft",
-  "date" : "2026-09-08T11:30:20+00:00",
+  "date" : "2026-09-15T05:06:55+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

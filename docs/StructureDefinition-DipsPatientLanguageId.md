@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/StructureDefinition/dips-patient-language-id | *Version*:0.1.0 |
-| Draft as of 2026-09-08 | *Computable Name*:DipsPatientLanguageId |
+| Draft as of 2026-09-15 | *Computable Name*:DipsPatientLanguageId |
 
 Defines the Id of the language that patient speaks
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-DipsPatientLanguageI
   "name" : "DipsPatientLanguageId",
   "title" : "dips-patient-language-id",
   "status" : "draft",
-  "date" : "2026-09-08T11:30:20+00:00",
+  "date" : "2026-09-15T05:06:55+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

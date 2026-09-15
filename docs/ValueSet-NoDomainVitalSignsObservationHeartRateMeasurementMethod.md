@@ -70,7 +70,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "title" : "NoDomainVitalSignsObservationHeartRateMeasurementMethod",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-08T11:30:20+00:00",
+  "date" : "2026-09-15T05:06:55+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

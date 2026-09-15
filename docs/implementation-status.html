@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Implementation Status - DIPS Core Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
+    <style>
+        /* Match the menu bar to the DIPS logo's navy background (hl7.css ships #505050). */
+        .navbar-inverse {
+            background-color: #0A0D30;
+        }
+        .navbar-inverse .navbar-nav > li > a:hover {
+            background-color: #1B2050;
+        }
+        /* Match the footer bar to the same navy (fhir.css ships #d32d28 red). */
+        #segment-footer > .container {
+            background-color: #0A0D30;
+        }
+        /* Light-blue "local development build" publish-box and Contents/TOC side
+           boxes, matching dips.com's site background (project.css ships yellow for both). */
+        :root {
+            --publish-box-bg-color: #B3E0E6;
+            --toc-box-bg-color: #B3E0E6;
+        }
+    </style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+            
+<div id="family-nav">
+	<a id="logo" no-external="true" href="http://hl7.org/fhir"> <img
+		alt="logo fhir" height="50" src="assets/images/fhir-logo-www.png" />
+	</a>
+</div>
+
+
+            
+<div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="https://github.com/HL7Norway">
+        <img alt="visit the hl7 website" height="60" src="assets/images/dips_logo.jpg" />
+    </a>            
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">DIPS Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  Norway
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      FHIR Artifacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Vitalsign Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Resource Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Data Type Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#5">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#6">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#7">Code Systems</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Vitalsign Examples</a>
+      </li>
+      <li>
+        <a href="artifacts.html#8">Example Instances</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="toc.html">TOC</a>
+  </li>
+  <li>
+    <a href="changes.html">Change Log</a>
+  </li>
+  <li>
+    <a href="implementation-status.html">Implementation Status</a>
+  </li>
+  <li>
+    <a href="documentation.html">Documentation</a>
+  </li>
+  <li>
+    <a href="download.html">Download</a>
+  </li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Implementation Status</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">DIPS Core Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/R4/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Implementation Status</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<p>This page tracks, per module, which <code class="language-plaintext highlighter-rouge">fhir.core.r4</code> release each part of this IG was last confirmed
+against. <code class="language-plaintext highlighter-rouge">fhir.core.r4</code> ships as a single versioned service (e.g. <code class="language-plaintext highlighter-rouge">2.0.362</code>), but drift between the
+IG and the running implementation is found and fixed per module — different modules have different
+owners, and mismatches don't generalize from one module to the next. This table is the maintained
+record of that per-module status; it is updated as part of every profile review, not on a separate
+schedule.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Module (<code class="language-plaintext highlighter-rouge">fhir.core.r4</code> <code class="language-plaintext highlighter-rouge">src/</code>)</th>
+      <th>IG Profile</th>
+      <th>Last confirmed against <code class="language-plaintext highlighter-rouge">fhir.core.r4</code> version</th>
+      <th>Confirmed on</th>
+      <th>Status / open items</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EpisodeOfCare</td>
+      <td>DIPSRemoteMonitoring</td>
+      <td>2.0.362 (baseline)</td>
+      <td>2026-09-07</td>
+      <td>Verified. <code class="language-plaintext highlighter-rouge">^url</code> overrides applied to match the service's served URLs (canonical scheme deviation is intentional, see FSH comments). <code class="language-plaintext highlighter-rouge">statusHistory</code> cardinality corrected to <code class="language-plaintext highlighter-rouge">0..*</code>.</td>
+    </tr>
+    <tr>
+      <td>HealthcareService</td>
+      <td>DIPSHealthcareService</td>
+      <td>2.0.362 (baseline)</td>
+      <td>2026-09-08</td>
+      <td>Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed to match served URLs. Main profile has no served canonical URL at all (bare name in <code class="language-plaintext highlighter-rouge">Meta.Profile</code>) — not fixable from the IG side; flagged for a human decision.</td>
+    </tr>
+    <tr>
+      <td>Location</td>
+      <td>DIPSLocation</td>
+      <td>2.0.362 (baseline)</td>
+      <td>2026-09-08</td>
+      <td>Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed. Main profile has no served canonical URL, and the service has no served StructureDefinition XML for this module at all — flagged, not fixed.</td>
+    </tr>
+    <tr>
+      <td>Organization</td>
+      <td>DIPSOrganization</td>
+      <td>2.0.362 (baseline)</td>
+      <td>2026-09-08</td>
+      <td>Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed. Main profile has no served canonical URL; the service's <code class="language-plaintext highlighter-rouge">GetStructureDefinition()</code> loads a file that does not exist in its repo — likely a broken endpoint, flagged for the service owners.</td>
+    </tr>
+    <tr>
+      <td>Patient</td>
+      <td>DIPSPatient</td>
+      <td>2.0.362 (baseline)</td>
+      <td>2026-09-08</td>
+      <td>Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed, including resolving <code class="language-plaintext highlighter-rouge">DipsPatientHospitalSectorId</code>/<code class="language-plaintext highlighter-rouge">Name</code> into their two genuinely distinct served extensions. Three served extensions (<code class="language-plaintext highlighter-rouge">DIPSCanReceiveSms</code>, <code class="language-plaintext highlighter-rouge">DIPSCommentText</code>, <code class="language-plaintext highlighter-rouge">DIPSConsentGiven</code>) are undocumented in the IG — open, larger scope than a URL fix.</td>
+    </tr>
+    <tr>
+      <td>Person</td>
+      <td>DIPSPerson</td>
+      <td>2.0.362 (baseline)</td>
+      <td>2026-09-08</td>
+      <td>Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed. Main profile has no served canonical URL — flagged.</td>
+    </tr>
+    <tr>
+      <td>Practitioner</td>
+      <td>DIPSPractitioner</td>
+      <td>2.0.362 (baseline)</td>
+      <td>2026-09-08</td>
+      <td>Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed. Main profile has no served canonical URL — flagged.</td>
+    </tr>
+    <tr>
+      <td>PractitionerRole</td>
+      <td>DIPSPractitionerRole</td>
+      <td>2.0.362 (baseline)</td>
+      <td>2026-09-08</td>
+      <td>Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed. Main profile has no served canonical URL — flagged.</td>
+    </tr>
+    <tr>
+      <td>RelatedPerson</td>
+      <td>DIPSRelatedPerson</td>
+      <td>2.0.362 (baseline)</td>
+      <td>2026-09-08</td>
+      <td>Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed.</td>
+    </tr>
+    <tr>
+      <td>Encounter</td>
+      <td>8 Encounter profiles + <code class="language-plaintext highlighter-rouge">MustOccurBefore</code> extension</td>
+      <td>not tracked</td>
+      <td>—</td>
+      <td>Owned by a different team. URL-scheme and other findings from the 2026-09-08 audit were documented but deliberately not applied — do not re-attempt without checking with that team first.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>"Baseline" means the exact <code class="language-plaintext highlighter-rouge">fhir.core.r4</code> version at the time of review wasn't recorded, and
+<code class="language-plaintext highlighter-rouge">2.0.362</code> (the top numbered entry in <code class="language-plaintext highlighter-rouge">release-notes.yaml</code> as of when this table was created,
+2026-09-10) is used as the closest known reference point rather than a guess at the precise
+git-height version. Every review from this point forward should record the actual version in place
+of "(baseline)".</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 15, 2026 05:06+0000">2026-09-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -3,11 +3,12 @@
 ## Pages
 
 * [Home](index.md)
-* [Changes](changes.md)
-* [Reference Diagrams](reference-diagrams.md)
-* [Artifacts Summary](artifacts.md)
 * [Documentation](documentation.md)
+* [Changes](changes.md)
 * [Download](download.md)
+* [Artifacts Summary](artifacts.md)
+* [Reference Diagrams](reference-diagrams.md)
+* [Implementation Status](implementation-status.md)
 
 ## Resources
 

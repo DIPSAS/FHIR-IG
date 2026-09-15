@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSReferenceLocation | *Version*:0.1.0 |
-| Draft as of 2026-09-08 | *Computable Name*:DIPSReferenceLocation |
+| Draft as of 2026-09-15 | *Computable Name*:DIPSReferenceLocation |
 
 A reference to the DIPS hospital Location, modelled as an Organization, associated with this remote monitoring episode of care.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSReferenceLocatio
   "name" : "DIPSReferenceLocation",
   "title" : "DIPS Reference Location",
   "status" : "draft",
-  "date" : "2026-09-08T11:30:20+00:00",
+  "date" : "2026-09-15T05:06:55+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

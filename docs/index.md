@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/ImplementationGuide/dips.fhir.no.core | *Version*:0.1.0 |
-| Draft as of 2026-09-08 | *Computable Name*:DIPSCore |
+| Draft as of 2026-09-15 | *Computable Name*:DIPSCore |
 
 # DIPS Core Implementation Guide
 
@@ -40,7 +40,7 @@ This guide is intended for developers and integrators building or consuming inte
   "name" : "DIPSCore",
   "title" : "DIPS Core Implementation Guide",
   "status" : "draft",
-  "date" : "2026-09-08T11:30:20+00:00",
+  "date" : "2026-09-15T05:06:55+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -5232,6 +5232,15 @@ This guide is intended for developers and integrators building or consuming inte
         }],
         "nameUrl" : "download.html",
         "title" : "Download",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "implementation-status.html"
+        }],
+        "nameUrl" : "implementation-status.html",
+        "title" : "Implementation Status",
         "generation" : "markdown"
       },
       {

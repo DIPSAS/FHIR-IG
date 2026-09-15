@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSIsResponsible | *Version*:0.1.0 |
-| Draft as of 2026-09-08 | *Computable Name*:DIPSIsResponsible |
+| Draft as of 2026-09-15 | *Computable Name*:DIPSIsResponsible |
 
 Indicates whether this healthcare party is the responsible care manager for the remote monitoring episode of care.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSIsResponsible.cs
   "name" : "DIPSIsResponsible",
   "title" : "DIPS Is Responsible",
   "status" : "draft",
-  "date" : "2026-09-08T11:30:20+00:00",
+  "date" : "2026-09-15T05:06:55+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

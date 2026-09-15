@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/R4/DIPSRemoteMonitoring | *Version*:0.1.0 |
-| Draft as of 2026-09-08 | *Computable Name*:DIPSRemoteMonitoring |
+| Draft as of 2026-09-15 | *Computable Name*:DIPSRemoteMonitoring |
 
  
 An EpisodeOfCare used to track a patient's remote monitoring period, including free-text monitoring notes and references to the responsible hospital Location, Section, and Ward. 
@@ -74,7 +74,7 @@ The following search parameters and search parameter combinations SHALL be suppo
   "name" : "DIPSRemoteMonitoring",
   "title" : "DIPS Remote Monitoring",
   "status" : "draft",
-  "date" : "2026-09-08T11:30:20+00:00",
+  "date" : "2026-09-15T05:06:55+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

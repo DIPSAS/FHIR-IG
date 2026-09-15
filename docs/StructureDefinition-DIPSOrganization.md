@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSOrganization | *Version*:0.1.0 |
-| Draft as of 2026-09-08 | *Computable Name*:DIPSOrganization |
+| Draft as of 2026-09-15 | *Computable Name*:DIPSOrganization |
 
 The DIPS Organization Profile inherits from the FHIR Organization resource; refer to it for scope and usage definitions
 
@@ -104,7 +104,7 @@ The following search parameters and search parameter combinations SHALL be suppo
   "version" : "0.1.0",
   "name" : "DIPSOrganization",
   "status" : "draft",
-  "date" : "2026-09-08T11:30:20+00:00",
+  "date" : "2026-09-15T05:06:55+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

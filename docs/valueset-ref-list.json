@@ -9,8 +9,8 @@
     "systems" : ["urn:oid:2.16.578.1.12.4.1.1.8240"],
     "uses" : {
     },
-    "StructureDefinition-ContactTypeExtension.html" : "ContactTypeExtension",
-    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter"
+    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
+    "StructureDefinition-ContactTypeExtension.html" : "ContactTypeExtension"
   },
   {
     "url" : "http://dips.no/fhir/R4/ValueSet/DIPSEncounterV3",
@@ -599,8 +599,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.57"],
     "uses" : {
     },
-    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization",
-    "StructureDefinition-DIPSOrganizationReference.html" : "DIPSOrganizationReference"
+    "StructureDefinition-DIPSOrganizationReference.html" : "DIPSOrganizationReference",
+    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",

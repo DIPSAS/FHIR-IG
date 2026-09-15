@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://DIPS.no/fhir/StructureDefinition/R4/Organization-partOfDepartment | *Version*:0.1.0 |
-| Draft as of 2026-09-08 | *Computable Name*:PartOfDepartment |
+| Draft as of 2026-09-15 | *Computable Name*:PartOfDepartment |
 
 **Context of Use**
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-PartOfDepartment.csv
   "version" : "0.1.0",
   "name" : "PartOfDepartment",
   "status" : "draft",
-  "date" : "2026-09-08T11:30:20+00:00",
+  "date" : "2026-09-15T05:06:55+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
