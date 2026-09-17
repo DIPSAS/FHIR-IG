@@ -119,6 +119,7 @@
     <sch:title>f:Organization/f:address</sch:title>
     <sch:rule context="f:Organization/f:address">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.no/fhir/StructureDefinition/no-basis-address-official']) &lt;= 1">extension with URL = 'http://hl7.no/fhir/StructureDefinition/no-basis-address-official': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.no/fhir/StructureDefinition/no-basis-urban-district']) &lt;= 1">extension with URL = 'http://hl7.no/fhir/StructureDefinition/no-basis-urban-district': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://DIPS.no/fhir/StructureDefinition/R4/Organization-addressId']) &lt;= 1">extension with URL = 'http://DIPS.no/fhir/StructureDefinition/R4/Organization-addressId': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:use) &lt;= 1">use: maximum cardinality of 'use' is 1</sch:assert>

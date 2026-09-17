@@ -1,0 +1,49 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "DIPSQSOFAcomponentCodeSystem",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DIPSQSOFAcomponentCodeSystem</b></p><a name=\"DIPSQSOFAcomponentCodeSystem\"> </a><a name=\"hcDIPSQSOFAcomponentCodeSystem\"> </a><p>This  code system <code>http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAcomponentCodeSystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">QsofaMentalStatus<a name=\"DIPSQSOFAcomponentCodeSystem-QsofaMentalStatus\"> </a></td><td>QsofaMentalStatus</td></tr><tr><td style=\"white-space:nowrap\">QsofaSystolicBP<a name=\"DIPSQSOFAcomponentCodeSystem-QsofaSystolicBP\"> </a></td><td>QsofaSystolicBP</td></tr><tr><td style=\"white-space:nowrap\">QsofaResRate<a name=\"DIPSQSOFAcomponentCodeSystem-QsofaResRate\"> </a></td><td>QsofaResRate</td></tr></table></div>"
+  },
+  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAcomponentCodeSystem",
+  "identifier" : [{
+    "system" : "http://dips.no/fhir/namingsystem/dips-qsofacodes"
+  }],
+  "version" : "0.1.0",
+  "name" : "DIPSQSOFAcomponentCodeSystem",
+  "status" : "draft",
+  "date" : "2026-09-17T19:39:02+00:00",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "Lars-Andreas Nystad",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "mailto:lan@dips.no",
+      "use" : "work"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "QsofaMentalStatus",
+    "display" : "QsofaMentalStatus",
+    "definition" : "QsofaMentalStatus"
+  },
+  {
+    "code" : "QsofaSystolicBP",
+    "display" : "QsofaSystolicBP",
+    "definition" : "QsofaSystolicBP"
+  },
+  {
+    "code" : "QsofaResRate",
+    "display" : "QsofaResRate",
+    "definition" : "QsofaResRate"
+  }]
+}

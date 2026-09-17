@@ -1,0 +1,117 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/R4/Observation/no-body-temperature-create> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "no-body-temperature-create"] ;
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "0" ] ;
+     fhir:Meta.lastUpdated [ fhir:value "2014-01-30T22:35:23+11:00"^^xsd:dateTime ] ;
+     fhir:Meta.source [ fhir:value "HL7_Norway" ] ;
+     fhir:Meta.profile [
+       fhir:value "http://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition/no-domain-VitalSigns-Observation-bodytemp" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition/no-domain-VitalSigns-Observation-bodytemp>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation no-body-temperature-create</b></p><a name=\"no-body-temperature-create\"> </a><a name=\"hcno-body-temperature-create\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 0; Last updated: 2014-01-30 22:35:23+1100; </p><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;canonical=http://fhir.org/packages/hl7.fhir.no.basis/HL7_Norway\">HL7_Norway</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition-no-domain-VitalSigns-Observation-bodytemp.html\">no-domain-VitalSigns-Observation-bodytemp Profile</a></p></div><p><b>NoDomainVitalSignsBodyExposure-Extension</b>: <a href=\"http://snomed.info/id/5671000202107\">SNOMED CT: 5671000202107</a> (Naken)</p><p><b>NoDomainVitalSignsActiveHeating-Extension</b>: active heating sample</p><p><b>NoDomainVitalSignsDaysSinceMenstruationStart-Extension</b>: 12</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}, {http://snomed.info/sct 276885007}\">Body temperature</span></p><p><b>subject</b>: Identifier: Foedselsnummer/1000239</p><p><b>effective</b>: 2021-05-10</p><p><b>performer</b>: </p><ul><li>Identifier: <code>urn:oid:2.16.578.1.12.4.1.2</code>/889911</li><li><a href=\"Organization-afa23.html\">Organization: identifier = urn:oid:1.3.6.1.4.1.9038.70.3#23</a></li></ul><p><b>value</b>: 37 Cel<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>note</b>: </p><blockquote><div><p>Demo Body Temperature</p>\n</div></blockquote><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 34402009}\">Endetarm</span></p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition/NoDomainVitalSignsBodyExposureExtension" ] ;
+     fhir:Extension.valueCoding [
+       a sct:5671000202107 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "5671000202107" ] ;
+       fhir:Coding.display [ fhir:value "Naken" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition/NoDomainVitalSignsActiveHeatingExtension" ] ;
+     fhir:Extension.valueString [ fhir:value "active heating sample" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "http://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition/NoDomainVitalSignsDaysSinceMenstruationStartExtension" ] ;
+     fhir:Extension.valuePositiveInt [ fhir:value "12"^^xsd:positiveInteger ]
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "vital-signs" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:8310-5 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "8310-5" ] ;
+       fhir:Coding.display [ fhir:value "Body temperature" ]
+     ], [
+       fhir:index 1 ;
+       a sct:276885007 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "276885007" ] ;
+       fhir:Coding.display [ fhir:value "Core body temperature (observable entity)" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.1" ] ;
+       fhir:Identifier.value [ fhir:value "1000239" ]
+     ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2021-05-10"^^xsd:date] ;
+  fhir:Observation.performer [
+     fhir:index 0 ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.2" ] ;
+       fhir:Identifier.value [ fhir:value "889911" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:link <http://dips.no/fhir/R4/Organization/afa23> ;
+     fhir:Reference.reference [ fhir:value "Organization/afa23" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.70.3" ] ;
+       fhir:Identifier.value [ fhir:value "23" ]
+     ]
+  ] ;
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "37"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "Cel" ] ;
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+     fhir:Quantity.code [ fhir:value "Cel" ]
+  ] ;
+  fhir:Observation.note [
+     fhir:index 0 ;
+     fhir:Annotation.text [ fhir:value "Demo Body Temperature" ]
+  ] ;
+  fhir:Observation.bodySite [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a sct:34402009 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "34402009" ] ;
+       fhir:Coding.display [ fhir:value "Endetarm" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://dips.no/fhir/R4/Observation/no-body-temperature-create.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

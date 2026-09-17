@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="DIPSGCSEyeOpeningScoreCodeSystem"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem DIPSGCSEyeOpeningScoreCodeSystem</b></p><a name="DIPSGCSEyeOpeningScoreCodeSystem"> </a><a name="hcDIPSGCSEyeOpeningScoreCodeSystem"> </a><p>This  code system <code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">1<a name="DIPSGCSEyeOpeningScoreCodeSystem-1"> </a></td><td>Ingen reaksjon</td><td>Ingen reaksjon</td></tr><tr><td style="white-space:nowrap">2<a name="DIPSGCSEyeOpeningScoreCodeSystem-2"> </a></td><td>Ved smertestimulering</td><td>Ved smertestimulering</td></tr><tr><td style="white-space:nowrap">3<a name="DIPSGCSEyeOpeningScoreCodeSystem-3"> </a></td><td>Ved tiltale</td><td>Ved tiltale</td></tr><tr><td style="white-space:nowrap">4<a name="DIPSGCSEyeOpeningScoreCodeSystem-4"> </a></td><td>Spontant</td><td>Spontant</td></tr></table></div>
+  </text>
+  <url value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem"/>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/dips-gcs-eyeopening"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="DIPSGCSEyeOpeningScoreCodeSystem"/>
+  <status value="draft"/>
+  <date value="2026-09-17T19:39:02+00:00"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="Lars-Andreas Nystad"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:lan@dips.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="1"/>
+    <display value="Ingen reaksjon"/>
+    <definition value="Ingen reaksjon"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Ved smertestimulering"/>
+    <definition value="Ved smertestimulering"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Ved tiltale"/>
+    <definition value="Ved tiltale"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Spontant"/>
+    <definition value="Spontant"/>
+  </concept>
+</CodeSystem>

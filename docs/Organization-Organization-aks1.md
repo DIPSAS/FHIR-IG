@@ -6,7 +6,7 @@
 
 ## Example Organization: Organization-aks1
 
-Profiles: [DIPSOrganization](StructureDefinition-DIPSOrganization.md), [no-basis-Organization](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&canonical=http://hl7.no/fhir/StructureDefinition/no-basis-Organization)
+Profiles: [DIPSOrganization](StructureDefinition-DIPSOrganization.md), [no-basis-Organization](https://simplifier.net/resolve?scope=hl7.fhir.no.domain.vitalsigns@0.9.74&canonical=http://hl7.no/fhir/StructureDefinition/no-basis-Organization)
 
 Tag: 
 

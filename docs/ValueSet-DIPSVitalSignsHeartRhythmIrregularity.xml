@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DIPSVitalSignsHeartRhythmIrregularity"/>
+  <meta>
+    <lastUpdated value="2021-03-17T00:00:00+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet DIPSVitalSignsHeartRhythmIrregularity</b></p><a name="DIPSVitalSignsHeartRhythmIrregularity"> </a><a name="hcDIPSVitalSignsHeartRhythmIrregularity"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2021-03-17 00:00:00+0000</p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a></p></div><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="https://hl7.no/fhir/no-domain/vitalsigns/ValueSet-NoDomainVitalSignsHeartRhythmIrregularityValueSet.html">NoDomainVitalSignsHeartRhythmIrregularity-ValueSet</a></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/248652003">248652003</a></td><td>Regelmessig uregelmessig</td></tr><tr><td><a href="http://snomed.info/id/248651005">248651005</a></td><td>Uregelmessig uregelmessig</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="oo"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="http://dips.no/fhir/ValueSet/DIPSVitalSignsHeartRhythmIrregularity"/>
+  <version value="0.1.0"/>
+  <name value="DIPSVitalSignsHeartRhythmIrregularity"/>
+  <title value="DIPSVitalSignsHeartRhythmIrregularity"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2021-03-17T00:00:00+00:00"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="Lars-Andreas Nystad"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:lan@dips.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes representing heart rhythm irregularity for heart rate"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <valueSet value="http://hl7.no/fhir/no-domain/vitalsigns/ValueSet/NoDomainVitalSignsHeartRhythmIrregularityValueSet"/>
+    </include>
+    <exclude>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="248652003"/>
+        <display value="Regelmessig uregelmessig"/>
+      </concept>
+      <concept>
+        <code value="248651005"/>
+        <display value="Uregelmessig uregelmessig"/>
+      </concept>
+    </exclude>
+  </compose>
+</ValueSet>

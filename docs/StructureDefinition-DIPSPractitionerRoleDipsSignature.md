@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerRoleDipsSignature | *Version*:0.1.0 |
-| Draft as of 2026-09-15 | *Computable Name*:DIPSPractitionerRoleDipsSignature |
+| Draft as of 2026-09-17 | *Computable Name*:DIPSPractitionerRoleDipsSignature |
 
 **Context of Use**
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSPractitionerRole
   "version" : "0.1.0",
   "name" : "DIPSPractitionerRoleDipsSignature",
   "status" : "draft",
-  "date" : "2026-09-15T05:06:55+00:00",
+  "date" : "2026-09-17T19:39:02+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

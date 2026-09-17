@@ -124,30 +124,73 @@
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
       FHIR Artifacts <b class="caret"></b>
     </a>
+    <!-- artifacts.html numbers its sections sequentially, so these anchors track the
+         order of the groups: block in sushi-config.yaml. Adding, removing or reordering
+         a group shifts every anchor after it - re-check these against a build. -->
     <ul class="dropdown-menu">
       <li>
-        <a href="artifacts.html#1">Vitalsign Profiles</a>
+        <a href="artifacts.html#1">Observation Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#3">Resource Profiles</a>
+        <a href="artifacts.html#2">Encounter Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#4">Data Type Profiles</a>
+        <a href="artifacts.html#3">EpisodeOfCare Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#5">Extensions</a>
+        <a href="artifacts.html#4">ServiceRequest Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#6">Value Sets</a>
+        <a href="artifacts.html#5">Appointment Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#7">Code Systems</a>
+        <a href="artifacts.html#6">Schedule Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#2">Vitalsign Examples</a>
+        <a href="artifacts.html#7">Slot Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#8">Example Instances</a>
+        <a href="artifacts.html#8">Patient Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#9">Person Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#10">RelatedPerson Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#11">Practitioner Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#12">PractitionerRole Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#13">Organization Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#14">HealthcareService Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#15">Location Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#16">Reference Profiles</a>
+      </li>
+      <li class="divider"></li>
+      <li>
+        <a href="artifacts.html#17">Capability Statements</a>
+      </li>
+      <li>
+        <a href="artifacts.html#18">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#19">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#20">Code Systems</a>
+      </li>
+      <li>
+        <a href="artifacts.html#21">Example Instances</a>
       </li>
     </ul>
   </li>
@@ -306,6 +349,20 @@ schedule.</p>
       <td>—</td>
       <td>Owned by a different team. URL-scheme and other findings from the 2026-09-08 audit were documented but deliberately not applied — do not re-attempt without checking with that team first.</td>
     </tr>
+    <tr>
+      <td>VitalSign</td>
+      <td>13 <code class="language-plaintext highlighter-rouge">DIPSVitalSignsObservation*</code> profiles + reference profiles + 6 DIPS-specific extensions</td>
+      <td>2.0.362</td>
+      <td>2026-09-16</td>
+      <td>Missing <code class="language-plaintext highlighter-rouge">^url</code> added to <code class="language-plaintext highlighter-rouge">DIPSVitalSignsObservationQSOFAScore</code> (matches the served, non-canonical scheme already used by the other 12). Dead <code class="language-plaintext highlighter-rouge">code.coding[HeartRateCode]</code> slice removed from HeartRate and Pulse — matched no real slice on either profile's NoDomain parent (<code class="language-plaintext highlighter-rouge">HeartRateSNOMEDCode</code>/<code class="language-plaintext highlighter-rouge">PulseSNOMEDCode</code>), a harmless but meaningless leftover. Open: the Consciousness template emits an undocumented extension, <code class="language-plaintext highlighter-rouge">DIPSVitalSignsObservationConsciousnessPainStimulus</code>, with no slice or extension definition in the IG — a fix was drafted but not kept, still needs adding. The HeartRate, Pulse, RespiratoryRate and Pulsoksymetri templates each emit at least one extension (HeartRhythmIrregularity/ClinicalDescription/SpontaneousBreathing/RespirationRateBodyPosition/FiO2/OnAir/ProsentO2) under a URL matching neither the real <code class="language-plaintext highlighter-rouge">hl7.fhir.no.domain.vitalsigns</code> extension nor any DIPS-specific one — a <code class="language-plaintext highlighter-rouge">fhir.core.r4</code> template bug (confirmed self-contradictory even within one template), not encoded in the IG; needs a developer fix at the source, not an IG change. <code class="language-plaintext highlighter-rouge">ObservationCapabilityStatement.xml</code>'s <code class="language-plaintext highlighter-rouge">supportedProfile</code> naming (<code class="language-plaintext highlighter-rouge">QSOFA</code> → <code class="language-plaintext highlighter-rouge">QSOFAScore</code>) was corrected directly in <code class="language-plaintext highlighter-rouge">fhir.core.r4</code>, separately from this IG.</td>
+    </tr>
+    <tr>
+      <td>DiagnosticReport</td>
+      <td>DIPSDiagnosticReport (+ DIPSDiagnosticOrderSpecimenReference, DIPSDiagnosticReportOrganizationReference/PractitionerReference/SubjectReference, DIPS-DiagnosticReport-WorkFlow extension)</td>
+      <td>2.0.362</td>
+      <td>2026-09-16</td>
+      <td>Verified against <code class="language-plaintext highlighter-rouge">LabRestServiceToFhirDiagnosticReportMapping</code> and fhir.core.r4's own committed integration-test fixtures. Fixed several hard conformance violations the served StructureDefinition's own documentation also got wrong: <code class="language-plaintext highlighter-rouge">basedOn</code>/<code class="language-plaintext highlighter-rouge">result</code>/<code class="language-plaintext highlighter-rouge">specimen</code> relaxed from an incorrect max of 1 to <code class="language-plaintext highlighter-rouge">0..*</code>/<code class="language-plaintext highlighter-rouge">1..*</code> (a real report in the service's own fixtures has 3 based-on and 3 result references); <code class="language-plaintext highlighter-rouge">performer</code> relaxed from <code class="language-plaintext highlighter-rouge">1..1</code> to <code class="language-plaintext highlighter-rouge">0..*</code> and broadened to allow <code class="language-plaintext highlighter-rouge">DIPSDiagnosticReportPractitionerReference</code> alongside Organization (mapping can emit either, and a real fixture has zero performers); <code class="language-plaintext highlighter-rouge">code.coding</code> corrected from forbidden (<code class="language-plaintext highlighter-rouge">..0</code>) to <code class="language-plaintext highlighter-rouge">1..1</code> with a fixed system, since the mapper always emits one. Also corrected <code class="language-plaintext highlighter-rouge">identifier[requsition_id].use</code> from a wrong fixed <code class="language-plaintext highlighter-rouge">secondary</code> to the real <code class="language-plaintext highlighter-rouge">official</code>, and removed an invalid fixed <code class="language-plaintext highlighter-rouge">category.coding[DIPS_rekvisisjonstype].code</code> (real value is dynamic). All changes verified via <code class="language-plaintext highlighter-rouge">sushi .</code> (0 errors, no new warnings). Not fixed / open: <code class="language-plaintext highlighter-rouge">performer.identifier</code>'s elaborate identifier slicing (DIPSLocationId/DIPSDepartmentID/PractitionerHCP etc.) appears unpopulated by the currently-reviewed mapping code path (<code class="language-plaintext highlighter-rouge">ResourceReferenceBuilder.GetNewResourceReference</code> sets only <code class="language-plaintext highlighter-rouge">.Reference</code>/<code class="language-plaintext highlighter-rouge">.Display</code>) — left as-is since it isn't a proven violation, just unconfirmed as currently active; flagged for the module owner. <code class="language-plaintext highlighter-rouge">category.coding[DIPS_rekvisisjonstype].system</code>/<code class="language-plaintext highlighter-rouge">[FHIR_standard_code].system</code> pin a ValueSet canonical rather than a CodeSystem canonical (pre-existing, cross-cutting wire-format question, category 6 — not changed).</td>
+    </tr>
   </tbody>
 </table>
 
@@ -334,7 +391,7 @@ of "(baseline)".</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 15, 2026 05:06+0000">2026-09-15</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 17, 2026 19:39+0000">2026-09-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

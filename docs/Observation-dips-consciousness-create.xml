@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="dips-consciousness-create"/>
+  <meta>
+    <versionId value="0"/>
+    <lastUpdated value="2014-01-30T11:35:23+00:00"/>
+    <source value="META_VISION"/>
+    <profile value="http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationConsciousness"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation dips-consciousness-create</b></p><a name="dips-consciousness-create"> </a><a name="hcdips-consciousness-create"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: 0; Last updated: 2014-01-30 11:35:23+0000; </p><p style="margin-bottom: 0px">Information Source: <a href="https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;canonical=http://fhir.org/packages/hl7.fhir.no.basis/META_VISION">META_VISION</a></p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-DIPSVitalSignsObservationConsciousness.html">DIPS Vital Signs Observation - Level of Consciousness</a></p></div><p><b>DIPSJournalId</b>: <a href="DocumentReference-ako124.html">DocumentReference: status = current; docStatus = final</a></p><p><b>DIPSVitalSignsLocation</b>: <a href="CodeSystem-DIPSLocation.html#DIPSLocation-School">DIPSLocation: School</a> (At School)</p><p><b>identifier</b>: <code>http://dips.no/fhir/namingsystem/dips-RelativeEhrUri</code>/ehr:compositions/6c41D37f-f173-45d6-8504-17c40454b9ee::default::1/content[openEHR-EHR-OBSERVATION.acvpu.v1 and name/value='ACVPU'], <code>http://dips.no/fhir/namingsystem/dips-ObservationId</code>/dips-consciousness-create, <code>http://dips.no/fhir/namingsystem/externalId</code>/testBPexternalId1</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 1104441000000107}">Alert Confusion Voice Pain Unresponsive scale score</span></p><p><b>subject</b>: <a href="Patient-cdp1000807.html">Anonymous Patient (no stated gender), DoB Unknown ( http://dips.no/fhir/namingsystem/dips-patientid#1000807)</a></p><p><b>encounter</b>: <a href="Encounter-agy100247.html">Encounter: identifier = http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid#agy100247; status = arrived; class = ambulatory (ActCode#AMB)</a></p><p><b>effective</b>: 2021-10-25 09:30:33+0530</p><p><b>performer</b>: </p><ul><li><a href="PractitionerRole-agb103.html">PractitionerRole: identifier = urn:oid:1.3.6.1.4.1.9038.51.1#103</a></li><li><a href="Organization-afa22.html">Organization: identifier = urn:oid:1.3.6.1.4.1.9038.70.3#22</a></li></ul><p><b>value</b>: <span title="Codes:{http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness D0005}">Våken</span></p></div>
+  </text>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSJournalId">
+    <valueReference>
+      <reference value="DocumentReference/ako124"/>
+      <identifier>
+        <system value="http://dips.no/fhir/namingsystem/dips-journalid"/>
+        <value value="4325645"/>
+      </identifier>
+    </valueReference>
+  </extension>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSLocation">
+    <valueCoding>
+      <system value="http://dips.no/fhir/R4/CodeSystem/DIPSLocation"/>
+      <code value="School"/>
+      <display value="At School"/>
+    </valueCoding>
+  </extension>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/dips-RelativeEhrUri"/>
+    <value value="ehr:compositions/6c41D37f-f173-45d6-8504-17c40454b9ee::default::1/content[openEHR-EHR-OBSERVATION.acvpu.v1 and name/value='ACVPU']"/>
+  </identifier>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/dips-ObservationId"/>
+    <value value="dips-consciousness-create"/>
+  </identifier>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/externalId"/>
+    <value value="testBPexternalId1"/>
+  </identifier>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="survey"/>
+      <display value="Survey"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1104441000000107"/>
+      <display value="Alert Confusion Voice Pain Unresponsive scale score"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/cdp1000807"/>
+    <identifier>
+      <system value="http://dips.no/fhir/namingsystem/dips-patientid"/>
+      <value value="1000807"/>
+    </identifier>
+  </subject>
+  <encounter>
+    <reference value="Encounter/agy100247"/>
+    <identifier>
+      <system value="http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid"/>
+      <value value="agy100247"/>
+    </identifier>
+  </encounter>
+  <effectiveDateTime value="2021-10-25T09:30:33+05:30"/>
+  <performer>
+    <reference value="PractitionerRole/agb103"/>
+    <identifier>
+      <system value="urn:oid:1.3.6.1.4.1.9038.51.1"/>
+      <value value="103"/>
+    </identifier>
+  </performer>
+  <performer>
+    <reference value="Organization/afa22"/>
+    <identifier>
+      <system value="urn:oid:1.3.6.1.4.1.9038.70.3"/>
+      <value value="22"/>
+    </identifier>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness"/>
+      <code value="D0005"/>
+      <display value="Våken"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

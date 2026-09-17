@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="dips-body-temperature-create"/>
+  <meta>
+    <versionId value="0"/>
+    <lastUpdated value="2014-01-30T22:35:23+11:00"/>
+    <source value="META_VISION"/>
+    <profile value="http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBodyTemp"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation dips-body-temperature-create</b></p><a name="dips-body-temperature-create"> </a><a name="hcdips-body-temperature-create"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: 0; Last updated: 2014-01-30 22:35:23+1100; </p><p style="margin-bottom: 0px">Information Source: <a href="https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;canonical=http://fhir.org/packages/hl7.fhir.no.basis/META_VISION">META_VISION</a></p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-DIPSVitalSignsObservationBodyTemp.html">DIPS Vital Signs Observation - Body Temperature</a></p></div><p><b>DIPSJournalId</b>: <a href="DocumentReference-ako124.html">DocumentReference: status = current; docStatus = final</a></p><p><b>DIPSVitalSignsLocation</b>: <a href="CodeSystem-DIPSLocation.html#DIPSLocation-School">DIPSLocation: School</a> (At School)</p><p><b>NoDomainVitalSignsBodyExposure-Extension</b>: <a href="http://snomed.info/id/5611000202100">SNOMED CT: 5611000202100</a> (Passende p�kledning/tildekking)</p><p><b>NoDomainVitalSignsActiveHeating-Extension</b>: active heating sample</p><p><b>NoDomainVitalSignsConfoundingFactor-Extension</b>: <span title="Codes:">sample confounding factor</span></p><p><b>identifier</b>: <code>http://dips.no/fhir/namingsystem/dips-RelativeEhrUri</code>/ehr:compositions/6c41D37f-f173-45d6-8504-17c40454b9ee::default::1/content[openEHR-EHR-OBSERVATION.body_temperature.v2 and name/value='Temperatur'], <code>http://dips.no/fhir/namingsystem/dips-ObservationId</code>/dips-body-temperature-create, <code>http://dips.no/fhir/namingsystem/externalId</code>/testBPexternalId1</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8310-5}, {http://snomed.info/sct 276885007}">Body temperature</span></p><p><b>subject</b>: <a href="Patient-cdp1000807.html">Anonymous Patient (no stated gender), DoB Unknown ( http://dips.no/fhir/namingsystem/dips-patientid#1000807)</a></p><p><b>encounter</b>: <a href="Encounter-agy100247.html">Encounter: identifier = http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid#agy100247; status = arrived; class = ambulatory (ActCode#AMB)</a></p><p><b>effective</b>: 2019-10-25 09:30:33+0530</p><p><b>performer</b>: </p><ul><li><a href="PractitionerRole-agb27.html">PractitionerRole: identifier = urn:oid:1.3.6.1.4.1.9038.51.1#27</a></li><li><a href="Organization-afa22.html">Organization: identifier = urn:oid:1.3.6.1.4.1.9038.70.3#22</a></li></ul><p><b>value</b>: 37 Cel<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>note</b>: </p><blockquote><div><p>Demo Body Temperature</p>
+</div></blockquote><p><b>bodySite</b>: <span title="Codes:{http://snomed.info/sct 34402009}">Endetarm</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>36.1 Cel</td><td>37.2 Cel</td></tr></table></div>
+  </text>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSJournalId">
+    <valueReference>
+      <reference value="DocumentReference/ako124"/>
+      <identifier>
+        <system value="http://dips.no/fhir/namingsystem/dips-journalid"/>
+        <value value="4325645"/>
+      </identifier>
+    </valueReference>
+  </extension>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSLocation">
+    <valueCoding>
+      <system value="http://dips.no/fhir/R4/CodeSystem/DIPSLocation"/>
+      <code value="School"/>
+      <display value="At School"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition/NoDomainVitalSignsBodyExposureExtension">
+    <valueCoding>
+      <system value="http://snomed.info/sct"/>
+      <code value="5611000202100"/>
+      <display value="Passende p�kledning/tildekking"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition/NoDomainVitalSignsActiveHeatingExtension">
+    <valueString value="active heating sample"/>
+  </extension>
+  <extension url="http://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition/NoDomainVitalSignsConfoundingFactorExtension">
+    <valueCodeableConcept>
+      <text value="sample confounding factor"/>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/dips-RelativeEhrUri"/>
+    <value value="ehr:compositions/6c41D37f-f173-45d6-8504-17c40454b9ee::default::1/content[openEHR-EHR-OBSERVATION.body_temperature.v2 and name/value='Temperatur']"/>
+  </identifier>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/dips-ObservationId"/>
+    <value value="dips-body-temperature-create"/>
+  </identifier>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/externalId"/>
+    <value value="testBPexternalId1"/>
+  </identifier>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8310-5"/>
+      <display value="Body temperature"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="276885007"/>
+      <display value="Core body temperature (observable entity)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/cdp1000807"/>
+    <identifier>
+      <system value="http://dips.no/fhir/namingsystem/dips-patientid"/>
+      <value value="1000807"/>
+    </identifier>
+  </subject>
+  <encounter>
+    <reference value="Encounter/agy100247"/>
+    <identifier>
+      <system value="http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid"/>
+      <value value="agy100247"/>
+    </identifier>
+  </encounter>
+  <effectiveDateTime value="2019-10-25T09:30:33+05:30"/>
+  <performer>
+    <reference value="PractitionerRole/agb27"/>
+    <identifier>
+      <system value="urn:oid:1.3.6.1.4.1.9038.51.1"/>
+      <value value="27"/>
+    </identifier>
+  </performer>
+  <performer>
+    <reference value="Organization/afa22"/>
+    <identifier>
+      <system value="urn:oid:1.3.6.1.4.1.9038.70.3"/>
+      <value value="22"/>
+    </identifier>
+  </performer>
+  <valueQuantity>
+    <value value="37"/>
+    <unit value="Cel"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="Cel"/>
+  </valueQuantity>
+  <note>
+    <text value="Demo Body Temperature"/>
+  </note>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="34402009"/>
+      <display value="Endetarm"/>
+    </coding>
+  </bodySite>
+  <referenceRange>
+    <low>
+      <value value="36.1"/>
+      <unit value="Cel"/>
+    </low>
+    <high>
+      <value value="37.2"/>
+      <unit value="Cel"/>
+    </high>
+  </referenceRange>
+</Observation>

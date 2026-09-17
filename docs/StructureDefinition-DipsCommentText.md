@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/R4/DIPSCommentText | *Version*:0.1.0 |
-| Draft as of 2026-09-15 | *Computable Name*:DipsCommentText |
+| Draft as of 2026-09-17 | *Computable Name*:DipsCommentText |
 
 A free-text comment associated with this phone number.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-DipsCommentText.csv)
   "name" : "DipsCommentText",
   "title" : "DIPS Comment Text",
   "status" : "draft",
-  "date" : "2026-09-15T05:06:55+00:00",
+  "date" : "2026-09-17T19:39:02+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

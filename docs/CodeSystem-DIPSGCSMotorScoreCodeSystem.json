@@ -1,0 +1,64 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "DIPSGCSMotorScoreCodeSystem",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DIPSGCSMotorScoreCodeSystem</b></p><a name=\"DIPSGCSMotorScoreCodeSystem\"> </a><a name=\"hcDIPSGCSMotorScoreCodeSystem\"> </a><p>This  code system <code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"DIPSGCSMotorScoreCodeSystem-1\"> </a></td><td>Ingen reaksjon</td><td>Ingen reaksjon</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"DIPSGCSMotorScoreCodeSystem-2\"> </a></td><td>Ekstensjon ved smerte</td><td>Ekstensjon ved smerte</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"DIPSGCSMotorScoreCodeSystem-3\"> </a></td><td>Fleksjon ved smerte</td><td>Fleksjon ved smerte</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"DIPSGCSMotorScoreCodeSystem-4\"> </a></td><td>Avverger smerte</td><td>Avverger smerte</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"DIPSGCSMotorScoreCodeSystem-5\"> </a></td><td>Lokaliserer smerte</td><td>Lokaliserer smerte</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"DIPSGCSMotorScoreCodeSystem-6\"> </a></td><td>Følger oppfordringer</td><td>Følger oppfordringer</td></tr></table></div>"
+  },
+  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem",
+  "identifier" : [{
+    "system" : "http://dips.no/fhir/namingsystem/dips-gcs-motor"
+  }],
+  "version" : "0.1.0",
+  "name" : "DIPSGCSMotorScoreCodeSystem",
+  "status" : "draft",
+  "date" : "2026-09-17T19:39:02+00:00",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "Lars-Andreas Nystad",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "mailto:lan@dips.no",
+      "use" : "work"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "1",
+    "display" : "Ingen reaksjon",
+    "definition" : "Ingen reaksjon"
+  },
+  {
+    "code" : "2",
+    "display" : "Ekstensjon ved smerte",
+    "definition" : "Ekstensjon ved smerte"
+  },
+  {
+    "code" : "3",
+    "display" : "Fleksjon ved smerte",
+    "definition" : "Fleksjon ved smerte"
+  },
+  {
+    "code" : "4",
+    "display" : "Avverger smerte",
+    "definition" : "Avverger smerte"
+  },
+  {
+    "code" : "5",
+    "display" : "Lokaliserer smerte",
+    "definition" : "Lokaliserer smerte"
+  },
+  {
+    "code" : "6",
+    "display" : "Følger oppfordringer",
+    "definition" : "Følger oppfordringer"
+  }]
+}

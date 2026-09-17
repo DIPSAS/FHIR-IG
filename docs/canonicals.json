@@ -125,6 +125,47 @@
   "name" : "TeamTypeId"
 },
 {
+  "id" : "TextResultObservation",
+  "type" : "StructureDefinition",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/TextResultObservation",
+  "version" : "0.1.0",
+  "name" : "TextResultObservation"
+},
+{
+  "id" : "DIPSVitalSignsObservation",
+  "type" : "CapabilityStatement",
+  "url" : "http://dips.no/fhir/R4/CapabilityStatement/DIPSVitalSignsObservation",
+  "version" : "0.1.0"
+},
+{
+  "id" : "DIPSBodyMassIndexMeasurementMethod",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod",
+  "version" : "0.1.0",
+  "name" : "DIPSBodyMassIndexMeasurementMethod"
+},
+{
+  "id" : "DIPSGCSEyeOpeningScoreCodeSystem",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem",
+  "version" : "0.1.0",
+  "name" : "DIPSGCSEyeOpeningScoreCodeSystem"
+},
+{
+  "id" : "DIPSGCSMotorScoreCodeSystem",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem",
+  "version" : "0.1.0",
+  "name" : "DIPSGCSMotorScoreCodeSystem"
+},
+{
+  "id" : "DIPSGCSVerbalScoreCodeSystem",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem",
+  "version" : "0.1.0",
+  "name" : "DIPSGCSVerbalScoreCodeSystem"
+},
+{
   "id" : "DIPSLocation",
   "type" : "CodeSystem",
   "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSLocation",
@@ -139,39 +180,53 @@
   "name" : "DIPSLocationTopLevel"
 },
 {
+  "id" : "DIPSMeasurementMethod",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSMeasurementMethod",
+  "version" : "0.1.0",
+  "name" : "DIPSMeasurementMethod"
+},
+{
+  "id" : "DIPSQSOFAScoreBPCodeSystem",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem",
+  "version" : "0.1.0",
+  "name" : "DIPSQSOFAScoreBPCodeSystem"
+},
+{
+  "id" : "DIPSQSOFAScoreMentalSatusCodeSystem",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem",
+  "version" : "0.1.0",
+  "name" : "DIPSQSOFAScoreMentalSatusCodeSystem"
+},
+{
+  "id" : "DIPSQSOFAScoreResRateCodeSystem",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreResRateCodeSystem",
+  "version" : "0.1.0",
+  "name" : "DIPSQSOFAScoreResRateCodeSystem"
+},
+{
+  "id" : "DIPSQSOFAcomponentCodeSystem",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAcomponentCodeSystem",
+  "version" : "0.1.0",
+  "name" : "DIPSQSOFAcomponentCodeSystem"
+},
+{
+  "id" : "DIPSVitalSignsObservationConsciousness",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationConsciousness"
+},
+{
   "id" : "DIPSVitalSignsObservationPrePostduktal",
   "type" : "CodeSystem",
   "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal",
   "version" : "0.1.0",
   "name" : "DIPSVitalSignsObservationPrePostduktal"
-},
-{
-  "id" : "NoImplBodyMassIndexMeasurementMethod",
-  "type" : "CodeSystem",
-  "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod",
-  "version" : "0.1.0",
-  "name" : "NoImplBodyMassIndexMeasurementMethod"
-},
-{
-  "id" : "NoImplMeasurementMethod",
-  "type" : "CodeSystem",
-  "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplMeasurementMethod",
-  "version" : "0.1.0",
-  "name" : "NoImplMeasurementMethod"
-},
-{
-  "id" : "NoImplQSOFAcomponentCodes",
-  "type" : "CodeSystem",
-  "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplQSOFAcomponentCodes",
-  "version" : "0.1.0",
-  "name" : "NoImplQSOFAcomponentCodes"
-},
-{
-  "id" : "NoImplVitalSignsObservationConsciousness",
-  "type" : "CodeSystem",
-  "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationConsciousness"
 },
 {
   "id" : "dips.fhir.no.core",
@@ -405,167 +460,6 @@
   "name" : "MustOccurBefore"
 },
 {
-  "id" : "NoImplVitalSignsObservationBloodpressure",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationBloodpressure",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationBloodpressure"
-},
-{
-  "id" : "NoImplVitalSignsObservationBodyHeight",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationBodyHeight",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationBodyHeight"
-},
-{
-  "id" : "NoImplVitalSignsObservationBodyMassIndex",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationBodyMassIndex",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationBodyMassIndex"
-},
-{
-  "id" : "NoImplVitalSignsObservationBodyTemp",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationBodyTemp",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationBodyTemp"
-},
-{
-  "id" : "NoImplVitalSignsObservationBodyWeight",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationBodyWeight",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationBodyWeight"
-},
-{
-  "id" : "NoImplVitalSignsObservationClothingState",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationClothingState",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationClothingState"
-},
-{
-  "id" : "NoImplVitalSignsObservationConsciousness",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationConsciousness",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationConsciousness"
-},
-{
-  "id" : "NoImplVitalSignsObservationFiO2",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationFiO2",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationFiO2"
-},
-{
-  "id" : "NoImplVitalSignsObservationFlow",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationFlow",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationFlow"
-},
-{
-  "id" : "NoImplVitalSignsObservationGCS",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationGCS",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationGCS"
-},
-{
-  "id" : "NoImplVitalSignsObservationHeartRate",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationHeartRate",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationHeartRate"
-},
-{
-  "id" : "NoImplVitalSignsObservationInspiredOxygen",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationInspiredOxygen",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationInspiredOxygen"
-},
-{
-  "id" : "NoImplVitalSignsObservationMethodofOxygenDelivery",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationMethodofOxygenDelivery",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationMethodofOxygenDelivery"
-},
-{
-  "id" : "NoImplVitalSignsObservationNews2Score",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationNews2Score",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationNews2Score"
-},
-{
-  "id" : "NoImplVitalSignsObservationOnAir",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationOnAir",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationOnAir"
-},
-{
-  "id" : "NoImplVitalSignsObservationOxygenSaturation",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationOxygenSaturation",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationOxygenSaturation"
-},
-{
-  "id" : "NoImplVitalSignsObservationProsentO2",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationProsentO2",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationProsentO2"
-},
-{
-  "id" : "NoImplVitalSignsObservationPulse",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationPulse",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationPulse"
-},
-{
-  "id" : "NoImplVitalSignsObservationPulseRhythm",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationPulseRhythm",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationPulseRhythm"
-},
-{
-  "id" : "NoImplVitalSignsObservationQSOFAScore",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationQSOFAScore",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationQSOFAScore"
-},
-{
-  "id" : "NoImplVitalSignsObservationRespirationDepth",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationRespirationDepth",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationRespirationDepth"
-},
-{
-  "id" : "NoImplVitalSignsObservationRespirationRate",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationRespirationRate",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationRespirationRate"
-},
-{
-  "id" : "NoImplVitalSignsObservationRespirationRegularity",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationRespirationRegularity",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationRespirationRegularity"
-},
-{
   "id" : "NprLevelOfCareExtension",
   "type" : "StructureDefinition",
   "url" : "http://dips.no/fhir/R4/StructureDefinition/NprLevelOfCareExtension",
@@ -643,11 +537,53 @@
   "name" : "DIPSEncounterV3"
 },
 {
+  "id" : "DIPSGCSEyeOpeningScore",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/DIPSGCSEyeOpeningScore",
+  "version" : "0.1.0",
+  "name" : "DIPSGCSEyeOpeningScore"
+},
+{
+  "id" : "DIPSGCSMotorScore",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/DIPSGCSMotorScore",
+  "version" : "0.1.0",
+  "name" : "DIPSGCSMotorScore"
+},
+{
+  "id" : "DIPSGCSVerbalScore",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/DIPSGCSVerbalScore",
+  "version" : "0.1.0",
+  "name" : "DIPSGCSVerbalScore"
+},
+{
   "id" : "DIPSHealthcareServiceTypes",
   "type" : "ValueSet",
   "url" : "http://dips.no/fhir/R4/ValueSet/DIPSHealthcareServiceTypes",
   "version" : "0.1.0",
   "name" : "DIPSHealthcareServiceTypes"
+},
+{
+  "id" : "DIPSQSOFAScoreBPValueSet",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreBPValueSet",
+  "version" : "0.1.0",
+  "name" : "DIPSQSOFAScoreBPValueSet"
+},
+{
+  "id" : "DIPSQSOFAScoreMentalSatusValueSet",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreMentalSatusValueSet",
+  "version" : "0.1.0",
+  "name" : "DIPSQSOFAScoreMentalSatusValueSet"
+},
+{
+  "id" : "DIPSQSOFAScoreResRateValueSet",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreResRateValueSet",
+  "version" : "0.1.0",
+  "name" : "DIPSQSOFAScoreResRateValueSet"
 },
 {
   "id" : "DipsCoding1003ValueSet",
@@ -690,48 +626,6 @@
   "url" : "http://dips.no/fhir/R4/ValueSet/LocationTypes",
   "version" : "0.1.0",
   "name" : "LocationTypes"
-},
-{
-  "id" : "NoImplVitalSignsObservationBloodPressureMeasurementMethod",
-  "type" : "ValueSet",
-  "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationBloodPressureMeasurementMethod",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationBloodPressureMeasurementMethod"
-},
-{
-  "id" : "NoImplVitalSignsObservationBodyMassIndexFormula",
-  "type" : "ValueSet",
-  "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationBodyMassIndexFormula",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationBodyMassIndexFormula"
-},
-{
-  "id" : "NoImplVitalSignsObservationConsciousness",
-  "type" : "ValueSet",
-  "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationConsciousness",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationConsciousness"
-},
-{
-  "id" : "NoImplVitalSignsObservationHeartRateMeasurementMethod",
-  "type" : "ValueSet",
-  "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationHeartRateMeasurementMethod",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationHeartRateMeasurementMethod"
-},
-{
-  "id" : "NoImplVitalSignsObservationPulseBodySite",
-  "type" : "ValueSet",
-  "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationPulseBodySite",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationPulseBodySite"
-},
-{
-  "id" : "NoImplVitalSignsObservationPulseMeasurementMethod",
-  "type" : "ValueSet",
-  "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationPulseMeasurementMethod",
-  "version" : "0.1.0",
-  "name" : "NoImplVitalSignsObservationPulseMeasurementMethod"
 },
 {
   "id" : "NprLevelOfCare",
@@ -783,6 +677,55 @@
   "name" : "relatedperson-relationshiptype"
 },
 {
+  "id" : "DIPS-DiagnosticReport-WorkFlow",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPS-DiagnosticReport-WorkFlow",
+  "version" : "0.1.0",
+  "name" : "DIPSDiagnosticReportWorkFlow"
+},
+{
+  "id" : "DIPSBasisLabObservationR4",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSBasisLabObservationR4",
+  "version" : "0.1.0",
+  "name" : "DIPSBasisLabObservationR4"
+},
+{
+  "id" : "DIPSDiagnosticOrderSpecimenReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDiagnosticOrderSpecimenReference",
+  "version" : "0.1.0",
+  "name" : "DIPSDiagnosticOrderSpecimenReference"
+},
+{
+  "id" : "DIPSDiagnosticReport",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDiagnosticReport",
+  "version" : "0.1.0",
+  "name" : "DIPSDiagnosticReport"
+},
+{
+  "id" : "DIPSDiagnosticReportOrganizationReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDiagnosticReportOrganizationReference",
+  "version" : "0.1.0",
+  "name" : "DIPSDiagnosticReportOrganizationReference"
+},
+{
+  "id" : "DIPSDiagnosticReportPractitionerReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDiagnosticReportPractitionerReference",
+  "version" : "0.1.0",
+  "name" : "DIPSDiagnosticReportPractitionerReference"
+},
+{
+  "id" : "DIPSDiagnosticReportSubjectReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDiagnosticReportSubjectReference",
+  "version" : "0.1.0",
+  "name" : "DIPSDiagnosticReportSubjectReference"
+},
+{
   "id" : "DIPSDocumentTypeId",
   "type" : "StructureDefinition",
   "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentTypeId",
@@ -797,11 +740,39 @@
   "name" : "DIPSIsResponsible"
 },
 {
+  "id" : "DIPSJournalId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSJournalId",
+  "version" : "0.1.0",
+  "name" : "DIPSJournalId"
+},
+{
+  "id" : "DIPSLabsObservationReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSLabsObservationReference",
+  "version" : "0.1.0",
+  "name" : "DIPSLabsObservationReference"
+},
+{
+  "id" : "DIPSVitalSignsLocation",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSLocation",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsLocation"
+},
+{
   "id" : "DIPSMonitoringNotes",
   "type" : "StructureDefinition",
   "url" : "http://dips.no/fhir/StructureDefinition/DIPSMonitoringNotes",
   "version" : "0.1.0",
   "name" : "DIPSMonitoringNotes"
+},
+{
+  "id" : "DIPSObservationSubjectReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSObservationSubjectReference",
+  "version" : "0.1.0",
+  "name" : "DIPSObservationSubjectReference"
 },
 {
   "id" : "DIPSReferenceLocation",
@@ -823,6 +794,167 @@
   "url" : "http://dips.no/fhir/StructureDefinition/DIPSReferenceWard",
   "version" : "0.1.0",
   "name" : "DIPSReferenceWard"
+},
+{
+  "id" : "DIPSVitalSignsHeartRhythmIrregularity",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsHeartRhythmIrregularity",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsHeartRhythmIrregularity"
+},
+{
+  "id" : "DIPSVitalSignsObservationBloodpressure",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBloodpressure",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationBloodpressure"
+},
+{
+  "id" : "DIPSVitalSignsObservationBodyHeight",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBodyHeight",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationBodyHeight"
+},
+{
+  "id" : "DIPSVitalSignsObservationBodyMassIndex",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBodyMassIndex",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationBodyMassIndex"
+},
+{
+  "id" : "DIPSVitalSignsObservationBodyMassIndexFormula",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBodyMassIndexFormula",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationBodyMassIndexFormula"
+},
+{
+  "id" : "DIPSVitalSignsObservationBodyTemp",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBodyTemp",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationBodyTemp"
+},
+{
+  "id" : "DIPSVitalSignsObservationBodyWeight",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBodyWeight",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationBodyWeight"
+},
+{
+  "id" : "DIPSVitalSignsObservationConfoundingFactor",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationConfoundingFactor",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationConfoundingFactor"
+},
+{
+  "id" : "DIPSVitalSignsObservationConsciousness",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationConsciousness",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationConsciousness"
+},
+{
+  "id" : "DIPSVitalSignsObservationEncounterReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationEncounterReference",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationEncounterReference"
+},
+{
+  "id" : "DIPSVitalSignsObservationGCS",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationGCS",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationGCS"
+},
+{
+  "id" : "DIPSVitalSignsObservationHeartRate",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationHeartRate",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationHeartRate"
+},
+{
+  "id" : "DIPSVitalSignsObservationNews2Score",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationNews2Score",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationNews2Score"
+},
+{
+  "id" : "DIPSVitalSignsObservationOrganizationReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationOrganizationReference",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationOrganizationReference"
+},
+{
+  "id" : "DIPSVitalSignsObservationOxygenSaturation",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationOxygenSaturation",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationOxygenSaturation"
+},
+{
+  "id" : "DIPSVitalSignsObservationPrePostduktal",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationPrePostduktal",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationPrePostduktal"
+},
+{
+  "id" : "DIPSVitalSignsObservationPulse",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationPulse",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationPulse"
+},
+{
+  "id" : "DIPSVitalSignsObservationQSOFAScore",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationQSOFAScore",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationQSOFAScore"
+},
+{
+  "id" : "DIPSVitalSignsObservationRespirationRate",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationRespirationRate",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationRespirationRate"
+},
+{
+  "id" : "DIPSVitalSignsObservationSubjectReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationSubjectReference",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationSubjectReference"
+},
+{
+  "id" : "DIPSVitalSignsPerformerAuthorReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsPerformerAuthorReference",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsPerformerAuthorReference"
+},
+{
+  "id" : "DIPSBasisOrganizationR4Reference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSBasisOrganizationR4Reference",
+  "version" : "0.1.0",
+  "name" : "DIPSBasisOrganizationR4Reference"
+},
+{
+  "id" : "DIPSBasisPractitionerRoleR4Reference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/R4/DIPSBasisPractitionerRoleR4Reference",
+  "version" : "0.1.0",
+  "name" : "DIPSBasisPractitionerRoleR4Reference"
 },
 {
   "id" : "DipsCanReceiveSms",
@@ -1238,6 +1370,83 @@
   "name" : "WardTypeCodeId"
 },
 {
+  "id" : "DIPSLocation",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSLocation",
+  "version" : "0.1.0",
+  "name" : "DIPSLocation"
+},
+{
+  "id" : "DIPSVitalSignsHeartRhythmIrregularity",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsHeartRhythmIrregularity",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsHeartRhythmIrregularity"
+},
+{
+  "id" : "DIPSVitalSignsObservationBloodPressureMeasurementMethod",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationBloodPressureMeasurementMethod",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationBloodPressureMeasurementMethod"
+},
+{
+  "id" : "DIPSVitalSignsObservationBodyMassIndexFormula",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationBodyMassIndexFormula",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationBodyMassIndexFormula"
+},
+{
+  "id" : "DIPSVitalSignsObservationBodySite",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationBodySite",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationBodySite"
+},
+{
+  "id" : "DIPSVitalSignsObservationConsciousness",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationConsciousness",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationConsciousness"
+},
+{
+  "id" : "DIPSVitalSignsObservationHeartRateMeasurementMethod",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationHeartRateMeasurementMethod",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationHeartRateMeasurementMethod"
+},
+{
+  "id" : "DIPSVitalSignsObservationPrePostduktal",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationPrePostduktal",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationPrePostduktal"
+},
+{
+  "id" : "DIPSVitalSignsObservationPulseBodySite",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationPulseBodySite",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationPulseBodySite"
+},
+{
+  "id" : "DIPSVitalSignsObservationPulseMeasurementMethod",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationPulseMeasurementMethod",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationPulseMeasurementMethod"
+},
+{
+  "id" : "requesterSigningStatus",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/observation/requester-signing-status-extension",
+  "version" : "0.1.0",
+  "name" : "requesterSigningStatus"
+},
+{
   "id" : "DipsPatientLanguageId",
   "type" : "StructureDefinition",
   "url" : "http://hl7.no/fhir/StructureDefinition/dips-patient-language-id",
@@ -1245,156 +1454,26 @@
   "name" : "DipsPatientLanguageId"
 },
 {
-  "id" : "NoDomainVitalSignsObservationBloodPressureMeasurementMethod",
+  "id" : "LL355-9-2.80",
   "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBloodPressureMeasurementMethod",
+  "url" : "http://loinc.org/vs/LL355-9",
   "version" : "0.1.0",
-  "name" : "NoDomainVitalSignsObservationBloodPressureMeasurementMethod"
+  "name" : "GCS_1_Eye",
+  "oids" : ["1.3.6.1.4.1.12009.10.1.2208"]
 },
 {
-  "id" : "NoDomainVitalSignsObservationBloodpressureBodyPosition",
+  "id" : "LL356-7-2.80",
   "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBloodpressureBodyPosition",
+  "url" : "http://loinc.org/vs/LL356-7",
   "version" : "0.1.0",
-  "name" : "NoDomainVitalSignsObservationBloodpressureBodyPosition"
+  "name" : "GCS_2_Verbal",
+  "oids" : ["1.3.6.1.4.1.12009.10.1.2209"]
 },
 {
-  "id" : "NoDomainVitalSignsObservationBloodpressureBodySite",
+  "id" : "LL357-5-2.80",
   "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBloodpressureBodySite",
+  "url" : "http://loinc.org/vs/LL357-5",
   "version" : "0.1.0",
-  "name" : "NoDomainVitalSignsObservationBloodpressureBodySite"
-},
-{
-  "id" : "NoDomainVitalSignsObservationBodyExposure",
-  "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBodyExposure",
-  "version" : "0.1.0",
-  "name" : "NoDomainVitalSignsObservationBodyExposure"
-},
-{
-  "id" : "NoDomainVitalSignsObservationBodyHeightBodyPosition",
-  "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBodyHeightBodyPosition",
-  "version" : "0.1.0",
-  "name" : "NoDomainVitalSignsObservationBodyHeightBodyPosition"
-},
-{
-  "id" : "NoDomainVitalSignsObservationBodyTempBodySite",
-  "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBodyTempBodySite",
-  "version" : "0.1.0",
-  "name" : "NoDomainVitalSignsObservationBodyTempBodySite"
-},
-{
-  "id" : "NoDomainVitalSignsObservationClothingState",
-  "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationClothingState",
-  "version" : "0.1.0",
-  "name" : "NoDomainVitalSignsObservationClothingState"
-},
-{
-  "id" : "NoDomainVitalSignsObservationCuffsize",
-  "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationCuffsize",
-  "version" : "0.1.0",
-  "name" : "NoDomainVitalSignsObservationCuffsize"
-},
-{
-  "id" : "NoDomainVitalSignsObservationDiastolicendPoint",
-  "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationDiastolicendPoint",
-  "version" : "0.1.0",
-  "name" : "NoDomainVitalSignsObservationDiastolicendPoint"
-},
-{
-  "id" : "NoDomainVitalSignsObservationHeartRateBodySite",
-  "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationHeartRateBodySite",
-  "version" : "0.1.0",
-  "name" : "NoDomainVitalSignsObservationHeartRateBodySite"
-},
-{
-  "id" : "NoDomainVitalSignsObservationHeartRateMeasurementMethod",
-  "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationHeartRateMeasurementMethod",
-  "version" : "0.1.0",
-  "name" : "NoDomainVitalSignsObservationHeartRateMeasurementMethod"
-},
-{
-  "id" : "NoDomainVitalSignsObservationHeartRatePulseBodyPosition",
-  "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationHeartRatePulseBodyPosition",
-  "version" : "0.1.0",
-  "name" : "NoDomainVitalSignsObservationHeartRatePulseBodyPosition"
-},
-{
-  "id" : "NoDomainVitalSignsObservationHeartRhythmIrregularity",
-  "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationHeartRhythmIrregularity",
-  "version" : "0.1.0",
-  "name" : "NoDomainVitalSignsObservationHeartRhythmIrregularity"
-},
-{
-  "id" : "NoDomainVitalSignsObservationPulseBodySite",
-  "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationPulseBodySite",
-  "version" : "0.1.0",
-  "name" : "NoDomainVitalSignsObservationPulseBodySite"
-},
-{
-  "id" : "NoDomainVitalSignsObservationPulseMeasurementMethod",
-  "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationPulseMeasurementMethod",
-  "version" : "0.1.0",
-  "name" : "NoDomainVitalSignsObservationPulseMeasurementMethod"
-},
-{
-  "id" : "NoDomainVitalSignsObservationPulseRhythm",
-  "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationPulseRhythm",
-  "version" : "0.1.0",
-  "name" : "NoDomainVitalSignsObservationPulseRhythm"
-},
-{
-  "id" : "NoDomainVitalSignsObservationPulseRhythmIrregularity",
-  "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationPulseRhythmIrregularity",
-  "version" : "0.1.0",
-  "name" : "NoDomainVitalSignsObservationPulseRhythmIrregularity"
-},
-{
-  "id" : "NoDomainVitalSignsObservationRespirationRateBodyPosition",
-  "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationRespirationRateBodyPosition",
-  "version" : "0.1.0",
-  "name" : "NoDomainVitalSignsObservationRespirationRateBodyPosition"
-},
-{
-  "id" : "NoDomainVitalSignsObservationRespirationRateDepth",
-  "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationRespirationRateDepth",
-  "version" : "0.1.0",
-  "name" : "NoDomainVitalSignsObservationRespirationRateDepth"
-},
-{
-  "id" : "NoDomainVitalSignsObservationRespirationRegularity",
-  "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationRespirationRegularity",
-  "version" : "0.1.0",
-  "name" : "NoDomainVitalSignsObservationRespirationRegularity"
-},
-{
-  "id" : "NoDomainVitalSignsObservationSleepStatus",
-  "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationSleepStatus",
-  "version" : "0.1.0",
-  "name" : "NoDomainVitalSignsObservationSleepStatus"
-},
-{
-  "id" : "NoDomainVitalSignsObservationSpontaneousBreathing",
-  "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationSpontaneousBreathing",
-  "version" : "0.1.0",
-  "name" : "NoDomainVitalSignsObservationSpontaneousBreathing"
+  "name" : "GCS_3_Motor",
+  "oids" : ["1.3.6.1.4.1.12009.10.1.2215"]
 }]

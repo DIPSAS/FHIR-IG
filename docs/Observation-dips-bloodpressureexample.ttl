@@ -1,0 +1,210 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/R4/Observation/dips-bloodpressureexample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "dips-bloodpressureexample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "0" ] ;
+     fhir:Meta.lastUpdated [ fhir:value "2014-01-30T11:35:23+00:00"^^xsd:dateTime ] ;
+     fhir:Meta.source [ fhir:value "DIPS_ASA" ] ;
+     fhir:Meta.profile [
+       fhir:value "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBloodpressure" ;
+       fhir:index 0 ;
+       fhir:link <http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBloodpressure>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation dips-bloodpressureexample</b></p><a name=\"dips-bloodpressureexample\"> </a><a name=\"hcdips-bloodpressureexample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 0; Last updated: 2014-01-30 11:35:23+0000; </p><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;canonical=http://fhir.org/packages/hl7.fhir.no.basis/DIPS_ASA\">DIPS_ASA</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DIPSVitalSignsObservationBloodpressure.html\">DIPS Vital Signs Observation - Blood Pressure</a></p></div><p><b>DIPSJournalId</b>: <a href=\"DocumentReference-ako1041394.html\">DocumentReference: status = current; docStatus = final</a></p><p><b>DIPSVitalSignsLocation</b>: DIPSLocation: School (At School)</p><p><b>NoDomainVitalSignsBloodpressureBodyPosition-Extension</b>: <a href=\"http://snomed.info/id/414585002\">SNOMED CT: 414585002</a> (Liggende lent mot venstre)</p><p><b>identifier</b>: <code>http://dips.no/fhir/namingsystem/externalId</code>/ExtIdentifierKal0011s1, <code>http://dips.no/fhir/namingsystem/dips-ObservationId</code>/dips-bloodpressureexample, <code>http://dips.no/fhir/namingsystem/dips-RelativeEhrUri</code>/ehr:compositions/a6a969c2-fb92-435f-93cd-f5653fceb33c::default::1/content[openEHR-EHR-OBSERVATION.blood_pressure.v2 and name/value='Blodtrykk']</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 85354-9}\">BP pnl w all optional</span></p><p><b>subject</b>: <a href=\"Patient-cdp1000807.html\">Anonymous Patient (no stated gender), DoB Unknown ( http://dips.no/fhir/namingsystem/dips-patientid#1000807)</a></p><p><b>encounter</b>: <a href=\"Encounter-agy1002679.html\">Encounter: identifier = http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid#agy1002679; status = arrived; class = ambulatory (ActCode#AMB)</a></p><p><b>effective</b>: 2019-10-25 09:30:33+0530</p><p><b>performer</b>: </p><ul><li><a href=\"Organization-afa22.html\">Organization: identifier = urn:oid:1.3.6.1.4.1.9038.70.3#22</a></li><li><a href=\"PractitionerRole-agb103.html\">PractitionerRole: identifier = urn:oid:1.3.6.1.4.1.9038.51.1#103</a></li></ul><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8480-6}, {http://snomed.info/sct 4471000202106}\">Systolic blood pressure</span></p><p><b>value</b>: 123 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>80 mm[Hg]</td><td>120 mm[Hg]</td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8462-4}, {http://snomed.info/sct 4481000202108}\">Diastolic blood pressure</span></p><p><b>value</b>: 78 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8478-0}, {http://snomed.info/sct 4501000202102}\">Mean blood pressure</span></p><p><b>value</b>: 46 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSJournalId" ] ;
+     fhir:Extension.valueReference [
+       fhir:link <http://dips.no/fhir/R4/DocumentReference/ako1041394> ;
+       fhir:Reference.reference [ fhir:value "DocumentReference/ako1041394" ] ;
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-journalid" ] ;
+         fhir:Identifier.value [ fhir:value "1045958" ]
+       ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSLocation" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://dips.no/fhir/CodeSystem/DIPSLocation" ] ;
+       fhir:Coding.code [ fhir:value "School" ] ;
+       fhir:Coding.display [ fhir:value "At School" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "http://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition/NoDomainVitalSignsBloodpressureBodyPositionExtension" ] ;
+     fhir:Extension.valueCoding [
+       a sct:414585002 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "414585002" ] ;
+       fhir:Coding.display [ fhir:value "Liggende lent mot venstre" ]
+     ]
+  ] ;
+  fhir:Observation.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/externalId" ] ;
+     fhir:Identifier.value [ fhir:value "ExtIdentifierKal0011s1" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-ObservationId" ] ;
+     fhir:Identifier.value [ fhir:value "dips-bloodpressureexample" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-RelativeEhrUri" ] ;
+     fhir:Identifier.value [ fhir:value "ehr:compositions/a6a969c2-fb92-435f-93cd-f5653fceb33c::default::1/content[openEHR-EHR-OBSERVATION.blood_pressure.v2 and name/value='Blodtrykk']" ]
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "vital-signs" ] ;
+       fhir:Coding.display [ fhir:value "Vital Signs" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:85354-9 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "85354-9" ] ;
+       fhir:Coding.display [ fhir:value "BP pnl w all optional" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <http://dips.no/fhir/R4/Patient/cdp1000807> ;
+     fhir:Reference.reference [ fhir:value "Patient/cdp1000807" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-patientid" ] ;
+       fhir:Identifier.value [ fhir:value "1000807" ]
+     ]
+  ] ;
+  fhir:Observation.encounter [
+     fhir:link <http://dips.no/fhir/R4/Encounter/agy1002679> ;
+     fhir:Reference.reference [ fhir:value "Encounter/agy1002679" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid" ] ;
+       fhir:Identifier.value [ fhir:value "1002679" ]
+     ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2019-10-25T09:30:33+05:30"^^xsd:dateTime] ;
+  fhir:Observation.performer [
+     fhir:index 0 ;
+     fhir:link <http://dips.no/fhir/R4/Organization/afa22> ;
+     fhir:Reference.reference [ fhir:value "Organization/afa22" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.70.3" ] ;
+       fhir:Identifier.value [ fhir:value "22" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:link <http://dips.no/fhir/R4/PractitionerRole/agb103> ;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/agb103" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.51.1" ] ;
+       fhir:Identifier.value [ fhir:value "103" ]
+     ]
+  ] ;
+  fhir:Observation.component [
+     fhir:index 0 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:8480-6 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "8480-6" ] ;
+         fhir:Coding.display [ fhir:value "Systolic blood pressure" ]
+       ], [
+         fhir:index 1 ;
+         a sct:4471000202106 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "4471000202106" ] ;
+         fhir:Coding.display [ fhir:value "Systolisk" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "123"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "mm[Hg]" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "mm[Hg]" ]
+     ] ;
+     fhir:Observation.component.referenceRange [
+       fhir:index 0 ;
+       fhir:Observation.referenceRange.low [
+         fhir:Quantity.value [ fhir:value "80"^^xsd:decimal ] ;
+         fhir:Quantity.unit [ fhir:value "mm[Hg]" ]
+       ] ;
+       fhir:Observation.referenceRange.high [
+         fhir:Quantity.value [ fhir:value "120"^^xsd:decimal ] ;
+         fhir:Quantity.unit [ fhir:value "mm[Hg]" ]
+       ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:8462-4 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "8462-4" ] ;
+         fhir:Coding.display [ fhir:value "Diastolic blood pressure" ]
+       ], [
+         fhir:index 1 ;
+         a sct:4481000202108 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "4481000202108" ] ;
+         fhir:Coding.display [ fhir:value "Diastolisk" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "78"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "mm[Hg]" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "mm[Hg]" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:8478-0 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "8478-0" ] ;
+         fhir:Coding.display [ fhir:value "Mean blood pressure" ]
+       ], [
+         fhir:index 1 ;
+         a sct:4501000202102 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "4501000202102" ] ;
+         fhir:Coding.display [ fhir:value "Middelarterietrykk" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "46"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "mm[Hg]" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "mm[Hg]" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://dips.no/fhir/R4/Observation/dips-bloodpressureexample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

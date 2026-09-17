@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "DIPSQSOFAScoreMentalSatusCodeSystem",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DIPSQSOFAScoreMentalSatusCodeSystem</b></p><a name=\"DIPSQSOFAScoreMentalSatusCodeSystem\"> </a><a name=\"hcDIPSQSOFAScoreMentalSatusCodeSystem\"> </a><p>This  code system <code>http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"DIPSQSOFAScoreMentalSatusCodeSystem-0\"> </a></td><td>Ikke endret mental status</td><td>Ikke endret mental status</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"DIPSQSOFAScoreMentalSatusCodeSystem-1\"> </a></td><td>Endret mental status</td><td>Endret mental status</td></tr></table></div>"
+  },
+  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem",
+  "identifier" : [{
+    "system" : "http://dips.no/fhir/namingsystem/dips-qsofa-mentalstatus"
+  }],
+  "version" : "0.1.0",
+  "name" : "DIPSQSOFAScoreMentalSatusCodeSystem",
+  "status" : "draft",
+  "date" : "2026-09-17T19:39:02+00:00",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "Lars-Andreas Nystad",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "mailto:lan@dips.no",
+      "use" : "work"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "0",
+    "display" : "Ikke endret mental status",
+    "definition" : "Ikke endret mental status"
+  },
+  {
+    "code" : "1",
+    "display" : "Endret mental status",
+    "definition" : "Endret mental status"
+  }]
+}

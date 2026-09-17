@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareService | *Version*:0.1.0 |
-| Draft as of 2026-09-15 | *Computable Name*:DIPSHealthcareService |
+| Draft as of 2026-09-17 | *Computable Name*:DIPSHealthcareService |
 
 The DIPS HealthcareService Profile inherits from the FHIR HealthcareService resource; refer to it for scope and usage definitions
 
@@ -91,7 +91,7 @@ The following search parameters and search parameter combinations SHALL be suppo
   "version" : "0.1.0",
   "name" : "DIPSHealthcareService",
   "status" : "draft",
-  "date" : "2026-09-15T05:06:55+00:00",
+  "date" : "2026-09-17T19:39:02+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

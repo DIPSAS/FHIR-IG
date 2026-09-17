@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSOrganization | *Version*:0.1.0 |
-| Draft as of 2026-09-15 | *Computable Name*:DIPSOrganization |
+| Draft as of 2026-09-17 | *Computable Name*:DIPSOrganization |
 
 The DIPS Organization Profile inherits from the FHIR Organization resource; refer to it for scope and usage definitions
 
@@ -21,7 +21,7 @@ Query by organization name or identifier (e.g. HER-id, organization number, or R
 
 **Usages:**
 
-* Refer to this Profile: [DIPSOrganization](StructureDefinition-DIPSOrganization.md), [DIPSPractitionerRole](StructureDefinition-DIPSPractitionerRole.md), [NoImplVitalSignsObservationBloodpressure](StructureDefinition-NoImplVitalSignsObservationBloodpressure.md), [NoImplVitalSignsObservationBodyHeight](StructureDefinition-NoImplVitalSignsObservationBodyHeight.md)... Show 11 more, [NoImplVitalSignsObservationBodyMassIndex](StructureDefinition-NoImplVitalSignsObservationBodyMassIndex.md), [NoImplVitalSignsObservationBodyTemp](StructureDefinition-NoImplVitalSignsObservationBodyTemp.md), [NoImplVitalSignsObservationBodyWeight](StructureDefinition-NoImplVitalSignsObservationBodyWeight.md), [NoImplVitalSignsObservationConsciousness](StructureDefinition-NoImplVitalSignsObservationConsciousness.md), [NoImplVitalSignsObservationGCS](StructureDefinition-NoImplVitalSignsObservationGCS.md), [NoImplVitalSignsObservationHeartRate](StructureDefinition-NoImplVitalSignsObservationHeartRate.md), [NoImplVitalSignsObservationNews2Score](StructureDefinition-NoImplVitalSignsObservationNews2Score.md), [NoImplVitalSignsObservationOxygenSaturation](StructureDefinition-NoImplVitalSignsObservationOxygenSaturation.md), [NoImplVitalSignsObservationPulse](StructureDefinition-NoImplVitalSignsObservationPulse.md), [NoImplVitalSignsObservationQSOFAScore](StructureDefinition-NoImplVitalSignsObservationQSOFAScore.md) and [NoImplVitalSignsObservationRespirationRate](StructureDefinition-NoImplVitalSignsObservationRespirationRate.md)
+* Refer to this Profile: [DIPSOrganization](StructureDefinition-DIPSOrganization.md) and [DIPSPractitionerRole](StructureDefinition-DIPSPractitionerRole.md)
 * Examples for this Profile: [Testsykehuset Hf](Organization-Organization-aks1.md), [Testsykehuset Hf](Organization-Organizationaks2.md) and [Helse Nord](Organization-aks1000004.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.no.core|current/StructureDefinition/StructureDefinition-DIPSOrganization.json)
@@ -104,7 +104,7 @@ The following search parameters and search parameter combinations SHALL be suppo
   "version" : "0.1.0",
   "name" : "DIPSOrganization",
   "status" : "draft",
-  "date" : "2026-09-15T05:06:55+00:00",
+  "date" : "2026-09-17T19:39:02+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

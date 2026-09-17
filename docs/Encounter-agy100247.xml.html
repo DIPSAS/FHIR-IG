@@ -64,8 +64,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.213"}
-    h3,h4,h5,h6{--heading-prefix:"7.213"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.211"}
+    h3,h4,h5,h6{--heading-prefix:"7.211"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -126,30 +126,73 @@
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
       FHIR Artifacts <b class="caret"></b>
     </a>
+    <!-- artifacts.html numbers its sections sequentially, so these anchors track the
+         order of the groups: block in sushi-config.yaml. Adding, removing or reordering
+         a group shifts every anchor after it - re-check these against a build. -->
     <ul class="dropdown-menu">
       <li>
-        <a href="artifacts.html#1">Vitalsign Profiles</a>
+        <a href="artifacts.html#1">Observation Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#3">Resource Profiles</a>
+        <a href="artifacts.html#2">Encounter Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#4">Data Type Profiles</a>
+        <a href="artifacts.html#3">EpisodeOfCare Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#5">Extensions</a>
+        <a href="artifacts.html#4">ServiceRequest Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#6">Value Sets</a>
+        <a href="artifacts.html#5">Appointment Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#7">Code Systems</a>
+        <a href="artifacts.html#6">Schedule Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#2">Vitalsign Examples</a>
+        <a href="artifacts.html#7">Slot Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#8">Example Instances</a>
+        <a href="artifacts.html#8">Patient Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#9">Person Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#10">RelatedPerson Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#11">Practitioner Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#12">PractitionerRole Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#13">Organization Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#14">HealthcareService Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#15">Location Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#16">Reference Profiles</a>
+      </li>
+      <li class="divider"></li>
+      <li>
+        <a href="artifacts.html#17">Capability Statements</a>
+      </li>
+      <li>
+        <a href="artifacts.html#18">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#19">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#20">Code Systems</a>
+      </li>
+      <li>
+        <a href="artifacts.html#21">Example Instances</a>
       </li>
     </ul>
   </li>
@@ -255,7 +298,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/resource.html#Encounter.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;agy100247&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/resource.html#Encounter.meta">meta</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://dips.no/fhir/R4/StructureDefinition/DIPSR4Encounter&quot;/&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationEncounterReference&quot;/&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Encounter.meta">meta</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.identifier">identifier</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid&quot;/&gt;
@@ -266,22 +309,6 @@
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;AMB&quot;/&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">class</a>&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">subject</a>&gt;<a href="Patient-cdp138.html" style="color: Maroon">&#x1F517;</a> 
-    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/cdp138&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://dips.no/fhir/namingsystem/dips-patientid&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;138&quot;/&gt;
-    &lt;/<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Spelemann (Testplan - Journal), Per&quot;/&gt;
-  &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">subject</a>&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.serviceProvider">serviceProvider</a>&gt;<a href="Organization-afa22.html" style="color: Maroon">&#x1F517;</a> 
-    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Organization/afa22&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:oid:2.16.578.1.12.4.1.4.102&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;10013&quot;/&gt;
-    &lt;/<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Kirurgisk avdeling | Testsykehuset DIPS&quot;/&gt;
-  &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.serviceProvider">serviceProvider</a>&gt;
 &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">Encounter</a>&gt;</code></pre>
 
 
@@ -306,7 +333,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 15, 2026 05:06+0000">2026-09-15</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 17, 2026 19:39+0000">2026-09-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

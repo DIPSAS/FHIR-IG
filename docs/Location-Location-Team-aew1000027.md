@@ -6,7 +6,7 @@
 
 ## Example Location: Location-Team-aew1000027
 
-Profiles: [DIPSLocation](StructureDefinition-DIPSLocation.md), [no-basis-Location](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&canonical=http://hl7.no/fhir/StructureDefinition/no-basis-Location)
+Profiles: [DIPSLocation](StructureDefinition-DIPSLocation.md), [no-basis-Location](https://simplifier.net/resolve?scope=hl7.fhir.no.domain.vitalsigns@0.9.74&canonical=http://hl7.no/fhir/StructureDefinition/no-basis-Location)
 
 Tag: 
 

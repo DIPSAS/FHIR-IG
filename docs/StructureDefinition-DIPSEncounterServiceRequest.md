@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSEncounterServiceRequest | *Version*:0.1.0 |
-| Draft as of 2026-09-15 | *Computable Name*:DIPSEncounterServiceRequest |
+| Draft as of 2026-09-17 | *Computable Name*:DIPSEncounterServiceRequest |
 
 **Usages:**
 
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSEncounterService
   "version" : "0.1.0",
   "name" : "DIPSEncounterServiceRequest",
   "status" : "draft",
-  "date" : "2026-09-15T05:06:55+00:00",
+  "date" : "2026-09-17T19:39:02+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

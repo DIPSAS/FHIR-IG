@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/ValueSet/OrganizationTypes | *Version*:0.1.0 |
-| Active as of 2026-09-15 | *Computable Name*:OrganizationTypes |
+| Active as of 2026-09-17 | *Computable Name*:OrganizationTypes |
 
  
 Value Sets of OrganizationTypes 
@@ -55,7 +55,7 @@ No Expansion for this valueset (Unknown Code System)
   "version" : "0.1.0",
   "name" : "OrganizationTypes",
   "status" : "active",
-  "date" : "2026-09-15T05:06:55+00:00",
+  "date" : "2026-09-17T19:39:02+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

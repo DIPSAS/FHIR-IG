@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSReferenceSection | *Version*:0.1.0 |
-| Draft as of 2026-09-15 | *Computable Name*:DIPSReferenceSection |
+| Draft as of 2026-09-17 | *Computable Name*:DIPSReferenceSection |
 
 A reference to the DIPS hospital Section, modelled as an Organization, associated with this remote monitoring episode of care.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSReferenceSection
   "name" : "DIPSReferenceSection",
   "title" : "DIPS Reference Section",
   "status" : "draft",
-  "date" : "2026-09-15T05:06:55+00:00",
+  "date" : "2026-09-17T19:39:02+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

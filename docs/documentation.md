@@ -2216,6 +2216,135 @@ Table 50. Operations Search Parameters
 
 `GET .../ValueSet/$additionalPagination?codeValuePageSize=5&codeValuePageNumber=2&_profile=DIPSR4 ValueSet`
 
+### FHIR VitalSign Observation
+
+DIPSVitalSignsObservation covers vital signs recorded in DIPS Arena as FHIR `Observation` resources. All 13 profiles below are served by the same endpoint and behave identically - the differences between them are only the LOINC/SNOMED code recorded on the Observation and the openEHR template the value was captured with. This section documents that shared behavior once, and gives examples across several of the profiles rather than repeating the same explanation for each.
+
+Table 51. Supported Profiles
+
+| | | |
+| :--- | :--- | :--- |
+| DIPSVitalSignsObservationBloodpressure | Blood pressure | LOINC 85354-9 |
+| DIPSVitalSignsObservationBodyHeight | Body height | LOINC 8302-2, SNOMED 50373000 |
+| DIPSVitalSignsObservationBodyMassIndex | Body mass index | LOINC 39156-5 |
+| DIPSVitalSignsObservationBodyTemp | Body temperature | LOINC 8310-5, SNOMED 276885007 |
+| DIPSVitalSignsObservationBodyWeight | Body weight | LOINC 29463-7, SNOMED 27113001 |
+| DIPSVitalSignsObservationConsciousness | Level of consciousness | SNOMED 1104441000000107 |
+| DIPSVitalSignsObservationGCS | Glasgow Coma Score | LOINC 9269-2 |
+| DIPSVitalSignsObservationHeartRate | Heart rate | LOINC 8867-4, SNOMED 364075005 |
+| DIPSVitalSignsObservationNews2Score | NEWS2 score | SNOMED 1104051000000101 |
+| DIPSVitalSignsObservationOxygenSaturation | Oxygen saturation | LOINC 2708-6, SNOMED 431314004 |
+| DIPSVitalSignsObservationPulse | Pulse | LOINC 8867-4, SNOMED 78564009 |
+| DIPSVitalSignsObservationQSOFAScore | qSOFA score | SNOMED 63451000122107 |
+| DIPSVitalSignsObservationRespirationRate | Respiration rate | LOINC 9279-1, SNOMED 271625008 |
+
+Table 52. Supported FHIR Operations
+
+| | |
+| :--- | :--- |
+| Read | No |
+| VRead | No |
+| Create | No |
+| Update | No |
+| History | No |
+| Search | Yes |
+| Delete | No |
+| Patch | No |
+
+There is no `GET .../Observation/{id}` read-by-id for any of these profiles - only search, and the custom `$SaveExtData` operation described below.
+
+#### Request: Search
+
+Table 53. OperationInformation
+
+| | |
+| :--- | :--- |
+| PATH | https://{server}/DIPS-WebAPI/HL7/FHIR-R4/Observation?{SearchParameters} |
+| HTTP VERB | GET |
+
+Table 54. Parameters
+
+| | |
+| :--- | :--- |
+| documentId | Search by the DIPS clinical document (journal entry) the vital sign was recorded in. This is the only search parameter that currently returns results - see the note below. |
+| _profile | Accepted, but has no effect - see the note below. |
+
+At least one of `patient`, `fhirId`, `externalFhirId` or `documentId` must be provided, or the search is rejected with a 422 error. Of these, only `documentId` currently returns matching results - `patient`, `fhirId` and `externalFhirId` are accepted by this validation but not yet implemented behind it, so a request using only one of them returns an empty bundle rather than an error or a result.
+
+The standard `_profile` search parameter can also be appended to a request, e.g. `GET .../Observation?documentId=1009240&_profile=DIPSVitalSignsObservationHeartRate`. It is not currently read by this endpoint - it has no effect on the result, whether or not it's present, and whichever of the profiles listed in Table 51 is passed. It is accepted only because it is a standard FHIR search parameter the underlying framework parses generically; nothing in the vital sign search code consults it.
+
+A `documentId` search returns a bundle containing every vital sign Observation recorded in that document whose type matches the profile being requested - the resource id passed to `documentId` is the document's id, not the Observation's own id.
+
+Example requests
+
+Search Blood pressure recorded in document 1008418: `GET .../Observation?documentId=1008418`
+
+Search Heart rate recorded in document 1009240: `GET .../Observation?documentId=1009240`
+
+Search Pulse recorded in document 1009280: `GET .../Observation?documentId=1009280`
+
+Search qSOFA score recorded in document 1009024: `GET .../Observation?documentId=1009024`
+
+Search Oxygen saturation recorded in document 1009312: `GET .../Observation?documentId=1009312`
+
+#### Operation: $SaveExtData
+
+Links an externally recorded value to a DIPS clinical document. This does not create the document - `JournalId` must already exist in DIPS.
+
+Table 55. OperationInformation
+
+| | |
+| :--- | :--- |
+| PATH | https://{server}/DIPS-WebAPI/HL7/FHIR-R4/Observation/$SaveExtData |
+| HTTP VERB | POST |
+
+Table 56. Parameters
+
+| | | |
+| :--- | :--- | :--- |
+| FhirId | No | FHIR resource id of the Observation |
+| ExternalId | Yes | Identifier of the externally sourced value being linked |
+| Source | Yes | Name of the external source system, e.g. MetaVision |
+| JournalId | Yes | The DIPS document id (same value as`documentId`in search) - must be numeric and must already exist |
+| IssuedTime | Yes | When the externally recorded value was issued |
+| VersionID | No | Version of the record being linked |
+
+A request repeating a `JournalId`/`Source` pair that is already mapped is rejected with a 400 error.
+
+Example request
+
+`POST .../Observation/$SaveExtData`
+
+```
+<Parameters xmlns="http://hl7.org/fhir">
+    <parameter>
+        <name value="FhirId"/>
+        <valueString value="[fhir resource id]"/>
+    </parameter>
+    <parameter>
+        <name value="ExternalId"/>
+        <valueString value="18730-7773-External_Identifier_value"/>
+    </parameter>
+    <parameter>
+        <name value="Source"/>
+        <valueString value="MetaVision"/>
+    </parameter>
+    <parameter>
+        <name value="JournalId"/>
+        <valueString value="1013800"/>
+    </parameter>
+    <parameter>
+        <name value="IssuedTime"/>
+        <valueDateTime value="2026-03-03T11:00:00+02:00"/>
+    </parameter>
+    <parameter>
+        <name value="VersionID"/>
+        <valueString value="1"/>
+    </parameter>
+</Parameters>
+
+```
+
 ```
 © 2023 DIPS AS
 All rights reserved.

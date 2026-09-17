@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="dips-news2-create"/>
+  <meta>
+    <versionId value="0"/>
+    <lastUpdated value="2014-01-30T11:35:23+00:00"/>
+    <source value="MEDANETS"/>
+    <profile value="http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationNews2Score"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation dips-news2-create</b></p><a name="dips-news2-create"> </a><a name="hcdips-news2-create"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: 0; Last updated: 2014-01-30 11:35:23+0000; </p><p style="margin-bottom: 0px">Information Source: <a href="https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;canonical=http://fhir.org/packages/hl7.fhir.no.basis/MEDANETS">MEDANETS</a></p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-DIPSVitalSignsObservationNews2Score.html">DIPS Vital Signs Observation - NEWS2</a></p></div><p><b>DIPSJournalId</b>: <a href="DocumentReference-ako124.html">DocumentReference: status = current; docStatus = final</a></p><p><b>DIPSVitalSignsLocation</b>: <a href="CodeSystem-DIPSLocation.html#DIPSLocation-School">DIPSLocation: School</a> (At School)</p><p><b>identifier</b>: <code>http://dips.no/fhir/namingsystem/dips-RelativeEhrUri</code>/ehr:compositions/6c41D37f-f173-45d6-8504-17c40454b9ee::default::1/content[openEHR-EHR-OBSERVATION.news2.v1 and name/value='NEWS2-Basic-Vitals'], <code>http://dips.no/fhir/namingsystem/dips-ObservationId</code>/dfdcd132-f0c0-e84a-a9b0-937bcb93c008, <code>http://dips.no/fhir/namingsystem/externalId</code>/testBPexternalId1</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 1104051000000101}">Royal College of Physicians National Early Warning Score 2 total score (observable entity)</span></p><p><b>subject</b>: <a href="Patient-cdp1000807.html">Anonymous Patient (no stated gender), DoB Unknown ( http://dips.no/fhir/namingsystem/dips-patientid#1000807)</a></p><p><b>effective</b>: 2021-10-25 09:30:33+0530</p><p><b>performer</b>: </p><ul><li><a href="PractitionerRole-agb27.html">PractitionerRole: identifier = urn:oid:1.3.6.1.4.1.9038.51.1#27</a></li><li><a href="Organization-afa22.html">Organization: identifier = urn:oid:1.3.6.1.4.1.9038.70.3#22</a></li></ul><p><b>value</b>: 20 ScoreOf<span style="background: LightGoldenRodYellow"> (Details: UCUM  code{ScoreOf} = '{ScoreOf}')</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 1104301000000104}">Royal College of Physicians National Early Warning Score 2 - respiration rate score (observable entity)</span></p><p><b>value</b>: 3 ScoreOf<span style="background: LightGoldenRodYellow"> (Details: UCUM  code{ScoreOf} = '{ScoreOf}')</span></p><p><b>interpretation</b>: <span title="Codes:">≥25</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 1104331000000105}">Royal College of Physicians National Early Warning Score 2 - air or oxygen score (observable entity)</span></p><p><b>value</b>: 2 ScoreOf<span style="background: LightGoldenRodYellow"> (Details: UCUM  code{ScoreOf} = '{ScoreOf}')</span></p><p><b>interpretation</b>: <span title="Codes:">Oksygen</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 1104341000000101}">Royal College of Physicians National Early Warning Score 2 - systolic blood pressure score (observable entity)</span></p><p><b>value</b>: 3 ScoreOf<span style="background: LightGoldenRodYellow"> (Details: UCUM  code{ScoreOf} = '{ScoreOf}')</span></p><p><b>interpretation</b>: <span title="Codes:">≤90</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 1104351000000103}">Royal College of Physicians National Early Warning Score 2 - pulse score (observable entity)</span></p><p><b>value</b>: 3 ScoreOf<span style="background: LightGoldenRodYellow"> (Details: UCUM  code{ScoreOf} = '{ScoreOf}')</span></p><p><b>interpretation</b>: <span title="Codes:">≤40</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 1104361000000100}">Royal College of Physicians National Early Warning Score 2 - consciousness score (observable entity)</span></p><p><b>value</b>: 3 ScoreOf<span style="background: LightGoldenRodYellow"> (Details: UCUM  code{ScoreOf} = '{ScoreOf}')</span></p><p><b>interpretation</b>: <span title="Codes:">C, V, P eller U</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 1104371000000107}">Royal College of Physicians National Early Warning Score 2 - temperature score (observable entity)</span></p><p><b>value</b>: 3 ScoreOf<span style="background: LightGoldenRodYellow"> (Details: UCUM  code{ScoreOf} = '{ScoreOf}')</span></p><p><b>interpretation</b>: <span title="Codes:">≤35.0</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 1104311000000102}">Royal College of Physicians NEWS2 (National Early Warning Score 2) - SpO2 (oxygen saturation at periphery) scale 1 score</span></p><p><b>value</b>: 3 ScoreOf<span style="background: LightGoldenRodYellow"> (Details: UCUM  code{ScoreOf} = '{ScoreOf}')</span></p><p><b>interpretation</b>: <span title="Codes:">94-95</span></p></blockquote></div>
+  </text>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSJournalId">
+    <valueReference>
+      <reference value="DocumentReference/ako124"/>
+      <identifier>
+        <system value="http://dips.no/fhir/namingsystem/dips-journalid"/>
+        <value value="4325645"/>
+      </identifier>
+    </valueReference>
+  </extension>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSLocation">
+    <valueCoding>
+      <system value="http://dips.no/fhir/R4/CodeSystem/DIPSLocation"/>
+      <code value="School"/>
+      <display value="At School"/>
+    </valueCoding>
+  </extension>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/dips-RelativeEhrUri"/>
+    <value value="ehr:compositions/6c41D37f-f173-45d6-8504-17c40454b9ee::default::1/content[openEHR-EHR-OBSERVATION.news2.v1 and name/value='NEWS2-Basic-Vitals']"/>
+  </identifier>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/dips-ObservationId"/>
+    <value value="dfdcd132-f0c0-e84a-a9b0-937bcb93c008"/>
+  </identifier>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/externalId"/>
+    <value value="testBPexternalId1"/>
+  </identifier>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="survey"/>
+      <display value="Survey"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/45991000052106/version/20210531"/>
+      <code value="1104051000000101"/>
+      <display value="Royal College of Physicians National Early Warning Score 2 total score (observable entity)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/cdp1000807"/>
+    <identifier>
+      <system value="http://dips.no/fhir/namingsystem/dips-patientid"/>
+      <value value="1000807"/>
+    </identifier>
+  </subject>
+  <effectiveDateTime value="2021-10-25T09:30:33+05:30"/>
+  <performer>
+    <reference value="PractitionerRole/agb27"/>
+    <identifier>
+      <system value="urn:oid:1.3.6.1.4.1.9038.51.1"/>
+      <value value="27"/>
+    </identifier>
+  </performer>
+  <performer>
+    <reference value="Organization/afa22"/>
+    <identifier>
+      <system value="urn:oid:1.3.6.1.4.1.9038.70.3"/>
+      <value value="22"/>
+    </identifier>
+  </performer>
+  <valueQuantity>
+    <value value="20"/>
+    <unit value="ScoreOf"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="{ScoreOf}"/>
+  </valueQuantity>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/45991000052106/version/20210531"/>
+        <code value="1104301000000104"/>
+        <display value="Royal College of Physicians National Early Warning Score 2 - respiration rate score (observable entity)"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="3"/>
+      <unit value="ScoreOf"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{ScoreOf}"/>
+    </valueQuantity>
+    <interpretation>
+      <text value="≥25"/>
+    </interpretation>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/45991000052106/version/20210531"/>
+        <code value="1104331000000105"/>
+        <display value="Royal College of Physicians National Early Warning Score 2 - air or oxygen score (observable entity)"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="2"/>
+      <unit value="ScoreOf"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{ScoreOf}"/>
+    </valueQuantity>
+    <interpretation>
+      <text value="Oksygen"/>
+    </interpretation>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/45991000052106/version/20210531"/>
+        <code value="1104341000000101"/>
+        <display value="Royal College of Physicians National Early Warning Score 2 - systolic blood pressure score (observable entity)"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="3"/>
+      <unit value="ScoreOf"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{ScoreOf}"/>
+    </valueQuantity>
+    <interpretation>
+      <text value="≤90"/>
+    </interpretation>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/45991000052106/version/20210531"/>
+        <code value="1104351000000103"/>
+        <display value="Royal College of Physicians National Early Warning Score 2 - pulse score (observable entity)"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="3"/>
+      <unit value="ScoreOf"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{ScoreOf}"/>
+    </valueQuantity>
+    <interpretation>
+      <text value="≤40"/>
+    </interpretation>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/45991000052106/version/20210531"/>
+        <code value="1104361000000100"/>
+        <display value="Royal College of Physicians National Early Warning Score 2 - consciousness score (observable entity)"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="3"/>
+      <unit value="ScoreOf"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{ScoreOf}"/>
+    </valueQuantity>
+    <interpretation>
+      <text value="C, V, P eller U"/>
+    </interpretation>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/45991000052106/version/20210531"/>
+        <code value="1104371000000107"/>
+        <display value="Royal College of Physicians National Early Warning Score 2 - temperature score (observable entity)"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="3"/>
+      <unit value="ScoreOf"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{ScoreOf}"/>
+    </valueQuantity>
+    <interpretation>
+      <text value="≤35.0"/>
+    </interpretation>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/45991000052106/version/20210531"/>
+        <code value="1104311000000102"/>
+        <display value="Royal College of Physicians NEWS2 (National Early Warning Score 2) - SpO2 (oxygen saturation at periphery) scale 1 score"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="3"/>
+      <unit value="ScoreOf"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{ScoreOf}"/>
+    </valueQuantity>
+    <interpretation>
+      <text value="94-95"/>
+    </interpretation>
+  </component>
+</Observation>

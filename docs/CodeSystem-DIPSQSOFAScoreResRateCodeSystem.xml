@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="DIPSQSOFAScoreResRateCodeSystem"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem DIPSQSOFAScoreResRateCodeSystem</b></p><a name="DIPSQSOFAScoreResRateCodeSystem"> </a><a name="hcDIPSQSOFAScoreResRateCodeSystem"> </a><p>This  code system <code>http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreResRateCodeSystem</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">0<a name="DIPSQSOFAScoreResRateCodeSystem-0"> </a></td><td>Respirasjonsfrekvens &lt;22</td><td>Respirasjonsfrekvens &lt;22</td></tr><tr><td style="white-space:nowrap">1<a name="DIPSQSOFAScoreResRateCodeSystem-1"> </a></td><td>Respirasjonsfrekvens ≥22</td><td>Respirasjonsfrekvens ≥22</td></tr></table></div>
+  </text>
+  <url value="http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreResRateCodeSystem"/>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/dips-qsofa-resrate"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="DIPSQSOFAScoreResRateCodeSystem"/>
+  <status value="draft"/>
+  <date value="2026-09-17T19:39:02+00:00"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="Lars-Andreas Nystad"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:lan@dips.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="0"/>
+    <display value="Respirasjonsfrekvens &lt;22"/>
+    <definition value="Respirasjonsfrekvens &lt;22"/>
+  </concept>
+  <concept>
+    <code value="1"/>
+    <display value="Respirasjonsfrekvens ≥22"/>
+    <definition value="Respirasjonsfrekvens ≥22"/>
+  </concept>
+</CodeSystem>

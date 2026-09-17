@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "DIPSQSOFAScoreBPCodeSystem",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DIPSQSOFAScoreBPCodeSystem</b></p><a name=\"DIPSQSOFAScoreBPCodeSystem\"> </a><a name=\"hcDIPSQSOFAScoreBPCodeSystem\"> </a><p>This  code system <code>http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"DIPSQSOFAScoreBPCodeSystem-0\"> </a></td><td>Systolisk blodtrykk &gt;100</td><td>Systolisk blodtrykk &gt;100</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"DIPSQSOFAScoreBPCodeSystem-1\"> </a></td><td>Systolisk blodtrykk ≤100</td><td>Systolisk blodtrykk ≤100</td></tr></table></div>"
+  },
+  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem",
+  "identifier" : [{
+    "system" : "http://dips.no/fhir/namingsystem/dips-qsofa-bp"
+  }],
+  "version" : "0.1.0",
+  "name" : "DIPSQSOFAScoreBPCodeSystem",
+  "status" : "draft",
+  "date" : "2026-09-17T19:39:02+00:00",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "Lars-Andreas Nystad",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "mailto:lan@dips.no",
+      "use" : "work"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "0",
+    "display" : "Systolisk blodtrykk >100",
+    "definition" : "Systolisk blodtrykk >100"
+  },
+  {
+    "code" : "1",
+    "display" : "Systolisk blodtrykk ≤100",
+    "definition" : "Systolisk blodtrykk ≤100"
+  }]
+}

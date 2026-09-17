@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="9f6f50c2-6215-405f-878c-44c1d4921d0d"/>
+  <id value="b8d851d7-082e-4329-aaaa-1c86408012eb"/>
   <meta>
-    <lastUpdated value="2026-09-15T05:06:55.552+00:00"/>
+    <lastUpdated value="2026-09-17T19:39:02.120+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -107,7 +107,7 @@
         <title value="DIPSEncounterV3"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-09-15T05:06:55+00:00"/>
+        <date value="2026-09-17T19:39:02+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -116,8 +116,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d58be538-d928-4196-a252-4d5c9178f1e5"/>
-          <timestamp value="2026-09-15T05:13:43+00:00"/>
+          <identifier value="urn:uuid:c141feb6-0cf7-405f-8aee-abe07b05bc96"/>
+          <timestamp value="2026-09-17T19:42:39+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -153,7 +153,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationBodyMassIndexFormula"/>
+    <fullUrl value="http://dips.no/fhir/R4/ValueSet/DIPSGCSEyeOpeningScore"/>
     <resource>
       <ValueSet>
         <meta>
@@ -165,12 +165,12 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-NoImplBodyMassIndexMeasurementMethod.html">codesystem NoImplBodyMassIndexMeasurementMethod v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-DIPSGCSEyeOpeningScoreCodeSystem.html">codesystem DIPSGCSEyeOpeningScoreCodeSystem v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
-            <p>This value set contains 2 concepts</p>
+            <p>This value set contains 4 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -194,56 +194,98 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod-AR"> </a>
-                  <code>http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod</code>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem-1"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="CodeSystem-NoImplBodyMassIndexMeasurementMethod.html#NoImplBodyMassIndexMeasurementMethod-AR">AR</a>
+                  <a href="CodeSystem-DIPSGCSEyeOpeningScoreCodeSystem.html#DIPSGCSEyeOpeningScoreCodeSystem-1">1</a>
                 </td>
                 <td/>
-                <td>Automatisk registrering</td>
+                <td>Ingen reaksjon</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;AR&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;1&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;AR&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;1&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod-MR"> </a>
-                  <code>http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod</code>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem-2"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="CodeSystem-NoImplBodyMassIndexMeasurementMethod.html#NoImplBodyMassIndexMeasurementMethod-MR">MR</a>
+                  <a href="CodeSystem-DIPSGCSEyeOpeningScoreCodeSystem.html#DIPSGCSEyeOpeningScoreCodeSystem-2">2</a>
                 </td>
                 <td/>
-                <td>Manuell registrering</td>
+                <td>Ved smertestimulering</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;MR&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;2&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;MR&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;2&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem-3"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSGCSEyeOpeningScoreCodeSystem.html#DIPSGCSEyeOpeningScoreCodeSystem-3">3</a>
+                </td>
+                <td/>
+                <td>Ved tiltale</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;3&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;3&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem-4"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSGCSEyeOpeningScoreCodeSystem.html#DIPSGCSEyeOpeningScoreCodeSystem-4">4</a>
+                </td>
+                <td/>
+                <td>Spontant</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;4&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;4&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationBodyMassIndexFormula"/>
+        <url value="http://dips.no/fhir/R4/ValueSet/DIPSGCSEyeOpeningScore"/>
         <version value="0.1.0"/>
-        <name value="NoImplVitalSignsObservationBodyMassIndexFormula"/>
-        <title value="NoImplVitalSignsObservationBodyMassIndexFormula"/>
+        <name value="DIPSGCSEyeOpeningScore"/>
+        <title value="DIPSGCSEyeOpeningScore"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-09-15T05:06:55+00:00"/>
+        <date value="2025-05-14T00:00:00+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -252,9 +294,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:65cbf067-1b5f-4626-a9de-28619e8ddae6"/>
-          <timestamp value="2026-09-15T05:13:46+00:00"/>
-          <total value="2"/>
+          <identifier value="urn:uuid:8299c053-bcd6-4095-9020-bd3e4341d02f"/>
+          <timestamp value="2026-09-17T19:42:39+00:00"/>
+          <total value="4"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -274,26 +316,34 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod|0.1.0"/>
+            <valueUri value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod"/>
-            <code value="AR"/>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem"/>
+            <code value="1"/>
           </contains>
           <contains>
-            <system value="http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod"/>
-            <code value="MR"/>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem"/>
+            <code value="2"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem"/>
+            <code value="3"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem"/>
+            <code value="4"/>
           </contains>
         </expansion>
       </ValueSet>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationConsciousness"/>
+    <fullUrl value="http://dips.no/fhir/R4/ValueSet/DIPSGCSMotorScore"/>
     <resource>
       <ValueSet>
         <meta>
-          <lastUpdated value="2025-01-28T00:00:00+00:00"/>
+          <lastUpdated value="2021-03-17T00:00:00+00:00"/>
           <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
         </meta>
         <text>
@@ -301,9 +351,245 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-NoImplVitalSignsObservationConsciousness.html">codesystem NoImplVitalSignsObservationConsciousness v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-DIPSGCSMotorScoreCodeSystem.html">codesystem DIPSGCSMotorScoreCodeSystem v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 6 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (no)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem-1"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSGCSMotorScoreCodeSystem.html#DIPSGCSMotorScoreCodeSystem-1">1</a>
+                </td>
+                <td/>
+                <td>Ingen reaksjon</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;1&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;1&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem-2"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSGCSMotorScoreCodeSystem.html#DIPSGCSMotorScoreCodeSystem-2">2</a>
+                </td>
+                <td/>
+                <td>Ekstensjon ved smerte</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;2&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;2&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem-3"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSGCSMotorScoreCodeSystem.html#DIPSGCSMotorScoreCodeSystem-3">3</a>
+                </td>
+                <td/>
+                <td>Fleksjon ved smerte</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;3&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;3&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem-4"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSGCSMotorScoreCodeSystem.html#DIPSGCSMotorScoreCodeSystem-4">4</a>
+                </td>
+                <td/>
+                <td>Avverger smerte</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;4&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;4&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem-5"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSGCSMotorScoreCodeSystem.html#DIPSGCSMotorScoreCodeSystem-5">5</a>
+                </td>
+                <td/>
+                <td>Lokaliserer smerte</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;5&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;5&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem-6"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSGCSMotorScoreCodeSystem.html#DIPSGCSMotorScoreCodeSystem-6">6</a>
+                </td>
+                <td/>
+                <td>Følger oppfordringer</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;6&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;6&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://dips.no/fhir/R4/ValueSet/DIPSGCSMotorScore"/>
+        <version value="0.1.0"/>
+        <name value="DIPSGCSMotorScore"/>
+        <title value="DIPSGCSMotorScore"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2025-05-14T00:00:00+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="NO"/>
+            <display value="Norway"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:d85186aa-666e-44f7-bddf-3516f9537a47"/>
+          <timestamp value="2026-09-17T19:42:39+00:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="no"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem"/>
+            <code value="1"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem"/>
+            <code value="2"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem"/>
+            <code value="3"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem"/>
+            <code value="4"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem"/>
+            <code value="5"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem"/>
+            <code value="6"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://dips.no/fhir/R4/ValueSet/DIPSGCSVerbalScore"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <lastUpdated value="2021-03-17T00:00:00+00:00"/>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-DIPSGCSVerbalScoreCodeSystem.html">codesystem DIPSGCSVerbalScoreCodeSystem v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 5 concepts</p>
@@ -330,119 +616,119 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness-A"> </a>
-                  <code>http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness</code>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem-1"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="CodeSystem-NoImplVitalSignsObservationConsciousness.html#NoImplVitalSignsObservationConsciousness-A">A</a>
+                  <a href="CodeSystem-DIPSGCSVerbalScoreCodeSystem.html#DIPSGCSVerbalScoreCodeSystem-1">1</a>
                 </td>
                 <td/>
-                <td>Våken</td>
+                <td>Ingen reaksjon</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;A&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;1&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;A&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;1&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness-U"> </a>
-                  <code>http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness</code>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem-2"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="CodeSystem-NoImplVitalSignsObservationConsciousness.html#NoImplVitalSignsObservationConsciousness-U">U</a>
+                  <a href="CodeSystem-DIPSGCSVerbalScoreCodeSystem.html#DIPSGCSVerbalScoreCodeSystem-2">2</a>
                 </td>
                 <td/>
-                <td>Tiltale</td>
+                <td>Uforståelige lyder</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;U&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;2&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;U&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;2&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness-P"> </a>
-                  <code>http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness</code>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem-3"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="CodeSystem-NoImplVitalSignsObservationConsciousness.html#NoImplVitalSignsObservationConsciousness-P">P</a>
+                  <a href="CodeSystem-DIPSGCSVerbalScoreCodeSystem.html#DIPSGCSVerbalScoreCodeSystem-3">3</a>
                 </td>
                 <td/>
-                <td>Smerte</td>
+                <td>Usammenhengende tale</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;P&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;3&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;P&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;3&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness-V"> </a>
-                  <code>http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness</code>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem-4"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="CodeSystem-NoImplVitalSignsObservationConsciousness.html#NoImplVitalSignsObservationConsciousness-V">V</a>
+                  <a href="CodeSystem-DIPSGCSVerbalScoreCodeSystem.html#DIPSGCSVerbalScoreCodeSystem-4">4</a>
                 </td>
                 <td/>
-                <td>Reagerer ikke</td>
+                <td>Forvirret, desorientert</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;V&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;4&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;V&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;4&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness-C"> </a>
-                  <code>http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness</code>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem-5"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="CodeSystem-NoImplVitalSignsObservationConsciousness.html#NoImplVitalSignsObservationConsciousness-C">C</a>
+                  <a href="CodeSystem-DIPSGCSVerbalScoreCodeSystem.html#DIPSGCSVerbalScoreCodeSystem-5">5</a>
                 </td>
                 <td/>
-                <td>forvirring</td>
+                <td>Orientert</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;C&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;5&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;C&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;5&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationConsciousness"/>
+        <url value="http://dips.no/fhir/R4/ValueSet/DIPSGCSVerbalScore"/>
         <version value="0.1.0"/>
-        <name value="NoImplVitalSignsObservationConsciousness"/>
-        <title value="SNOMED CT Consciousness Structures"/>
+        <name value="DIPSGCSVerbalScore"/>
+        <title value="DIPSGCSVerbalScore"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-09-15T05:06:55+00:00"/>
+        <date value="2025-05-14T00:00:00+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -451,8 +737,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1df71d6c-b124-4247-9baa-8824a0effe30"/>
-          <timestamp value="2026-09-15T05:13:46+00:00"/>
+          <identifier value="urn:uuid:d59a8ca0-da59-4bcb-84e3-254aa46a9d55"/>
+          <timestamp value="2026-09-17T19:42:39+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -473,27 +759,1154 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness|0.1.0"/>
+            <valueUri value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness"/>
-            <code value="A"/>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem"/>
+            <code value="1"/>
           </contains>
           <contains>
-            <system value="http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness"/>
-            <code value="U"/>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem"/>
+            <code value="2"/>
           </contains>
           <contains>
-            <system value="http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness"/>
-            <code value="P"/>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem"/>
+            <code value="3"/>
           </contains>
           <contains>
-            <system value="http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness"/>
-            <code value="V"/>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem"/>
+            <code value="4"/>
           </contains>
           <contains>
-            <system value="http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness"/>
-            <code value="C"/>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem"/>
+            <code value="5"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://dips.no/fhir/ValueSet/DIPSLocation"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <lastUpdated value="2021-03-17T00:00:00+00:00"/>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-DIPSLocation.html">codesystem DIPSLocation v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://dips.no/fhir/R4/CodeSystem/DIPSLocation|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (no)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSLocation-Home"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSLocation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSLocation.html#DIPSLocation-Home">Home</a>
+                </td>
+                <td/>
+                <td>At Home</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSLocation&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;Home&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSLocation&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;Home&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSLocation-Office"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSLocation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSLocation.html#DIPSLocation-Office">Office</a>
+                </td>
+                <td/>
+                <td>At Office</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSLocation&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;Office&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSLocation&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;Office&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSLocation-School"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSLocation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSLocation.html#DIPSLocation-School">School</a>
+                </td>
+                <td/>
+                <td>At School</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSLocation&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;School&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSLocation&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;School&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSLocation-HealthStation"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSLocation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSLocation.html#DIPSLocation-HealthStation">HealthStation</a>
+                </td>
+                <td/>
+                <td>At Health Station</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSLocation&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;HealthStation&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSLocation&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;HealthStation&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSLocation-Hospital"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSLocation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSLocation.html#DIPSLocation-Hospital">Hospital</a>
+                </td>
+                <td/>
+                <td>At Hospital</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSLocation&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;Hospital&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSLocation&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;Hospital&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://dips.no/fhir/ValueSet/DIPSLocation"/>
+        <version value="0.1.0"/>
+        <name value="DIPSLocation"/>
+        <title value="DIPSLocation"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2021-03-17T00:00:00+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="NO"/>
+            <display value="Norway"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:345613c6-1c89-443d-b456-caf1db8cfc98"/>
+          <timestamp value="2026-09-17T19:42:39+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="no"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://dips.no/fhir/R4/CodeSystem/DIPSLocation|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSLocation"/>
+            <code value="Home"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSLocation"/>
+            <code value="Office"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSLocation"/>
+            <code value="School"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSLocation"/>
+            <code value="HealthStation"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSLocation"/>
+            <code value="Hospital"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreBPValueSet"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <lastUpdated value="2021-03-17T00:00:00+00:00"/>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-DIPSQSOFAScoreBPCodeSystem.html">codesystem DIPSQSOFAScoreBPCodeSystem v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (no)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem-0"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSQSOFAScoreBPCodeSystem.html#DIPSQSOFAScoreBPCodeSystem-0">0</a>
+                </td>
+                <td/>
+                <td>Systolisk blodtrykk &gt;100</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;0&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;0&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem-1"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSQSOFAScoreBPCodeSystem.html#DIPSQSOFAScoreBPCodeSystem-1">1</a>
+                </td>
+                <td/>
+                <td>Systolisk blodtrykk ≤100</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;1&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;1&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreBPValueSet"/>
+        <version value="0.1.0"/>
+        <name value="DIPSQSOFAScoreBPValueSet"/>
+        <title value="DIPSQSOFAScoreBPValueSet"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2025-05-14T00:00:00+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="NO"/>
+            <display value="Norway"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:cc083877-d01d-4004-a4f4-aa8fd7082f50"/>
+          <timestamp value="2026-09-17T19:42:39+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="no"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem"/>
+            <code value="0"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem"/>
+            <code value="1"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreMentalSatusValueSet"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <lastUpdated value="2021-03-17T00:00:00+00:00"/>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-DIPSQSOFAScoreMentalSatusCodeSystem.html">codesystem DIPSQSOFAScoreMentalSatusCodeSystem v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (no)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem-0"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSQSOFAScoreMentalSatusCodeSystem.html#DIPSQSOFAScoreMentalSatusCodeSystem-0">0</a>
+                </td>
+                <td/>
+                <td>Ikke endret mental status</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;0&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;0&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem-1"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSQSOFAScoreMentalSatusCodeSystem.html#DIPSQSOFAScoreMentalSatusCodeSystem-1">1</a>
+                </td>
+                <td/>
+                <td>Endret mental status</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;1&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;1&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreMentalSatusValueSet"/>
+        <version value="0.1.0"/>
+        <name value="DIPSQSOFAScoreMentalSatusValueSet"/>
+        <title value="DIPSQSOFAScoreMentalSatusValueSet"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2025-05-14T00:00:00+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="NO"/>
+            <display value="Norway"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:460a6dbc-e322-454e-acdf-98a7e535859c"/>
+          <timestamp value="2026-09-17T19:42:39+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="no"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem"/>
+            <code value="0"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem"/>
+            <code value="1"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreResRateValueSet"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <lastUpdated value="2021-03-17T00:00:00+00:00"/>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-DIPSQSOFAScoreResRateCodeSystem.html">codesystem DIPSQSOFAScoreResRateCodeSystem v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreResRateCodeSystem|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (no)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreResRateCodeSystem-0"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreResRateCodeSystem</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSQSOFAScoreResRateCodeSystem.html#DIPSQSOFAScoreResRateCodeSystem-0">0</a>
+                </td>
+                <td/>
+                <td>Respirasjonsfrekvens &lt;22</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreResRateCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;0&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreResRateCodeSystem&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;0&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreResRateCodeSystem-1"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreResRateCodeSystem</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSQSOFAScoreResRateCodeSystem.html#DIPSQSOFAScoreResRateCodeSystem-1">1</a>
+                </td>
+                <td/>
+                <td>Respirasjonsfrekvens ≥22</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreResRateCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;1&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreResRateCodeSystem&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;1&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreResRateValueSet"/>
+        <version value="0.1.0"/>
+        <name value="DIPSQSOFAScoreResRateValueSet"/>
+        <title value="DIPSQSOFAScoreBPValueSet"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2025-05-14T00:00:00+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="NO"/>
+            <display value="Norway"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:21af3ae1-2342-4d03-896c-b57d873bc5f3"/>
+          <timestamp value="2026-09-17T19:42:39+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="no"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreResRateCodeSystem|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreResRateCodeSystem"/>
+            <code value="0"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreResRateCodeSystem"/>
+            <code value="1"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationBodyMassIndexFormula"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <lastUpdated value="2021-03-17T00:00:00+00:00"/>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-DIPSBodyMassIndexMeasurementMethod.html">codesystem DIPSBodyMassIndexMeasurementMethod v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (no)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod-D0001"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSBodyMassIndexMeasurementMethod.html#DIPSBodyMassIndexMeasurementMethod-D0001">D0001</a>
+                </td>
+                <td/>
+                <td>Automatisk registrering</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;D0001&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;D0001&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod-D0002"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSBodyMassIndexMeasurementMethod.html#DIPSBodyMassIndexMeasurementMethod-D0002">D0002</a>
+                </td>
+                <td/>
+                <td>Manuell registrering</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;D0002&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;D0002&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationBodyMassIndexFormula"/>
+        <version value="0.1.0"/>
+        <name value="DIPSVitalSignsObservationBodyMassIndexFormula"/>
+        <title value="DIPSVitalSignsObservationBodyMassIndexFormula"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2021-03-17T00:00:00+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="NO"/>
+            <display value="Norway"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:3db99468-c2c2-41c8-86bd-93f4065df6e8"/>
+          <timestamp value="2026-09-17T19:42:39+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="no"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod"/>
+            <code value="D0001"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod"/>
+            <code value="D0002"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationConsciousness"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <lastUpdated value="2021-11-03T00:00:00+00:00"/>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-DIPSVitalSignsObservationConsciousness.html">codesystem DIPSVitalSignsObservationConsciousness v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (no)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness-D0005"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSVitalSignsObservationConsciousness.html#DIPSVitalSignsObservationConsciousness-D0005">D0005</a>
+                </td>
+                <td/>
+                <td>Våken</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;D0005&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;D0005&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness-D0006"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSVitalSignsObservationConsciousness.html#DIPSVitalSignsObservationConsciousness-D0006">D0006</a>
+                </td>
+                <td/>
+                <td>Tiltale</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;D0006&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;D0006&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness-D0007"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSVitalSignsObservationConsciousness.html#DIPSVitalSignsObservationConsciousness-D0007">D0007</a>
+                </td>
+                <td/>
+                <td>Smerte</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;D0007&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;D0007&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness-D0008"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSVitalSignsObservationConsciousness.html#DIPSVitalSignsObservationConsciousness-D0008">D0008</a>
+                </td>
+                <td/>
+                <td>Reagerer ikke</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;D0008&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;D0008&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness-D0012"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSVitalSignsObservationConsciousness.html#DIPSVitalSignsObservationConsciousness-D0012">D0012</a>
+                </td>
+                <td/>
+                <td>forvirring</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;D0012&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;D0012&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationConsciousness"/>
+        <version value="0.1.0"/>
+        <name value="DIPSVitalSignsObservationConsciousness"/>
+        <title value="SNOMED CT Consciousness Structures"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2021-11-03T00:00:00+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="NO"/>
+            <display value="Norway"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:e7498a9c-c039-41c3-a3e9-e9a499b0a425"/>
+          <timestamp value="2026-09-17T19:42:39+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="no"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness"/>
+            <code value="D0005"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness"/>
+            <code value="D0006"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness"/>
+            <code value="D0007"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness"/>
+            <code value="D0008"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness"/>
+            <code value="D0012"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationPrePostduktal"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <lastUpdated value="2021-03-17T00:00:00+00:00"/>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-DIPSVitalSignsObservationPrePostduktal.html">codesystem DIPSVitalSignsObservationPrePostduktal v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (no)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal-D0009"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSVitalSignsObservationPrePostduktal.html#DIPSVitalSignsObservationPrePostduktal-D0009">D0009</a>
+                </td>
+                <td/>
+                <td>Preduktal</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;D0009&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;D0009&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal-D0010"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSVitalSignsObservationPrePostduktal.html#DIPSVitalSignsObservationPrePostduktal-D0010">D0010</a>
+                </td>
+                <td/>
+                <td>Postduktalt</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;D0010&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;D0010&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal-D0011"> </a>
+                  <code>http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-DIPSVitalSignsObservationPrePostduktal.html#DIPSVitalSignsObservationPrePostduktal-D0011">D0011</a>
+                </td>
+                <td/>
+                <td>Ubestemmelig</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;D0011&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;D0011&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationPrePostduktal"/>
+        <version value="0.1.0"/>
+        <name value="DIPSVitalSignsObservationPrePostduktal"/>
+        <title value="DIPSVitalSignsObservationPrePostduktal"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2021-03-17T00:00:00+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="NO"/>
+            <display value="Norway"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:7cbe687f-8294-44fd-aa1c-28b6baa013ba"/>
+          <timestamp value="2026-09-17T19:42:39+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="no"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal"/>
+            <code value="D0009"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal"/>
+            <code value="D0010"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal"/>
+            <code value="D0011"/>
           </contains>
         </expansion>
       </ValueSet>

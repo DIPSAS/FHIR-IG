@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="DIPSGCSVerbalScoreCodeSystem"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem DIPSGCSVerbalScoreCodeSystem</b></p><a name="DIPSGCSVerbalScoreCodeSystem"> </a><a name="hcDIPSGCSVerbalScoreCodeSystem"> </a><p>This  code system <code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">1<a name="DIPSGCSVerbalScoreCodeSystem-1"> </a></td><td>Ingen reaksjon</td><td>Ingen reaksjon</td></tr><tr><td style="white-space:nowrap">2<a name="DIPSGCSVerbalScoreCodeSystem-2"> </a></td><td>Uforståelige lyder</td><td>Uforståelige lyder</td></tr><tr><td style="white-space:nowrap">3<a name="DIPSGCSVerbalScoreCodeSystem-3"> </a></td><td>Usammenhengende tale</td><td>Usammenhengende tale</td></tr><tr><td style="white-space:nowrap">4<a name="DIPSGCSVerbalScoreCodeSystem-4"> </a></td><td>Forvirret, desorientert</td><td>Forvirret, desorientert</td></tr><tr><td style="white-space:nowrap">5<a name="DIPSGCSVerbalScoreCodeSystem-5"> </a></td><td>Orientert</td><td>Orientert</td></tr></table></div>
+  </text>
+  <url value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem"/>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/dips-gcs-verbal"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="DIPSGCSVerbalScoreCodeSystem"/>
+  <status value="draft"/>
+  <date value="2026-09-17T19:39:02+00:00"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="Lars-Andreas Nystad"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:lan@dips.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="1"/>
+    <display value="Ingen reaksjon"/>
+    <definition value="Ingen reaksjon"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Uforståelige lyder"/>
+    <definition value="Uforståelige lyder"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Usammenhengende tale"/>
+    <definition value="Usammenhengende tale"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Forvirret, desorientert"/>
+    <definition value="Forvirret, desorientert"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Orientert"/>
+    <definition value="Orientert"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,129 @@
+# TextResultObservation - DIPS Core Implementation Guide v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **TextResultObservation**
+
+## Extension: TextResultObservation 
+
+| | |
+| :--- | :--- |
+| *Official URL*:http://DIPS.no/fhir/StructureDefinition/TextResultObservation | *Version*:0.1.0 |
+| Draft as of 2026-09-17 | *Computable Name*:TextResultObservation |
+
+DIPS: textual rendering of a lab result that is otherwise carried as a Quantity.
+
+**Context of Use**
+
+**Usage info**
+
+**Usages:**
+
+* Use this Extension: [DIPSBasisLabObservationR4](StructureDefinition-DIPSBasisLabObservationR4.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.no.core|current/StructureDefinition/StructureDefinition-TextResultObservation.json)
+
+### Formal Views of Extension Content
+
+ [Description of Profiles, Differentials, Snapshots, and how the XML and JSON presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-TextResultObservation.csv), [Excel](StructureDefinition-TextResultObservation.xlsx), [Schematron](StructureDefinition-TextResultObservation.sch) 
+
+#### Constraints
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "TextResultObservation",
+  "url" : "http://DIPS.no/fhir/StructureDefinition/TextResultObservation",
+  "version" : "0.1.0",
+  "name" : "TextResultObservation",
+  "status" : "draft",
+  "date" : "2026-09-17T19:39:02+00:00",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "Lars-Andreas Nystad",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "mailto:lan@dips.no",
+      "use" : "work"
+    }]
+  }],
+  "description" : "DIPS: textual rendering of a lab result that is otherwise carried as a Quantity.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "Quantity"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "constraint" : [{
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+        "source" : "http://DIPS.no/fhir/StructureDefinition/TextResultObservation"
+      }]
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://DIPS.no/fhir/StructureDefinition/TextResultObservation"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Extension.value[x]:valueString",
+      "path" : "Extension.value[x]",
+      "sliceName" : "valueString",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    }]
+  }
+}
+
+```

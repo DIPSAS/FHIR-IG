@@ -64,8 +64,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.165"}
-    h3,h4,h5,h6{--heading-prefix:"7.165"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.166"}
+    h3,h4,h5,h6{--heading-prefix:"7.166"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -126,30 +126,73 @@
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
       FHIR Artifacts <b class="caret"></b>
     </a>
+    <!-- artifacts.html numbers its sections sequentially, so these anchors track the
+         order of the groups: block in sushi-config.yaml. Adding, removing or reordering
+         a group shifts every anchor after it - re-check these against a build. -->
     <ul class="dropdown-menu">
       <li>
-        <a href="artifacts.html#1">Vitalsign Profiles</a>
+        <a href="artifacts.html#1">Observation Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#3">Resource Profiles</a>
+        <a href="artifacts.html#2">Encounter Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#4">Data Type Profiles</a>
+        <a href="artifacts.html#3">EpisodeOfCare Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#5">Extensions</a>
+        <a href="artifacts.html#4">ServiceRequest Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#6">Value Sets</a>
+        <a href="artifacts.html#5">Appointment Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#7">Code Systems</a>
+        <a href="artifacts.html#6">Schedule Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#2">Vitalsign Examples</a>
+        <a href="artifacts.html#7">Slot Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#8">Example Instances</a>
+        <a href="artifacts.html#8">Patient Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#9">Person Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#10">RelatedPerson Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#11">Practitioner Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#12">PractitionerRole Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#13">Organization Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#14">HealthcareService Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#15">Location Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#16">Reference Profiles</a>
+      </li>
+      <li class="divider"></li>
+      <li>
+        <a href="artifacts.html#17">Capability Statements</a>
+      </li>
+      <li>
+        <a href="artifacts.html#18">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#19">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#20">Code Systems</a>
+      </li>
+      <li>
+        <a href="artifacts.html#21">Example Instances</a>
       </li>
     </ul>
   </li>
@@ -289,7 +332,7 @@
   ] ;
   <a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;extensions&quot; ] ;
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet DIPSEncounterV3&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;DIPSEncounterV3\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcDIPSEncounterV3\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Last updated: 2021-03-17 00:00:00+0000&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;http://hl7.org/fhir/R4/shareablevalueset.html\&quot;&gt;Shareable ValueSet&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html\&quot;&gt;&lt;code&gt;http://terminology.hl7.org/CodeSystem/v3-ActCode&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated, which means it is fixed to 11.0.0, the version found through the package references\&quot;&gt; version ?11.0.0&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP\&quot;&gt;IMP&lt;/a&gt;&lt;/td&gt;&lt;td&gt;inpatient encounter&lt;/td&gt;&lt;td&gt;A patient encounter where a patient is admitted by a hospital or equivalent facility, assigned to a location where patients generally stay at least overnight and provided with room, board, and continuous nursing service.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\&quot;&gt;AMB&lt;/a&gt;&lt;/td&gt;&lt;td&gt;ambulatory&lt;/td&gt;&lt;td&gt;A comprehensive term for health care provided in a healthcare facility (e.g. a practitioneraTMs office, clinic setting, or hospital) on a nonresident basis. The term ambulatory usually implies that the patient has come to the location and is not assigned to a bed. Sometimes referred to as an outpatient encounter.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet DIPSEncounterV3&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;DIPSEncounterV3\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcDIPSEncounterV3\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Last updated: 2021-03-17 00:00:00+0000&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;http://hl7.org/fhir/R4/shareablevalueset.html\&quot;&gt;Shareable ValueSet&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html\&quot;&gt;&lt;code&gt;http://terminology.hl7.org/CodeSystem/v3-ActCode&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is explicitly stated to be 11.0.0\&quot;&gt; version ?11.0.0&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP\&quot;&gt;IMP&lt;/a&gt;&lt;/td&gt;&lt;td&gt;inpatient encounter&lt;/td&gt;&lt;td&gt;A patient encounter where a patient is admitted by a hospital or equivalent facility, assigned to a location where patients generally stay at least overnight and provided with room, board, and continuous nursing service.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\&quot;&gt;AMB&lt;/a&gt;&lt;/td&gt;&lt;td&gt;ambulatory&lt;/td&gt;&lt;td&gt;A comprehensive term for health care provided in a healthcare facility (e.g. a practitioneraTMs office, clinic setting, or hospital) on a nonresident basis. The term ambulatory usually implies that the patient has come to the location and is not assigned to a bed. Sometimes referred to as an outpatient encounter.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
   ] ;
   <a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.extension">fhir:DomainResource.extension</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
@@ -310,7 +353,7 @@
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;DIPSEncounterV3&quot;] ;
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;draft&quot;] ;
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">fhir:ValueSet.experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-09-15T05:06:55+00:00&quot;^^xsd:dateTime] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-09-17T19:39:02+00:00&quot;^^xsd:dateTime] ;
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;DIPS AS&quot;] ;
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
@@ -337,6 +380,7 @@
      <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">fhir:ValueSet.compose.include</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
        <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:ValueSet.compose.include.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.version">fhir:ValueSet.compose.include.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;11.0.0&quot; ] ;
        <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">fhir:ValueSet.compose.include.concept</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;IMP&quot; ] ;
@@ -380,7 +424,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 15, 2026 05:06+0000">2026-09-15</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 17, 2026 19:39+0000">2026-09-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DIPSLocation"/>
+  <meta>
+    <lastUpdated value="2021-03-17T00:00:00+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet DIPSLocation</b></p><a name="DIPSLocation"> </a><a name="hcDIPSLocation"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2021-03-17 00:00:00+0000</p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href="CodeSystem-DIPSLocation.html"><code>http://dips.no/fhir/R4/CodeSystem/DIPSLocation</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-DIPSLocation.html#DIPSLocation-Home">Home</a></td><td>At Home</td><td>At Home</td></tr><tr><td><a href="CodeSystem-DIPSLocation.html#DIPSLocation-Office">Office</a></td><td>At Office</td><td>At Office</td></tr><tr><td><a href="CodeSystem-DIPSLocation.html#DIPSLocation-School">School</a></td><td>At School</td><td>At School</td></tr><tr><td><a href="CodeSystem-DIPSLocation.html#DIPSLocation-HealthStation">HealthStation</a></td><td>At Health Station</td><td>At Health Station</td></tr><tr><td><a href="CodeSystem-DIPSLocation.html#DIPSLocation-Hospital">Hospital</a></td><td>At Hospital</td><td>At Hospital</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="oo"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="http://dips.no/fhir/ValueSet/DIPSLocation"/>
+  <version value="0.1.0"/>
+  <name value="DIPSLocation"/>
+  <title value="DIPSLocation"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2021-03-17T00:00:00+00:00"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="Lars-Andreas Nystad"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:lan@dips.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="DIPSLocation"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://dips.no/fhir/R4/CodeSystem/DIPSLocation"/>
+      <concept>
+        <code value="Home"/>
+        <display value="At Home"/>
+      </concept>
+      <concept>
+        <code value="Office"/>
+        <display value="At Office"/>
+      </concept>
+      <concept>
+        <code value="School"/>
+        <display value="At School"/>
+      </concept>
+      <concept>
+        <code value="HealthStation"/>
+        <display value="At Health Station"/>
+      </concept>
+      <concept>
+        <code value="Hospital"/>
+        <display value="At Hospital"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

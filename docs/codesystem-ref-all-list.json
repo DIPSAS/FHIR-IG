@@ -1,5 +1,60 @@
 {
   "codeSystems" : [{
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSBodyMassIndexMeasurementMethod",
+    "title" : null,
+    "description" : "",
+    "uses" : {
+    },
+    "ValueSet-DIPSVitalSignsObservationBodyMassIndexFormula.html" : "DIPSVitalSignsObservationBodyMassIndexFormula"
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSGCSEyeOpeningScoreCodeSystem",
+    "title" : null,
+    "description" : "",
+    "uses" : {
+    },
+    "ValueSet-DIPSGCSEyeOpeningScore.html" : "DIPSGCSEyeOpeningScore"
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSGCSMotorScoreCodeSystem",
+    "title" : null,
+    "description" : "",
+    "uses" : {
+    },
+    "ValueSet-DIPSGCSMotorScore.html" : "DIPSGCSMotorScore"
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSGCSVerbalScoreCodeSystem",
+    "title" : null,
+    "description" : "",
+    "uses" : {
+    },
+    "ValueSet-DIPSGCSVerbalScore.html" : "DIPSGCSVerbalScore"
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSLocation",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSLocation",
+    "title" : null,
+    "description" : "",
+    "uses" : {
+    },
+    "ValueSet-DIPSLocation.html" : "DIPSLocation"
+  },
+  {
     "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSLocationTopLevel",
     "version" : "0.1.0",
     "status" : "draft",
@@ -11,39 +66,72 @@
     "ValueSet-LocationTypes.html" : "LocationTypes"
   },
   {
-    "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod",
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSMeasurementMethod",
     "version" : "0.1.0",
     "status" : "draft",
-    "name" : "NoImplBodyMassIndexMeasurementMethod",
+    "name" : "DIPSMeasurementMethod",
     "title" : null,
     "description" : "",
     "uses" : {
     },
-    "ValueSet-NoImplVitalSignsObservationBodyMassIndexFormula.html" : "NoImplVitalSignsObservationBodyMassIndexFormula"
+    "ValueSet-DIPSVitalSignsObservationHeartRateMeasurementMethod.html" : "DIPSVitalSignsObservationHeartRateMeasurementMethod",
+    "ValueSet-DIPSVitalSignsObservationBloodPressureMeasurementMethod.html" : "DIPSVitalSignsObservationBloodPressureMeasurementMethod",
+    "ValueSet-DIPSVitalSignsObservationPulseMeasurementMethod.html" : "DIPSVitalSignsObservationPulseMeasurementMethod"
   },
   {
-    "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplMeasurementMethod",
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem",
     "version" : "0.1.0",
     "status" : "draft",
-    "name" : "NoImplMeasurementMethod",
+    "name" : "DIPSQSOFAScoreBPCodeSystem",
     "title" : null,
     "description" : "",
     "uses" : {
     },
-    "ValueSet-NoImplVitalSignsObservationBloodPressureMeasurementMethod.html" : "NoImplVitalSignsObservationBloodPressureMeasurementMethod",
-    "ValueSet-NoImplVitalSignsObservationPulseMeasurementMethod.html" : "NoImplVitalSignsObservationPulseMeasurementMethod",
-    "ValueSet-NoImplVitalSignsObservationHeartRateMeasurementMethod.html" : "NoImplVitalSignsObservationHeartRateMeasurementMethod"
+    "ValueSet-DIPSQSOFAScoreBPValueSet.html" : "DIPSQSOFAScoreBPValueSet"
   },
   {
-    "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness",
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem",
     "version" : "0.1.0",
     "status" : "draft",
-    "name" : "NoImplVitalSignsObservationConsciousness",
+    "name" : "DIPSQSOFAScoreMentalSatusCodeSystem",
     "title" : null,
     "description" : "",
     "uses" : {
     },
-    "ValueSet-NoImplVitalSignsObservationConsciousness.html" : "SNOMED CT Consciousness Structures"
+    "ValueSet-DIPSQSOFAScoreMentalSatusValueSet.html" : "DIPSQSOFAScoreMentalSatusValueSet"
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreResRateCodeSystem",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSQSOFAScoreResRateCodeSystem",
+    "title" : null,
+    "description" : "",
+    "uses" : {
+    },
+    "ValueSet-DIPSQSOFAScoreResRateValueSet.html" : "DIPSQSOFAScoreBPValueSet"
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSVitalSignsObservationConsciousness",
+    "title" : null,
+    "description" : "",
+    "uses" : {
+    },
+    "ValueSet-DIPSVitalSignsObservationConsciousness.html" : "SNOMED CT Consciousness Structures"
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSVitalSignsObservationPrePostduktal",
+    "title" : null,
+    "description" : "",
+    "uses" : {
+    },
+    "ValueSet-DIPSVitalSignsObservationPrePostduktal.html" : "DIPSVitalSignsObservationPrePostduktal"
   },
   {
     "url" : "http://hl7.no/fhir/CodeSystem/no-basis-family-relation",
@@ -54,7 +142,7 @@
     "description" : "",
     "uses" : {
     },
-    "https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&canonical=http://hl7.no/fhir/ValueSet/no-basis-family-relation" : "no-basis-family-relation.valueset"
+    "https://simplifier.net/resolve?scope=hl7.fhir.no.domain.vitalsigns@0.9.74&canonical=http://hl7.no/fhir/ValueSet/no-basis-family-relation" : "no-basis-family-relation.valueset"
   },
   {
     "url" : "http://hl7.no/fhir/CodeSystem/no-basis-marital-status",
@@ -65,7 +153,7 @@
     "description" : "",
     "uses" : {
     },
-    "https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&canonical=http://hl7.no/fhir/ValueSet/no-basis-marital-status" : "no-basis-marital-status.valueset"
+    "https://simplifier.net/resolve?scope=hl7.fhir.no.domain.vitalsigns@0.9.74&canonical=http://hl7.no/fhir/ValueSet/no-basis-marital-status" : "no-basis-marital-status.valueset"
   },
   {
     "url" : "http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility",
@@ -76,7 +164,7 @@
     "description" : "",
     "uses" : {
     },
-    "https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&canonical=http://hl7.no/fhir/ValueSet/no-basis-parental-responsibility" : "no-basis-parental-responsibility.valueset"
+    "https://simplifier.net/resolve?scope=hl7.fhir.no.domain.vitalsigns@0.9.74&canonical=http://hl7.no/fhir/ValueSet/no-basis-parental-responsibility" : "no-basis-parental-responsibility.valueset"
   },
   {
     "url" : "http://hl7.org/fhir/address-type",
@@ -161,6 +249,18 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-days-of-week.html" : "DaysOfWeek"
+  },
+  {
+    "url" : "http://hl7.org/fhir/diagnostic-report-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DiagnosticReportStatus",
+    "title" : "DiagnosticReportStatus",
+    "description" : "The status of the diagnostic report.",
+    "oids" : ["2.16.840.1.113883.4.642.4.236"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-diagnostic-report-status.html" : "DiagnosticReportStatus"
   },
   {
     "url" : "http://hl7.org/fhir/encounter-location-status",
@@ -399,39 +499,22 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "ValueSet-NoDomainVitalSignsObservationSpontaneousBreathing.html" : "NoDomainVitalSignsObservationSpontaneousBreathing",
-    "ValueSet-NoDomainVitalSignsObservationClothingState.html" : "NoDomainVitalSignsObservationClothingState",
-    "ValueSet-NoDomainVitalSignsObservationBloodpressureBodySite.html" : "NoDomainVitalSignsObservationBloodpressureBodySite",
-    "ValueSet-NoDomainVitalSignsObservationHeartRateBodySite.html" : "NoDomainVitalSignsObservationHeartRateBodySite",
-    "ValueSet-NoDomainVitalSignsObservationCuffsize.html" : "NoDomainVitalSignsObservationCuffsize",
-    "ValueSet-NoDomainVitalSignsObservationPulseMeasurementMethod.html" : "NoDomainVitalSignsObservationPulseMeasurementMethod",
-    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-    "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
-    "ValueSet-NoDomainVitalSignsObservationRespirationRateDepth.html" : "NoDomainVitalSignsObservationRespirationRateDepth",
-    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
-    "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
     "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
-    "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-    "ValueSet-NoDomainVitalSignsObservationDiastolicendPoint.html" : "NoDomainVitalSignsObservationDiastolicendPoint",
-    "ValueSet-NoDomainVitalSignsObservationHeartRateMeasurementMethod.html" : "NoDomainVitalSignsObservationHeartRateMeasurementMethod",
-    "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-    "ValueSet-NoDomainVitalSignsObservationBloodPressureMeasurementMethod.html" : "NoDomainVitalSignsObservationBloodPressureMeasurementMethod",
-    "ValueSet-NoDomainVitalSignsObservationHeartRatePulseBodyPosition.html" : "NoDomainVitalSignsObservationHeartRatePulseBodyPosition",
-    "ValueSet-NoDomainVitalSignsObservationHeartRhythmIrregularity.html" : "NoDomainVitalSignsObservationHeartRhythmIrregularity",
-    "ValueSet-NoDomainVitalSignsObservationPulseBodySite.html" : "NoDomainVitalSignsObservationPulseBodySite",
-    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-    "ValueSet-NoDomainVitalSignsObservationBloodpressureBodyPosition.html" : "NoDomainVitalSignsObservationBloodpressureBodyPosition",
-    "ValueSet-NoDomainVitalSignsObservationRespirationRateBodyPosition.html" : "NoDomainVitalSignsObservationRespirationRateBodyPosition",
-    "ValueSet-NoDomainVitalSignsObservationSleepStatus.html" : "NoDomainVitalSignsObservationSleepStatus",
-    "ValueSet-NoDomainVitalSignsObservationBodyHeightBodyPosition.html" : "NoDomainVitalSignsObservationBodyHeightBodyPosition",
-    "ValueSet-NoDomainVitalSignsObservationPulseRhythmIrregularity.html" : "NoDomainVitalSignsObservationPulseRhythmIrregularity",
-    "ValueSet-NoDomainVitalSignsObservationRespirationRegularity.html" : "NoDomainVitalSignsObservationRespirationRegularity",
     "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "ValueSet-NoDomainVitalSignsObservationPulseRhythm.html" : "NoDomainVitalSignsObservationPulseRhythm",
-    "ValueSet-NoDomainVitalSignsObservationBodyTempBodySite.html" : "NoDomainVitalSignsObservationBodyTempBodySite",
+    "ValueSet-DIPSVitalSignsObservationBodySite.html" : "DIPSVitalSignsObservationBodySite",
+    "https://hl7.no/fhir/no-domain/vitalsigns/ValueSet-NoDomainVitalSignsHeartRateBodySiteValueSet.html" : "NoDomainVitalSignsHeartRateBodySite-ValueSet",
+    "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
     "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
+    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
     "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-    "ValueSet-NoDomainVitalSignsObservationBodyExposure.html" : "NoDomainVitalSignsObservationBodyExposure",
+    "https://hl7.no/fhir/no-domain/vitalsigns/ValueSet-NoDomainVitalSignsBodyTempBodySiteValueSet.html" : "NoDomainVitalSignsBodyTempBodySite-ValueSet",
+    "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+    "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
+    "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+    "https://hl7.no/fhir/no-domain/vitalsigns/ValueSet-NoDomainVitalSignsBloodpressureBodySiteValueSet.html" : "NoDomainVitalSignsBloodpressureBodySite-ValueSet",
+    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
+    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+    "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
     "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes"
   },
   {
@@ -699,6 +782,18 @@
     "http://hl7.org/fhir/R4/valueset-service-type.html" : "Service type"
   },
   {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "DiagnosticServiceSectionId",
+    "title" : "diagnosticServiceSectionId",
+    "description" : "HL7-defined code system of concepts which specify a section of a diagnostic service where the observation may be performed.  Used in HL7 Version 2.x messaging in the OBR and OM4 segments.",
+    "oids" : ["2.16.840.1.113883.18.29"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html" : "Diagnostic Service Section Codes"
+  },
+  {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0092",
     "version" : "3.0.0",
     "status" : "active",
@@ -769,8 +864,8 @@
     "oids" : ["2.16.840.1.113883.5.4"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
-    "ValueSet-DIPSEncounterV3.html" : "DIPSEncounterV3"
+    "ValueSet-DIPSEncounterV3.html" : "DIPSEncounterV3",
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",

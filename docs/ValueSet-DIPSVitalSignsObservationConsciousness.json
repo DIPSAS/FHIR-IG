@@ -1,0 +1,73 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "DIPSVitalSignsObservationConsciousness",
+  "meta" : {
+    "lastUpdated" : "2021-11-03T00:00:00+00:00",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet DIPSVitalSignsObservationConsciousness</b></p><a name=\"DIPSVitalSignsObservationConsciousness\"> </a><a name=\"hcDIPSVitalSignsObservationConsciousness\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2021-11-03 00:00:00+0000</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href=\"CodeSystem-DIPSVitalSignsObservationConsciousness.html\"><code>http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-DIPSVitalSignsObservationConsciousness.html#DIPSVitalSignsObservationConsciousness-D0005\">D0005</a></td><td>Våken</td><td>Våken</td></tr><tr><td><a href=\"CodeSystem-DIPSVitalSignsObservationConsciousness.html#DIPSVitalSignsObservationConsciousness-D0006\">D0006</a></td><td>Tiltale</td><td>Tiltale</td></tr><tr><td><a href=\"CodeSystem-DIPSVitalSignsObservationConsciousness.html#DIPSVitalSignsObservationConsciousness-D0007\">D0007</a></td><td>Smerte</td><td>Smerte</td></tr><tr><td><a href=\"CodeSystem-DIPSVitalSignsObservationConsciousness.html#DIPSVitalSignsObservationConsciousness-D0008\">D0008</a></td><td>Reagerer ikke</td><td>Reagerer ikke</td></tr><tr><td><a href=\"CodeSystem-DIPSVitalSignsObservationConsciousness.html#DIPSVitalSignsObservationConsciousness-D0012\">D0012</a></td><td>forvirring</td><td>forvirring</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "oo"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  }],
+  "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationConsciousness",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationConsciousness",
+  "title" : "SNOMED CT Consciousness Structures",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2021-11-03T00:00:00+00:00",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "Lars-Andreas Nystad",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "mailto:lan@dips.no",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Codes representing consciousness",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness",
+      "concept" : [{
+        "code" : "D0005",
+        "display" : "Våken"
+      },
+      {
+        "code" : "D0006",
+        "display" : "Tiltale"
+      },
+      {
+        "code" : "D0007",
+        "display" : "Smerte"
+      },
+      {
+        "code" : "D0008",
+        "display" : "Reagerer ikke"
+      },
+      {
+        "code" : "D0012",
+        "display" : "forvirring"
+      }]
+    }]
+  }
+}

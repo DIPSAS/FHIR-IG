@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/ImplementationGuide/dips.fhir.no.core | *Version*:0.1.0 |
-| Draft as of 2026-09-15 | *Computable Name*:DIPSCore |
+| Draft as of 2026-09-17 | *Computable Name*:DIPSCore |
 
 # DIPS Core Implementation Guide
 
@@ -40,7 +40,7 @@ This guide is intended for developers and integrators building or consuming inte
   "name" : "DIPSCore",
   "title" : "DIPS Core Implementation Guide",
   "status" : "draft",
-  "date" : "2026-09-15T05:06:55+00:00",
+  "date" : "2026-09-17T19:39:02+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -86,6 +86,12 @@ This guide is intended for developers and integrators building or consuming inte
     "uri" : "http://fhir.org/packages/hl7.fhir.no.basis/ImplementationGuide/hl7.fhir.no.basis",
     "packageId" : "hl7.fhir.no.basis",
     "version" : "2.1.2"
+  },
+  {
+    "id" : "hl7_fhir_no_domain_vitalsigns",
+    "uri" : "http://hl7.no/fhir/no-domain/vitalsigns/ImplementationGuide/hl7.fhir.no.domain.vitalsigns",
+    "packageId" : "hl7.fhir.no.domain.vitalsigns",
+    "version" : "0.9.74"
   }],
   "definition" : {
     "extension" : [{
@@ -140,149 +146,6 @@ This guide is intended for developers and integrators building or consuming inte
       {
         "url" : "value",
         "valueString" : "Encounter/agy100247"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noimpl-bloodpressure-instance"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noimpl-body-height-create"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noimpl-body-mass-index-create"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noimpl-body-temperature-create"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noimpl-body-weight-create"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noImpl-consciousness-create"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noimpl-heart-rate-create"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noimpl-news2-create"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noImpl-respiratory-rate-create"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noimpl-oxygen-saturation-create"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noimpl-pulse-rate"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noImpl-QSOFAScore-create"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noImpl-GCS-create"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -601,149 +464,6 @@ This guide is intended for developers and integrators building or consuming inte
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noimpl-bloodpressure-instance"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noimpl-body-height-create"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noimpl-body-mass-index-create"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noimpl-body-temperature-create"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noimpl-body-weight-create"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noImpl-consciousness-create"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noimpl-heart-rate-create"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noimpl-news2-create"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noImpl-respiratory-rate-create"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noimpl-oxygen-saturation-create"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noimpl-pulse-rate"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noImpl-QSOFAScore-create"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Observation/noImpl-GCS-create"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueCode" : "autoload-resources"
       },
       {
@@ -995,13 +715,73 @@ This guide is intended for developers and integrators building or consuming inte
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
     "grouping" : [{
-      "id" : "NorwegianImplementationProfiles",
-      "name" : "Norwegian Implementations of Vitalsign",
-      "description" : "These are the Profiles of Vitalsigns"
+      "id" : "ObservationProfiles",
+      "name" : "Observation Profiles"
     },
     {
-      "id" : "NorwegianImplementationInstances",
-      "name" : "Examples of Norwegian VitalSign Profiles"
+      "id" : "DiagnosticReportProfiles",
+      "name" : "DiagnosticReport Profiles"
+    },
+    {
+      "id" : "EncounterProfiles",
+      "name" : "Encounter Profiles"
+    },
+    {
+      "id" : "EpisodeOfCareProfiles",
+      "name" : "EpisodeOfCare Profiles"
+    },
+    {
+      "id" : "ServiceRequestProfiles",
+      "name" : "ServiceRequest Profiles"
+    },
+    {
+      "id" : "AppointmentProfiles",
+      "name" : "Appointment Profiles"
+    },
+    {
+      "id" : "ScheduleProfiles",
+      "name" : "Schedule Profiles"
+    },
+    {
+      "id" : "SlotProfiles",
+      "name" : "Slot Profiles"
+    },
+    {
+      "id" : "PatientProfiles",
+      "name" : "Patient Profiles"
+    },
+    {
+      "id" : "PersonProfiles",
+      "name" : "Person Profiles"
+    },
+    {
+      "id" : "RelatedPersonProfiles",
+      "name" : "RelatedPerson Profiles"
+    },
+    {
+      "id" : "PractitionerProfiles",
+      "name" : "Practitioner Profiles"
+    },
+    {
+      "id" : "PractitionerRoleProfiles",
+      "name" : "PractitionerRole Profiles"
+    },
+    {
+      "id" : "OrganizationProfiles",
+      "name" : "Organization Profiles"
+    },
+    {
+      "id" : "HealthcareServiceProfiles",
+      "name" : "HealthcareService Profiles"
+    },
+    {
+      "id" : "LocationProfiles",
+      "name" : "Location Profiles"
+    },
+    {
+      "id" : "ReferenceProfiles",
+      "name" : "Reference Profiles",
+      "description" : "Constraints on the Reference datatype used by this IG's resource profiles."
     }],
     "resource" : [{
       "extension" : [{
@@ -1016,7 +796,7 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "Encounter/agy100247"
       },
       "name" : "100247",
-      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/DIPSR4Encounter"
+      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationEncounterReference"
     },
     {
       "extension" : [{
@@ -1414,6 +1194,21 @@ This guide is intended for developers and integrators building or consuming inte
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-bloodpressure-save-complete-instance.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/bloodpressure-save-complete-instance"
+      },
+      "name" : "bloodpressure-save-complete-instance",
+      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBloodpressure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       },
       {
@@ -1596,6 +1391,39 @@ This guide is intended for developers and integrators building or consuming inte
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDiagnosticReport.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDiagnosticReport"
+      },
+      "name" : "DIPS DiagnosticReport",
+      "description" : "DIPS profile of DiagnosticReport for laboratory reports, as served by fhir.core.r4.",
+      "exampleBoolean" : false,
+      "groupingId" : "DiagnosticReportProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPS-DiagnosticReport-WorkFlow.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPS-DiagnosticReport-WorkFlow"
+      },
+      "name" : "DIPS DiagnosticReport WorkFlow",
+      "description" : "DIPS: workflow/signing state of the diagnostic report - signed, unsigned, or unsigned with urgency.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       },
       {
@@ -1607,6 +1435,22 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "DIPS Document Type Id",
       "description" : "The id of a document type associated with the monitoring type of this remote monitoring episode of care. Repeats once per associated document type.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CapabilityStatement-DIPSVitalSignsObservation.html"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/DIPSVitalSignsObservation"
+      },
+      "name" : "DIPS implementation of Vital Signs - Capability Statement",
+      "description" : "DIPS implementation of Vital Signs - Capability Statement",
       "exampleBoolean" : false
     },
     {
@@ -1703,7 +1547,360 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "DIPS Remote Monitoring",
       "description" : "An EpisodeOfCare used to track a patient's remote monitoring period, including free-text monitoring notes and references to the responsible hospital Location, Section, and Ward.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "EpisodeOfCareProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationBloodpressure.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsObservationBloodpressure"
+      },
+      "name" : "DIPS Vital Signs Observation - Blood Pressure",
+      "description" : "DIPS profile for Blood Pressure including some extensions",
+      "exampleBoolean" : false,
+      "groupingId" : "ObservationProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationBodyHeight.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsObservationBodyHeight"
+      },
+      "name" : "DIPS Vital Signs Observation - Body Height",
+      "description" : "DIPS profile for Body Height including some extensions",
+      "exampleBoolean" : false,
+      "groupingId" : "ObservationProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationBodyMassIndex.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsObservationBodyMassIndex"
+      },
+      "name" : "DIPS Vital Signs Observation - Body Mass Index(BMI)",
+      "description" : "DIPS profile for Body Mass Index(BMI) including some extensions",
+      "exampleBoolean" : false,
+      "groupingId" : "ObservationProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationBodyTemp.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsObservationBodyTemp"
+      },
+      "name" : "DIPS Vital Signs Observation - Body Temperature",
+      "description" : "DIPS profile for Body Temperature including some extensions",
+      "exampleBoolean" : false,
+      "groupingId" : "ObservationProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationBodyWeight.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsObservationBodyWeight"
+      },
+      "name" : "DIPS Vital Signs Observation - Body Weight",
+      "description" : "DIPS profile for Body Weight including some extensions",
+      "exampleBoolean" : false,
+      "groupingId" : "ObservationProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationHeartRate.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsObservationHeartRate"
+      },
+      "name" : "DIPS Vital Signs Observation - Heart Rate",
+      "description" : "DIPS profile for Heart Rate including some extensions",
+      "exampleBoolean" : false,
+      "groupingId" : "ObservationProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationConsciousness.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsObservationConsciousness"
+      },
+      "name" : "DIPS Vital Signs Observation - Level of Consciousness",
+      "description" : "DIPS profile for Level of Consciousness including some extensions",
+      "exampleBoolean" : false,
+      "groupingId" : "ObservationProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationNews2Score.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsObservationNews2Score"
+      },
+      "name" : "DIPS Vital Signs Observation - NEWS2",
+      "description" : "DIPS profile for NEWS2 including some extensions",
+      "exampleBoolean" : false,
+      "groupingId" : "ObservationProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationOxygenSaturation.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsObservationOxygenSaturation"
+      },
+      "name" : "DIPS Vital Signs Observation - Oxygen Saturation",
+      "description" : "DIPS profile for Oxygen Saturation including some extensions",
+      "exampleBoolean" : false,
+      "groupingId" : "ObservationProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationPulse.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsObservationPulse"
+      },
+      "name" : "DIPS Vital Signs Observation - Pulse",
+      "description" : "DIPS profile for Pulse including some extensions",
+      "exampleBoolean" : false,
+      "groupingId" : "ObservationProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationRespirationRate.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsObservationRespirationRate"
+      },
+      "name" : "DIPS Vital Signs Observation - Respiration Rate",
+      "description" : "DIPS profile for Respiration Rate including some extensions",
+      "exampleBoolean" : false,
+      "groupingId" : "ObservationProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-dips-blood-pressure-create.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/dips-blood-pressure-create"
+      },
+      "name" : "dips-blood-pressure-create",
+      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBloodpressure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-dips-bloodpressureexample.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/dips-bloodpressureexample"
+      },
+      "name" : "dips-bloodpressureexample",
+      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBloodpressure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-dips-body-height-create.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/dips-body-height-create"
+      },
+      "name" : "dips-body-height-create",
+      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBodyHeight"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-dips-body-mass-index-create.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/dips-body-mass-index-create"
+      },
+      "name" : "dips-body-mass-index-create",
+      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBodyMassIndex"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-dips-body-temperature-create.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/dips-body-temperature-create"
+      },
+      "name" : "dips-body-temperature-create",
+      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBodyTemp"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-dips-body-weight-create.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/dips-body-weight-create"
+      },
+      "name" : "dips-body-weight-create",
+      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBodyWeight"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-dips-consciousness-create.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/dips-consciousness-create"
+      },
+      "name" : "dips-consciousness-create",
+      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationConsciousness"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-dips-gcs-create.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/dips-gcs-create"
+      },
+      "name" : "dips-gcs-create",
+      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationGCS"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-dips-heart-rate-create.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/dips-heart-rate-create"
+      },
+      "name" : "dips-heart-rate-create",
+      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationHeartRate"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-dips-news2-create.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/dips-news2-create"
+      },
+      "name" : "dips-news2-create",
+      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationNews2Score"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-dips-oxygen-saturation-create.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/dips-oxygen-saturation-create"
+      },
+      "name" : "dips-oxygen-saturation-create",
+      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationOxygenSaturation"
     },
     {
       "extension" : [{
@@ -1724,6 +1921,36 @@ This guide is intended for developers and integrators building or consuming inte
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-dips-QSOFAScore-create.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/dips-QSOFAScore-create"
+      },
+      "name" : "dips-QSOFAScore-create",
+      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationQSOFAScore"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-dips-respiratory-rate-create.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/dips-respiratory-rate-create"
+      },
+      "name" : "dips-respiratory-rate-create",
+      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationRespirationRate"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       },
       {
@@ -1734,7 +1961,8 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSAppointment"
       },
       "name" : "DIPSAppointment",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "AppointmentProfiles"
     },
     {
       "extension" : [{
@@ -1749,7 +1977,40 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSAppointmentSchedule"
       },
       "name" : "DIPSAppointmentSchedule",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "ScheduleProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSBasisLabObservationR4.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSBasisLabObservationR4"
+      },
+      "name" : "DIPSBasisLabObservationR4",
+      "exampleBoolean" : false,
+      "groupingId" : "ObservationProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSBasisOrganizationR4Reference.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSBasisOrganizationR4Reference"
+      },
+      "name" : "DIPSBasisOrganizationR4Reference",
+      "exampleBoolean" : false,
+      "groupingId" : "OrganizationProfiles"
     },
     {
       "extension" : [{
@@ -1764,7 +2025,8 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSBasisPatientR4Reference"
       },
       "name" : "DIPSBasisPatientR4Reference",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "ReferenceProfiles"
     },
     {
       "extension" : [{
@@ -1779,6 +2041,38 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSBasisPractitionerR4"
       },
       "name" : "DIPSBasisPractitionerR4",
+      "exampleBoolean" : false,
+      "groupingId" : "PractitionerProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSBasisPractitionerRoleR4Reference.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSBasisPractitionerRoleR4Reference"
+      },
+      "name" : "DIPSBasisPractitionerRoleR4Reference",
+      "exampleBoolean" : false,
+      "groupingId" : "PractitionerRoleProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-DIPSBodyMassIndexMeasurementMethod.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/DIPSBodyMassIndexMeasurementMethod"
+      },
+      "name" : "DIPSBodyMassIndexMeasurementMethod",
       "exampleBoolean" : false
     },
     {
@@ -1800,6 +2094,70 @@ This guide is intended for developers and integrators building or consuming inte
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDiagnosticOrderSpecimenReference.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDiagnosticOrderSpecimenReference"
+      },
+      "name" : "DIPSDiagnosticOrderSpecimenReference",
+      "exampleBoolean" : false,
+      "groupingId" : "ReferenceProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDiagnosticReportOrganizationReference.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDiagnosticReportOrganizationReference"
+      },
+      "name" : "DIPSDiagnosticReportOrganizationReference",
+      "exampleBoolean" : false,
+      "groupingId" : "OrganizationProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDiagnosticReportPractitionerReference.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDiagnosticReportPractitionerReference"
+      },
+      "name" : "DIPSDiagnosticReportPractitionerReference",
+      "exampleBoolean" : false,
+      "groupingId" : "PractitionerProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDiagnosticReportSubjectReference.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDiagnosticReportSubjectReference"
+      },
+      "name" : "DIPSDiagnosticReportSubjectReference",
+      "exampleBoolean" : false,
+      "groupingId" : "PatientProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       },
       {
@@ -1810,7 +2168,8 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSEncounterLocation"
       },
       "name" : "DIPSEncounterLocation",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "LocationProfiles"
     },
     {
       "extension" : [{
@@ -1825,7 +2184,8 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSEncounterOrganization"
       },
       "name" : "DIPSEncounterOrganization",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "OrganizationProfiles"
     },
     {
       "extension" : [{
@@ -1840,7 +2200,8 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSEncounterPractitionerReference"
       },
       "name" : "DIPSEncounterPractitionerReference",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "PractitionerRoleProfiles"
     },
     {
       "extension" : [{
@@ -1855,7 +2216,8 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSEncounterServiceRequest"
       },
       "name" : "DIPSEncounterServiceRequest",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "ServiceRequestProfiles"
     },
     {
       "extension" : [{
@@ -1870,7 +2232,8 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSEncounterSubjectReference"
       },
       "name" : "DIPSEncounterSubjectReference",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "PatientProfiles"
     },
     {
       "extension" : [{
@@ -1907,6 +2270,99 @@ This guide is intended for developers and integrators building or consuming inte
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DIPSGCSEyeOpeningScore.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DIPSGCSEyeOpeningScore"
+      },
+      "name" : "DIPSGCSEyeOpeningScore",
+      "description" : "ValueSet of GCS Eye OpeningScore",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-DIPSGCSEyeOpeningScoreCodeSystem.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem"
+      },
+      "name" : "DIPSGCSEyeOpeningScoreCodeSystem",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DIPSGCSMotorScore.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DIPSGCSMotorScore"
+      },
+      "name" : "DIPSGCSMotorScore",
+      "description" : "ValueSet of GCS Motor Score",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-DIPSGCSMotorScoreCodeSystem.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/DIPSGCSMotorScoreCodeSystem"
+      },
+      "name" : "DIPSGCSMotorScoreCodeSystem",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DIPSGCSVerbalScore.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DIPSGCSVerbalScore"
+      },
+      "name" : "DIPSGCSVerbalScore",
+      "description" : "ValueSet of GCS Verbal Score",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-DIPSGCSVerbalScoreCodeSystem.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/DIPSGCSVerbalScoreCodeSystem"
+      },
+      "name" : "DIPSGCSVerbalScoreCodeSystem",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       },
       {
@@ -1917,7 +2373,8 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSHealthcareService"
       },
       "name" : "DIPSHealthcareService",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "HealthcareServiceProfiles"
     },
     {
       "extension" : [{
@@ -2053,7 +2510,40 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSHospitalStayEncounter"
       },
       "name" : "DIPSHospitalStayEncounter",
+      "exampleBoolean" : false,
+      "groupingId" : "EncounterProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSJournalId.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSJournalId"
+      },
+      "name" : "DIPSJournalId",
+      "description" : "DIPS extension for Journal ID, common for all DIPS vital sign profiles",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSLabsObservationReference.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSLabsObservationReference"
+      },
+      "name" : "DIPSLabsObservationReference",
+      "exampleBoolean" : false,
+      "groupingId" : "ReferenceProfiles"
     },
     {
       "extension" : [{
@@ -2068,6 +2558,23 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSLocation"
       },
       "name" : "DIPSLocation",
+      "exampleBoolean" : false,
+      "groupingId" : "LocationProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DIPSLocation.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DIPSLocation"
+      },
+      "name" : "DIPSLocation",
+      "description" : "DIPSLocation",
       "exampleBoolean" : false
     },
     {
@@ -2113,7 +2620,8 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSLocationReference"
       },
       "name" : "DIPSLocationReference",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "LocationProfiles"
     },
     {
       "extension" : [{
@@ -2133,6 +2641,37 @@ This guide is intended for developers and integrators building or consuming inte
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-DIPSMeasurementMethod.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/DIPSMeasurementMethod"
+      },
+      "name" : "DIPSMeasurementMethod",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSObservationSubjectReference.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSObservationSubjectReference"
+      },
+      "name" : "DIPSObservationSubjectReference",
+      "exampleBoolean" : false,
+      "groupingId" : "PatientProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       },
       {
@@ -2143,7 +2682,8 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSOrganization"
       },
       "name" : "DIPSOrganization",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "OrganizationProfiles"
     },
     {
       "extension" : [{
@@ -2158,7 +2698,8 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DipsOrganizationRef"
       },
       "name" : "DipsOrganizationRef",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "OrganizationProfiles"
     },
     {
       "extension" : [{
@@ -2173,7 +2714,8 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSOrganizationReference"
       },
       "name" : "DIPSOrganizationReference",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "ReferenceProfiles"
     },
     {
       "extension" : [{
@@ -2188,7 +2730,8 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSPatient"
       },
       "name" : "DIPSPatient",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "PatientProfiles"
     },
     {
       "extension" : [{
@@ -2353,7 +2896,8 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSPerson"
       },
       "name" : "DIPSPerson",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "PersonProfiles"
     },
     {
       "extension" : [{
@@ -2503,7 +3047,8 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSPractitioner"
       },
       "name" : "DIPSPractitioner",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "PractitionerProfiles"
     },
     {
       "extension" : [{
@@ -2518,7 +3063,8 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSPractitionerReference"
       },
       "name" : "DIPSPractitionerReference",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "ReferenceProfiles"
     },
     {
       "extension" : [{
@@ -2533,7 +3079,8 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSPractitionerRole"
       },
       "name" : "DIPSPractitionerRole",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "PractitionerRoleProfiles"
     },
     {
       "extension" : [{
@@ -2698,7 +3245,8 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSPractitionerRoleReference"
       },
       "name" : "DIPSPractitionerRoleReference",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "ReferenceProfiles"
     },
     {
       "extension" : [{
@@ -2808,6 +3356,114 @@ This guide is intended for developers and integrators building or consuming inte
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-DIPSQSOFAcomponentCodeSystem.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/DIPSQSOFAcomponentCodeSystem"
+      },
+      "name" : "DIPSQSOFAcomponentCodeSystem",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-DIPSQSOFAScoreBPCodeSystem.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/DIPSQSOFAScoreBPCodeSystem"
+      },
+      "name" : "DIPSQSOFAScoreBPCodeSystem",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DIPSQSOFAScoreBPValueSet.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DIPSQSOFAScoreBPValueSet"
+      },
+      "name" : "DIPSQSOFAScoreBPValueSet",
+      "description" : "ValueSet of QSOFA Blood Pressure",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DIPSQSOFAScoreResRateValueSet.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DIPSQSOFAScoreResRateValueSet"
+      },
+      "name" : "DIPSQSOFAScoreBPValueSet",
+      "description" : "ValueSet of QSOFA Respiration Rate",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-DIPSQSOFAScoreMentalSatusCodeSystem.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem"
+      },
+      "name" : "DIPSQSOFAScoreMentalSatusCodeSystem",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DIPSQSOFAScoreMentalSatusValueSet.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DIPSQSOFAScoreMentalSatusValueSet"
+      },
+      "name" : "DIPSQSOFAScoreMentalSatusValueSet",
+      "description" : "ValueSet of QSOFA Blood Pressure",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-DIPSQSOFAScoreResRateCodeSystem.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/DIPSQSOFAScoreResRateCodeSystem"
+      },
+      "name" : "DIPSQSOFAScoreResRateCodeSystem",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       },
       {
@@ -2818,7 +3474,8 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSR4Encounter"
       },
       "name" : "DIPSR4Encounter",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "EncounterProfiles"
     },
     {
       "extension" : [{
@@ -2833,7 +3490,8 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSRelatedPerson"
       },
       "name" : "DIPSRelatedPerson",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "RelatedPersonProfiles"
     },
     {
       "extension" : [{
@@ -2923,6 +3581,247 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DIPSSubjectReference"
       },
       "name" : "DIPSSubjectReference",
+      "exampleBoolean" : false,
+      "groupingId" : "PatientProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsHeartRhythmIrregularity.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsHeartRhythmIrregularity"
+      },
+      "name" : "DIPSVitalSignsHeartRhythmIrregularity",
+      "description" : "Patterns of heart rate",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DIPSVitalSignsHeartRhythmIrregularity.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DIPSVitalSignsHeartRhythmIrregularity"
+      },
+      "name" : "DIPSVitalSignsHeartRhythmIrregularity",
+      "description" : "Codes representing heart rhythm irregularity for heart rate",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsLocation.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsLocation"
+      },
+      "name" : "DIPSVitalSignsLocation",
+      "description" : "the physical location where the care delivery took place",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DIPSVitalSignsObservationBloodPressureMeasurementMethod.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DIPSVitalSignsObservationBloodPressureMeasurementMethod"
+      },
+      "name" : "DIPSVitalSignsObservationBloodPressureMeasurementMethod",
+      "description" : "Codes representing measurement method",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationBodyMassIndexFormula.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsObservationBodyMassIndexFormula"
+      },
+      "name" : "DIPSVitalSignsObservationBodyMassIndexFormula",
+      "description" : "Formula used to derive the body mass index.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DIPSVitalSignsObservationBodyMassIndexFormula.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DIPSVitalSignsObservationBodyMassIndexFormula"
+      },
+      "name" : "DIPSVitalSignsObservationBodyMassIndexFormula",
+      "description" : "Value set for DIPS Body Mass Index Formula Measurment methods",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DIPSVitalSignsObservationBodySite.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DIPSVitalSignsObservationBodySite"
+      },
+      "name" : "DIPSVitalSignsObservationBodySite",
+      "description" : "Value set for DIPS Body Mass Index Formula Measurment methods",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationConfoundingFactor.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsObservationConfoundingFactor"
+      },
+      "name" : "DIPSVitalSignsObservationConfoundingFactor",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-DIPSVitalSignsObservationConsciousness.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/DIPSVitalSignsObservationConsciousness"
+      },
+      "name" : "DIPSVitalSignsObservationConsciousness",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationEncounterReference.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsObservationEncounterReference"
+      },
+      "name" : "DIPSVitalSignsObservationEncounterReference",
+      "description" : "Encounter with Episode Of Care and Planned Contact",
+      "exampleBoolean" : false,
+      "groupingId" : "EncounterProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationGCS.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsObservationGCS"
+      },
+      "name" : "DIPSVitalSignsObservationGCS",
+      "description" : "Fifteen point scale used to assess impairment of consciousness in response to defined stimuli. More correctly known as the Modified Glasgow coma scale.",
+      "exampleBoolean" : false,
+      "groupingId" : "ObservationProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DIPSVitalSignsObservationHeartRateMeasurementMethod.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DIPSVitalSignsObservationHeartRateMeasurementMethod"
+      },
+      "name" : "DIPSVitalSignsObservationHeartRateMeasurementMethod",
+      "description" : "Codes representing measurement method",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationOrganizationReference.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsObservationOrganizationReference"
+      },
+      "name" : "DIPSVitalSignsObservationOrganizationReference",
+      "exampleBoolean" : false,
+      "groupingId" : "OrganizationProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationPrePostduktal.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsObservationPrePostduktal"
+      },
+      "name" : "DIPSVitalSignsObservationPrePostduktal",
+      "description" : "Description of the pre/post/intermediate level of ductal",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DIPSVitalSignsObservationPrePostduktal.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DIPSVitalSignsObservationPrePostduktal"
+      },
+      "name" : "DIPSVitalSignsObservationPrePostduktal",
+      "description" : "Codes representing pre/post ductal",
       "exampleBoolean" : false
     },
     {
@@ -2939,6 +3838,88 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "DIPSVitalSignsObservationPrePostduktal",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DIPSVitalSignsObservationPulseBodySite.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DIPSVitalSignsObservationPulseBodySite"
+      },
+      "name" : "DIPSVitalSignsObservationPulsBodySite",
+      "description" : "Codes representing Body site for Pulse",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DIPSVitalSignsObservationPulseMeasurementMethod.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DIPSVitalSignsObservationPulseMeasurementMethod"
+      },
+      "name" : "DIPSVitalSignsObservationPulseMeasurementMethod",
+      "description" : "Codes representing measurement method",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationQSOFAScore.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsObservationQSOFAScore"
+      },
+      "name" : "DIPSVitalSignsObservationQSOFAScore",
+      "description" : "Quick Sepsis-related Organ Failure Assessment (qSOFA) is a simplified version of the SOFA score, which is used outside intensive care units to quickly assess sepsis risk in adults.",
+      "exampleBoolean" : false,
+      "groupingId" : "ObservationProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationSubjectReference.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsObservationSubjectReference"
+      },
+      "name" : "DIPSVitalSignsObservationSubjectReference",
+      "exampleBoolean" : false,
+      "groupingId" : "PatientProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsPerformerAuthorReference.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsPerformerAuthorReference"
+      },
+      "name" : "DIPSVitalSignsPerformerAuthorReference",
+      "description" : "DIPS profile for Author",
+      "exampleBoolean" : false,
+      "groupingId" : "PractitionerRoleProfiles"
     },
     {
       "extension" : [{
@@ -2969,6 +3950,51 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "Encounter details of agy1002679",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LL355-9-2.80.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/LL355-9-2.80"
+      },
+      "name" : "GCS_1_Eye",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LL356-7-2.80.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/LL356-7-2.80"
+      },
+      "name" : "GCS_2_Verbal",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LL357-5-2.80.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/LL357-5-2.80"
+      },
+      "name" : "GCS_3_Motor",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -3419,354 +4445,17 @@ This guide is intended for developers and integrators building or consuming inte
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "Observation"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoDomainVitalSignsObservationBloodpressureBodyPosition.html"
+        "valueUri" : "Observation-no-blood-pressure-create.html"
       }],
       "reference" : {
-        "reference" : "ValueSet/NoDomainVitalSignsObservationBloodpressureBodyPosition"
+        "reference" : "Observation/no-blood-pressure-create"
       },
-      "name" : "NoDomainVitalSignsObservationBloodpressureBodyPosition",
-      "description" : "Codes representing body position for blood pressure",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoDomainVitalSignsObservationBloodpressureBodySite.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoDomainVitalSignsObservationBloodpressureBodySite"
-      },
-      "name" : "NoDomainVitalSignsObservationBloodpressureBodySite",
-      "description" : "Codes representing body site for blood pressure",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoDomainVitalSignsObservationBloodPressureMeasurementMethod.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoDomainVitalSignsObservationBloodPressureMeasurementMethod"
-      },
-      "name" : "NoDomainVitalSignsObservationBloodPressureMeasurementMethod",
-      "description" : "Codes representing measurement method for HeartRate",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoDomainVitalSignsObservationBodyExposure.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoDomainVitalSignsObservationBodyExposure"
-      },
-      "name" : "NoDomainVitalSignsObservationBodyExposure",
-      "description" : "Codes representing body exposure",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoDomainVitalSignsObservationBodyHeightBodyPosition.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoDomainVitalSignsObservationBodyHeightBodyPosition"
-      },
-      "name" : "NoDomainVitalSignsObservationBodyHeightBodyPosition",
-      "description" : "Codes representing body position for body height",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoDomainVitalSignsObservationBodyTempBodySite.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoDomainVitalSignsObservationBodyTempBodySite"
-      },
-      "name" : "NoDomainVitalSignsObservationBodyTempBodySite",
-      "description" : "Codes representing body site for body temperature",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoDomainVitalSignsObservationClothingState.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoDomainVitalSignsObservationClothingState"
-      },
-      "name" : "NoDomainVitalSignsObservationClothingState",
-      "description" : "Codes representing level of clothing",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoDomainVitalSignsObservationCuffsize.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoDomainVitalSignsObservationCuffsize"
-      },
-      "name" : "NoDomainVitalSignsObservationCuffsize",
-      "description" : "Codes representing cuff size",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoDomainVitalSignsObservationDiastolicendPoint.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoDomainVitalSignsObservationDiastolicendPoint"
-      },
-      "name" : "NoDomainVitalSignsObservationDiastolicendPoint",
-      "description" : "Codes representing Diastolic end point",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoDomainVitalSignsObservationHeartRateBodySite.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoDomainVitalSignsObservationHeartRateBodySite"
-      },
-      "name" : "NoDomainVitalSignsObservationHeartRateBodySite",
-      "description" : "Codes representing body site for heart rate",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoDomainVitalSignsObservationHeartRateMeasurementMethod.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoDomainVitalSignsObservationHeartRateMeasurementMethod"
-      },
-      "name" : "NoDomainVitalSignsObservationHeartRateMeasurementMethod",
-      "description" : "Codes representing measurement method for HeartRate",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoDomainVitalSignsObservationHeartRatePulseBodyPosition.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoDomainVitalSignsObservationHeartRatePulseBodyPosition"
-      },
-      "name" : "NoDomainVitalSignsObservationHeartRatePulseBodyPosition",
-      "description" : "Codes representing body position for heart rate or Pulse",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoDomainVitalSignsObservationHeartRhythmIrregularity.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoDomainVitalSignsObservationHeartRhythmIrregularity"
-      },
-      "name" : "NoDomainVitalSignsObservationHeartRhythmIrregularity",
-      "description" : "Codes representing heart rhythm irregularity for heart rate",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoDomainVitalSignsObservationPulseBodySite.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoDomainVitalSignsObservationPulseBodySite"
-      },
-      "name" : "NoDomainVitalSignsObservationPulseBodySite",
-      "description" : "Codes representing body site for pulse",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoDomainVitalSignsObservationPulseMeasurementMethod.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoDomainVitalSignsObservationPulseMeasurementMethod"
-      },
-      "name" : "NoDomainVitalSignsObservationPulseMeasurementMethod",
-      "description" : "Codes representing measurement method for HeartRate",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoDomainVitalSignsObservationPulseRhythm.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoDomainVitalSignsObservationPulseRhythm"
-      },
-      "name" : "NoDomainVitalSignsObservationPulseRhythm",
-      "description" : "Codes representing  rhythm of Pulse",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoDomainVitalSignsObservationPulseRhythmIrregularity.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoDomainVitalSignsObservationPulseRhythmIrregularity"
-      },
-      "name" : "NoDomainVitalSignsObservationPulseRhythmIrregularity",
-      "description" : "Codes representing heart rhythm irregularity for Pulse",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoDomainVitalSignsObservationRespirationRateBodyPosition.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoDomainVitalSignsObservationRespirationRateBodyPosition"
-      },
-      "name" : "NoDomainVitalSignsObservationRespirationRateBodyPosition",
-      "description" : "Codes representing body position for respiration rate",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoDomainVitalSignsObservationRespirationRateDepth.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoDomainVitalSignsObservationRespirationRateDepth"
-      },
-      "name" : "NoDomainVitalSignsObservationRespirationRateDepth",
-      "description" : "Codes representing depth for respiration rate",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoDomainVitalSignsObservationRespirationRegularity.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoDomainVitalSignsObservationRespirationRegularity"
-      },
-      "name" : "NoDomainVitalSignsObservationRespirationRegularity",
-      "description" : "Codes representing Respiration Regularity",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoDomainVitalSignsObservationSleepStatus.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoDomainVitalSignsObservationSleepStatus"
-      },
-      "name" : "NoDomainVitalSignsObservationSleepStatus",
-      "description" : "Codes representing Sleep Status",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoDomainVitalSignsObservationSpontaneousBreathing.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoDomainVitalSignsObservationSpontaneousBreathing"
-      },
-      "name" : "NoDomainVitalSignsObservationSpontaneousBreathing",
-      "description" : "Codes representing Respiration Spontaneous breathing",
-      "exampleBoolean" : false
+      "name" : "no-blood-pressure-create",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -3775,14 +4464,13 @@ This guide is intended for developers and integrators building or consuming inte
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Observation-noimpl-bloodpressure-instance.html"
+        "valueUri" : "Observation-no-body-height-create.html"
       }],
       "reference" : {
-        "reference" : "Observation/noimpl-bloodpressure-instance"
+        "reference" : "Observation/no-body-height-create"
       },
-      "name" : "noimpl-bloodpressure-instance",
-      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationBloodpressure",
-      "groupingId" : "NorwegianImplementationInstances"
+      "name" : "no-body-height-create",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -3791,14 +4479,13 @@ This guide is intended for developers and integrators building or consuming inte
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Observation-noimpl-body-height-create.html"
+        "valueUri" : "Observation-no-body-temperature-create.html"
       }],
       "reference" : {
-        "reference" : "Observation/noimpl-body-height-create"
+        "reference" : "Observation/no-body-temperature-create"
       },
-      "name" : "noimpl-body-height-create",
-      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationBodyHeight",
-      "groupingId" : "NorwegianImplementationInstances"
+      "name" : "no-body-temperature-create",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -3807,14 +4494,13 @@ This guide is intended for developers and integrators building or consuming inte
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Observation-noimpl-body-mass-index-create.html"
+        "valueUri" : "Observation-no-body-weight-create.html"
       }],
       "reference" : {
-        "reference" : "Observation/noimpl-body-mass-index-create"
+        "reference" : "Observation/no-body-weight-create"
       },
-      "name" : "noimpl-body-mass-index-create",
-      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationBodyMassIndex",
-      "groupingId" : "NorwegianImplementationInstances"
+      "name" : "no-body-weight-create",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -3823,14 +4509,13 @@ This guide is intended for developers and integrators building or consuming inte
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Observation-noimpl-body-temperature-create.html"
+        "valueUri" : "Observation-no-heart-rate-create.html"
       }],
       "reference" : {
-        "reference" : "Observation/noimpl-body-temperature-create"
+        "reference" : "Observation/no-heart-rate-create"
       },
-      "name" : "noimpl-body-temperature-create",
-      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationBodyTemp",
-      "groupingId" : "NorwegianImplementationInstances"
+      "name" : "no-heart-rate-create",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -3839,14 +4524,13 @@ This guide is intended for developers and integrators building or consuming inte
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Observation-noimpl-body-weight-create.html"
+        "valueUri" : "Observation-no-oxygen-saturation-create.html"
       }],
       "reference" : {
-        "reference" : "Observation/noimpl-body-weight-create"
+        "reference" : "Observation/no-oxygen-saturation-create"
       },
-      "name" : "noimpl-body-weight-create",
-      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationBodyWeight",
-      "groupingId" : "NorwegianImplementationInstances"
+      "name" : "no-oxygen-saturation-create",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -3855,14 +4539,13 @@ This guide is intended for developers and integrators building or consuming inte
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Observation-noImpl-consciousness-create.html"
+        "valueUri" : "Observation-no-pulse-rate.html"
       }],
       "reference" : {
-        "reference" : "Observation/noImpl-consciousness-create"
+        "reference" : "Observation/no-pulse-rate"
       },
-      "name" : "noImpl-consciousness-create",
-      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationConsciousness",
-      "groupingId" : "NorwegianImplementationInstances"
+      "name" : "no-pulse-rate",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -3871,631 +4554,13 @@ This guide is intended for developers and integrators building or consuming inte
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Observation-noImpl-GCS-create.html"
+        "valueUri" : "Observation-no-respiratory-rate-create.html"
       }],
       "reference" : {
-        "reference" : "Observation/noImpl-GCS-create"
+        "reference" : "Observation/no-respiratory-rate-create"
       },
-      "name" : "noImpl-GCS-create",
-      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationGCS",
-      "groupingId" : "NorwegianImplementationInstances"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Observation-noimpl-heart-rate-create.html"
-      }],
-      "reference" : {
-        "reference" : "Observation/noimpl-heart-rate-create"
-      },
-      "name" : "noimpl-heart-rate-create",
-      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationHeartRate",
-      "groupingId" : "NorwegianImplementationInstances"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Observation-noimpl-news2-create.html"
-      }],
-      "reference" : {
-        "reference" : "Observation/noimpl-news2-create"
-      },
-      "name" : "noimpl-news2-create",
-      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationNews2Score",
-      "groupingId" : "NorwegianImplementationInstances"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Observation-noimpl-oxygen-saturation-create.html"
-      }],
-      "reference" : {
-        "reference" : "Observation/noimpl-oxygen-saturation-create"
-      },
-      "name" : "noimpl-oxygen-saturation-create",
-      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationOxygenSaturation",
-      "groupingId" : "NorwegianImplementationInstances"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Observation-noimpl-pulse-rate.html"
-      }],
-      "reference" : {
-        "reference" : "Observation/noimpl-pulse-rate"
-      },
-      "name" : "noimpl-pulse-rate",
-      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationPulse",
-      "groupingId" : "NorwegianImplementationInstances"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Observation-noImpl-QSOFAScore-create.html"
-      }],
-      "reference" : {
-        "reference" : "Observation/noImpl-QSOFAScore-create"
-      },
-      "name" : "noImpl-QSOFAScore-create",
-      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationQSOFAScore",
-      "groupingId" : "NorwegianImplementationInstances"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Observation-noImpl-respiratory-rate-create.html"
-      }],
-      "reference" : {
-        "reference" : "Observation/noImpl-respiratory-rate-create"
-      },
-      "name" : "noImpl-respiratory-rate-create",
-      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/NoImplVitalSignsObservationRespirationRate",
-      "groupingId" : "NorwegianImplementationInstances"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-NoImplBodyMassIndexMeasurementMethod.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/NoImplBodyMassIndexMeasurementMethod"
-      },
-      "name" : "NoImplBodyMassIndexMeasurementMethod",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-NoImplMeasurementMethod.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/NoImplMeasurementMethod"
-      },
-      "name" : "NoImplMeasurementMethod",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-NoImplQSOFAcomponentCodes.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/NoImplQSOFAcomponentCodes"
-      },
-      "name" : "NoImplQSOFAcomponentCodes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationBloodpressure.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationBloodpressure"
-      },
-      "name" : "NoImplVitalSignsObservationBloodpressure",
-      "description" : "The local measurement of arterial blood pressure, which is a surrogate for arterial pressure in the systemic circulation.",
-      "exampleBoolean" : false,
-      "groupingId" : "NorwegianImplementationProfiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoImplVitalSignsObservationBloodPressureMeasurementMethod.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoImplVitalSignsObservationBloodPressureMeasurementMethod"
-      },
-      "name" : "NoImplVitalSignsObservationBloodPressureMeasurementMethod",
-      "description" : "Codes representing measurement method for heart rate",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationBodyHeight.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationBodyHeight"
-      },
-      "name" : "NoImplVitalSignsObservationBodyHeight",
-      "description" : "Height, or body length, is measured from crown of head to sole of foot.",
-      "exampleBoolean" : false,
-      "groupingId" : "NorwegianImplementationProfiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationBodyMassIndex.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationBodyMassIndex"
-      },
-      "name" : "NoImplVitalSignsObservationBodyMassIndex",
-      "description" : "Calculated measurement which compares a person's weight and height.",
-      "exampleBoolean" : false,
-      "groupingId" : "NorwegianImplementationProfiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoImplVitalSignsObservationBodyMassIndexFormula.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoImplVitalSignsObservationBodyMassIndexFormula"
-      },
-      "name" : "NoImplVitalSignsObservationBodyMassIndexFormula",
-      "description" : "Value set for DIPS Body Mass Index Formula Measurment methods",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationBodyTemp.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationBodyTemp"
-      },
-      "name" : "NoImplVitalSignsObservationBodyTemp",
-      "description" : "A measurement of the body temperature, which is a surrogate for the core body temperature of the individual.",
-      "exampleBoolean" : false,
-      "groupingId" : "NorwegianImplementationProfiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationBodyWeight.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationBodyWeight"
-      },
-      "name" : "NoImplVitalSignsObservationBodyWeight",
-      "description" : "Measurement of the body weight of an individual.",
-      "exampleBoolean" : false,
-      "groupingId" : "NorwegianImplementationProfiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationClothingState.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationClothingState"
-      },
-      "name" : "NoImplVitalSignsObservationClothingState",
-      "description" : "Description of the state of dress of the person at the time of weighing.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationConsciousness.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationConsciousness"
-      },
-      "name" : "NoImplVitalSignsObservationConsciousness",
-      "description" : "Simple scale used as part of an assessment to measure and record an individual's level of consciousness",
-      "exampleBoolean" : false,
-      "groupingId" : "NorwegianImplementationProfiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-NoImplVitalSignsObservationConsciousness.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/NoImplVitalSignsObservationConsciousness"
-      },
-      "name" : "NoImplVitalSignsObservationConsciousness",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationFiO2.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationFiO2"
-      },
-      "name" : "NoImplVitalSignsObservationFiO2",
-      "description" : "Fraction of oxygen in inspired air.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationFlow.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationFlow"
-      },
-      "name" : "NoImplVitalSignsObservationFlow",
-      "description" : "Oxygen flow rate given to an individual.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationGCS.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationGCS"
-      },
-      "name" : "NoImplVitalSignsObservationGCS",
-      "description" : "Fifteen point scale used to assess impairment of consciousness in response to defined stimuli. More correctly known as the Modified Glasgow coma scale.",
-      "exampleBoolean" : false,
-      "groupingId" : "NorwegianImplementationProfiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationHeartRate.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationHeartRate"
-      },
-      "name" : "NoImplVitalSignsObservationHeartRate",
-      "description" : "The rate and associated attributes for a heart beat.",
-      "exampleBoolean" : false,
-      "groupingId" : "NorwegianImplementationProfiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoImplVitalSignsObservationHeartRateMeasurementMethod.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoImplVitalSignsObservationHeartRateMeasurementMethod"
-      },
-      "name" : "NoImplVitalSignsObservationHeartRateMeasurementMethod",
-      "description" : "Codes representing measurement method for heart rate",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationInspiredOxygen.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationInspiredOxygen"
-      },
-      "name" : "NoImplVitalSignsObservationInspiredOxygen",
-      "description" : "Details of the amount of oxygen available to the subject at the time of observation.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationMethodofOxygenDelivery.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationMethodofOxygenDelivery"
-      },
-      "name" : "NoImplVitalSignsObservationMethodofOxygenDelivery",
-      "description" : "The method used to deliver the oxygen.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationNews2Score.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationNews2Score"
-      },
-      "name" : "NoImplVitalSignsObservationNews2Score",
-      "description" : "A simple assessment score used to identify clinical deterioration in a patient.",
-      "exampleBoolean" : false,
-      "groupingId" : "NorwegianImplementationProfiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationOnAir.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationOnAir"
-      },
-      "name" : "NoImplVitalSignsObservationOnAir",
-      "description" : "The patient is receiving air, equivalent to 21% O₂ or 0.21 FiO₂ and an oxygen flow rate of 0 litres per minute.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationOxygenSaturation.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationOxygenSaturation"
-      },
-      "name" : "NoImplVitalSignsObservationOxygenSaturation",
-      "description" : "Blood oxygen and related measurements, measured by pulse oximetry or pulse CO-oximetry.",
-      "exampleBoolean" : false,
-      "groupingId" : "NorwegianImplementationProfiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationProsentO2.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationProsentO2"
-      },
-      "name" : "NoImplVitalSignsObservationProsentO2",
-      "description" : "Percentage of oxygen in inspired air.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationPulse.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationPulse"
-      },
-      "name" : "NoImplVitalSignsObservationPulse",
-      "description" : "The rate and associated attributes for a pulse.",
-      "exampleBoolean" : false,
-      "groupingId" : "NorwegianImplementationProfiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoImplVitalSignsObservationPulseBodySite.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoImplVitalSignsObservationPulseBodySite"
-      },
-      "name" : "NoImplVitalSignsObservationPulseBodySite",
-      "description" : "Codes representing Body site for Pulse",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoImplVitalSignsObservationPulseMeasurementMethod.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NoImplVitalSignsObservationPulseMeasurementMethod"
-      },
-      "name" : "NoImplVitalSignsObservationPulseMeasurementMethod",
-      "description" : "Codes representing measurement method for heart rate",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationPulseRhythm.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationPulseRhythm"
-      },
-      "name" : "NoImplVitalSignsObservationPulseRhythm",
-      "description" : "Regularity of the pulse",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationQSOFAScore.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationQSOFAScore"
-      },
-      "name" : "NoImplVitalSignsObservationQSOFAScore",
-      "description" : "Quick Sepsis-related Organ Failure Assessment (qSOFA) is a simplified version of the SOFA score, which is used outside intensive care units to quickly assess sepsis risk in adults.",
-      "exampleBoolean" : false,
-      "groupingId" : "NorwegianImplementationProfiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationRespirationDepth.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationRespirationDepth"
-      },
-      "name" : "NoImplVitalSignsObservationRespirationDepth",
-      "description" : "The depth of spontaneous breathing.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationRespirationRate.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationRespirationRate"
-      },
-      "name" : "NoImplVitalSignsObservationRespirationRate",
-      "description" : "The characteristics of spontaneous breathing by an individual.",
-      "exampleBoolean" : false,
-      "groupingId" : "NorwegianImplementationProfiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-NoImplVitalSignsObservationRespirationRegularity.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NoImplVitalSignsObservationRespirationRegularity"
-      },
-      "name" : "NoImplVitalSignsObservationRespirationRegularity",
-      "description" : "The regularity of spontaneous breathing.",
-      "exampleBoolean" : false
+      "name" : "no-respiratory-rate-create",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -4558,6 +4623,21 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "Organization details of afa22",
       "description" : "Organization details of afa22",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-afa23.html"
+      }],
+      "reference" : {
+        "reference" : "Organization/afa23"
+      },
+      "name" : "Organization details of afa23",
       "exampleBoolean" : true
     },
     {
@@ -4814,12 +4894,42 @@ This guide is intended for developers and integrators building or consuming inte
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Patient-cdp1000240.html"
+      }],
+      "reference" : {
+        "reference" : "Patient/cdp1000240"
+      },
+      "name" : "Patient details of cdp1000240",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "Patient-cdp1000807.html"
       }],
       "reference" : {
         "reference" : "Patient/cdp1000807"
       },
       "name" : "Patient details of cdp1000807",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Patient-cdp1000808.html"
+      }],
+      "reference" : {
+        "reference" : "Patient/cdp1000808"
+      },
+      "name" : "Patient details of cdp1000808",
       "exampleBoolean" : true
     },
     {
@@ -4887,6 +4997,21 @@ This guide is intended for developers and integrators building or consuming inte
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "PractitionerRole-agb104.html"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/agb104"
+      },
+      "name" : "Practioner details of agb104",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Practitioner"
       },
       {
@@ -4944,6 +5069,21 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "PractitionerRole/agb27"
       },
       "name" : "PractitionerRole details of agb27",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "PractitionerRole-agb30.html"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/agb30"
+      },
+      "name" : "PractitionerRole details of agb30",
       "exampleBoolean" : true
     },
     {
@@ -5061,6 +5201,22 @@ This guide is intended for developers and integrators building or consuming inte
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-requesterSigningStatus.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/requesterSigningStatus"
+      },
+      "name" : "requesterSigningStatus",
+      "description" : "DIPS: describes if the lab result has been signed by the requester in DIPS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "StructureDefinition-SectionExtension.html"
       }],
       "reference" : {
@@ -5097,7 +5253,8 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/SelfBookingSlot"
       },
       "name" : "SelfBookingSlot",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "SlotProfiles"
     },
     {
       "extension" : [{
@@ -5106,10 +5263,10 @@ This guide is intended for developers and integrators building or consuming inte
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-NoImplVitalSignsObservationConsciousness.html"
+        "valueUri" : "ValueSet-DIPSVitalSignsObservationConsciousness.html"
       }],
       "reference" : {
-        "reference" : "ValueSet/NoImplVitalSignsObservationConsciousness"
+        "reference" : "ValueSet/DIPSVitalSignsObservationConsciousness"
       },
       "name" : "SNOMED CT Consciousness Structures",
       "description" : "Codes representing consciousness",
@@ -5143,6 +5300,22 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/TerminationExtension"
       },
       "name" : "TerminationExtension",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-TextResultObservation.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TextResultObservation"
+      },
+      "name" : "TextResultObservation",
+      "description" : "DIPS: textual rendering of a lab result that is otherwise carried as a Quantity.",
       "exampleBoolean" : false
     },
     {

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="DIPSGCSMotorScoreCodeSystem"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem DIPSGCSMotorScoreCodeSystem</b></p><a name="DIPSGCSMotorScoreCodeSystem"> </a><a name="hcDIPSGCSMotorScoreCodeSystem"> </a><p>This  code system <code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">1<a name="DIPSGCSMotorScoreCodeSystem-1"> </a></td><td>Ingen reaksjon</td><td>Ingen reaksjon</td></tr><tr><td style="white-space:nowrap">2<a name="DIPSGCSMotorScoreCodeSystem-2"> </a></td><td>Ekstensjon ved smerte</td><td>Ekstensjon ved smerte</td></tr><tr><td style="white-space:nowrap">3<a name="DIPSGCSMotorScoreCodeSystem-3"> </a></td><td>Fleksjon ved smerte</td><td>Fleksjon ved smerte</td></tr><tr><td style="white-space:nowrap">4<a name="DIPSGCSMotorScoreCodeSystem-4"> </a></td><td>Avverger smerte</td><td>Avverger smerte</td></tr><tr><td style="white-space:nowrap">5<a name="DIPSGCSMotorScoreCodeSystem-5"> </a></td><td>Lokaliserer smerte</td><td>Lokaliserer smerte</td></tr><tr><td style="white-space:nowrap">6<a name="DIPSGCSMotorScoreCodeSystem-6"> </a></td><td>Følger oppfordringer</td><td>Følger oppfordringer</td></tr></table></div>
+  </text>
+  <url value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem"/>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/dips-gcs-motor"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="DIPSGCSMotorScoreCodeSystem"/>
+  <status value="draft"/>
+  <date value="2026-09-17T19:39:02+00:00"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="Lars-Andreas Nystad"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:lan@dips.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="1"/>
+    <display value="Ingen reaksjon"/>
+    <definition value="Ingen reaksjon"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Ekstensjon ved smerte"/>
+    <definition value="Ekstensjon ved smerte"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Fleksjon ved smerte"/>
+    <definition value="Fleksjon ved smerte"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Avverger smerte"/>
+    <definition value="Avverger smerte"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Lokaliserer smerte"/>
+    <definition value="Lokaliserer smerte"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="Følger oppfordringer"/>
+    <definition value="Følger oppfordringer"/>
+  </concept>
+</CodeSystem>

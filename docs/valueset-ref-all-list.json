@@ -9,8 +9,8 @@
     "systems" : ["urn:oid:2.16.578.1.12.4.1.1.8240"],
     "uses" : {
     },
-    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
-    "StructureDefinition-ContactTypeExtension.html" : "ContactTypeExtension"
+    "StructureDefinition-ContactTypeExtension.html" : "ContactTypeExtension",
+    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter"
   },
   {
     "url" : "http://dips.no/fhir/R4/ValueSet/DIPSEncounterV3",
@@ -26,6 +26,42 @@
     "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter"
   },
   {
+    "url" : "http://dips.no/fhir/R4/ValueSet/DIPSGCSEyeOpeningScore",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSGCSEyeOpeningScore",
+    "title" : "DIPSGCSEyeOpeningScore",
+    "description" : "ValueSet of GCS Eye OpeningScore",
+    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSVitalSignsObservationGCS.html" : "DIPSVitalSignsObservationGCS"
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/DIPSGCSMotorScore",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSGCSMotorScore",
+    "title" : "DIPSGCSMotorScore",
+    "description" : "ValueSet of GCS Motor Score",
+    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSVitalSignsObservationGCS.html" : "DIPSVitalSignsObservationGCS"
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/DIPSGCSVerbalScore",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSGCSVerbalScore",
+    "title" : "DIPSGCSVerbalScore",
+    "description" : "ValueSet of GCS Verbal Score",
+    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSVitalSignsObservationGCS.html" : "DIPSVitalSignsObservationGCS"
+  },
+  {
     "url" : "http://dips.no/fhir/R4/ValueSet/DIPSHealthcareServiceTypes",
     "version" : "0.1.0",
     "status" : "active",
@@ -38,6 +74,42 @@
     "urn:oid:1.3.6.1.4.1.9038.52.4584",
     "urn:oid:1.3.6.1.4.1.9038.52.4639",
     "urn:oid:1.3.6.1.4.1.9038.52.4582"]
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreBPValueSet",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSQSOFAScoreBPValueSet",
+    "title" : "DIPSQSOFAScoreBPValueSet",
+    "description" : "ValueSet of QSOFA Blood Pressure",
+    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSVitalSignsObservationQSOFAScore.html" : "DIPSVitalSignsObservationQSOFAScore"
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreMentalSatusValueSet",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSQSOFAScoreMentalSatusValueSet",
+    "title" : "DIPSQSOFAScoreMentalSatusValueSet",
+    "description" : "ValueSet of QSOFA Blood Pressure",
+    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSVitalSignsObservationQSOFAScore.html" : "DIPSVitalSignsObservationQSOFAScore"
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreResRateValueSet",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSQSOFAScoreResRateValueSet",
+    "title" : "DIPSQSOFAScoreBPValueSet",
+    "description" : "ValueSet of QSOFA Respiration Rate",
+    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreResRateCodeSystem"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSVitalSignsObservationQSOFAScore.html" : "DIPSVitalSignsObservationQSOFAScore"
   },
   {
     "url" : "http://dips.no/fhir/R4/ValueSet/DipsCoding1003ValueSet",
@@ -110,81 +182,6 @@
     "StructureDefinition-DIPSLocation.html" : "DIPSLocation"
   },
   {
-    "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationBloodPressureMeasurementMethod",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoImplVitalSignsObservationBloodPressureMeasurementMethod",
-    "title" : null,
-    "description" : "Codes representing measurement method for heart rate",
-    "systems" : ["http://dips.no/fhir/R4/CodeSystem/NoImplMeasurementMethod",
-    "http://snomed.info/sct"],
-    "uses" : {
-    },
-    "StructureDefinition-NoImplVitalSignsObservationBloodpressure.html" : "NoImplVitalSignsObservationBloodpressure"
-  },
-  {
-    "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationBodyMassIndexFormula",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoImplVitalSignsObservationBodyMassIndexFormula",
-    "title" : "NoImplVitalSignsObservationBodyMassIndexFormula",
-    "description" : "Value set for DIPS Body Mass Index Formula Measurment methods",
-    "systems" : ["http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod"],
-    "uses" : {
-    },
-    "StructureDefinition-NoImplVitalSignsObservationBodyMassIndex.html" : "NoImplVitalSignsObservationBodyMassIndex"
-  },
-  {
-    "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationConsciousness",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoImplVitalSignsObservationConsciousness",
-    "title" : "SNOMED CT Consciousness Structures",
-    "description" : "Codes representing consciousness",
-    "systems" : ["http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness"],
-    "uses" : {
-    },
-    "StructureDefinition-NoImplVitalSignsObservationConsciousness.html" : "NoImplVitalSignsObservationConsciousness"
-  },
-  {
-    "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationHeartRateMeasurementMethod",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoImplVitalSignsObservationHeartRateMeasurementMethod",
-    "title" : null,
-    "description" : "Codes representing measurement method for heart rate",
-    "systems" : ["http://dips.no/fhir/R4/CodeSystem/NoImplMeasurementMethod",
-    "http://snomed.info/sct"],
-    "uses" : {
-    },
-    "StructureDefinition-NoImplVitalSignsObservationHeartRate.html" : "NoImplVitalSignsObservationHeartRate"
-  },
-  {
-    "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationPulseBodySite",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoImplVitalSignsObservationPulseBodySite",
-    "title" : "NoImplVitalSignsObservationPulseBodySite",
-    "description" : "Codes representing Body site for Pulse",
-    "systems" : ["http://snomed.info/sct"],
-    "uses" : {
-    },
-    "StructureDefinition-NoImplVitalSignsObservationPulse.html" : "NoImplVitalSignsObservationPulse"
-  },
-  {
-    "url" : "http://dips.no/fhir/R4/ValueSet/NoImplVitalSignsObservationPulseMeasurementMethod",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoImplVitalSignsObservationPulseMeasurementMethod",
-    "title" : null,
-    "description" : "Codes representing measurement method for heart rate",
-    "systems" : ["http://dips.no/fhir/R4/CodeSystem/NoImplMeasurementMethod",
-    "http://snomed.info/sct"],
-    "uses" : {
-    },
-    "StructureDefinition-NoImplVitalSignsObservationPulse.html" : "NoImplVitalSignsObservationPulse"
-  },
-  {
     "url" : "http://dips.no/fhir/R4/ValueSet/NprLevelOfCare",
     "version" : "0.1.0",
     "status" : "draft",
@@ -194,8 +191,8 @@
     "systems" : ["urn:oid:2.16.578.1.12.4.1.1.8406"],
     "uses" : {
     },
-    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
-    "StructureDefinition-NprLevelOfCareExtension.html" : "NprLevelOfCareExtension"
+    "StructureDefinition-NprLevelOfCareExtension.html" : "NprLevelOfCareExtension",
+    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter"
   },
   {
     "url" : "http://dips.no/fhir/R4/ValueSet/OrganizationAccessTypes",
@@ -259,235 +256,127 @@
     "systems" : ["urn:oid:1.3.6.1.4.1.9038.52.3508"]
   },
   {
-    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBloodPressureMeasurementMethod",
+    "url" : "http://dips.no/fhir/ValueSet/DIPSLocation",
     "version" : "0.1.0",
     "status" : "draft",
-    "name" : "NoDomainVitalSignsObservationBloodPressureMeasurementMethod",
-    "title" : "NoDomainVitalSignsObservationBloodPressureMeasurementMethod",
-    "description" : "Codes representing measurement method for HeartRate",
-    "systems" : ["http://snomed.info/sct"],
+    "name" : "DIPSLocation",
+    "title" : "DIPSLocation",
+    "description" : "DIPSLocation",
+    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSLocation"],
     "uses" : {
     },
-    "ValueSet-NoImplVitalSignsObservationBloodPressureMeasurementMethod.html" : "NoImplVitalSignsObservationBloodPressureMeasurementMethod"
+    "StructureDefinition-DIPSVitalSignsLocation.html" : "DIPSVitalSignsLocation"
   },
   {
-    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBloodpressureBodyPosition",
+    "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsHeartRhythmIrregularity",
     "version" : "0.1.0",
     "status" : "draft",
-    "name" : "NoDomainVitalSignsObservationBloodpressureBodyPosition",
-    "title" : "NoDomainVitalSignsObservationBloodpressureBodyPosition",
-    "description" : "Codes representing body position for blood pressure",
-    "systems" : ["http://snomed.info/sct"]
-  },
-  {
-    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBloodpressureBodySite",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoDomainVitalSignsObservationBloodpressureBodySite",
-    "title" : "NoDomainVitalSignsObservationBloodpressureBodySite",
-    "description" : "Codes representing body site for blood pressure",
-    "systems" : ["http://snomed.info/sct"],
-    "uses" : {
-    },
-    "StructureDefinition-NoImplVitalSignsObservationBloodpressure.html" : "NoImplVitalSignsObservationBloodpressure"
-  },
-  {
-    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBodyExposure",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoDomainVitalSignsObservationBodyExposure",
-    "title" : "NoDomainVitalSignsObservationBodyExposure",
-    "description" : "Codes representing body exposure",
-    "systems" : ["http://snomed.info/sct"]
-  },
-  {
-    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBodyHeightBodyPosition",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoDomainVitalSignsObservationBodyHeightBodyPosition",
-    "title" : "NoDomainVitalSignsObservationBodyHeightBodyPosition",
-    "description" : "Codes representing body position for body height",
-    "systems" : ["http://snomed.info/sct"]
-  },
-  {
-    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationBodyTempBodySite",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoDomainVitalSignsObservationBodyTempBodySite",
-    "title" : "NoDomainVitalSignsObservationBodyTempBodySite",
-    "description" : "Codes representing body site for body temperature",
-    "systems" : ["http://snomed.info/sct"],
-    "uses" : {
-    },
-    "StructureDefinition-NoImplVitalSignsObservationBodyTemp.html" : "NoImplVitalSignsObservationBodyTemp"
-  },
-  {
-    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationClothingState",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoDomainVitalSignsObservationClothingState",
-    "title" : "NoDomainVitalSignsObservationClothingState",
-    "description" : "Codes representing level of clothing",
-    "systems" : ["http://snomed.info/sct"],
-    "uses" : {
-    },
-    "StructureDefinition-NoImplVitalSignsObservationClothingState.html" : "NoImplVitalSignsObservationClothingState"
-  },
-  {
-    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationCuffsize",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoDomainVitalSignsObservationCuffsize",
-    "title" : "NoDomainVitalSignsObservationCuffsize",
-    "description" : "Codes representing cuff size",
-    "systems" : ["http://snomed.info/sct"]
-  },
-  {
-    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationDiastolicendPoint",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoDomainVitalSignsObservationDiastolicendPoint",
-    "title" : "NoDomainVitalSignsObservationDiastolicendPoint",
-    "description" : "Codes representing Diastolic end point",
-    "systems" : ["http://snomed.info/sct"]
-  },
-  {
-    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationHeartRateBodySite",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoDomainVitalSignsObservationHeartRateBodySite",
-    "title" : "NoDomainVitalSignsObservationHeartRateBodySite",
-    "description" : "Codes representing body site for heart rate",
-    "systems" : ["http://snomed.info/sct"],
-    "uses" : {
-    },
-    "StructureDefinition-NoImplVitalSignsObservationHeartRate.html" : "NoImplVitalSignsObservationHeartRate"
-  },
-  {
-    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationHeartRateMeasurementMethod",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoDomainVitalSignsObservationHeartRateMeasurementMethod",
-    "title" : "NoDomainVitalSignsObservationHeartRateMeasurementMethod",
-    "description" : "Codes representing measurement method for HeartRate",
-    "systems" : ["http://snomed.info/sct"],
-    "uses" : {
-    },
-    "ValueSet-NoImplVitalSignsObservationHeartRateMeasurementMethod.html" : "NoImplVitalSignsObservationHeartRateMeasurementMethod"
-  },
-  {
-    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationHeartRatePulseBodyPosition",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoDomainVitalSignsObservationHeartRatePulseBodyPosition",
-    "title" : "NoDomainVitalSignsObservationHeartRatePulseBodyPosition",
-    "description" : "Codes representing body position for heart rate or Pulse",
-    "systems" : ["http://snomed.info/sct"]
-  },
-  {
-    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationHeartRhythmIrregularity",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoDomainVitalSignsObservationHeartRhythmIrregularity",
-    "title" : "NoDomainVitalSignsObservationHeartRhythmIrregularity",
+    "name" : "DIPSVitalSignsHeartRhythmIrregularity",
+    "title" : "DIPSVitalSignsHeartRhythmIrregularity",
     "description" : "Codes representing heart rhythm irregularity for heart rate",
-    "systems" : ["http://snomed.info/sct"]
-  },
-  {
-    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationPulseBodySite",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoDomainVitalSignsObservationPulseBodySite",
-    "title" : "NoDomainVitalSignsObservationPulseBodySite",
-    "description" : "Codes representing body site for pulse",
     "systems" : ["http://snomed.info/sct"],
     "uses" : {
     },
-    "ValueSet-NoImplVitalSignsObservationPulseBodySite.html" : "NoImplVitalSignsObservationPulseBodySite"
+    "StructureDefinition-DIPSVitalSignsHeartRhythmIrregularity.html" : "DIPSVitalSignsHeartRhythmIrregularity"
   },
   {
-    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationPulseMeasurementMethod",
+    "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationBloodPressureMeasurementMethod",
     "version" : "0.1.0",
     "status" : "draft",
-    "name" : "NoDomainVitalSignsObservationPulseMeasurementMethod",
-    "title" : "NoDomainVitalSignsObservationPulseMeasurementMethod",
-    "description" : "Codes representing measurement method for HeartRate",
+    "name" : "DIPSVitalSignsObservationBloodPressureMeasurementMethod",
+    "title" : null,
+    "description" : "Codes representing measurement method",
+    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSMeasurementMethod",
+    "http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSVitalSignsObservationBloodpressure.html" : "DIPS Vital Signs Observation - Blood Pressure"
+  },
+  {
+    "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationBodyMassIndexFormula",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSVitalSignsObservationBodyMassIndexFormula",
+    "title" : "DIPSVitalSignsObservationBodyMassIndexFormula",
+    "description" : "Value set for DIPS Body Mass Index Formula Measurment methods",
+    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSVitalSignsObservationBodyMassIndex.html" : "DIPS Vital Signs Observation - Body Mass Index(BMI)"
+  },
+  {
+    "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationBodySite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSVitalSignsObservationBodySite",
+    "title" : "DIPSVitalSignsObservationBodySite",
+    "description" : "Value set for DIPS Body Mass Index Formula Measurment methods",
     "systems" : ["http://snomed.info/sct"],
     "uses" : {
     },
-    "ValueSet-NoImplVitalSignsObservationPulseMeasurementMethod.html" : "NoImplVitalSignsObservationPulseMeasurementMethod"
+    "StructureDefinition-DIPSVitalSignsObservationBodyTemp.html" : "DIPS Vital Signs Observation - Body Temperature"
   },
   {
-    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationPulseRhythm",
+    "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationConsciousness",
     "version" : "0.1.0",
     "status" : "draft",
-    "name" : "NoDomainVitalSignsObservationPulseRhythm",
-    "title" : "NoDomainVitalSignsObservationPulseRhythm",
-    "description" : "Codes representing  rhythm of Pulse",
+    "name" : "DIPSVitalSignsObservationConsciousness",
+    "title" : "SNOMED CT Consciousness Structures",
+    "description" : "Codes representing consciousness",
+    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSVitalSignsObservationConsciousness.html" : "DIPS Vital Signs Observation - Level of Consciousness"
+  },
+  {
+    "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationHeartRateMeasurementMethod",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSVitalSignsObservationHeartRateMeasurementMethod",
+    "title" : null,
+    "description" : "Codes representing measurement method",
+    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSMeasurementMethod",
+    "http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSVitalSignsObservationHeartRate.html" : "DIPS Vital Signs Observation - Heart Rate"
+  },
+  {
+    "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationPrePostduktal",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSVitalSignsObservationPrePostduktal",
+    "title" : "DIPSVitalSignsObservationPrePostduktal",
+    "description" : "Codes representing pre/post ductal",
+    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSVitalSignsObservationPrePostduktal.html" : "DIPSVitalSignsObservationPrePostduktal"
+  },
+  {
+    "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationPulseBodySite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSVitalSignsObservationPulseBodySite",
+    "title" : "DIPSVitalSignsObservationPulsBodySite",
+    "description" : "Codes representing Body site for Pulse",
     "systems" : ["http://snomed.info/sct"],
     "uses" : {
     },
-    "StructureDefinition-NoImplVitalSignsObservationPulseRhythm.html" : "NoImplVitalSignsObservationPulseRhythm"
+    "StructureDefinition-DIPSVitalSignsObservationPulse.html" : "DIPS Vital Signs Observation - Pulse"
   },
   {
-    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationPulseRhythmIrregularity",
+    "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationPulseMeasurementMethod",
     "version" : "0.1.0",
     "status" : "draft",
-    "name" : "NoDomainVitalSignsObservationPulseRhythmIrregularity",
-    "title" : "NoDomainVitalSignsObservationPulseRhythmIrregularity",
-    "description" : "Codes representing heart rhythm irregularity for Pulse",
-    "systems" : ["http://snomed.info/sct"]
-  },
-  {
-    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationRespirationRateBodyPosition",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoDomainVitalSignsObservationRespirationRateBodyPosition",
-    "title" : "NoDomainVitalSignsObservationRespirationRateBodyPosition",
-    "description" : "Codes representing body position for respiration rate",
-    "systems" : ["http://snomed.info/sct"]
-  },
-  {
-    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationRespirationRateDepth",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoDomainVitalSignsObservationRespirationRateDepth",
-    "title" : "NoDomainVitalSignsObservationRespirationRateDepth",
-    "description" : "Codes representing depth for respiration rate",
-    "systems" : ["http://snomed.info/sct"],
+    "name" : "DIPSVitalSignsObservationPulseMeasurementMethod",
+    "title" : null,
+    "description" : "Codes representing measurement method",
+    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSMeasurementMethod",
+    "http://snomed.info/sct"],
     "uses" : {
     },
-    "StructureDefinition-NoImplVitalSignsObservationRespirationDepth.html" : "NoImplVitalSignsObservationRespirationDepth"
-  },
-  {
-    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationRespirationRegularity",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoDomainVitalSignsObservationRespirationRegularity",
-    "title" : "NoDomainVitalSignsObservationRespirationRegularity",
-    "description" : "Codes representing Respiration Regularity",
-    "systems" : ["http://snomed.info/sct"],
-    "uses" : {
-    },
-    "StructureDefinition-NoImplVitalSignsObservationRespirationRegularity.html" : "NoImplVitalSignsObservationRespirationRegularity"
-  },
-  {
-    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationSleepStatus",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoDomainVitalSignsObservationSleepStatus",
-    "title" : "NoDomainVitalSignsObservationSleepStatus",
-    "description" : "Codes representing Sleep Status",
-    "systems" : ["http://snomed.info/sct"]
-  },
-  {
-    "url" : "http://hl7.no/fhir/ValueSet/NoDomainVitalSignsObservationSpontaneousBreathing",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoDomainVitalSignsObservationSpontaneousBreathing",
-    "title" : "NoDomainVitalSignsObservationSpontaneousBreathing",
-    "description" : "Codes representing Respiration Spontaneous breathing",
-    "systems" : ["http://snomed.info/sct"]
+    "StructureDefinition-DIPSVitalSignsObservationPulse.html" : "DIPS Vital Signs Observation - Pulse"
   },
   {
     "url" : "http://hl7.no/fhir/ValueSet/no-basis-family-relation",
@@ -526,6 +415,102 @@
     "StructureDefinition-DIPSRelatedPerson.html" : "DIPSRelatedPerson"
   },
   {
+    "url" : "http://hl7.no/fhir/no-domain/vitalsigns/ValueSet/NoDomainVitalSignsBloodPressureMeasurementMethodValueSet",
+    "version" : "0.9.74",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsBloodPressureMeasurementMethodValueSet",
+    "title" : "NoDomainVitalSignsBloodPressureMeasurementMethod-ValueSet",
+    "description" : "Codes representing measurement method for HeartRate",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "ValueSet-DIPSVitalSignsObservationBloodPressureMeasurementMethod.html" : "DIPSVitalSignsObservationBloodPressureMeasurementMethod"
+  },
+  {
+    "url" : "http://hl7.no/fhir/no-domain/vitalsigns/ValueSet/NoDomainVitalSignsBloodpressureBodySiteValueSet",
+    "version" : "0.9.74",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsBloodpressureBodySiteValueSet",
+    "title" : "NoDomainVitalSignsBloodpressureBodySite-ValueSet",
+    "description" : "Codes representing body site for blood pressure",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSVitalSignsObservationBloodpressure.html" : "DIPS Vital Signs Observation - Blood Pressure"
+  },
+  {
+    "url" : "http://hl7.no/fhir/no-domain/vitalsigns/ValueSet/NoDomainVitalSignsBodyTempBodySiteValueSet",
+    "version" : "0.9.74",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsBodyTempBodySiteValueSet",
+    "title" : "NoDomainVitalSignsBodyTempBodySite-ValueSet",
+    "description" : "Codes representing body site for body temperature",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSVitalSignsObservationBodyTemp.html" : "DIPS Vital Signs Observation - Body Temperature"
+  },
+  {
+    "url" : "http://hl7.no/fhir/no-domain/vitalsigns/ValueSet/NoDomainVitalSignsHeartRateBodySiteValueSet",
+    "version" : "0.9.74",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsHeartRateBodySiteValueSet",
+    "title" : "NoDomainVitalSignsHeartRateBodySite-ValueSet",
+    "description" : "Codes representing body site for heart rate",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSVitalSignsObservationHeartRate.html" : "DIPS Vital Signs Observation - Heart Rate"
+  },
+  {
+    "url" : "http://hl7.no/fhir/no-domain/vitalsigns/ValueSet/NoDomainVitalSignsHeartRateMeasurementMethodValueSet",
+    "version" : "0.9.74",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsHeartRateMeasurementMethodValueSet",
+    "title" : "NoDomainVitalSignsHeartRateMeasurementMethod-ValueSet",
+    "description" : "Codes representing measurement method for HeartRate",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "ValueSet-DIPSVitalSignsObservationHeartRateMeasurementMethod.html" : "DIPSVitalSignsObservationHeartRateMeasurementMethod"
+  },
+  {
+    "url" : "http://hl7.no/fhir/no-domain/vitalsigns/ValueSet/NoDomainVitalSignsHeartRhythmIrregularityValueSet",
+    "version" : "0.9.74",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsHeartRhythmIrregularityValueSet",
+    "title" : "NoDomainVitalSignsHeartRhythmIrregularity-ValueSet",
+    "description" : "Codes representing heart rhythm irregularity for heart rate",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "ValueSet-DIPSVitalSignsHeartRhythmIrregularity.html" : "DIPSVitalSignsHeartRhythmIrregularity"
+  },
+  {
+    "url" : "http://hl7.no/fhir/no-domain/vitalsigns/ValueSet/NoDomainVitalSignsPulseBodySiteValueSet",
+    "version" : "0.9.74",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsPulseBodySiteValueSet",
+    "title" : "NoDomainVitalSignsPulseBodySite-ValueSet",
+    "description" : "Codes representing body site for pulse",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "ValueSet-DIPSVitalSignsObservationPulseBodySite.html" : "DIPSVitalSignsObservationPulsBodySite"
+  },
+  {
+    "url" : "http://hl7.no/fhir/no-domain/vitalsigns/ValueSet/NoDomainVitalSignsPulseMeasurementMethodValueSet",
+    "version" : "0.9.74",
+    "status" : "draft",
+    "name" : "NoDomainVitalSignsPulseMeasurementMethodValueSet",
+    "title" : "NoDomainVitalSignsPulseMeasurementMethod-ValueSet",
+    "description" : "Codes representing measurement method for HeartRate",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "ValueSet-DIPSVitalSignsObservationPulseMeasurementMethod.html" : "DIPSVitalSignsObservationPulseMeasurementMethod"
+  },
+  {
     "url" : "http://hl7.org/fhir/ValueSet/address-type",
     "version" : "4.0.1",
     "status" : "active",
@@ -537,15 +522,15 @@
     "sources" : ["2.16.840.1.113883.4.642.3.69"],
     "uses" : {
     },
-    "StructureDefinition-DIPSHealthcareService.html" : "DIPSHealthcareService",
-    "StructureDefinition-DIPSRelatedPerson.html" : "DIPSRelatedPerson",
-    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation",
-    "StructureDefinition-DIPSLocation.html" : "DIPSLocation",
-    "StructureDefinition-DIPSPerson.html" : "DIPSPerson",
-    "StructureDefinition-DIPSHealthcareServiceAddress.html" : "DIPSHealthcareServiceAddress",
     "StructureDefinition-DIPSEncounterOrganization.html" : "DIPSEncounterOrganization",
+    "StructureDefinition-DIPSHealthcareService.html" : "DIPSHealthcareService",
+    "StructureDefinition-DIPSHealthcareServiceAddress.html" : "DIPSHealthcareServiceAddress",
+    "StructureDefinition-DIPSPerson.html" : "DIPSPerson",
+    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization",
+    "StructureDefinition-DIPSLocation.html" : "DIPSLocation",
     "StructureDefinition-DIPSPatient.html" : "DIPSPatient",
-    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization"
+    "StructureDefinition-DIPSRelatedPerson.html" : "DIPSRelatedPerson",
+    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/address-use",
@@ -559,15 +544,15 @@
     "sources" : ["2.16.840.1.113883.4.642.3.67"],
     "uses" : {
     },
-    "StructureDefinition-DIPSHealthcareService.html" : "DIPSHealthcareService",
-    "StructureDefinition-DIPSRelatedPerson.html" : "DIPSRelatedPerson",
-    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation",
-    "StructureDefinition-DIPSLocation.html" : "DIPSLocation",
-    "StructureDefinition-DIPSPerson.html" : "DIPSPerson",
-    "StructureDefinition-DIPSHealthcareServiceAddress.html" : "DIPSHealthcareServiceAddress",
     "StructureDefinition-DIPSEncounterOrganization.html" : "DIPSEncounterOrganization",
+    "StructureDefinition-DIPSHealthcareService.html" : "DIPSHealthcareService",
+    "StructureDefinition-DIPSHealthcareServiceAddress.html" : "DIPSHealthcareServiceAddress",
+    "StructureDefinition-DIPSPerson.html" : "DIPSPerson",
+    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization",
+    "StructureDefinition-DIPSLocation.html" : "DIPSLocation",
     "StructureDefinition-DIPSPatient.html" : "DIPSPatient",
-    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization"
+    "StructureDefinition-DIPSRelatedPerson.html" : "DIPSRelatedPerson",
+    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
@@ -581,13 +566,17 @@
     "sources" : ["2.16.840.1.113883.4.642.3.1"],
     "uses" : {
     },
-    "StructureDefinition-DIPSSubjectReference.html" : "DIPSSubjectReference",
-    "StructureDefinition-DIPSRelatedPerson.html" : "DIPSRelatedPerson",
+    "StructureDefinition-DIPSVitalSignsObservationSubjectReference.html" : "DIPSVitalSignsObservationSubjectReference",
     "StructureDefinition-DIPSPerson.html" : "DIPSPerson",
-    "StructureDefinition-DIPSPatient.html" : "DIPSPatient",
+    "StructureDefinition-DIPSSubjectReference.html" : "DIPSSubjectReference",
+    "StructureDefinition-DIPSDiagnosticReportPractitionerReference.html" : "DIPSDiagnosticReportPractitionerReference",
     "StructureDefinition-DIPSPractitioner.html" : "DIPSPractitioner",
+    "StructureDefinition-DIPSObservationSubjectReference.html" : "DIPSObservationSubjectReference",
+    "StructureDefinition-DIPSEncounterSubjectReference.html" : "DIPSEncounterSubjectReference",
     "StructureDefinition-DIPSBasisPractitionerR4.html" : "DIPSBasisPractitionerR4",
-    "StructureDefinition-DIPSEncounterSubjectReference.html" : "DIPSEncounterSubjectReference"
+    "StructureDefinition-DIPSDiagnosticReportSubjectReference.html" : "DIPSDiagnosticReportSubjectReference",
+    "StructureDefinition-DIPSPatient.html" : "DIPSPatient",
+    "StructureDefinition-DIPSRelatedPerson.html" : "DIPSRelatedPerson"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/appointment-cancellation-reason",
@@ -629,16 +618,17 @@
     "sources" : ["2.16.840.1.113883.4.642.3.141"],
     "uses" : {
     },
-    "StructureDefinition-NoImplVitalSignsObservationGCS.html" : "NoImplVitalSignsObservationGCS",
-    "StructureDefinition-NoImplVitalSignsObservationBodyMassIndex.html" : "NoImplVitalSignsObservationBodyMassIndex",
-    "StructureDefinition-NoImplVitalSignsObservationRespirationRate.html" : "NoImplVitalSignsObservationRespirationRate",
+    "StructureDefinition-DIPSVitalSignsObservationBodyWeight.html" : "DIPS Vital Signs Observation - Body Weight",
+    "StructureDefinition-DIPSVitalSignsObservationOxygenSaturation.html" : "DIPS Vital Signs Observation - Oxygen Saturation",
+    "StructureDefinition-DIPSVitalSignsObservationRespirationRate.html" : "DIPS Vital Signs Observation - Respiration Rate",
+    "StructureDefinition-DIPSVitalSignsObservationConsciousness.html" : "DIPS Vital Signs Observation - Level of Consciousness",
+    "StructureDefinition-DIPSVitalSignsObservationBodyHeight.html" : "DIPS Vital Signs Observation - Body Height",
+    "StructureDefinition-DIPSVitalSignsObservationQSOFAScore.html" : "DIPSVitalSignsObservationQSOFAScore",
+    "StructureDefinition-DIPSVitalSignsObservationGCS.html" : "DIPSVitalSignsObservationGCS",
     "StructureDefinition-DIPSEncounterServiceRequest.html" : "DIPSEncounterServiceRequest",
-    "StructureDefinition-NoImplVitalSignsObservationBodyWeight.html" : "NoImplVitalSignsObservationBodyWeight",
-    "StructureDefinition-NoImplVitalSignsObservationConsciousness.html" : "NoImplVitalSignsObservationConsciousness",
-    "StructureDefinition-NoImplVitalSignsObservationOxygenSaturation.html" : "NoImplVitalSignsObservationOxygenSaturation",
-    "StructureDefinition-NoImplVitalSignsObservationBodyHeight.html" : "NoImplVitalSignsObservationBodyHeight",
-    "StructureDefinition-NoImplVitalSignsObservationNews2Score.html" : "NoImplVitalSignsObservationNews2Score",
-    "StructureDefinition-NoImplVitalSignsObservationQSOFAScore.html" : "NoImplVitalSignsObservationQSOFAScore"
+    "StructureDefinition-DIPSVitalSignsObservationNews2Score.html" : "DIPS Vital Signs Observation - NEWS2",
+    "StructureDefinition-DIPSVitalSignsObservationBodyMassIndex.html" : "DIPS Vital Signs Observation - Body Mass Index(BMI)",
+    "StructureDefinition-DIPSBasisLabObservationR4.html" : "DIPSBasisLabObservationR4"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
@@ -654,10 +644,26 @@
     },
     "StructureDefinition-SelfBookingSlot.html" : "SelfBookingSlot",
     "StructureDefinition-DIPSHealthcareService.html" : "DIPSHealthcareService",
+    "StructureDefinition-DIPSVitalSignsPerformerAuthorReference.html" : "DIPSVitalSignsPerformerAuthorReference",
+    "StructureDefinition-DIPSAppointmentSchedule.html" : "DIPSAppointmentSchedule",
     "StructureDefinition-DIPSPractitionerRole.html" : "DIPSPractitionerRole",
     "StructureDefinition-DIPSEncounterPractitionerReference.html" : "DIPSEncounterPractitionerReference",
-    "StructureDefinition-DIPSAppointmentSchedule.html" : "DIPSAppointmentSchedule",
+    "StructureDefinition-DIPSBasisPractitionerRoleR4Reference.html" : "DIPSBasisPractitionerRoleR4Reference",
     "StructureDefinition-DIPSAppointment.html" : "DIPSAppointment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SNOMEDCTClinicalFindings",
+    "title" : "SNOMED CT Clinical Findings",
+    "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.232"],
+    "sources" : ["2.16.840.1.113883.4.642.3.232"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSDiagnosticReport.html" : "DIPS DiagnosticReport"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/common-tags",
@@ -671,10 +677,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.79"],
     "uses" : {
     },
+    "StructureDefinition-DIPSPerson.html" : "DIPSPerson",
     "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
     "StructureDefinition-DIPSPractitionerRole.html" : "DIPSPractitionerRole",
-    "StructureDefinition-NoImplVitalSignsObservationRespirationRate.html" : "NoImplVitalSignsObservationRespirationRate",
-    "StructureDefinition-DIPSPerson.html" : "DIPSPerson",
     "StructureDefinition-DIPSPatient.html" : "DIPSPatient"
   },
   {
@@ -689,12 +694,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.71"],
     "uses" : {
     },
-    "StructureDefinition-DIPSHealthcareService.html" : "DIPSHealthcareService",
-    "StructureDefinition-DIPSPractitionerRole.html" : "DIPSPractitionerRole",
-    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation",
     "StructureDefinition-DIPSEncounterOrganization.html" : "DIPSEncounterOrganization",
+    "StructureDefinition-DIPSHealthcareService.html" : "DIPSHealthcareService",
+    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization",
+    "StructureDefinition-DIPSPractitionerRole.html" : "DIPSPractitionerRole",
     "StructureDefinition-DIPSPatient.html" : "DIPSPatient",
-    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization"
+    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -708,12 +713,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.73"],
     "uses" : {
     },
-    "StructureDefinition-DIPSHealthcareService.html" : "DIPSHealthcareService",
-    "StructureDefinition-DIPSPractitionerRole.html" : "DIPSPractitionerRole",
-    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation",
     "StructureDefinition-DIPSEncounterOrganization.html" : "DIPSEncounterOrganization",
+    "StructureDefinition-DIPSHealthcareService.html" : "DIPSHealthcareService",
+    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization",
+    "StructureDefinition-DIPSPractitionerRole.html" : "DIPSPractitionerRole",
     "StructureDefinition-DIPSPatient.html" : "DIPSPatient",
-    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization"
+    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -729,21 +734,10 @@
     },
     "StructureDefinition-DIPSEncounterOrganization.html" : "DIPSEncounterOrganization",
     "StructureDefinition-DipsOrganizationRef.html" : "DipsOrganizationRef",
-    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/country",
-    "version" : "5.0.0",
-    "status" : "draft",
-    "name" : "CountryValueSet",
-    "title" : "Country ValueSet",
-    "description" : "This value set defines a base set of codes for countries.   \r\n   \r\n   Note: The codes for countries are taken from    [ISO 3166](https://www.iso.org/iso-3166-country-codes.html).",
-    "systems" : ["urn:iso:std:iso:3166"],
-    "oids" : ["2.16.840.1.113883.4.642.3.3297"],
-    "sources" : ["2.16.840.1.113883.4.642.3.3297"],
-    "uses" : {
-    },
-    "StructureDefinition-DIPSPatient.html" : "DIPSPatient"
+    "StructureDefinition-DIPSBasisOrganizationR4Reference.html" : "DIPSBasisOrganizationR4Reference",
+    "StructureDefinition-DIPSVitalSignsObservationOrganizationReference.html" : "DIPSVitalSignsObservationOrganizationReference",
+    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization",
+    "StructureDefinition-DIPSDiagnosticReportOrganizationReference.html" : "DIPSDiagnosticReportOrganizationReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
@@ -757,19 +751,20 @@
     "sources" : ["2.16.840.1.113883.4.642.3.5"],
     "uses" : {
     },
-    "StructureDefinition-NoImplVitalSignsObservationGCS.html" : "NoImplVitalSignsObservationGCS",
-    "StructureDefinition-NoImplVitalSignsObservationBodyMassIndex.html" : "NoImplVitalSignsObservationBodyMassIndex",
-    "StructureDefinition-NoImplVitalSignsObservationBloodpressure.html" : "NoImplVitalSignsObservationBloodpressure",
-    "StructureDefinition-NoImplVitalSignsObservationBodyWeight.html" : "NoImplVitalSignsObservationBodyWeight",
-    "StructureDefinition-NoImplVitalSignsObservationOxygenSaturation.html" : "NoImplVitalSignsObservationOxygenSaturation",
-    "StructureDefinition-NoImplVitalSignsObservationNews2Score.html" : "NoImplVitalSignsObservationNews2Score",
-    "StructureDefinition-NoImplVitalSignsObservationHeartRate.html" : "NoImplVitalSignsObservationHeartRate",
-    "StructureDefinition-NoImplVitalSignsObservationRespirationRate.html" : "NoImplVitalSignsObservationRespirationRate",
-    "StructureDefinition-NoImplVitalSignsObservationConsciousness.html" : "NoImplVitalSignsObservationConsciousness",
-    "StructureDefinition-NoImplVitalSignsObservationPulse.html" : "NoImplVitalSignsObservationPulse",
-    "StructureDefinition-NoImplVitalSignsObservationBodyHeight.html" : "NoImplVitalSignsObservationBodyHeight",
-    "StructureDefinition-NoImplVitalSignsObservationBodyTemp.html" : "NoImplVitalSignsObservationBodyTemp",
-    "StructureDefinition-NoImplVitalSignsObservationQSOFAScore.html" : "NoImplVitalSignsObservationQSOFAScore"
+    "StructureDefinition-DIPSVitalSignsObservationHeartRate.html" : "DIPS Vital Signs Observation - Heart Rate",
+    "StructureDefinition-DIPSVitalSignsObservationOxygenSaturation.html" : "DIPS Vital Signs Observation - Oxygen Saturation",
+    "StructureDefinition-DIPSVitalSignsObservationRespirationRate.html" : "DIPS Vital Signs Observation - Respiration Rate",
+    "StructureDefinition-DIPSVitalSignsObservationConsciousness.html" : "DIPS Vital Signs Observation - Level of Consciousness",
+    "StructureDefinition-DIPSVitalSignsObservationBodyHeight.html" : "DIPS Vital Signs Observation - Body Height",
+    "StructureDefinition-DIPSVitalSignsObservationGCS.html" : "DIPSVitalSignsObservationGCS",
+    "StructureDefinition-DIPSVitalSignsObservationNews2Score.html" : "DIPS Vital Signs Observation - NEWS2",
+    "StructureDefinition-DIPSVitalSignsObservationPulse.html" : "DIPS Vital Signs Observation - Pulse",
+    "StructureDefinition-DIPSBasisLabObservationR4.html" : "DIPSBasisLabObservationR4",
+    "StructureDefinition-DIPSVitalSignsObservationBodyWeight.html" : "DIPS Vital Signs Observation - Body Weight",
+    "StructureDefinition-DIPSVitalSignsObservationBodyTemp.html" : "DIPS Vital Signs Observation - Body Temperature",
+    "StructureDefinition-DIPSVitalSignsObservationQSOFAScore.html" : "DIPSVitalSignsObservationQSOFAScore",
+    "StructureDefinition-DIPSVitalSignsObservationBloodpressure.html" : "DIPS Vital Signs Observation - Blood Pressure",
+    "StructureDefinition-DIPSVitalSignsObservationBodyMassIndex.html" : "DIPS Vital Signs Observation - Body Mass Index(BMI)"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -783,12 +778,14 @@
     "sources" : ["2.16.840.1.113883.4.642.3.512"],
     "uses" : {
     },
+    "StructureDefinition-DIPSLocationReference.html" : "DIPSLocationReference",
     "StructureDefinition-DIPSHealthcareService.html" : "DIPSHealthcareService",
+    "StructureDefinition-DIPSVitalSignsPerformerAuthorReference.html" : "DIPSVitalSignsPerformerAuthorReference",
     "StructureDefinition-DIPSPractitionerRole.html" : "DIPSPractitionerRole",
     "StructureDefinition-DIPSEncounterPractitionerReference.html" : "DIPSEncounterPractitionerReference",
-    "StructureDefinition-DIPSLocationReference.html" : "DIPSLocationReference",
-    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation",
-    "StructureDefinition-DIPSLocation.html" : "DIPSLocation"
+    "StructureDefinition-DIPSLocation.html" : "DIPSLocation",
+    "StructureDefinition-DIPSBasisPractitionerRoleR4Reference.html" : "DIPSBasisPractitionerRoleR4Reference",
+    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
@@ -804,7 +801,36 @@
     },
     "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
     "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
-    "StructureDefinition-DIPSRemoteMonitoring.html" : "DIPS Remote Monitoring"
+    "StructureDefinition-DIPSRemoteMonitoring.html" : "DIPS Remote Monitoring",
+    "StructureDefinition-DIPSVitalSignsObservationEncounterReference.html" : "DIPSVitalSignsObservationEncounterReference"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/diagnostic-report-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DiagnosticReportStatus",
+    "title" : "DiagnosticReportStatus",
+    "description" : "The status of the diagnostic report.",
+    "systems" : ["http://hl7.org/fhir/diagnostic-report-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.235"],
+    "sources" : ["2.16.840.1.113883.4.642.3.235"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSDiagnosticReport.html" : "DIPS DiagnosticReport"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/diagnostic-service-sections",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DiagnosticServiceSectionCodes",
+    "title" : "Diagnostic Service Section Codes",
+    "description" : "This value set includes all the codes in HL7 V2 table 0074.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0074"],
+    "oids" : ["2.16.840.1.113883.4.642.3.234"],
+    "sources" : ["2.16.840.1.113883.4.642.3.234"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSDiagnosticReport.html" : "DIPS DiagnosticReport"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
@@ -819,7 +845,8 @@
     "uses" : {
     },
     "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
-    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter"
+    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
+    "StructureDefinition-DIPSVitalSignsObservationEncounterReference.html" : "DIPSVitalSignsObservationEncounterReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
@@ -834,7 +861,8 @@
     "uses" : {
     },
     "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
-    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter"
+    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
+    "StructureDefinition-DIPSVitalSignsObservationEncounterReference.html" : "DIPSVitalSignsObservationEncounterReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
@@ -849,7 +877,8 @@
     "uses" : {
     },
     "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
-    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter"
+    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
+    "StructureDefinition-DIPSVitalSignsObservationEncounterReference.html" : "DIPSVitalSignsObservationEncounterReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
@@ -864,7 +893,8 @@
     "uses" : {
     },
     "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
-    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter"
+    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
+    "StructureDefinition-DIPSVitalSignsObservationEncounterReference.html" : "DIPSVitalSignsObservationEncounterReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
@@ -880,8 +910,9 @@
     "uses" : {
     },
     "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
+    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
     "StructureDefinition-DIPSAppointment.html" : "DIPSAppointment",
-    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter"
+    "StructureDefinition-DIPSVitalSignsObservationEncounterReference.html" : "DIPSVitalSignsObservationEncounterReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
@@ -896,8 +927,9 @@
     "uses" : {
     },
     "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
+    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
     "StructureDefinition-DIPSAppointment.html" : "DIPSAppointment",
-    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter"
+    "StructureDefinition-DIPSVitalSignsObservationEncounterReference.html" : "DIPSVitalSignsObservationEncounterReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
@@ -912,7 +944,8 @@
     "uses" : {
     },
     "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
-    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter"
+    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
+    "StructureDefinition-DIPSVitalSignsObservationEncounterReference.html" : "DIPSVitalSignsObservationEncounterReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
@@ -928,7 +961,8 @@
     "uses" : {
     },
     "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
-    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter"
+    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
+    "StructureDefinition-DIPSVitalSignsObservationEncounterReference.html" : "DIPSVitalSignsObservationEncounterReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
@@ -943,7 +977,8 @@
     "uses" : {
     },
     "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
-    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter"
+    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
+    "StructureDefinition-DIPSVitalSignsObservationEncounterReference.html" : "DIPSVitalSignsObservationEncounterReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/encounter-type",
@@ -958,7 +993,8 @@
     "uses" : {
     },
     "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
-    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter"
+    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
+    "StructureDefinition-DIPSVitalSignsObservationEncounterReference.html" : "DIPSVitalSignsObservationEncounterReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/episode-of-care-status",
@@ -1000,49 +1036,63 @@
     "sources" : ["2.16.840.1.113883.4.642.3.45"],
     "uses" : {
     },
-    "StructureDefinition-NoImplVitalSignsObservationGCS.html" : "NoImplVitalSignsObservationGCS",
-    "StructureDefinition-NoImplVitalSignsObservationBodyMassIndex.html" : "NoImplVitalSignsObservationBodyMassIndex",
-    "StructureDefinition-DIPSLocationReference.html" : "DIPSLocationReference",
-    "StructureDefinition-DIPSLocation.html" : "DIPSLocation",
-    "StructureDefinition-DIPSRemoteMonitoring.html" : "DIPS Remote Monitoring",
-    "StructureDefinition-WardExtension.html" : "WardExtension",
-    "StructureDefinition-NoImplVitalSignsObservationHeartRate.html" : "NoImplVitalSignsObservationHeartRate",
-    "StructureDefinition-DIPSSubjectReference.html" : "DIPSSubjectReference",
-    "StructureDefinition-ReferredBy.html" : "ReferredBy",
-    "StructureDefinition-LocationExtension.html" : "LocationExtension",
-    "StructureDefinition-NoImplVitalSignsObservationRespirationRate.html" : "NoImplVitalSignsObservationRespirationRate",
-    "StructureDefinition-DIPSAppointmentSchedule.html" : "DIPSAppointmentSchedule",
-    "StructureDefinition-NoImplVitalSignsObservationPulse.html" : "NoImplVitalSignsObservationPulse",
-    "StructureDefinition-SectionExtension.html" : "SectionExtension",
-    "StructureDefinition-NoImplVitalSignsObservationBodyHeight.html" : "NoImplVitalSignsObservationBodyHeight",
-    "StructureDefinition-DIPSEncounterSubjectReference.html" : "DIPSEncounterSubjectReference",
-    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
-    "StructureDefinition-DIPSEncounterPractitionerReference.html" : "DIPSEncounterPractitionerReference",
-    "StructureDefinition-DipsLocationExtension.html" : "DipsLocationExtension",
-    "StructureDefinition-NoImplVitalSignsObservationBloodpressure.html" : "NoImplVitalSignsObservationBloodpressure",
-    "StructureDefinition-DIPSEncounterServiceRequest.html" : "DIPSEncounterServiceRequest",
-    "StructureDefinition-NoImplVitalSignsObservationBodyWeight.html" : "NoImplVitalSignsObservationBodyWeight",
-    "StructureDefinition-DIPSAppointment.html" : "DIPSAppointment",
-    "StructureDefinition-NoImplVitalSignsObservationOxygenSaturation.html" : "NoImplVitalSignsObservationOxygenSaturation",
-    "StructureDefinition-DIPSOrganizationReference.html" : "DIPSOrganizationReference",
-    "StructureDefinition-DIPSPatient.html" : "DIPSPatient",
-    "StructureDefinition-DIPSPractitioner.html" : "DIPSPractitioner",
-    "StructureDefinition-DIPSBasisPractitionerR4.html" : "DIPSBasisPractitionerR4",
-    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization",
-    "StructureDefinition-NoImplVitalSignsObservationNews2Score.html" : "NoImplVitalSignsObservationNews2Score",
-    "StructureDefinition-DIPSHealthcareService.html" : "DIPSHealthcareService",
-    "StructureDefinition-DIPSPractitionerRole.html" : "DIPSPractitionerRole",
-    "StructureDefinition-DIPSRelatedPerson.html" : "DIPSRelatedPerson",
-    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation",
-    "StructureDefinition-DIPSPerson.html" : "DIPSPerson",
-    "StructureDefinition-NoImplVitalSignsObservationConsciousness.html" : "NoImplVitalSignsObservationConsciousness",
-    "StructureDefinition-Department.html" : "Department",
     "StructureDefinition-DIPSEncounterOrganization.html" : "DIPSEncounterOrganization",
-    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
+    "StructureDefinition-DIPSLocationReference.html" : "DIPSLocationReference",
+    "StructureDefinition-DIPSVitalSignsObservationSubjectReference.html" : "DIPSVitalSignsObservationSubjectReference",
+    "StructureDefinition-DIPSVitalSignsObservationRespirationRate.html" : "DIPS Vital Signs Observation - Respiration Rate",
+    "StructureDefinition-Department.html" : "Department",
+    "StructureDefinition-DIPSLabsObservationReference.html" : "DIPSLabsObservationReference",
+    "StructureDefinition-SectionExtension.html" : "SectionExtension",
+    "StructureDefinition-DIPSPractitionerRole.html" : "DIPSPractitionerRole",
+    "StructureDefinition-DIPSJournalId.html" : "DIPSJournalId",
+    "StructureDefinition-DIPSVitalSignsObservationHeartRate.html" : "DIPS Vital Signs Observation - Heart Rate",
+    "StructureDefinition-DIPSVitalSignsObservationOxygenSaturation.html" : "DIPS Vital Signs Observation - Oxygen Saturation",
+    "StructureDefinition-DIPSVitalSignsObservationOrganizationReference.html" : "DIPSVitalSignsObservationOrganizationReference",
+    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization",
+    "StructureDefinition-DIPSEncounterSubjectReference.html" : "DIPSEncounterSubjectReference",
+    "StructureDefinition-DIPSRelatedPerson.html" : "DIPSRelatedPerson",
+    "StructureDefinition-DIPSVitalSignsPerformerAuthorReference.html" : "DIPSVitalSignsPerformerAuthorReference",
+    "StructureDefinition-DIPSOrganizationReference.html" : "DIPSOrganizationReference",
     "StructureDefinition-DipsOrganizationRef.html" : "DipsOrganizationRef",
-    "StructureDefinition-NoImplVitalSignsObservationBodyTemp.html" : "NoImplVitalSignsObservationBodyTemp",
+    "StructureDefinition-DIPSSubjectReference.html" : "DIPSSubjectReference",
+    "StructureDefinition-DIPSVitalSignsObservationBodyTemp.html" : "DIPS Vital Signs Observation - Body Temperature",
+    "StructureDefinition-DIPSObservationSubjectReference.html" : "DIPSObservationSubjectReference",
+    "StructureDefinition-DIPSVitalSignsObservationQSOFAScore.html" : "DIPSVitalSignsObservationQSOFAScore",
     "StructureDefinition-DepartmentExtension.html" : "DepartmentExtension",
-    "StructureDefinition-NoImplVitalSignsObservationQSOFAScore.html" : "NoImplVitalSignsObservationQSOFAScore"
+    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation",
+    "StructureDefinition-DIPSDiagnosticReport.html" : "DIPS DiagnosticReport",
+    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
+    "StructureDefinition-LocationExtension.html" : "LocationExtension",
+    "StructureDefinition-DIPSEncounterPractitionerReference.html" : "DIPSEncounterPractitionerReference",
+    "StructureDefinition-DIPSVitalSignsObservationPulse.html" : "DIPS Vital Signs Observation - Pulse",
+    "StructureDefinition-ReferredBy.html" : "ReferredBy",
+    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
+    "StructureDefinition-DIPSAppointment.html" : "DIPSAppointment",
+    "StructureDefinition-DIPSVitalSignsObservationBodyWeight.html" : "DIPS Vital Signs Observation - Body Weight",
+    "StructureDefinition-DIPSDiagnosticReportPractitionerReference.html" : "DIPSDiagnosticReportPractitionerReference",
+    "StructureDefinition-DIPSVitalSignsObservationBloodpressure.html" : "DIPS Vital Signs Observation - Blood Pressure",
+    "StructureDefinition-DIPSLocation.html" : "DIPSLocation",
+    "StructureDefinition-WardExtension.html" : "WardExtension",
+    "StructureDefinition-DIPSDiagnosticReportSubjectReference.html" : "DIPSDiagnosticReportSubjectReference",
+    "StructureDefinition-DipsLocationExtension.html" : "DipsLocationExtension",
+    "StructureDefinition-DIPSVitalSignsObservationBodyMassIndex.html" : "DIPS Vital Signs Observation - Body Mass Index(BMI)",
+    "StructureDefinition-DIPSVitalSignsObservationConsciousness.html" : "DIPS Vital Signs Observation - Level of Consciousness",
+    "StructureDefinition-DIPSPractitioner.html" : "DIPSPractitioner",
+    "StructureDefinition-DIPSVitalSignsObservationBodyHeight.html" : "DIPS Vital Signs Observation - Body Height",
+    "StructureDefinition-DIPSAppointmentSchedule.html" : "DIPSAppointmentSchedule",
+    "StructureDefinition-DIPSVitalSignsObservationGCS.html" : "DIPSVitalSignsObservationGCS",
+    "StructureDefinition-DIPSEncounterServiceRequest.html" : "DIPSEncounterServiceRequest",
+    "StructureDefinition-DIPSVitalSignsObservationNews2Score.html" : "DIPS Vital Signs Observation - NEWS2",
+    "StructureDefinition-DIPSBasisPractitionerRoleR4Reference.html" : "DIPSBasisPractitionerRoleR4Reference",
+    "StructureDefinition-DIPSDiagnosticReportOrganizationReference.html" : "DIPSDiagnosticReportOrganizationReference",
+    "StructureDefinition-DIPSBasisLabObservationR4.html" : "DIPSBasisLabObservationR4",
+    "StructureDefinition-DIPSHealthcareService.html" : "DIPSHealthcareService",
+    "StructureDefinition-DIPSBasisOrganizationR4Reference.html" : "DIPSBasisOrganizationR4Reference",
+    "StructureDefinition-DIPSPerson.html" : "DIPSPerson",
+    "StructureDefinition-DIPSBasisPractitionerR4.html" : "DIPSBasisPractitionerR4",
+    "StructureDefinition-DIPSPatient.html" : "DIPSPatient",
+    "StructureDefinition-DIPSRemoteMonitoring.html" : "DIPS Remote Monitoring",
+    "StructureDefinition-DIPSVitalSignsObservationEncounterReference.html" : "DIPSVitalSignsObservationEncounterReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -1056,49 +1106,63 @@
     "sources" : ["2.16.840.1.113883.4.642.3.57"],
     "uses" : {
     },
-    "StructureDefinition-NoImplVitalSignsObservationGCS.html" : "NoImplVitalSignsObservationGCS",
-    "StructureDefinition-NoImplVitalSignsObservationBodyMassIndex.html" : "NoImplVitalSignsObservationBodyMassIndex",
-    "StructureDefinition-DIPSLocationReference.html" : "DIPSLocationReference",
-    "StructureDefinition-DIPSLocation.html" : "DIPSLocation",
-    "StructureDefinition-DIPSRemoteMonitoring.html" : "DIPS Remote Monitoring",
-    "StructureDefinition-WardExtension.html" : "WardExtension",
-    "StructureDefinition-NoImplVitalSignsObservationHeartRate.html" : "NoImplVitalSignsObservationHeartRate",
-    "StructureDefinition-DIPSSubjectReference.html" : "DIPSSubjectReference",
-    "StructureDefinition-ReferredBy.html" : "ReferredBy",
-    "StructureDefinition-LocationExtension.html" : "LocationExtension",
-    "StructureDefinition-NoImplVitalSignsObservationRespirationRate.html" : "NoImplVitalSignsObservationRespirationRate",
-    "StructureDefinition-DIPSAppointmentSchedule.html" : "DIPSAppointmentSchedule",
-    "StructureDefinition-NoImplVitalSignsObservationPulse.html" : "NoImplVitalSignsObservationPulse",
-    "StructureDefinition-SectionExtension.html" : "SectionExtension",
-    "StructureDefinition-NoImplVitalSignsObservationBodyHeight.html" : "NoImplVitalSignsObservationBodyHeight",
-    "StructureDefinition-DIPSEncounterSubjectReference.html" : "DIPSEncounterSubjectReference",
-    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
-    "StructureDefinition-DIPSEncounterPractitionerReference.html" : "DIPSEncounterPractitionerReference",
-    "StructureDefinition-DipsLocationExtension.html" : "DipsLocationExtension",
-    "StructureDefinition-NoImplVitalSignsObservationBloodpressure.html" : "NoImplVitalSignsObservationBloodpressure",
-    "StructureDefinition-DIPSEncounterServiceRequest.html" : "DIPSEncounterServiceRequest",
-    "StructureDefinition-NoImplVitalSignsObservationBodyWeight.html" : "NoImplVitalSignsObservationBodyWeight",
-    "StructureDefinition-DIPSAppointment.html" : "DIPSAppointment",
-    "StructureDefinition-NoImplVitalSignsObservationOxygenSaturation.html" : "NoImplVitalSignsObservationOxygenSaturation",
-    "StructureDefinition-DIPSOrganizationReference.html" : "DIPSOrganizationReference",
-    "StructureDefinition-DIPSPatient.html" : "DIPSPatient",
-    "StructureDefinition-DIPSPractitioner.html" : "DIPSPractitioner",
-    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization",
-    "StructureDefinition-DIPSBasisPractitionerR4.html" : "DIPSBasisPractitionerR4",
-    "StructureDefinition-NoImplVitalSignsObservationNews2Score.html" : "NoImplVitalSignsObservationNews2Score",
-    "StructureDefinition-DIPSHealthcareService.html" : "DIPSHealthcareService",
-    "StructureDefinition-DIPSPractitionerRole.html" : "DIPSPractitionerRole",
-    "StructureDefinition-DIPSRelatedPerson.html" : "DIPSRelatedPerson",
-    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation",
-    "StructureDefinition-DIPSPerson.html" : "DIPSPerson",
-    "StructureDefinition-NoImplVitalSignsObservationConsciousness.html" : "NoImplVitalSignsObservationConsciousness",
-    "StructureDefinition-Department.html" : "Department",
     "StructureDefinition-DIPSEncounterOrganization.html" : "DIPSEncounterOrganization",
-    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
+    "StructureDefinition-DIPSLocationReference.html" : "DIPSLocationReference",
+    "StructureDefinition-DIPSVitalSignsObservationSubjectReference.html" : "DIPSVitalSignsObservationSubjectReference",
+    "StructureDefinition-DIPSVitalSignsObservationRespirationRate.html" : "DIPS Vital Signs Observation - Respiration Rate",
+    "StructureDefinition-Department.html" : "Department",
+    "StructureDefinition-DIPSLabsObservationReference.html" : "DIPSLabsObservationReference",
+    "StructureDefinition-SectionExtension.html" : "SectionExtension",
+    "StructureDefinition-DIPSPractitionerRole.html" : "DIPSPractitionerRole",
+    "StructureDefinition-DIPSJournalId.html" : "DIPSJournalId",
+    "StructureDefinition-DIPSVitalSignsObservationHeartRate.html" : "DIPS Vital Signs Observation - Heart Rate",
+    "StructureDefinition-DIPSVitalSignsObservationOxygenSaturation.html" : "DIPS Vital Signs Observation - Oxygen Saturation",
+    "StructureDefinition-DIPSVitalSignsObservationOrganizationReference.html" : "DIPSVitalSignsObservationOrganizationReference",
+    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization",
+    "StructureDefinition-DIPSEncounterSubjectReference.html" : "DIPSEncounterSubjectReference",
+    "StructureDefinition-DIPSRelatedPerson.html" : "DIPSRelatedPerson",
+    "StructureDefinition-DIPSVitalSignsPerformerAuthorReference.html" : "DIPSVitalSignsPerformerAuthorReference",
+    "StructureDefinition-DIPSOrganizationReference.html" : "DIPSOrganizationReference",
     "StructureDefinition-DipsOrganizationRef.html" : "DipsOrganizationRef",
-    "StructureDefinition-NoImplVitalSignsObservationBodyTemp.html" : "NoImplVitalSignsObservationBodyTemp",
+    "StructureDefinition-DIPSSubjectReference.html" : "DIPSSubjectReference",
+    "StructureDefinition-DIPSVitalSignsObservationBodyTemp.html" : "DIPS Vital Signs Observation - Body Temperature",
+    "StructureDefinition-DIPSObservationSubjectReference.html" : "DIPSObservationSubjectReference",
+    "StructureDefinition-DIPSVitalSignsObservationQSOFAScore.html" : "DIPSVitalSignsObservationQSOFAScore",
     "StructureDefinition-DepartmentExtension.html" : "DepartmentExtension",
-    "StructureDefinition-NoImplVitalSignsObservationQSOFAScore.html" : "NoImplVitalSignsObservationQSOFAScore"
+    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation",
+    "StructureDefinition-DIPSDiagnosticReport.html" : "DIPS DiagnosticReport",
+    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
+    "StructureDefinition-LocationExtension.html" : "LocationExtension",
+    "StructureDefinition-DIPSEncounterPractitionerReference.html" : "DIPSEncounterPractitionerReference",
+    "StructureDefinition-DIPSVitalSignsObservationPulse.html" : "DIPS Vital Signs Observation - Pulse",
+    "StructureDefinition-ReferredBy.html" : "ReferredBy",
+    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
+    "StructureDefinition-DIPSAppointment.html" : "DIPSAppointment",
+    "StructureDefinition-DIPSVitalSignsObservationBodyWeight.html" : "DIPS Vital Signs Observation - Body Weight",
+    "StructureDefinition-DIPSDiagnosticReportPractitionerReference.html" : "DIPSDiagnosticReportPractitionerReference",
+    "StructureDefinition-DIPSVitalSignsObservationBloodpressure.html" : "DIPS Vital Signs Observation - Blood Pressure",
+    "StructureDefinition-DIPSLocation.html" : "DIPSLocation",
+    "StructureDefinition-WardExtension.html" : "WardExtension",
+    "StructureDefinition-DIPSDiagnosticReportSubjectReference.html" : "DIPSDiagnosticReportSubjectReference",
+    "StructureDefinition-DipsLocationExtension.html" : "DipsLocationExtension",
+    "StructureDefinition-DIPSVitalSignsObservationBodyMassIndex.html" : "DIPS Vital Signs Observation - Body Mass Index(BMI)",
+    "StructureDefinition-DIPSVitalSignsObservationConsciousness.html" : "DIPS Vital Signs Observation - Level of Consciousness",
+    "StructureDefinition-DIPSPractitioner.html" : "DIPSPractitioner",
+    "StructureDefinition-DIPSVitalSignsObservationBodyHeight.html" : "DIPS Vital Signs Observation - Body Height",
+    "StructureDefinition-DIPSAppointmentSchedule.html" : "DIPSAppointmentSchedule",
+    "StructureDefinition-DIPSVitalSignsObservationGCS.html" : "DIPSVitalSignsObservationGCS",
+    "StructureDefinition-DIPSEncounterServiceRequest.html" : "DIPSEncounterServiceRequest",
+    "StructureDefinition-DIPSVitalSignsObservationNews2Score.html" : "DIPS Vital Signs Observation - NEWS2",
+    "StructureDefinition-DIPSBasisPractitionerRoleR4Reference.html" : "DIPSBasisPractitionerRoleR4Reference",
+    "StructureDefinition-DIPSDiagnosticReportOrganizationReference.html" : "DIPSDiagnosticReportOrganizationReference",
+    "StructureDefinition-DIPSBasisLabObservationR4.html" : "DIPSBasisLabObservationR4",
+    "StructureDefinition-DIPSHealthcareService.html" : "DIPSHealthcareService",
+    "StructureDefinition-DIPSBasisOrganizationR4Reference.html" : "DIPSBasisOrganizationR4Reference",
+    "StructureDefinition-DIPSPerson.html" : "DIPSPerson",
+    "StructureDefinition-DIPSBasisPractitionerR4.html" : "DIPSBasisPractitionerR4",
+    "StructureDefinition-DIPSPatient.html" : "DIPSPatient",
+    "StructureDefinition-DIPSRemoteMonitoring.html" : "DIPS Remote Monitoring",
+    "StructureDefinition-DIPSVitalSignsObservationEncounterReference.html" : "DIPSVitalSignsObservationEncounterReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identity-assuranceLevel",
@@ -1126,42 +1190,54 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-NoImplVitalSignsObservationGCS.html" : "NoImplVitalSignsObservationGCS",
-    "StructureDefinition-SelfBookingSlot.html" : "SelfBookingSlot",
-    "StructureDefinition-NoImplVitalSignsObservationBodyMassIndex.html" : "NoImplVitalSignsObservationBodyMassIndex",
+    "StructureDefinition-DIPSEncounterOrganization.html" : "DIPSEncounterOrganization",
     "StructureDefinition-DIPSLocationReference.html" : "DIPSLocationReference",
-    "StructureDefinition-DIPSLocation.html" : "DIPSLocation",
-    "StructureDefinition-DIPSRemoteMonitoring.html" : "DIPS Remote Monitoring",
-    "StructureDefinition-NoImplVitalSignsObservationHeartRate.html" : "NoImplVitalSignsObservationHeartRate",
-    "StructureDefinition-DIPSSubjectReference.html" : "DIPSSubjectReference",
-    "StructureDefinition-NoImplVitalSignsObservationRespirationRate.html" : "NoImplVitalSignsObservationRespirationRate",
-    "StructureDefinition-DIPSAppointmentSchedule.html" : "DIPSAppointmentSchedule",
-    "StructureDefinition-NoImplVitalSignsObservationPulse.html" : "NoImplVitalSignsObservationPulse",
-    "StructureDefinition-NoImplVitalSignsObservationBodyHeight.html" : "NoImplVitalSignsObservationBodyHeight",
-    "StructureDefinition-DIPSEncounterSubjectReference.html" : "DIPSEncounterSubjectReference",
+    "StructureDefinition-DIPSVitalSignsObservationSubjectReference.html" : "DIPSVitalSignsObservationSubjectReference",
+    "StructureDefinition-DIPSVitalSignsObservationRespirationRate.html" : "DIPS Vital Signs Observation - Respiration Rate",
+    "StructureDefinition-DIPSDiagnosticReport.html" : "DIPS DiagnosticReport",
     "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
     "StructureDefinition-DIPSEncounterPractitionerReference.html" : "DIPSEncounterPractitionerReference",
-    "StructureDefinition-NoImplVitalSignsObservationBloodpressure.html" : "NoImplVitalSignsObservationBloodpressure",
-    "StructureDefinition-DIPSEncounterServiceRequest.html" : "DIPSEncounterServiceRequest",
-    "StructureDefinition-NoImplVitalSignsObservationBodyWeight.html" : "NoImplVitalSignsObservationBodyWeight",
-    "StructureDefinition-DIPSAppointment.html" : "DIPSAppointment",
-    "StructureDefinition-NoImplVitalSignsObservationOxygenSaturation.html" : "NoImplVitalSignsObservationOxygenSaturation",
-    "StructureDefinition-DIPSPatient.html" : "DIPSPatient",
-    "StructureDefinition-DIPSPractitioner.html" : "DIPSPractitioner",
-    "StructureDefinition-DIPSBasisPractitionerR4.html" : "DIPSBasisPractitionerR4",
-    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization",
-    "StructureDefinition-NoImplVitalSignsObservationNews2Score.html" : "NoImplVitalSignsObservationNews2Score",
-    "StructureDefinition-DIPSHealthcareService.html" : "DIPSHealthcareService",
-    "StructureDefinition-DIPSPractitionerRole.html" : "DIPSPractitionerRole",
-    "StructureDefinition-DIPSRelatedPerson.html" : "DIPSRelatedPerson",
-    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation",
-    "StructureDefinition-DIPSPerson.html" : "DIPSPerson",
-    "StructureDefinition-NoImplVitalSignsObservationConsciousness.html" : "NoImplVitalSignsObservationConsciousness",
-    "StructureDefinition-DIPSEncounterOrganization.html" : "DIPSEncounterOrganization",
+    "StructureDefinition-DIPSVitalSignsObservationPulse.html" : "DIPS Vital Signs Observation - Pulse",
     "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
+    "StructureDefinition-DIPSAppointment.html" : "DIPSAppointment",
+    "StructureDefinition-SelfBookingSlot.html" : "SelfBookingSlot",
+    "StructureDefinition-DIPSVitalSignsObservationBodyWeight.html" : "DIPS Vital Signs Observation - Body Weight",
+    "StructureDefinition-DIPSDiagnosticReportPractitionerReference.html" : "DIPSDiagnosticReportPractitionerReference",
+    "StructureDefinition-DIPSPractitionerRole.html" : "DIPSPractitionerRole",
+    "StructureDefinition-DIPSVitalSignsObservationBloodpressure.html" : "DIPS Vital Signs Observation - Blood Pressure",
+    "StructureDefinition-DIPSLocation.html" : "DIPSLocation",
+    "StructureDefinition-DIPSDiagnosticReportSubjectReference.html" : "DIPSDiagnosticReportSubjectReference",
+    "StructureDefinition-DIPSVitalSignsObservationBodyMassIndex.html" : "DIPS Vital Signs Observation - Body Mass Index(BMI)",
+    "StructureDefinition-DIPSVitalSignsObservationHeartRate.html" : "DIPS Vital Signs Observation - Heart Rate",
+    "StructureDefinition-DIPSVitalSignsObservationOxygenSaturation.html" : "DIPS Vital Signs Observation - Oxygen Saturation",
+    "StructureDefinition-DIPSVitalSignsObservationConsciousness.html" : "DIPS Vital Signs Observation - Level of Consciousness",
+    "StructureDefinition-DIPSVitalSignsObservationOrganizationReference.html" : "DIPSVitalSignsObservationOrganizationReference",
+    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization",
+    "StructureDefinition-DIPSPractitioner.html" : "DIPSPractitioner",
+    "StructureDefinition-DIPSVitalSignsObservationBodyHeight.html" : "DIPS Vital Signs Observation - Body Height",
+    "StructureDefinition-DIPSAppointmentSchedule.html" : "DIPSAppointmentSchedule",
+    "StructureDefinition-DIPSEncounterSubjectReference.html" : "DIPSEncounterSubjectReference",
+    "StructureDefinition-DIPSVitalSignsObservationGCS.html" : "DIPSVitalSignsObservationGCS",
+    "StructureDefinition-DIPSEncounterServiceRequest.html" : "DIPSEncounterServiceRequest",
+    "StructureDefinition-DIPSVitalSignsObservationNews2Score.html" : "DIPS Vital Signs Observation - NEWS2",
+    "StructureDefinition-DIPSBasisPractitionerRoleR4Reference.html" : "DIPSBasisPractitionerRoleR4Reference",
+    "StructureDefinition-DIPSDiagnosticReportOrganizationReference.html" : "DIPSDiagnosticReportOrganizationReference",
+    "StructureDefinition-DIPSBasisLabObservationR4.html" : "DIPSBasisLabObservationR4",
+    "StructureDefinition-DIPSRelatedPerson.html" : "DIPSRelatedPerson",
+    "StructureDefinition-DIPSHealthcareService.html" : "DIPSHealthcareService",
+    "StructureDefinition-DIPSVitalSignsPerformerAuthorReference.html" : "DIPSVitalSignsPerformerAuthorReference",
     "StructureDefinition-DipsOrganizationRef.html" : "DipsOrganizationRef",
-    "StructureDefinition-NoImplVitalSignsObservationBodyTemp.html" : "NoImplVitalSignsObservationBodyTemp",
-    "StructureDefinition-NoImplVitalSignsObservationQSOFAScore.html" : "NoImplVitalSignsObservationQSOFAScore"
+    "StructureDefinition-DIPSBasisOrganizationR4Reference.html" : "DIPSBasisOrganizationR4Reference",
+    "StructureDefinition-DIPSPerson.html" : "DIPSPerson",
+    "StructureDefinition-DIPSSubjectReference.html" : "DIPSSubjectReference",
+    "StructureDefinition-DIPSVitalSignsObservationBodyTemp.html" : "DIPS Vital Signs Observation - Body Temperature",
+    "StructureDefinition-DIPSObservationSubjectReference.html" : "DIPSObservationSubjectReference",
+    "StructureDefinition-DIPSVitalSignsObservationQSOFAScore.html" : "DIPSVitalSignsObservationQSOFAScore",
+    "StructureDefinition-DIPSBasisPractitionerR4.html" : "DIPSBasisPractitionerR4",
+    "StructureDefinition-DIPSPatient.html" : "DIPSPatient",
+    "StructureDefinition-DIPSRemoteMonitoring.html" : "DIPS Remote Monitoring",
+    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation",
+    "StructureDefinition-DIPSVitalSignsObservationEncounterReference.html" : "DIPSVitalSignsObservationEncounterReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -1175,9 +1251,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.423"],
     "uses" : {
     },
+    "StructureDefinition-DIPSVitalSignsObservationSubjectReference.html" : "DIPSVitalSignsObservationSubjectReference",
     "StructureDefinition-DIPSSubjectReference.html" : "DIPSSubjectReference",
-    "StructureDefinition-DIPSPatient.html" : "DIPSPatient",
-    "StructureDefinition-DIPSEncounterSubjectReference.html" : "DIPSEncounterSubjectReference"
+    "StructureDefinition-DIPSObservationSubjectReference.html" : "DIPSObservationSubjectReference",
+    "StructureDefinition-DIPSEncounterSubjectReference.html" : "DIPSEncounterSubjectReference",
+    "StructureDefinition-DIPSDiagnosticReportSubjectReference.html" : "DIPSDiagnosticReportSubjectReference",
+    "StructureDefinition-DIPSPatient.html" : "DIPSPatient"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/location-mode",
@@ -1192,8 +1271,8 @@
     "uses" : {
     },
     "StructureDefinition-DIPSLocationReference.html" : "DIPSLocationReference",
-    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation",
-    "StructureDefinition-DIPSLocation.html" : "DIPSLocation"
+    "StructureDefinition-DIPSLocation.html" : "DIPSLocation",
+    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
@@ -1207,11 +1286,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.328"],
     "uses" : {
     },
-    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
     "StructureDefinition-DIPSLocationReference.html" : "DIPSLocationReference",
-    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation",
+    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
     "StructureDefinition-DIPSLocation.html" : "DIPSLocation",
-    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter"
+    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
+    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation",
+    "StructureDefinition-DIPSVitalSignsObservationEncounterReference.html" : "DIPSVitalSignsObservationEncounterReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/location-status",
@@ -1226,8 +1306,8 @@
     "uses" : {
     },
     "StructureDefinition-DIPSLocationReference.html" : "DIPSLocationReference",
-    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation",
-    "StructureDefinition-DIPSLocation.html" : "DIPSLocation"
+    "StructureDefinition-DIPSLocation.html" : "DIPSLocation",
+    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/marital-status",
@@ -1242,9 +1322,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.29"],
     "uses" : {
     },
+    "StructureDefinition-DIPSVitalSignsObservationSubjectReference.html" : "DIPSVitalSignsObservationSubjectReference",
     "StructureDefinition-DIPSSubjectReference.html" : "DIPSSubjectReference",
-    "StructureDefinition-DIPSPatient.html" : "DIPSPatient",
-    "StructureDefinition-DIPSEncounterSubjectReference.html" : "DIPSEncounterSubjectReference"
+    "StructureDefinition-DIPSObservationSubjectReference.html" : "DIPSObservationSubjectReference",
+    "StructureDefinition-DIPSEncounterSubjectReference.html" : "DIPSEncounterSubjectReference",
+    "StructureDefinition-DIPSDiagnosticReportSubjectReference.html" : "DIPSDiagnosticReportSubjectReference",
+    "StructureDefinition-DIPSPatient.html" : "DIPSPatient"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
@@ -1272,11 +1355,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.65"],
     "uses" : {
     },
-    "StructureDefinition-DIPSRelatedPerson.html" : "DIPSRelatedPerson",
     "StructureDefinition-DIPSPerson.html" : "DIPSPerson",
-    "StructureDefinition-DIPSPatient.html" : "DIPSPatient",
     "StructureDefinition-DIPSPractitioner.html" : "DIPSPractitioner",
-    "StructureDefinition-DIPSBasisPractitionerR4.html" : "DIPSBasisPractitionerR4"
+    "StructureDefinition-DIPSBasisPractitionerR4.html" : "DIPSBasisPractitionerR4",
+    "StructureDefinition-DIPSPatient.html" : "DIPSPatient",
+    "StructureDefinition-DIPSRelatedPerson.html" : "DIPSRelatedPerson"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/narrative-status",
@@ -1304,19 +1387,20 @@
     "sources" : ["2.16.840.1.113883.4.642.3.403"],
     "uses" : {
     },
-    "StructureDefinition-NoImplVitalSignsObservationGCS.html" : "NoImplVitalSignsObservationGCS",
-    "StructureDefinition-NoImplVitalSignsObservationBodyMassIndex.html" : "NoImplVitalSignsObservationBodyMassIndex",
-    "StructureDefinition-NoImplVitalSignsObservationBloodpressure.html" : "NoImplVitalSignsObservationBloodpressure",
-    "StructureDefinition-NoImplVitalSignsObservationBodyWeight.html" : "NoImplVitalSignsObservationBodyWeight",
-    "StructureDefinition-NoImplVitalSignsObservationOxygenSaturation.html" : "NoImplVitalSignsObservationOxygenSaturation",
-    "StructureDefinition-NoImplVitalSignsObservationNews2Score.html" : "NoImplVitalSignsObservationNews2Score",
-    "StructureDefinition-NoImplVitalSignsObservationHeartRate.html" : "NoImplVitalSignsObservationHeartRate",
-    "StructureDefinition-NoImplVitalSignsObservationRespirationRate.html" : "NoImplVitalSignsObservationRespirationRate",
-    "StructureDefinition-NoImplVitalSignsObservationConsciousness.html" : "NoImplVitalSignsObservationConsciousness",
-    "StructureDefinition-NoImplVitalSignsObservationPulse.html" : "NoImplVitalSignsObservationPulse",
-    "StructureDefinition-NoImplVitalSignsObservationBodyHeight.html" : "NoImplVitalSignsObservationBodyHeight",
-    "StructureDefinition-NoImplVitalSignsObservationBodyTemp.html" : "NoImplVitalSignsObservationBodyTemp",
-    "StructureDefinition-NoImplVitalSignsObservationQSOFAScore.html" : "NoImplVitalSignsObservationQSOFAScore"
+    "StructureDefinition-DIPSVitalSignsObservationHeartRate.html" : "DIPS Vital Signs Observation - Heart Rate",
+    "StructureDefinition-DIPSVitalSignsObservationOxygenSaturation.html" : "DIPS Vital Signs Observation - Oxygen Saturation",
+    "StructureDefinition-DIPSVitalSignsObservationRespirationRate.html" : "DIPS Vital Signs Observation - Respiration Rate",
+    "StructureDefinition-DIPSVitalSignsObservationConsciousness.html" : "DIPS Vital Signs Observation - Level of Consciousness",
+    "StructureDefinition-DIPSVitalSignsObservationBodyHeight.html" : "DIPS Vital Signs Observation - Body Height",
+    "StructureDefinition-DIPSVitalSignsObservationGCS.html" : "DIPSVitalSignsObservationGCS",
+    "StructureDefinition-DIPSVitalSignsObservationNews2Score.html" : "DIPS Vital Signs Observation - NEWS2",
+    "StructureDefinition-DIPSVitalSignsObservationPulse.html" : "DIPS Vital Signs Observation - Pulse",
+    "StructureDefinition-DIPSBasisLabObservationR4.html" : "DIPSBasisLabObservationR4",
+    "StructureDefinition-DIPSVitalSignsObservationBodyWeight.html" : "DIPS Vital Signs Observation - Body Weight",
+    "StructureDefinition-DIPSVitalSignsObservationBodyTemp.html" : "DIPS Vital Signs Observation - Body Temperature",
+    "StructureDefinition-DIPSVitalSignsObservationQSOFAScore.html" : "DIPSVitalSignsObservationQSOFAScore",
+    "StructureDefinition-DIPSVitalSignsObservationBloodpressure.html" : "DIPS Vital Signs Observation - Blood Pressure",
+    "StructureDefinition-DIPSVitalSignsObservationBodyMassIndex.html" : "DIPS Vital Signs Observation - Body Mass Index(BMI)"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -1330,10 +1414,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.396"],
     "uses" : {
     },
-    "StructureDefinition-NoImplVitalSignsObservationGCS.html" : "NoImplVitalSignsObservationGCS",
-    "StructureDefinition-NoImplVitalSignsObservationConsciousness.html" : "NoImplVitalSignsObservationConsciousness",
-    "StructureDefinition-NoImplVitalSignsObservationNews2Score.html" : "NoImplVitalSignsObservationNews2Score",
-    "StructureDefinition-NoImplVitalSignsObservationQSOFAScore.html" : "NoImplVitalSignsObservationQSOFAScore"
+    "StructureDefinition-DIPSVitalSignsObservationConsciousness.html" : "DIPS Vital Signs Observation - Level of Consciousness",
+    "StructureDefinition-DIPSVitalSignsObservationQSOFAScore.html" : "DIPSVitalSignsObservationQSOFAScore",
+    "StructureDefinition-DIPSVitalSignsObservationGCS.html" : "DIPSVitalSignsObservationGCS",
+    "StructureDefinition-DIPSVitalSignsObservationNews2Score.html" : "DIPS Vital Signs Observation - NEWS2",
+    "StructureDefinition-DIPSBasisLabObservationR4.html" : "DIPSBasisLabObservationR4"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -1347,19 +1432,20 @@
     "sources" : ["2.16.840.1.113883.4.642.3.399"],
     "uses" : {
     },
-    "StructureDefinition-NoImplVitalSignsObservationGCS.html" : "NoImplVitalSignsObservationGCS",
-    "StructureDefinition-NoImplVitalSignsObservationBodyMassIndex.html" : "NoImplVitalSignsObservationBodyMassIndex",
-    "StructureDefinition-NoImplVitalSignsObservationBloodpressure.html" : "NoImplVitalSignsObservationBloodpressure",
-    "StructureDefinition-NoImplVitalSignsObservationBodyWeight.html" : "NoImplVitalSignsObservationBodyWeight",
-    "StructureDefinition-NoImplVitalSignsObservationOxygenSaturation.html" : "NoImplVitalSignsObservationOxygenSaturation",
-    "StructureDefinition-NoImplVitalSignsObservationNews2Score.html" : "NoImplVitalSignsObservationNews2Score",
-    "StructureDefinition-NoImplVitalSignsObservationHeartRate.html" : "NoImplVitalSignsObservationHeartRate",
-    "StructureDefinition-NoImplVitalSignsObservationRespirationRate.html" : "NoImplVitalSignsObservationRespirationRate",
-    "StructureDefinition-NoImplVitalSignsObservationConsciousness.html" : "NoImplVitalSignsObservationConsciousness",
-    "StructureDefinition-NoImplVitalSignsObservationPulse.html" : "NoImplVitalSignsObservationPulse",
-    "StructureDefinition-NoImplVitalSignsObservationBodyHeight.html" : "NoImplVitalSignsObservationBodyHeight",
-    "StructureDefinition-NoImplVitalSignsObservationBodyTemp.html" : "NoImplVitalSignsObservationBodyTemp",
-    "StructureDefinition-NoImplVitalSignsObservationQSOFAScore.html" : "NoImplVitalSignsObservationQSOFAScore"
+    "StructureDefinition-DIPSVitalSignsObservationHeartRate.html" : "DIPS Vital Signs Observation - Heart Rate",
+    "StructureDefinition-DIPSVitalSignsObservationOxygenSaturation.html" : "DIPS Vital Signs Observation - Oxygen Saturation",
+    "StructureDefinition-DIPSVitalSignsObservationRespirationRate.html" : "DIPS Vital Signs Observation - Respiration Rate",
+    "StructureDefinition-DIPSVitalSignsObservationConsciousness.html" : "DIPS Vital Signs Observation - Level of Consciousness",
+    "StructureDefinition-DIPSVitalSignsObservationBodyHeight.html" : "DIPS Vital Signs Observation - Body Height",
+    "StructureDefinition-DIPSVitalSignsObservationGCS.html" : "DIPSVitalSignsObservationGCS",
+    "StructureDefinition-DIPSVitalSignsObservationNews2Score.html" : "DIPS Vital Signs Observation - NEWS2",
+    "StructureDefinition-DIPSVitalSignsObservationPulse.html" : "DIPS Vital Signs Observation - Pulse",
+    "StructureDefinition-DIPSBasisLabObservationR4.html" : "DIPSBasisLabObservationR4",
+    "StructureDefinition-DIPSVitalSignsObservationBodyWeight.html" : "DIPS Vital Signs Observation - Body Weight",
+    "StructureDefinition-DIPSVitalSignsObservationBodyTemp.html" : "DIPS Vital Signs Observation - Body Temperature",
+    "StructureDefinition-DIPSVitalSignsObservationQSOFAScore.html" : "DIPSVitalSignsObservationQSOFAScore",
+    "StructureDefinition-DIPSVitalSignsObservationBloodpressure.html" : "DIPS Vital Signs Observation - Blood Pressure",
+    "StructureDefinition-DIPSVitalSignsObservationBodyMassIndex.html" : "DIPS Vital Signs Observation - Body Mass Index(BMI)"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -1373,15 +1459,16 @@
     "sources" : ["2.16.840.1.113883.4.642.3.395"],
     "uses" : {
     },
-    "StructureDefinition-NoImplVitalSignsObservationGCS.html" : "NoImplVitalSignsObservationGCS",
-    "StructureDefinition-NoImplVitalSignsObservationRespirationRate.html" : "NoImplVitalSignsObservationRespirationRate",
-    "StructureDefinition-NoImplVitalSignsObservationBodyWeight.html" : "NoImplVitalSignsObservationBodyWeight",
-    "StructureDefinition-NoImplVitalSignsObservationConsciousness.html" : "NoImplVitalSignsObservationConsciousness",
-    "StructureDefinition-NoImplVitalSignsObservationOxygenSaturation.html" : "NoImplVitalSignsObservationOxygenSaturation",
-    "StructureDefinition-NoImplVitalSignsObservationBodyHeight.html" : "NoImplVitalSignsObservationBodyHeight",
-    "StructureDefinition-NoImplVitalSignsObservationBodyTemp.html" : "NoImplVitalSignsObservationBodyTemp",
-    "StructureDefinition-NoImplVitalSignsObservationNews2Score.html" : "NoImplVitalSignsObservationNews2Score",
-    "StructureDefinition-NoImplVitalSignsObservationQSOFAScore.html" : "NoImplVitalSignsObservationQSOFAScore"
+    "StructureDefinition-DIPSVitalSignsObservationBodyWeight.html" : "DIPS Vital Signs Observation - Body Weight",
+    "StructureDefinition-DIPSVitalSignsObservationOxygenSaturation.html" : "DIPS Vital Signs Observation - Oxygen Saturation",
+    "StructureDefinition-DIPSVitalSignsObservationRespirationRate.html" : "DIPS Vital Signs Observation - Respiration Rate",
+    "StructureDefinition-DIPSVitalSignsObservationConsciousness.html" : "DIPS Vital Signs Observation - Level of Consciousness",
+    "StructureDefinition-DIPSVitalSignsObservationBodyHeight.html" : "DIPS Vital Signs Observation - Body Height",
+    "StructureDefinition-DIPSVitalSignsObservationBodyTemp.html" : "DIPS Vital Signs Observation - Body Temperature",
+    "StructureDefinition-DIPSVitalSignsObservationQSOFAScore.html" : "DIPSVitalSignsObservationQSOFAScore",
+    "StructureDefinition-DIPSVitalSignsObservationGCS.html" : "DIPSVitalSignsObservationGCS",
+    "StructureDefinition-DIPSVitalSignsObservationNews2Score.html" : "DIPS Vital Signs Observation - NEWS2",
+    "StructureDefinition-DIPSBasisLabObservationR4.html" : "DIPSBasisLabObservationR4"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -1395,19 +1482,20 @@
     "sources" : ["2.16.840.1.113883.4.642.3.400"],
     "uses" : {
     },
-    "StructureDefinition-NoImplVitalSignsObservationGCS.html" : "NoImplVitalSignsObservationGCS",
-    "StructureDefinition-NoImplVitalSignsObservationBodyMassIndex.html" : "NoImplVitalSignsObservationBodyMassIndex",
-    "StructureDefinition-NoImplVitalSignsObservationBloodpressure.html" : "NoImplVitalSignsObservationBloodpressure",
-    "StructureDefinition-NoImplVitalSignsObservationBodyWeight.html" : "NoImplVitalSignsObservationBodyWeight",
-    "StructureDefinition-NoImplVitalSignsObservationOxygenSaturation.html" : "NoImplVitalSignsObservationOxygenSaturation",
-    "StructureDefinition-NoImplVitalSignsObservationNews2Score.html" : "NoImplVitalSignsObservationNews2Score",
-    "StructureDefinition-NoImplVitalSignsObservationHeartRate.html" : "NoImplVitalSignsObservationHeartRate",
-    "StructureDefinition-NoImplVitalSignsObservationRespirationRate.html" : "NoImplVitalSignsObservationRespirationRate",
-    "StructureDefinition-NoImplVitalSignsObservationConsciousness.html" : "NoImplVitalSignsObservationConsciousness",
-    "StructureDefinition-NoImplVitalSignsObservationPulse.html" : "NoImplVitalSignsObservationPulse",
-    "StructureDefinition-NoImplVitalSignsObservationBodyHeight.html" : "NoImplVitalSignsObservationBodyHeight",
-    "StructureDefinition-NoImplVitalSignsObservationBodyTemp.html" : "NoImplVitalSignsObservationBodyTemp",
-    "StructureDefinition-NoImplVitalSignsObservationQSOFAScore.html" : "NoImplVitalSignsObservationQSOFAScore"
+    "StructureDefinition-DIPSVitalSignsObservationHeartRate.html" : "DIPS Vital Signs Observation - Heart Rate",
+    "StructureDefinition-DIPSVitalSignsObservationOxygenSaturation.html" : "DIPS Vital Signs Observation - Oxygen Saturation",
+    "StructureDefinition-DIPSVitalSignsObservationRespirationRate.html" : "DIPS Vital Signs Observation - Respiration Rate",
+    "StructureDefinition-DIPSVitalSignsObservationConsciousness.html" : "DIPS Vital Signs Observation - Level of Consciousness",
+    "StructureDefinition-DIPSVitalSignsObservationBodyHeight.html" : "DIPS Vital Signs Observation - Body Height",
+    "StructureDefinition-DIPSVitalSignsObservationGCS.html" : "DIPSVitalSignsObservationGCS",
+    "StructureDefinition-DIPSVitalSignsObservationNews2Score.html" : "DIPS Vital Signs Observation - NEWS2",
+    "StructureDefinition-DIPSVitalSignsObservationPulse.html" : "DIPS Vital Signs Observation - Pulse",
+    "StructureDefinition-DIPSBasisLabObservationR4.html" : "DIPSBasisLabObservationR4",
+    "StructureDefinition-DIPSVitalSignsObservationBodyWeight.html" : "DIPS Vital Signs Observation - Body Weight",
+    "StructureDefinition-DIPSVitalSignsObservationBodyTemp.html" : "DIPS Vital Signs Observation - Body Temperature",
+    "StructureDefinition-DIPSVitalSignsObservationQSOFAScore.html" : "DIPSVitalSignsObservationQSOFAScore",
+    "StructureDefinition-DIPSVitalSignsObservationBloodpressure.html" : "DIPS Vital Signs Observation - Blood Pressure",
+    "StructureDefinition-DIPSVitalSignsObservationBodyMassIndex.html" : "DIPS Vital Signs Observation - Body Mass Index(BMI)"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-vitalsignresult",
@@ -1421,15 +1509,15 @@
     "sources" : ["2.16.840.1.113883.3.88.12.80.62"],
     "uses" : {
     },
-    "StructureDefinition-NoImplVitalSignsObservationBodyMassIndex.html" : "NoImplVitalSignsObservationBodyMassIndex",
-    "StructureDefinition-NoImplVitalSignsObservationRespirationRate.html" : "NoImplVitalSignsObservationRespirationRate",
-    "StructureDefinition-NoImplVitalSignsObservationBloodpressure.html" : "NoImplVitalSignsObservationBloodpressure",
-    "StructureDefinition-NoImplVitalSignsObservationBodyWeight.html" : "NoImplVitalSignsObservationBodyWeight",
-    "StructureDefinition-NoImplVitalSignsObservationOxygenSaturation.html" : "NoImplVitalSignsObservationOxygenSaturation",
-    "StructureDefinition-NoImplVitalSignsObservationPulse.html" : "NoImplVitalSignsObservationPulse",
-    "StructureDefinition-NoImplVitalSignsObservationBodyHeight.html" : "NoImplVitalSignsObservationBodyHeight",
-    "StructureDefinition-NoImplVitalSignsObservationBodyTemp.html" : "NoImplVitalSignsObservationBodyTemp",
-    "StructureDefinition-NoImplVitalSignsObservationHeartRate.html" : "NoImplVitalSignsObservationHeartRate"
+    "StructureDefinition-DIPSVitalSignsObservationHeartRate.html" : "DIPS Vital Signs Observation - Heart Rate",
+    "StructureDefinition-DIPSVitalSignsObservationBodyWeight.html" : "DIPS Vital Signs Observation - Body Weight",
+    "StructureDefinition-DIPSVitalSignsObservationOxygenSaturation.html" : "DIPS Vital Signs Observation - Oxygen Saturation",
+    "StructureDefinition-DIPSVitalSignsObservationRespirationRate.html" : "DIPS Vital Signs Observation - Respiration Rate",
+    "StructureDefinition-DIPSVitalSignsObservationBodyHeight.html" : "DIPS Vital Signs Observation - Body Height",
+    "StructureDefinition-DIPSVitalSignsObservationBodyTemp.html" : "DIPS Vital Signs Observation - Body Temperature",
+    "StructureDefinition-DIPSVitalSignsObservationBloodpressure.html" : "DIPS Vital Signs Observation - Blood Pressure",
+    "StructureDefinition-DIPSVitalSignsObservationPulse.html" : "DIPS Vital Signs Observation - Pulse",
+    "StructureDefinition-DIPSVitalSignsObservationBodyMassIndex.html" : "DIPS Vital Signs Observation - Body Mass Index(BMI)"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/organization-type",
@@ -1445,7 +1533,10 @@
     },
     "StructureDefinition-DIPSEncounterOrganization.html" : "DIPSEncounterOrganization",
     "StructureDefinition-DipsOrganizationRef.html" : "DipsOrganizationRef",
-    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization"
+    "StructureDefinition-DIPSBasisOrganizationR4Reference.html" : "DIPSBasisOrganizationR4Reference",
+    "StructureDefinition-DIPSVitalSignsObservationOrganizationReference.html" : "DIPSVitalSignsObservationOrganizationReference",
+    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization",
+    "StructureDefinition-DIPSDiagnosticReportOrganizationReference.html" : "DIPSDiagnosticReportOrganizationReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/participant-role",
@@ -1501,9 +1592,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.1130"],
     "uses" : {
     },
+    "StructureDefinition-DIPSVitalSignsObservationSubjectReference.html" : "DIPSVitalSignsObservationSubjectReference",
     "StructureDefinition-DIPSSubjectReference.html" : "DIPSSubjectReference",
-    "StructureDefinition-DIPSPatient.html" : "DIPSPatient",
-    "StructureDefinition-DIPSEncounterSubjectReference.html" : "DIPSEncounterSubjectReference"
+    "StructureDefinition-DIPSObservationSubjectReference.html" : "DIPSObservationSubjectReference",
+    "StructureDefinition-DIPSEncounterSubjectReference.html" : "DIPSEncounterSubjectReference",
+    "StructureDefinition-DIPSDiagnosticReportSubjectReference.html" : "DIPSDiagnosticReportSubjectReference",
+    "StructureDefinition-DIPSPatient.html" : "DIPSPatient"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/practitioner-role",
@@ -1518,8 +1612,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.439"],
     "uses" : {
     },
+    "StructureDefinition-DIPSVitalSignsPerformerAuthorReference.html" : "DIPSVitalSignsPerformerAuthorReference",
     "StructureDefinition-DIPSPractitionerRole.html" : "DIPSPractitionerRole",
-    "StructureDefinition-DIPSEncounterPractitionerReference.html" : "DIPSEncounterPractitionerReference"
+    "StructureDefinition-DIPSEncounterPractitionerReference.html" : "DIPSEncounterPractitionerReference",
+    "StructureDefinition-DIPSBasisPractitionerRoleR4Reference.html" : "DIPSBasisPractitionerRoleR4Reference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
@@ -1575,18 +1671,19 @@
     "sources" : ["2.16.840.1.113883.4.642.3.59"],
     "uses" : {
     },
-    "StructureDefinition-NoImplVitalSignsObservationGCS.html" : "NoImplVitalSignsObservationGCS",
-    "StructureDefinition-NoImplVitalSignsObservationBodyMassIndex.html" : "NoImplVitalSignsObservationBodyMassIndex",
-    "StructureDefinition-NoImplVitalSignsObservationRespirationRate.html" : "NoImplVitalSignsObservationRespirationRate",
-    "StructureDefinition-NoImplVitalSignsObservationBloodpressure.html" : "NoImplVitalSignsObservationBloodpressure",
-    "StructureDefinition-NoImplVitalSignsObservationBodyWeight.html" : "NoImplVitalSignsObservationBodyWeight",
-    "StructureDefinition-NoImplVitalSignsObservationOxygenSaturation.html" : "NoImplVitalSignsObservationOxygenSaturation",
-    "StructureDefinition-NoImplVitalSignsObservationPulse.html" : "NoImplVitalSignsObservationPulse",
-    "StructureDefinition-NoImplVitalSignsObservationBodyHeight.html" : "NoImplVitalSignsObservationBodyHeight",
-    "StructureDefinition-NoImplVitalSignsObservationBodyTemp.html" : "NoImplVitalSignsObservationBodyTemp",
-    "StructureDefinition-NoImplVitalSignsObservationNews2Score.html" : "NoImplVitalSignsObservationNews2Score",
-    "StructureDefinition-NoImplVitalSignsObservationHeartRate.html" : "NoImplVitalSignsObservationHeartRate",
-    "StructureDefinition-NoImplVitalSignsObservationQSOFAScore.html" : "NoImplVitalSignsObservationQSOFAScore"
+    "StructureDefinition-DIPSVitalSignsObservationHeartRate.html" : "DIPS Vital Signs Observation - Heart Rate",
+    "StructureDefinition-DIPSVitalSignsObservationOxygenSaturation.html" : "DIPS Vital Signs Observation - Oxygen Saturation",
+    "StructureDefinition-DIPSVitalSignsObservationRespirationRate.html" : "DIPS Vital Signs Observation - Respiration Rate",
+    "StructureDefinition-DIPSVitalSignsObservationBodyHeight.html" : "DIPS Vital Signs Observation - Body Height",
+    "StructureDefinition-DIPSVitalSignsObservationGCS.html" : "DIPSVitalSignsObservationGCS",
+    "StructureDefinition-DIPSVitalSignsObservationNews2Score.html" : "DIPS Vital Signs Observation - NEWS2",
+    "StructureDefinition-DIPSVitalSignsObservationPulse.html" : "DIPS Vital Signs Observation - Pulse",
+    "StructureDefinition-DIPSBasisLabObservationR4.html" : "DIPSBasisLabObservationR4",
+    "StructureDefinition-DIPSVitalSignsObservationBodyWeight.html" : "DIPS Vital Signs Observation - Body Weight",
+    "StructureDefinition-DIPSVitalSignsObservationBodyTemp.html" : "DIPS Vital Signs Observation - Body Temperature",
+    "StructureDefinition-DIPSVitalSignsObservationQSOFAScore.html" : "DIPSVitalSignsObservationQSOFAScore",
+    "StructureDefinition-DIPSVitalSignsObservationBloodpressure.html" : "DIPS Vital Signs Observation - Blood Pressure",
+    "StructureDefinition-DIPSVitalSignsObservationBodyMassIndex.html" : "DIPS Vital Signs Observation - Body Mass Index(BMI)"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -1601,19 +1698,20 @@
     "sources" : ["2.16.840.1.113883.4.642.3.407"],
     "uses" : {
     },
-    "StructureDefinition-NoImplVitalSignsObservationGCS.html" : "NoImplVitalSignsObservationGCS",
-    "StructureDefinition-NoImplVitalSignsObservationBodyMassIndex.html" : "NoImplVitalSignsObservationBodyMassIndex",
-    "StructureDefinition-NoImplVitalSignsObservationBloodpressure.html" : "NoImplVitalSignsObservationBloodpressure",
-    "StructureDefinition-NoImplVitalSignsObservationBodyWeight.html" : "NoImplVitalSignsObservationBodyWeight",
-    "StructureDefinition-NoImplVitalSignsObservationOxygenSaturation.html" : "NoImplVitalSignsObservationOxygenSaturation",
-    "StructureDefinition-NoImplVitalSignsObservationNews2Score.html" : "NoImplVitalSignsObservationNews2Score",
-    "StructureDefinition-NoImplVitalSignsObservationHeartRate.html" : "NoImplVitalSignsObservationHeartRate",
-    "StructureDefinition-NoImplVitalSignsObservationRespirationRate.html" : "NoImplVitalSignsObservationRespirationRate",
-    "StructureDefinition-NoImplVitalSignsObservationConsciousness.html" : "NoImplVitalSignsObservationConsciousness",
-    "StructureDefinition-NoImplVitalSignsObservationPulse.html" : "NoImplVitalSignsObservationPulse",
-    "StructureDefinition-NoImplVitalSignsObservationBodyHeight.html" : "NoImplVitalSignsObservationBodyHeight",
-    "StructureDefinition-NoImplVitalSignsObservationBodyTemp.html" : "NoImplVitalSignsObservationBodyTemp",
-    "StructureDefinition-NoImplVitalSignsObservationQSOFAScore.html" : "NoImplVitalSignsObservationQSOFAScore"
+    "StructureDefinition-DIPSVitalSignsObservationHeartRate.html" : "DIPS Vital Signs Observation - Heart Rate",
+    "StructureDefinition-DIPSVitalSignsObservationOxygenSaturation.html" : "DIPS Vital Signs Observation - Oxygen Saturation",
+    "StructureDefinition-DIPSVitalSignsObservationRespirationRate.html" : "DIPS Vital Signs Observation - Respiration Rate",
+    "StructureDefinition-DIPSVitalSignsObservationConsciousness.html" : "DIPS Vital Signs Observation - Level of Consciousness",
+    "StructureDefinition-DIPSVitalSignsObservationBodyHeight.html" : "DIPS Vital Signs Observation - Body Height",
+    "StructureDefinition-DIPSVitalSignsObservationGCS.html" : "DIPSVitalSignsObservationGCS",
+    "StructureDefinition-DIPSVitalSignsObservationNews2Score.html" : "DIPS Vital Signs Observation - NEWS2",
+    "StructureDefinition-DIPSVitalSignsObservationPulse.html" : "DIPS Vital Signs Observation - Pulse",
+    "StructureDefinition-DIPSBasisLabObservationR4.html" : "DIPSBasisLabObservationR4",
+    "StructureDefinition-DIPSVitalSignsObservationBodyWeight.html" : "DIPS Vital Signs Observation - Body Weight",
+    "StructureDefinition-DIPSVitalSignsObservationBodyTemp.html" : "DIPS Vital Signs Observation - Body Temperature",
+    "StructureDefinition-DIPSVitalSignsObservationQSOFAScore.html" : "DIPSVitalSignsObservationQSOFAScore",
+    "StructureDefinition-DIPSVitalSignsObservationBloodpressure.html" : "DIPS Vital Signs Observation - Blood Pressure",
+    "StructureDefinition-DIPSVitalSignsObservationBodyMassIndex.html" : "DIPS Vital Signs Observation - Body Mass Index(BMI)"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -1627,19 +1725,20 @@
     "sources" : ["2.16.840.1.113883.4.642.3.397"],
     "uses" : {
     },
-    "StructureDefinition-NoImplVitalSignsObservationGCS.html" : "NoImplVitalSignsObservationGCS",
-    "StructureDefinition-NoImplVitalSignsObservationBodyMassIndex.html" : "NoImplVitalSignsObservationBodyMassIndex",
-    "StructureDefinition-NoImplVitalSignsObservationBloodpressure.html" : "NoImplVitalSignsObservationBloodpressure",
-    "StructureDefinition-NoImplVitalSignsObservationBodyWeight.html" : "NoImplVitalSignsObservationBodyWeight",
-    "StructureDefinition-NoImplVitalSignsObservationOxygenSaturation.html" : "NoImplVitalSignsObservationOxygenSaturation",
-    "StructureDefinition-NoImplVitalSignsObservationNews2Score.html" : "NoImplVitalSignsObservationNews2Score",
-    "StructureDefinition-NoImplVitalSignsObservationHeartRate.html" : "NoImplVitalSignsObservationHeartRate",
-    "StructureDefinition-NoImplVitalSignsObservationRespirationRate.html" : "NoImplVitalSignsObservationRespirationRate",
-    "StructureDefinition-NoImplVitalSignsObservationConsciousness.html" : "NoImplVitalSignsObservationConsciousness",
-    "StructureDefinition-NoImplVitalSignsObservationPulse.html" : "NoImplVitalSignsObservationPulse",
-    "StructureDefinition-NoImplVitalSignsObservationBodyHeight.html" : "NoImplVitalSignsObservationBodyHeight",
-    "StructureDefinition-NoImplVitalSignsObservationBodyTemp.html" : "NoImplVitalSignsObservationBodyTemp",
-    "StructureDefinition-NoImplVitalSignsObservationQSOFAScore.html" : "NoImplVitalSignsObservationQSOFAScore"
+    "StructureDefinition-DIPSVitalSignsObservationHeartRate.html" : "DIPS Vital Signs Observation - Heart Rate",
+    "StructureDefinition-DIPSVitalSignsObservationOxygenSaturation.html" : "DIPS Vital Signs Observation - Oxygen Saturation",
+    "StructureDefinition-DIPSVitalSignsObservationRespirationRate.html" : "DIPS Vital Signs Observation - Respiration Rate",
+    "StructureDefinition-DIPSVitalSignsObservationConsciousness.html" : "DIPS Vital Signs Observation - Level of Consciousness",
+    "StructureDefinition-DIPSVitalSignsObservationBodyHeight.html" : "DIPS Vital Signs Observation - Body Height",
+    "StructureDefinition-DIPSVitalSignsObservationGCS.html" : "DIPSVitalSignsObservationGCS",
+    "StructureDefinition-DIPSVitalSignsObservationNews2Score.html" : "DIPS Vital Signs Observation - NEWS2",
+    "StructureDefinition-DIPSVitalSignsObservationPulse.html" : "DIPS Vital Signs Observation - Pulse",
+    "StructureDefinition-DIPSBasisLabObservationR4.html" : "DIPSBasisLabObservationR4",
+    "StructureDefinition-DIPSVitalSignsObservationBodyWeight.html" : "DIPS Vital Signs Observation - Body Weight",
+    "StructureDefinition-DIPSVitalSignsObservationBodyTemp.html" : "DIPS Vital Signs Observation - Body Temperature",
+    "StructureDefinition-DIPSVitalSignsObservationQSOFAScore.html" : "DIPSVitalSignsObservationQSOFAScore",
+    "StructureDefinition-DIPSVitalSignsObservationBloodpressure.html" : "DIPS Vital Signs Observation - Blood Pressure",
+    "StructureDefinition-DIPSVitalSignsObservationBodyMassIndex.html" : "DIPS Vital Signs Observation - Body Mass Index(BMI)"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype",
@@ -1655,6 +1754,20 @@
     "uses" : {
     },
     "StructureDefinition-DIPSRelatedPerson.html" : "DIPSRelatedPerson"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/report-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "LOINCDiagnosticReportCodes",
+    "title" : "LOINC Diagnostic Report Codes",
+    "description" : "This value set includes LOINC codes that relate to Diagnostic Observations.",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.4.642.3.233"],
+    "sources" : ["2.16.840.1.113883.4.642.3.233"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSDiagnosticReport.html" : "DIPS DiagnosticReport"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/request-intent",
@@ -1710,27 +1823,32 @@
     "sources" : ["2.16.840.1.113883.4.642.3.27"],
     "uses" : {
     },
-    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
-    "StructureDefinition-SelfBookingSlot.html" : "SelfBookingSlot",
-    "StructureDefinition-DipsLocationExtension.html" : "DipsLocationExtension",
-    "StructureDefinition-DIPSAppointment.html" : "DIPSAppointment",
-    "StructureDefinition-DIPSLocation.html" : "DIPSLocation",
-    "StructureDefinition-DIPSOrganizationReference.html" : "DIPSOrganizationReference",
-    "StructureDefinition-DIPSPractitionerRoleReference.html" : "DIPSPractitionerRoleReference",
-    "StructureDefinition-DIPSPractitionerReference.html" : "DIPSPractitionerReference",
-    "StructureDefinition-DIPSRemoteMonitoring.html" : "DIPS Remote Monitoring",
-    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization",
-    "StructureDefinition-WardExtension.html" : "WardExtension",
-    "StructureDefinition-DIPSHealthcareService.html" : "DIPSHealthcareService",
-    "StructureDefinition-DIPSPractitionerRole.html" : "DIPSPractitionerRole",
-    "StructureDefinition-ReferredBy.html" : "ReferredBy",
-    "StructureDefinition-LocationExtension.html" : "LocationExtension",
-    "StructureDefinition-DIPSBasisPatientR4Reference.html" : "DIPSBasisPatientR4Reference",
-    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation",
-    "StructureDefinition-Department.html" : "Department",
     "StructureDefinition-DIPSEncounterOrganization.html" : "DIPSEncounterOrganization",
+    "StructureDefinition-DIPSPractitionerRoleReference.html" : "DIPSPractitionerRoleReference",
+    "StructureDefinition-Department.html" : "Department",
+    "StructureDefinition-DIPSDiagnosticReport.html" : "DIPS DiagnosticReport",
+    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
+    "StructureDefinition-LocationExtension.html" : "LocationExtension",
+    "StructureDefinition-DIPSLabsObservationReference.html" : "DIPSLabsObservationReference",
+    "StructureDefinition-ReferredBy.html" : "ReferredBy",
     "StructureDefinition-SectionExtension.html" : "SectionExtension",
-    "StructureDefinition-DepartmentExtension.html" : "DepartmentExtension"
+    "StructureDefinition-DIPSAppointment.html" : "DIPSAppointment",
+    "StructureDefinition-DIPSDiagnosticOrderSpecimenReference.html" : "DIPSDiagnosticOrderSpecimenReference",
+    "StructureDefinition-SelfBookingSlot.html" : "SelfBookingSlot",
+    "StructureDefinition-DIPSBasisPatientR4Reference.html" : "DIPSBasisPatientR4Reference",
+    "StructureDefinition-DIPSPractitionerRole.html" : "DIPSPractitionerRole",
+    "StructureDefinition-DIPSLocation.html" : "DIPSLocation",
+    "StructureDefinition-WardExtension.html" : "WardExtension",
+    "StructureDefinition-DIPSJournalId.html" : "DIPSJournalId",
+    "StructureDefinition-DipsLocationExtension.html" : "DipsLocationExtension",
+    "StructureDefinition-DIPSPractitionerReference.html" : "DIPSPractitionerReference",
+    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization",
+    "StructureDefinition-DIPSBasisLabObservationR4.html" : "DIPSBasisLabObservationR4",
+    "StructureDefinition-DIPSHealthcareService.html" : "DIPSHealthcareService",
+    "StructureDefinition-DIPSOrganizationReference.html" : "DIPSOrganizationReference",
+    "StructureDefinition-DIPSRemoteMonitoring.html" : "DIPS Remote Monitoring",
+    "StructureDefinition-DepartmentExtension.html" : "DepartmentExtension",
+    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -1748,9 +1866,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.47"],
     "uses" : {
     },
-    "StructureDefinition-DIPSPractitionerRole.html" : "DIPSPractitionerRole",
-    "StructureDefinition-NoImplVitalSignsObservationRespirationRate.html" : "NoImplVitalSignsObservationRespirationRate",
     "StructureDefinition-DIPSPerson.html" : "DIPSPerson",
+    "StructureDefinition-DIPSPractitionerRole.html" : "DIPSPractitionerRole",
     "StructureDefinition-DIPSPatient.html" : "DIPSPatient"
   },
   {
@@ -1809,12 +1926,13 @@
     "sources" : ["2.16.840.1.113883.4.642.3.518"],
     "uses" : {
     },
-    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
     "StructureDefinition-SelfBookingSlot.html" : "SelfBookingSlot",
     "StructureDefinition-DIPSHealthcareService.html" : "DIPSHealthcareService",
     "StructureDefinition-DIPSAppointmentSchedule.html" : "DIPSAppointmentSchedule",
+    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
+    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
     "StructureDefinition-DIPSAppointment.html" : "DIPSAppointment",
-    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter"
+    "StructureDefinition-DIPSVitalSignsObservationEncounterReference.html" : "DIPSVitalSignsObservationEncounterReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/servicerequest-category",
@@ -1870,7 +1988,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.958"],
     "uses" : {
     },
-    "StructureDefinition-NoImplVitalSignsObservationBodyHeight.html" : "NoImplVitalSignsObservationBodyHeight"
+    "StructureDefinition-DIPSVitalSignsObservationBodyHeight.html" : "DIPS Vital Signs Observation - Body Height"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/ucum-bodytemp",
@@ -1884,7 +2002,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.957"],
     "uses" : {
     },
-    "StructureDefinition-NoImplVitalSignsObservationBodyTemp.html" : "NoImplVitalSignsObservationBodyTemp"
+    "StructureDefinition-DIPSVitalSignsObservationBodyTemp.html" : "DIPS Vital Signs Observation - Body Temperature"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/ucum-bodyweight",
@@ -1898,7 +2016,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.956"],
     "uses" : {
     },
-    "StructureDefinition-NoImplVitalSignsObservationBodyWeight.html" : "NoImplVitalSignsObservationBodyWeight"
+    "StructureDefinition-DIPSVitalSignsObservationBodyWeight.html" : "DIPS Vital Signs Observation - Body Weight"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/ucum-vitals-common",
@@ -1912,15 +2030,57 @@
     "sources" : ["2.16.840.1.113883.4.642.3.955"],
     "uses" : {
     },
-    "StructureDefinition-NoImplVitalSignsObservationBodyMassIndex.html" : "NoImplVitalSignsObservationBodyMassIndex",
-    "StructureDefinition-NoImplVitalSignsObservationRespirationRate.html" : "NoImplVitalSignsObservationRespirationRate",
-    "StructureDefinition-NoImplVitalSignsObservationBloodpressure.html" : "NoImplVitalSignsObservationBloodpressure",
-    "StructureDefinition-NoImplVitalSignsObservationBodyWeight.html" : "NoImplVitalSignsObservationBodyWeight",
-    "StructureDefinition-NoImplVitalSignsObservationOxygenSaturation.html" : "NoImplVitalSignsObservationOxygenSaturation",
-    "StructureDefinition-NoImplVitalSignsObservationPulse.html" : "NoImplVitalSignsObservationPulse",
-    "StructureDefinition-NoImplVitalSignsObservationBodyHeight.html" : "NoImplVitalSignsObservationBodyHeight",
-    "StructureDefinition-NoImplVitalSignsObservationBodyTemp.html" : "NoImplVitalSignsObservationBodyTemp",
-    "StructureDefinition-NoImplVitalSignsObservationHeartRate.html" : "NoImplVitalSignsObservationHeartRate"
+    "StructureDefinition-DIPSVitalSignsObservationHeartRate.html" : "DIPS Vital Signs Observation - Heart Rate",
+    "StructureDefinition-DIPSVitalSignsObservationBodyWeight.html" : "DIPS Vital Signs Observation - Body Weight",
+    "StructureDefinition-DIPSVitalSignsObservationOxygenSaturation.html" : "DIPS Vital Signs Observation - Oxygen Saturation",
+    "StructureDefinition-DIPSVitalSignsObservationRespirationRate.html" : "DIPS Vital Signs Observation - Respiration Rate",
+    "StructureDefinition-DIPSVitalSignsObservationBodyHeight.html" : "DIPS Vital Signs Observation - Body Height",
+    "StructureDefinition-DIPSVitalSignsObservationBodyTemp.html" : "DIPS Vital Signs Observation - Body Temperature",
+    "StructureDefinition-DIPSVitalSignsObservationBloodpressure.html" : "DIPS Vital Signs Observation - Blood Pressure",
+    "StructureDefinition-DIPSVitalSignsObservationPulse.html" : "DIPS Vital Signs Observation - Pulse",
+    "StructureDefinition-DIPSVitalSignsObservationBodyMassIndex.html" : "DIPS Vital Signs Observation - Body Mass Index(BMI)"
+  },
+  {
+    "url" : "http://loinc.org/vs/LL355-9",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "GCS_1_Eye",
+    "title" : null,
+    "description" : "",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["1.3.6.1.4.1.12009.10.1.2208"],
+    "sources" : ["1.3.6.1.4.1.12009.10.1.2208"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSVitalSignsObservationGCS.html" : "DIPSVitalSignsObservationGCS"
+  },
+  {
+    "url" : "http://loinc.org/vs/LL356-7",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "GCS_2_Verbal",
+    "title" : null,
+    "description" : "",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["1.3.6.1.4.1.12009.10.1.2209"],
+    "sources" : ["1.3.6.1.4.1.12009.10.1.2209"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSVitalSignsObservationGCS.html" : "DIPSVitalSignsObservationGCS"
+  },
+  {
+    "url" : "http://loinc.org/vs/LL357-5",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "GCS_3_Motor",
+    "title" : null,
+    "description" : "",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["1.3.6.1.4.1.12009.10.1.2215"],
+    "sources" : ["1.3.6.1.4.1.12009.10.1.2215"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSVitalSignsObservationGCS.html" : "DIPSVitalSignsObservationGCS"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
@@ -1935,7 +2095,8 @@
     "uses" : {
     },
     "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
-    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter"
+    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
+    "StructureDefinition-DIPSVitalSignsObservationEncounterReference.html" : "DIPSVitalSignsObservationEncounterReference"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v2-0116",
@@ -1950,8 +2111,8 @@
     "uses" : {
     },
     "StructureDefinition-DIPSLocationReference.html" : "DIPSLocationReference",
-    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation",
-    "StructureDefinition-DIPSLocation.html" : "DIPSLocation"
+    "StructureDefinition-DIPSLocation.html" : "DIPSLocation",
+    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v2-0276",
@@ -1978,6 +2139,7 @@
     "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0360|2.7"],
     "uses" : {
     },
+    "StructureDefinition-DIPSDiagnosticReportPractitionerReference.html" : "DIPSDiagnosticReportPractitionerReference",
     "StructureDefinition-DIPSPractitioner.html" : "DIPSPractitioner",
     "StructureDefinition-DIPSBasisPractitionerR4.html" : "DIPSBasisPractitionerR4"
   },
@@ -1994,7 +2156,8 @@
     "uses" : {
     },
     "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
-    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter"
+    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
+    "StructureDefinition-DIPSVitalSignsObservationEncounterReference.html" : "DIPSVitalSignsObservationEncounterReference"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
@@ -2009,7 +2172,8 @@
     "uses" : {
     },
     "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
-    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter"
+    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
+    "StructureDefinition-DIPSVitalSignsObservationEncounterReference.html" : "DIPSVitalSignsObservationEncounterReference"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification",
@@ -2038,8 +2202,8 @@
     "uses" : {
     },
     "StructureDefinition-DIPSLocationReference.html" : "DIPSLocationReference",
+    "StructureDefinition-DIPSLocation.html" : "DIPSLocation",
     "StructureDefinition-DIPSEncounterServiceRequest.html" : "DIPSEncounterServiceRequest",
-    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation",
-    "StructureDefinition-DIPSLocation.html" : "DIPSLocation"
+    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation"
   }]
 }

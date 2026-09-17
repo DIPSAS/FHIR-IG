@@ -1,0 +1,54 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "DIPSGCSEyeOpeningScoreCodeSystem",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DIPSGCSEyeOpeningScoreCodeSystem</b></p><a name=\"DIPSGCSEyeOpeningScoreCodeSystem\"> </a><a name=\"hcDIPSGCSEyeOpeningScoreCodeSystem\"> </a><p>This  code system <code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"DIPSGCSEyeOpeningScoreCodeSystem-1\"> </a></td><td>Ingen reaksjon</td><td>Ingen reaksjon</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"DIPSGCSEyeOpeningScoreCodeSystem-2\"> </a></td><td>Ved smertestimulering</td><td>Ved smertestimulering</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"DIPSGCSEyeOpeningScoreCodeSystem-3\"> </a></td><td>Ved tiltale</td><td>Ved tiltale</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"DIPSGCSEyeOpeningScoreCodeSystem-4\"> </a></td><td>Spontant</td><td>Spontant</td></tr></table></div>"
+  },
+  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem",
+  "identifier" : [{
+    "system" : "http://dips.no/fhir/namingsystem/dips-gcs-eyeopening"
+  }],
+  "version" : "0.1.0",
+  "name" : "DIPSGCSEyeOpeningScoreCodeSystem",
+  "status" : "draft",
+  "date" : "2026-09-17T19:39:02+00:00",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "Lars-Andreas Nystad",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "mailto:lan@dips.no",
+      "use" : "work"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "1",
+    "display" : "Ingen reaksjon",
+    "definition" : "Ingen reaksjon"
+  },
+  {
+    "code" : "2",
+    "display" : "Ved smertestimulering",
+    "definition" : "Ved smertestimulering"
+  },
+  {
+    "code" : "3",
+    "display" : "Ved tiltale",
+    "definition" : "Ved tiltale"
+  },
+  {
+    "code" : "4",
+    "display" : "Spontant",
+    "definition" : "Spontant"
+  }]
+}

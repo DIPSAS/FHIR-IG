@@ -1,5 +1,37 @@
 {
   "codeSystems" : [{
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSBodyMassIndexMeasurementMethod",
+    "title" : null,
+    "description" : ""
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSGCSEyeOpeningScoreCodeSystem",
+    "title" : null,
+    "description" : ""
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSGCSMotorScoreCodeSystem",
+    "title" : null,
+    "description" : ""
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSGCSVerbalScoreCodeSystem",
+    "title" : null,
+    "description" : ""
+  },
+  {
     "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSLocation",
     "version" : "0.1.0",
     "status" : "draft",
@@ -16,42 +48,58 @@
     "description" : ""
   },
   {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSMeasurementMethod",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSMeasurementMethod",
+    "title" : null,
+    "description" : ""
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSQSOFAScoreBPCodeSystem",
+    "title" : null,
+    "description" : ""
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSQSOFAScoreMentalSatusCodeSystem",
+    "title" : null,
+    "description" : ""
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreResRateCodeSystem",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSQSOFAScoreResRateCodeSystem",
+    "title" : null,
+    "description" : ""
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAcomponentCodeSystem",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSQSOFAcomponentCodeSystem",
+    "title" : null,
+    "description" : ""
+  },
+  {
+    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSVitalSignsObservationConsciousness",
+    "title" : null,
+    "description" : ""
+  },
+  {
     "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DIPSVitalSignsObservationPrePostduktal",
-    "title" : null,
-    "description" : ""
-  },
-  {
-    "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplBodyMassIndexMeasurementMethod",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoImplBodyMassIndexMeasurementMethod",
-    "title" : null,
-    "description" : ""
-  },
-  {
-    "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplMeasurementMethod",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoImplMeasurementMethod",
-    "title" : null,
-    "description" : ""
-  },
-  {
-    "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplQSOFAcomponentCodes",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoImplQSOFAcomponentCodes",
-    "title" : null,
-    "description" : ""
-  },
-  {
-    "url" : "http://dips.no/fhir/R4/CodeSystem/NoImplVitalSignsObservationConsciousness",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "NoImplVitalSignsObservationConsciousness",
     "title" : null,
     "description" : ""
   }]

@@ -15,7 +15,7 @@
   "resourceType" : "Encounter",
   "id" : "agy100247",
   "meta" : {
-    "profile" : ["http://dips.no/fhir/R4/StructureDefinition/DIPSR4Encounter"]
+    "profile" : ["http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationEncounterReference"]
   },
   "identifier" : [{
     "system" : "http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid",
@@ -25,22 +25,6 @@
   "class" : {
     "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
     "code" : "AMB"
-  },
-  "subject" : {
-    "reference" : "Patient/cdp138",
-    "identifier" : {
-      "system" : "http://dips.no/fhir/namingsystem/dips-patientid",
-      "value" : "138"
-    },
-    "display" : "Spelemann (Testplan - Journal), Per"
-  },
-  "serviceProvider" : {
-    "reference" : "Organization/afa22",
-    "identifier" : {
-      "system" : "urn:oid:2.16.578.1.12.4.1.4.102",
-      "value" : "10013"
-    },
-    "display" : "Kirurgisk avdeling | Testsykehuset DIPS"
   }
 }
 

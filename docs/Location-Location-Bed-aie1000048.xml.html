@@ -64,8 +64,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.247"}
-    h3,h4,h5,h6{--heading-prefix:"7.247"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.259"}
+    h3,h4,h5,h6{--heading-prefix:"7.259"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -126,30 +126,73 @@
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
       FHIR Artifacts <b class="caret"></b>
     </a>
+    <!-- artifacts.html numbers its sections sequentially, so these anchors track the
+         order of the groups: block in sushi-config.yaml. Adding, removing or reordering
+         a group shifts every anchor after it - re-check these against a build. -->
     <ul class="dropdown-menu">
       <li>
-        <a href="artifacts.html#1">Vitalsign Profiles</a>
+        <a href="artifacts.html#1">Observation Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#3">Resource Profiles</a>
+        <a href="artifacts.html#2">Encounter Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#4">Data Type Profiles</a>
+        <a href="artifacts.html#3">EpisodeOfCare Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#5">Extensions</a>
+        <a href="artifacts.html#4">ServiceRequest Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#6">Value Sets</a>
+        <a href="artifacts.html#5">Appointment Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#7">Code Systems</a>
+        <a href="artifacts.html#6">Schedule Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#2">Vitalsign Examples</a>
+        <a href="artifacts.html#7">Slot Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#8">Example Instances</a>
+        <a href="artifacts.html#8">Patient Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#9">Person Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#10">RelatedPerson Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#11">Practitioner Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#12">PractitionerRole Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#13">Organization Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#14">HealthcareService Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#15">Location Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#16">Reference Profiles</a>
+      </li>
+      <li class="divider"></li>
+      <li>
+        <a href="artifacts.html#17">Capability Statements</a>
+      </li>
+      <li>
+        <a href="artifacts.html#18">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#19">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#20">Code Systems</a>
+      </li>
+      <li>
+        <a href="artifacts.html#21">Example Instances</a>
       </li>
     </ul>
   </li>
@@ -269,7 +312,7 @@
   &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Location.meta">meta</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Location.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Location Location-Bed-aie1000048&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;Location-Bed-aie1000048&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcLocation-Bed-aie1000048&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profiles: &lt;a href=&quot;StructureDefinition-DIPSLocation.html&quot;&gt;DIPSLocation&lt;/a&gt;, &lt;a href=&quot;https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;amp;canonical=http://hl7.no/fhir/StructureDefinition/no-basis-Location&quot;&gt;no-basis-Location&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Tag: &lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Security Label: &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://dips.no/fhir/namingsystem/dips-bedid&lt;/code&gt;/1000048 (use: official, )&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;operationalStatus&lt;/b&gt;: dips-bedstatus:  (Ledig)&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Gul 2&lt;/p&gt;&lt;p&gt;&lt;b&gt;mode&lt;/b&gt;: Instance&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{urn:oid:1.3.6.1.4.1.9038.52.45 Vanlig}&quot;&gt;Vanlig&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;physicalType&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/location-physical-type bd}&quot;&gt;Bed&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=&quot;Location-ahl25.html&quot;&gt;Location: identifier = urn:oid:1.3.6.1.4.1.9038.70.4#25&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Location Location-Bed-aie1000048&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;Location-Bed-aie1000048&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcLocation-Bed-aie1000048&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profiles: &lt;a href=&quot;StructureDefinition-DIPSLocation.html&quot;&gt;DIPSLocation&lt;/a&gt;, &lt;a href=&quot;https://simplifier.net/resolve?scope=hl7.fhir.no.domain.vitalsigns@0.9.74&amp;amp;canonical=http://hl7.no/fhir/StructureDefinition/no-basis-Location&quot;&gt;no-basis-Location&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Tag: &lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Security Label: &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://dips.no/fhir/namingsystem/dips-bedid&lt;/code&gt;/1000048 (use: official, )&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;operationalStatus&lt;/b&gt;: dips-bedstatus:  (Ledig)&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Gul 2&lt;/p&gt;&lt;p&gt;&lt;b&gt;mode&lt;/b&gt;: Instance&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{urn:oid:1.3.6.1.4.1.9038.52.45 Vanlig}&quot;&gt;Vanlig&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;physicalType&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/location-physical-type bd}&quot;&gt;Bed&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=&quot;Location-ahl25.html&quot;&gt;Location: identifier = urn:oid:1.3.6.1.4.1.9038.70.4#25&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Location.text">text</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
@@ -331,7 +374,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 15, 2026 05:06+0000">2026-09-15</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 17, 2026 19:39+0000">2026-09-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

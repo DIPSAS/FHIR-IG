@@ -62,8 +62,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.256"}
-    h3,h4,h5,h6{--heading-prefix:"7.256"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.277"}
+    h3,h4,h5,h6{--heading-prefix:"7.277"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -124,30 +124,73 @@
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
       FHIR Artifacts <b class="caret"></b>
     </a>
+    <!-- artifacts.html numbers its sections sequentially, so these anchors track the
+         order of the groups: block in sushi-config.yaml. Adding, removing or reordering
+         a group shifts every anchor after it - re-check these against a build. -->
     <ul class="dropdown-menu">
       <li>
-        <a href="artifacts.html#1">Vitalsign Profiles</a>
+        <a href="artifacts.html#1">Observation Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#3">Resource Profiles</a>
+        <a href="artifacts.html#2">Encounter Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#4">Data Type Profiles</a>
+        <a href="artifacts.html#3">EpisodeOfCare Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#5">Extensions</a>
+        <a href="artifacts.html#4">ServiceRequest Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#6">Value Sets</a>
+        <a href="artifacts.html#5">Appointment Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#7">Code Systems</a>
+        <a href="artifacts.html#6">Schedule Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#2">Vitalsign Examples</a>
+        <a href="artifacts.html#7">Slot Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#8">Example Instances</a>
+        <a href="artifacts.html#8">Patient Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#9">Person Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#10">RelatedPerson Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#11">Practitioner Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#12">PractitionerRole Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#13">Organization Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#14">HealthcareService Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#15">Location Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#16">Reference Profiles</a>
+      </li>
+      <li class="divider"></li>
+      <li>
+        <a href="artifacts.html#17">Capability Statements</a>
+      </li>
+      <li>
+        <a href="artifacts.html#18">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#19">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#20">Code Systems</a>
+      </li>
+      <li>
+        <a href="artifacts.html#21">Example Instances</a>
       </li>
     </ul>
   </li>
@@ -249,7 +292,7 @@
 
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization-aks1"> </a><a name="hcOrganization-aks1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-DIPSOrganization.html">DIPSOrganization</a>, <a href="https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;canonical=http://hl7.no/fhir/StructureDefinition/no-basis-Organization">no-basis-Organization</a></p><p style="margin-bottom: 0px">Tag: </p><p style="margin-bottom: 0px">Security Label: </p></div><p><b>no/fhir/R4/StructureDefinition/BankAccountNumber1</b>: 1 234 567001</p><p><b>no/fhir/R4/StructureDefinition/BankAccountNumber2</b>: 1234567</p><p><b>identifier</b>: <code>urn:oid:1.3.6.1.4.1.9038.70.1</code>/1 (use: official, ), <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/970948139 (use: official, ), <code>urn:oid:2.16.578.1.12.4.1.2</code>/79744 (use: official, )</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes:">Helseforetak</span>, <span title="Codes:{urn:oid:2.16.578.1.12.4.1.1.8628 2}">HF|Helseforetak</span></p><p><b>name</b>: Testsykehuset Hf</p><p><b>telecom</b>: ph: 75505000(Work)</p><p><b>address</b>: </p><ul><li>Testveien 10 Bodø NORDLAND FYLKESKOMMUNE 8015 (work)</li><li>Legeveien 22 Bodø 8009 (billing)</li></ul><p><b>partOf</b>: <a href="Organization-aks1000004.html">Helse Nord</a></p></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization-aks1"> </a><a name="hcOrganization-aks1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-DIPSOrganization.html">DIPSOrganization</a>, <a href="https://simplifier.net/resolve?scope=hl7.fhir.no.domain.vitalsigns@0.9.74&amp;canonical=http://hl7.no/fhir/StructureDefinition/no-basis-Organization">no-basis-Organization</a></p><p style="margin-bottom: 0px">Tag: </p><p style="margin-bottom: 0px">Security Label: </p></div><p><b>no/fhir/R4/StructureDefinition/BankAccountNumber1</b>: 1 234 567001</p><p><b>no/fhir/R4/StructureDefinition/BankAccountNumber2</b>: 1234567</p><p><b>identifier</b>: <code>urn:oid:1.3.6.1.4.1.9038.70.1</code>/1 (use: official, ), <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/970948139 (use: official, ), <code>urn:oid:2.16.578.1.12.4.1.2</code>/79744 (use: official, )</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes:">Helseforetak</span>, <span title="Codes:{urn:oid:2.16.578.1.12.4.1.1.8628 2}">HF|Helseforetak</span></p><p><b>name</b>: Testsykehuset Hf</p><p><b>telecom</b>: ph: 75505000(Work)</p><p><b>address</b>: </p><ul><li>Testveien 10 Bodø NORDLAND FYLKESKOMMUNE 8015 (work)</li><li>Legeveien 22 Bodø 8009 (billing)</li></ul><p><b>partOf</b>: <a href="Organization-aks1000004.html">Helse Nord</a></p></div>
 
   
 
@@ -274,7 +317,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 15, 2026 05:06+0000">2026-09-15</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 17, 2026 19:39+0000">2026-09-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,0 +1,127 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/R4/Observation/dips-consciousness-create> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "dips-consciousness-create"] ;
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "0" ] ;
+     fhir:Meta.lastUpdated [ fhir:value "2014-01-30T11:35:23+00:00"^^xsd:dateTime ] ;
+     fhir:Meta.source [ fhir:value "META_VISION" ] ;
+     fhir:Meta.profile [
+       fhir:value "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationConsciousness" ;
+       fhir:index 0 ;
+       fhir:link <http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationConsciousness>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation dips-consciousness-create</b></p><a name=\"dips-consciousness-create\"> </a><a name=\"hcdips-consciousness-create\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 0; Last updated: 2014-01-30 11:35:23+0000; </p><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&amp;canonical=http://fhir.org/packages/hl7.fhir.no.basis/META_VISION\">META_VISION</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DIPSVitalSignsObservationConsciousness.html\">DIPS Vital Signs Observation - Level of Consciousness</a></p></div><p><b>DIPSJournalId</b>: <a href=\"DocumentReference-ako124.html\">DocumentReference: status = current; docStatus = final</a></p><p><b>DIPSVitalSignsLocation</b>: <a href=\"CodeSystem-DIPSLocation.html#DIPSLocation-School\">DIPSLocation: School</a> (At School)</p><p><b>identifier</b>: <code>http://dips.no/fhir/namingsystem/dips-RelativeEhrUri</code>/ehr:compositions/6c41D37f-f173-45d6-8504-17c40454b9ee::default::1/content[openEHR-EHR-OBSERVATION.acvpu.v1 and name/value='ACVPU'], <code>http://dips.no/fhir/namingsystem/dips-ObservationId</code>/dips-consciousness-create, <code>http://dips.no/fhir/namingsystem/externalId</code>/testBPexternalId1</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1104441000000107}\">Alert Confusion Voice Pain Unresponsive scale score</span></p><p><b>subject</b>: <a href=\"Patient-cdp1000807.html\">Anonymous Patient (no stated gender), DoB Unknown ( http://dips.no/fhir/namingsystem/dips-patientid#1000807)</a></p><p><b>encounter</b>: <a href=\"Encounter-agy100247.html\">Encounter: identifier = http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid#agy100247; status = arrived; class = ambulatory (ActCode#AMB)</a></p><p><b>effective</b>: 2021-10-25 09:30:33+0530</p><p><b>performer</b>: </p><ul><li><a href=\"PractitionerRole-agb103.html\">PractitionerRole: identifier = urn:oid:1.3.6.1.4.1.9038.51.1#103</a></li><li><a href=\"Organization-afa22.html\">Organization: identifier = urn:oid:1.3.6.1.4.1.9038.70.3#22</a></li></ul><p><b>value</b>: <span title=\"Codes:{http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness D0005}\">Våken</span></p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSJournalId" ] ;
+     fhir:Extension.valueReference [
+       fhir:link <http://dips.no/fhir/R4/DocumentReference/ako124> ;
+       fhir:Reference.reference [ fhir:value "DocumentReference/ako124" ] ;
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-journalid" ] ;
+         fhir:Identifier.value [ fhir:value "4325645" ]
+       ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSLocation" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://dips.no/fhir/R4/CodeSystem/DIPSLocation" ] ;
+       fhir:Coding.code [ fhir:value "School" ] ;
+       fhir:Coding.display [ fhir:value "At School" ]
+     ]
+  ] ;
+  fhir:Observation.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-RelativeEhrUri" ] ;
+     fhir:Identifier.value [ fhir:value "ehr:compositions/6c41D37f-f173-45d6-8504-17c40454b9ee::default::1/content[openEHR-EHR-OBSERVATION.acvpu.v1 and name/value='ACVPU']" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-ObservationId" ] ;
+     fhir:Identifier.value [ fhir:value "dips-consciousness-create" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/externalId" ] ;
+     fhir:Identifier.value [ fhir:value "testBPexternalId1" ]
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "survey" ] ;
+       fhir:Coding.display [ fhir:value "Survey" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a sct:1104441000000107 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "1104441000000107" ] ;
+       fhir:Coding.display [ fhir:value "Alert Confusion Voice Pain Unresponsive scale score" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <http://dips.no/fhir/R4/Patient/cdp1000807> ;
+     fhir:Reference.reference [ fhir:value "Patient/cdp1000807" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-patientid" ] ;
+       fhir:Identifier.value [ fhir:value "1000807" ]
+     ]
+  ] ;
+  fhir:Observation.encounter [
+     fhir:link <http://dips.no/fhir/R4/Encounter/agy100247> ;
+     fhir:Reference.reference [ fhir:value "Encounter/agy100247" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid" ] ;
+       fhir:Identifier.value [ fhir:value "agy100247" ]
+     ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2021-10-25T09:30:33+05:30"^^xsd:dateTime] ;
+  fhir:Observation.performer [
+     fhir:index 0 ;
+     fhir:link <http://dips.no/fhir/R4/PractitionerRole/agb103> ;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/agb103" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.51.1" ] ;
+       fhir:Identifier.value [ fhir:value "103" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:link <http://dips.no/fhir/R4/Organization/afa22> ;
+     fhir:Reference.reference [ fhir:value "Organization/afa22" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.70.3" ] ;
+       fhir:Identifier.value [ fhir:value "22" ]
+     ]
+  ] ;
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness" ] ;
+       fhir:Coding.code [ fhir:value "D0005" ] ;
+       fhir:Coding.display [ fhir:value "Våken" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://dips.no/fhir/R4/Observation/dips-consciousness-create.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

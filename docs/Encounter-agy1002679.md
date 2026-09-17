@@ -10,7 +10,7 @@
 
 **status**: Arrived
 
-**class**: v3-ActCod: AMB (AMB)
+**class**: [ActCode: AMB](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB) (ambulatory)
 
 
 
@@ -26,7 +26,7 @@
   }],
   "status" : "arrived",
   "class" : {
-    "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCod",
+    "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
     "code" : "AMB"
   }
 }

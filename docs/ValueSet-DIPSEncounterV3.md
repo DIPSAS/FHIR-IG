@@ -69,7 +69,7 @@ Codes representing body site for blood pressure
   "title" : "DIPSEncounterV3",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-15T05:06:55+00:00",
+  "date" : "2026-09-17T19:39:02+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -91,6 +91,7 @@ Codes representing body site for blood pressure
   "compose" : {
     "include" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "11.0.0",
       "concept" : [{
         "code" : "IMP",
         "display" : "inpatient encounter"

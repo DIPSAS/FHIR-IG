@@ -124,30 +124,73 @@
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
       FHIR Artifacts <b class="caret"></b>
     </a>
+    <!-- artifacts.html numbers its sections sequentially, so these anchors track the
+         order of the groups: block in sushi-config.yaml. Adding, removing or reordering
+         a group shifts every anchor after it - re-check these against a build. -->
     <ul class="dropdown-menu">
       <li>
-        <a href="artifacts.html#1">Vitalsign Profiles</a>
+        <a href="artifacts.html#1">Observation Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#3">Resource Profiles</a>
+        <a href="artifacts.html#2">Encounter Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#4">Data Type Profiles</a>
+        <a href="artifacts.html#3">EpisodeOfCare Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#5">Extensions</a>
+        <a href="artifacts.html#4">ServiceRequest Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#6">Value Sets</a>
+        <a href="artifacts.html#5">Appointment Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#7">Code Systems</a>
+        <a href="artifacts.html#6">Schedule Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#2">Vitalsign Examples</a>
+        <a href="artifacts.html#7">Slot Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#8">Example Instances</a>
+        <a href="artifacts.html#8">Patient Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#9">Person Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#10">RelatedPerson Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#11">Practitioner Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#12">PractitionerRole Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#13">Organization Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#14">HealthcareService Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#15">Location Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#16">Reference Profiles</a>
+      </li>
+      <li class="divider"></li>
+      <li>
+        <a href="artifacts.html#17">Capability Statements</a>
+      </li>
+      <li>
+        <a href="artifacts.html#18">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#19">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#20">Code Systems</a>
+      </li>
+      <li>
+        <a href="artifacts.html#21">Example Instances</a>
       </li>
     </ul>
   </li>
@@ -229,6 +272,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#fhir-healthcareservice" id="markdown-toc-fhir-healthcareservice">FHIR HealthcareService</a></li>
   <li><a href="#fhir-related-person" id="markdown-toc-fhir-related-person">FHIR Related Person</a></li>
   <li><a href="#fhir-valueset-dipsr4valueset" id="markdown-toc-fhir-valueset-dipsr4valueset">FHIR ValueSet (DIPSR4ValueSet)</a></li>
+  <li><a href="#fhir-vitalsign-observation" id="markdown-toc-fhir-vitalsign-observation">FHIR VitalSign Observation</a></li>
 </ul>
 
 </div>
@@ -4169,6 +4213,311 @@ lueIsValid=1&amp;_profile=DIPSR4ValueSet</code></p>
 .../ValueSet/$additionalPagination?codeValuePageSize=5&amp;codeValuePageNumber=2&amp;_profile=DIPSR4
 ValueSet</code></p>
 
+<h3 id="fhir-vitalsign-observation">FHIR VitalSign Observation</h3>
+
+<p>DIPSVitalSignsObservation covers vital signs recorded in DIPS Arena as FHIR <code class="language-plaintext highlighter-rouge">Observation</code> resources.
+All 13 profiles below are served by the same endpoint and behave identically - the differences
+between them are only the LOINC/SNOMED code recorded on the Observation and the openEHR template
+the value was captured with. This section documents that shared behavior once, and gives examples
+across several of the profiles rather than repeating the same explanation for each.</p>
+
+<p>Table 51. Supported Profiles</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>Vital Sign</th>
+      <th>Code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DIPSVitalSignsObservationBloodpressure</td>
+      <td>Blood pressure</td>
+      <td>LOINC 85354-9</td>
+    </tr>
+    <tr>
+      <td>DIPSVitalSignsObservationBodyHeight</td>
+      <td>Body height</td>
+      <td>LOINC 8302-2, SNOMED 50373000</td>
+    </tr>
+    <tr>
+      <td>DIPSVitalSignsObservationBodyMassIndex</td>
+      <td>Body mass index</td>
+      <td>LOINC 39156-5</td>
+    </tr>
+    <tr>
+      <td>DIPSVitalSignsObservationBodyTemp</td>
+      <td>Body temperature</td>
+      <td>LOINC 8310-5, SNOMED 276885007</td>
+    </tr>
+    <tr>
+      <td>DIPSVitalSignsObservationBodyWeight</td>
+      <td>Body weight</td>
+      <td>LOINC 29463-7, SNOMED 27113001</td>
+    </tr>
+    <tr>
+      <td>DIPSVitalSignsObservationConsciousness</td>
+      <td>Level of consciousness</td>
+      <td>SNOMED 1104441000000107</td>
+    </tr>
+    <tr>
+      <td>DIPSVitalSignsObservationGCS</td>
+      <td>Glasgow Coma Score</td>
+      <td>LOINC 9269-2</td>
+    </tr>
+    <tr>
+      <td>DIPSVitalSignsObservationHeartRate</td>
+      <td>Heart rate</td>
+      <td>LOINC 8867-4, SNOMED 364075005</td>
+    </tr>
+    <tr>
+      <td>DIPSVitalSignsObservationNews2Score</td>
+      <td>NEWS2 score</td>
+      <td>SNOMED 1104051000000101</td>
+    </tr>
+    <tr>
+      <td>DIPSVitalSignsObservationOxygenSaturation</td>
+      <td>Oxygen saturation</td>
+      <td>LOINC 2708-6, SNOMED 431314004</td>
+    </tr>
+    <tr>
+      <td>DIPSVitalSignsObservationPulse</td>
+      <td>Pulse</td>
+      <td>LOINC 8867-4, SNOMED 78564009</td>
+    </tr>
+    <tr>
+      <td>DIPSVitalSignsObservationQSOFAScore</td>
+      <td>qSOFA score</td>
+      <td>SNOMED 63451000122107</td>
+    </tr>
+    <tr>
+      <td>DIPSVitalSignsObservationRespirationRate</td>
+      <td>Respiration rate</td>
+      <td>LOINC 9279-1, SNOMED 271625008</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 52. Supported FHIR Operations</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Operation</th>
+      <th>Supported</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Read</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>VRead</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Create</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Update</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>History</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Search</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Delete</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Patch</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>There is no <code class="language-plaintext highlighter-rouge">GET .../Observation/{id}</code> read-by-id for any of these profiles - only search, and the
+custom <code class="language-plaintext highlighter-rouge">$SaveExtData</code> operation described below.</p>
+
+<h4 id="request-search-7">Request: Search</h4>
+
+<p>Table 53. OperationInformation</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://{server}/DIPS-WebAPI/HL7/FHIR-R4/Observation?{SearchParameters}</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>GET</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 54. Parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>documentId</td>
+      <td>Search by the DIPS clinical document (journal entry) the vital sign was recorded in. This is the only search parameter that currently returns results - see the note below.</td>
+    </tr>
+    <tr>
+      <td>_profile</td>
+      <td>Accepted, but has no effect - see the note below.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>At least one of <code class="language-plaintext highlighter-rouge">patient</code>, <code class="language-plaintext highlighter-rouge">fhirId</code>, <code class="language-plaintext highlighter-rouge">externalFhirId</code> or <code class="language-plaintext highlighter-rouge">documentId</code> must be provided, or the
+search is rejected with a 422 error. Of these, only <code class="language-plaintext highlighter-rouge">documentId</code> currently returns matching
+results - <code class="language-plaintext highlighter-rouge">patient</code>, <code class="language-plaintext highlighter-rouge">fhirId</code> and <code class="language-plaintext highlighter-rouge">externalFhirId</code> are accepted by this validation but not yet
+implemented behind it, so a request using only one of them returns an empty bundle rather than an
+error or a result.</p>
+
+<p>The standard <code class="language-plaintext highlighter-rouge">_profile</code> search parameter can also be appended to a request, e.g.
+<code class="language-plaintext highlighter-rouge">GET .../Observation?documentId=1009240&amp;_profile=DIPSVitalSignsObservationHeartRate</code>. It is not
+currently read by this endpoint - it has no effect on the result, whether or not it's present, and
+whichever of the profiles listed in Table 51 is passed. It is accepted only because it is a
+standard FHIR search parameter the underlying framework parses generically; nothing in the vital
+sign search code consults it.</p>
+
+<p>A <code class="language-plaintext highlighter-rouge">documentId</code> search returns a bundle containing every vital sign Observation recorded in that
+document whose type matches the profile being requested - the resource id passed to <code class="language-plaintext highlighter-rouge">documentId</code>
+is the document's id, not the Observation's own id.</p>
+
+<p>Example requests</p>
+
+<p>Search Blood pressure recorded in document 1008418:
+<code class="language-plaintext highlighter-rouge">GET .../Observation?documentId=1008418</code></p>
+
+<p>Search Heart rate recorded in document 1009240:
+<code class="language-plaintext highlighter-rouge">GET .../Observation?documentId=1009240</code></p>
+
+<p>Search Pulse recorded in document 1009280:
+<code class="language-plaintext highlighter-rouge">GET .../Observation?documentId=1009280</code></p>
+
+<p>Search qSOFA score recorded in document 1009024:
+<code class="language-plaintext highlighter-rouge">GET .../Observation?documentId=1009024</code></p>
+
+<p>Search Oxygen saturation recorded in document 1009312:
+<code class="language-plaintext highlighter-rouge">GET .../Observation?documentId=1009312</code></p>
+
+<h4 id="operation-saveextdata">Operation: $SaveExtData</h4>
+
+<p>Links an externally recorded value to a DIPS clinical document. This does not create the document -
+<code class="language-plaintext highlighter-rouge">JournalId</code> must already exist in DIPS.</p>
+
+<p>Table 55. OperationInformation</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://{server}/DIPS-WebAPI/HL7/FHIR-R4/Observation/$SaveExtData</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>POST</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 56. Parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FhirId</td>
+      <td>No</td>
+      <td>FHIR resource id of the Observation</td>
+    </tr>
+    <tr>
+      <td>ExternalId</td>
+      <td>Yes</td>
+      <td>Identifier of the externally sourced value being linked</td>
+    </tr>
+    <tr>
+      <td>Source</td>
+      <td>Yes</td>
+      <td>Name of the external source system, e.g. MetaVision</td>
+    </tr>
+    <tr>
+      <td>JournalId</td>
+      <td>Yes</td>
+      <td>The DIPS document id (same value as <code class="language-plaintext highlighter-rouge">documentId</code> in search) - must be numeric and must already exist</td>
+    </tr>
+    <tr>
+      <td>IssuedTime</td>
+      <td>Yes</td>
+      <td>When the externally recorded value was issued</td>
+    </tr>
+    <tr>
+      <td>VersionID</td>
+      <td>No</td>
+      <td>Version of the record being linked</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A request repeating a <code class="language-plaintext highlighter-rouge">JournalId</code>/<code class="language-plaintext highlighter-rouge">Source</code> pair that is already mapped is rejected with a 400 error.</p>
+
+<p>Example request</p>
+
+<p><code class="language-plaintext highlighter-rouge">POST .../Observation/$SaveExtData</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Parameters xmlns="http://hl7.org/fhir"&gt;
+    &lt;parameter&gt;
+        &lt;name value="FhirId"/&gt;
+        &lt;valueString value="[fhir resource id]"/&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;name value="ExternalId"/&gt;
+        &lt;valueString value="18730-7773-External_Identifier_value"/&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;name value="Source"/&gt;
+        &lt;valueString value="MetaVision"/&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;name value="JournalId"/&gt;
+        &lt;valueString value="1013800"/&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;name value="IssuedTime"/&gt;
+        &lt;valueDateTime value="2026-03-03T11:00:00+02:00"/&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;name value="VersionID"/&gt;
+        &lt;valueString value="1"/&gt;
+    &lt;/parameter&gt;
+&lt;/Parameters&gt;
+</code></pre></div></div>
+
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>© 2023 DIPS AS
 All rights reserved.
 No part of this publication may be reproduced, stored in a retrieval system, transmitted, or
@@ -4203,7 +4552,7 @@ https://www.dips.no
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 15, 2026 05:06+0000">2026-09-15</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 17, 2026 19:39+0000">2026-09-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

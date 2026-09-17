@@ -1,0 +1,116 @@
+{
+  "resourceType" : "CapabilityStatement",
+  "id" : "DIPSVitalSignsObservation",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CapabilityStatement DIPSVitalSignsObservation</b></p><a name=\"DIPSVitalSignsObservation\"> </a><a name=\"hcDIPSVitalSignsObservation\"> </a><h2 id=\"title\">DIPS implementation of Vital Signs - Capability Statement</h2><ul><li>Implementation Guide Version: 0.1.0 </li><li>FHIR Version: 4.0.0 </li><li>Supported Formats: <code>xml</code>, <code>json</code></li><li>Published on: 2019-09-26 </li><li>Published by: DIPS AS </li></ul><blockquote class=\"impl-note\"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote><h2 id=\"rest\">FHIR RESTful Capabilities</h2><div class=\"panel panel-default\"><div class=\"panel-heading\"><h3 id=\"mode1\" class=\"panel-title\">Mode: <code>server</code></h3></div><div class=\"panel-body\"><div><p>This describes the capabilities of the vital signs supported by DIPS.</p>\n</div><div class=\"lead\"><em>Summary of System-wide Interactions</em></div><ul><li>Supports the <code>transaction</code>interaction.</li><li>Supports the <code>history-system</code>interaction.</li></ul></div></div><h3 id=\"resourcesCap1\">Capabilities by Resource/Profile</h3><h4 id=\"resourcesSummary1\">Summary</h4><p>The summary table lists the resources that are part of this configuration, and for each resource it lists:</p><ul><li>The relevant profiles (if any)</li><li>The interactions supported by each resource (<b><span class=\"bg-info\">R</span></b>ead, <b><span class=\"bg-info\">S</span></b>earch, <b><span class=\"bg-info\">U</span></b>pdate, and <b><span class=\"bg-info\">C</span></b>reate, are always shown, while <b><span class=\"bg-info\">VR</span></b>ead, <b><span class=\"bg-info\">P</span></b>atch, <b><span class=\"bg-info\">D</span></b>elete, <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">I</span></b>nstance, or <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">T</span></b>ype are only present if at least one of the resources has support for them.</li><li><span>The required, recommended, and some optional search parameters (if any). </span></li><li>The linked resources enabled for <code>_include</code></li><li>The other resources enabled for <code>_revinclude</code></li><li>The operations on the resource (if any)</li></ul><div class=\"table-responsive\"><table class=\"table table-condensed table-hover\"><thead><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th class=\"text-center\"><b title=\"GET a resource (read interaction)\">R</b></th><th class=\"text-center\"><b title=\"GET all set of resources of the type (search interaction)\">S</b></th><th class=\"text-center\"><b title=\"PUT a new resource version (update interaction)\">U</b></th><th class=\"text-center\"><b title=\"POST a new resource (create interaction)\">C</b></th><th><b title=\"Required and recommended search parameters\">Searches</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Operations</b></th></tr></thead><tbody><tr><td><a href=\"#Observation1-1\">Observation</a></td><td><a href=\"http://hl7.org/fhir/R4/vitalsigns.html\">http://hl7.org/fhir/StructureDefinition/vitalsigns</a><br/><em>Additional supported profiles:</em><br/>\u00a0\u00a0<a href=\"StructureDefinition-DIPSVitalSignsObservationBloodpressure.html\">DIPS Vital Signs Observation - Blood Pressure</a><br/>\u00a0\u00a0<a href=\"StructureDefinition-DIPSVitalSignsObservationBodyHeight.html\">DIPS Vital Signs Observation - Body Height</a><br/>\u00a0\u00a0<a href=\"StructureDefinition-DIPSVitalSignsObservationBodyMassIndex.html\">DIPS Vital Signs Observation - Body Mass Index(BMI)</a><br/>\u00a0\u00a0<a href=\"StructureDefinition-DIPSVitalSignsObservationConsciousness.html\">DIPS Vital Signs Observation - Level of Consciousness</a><br/>\u00a0\u00a0<a href=\"StructureDefinition-DIPSVitalSignsObservationNews2Score.html\">DIPS Vital Signs Observation - NEWS2</a><br/>\u00a0\u00a0<a href=\"StructureDefinition-DIPSVitalSignsObservationBodyWeight.html\">DIPS Vital Signs Observation - Body Weight</a><br/>\u00a0\u00a0<a href=\"StructureDefinition-DIPSVitalSignsObservationHeartRate.html\">DIPS Vital Signs Observation - Heart Rate</a><br/>\u00a0\u00a0<a href=\"StructureDefinition-DIPSVitalSignsObservationOxygenSaturation.html\">DIPS Vital Signs Observation - Oxygen Saturation</a><br/>\u00a0\u00a0<a href=\"StructureDefinition-DIPSVitalSignsObservationRespirationRate.html\">DIPS Vital Signs Observation - Respiration Rate</a><br/>\u00a0\u00a0<a href=\"https://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition-no-domain-VitalSigns-Observation-bodyheight.html\">no-domain-VitalSigns-Observation-bodyheight Profile</a><br/>\u00a0\u00a0<a href=\"https://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition-no-domain-VitalSigns-Observation-bodytemp.html\">no-domain-VitalSigns-Observation-bodytemp Profile</a><br/>\u00a0\u00a0<a href=\"https://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition-no-domain-VitalSigns-Observation-bodyweight.html\">no-domain-VitalSigns-Observation-bodyweight Profile</a><br/>\u00a0\u00a0<a href=\"https://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition-no-domain-VitalSigns-Observation-bloodpressure.html\">no-domain-VitalSigns-Observation-bloodpressure Profile</a><br/>\u00a0\u00a0<a href=\"https://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition-no-domain-VitalSigns-Observation-heartrate.html\">no-domain-VitalSigns-Observation-heartrate Profile</a><br/>\u00a0\u00a0<a href=\"https://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition-no-domain-VitalSigns-Observation-oxygensaturation.html\">no-domain-VitalSigns-Observation-oxygensaturation Profile</a><br/>\u00a0\u00a0<a href=\"https://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition-no-domain-VitalSigns-Observation-respirationrate.html\">no-domain-VitalSigns-Observation-respirationrate Profile</a><br/>\u00a0\u00a0<a href=\"https://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition-no-domain-VitalSigns-Observation-pulse.html\">no-domain-VitalSigns-Observation-pulse Profile</a></td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\">y</td><td>fhirid, externalfhirid, code, patient, patient.Identifier, effectivedatetime</td><td/><td/><td/></tr></tbody></table></div><hr/><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Observation1-1\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Observation</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"http://hl7.org/fhir/R4/vitalsigns.html\">Vital Signs Profile</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-6\"><span class=\"lead\">Supported Profiles</span><p><a href=\"StructureDefinition-DIPSVitalSignsObservationBloodpressure.html\">DIPS Vital Signs Observation - Blood Pressure</a><br/><a href=\"StructureDefinition-DIPSVitalSignsObservationBodyHeight.html\">DIPS Vital Signs Observation - Body Height</a><br/><a href=\"StructureDefinition-DIPSVitalSignsObservationBodyMassIndex.html\">DIPS Vital Signs Observation - Body Mass Index(BMI)</a><br/><a href=\"StructureDefinition-DIPSVitalSignsObservationConsciousness.html\">DIPS Vital Signs Observation - Level of Consciousness</a><br/><a href=\"StructureDefinition-DIPSVitalSignsObservationNews2Score.html\">DIPS Vital Signs Observation - NEWS2</a><br/><a href=\"StructureDefinition-DIPSVitalSignsObservationBodyWeight.html\">DIPS Vital Signs Observation - Body Weight</a><br/><a href=\"StructureDefinition-DIPSVitalSignsObservationHeartRate.html\">DIPS Vital Signs Observation - Heart Rate</a><br/><a href=\"StructureDefinition-DIPSVitalSignsObservationOxygenSaturation.html\">DIPS Vital Signs Observation - Oxygen Saturation</a><br/><a href=\"StructureDefinition-DIPSVitalSignsObservationRespirationRate.html\">DIPS Vital Signs Observation - Respiration Rate</a><br/><a href=\"https://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition-no-domain-VitalSigns-Observation-bodyheight.html\">no-domain-VitalSigns-Observation-bodyheight Profile</a><br/><a href=\"https://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition-no-domain-VitalSigns-Observation-bodytemp.html\">no-domain-VitalSigns-Observation-bodytemp Profile</a><br/><a href=\"https://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition-no-domain-VitalSigns-Observation-bodyweight.html\">no-domain-VitalSigns-Observation-bodyweight Profile</a><br/><a href=\"https://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition-no-domain-VitalSigns-Observation-bloodpressure.html\">no-domain-VitalSigns-Observation-bloodpressure Profile</a><br/><a href=\"https://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition-no-domain-VitalSigns-Observation-heartrate.html\">no-domain-VitalSigns-Observation-heartrate Profile</a><br/><a href=\"https://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition-no-domain-VitalSigns-Observation-oxygensaturation.html\">no-domain-VitalSigns-Observation-oxygensaturation Profile</a><br/><a href=\"https://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition-no-domain-VitalSigns-Observation-respirationrate.html\">no-domain-VitalSigns-Observation-respirationrate Profile</a><br/><a href=\"https://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition-no-domain-VitalSigns-Observation-pulse.html\">no-domain-VitalSigns-Observation-pulse Profile</a></p></div><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li>Supports <br/><code>create</code><div><p>Register an observation on a specific patient in DIPS.\nIt is not  possible to register cancer and person injury\ndiagnoses via this interface.</p>\n</div><code>read</code><div><p>Read an observation by fhir id returned by the service</p>\n</div><code>search-type</code><div><p>Fetch observations by patient, fhirid, code, externalfhirid and effectivedatetime</p>\n</div></li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>fhirid</td><td><code>reference</code></td><td><div><p>DIPS fhir id</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td>externalfhirid</td><td><code>reference</code></td><td><div><p>external fhir id</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td>code</td><td><code>reference</code></td><td><div><p>Loinc code for type of observation eg: For blood presure 'code=85354-9'</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td>patient</td><td><code>reference</code></td><td><div><p>Supports patient logical Id or SSN.</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td>patient.Identifier</td><td><code>token</code></td><td><div><p>DIPS patient id or national id.Supported systems are urn:oid:2.16.578.1.12.4.1.4.1,urn:oid:2.16.578.1.12.4.1.4.2 or urn:oid:2.16.578.1.12.4.1.4.3</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td>effectivedatetime</td><td><code>reference</code></td><td><div><p>Effective date time. Supports single date or date range</p>\n</div></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div></div>"
+  },
+  "url" : "http://dips.no/fhir/R4/CapabilityStatement/DIPSVitalSignsObservation",
+  "version" : "0.1.0",
+  "title" : "DIPS implementation of Vital Signs - Capability Statement",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2019-09-26",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "Lars-Andreas Nystad",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "mailto:lan@dips.no",
+      "use" : "work"
+    }]
+  }],
+  "description" : "DIPS implementation of Vital Signs - Capability Statement",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "kind" : "instance",
+  "software" : {
+    "name" : "DIPS FHIR R4 Vital Signs",
+    "version" : "1.0.0",
+    "releaseDate" : "2022-08-31"
+  },
+  "implementation" : {
+    "description" : "instance of capability statement"
+  },
+  "fhirVersion" : "4.0.0",
+  "format" : ["xml",
+  "json"],
+  "rest" : [{
+    "mode" : "server",
+    "documentation" : "This describes the capabilities of the vital signs supported by DIPS.",
+    "resource" : [{
+      "type" : "Observation",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/vitalsigns",
+      "supportedProfile" : ["http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBloodpressure",
+      "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBodyHeight",
+      "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBodyMassIndex",
+      "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationConsciousness",
+      "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationNews2Score",
+      "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBodyWeight",
+      "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationHeartRate",
+      "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationOxygenSaturation",
+      "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationRespirationRate",
+      "http://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition/no-domain-VitalSigns-Observation-bodyheight",
+      "http://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition/no-domain-VitalSigns-Observation-bodytemp",
+      "http://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition/no-domain-VitalSigns-Observation-bodyweight",
+      "http://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition/no-domain-VitalSigns-Observation-bloodpressure",
+      "http://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition/no-domain-VitalSigns-Observation-heartrate",
+      "http://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition/no-domain-VitalSigns-Observation-oxygensaturation",
+      "http://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition/no-domain-VitalSigns-Observation-respirationrate",
+      "http://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition/no-domain-VitalSigns-Observation-pulse"],
+      "interaction" : [{
+        "code" : "create",
+        "documentation" : "Register an observation on a specific patient in DIPS.\r\n                       It is not  possible to register cancer and person injury\r\n                       diagnoses via this interface."
+      },
+      {
+        "code" : "read",
+        "documentation" : "Read an observation by fhir id returned by the service"
+      },
+      {
+        "code" : "search-type",
+        "documentation" : "Fetch observations by patient, fhirid, code, externalfhirid and effectivedatetime"
+      }],
+      "searchParam" : [{
+        "name" : "fhirid",
+        "type" : "reference",
+        "documentation" : "DIPS fhir id"
+      },
+      {
+        "name" : "externalfhirid",
+        "type" : "reference",
+        "documentation" : "external fhir id"
+      },
+      {
+        "name" : "code",
+        "type" : "reference",
+        "documentation" : "Loinc code for type of observation eg: For blood presure 'code=85354-9'"
+      },
+      {
+        "name" : "patient",
+        "type" : "reference",
+        "documentation" : "Supports patient logical Id or SSN."
+      },
+      {
+        "name" : "patient.Identifier",
+        "type" : "token",
+        "documentation" : "DIPS patient id or national id.Supported systems are urn:oid:2.16.578.1.12.4.1.4.1,urn:oid:2.16.578.1.12.4.1.4.2 or urn:oid:2.16.578.1.12.4.1.4.3 "
+      },
+      {
+        "name" : "effectivedatetime",
+        "type" : "reference",
+        "documentation" : "Effective date time. Supports single date or date range"
+      }]
+    }],
+    "interaction" : [{
+      "code" : "transaction"
+    },
+    {
+      "code" : "history-system"
+    }]
+  }]
+}

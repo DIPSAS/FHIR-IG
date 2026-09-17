@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DIPSGCSEyeOpeningScore"/>
+  <meta>
+    <lastUpdated value="2021-03-17T00:00:00+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet DIPSGCSEyeOpeningScore</b></p><a name="DIPSGCSEyeOpeningScore"> </a><a name="hcDIPSGCSEyeOpeningScore"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2021-03-17 00:00:00+0000</p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href="CodeSystem-DIPSGCSEyeOpeningScoreCodeSystem.html"><code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-DIPSGCSEyeOpeningScoreCodeSystem.html#DIPSGCSEyeOpeningScoreCodeSystem-1">1</a></td><td>Ingen reaksjon</td><td>Ingen reaksjon</td></tr><tr><td><a href="CodeSystem-DIPSGCSEyeOpeningScoreCodeSystem.html#DIPSGCSEyeOpeningScoreCodeSystem-2">2</a></td><td>Ved smertestimulering</td><td>Ved smertestimulering</td></tr><tr><td><a href="CodeSystem-DIPSGCSEyeOpeningScoreCodeSystem.html#DIPSGCSEyeOpeningScoreCodeSystem-3">3</a></td><td>Ved tiltale</td><td>Ved tiltale</td></tr><tr><td><a href="CodeSystem-DIPSGCSEyeOpeningScoreCodeSystem.html#DIPSGCSEyeOpeningScoreCodeSystem-4">4</a></td><td>Spontant</td><td>Spontant</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="oo"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="http://dips.no/fhir/R4/ValueSet/DIPSGCSEyeOpeningScore"/>
+  <version value="0.1.0"/>
+  <name value="DIPSGCSEyeOpeningScore"/>
+  <title value="DIPSGCSEyeOpeningScore"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-05-14T00:00:00+00:00"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="Lars-Andreas Nystad"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:lan@dips.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet of GCS Eye OpeningScore"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem"/>
+      <concept>
+        <code value="1"/>
+        <display value="Ingen reaksjon"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="Ved smertestimulering"/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="Ved tiltale"/>
+      </concept>
+      <concept>
+        <code value="4"/>
+        <display value="Spontant"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,65 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "DIPSVitalSignsObservationPrePostduktal",
+  "meta" : {
+    "lastUpdated" : "2021-03-17T00:00:00+00:00",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet DIPSVitalSignsObservationPrePostduktal</b></p><a name=\"DIPSVitalSignsObservationPrePostduktal\"> </a><a name=\"hcDIPSVitalSignsObservationPrePostduktal\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2021-03-17 00:00:00+0000</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href=\"CodeSystem-DIPSVitalSignsObservationPrePostduktal.html\"><code>http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-DIPSVitalSignsObservationPrePostduktal.html#DIPSVitalSignsObservationPrePostduktal-D0009\">D0009</a></td><td>Preduktal</td><td>Preduktal</td></tr><tr><td><a href=\"CodeSystem-DIPSVitalSignsObservationPrePostduktal.html#DIPSVitalSignsObservationPrePostduktal-D0010\">D0010</a></td><td>Postduktalt</td><td>Postduktalt</td></tr><tr><td><a href=\"CodeSystem-DIPSVitalSignsObservationPrePostduktal.html#DIPSVitalSignsObservationPrePostduktal-D0011\">D0011</a></td><td>Ubestemmelig</td><td>Ubestemmelig</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "oo"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  }],
+  "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationPrePostduktal",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationPrePostduktal",
+  "title" : "DIPSVitalSignsObservationPrePostduktal",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2021-03-17T00:00:00+00:00",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "Lars-Andreas Nystad",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "mailto:lan@dips.no",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Codes representing pre/post ductal",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal",
+      "concept" : [{
+        "code" : "D0009",
+        "display" : "Preduktal"
+      },
+      {
+        "code" : "D0010",
+        "display" : "Postduktalt"
+      },
+      {
+        "code" : "D0011",
+        "display" : "Ubestemmelig"
+      }]
+    }]
+  }
+}

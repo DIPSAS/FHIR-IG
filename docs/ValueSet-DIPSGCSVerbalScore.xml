@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DIPSGCSVerbalScore"/>
+  <meta>
+    <lastUpdated value="2021-03-17T00:00:00+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet DIPSGCSVerbalScore</b></p><a name="DIPSGCSVerbalScore"> </a><a name="hcDIPSGCSVerbalScore"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2021-03-17 00:00:00+0000</p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href="CodeSystem-DIPSGCSVerbalScoreCodeSystem.html"><code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-DIPSGCSVerbalScoreCodeSystem.html#DIPSGCSVerbalScoreCodeSystem-1">1</a></td><td>Ingen reaksjon</td><td>Ingen reaksjon</td></tr><tr><td><a href="CodeSystem-DIPSGCSVerbalScoreCodeSystem.html#DIPSGCSVerbalScoreCodeSystem-2">2</a></td><td>Uforståelige lyder</td><td>Uforståelige lyder</td></tr><tr><td><a href="CodeSystem-DIPSGCSVerbalScoreCodeSystem.html#DIPSGCSVerbalScoreCodeSystem-3">3</a></td><td>Usammenhengende tale</td><td>Usammenhengende tale</td></tr><tr><td><a href="CodeSystem-DIPSGCSVerbalScoreCodeSystem.html#DIPSGCSVerbalScoreCodeSystem-4">4</a></td><td>Forvirret, desorientert</td><td>Forvirret, desorientert</td></tr><tr><td><a href="CodeSystem-DIPSGCSVerbalScoreCodeSystem.html#DIPSGCSVerbalScoreCodeSystem-5">5</a></td><td>Orientert</td><td>Orientert</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="oo"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="http://dips.no/fhir/R4/ValueSet/DIPSGCSVerbalScore"/>
+  <version value="0.1.0"/>
+  <name value="DIPSGCSVerbalScore"/>
+  <title value="DIPSGCSVerbalScore"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-05-14T00:00:00+00:00"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="Lars-Andreas Nystad"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:lan@dips.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet of GCS Verbal Score"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem"/>
+      <concept>
+        <code value="1"/>
+        <display value="Ingen reaksjon"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="Uforståelige lyder"/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="Usammenhengende tale"/>
+      </concept>
+      <concept>
+        <code value="4"/>
+        <display value="Forvirret, desorientert"/>
+      </concept>
+      <concept>
+        <code value="5"/>
+        <display value="Orientert"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -58,6 +58,7 @@
     <sch:title>f:Patient/f:name</sch:title>
     <sch:rule context="f:Patient/f:name">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.no/fhir/StructureDefinition/no-basis-middlename']) &lt;= 1">extension with URL = 'http://hl7.no/fhir/StructureDefinition/no-basis-middlename': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:use) &lt;= 1">use: maximum cardinality of 'use' is 1</sch:assert>
       <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
       <sch:assert test="count(f:family) &lt;= 1">family: maximum cardinality of 'family' is 1</sch:assert>
@@ -82,6 +83,7 @@
     <sch:title>f:Patient/f:address</sch:title>
     <sch:rule context="f:Patient/f:address">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.no/fhir/StructureDefinition/no-basis-address-official']) &lt;= 1">extension with URL = 'http://hl7.no/fhir/StructureDefinition/no-basis-address-official': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.no/fhir/StructureDefinition/no-basis-urban-district']) &lt;= 1">extension with URL = 'http://hl7.no/fhir/StructureDefinition/no-basis-urban-district': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/StructureDefinition/R4/DIPSPatientStateName']) &lt;= 1">extension with URL = 'http://dips.no/fhir/StructureDefinition/R4/DIPSPatientStateName': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/StructureDefinition/R4/LastOfficialAddressSyncTime']) &lt;= 1">extension with URL = 'http://dips.no/fhir/StructureDefinition/R4/LastOfficialAddressSyncTime': maximum cardinality of 'extension' is 1</sch:assert>

@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "agy1000245"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter agy1000245</b></p><a name=\"agy1000245\"> </a><a name=\"hcagy1000245\"> </a><p><b>identifier</b>: <code>http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid</code>/agy1000245</p><p><b>status</b>: Arrived</p><p><b>class</b>: v3-ActCod: AMB (AMB)</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter agy1000245</b></p><a name=\"agy1000245\"> </a><a name=\"hcagy1000245\"> </a><p><b>identifier</b>: <code>http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid</code>/agy1000245</p><p><b>status</b>: Arrived</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (ambulatory)</p></div>"
   ] ;
   fhir:Encounter.identifier [
      fhir:index 0 ;
@@ -19,7 +19,7 @@
   ] ;
   fhir:Encounter.status [ fhir:value "arrived"] ;
   fhir:Encounter.class [
-     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCod" ] ;
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
      fhir:Coding.code [ fhir:value "AMB" ]
   ] .
 

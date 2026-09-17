@@ -6,7 +6,7 @@
 
 ## Example RelatedPerson: ain1000003
 
-Profiles: [DIPSRelatedPerson](StructureDefinition-DIPSRelatedPerson.md), [no-basis-RelatedPerson](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&canonical=http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson)
+Profiles: [DIPSRelatedPerson](StructureDefinition-DIPSRelatedPerson.md), [no-basis-RelatedPerson](https://simplifier.net/resolve?scope=hl7.fhir.no.domain.vitalsigns@0.9.74&canonical=http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson)
 
 **no/fhir/R4/StructureDefinition/DIPSRelatedPersonAppointedByMunicipality**: [not stated]: 688 (Namsos)
 
