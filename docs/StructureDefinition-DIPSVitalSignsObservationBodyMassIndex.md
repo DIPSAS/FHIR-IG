@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBodyMassIndex | *Version*:0.1.0 |
-| Draft as of 2026-09-17 | *Computable Name*:DIPSVitalSignsObservationBodyMassIndex |
+| Draft as of 2026-09-18 | *Computable Name*:DIPSVitalSignsObservationBodyMassIndex |
 
  
 DIPS profile for Body Mass Index(BMI) including some extensions 
@@ -104,7 +104,7 @@ This resource only supports search - there is no `GET [base]/Observation/[id]` r
   "name" : "DIPSVitalSignsObservationBodyMassIndex",
   "title" : "DIPS Vital Signs Observation - Body Mass Index(BMI)",
   "status" : "draft",
-  "date" : "2026-09-17T19:39:02+00:00",
+  "date" : "2026-09-18T19:41:15+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

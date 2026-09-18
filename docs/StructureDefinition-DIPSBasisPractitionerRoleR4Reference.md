@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/R4/DIPSBasisPractitionerRoleR4Reference | *Version*:0.1.0 |
-| Draft as of 2026-09-17 | *Computable Name*:DIPSBasisPractitionerRoleR4Reference |
+| Draft as of 2026-09-18 | *Computable Name*:DIPSBasisPractitionerRoleR4Reference |
 
 **Usages:**
 
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSBasisPractitione
   "version" : "0.1.0",
   "name" : "DIPSBasisPractitionerRoleR4Reference",
   "status" : "draft",
-  "date" : "2026-09-17T19:39:02+00:00",
+  "date" : "2026-09-18T19:41:15+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="docref-dictation-section-example"/>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEventTime">
+    <valueDateTime value="2023-05-16T17:23:03+05:30"/>
+  </extension>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastChangedBy">
+    <valueString value="Linkdips (Testplan Bas-Team), Max"/>
+  </extension>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocumentFormat">
+    <valueString value="0"/>
+  </extension>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreatedBy">
+    <valueString value="Linkdips (Testplan Bas-Team), Max"/>
+  </extension>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSection">
+    <valueReference>
+      <reference value="Organization/aju21"/>
+      <identifier>
+        <system value="urn:oid:1.3.6.1.4.1.9038.70.5"/>
+        <value value="21"/>
+      </identifier>
+    </valueReference>
+  </extension>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPRGroup">
+    <valueString value="59"/>
+  </extension>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedTime">
+    <valueDateTime value="2021-06-12T03:47:34+05:30"/>
+  </extension>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdatedTime">
+    <valueDateTime value="2023-05-16T17:23:04+05:30"/>
+  </extension>
+  <status value="current"/>
+  <docStatus value="preliminary"/>
+  <type>
+    <coding>
+      <system value="http://dips.no/fhir/namingsystem/dips-documenttypeid"/>
+      <code value="1050"/>
+      <display value="Daglig notat"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/cdp1000807"/>
+    <identifier>
+      <system value="http://dips.no/fhir/namingsystem/dips-patientid"/>
+      <value value="1000807"/>
+    </identifier>
+  </subject>
+  <date value="2023-05-16T17:23:04+05:30"/>
+  <author>
+    <reference value="PractitionerRole/agb113"/>
+    <identifier>
+      <system value="urn:oid:1.3.6.1.4.1.9038.51.1"/>
+      <value value="113"/>
+    </identifier>
+  </author>
+  <custodian>
+    <reference value="Organization/afa22-docref"/>
+    <identifier>
+      <system value="http://dips.no/fhir/namingsystem/dips-organizationid"/>
+      <value value="22"/>
+    </identifier>
+  </custodian>
+  <description value="Daglig notat"/>
+  <content>
+    <attachment>
+      <contentType value="application/pdf"/>
+      <url value="https://dips.no/DIPS-WebAPI/HL7/FHIR-R4/Binary/ako1020534"/>
+    </attachment>
+  </content>
+  <content>
+    <attachment>
+      <contentType value="audio/x-hx-aac-adts"/>
+      <url value="https://dips.no/DIPS-WebAPI/HL7/FHIR-R4/Binary?_id=ako1020534&amp;contentType=audio/x-hx-aac-adts"/>
+    </attachment>
+  </content>
+  <content>
+    <attachment>
+      <contentType value="application/rtf"/>
+      <url value="https://dips.no/DIPS-WebAPI/HL7/FHIR-R4/Binary?_id=ako1020534&amp;contentType=application/rtf"/>
+    </attachment>
+  </content>
+</DocumentReference>

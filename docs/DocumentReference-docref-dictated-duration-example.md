@@ -1,0 +1,146 @@
+# docref-dictated-duration-example - DIPS Core Implementation Guide v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **docref-dictated-duration-example**
+
+## Example DocumentReference: docref-dictated-duration-example
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "DocumentReference",
+  "id" : "docref-dictated-duration-example",
+  "extension" : [{
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEventTime",
+    "valueDateTime" : "2023-05-17T08:24:35+00:00"
+  },
+  {
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastChangedBy",
+    "valueString" : "Linkdips (Testplan Bas-Team), Max"
+  },
+  {
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocumentFormat",
+    "valueString" : "0"
+  },
+  {
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreatedBy",
+    "valueString" : "Linkdips (Testplan Bas-Team), Max"
+  },
+  {
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStayId",
+    "valueString" : "1000249"
+  },
+  {
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceWard",
+    "valueReference" : {
+      "reference" : "Organization/ahl29",
+      "identifier" : {
+        "system" : "urn:oid:1.3.6.1.4.1.9038.70.4",
+        "value" : "29"
+      }
+    }
+  },
+  {
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSection",
+    "valueReference" : {
+      "reference" : "Organization/aju21",
+      "identifier" : {
+        "system" : "urn:oid:1.3.6.1.4.1.9038.70.5",
+        "value" : "21"
+      }
+    }
+  },
+  {
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPRGroup",
+    "valueString" : "59"
+  },
+  {
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedTime",
+    "valueDateTime" : "2022-02-23T03:47:34+00:00"
+  },
+  {
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedDuration",
+    "valueQuantity" : {
+      "value" : 3240,
+      "unit" : "s",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "s"
+    }
+  },
+  {
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdatedTime",
+    "valueDateTime" : "2023-05-17T08:24:41+00:00"
+  }],
+  "status" : "current",
+  "docStatus" : "preliminary",
+  "type" : {
+    "coding" : [{
+      "system" : "http://dips.no/fhir/namingsystem/dips-documenttypeid",
+      "code" : "1050",
+      "display" : "Daglig notat"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/cdp1000239",
+    "identifier" : {
+      "system" : "http://dips.no/fhir/namingsystem/dips-patientid",
+      "value" : "1000239"
+    }
+  },
+  "date" : "2023-05-17T08:24:41+00:00",
+  "author" : [{
+    "reference" : "PractitionerRole/agb113",
+    "identifier" : {
+      "system" : "urn:oid:1.3.6.1.4.1.9038.51.1",
+      "value" : "113"
+    }
+  }],
+  "custodian" : {
+    "reference" : "Organization/afa22-docref",
+    "identifier" : {
+      "system" : "http://dips.no/fhir/namingsystem/dips-organizationid",
+      "value" : "22"
+    }
+  },
+  "description" : "Test R4 Dictation 1",
+  "content" : [{
+    "attachment" : {
+      "contentType" : "application/pdf",
+      "url" : "https://dips.no/DIPS-WebAPI/HL7/FHIR-R4/Binary/ako1020782"
+    }
+  },
+  {
+    "attachment" : {
+      "contentType" : "audio/x-hx-aac-adts",
+      "url" : "https://dips.no/DIPS-WebAPI/HL7/FHIR-R4/Binary?_id=ako1020782&contentType=audio/x-hx-aac-adts"
+    }
+  },
+  {
+    "attachment" : {
+      "contentType" : "application/rtf",
+      "url" : "https://dips.no/DIPS-WebAPI/HL7/FHIR-R4/Binary?_id=ako1020782&contentType=application/rtf"
+    }
+  }],
+  "context" : {
+    "encounter" : [{
+      "reference" : "Encounter/agy1000245-docref",
+      "identifier" : {
+        "system" : "http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid",
+        "value" : "1000245"
+      }
+    }],
+    "related" : [{
+      "reference" : "Appointment/ahi1000249",
+      "identifier" : {
+        "system" : "urn:oid:1.3.6.1.4.1.9038.41",
+        "value" : "1000249"
+      }
+    }]
+  }
+}
+
+```

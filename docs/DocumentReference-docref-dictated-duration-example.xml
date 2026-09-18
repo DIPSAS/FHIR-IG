@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="docref-dictated-duration-example"/>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEventTime">
+    <valueDateTime value="2023-05-17T08:24:35+00:00"/>
+  </extension>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastChangedBy">
+    <valueString value="Linkdips (Testplan Bas-Team), Max"/>
+  </extension>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocumentFormat">
+    <valueString value="0"/>
+  </extension>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreatedBy">
+    <valueString value="Linkdips (Testplan Bas-Team), Max"/>
+  </extension>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStayId">
+    <valueString value="1000249"/>
+  </extension>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceWard">
+    <valueReference>
+      <reference value="Organization/ahl29"/>
+      <identifier>
+        <system value="urn:oid:1.3.6.1.4.1.9038.70.4"/>
+        <value value="29"/>
+      </identifier>
+    </valueReference>
+  </extension>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSection">
+    <valueReference>
+      <reference value="Organization/aju21"/>
+      <identifier>
+        <system value="urn:oid:1.3.6.1.4.1.9038.70.5"/>
+        <value value="21"/>
+      </identifier>
+    </valueReference>
+  </extension>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPRGroup">
+    <valueString value="59"/>
+  </extension>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedTime">
+    <valueDateTime value="2022-02-23T03:47:34+00:00"/>
+  </extension>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedDuration">
+    <valueQuantity>
+      <value value="3240"/>
+      <unit value="s"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="s"/>
+    </valueQuantity>
+  </extension>
+  <extension url="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdatedTime">
+    <valueDateTime value="2023-05-17T08:24:41+00:00"/>
+  </extension>
+  <status value="current"/>
+  <docStatus value="preliminary"/>
+  <type>
+    <coding>
+      <system value="http://dips.no/fhir/namingsystem/dips-documenttypeid"/>
+      <code value="1050"/>
+      <display value="Daglig notat"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/cdp1000239"/>
+    <identifier>
+      <system value="http://dips.no/fhir/namingsystem/dips-patientid"/>
+      <value value="1000239"/>
+    </identifier>
+  </subject>
+  <date value="2023-05-17T08:24:41+00:00"/>
+  <author>
+    <reference value="PractitionerRole/agb113"/>
+    <identifier>
+      <system value="urn:oid:1.3.6.1.4.1.9038.51.1"/>
+      <value value="113"/>
+    </identifier>
+  </author>
+  <custodian>
+    <reference value="Organization/afa22-docref"/>
+    <identifier>
+      <system value="http://dips.no/fhir/namingsystem/dips-organizationid"/>
+      <value value="22"/>
+    </identifier>
+  </custodian>
+  <description value="Test R4 Dictation 1"/>
+  <content>
+    <attachment>
+      <contentType value="application/pdf"/>
+      <url value="https://dips.no/DIPS-WebAPI/HL7/FHIR-R4/Binary/ako1020782"/>
+    </attachment>
+  </content>
+  <content>
+    <attachment>
+      <contentType value="audio/x-hx-aac-adts"/>
+      <url value="https://dips.no/DIPS-WebAPI/HL7/FHIR-R4/Binary?_id=ako1020782&amp;contentType=audio/x-hx-aac-adts"/>
+    </attachment>
+  </content>
+  <content>
+    <attachment>
+      <contentType value="application/rtf"/>
+      <url value="https://dips.no/DIPS-WebAPI/HL7/FHIR-R4/Binary?_id=ako1020782&amp;contentType=application/rtf"/>
+    </attachment>
+  </content>
+  <context>
+    <encounter>
+      <reference value="Encounter/agy1000245-docref"/>
+      <identifier>
+        <system value="http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid"/>
+        <value value="1000245"/>
+      </identifier>
+    </encounter>
+    <related>
+      <reference value="Appointment/ahi1000249"/>
+      <identifier>
+        <system value="urn:oid:1.3.6.1.4.1.9038.41"/>
+        <value value="1000249"/>
+      </identifier>
+    </related>
+  </context>
+</DocumentReference>

@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "b8d851d7-082e-4329-aaaa-1c86408012eb",
+  "id" : "f38e3a35-fbd5-45d8-a891-5f77aa5e3b3d",
   "meta" : {
-    "lastUpdated" : "2026-09-17T19:39:02.120+00:00"
+    "lastUpdated" : "2026-09-18T19:41:15.390+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -23,7 +23,7 @@
       "title" : "DIPSEncounterV3",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-09-17T19:39:02+00:00",
+      "date" : "2026-09-18T19:41:15+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -32,8 +32,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c141feb6-0cf7-405f-8aee-abe07b05bc96",
-        "timestamp" : "2026-09-17T19:42:39+00:00",
+        "identifier" : "urn:uuid:d2772c26-cf25-4521-bb40-33abfe9a1603",
+        "timestamp" : "2026-09-18T19:45:19+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -94,8 +94,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8299c053-bcd6-4095-9020-bd3e4341d02f",
-        "timestamp" : "2026-09-17T19:42:39+00:00",
+        "identifier" : "urn:uuid:baa032cd-6654-4df4-8e60-8428cdc0e26e",
+        "timestamp" : "2026-09-18T19:45:19+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -164,8 +164,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d85186aa-666e-44f7-bddf-3516f9537a47",
-        "timestamp" : "2026-09-17T19:42:39+00:00",
+        "identifier" : "urn:uuid:a18f599e-750a-4904-8c61-82a1dc498449",
+        "timestamp" : "2026-09-18T19:45:19+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -242,8 +242,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d59a8ca0-da59-4bcb-84e3-254aa46a9d55",
-        "timestamp" : "2026-09-17T19:42:39+00:00",
+        "identifier" : "urn:uuid:e138f467-5d9a-4df5-bc02-7b49fc63665a",
+        "timestamp" : "2026-09-18T19:45:19+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -316,8 +316,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:345613c6-1c89-443d-b456-caf1db8cfc98",
-        "timestamp" : "2026-09-17T19:42:39+00:00",
+        "identifier" : "urn:uuid:65f67409-c968-4479-9190-50fa9660c974",
+        "timestamp" : "2026-09-18T19:45:19+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -390,8 +390,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:cc083877-d01d-4004-a4f4-aa8fd7082f50",
-        "timestamp" : "2026-09-17T19:42:39+00:00",
+        "identifier" : "urn:uuid:05ca5b80-d4b6-4414-86f2-a87e748b285c",
+        "timestamp" : "2026-09-18T19:45:19+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -452,8 +452,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:460a6dbc-e322-454e-acdf-98a7e535859c",
-        "timestamp" : "2026-09-17T19:42:39+00:00",
+        "identifier" : "urn:uuid:e3b75f50-7f88-481e-8df3-6a6a92de8718",
+        "timestamp" : "2026-09-18T19:45:19+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -514,8 +514,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:21af3ae1-2342-4d03-896c-b57d873bc5f3",
-        "timestamp" : "2026-09-17T19:42:39+00:00",
+        "identifier" : "urn:uuid:5eb9b06c-4f07-466f-bdbe-ee88f7f1a8b7",
+        "timestamp" : "2026-09-18T19:45:19+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -576,8 +576,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3db99468-c2c2-41c8-86bd-93f4065df6e8",
-        "timestamp" : "2026-09-17T19:42:39+00:00",
+        "identifier" : "urn:uuid:28cf294f-f1f9-4656-88a6-f11f5300e35f",
+        "timestamp" : "2026-09-18T19:45:19+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -638,8 +638,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e7498a9c-c039-41c3-a3e9-e9a499b0a425",
-        "timestamp" : "2026-09-17T19:42:39+00:00",
+        "identifier" : "urn:uuid:1b333963-e7d8-4eab-9b26-70f75de9ca4c",
+        "timestamp" : "2026-09-18T19:45:19+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -712,8 +712,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7cbe687f-8294-44fd-aa1c-28b6baa013ba",
-        "timestamp" : "2026-09-17T19:42:39+00:00",
+        "identifier" : "urn:uuid:f3a064f2-b0d6-41aa-9b7f-62140da112c6",
+        "timestamp" : "2026-09-18T19:45:19+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{

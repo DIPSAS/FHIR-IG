@@ -1,0 +1,13 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "ahr1003778",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest ahr1003778</b></p><a name=\"ahr1003778\"> </a><a name=\"hcahr1003778\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href=\"Patient-cdp1000239.html\">Anonymous Patient (no stated gender), DoB Unknown ( http://dips.no/fhir/namingsystem/dips-patientid#1000239)</a></p></div>"
+  },
+  "status" : "active",
+  "intent" : "plan",
+  "subject" : {
+    "reference" : "Patient/cdp1000239"
+  }
+}

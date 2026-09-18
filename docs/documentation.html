@@ -124,73 +124,24 @@
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
       FHIR Artifacts <b class="caret"></b>
     </a>
-    <!-- artifacts.html numbers its sections sequentially, so these anchors track the
-         order of the groups: block in sushi-config.yaml. Adding, removing or reordering
-         a group shifts every anchor after it - re-check these against a build. -->
     <ul class="dropdown-menu">
       <li>
-        <a href="artifacts.html#1">Observation Profiles</a>
+        <a href="artifacts.html#1">Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#2">Encounter Profiles</a>
+        <a href="artifacts.html#21">Extensions</a>
       </li>
       <li>
-        <a href="artifacts.html#3">EpisodeOfCare Profiles</a>
+        <a href="artifacts.html#20">Capability Statements</a>
       </li>
       <li>
-        <a href="artifacts.html#4">ServiceRequest Profiles</a>
+        <a href="artifacts.html#22">Value Sets</a>
       </li>
       <li>
-        <a href="artifacts.html#5">Appointment Profiles</a>
+        <a href="artifacts.html#23">Code Systems</a>
       </li>
       <li>
-        <a href="artifacts.html#6">Schedule Profiles</a>
-      </li>
-      <li>
-        <a href="artifacts.html#7">Slot Profiles</a>
-      </li>
-      <li>
-        <a href="artifacts.html#8">Patient Profiles</a>
-      </li>
-      <li>
-        <a href="artifacts.html#9">Person Profiles</a>
-      </li>
-      <li>
-        <a href="artifacts.html#10">RelatedPerson Profiles</a>
-      </li>
-      <li>
-        <a href="artifacts.html#11">Practitioner Profiles</a>
-      </li>
-      <li>
-        <a href="artifacts.html#12">PractitionerRole Profiles</a>
-      </li>
-      <li>
-        <a href="artifacts.html#13">Organization Profiles</a>
-      </li>
-      <li>
-        <a href="artifacts.html#14">HealthcareService Profiles</a>
-      </li>
-      <li>
-        <a href="artifacts.html#15">Location Profiles</a>
-      </li>
-      <li>
-        <a href="artifacts.html#16">Reference Profiles</a>
-      </li>
-      <li class="divider"></li>
-      <li>
-        <a href="artifacts.html#17">Capability Statements</a>
-      </li>
-      <li>
-        <a href="artifacts.html#18">Extensions</a>
-      </li>
-      <li>
-        <a href="artifacts.html#19">Value Sets</a>
-      </li>
-      <li>
-        <a href="artifacts.html#20">Code Systems</a>
-      </li>
-      <li>
-        <a href="artifacts.html#21">Example Instances</a>
+        <a href="artifacts.html#24">Example Instances</a>
       </li>
     </ul>
   </li>
@@ -273,6 +224,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#fhir-related-person" id="markdown-toc-fhir-related-person">FHIR Related Person</a></li>
   <li><a href="#fhir-valueset-dipsr4valueset" id="markdown-toc-fhir-valueset-dipsr4valueset">FHIR ValueSet (DIPSR4ValueSet)</a></li>
   <li><a href="#fhir-vitalsign-observation" id="markdown-toc-fhir-vitalsign-observation">FHIR VitalSign Observation</a></li>
+  <li><a href="#fhir-documentreference" id="markdown-toc-fhir-documentreference">FHIR DocumentReference</a></li>
 </ul>
 
 </div>
@@ -4518,6 +4470,434 @@ is the document's id, not the Observation's own id.</p>
 &lt;/Parameters&gt;
 </code></pre></div></div>
 
+<h3 id="fhir-documentreference">FHIR DocumentReference</h3>
+
+<p>DIPSR4DocumentReference covers clinical documents (journal entries) in DIPS Arena as FHIR
+<code class="language-plaintext highlighter-rouge">DocumentReference</code> resources - dictations, PDFs, rich text and CDA documents alike. A document's
+resource id carries the <code class="language-plaintext highlighter-rouge">ako</code> prefix.</p>
+
+<p>Table 57. Supported FHIR Operations</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Operation</th>
+      <th>Supported</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Read</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>VRead</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Create</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Update</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>History</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Search</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Delete</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Patch</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="request-read-5">Request: Read</h4>
+
+<p>Table 58. OperationInformation</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://{server}/DIPS-WebAPI/HL7/FHIR-R4/DocumentReference/{id}</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>GET</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example request</p>
+
+<p><code class="language-plaintext highlighter-rouge">GET .../DocumentReference/ako1020766</code></p>
+
+<h4 id="request-search-8">Request: Search</h4>
+
+<p>Table 59. OperationInformation</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://{server}/DIPS-WebAPI/HL7/FHIR-R4/DocumentReference?{SearchParameters}</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>GET</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 60. Parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>_id</td>
+      <td>Document id. Matched case-insensitively; only the numeric part of the value is read, so the <code class="language-plaintext highlighter-rouge">ako</code> prefix is optional.</td>
+    </tr>
+    <tr>
+      <td>patient</td>
+      <td>Patient the documents belong to. Must carry the <code class="language-plaintext highlighter-rouge">cdp</code> or <code class="language-plaintext highlighter-rouge">Patient/cdp</code> prefix - any other value is rejected with a 400 error.</td>
+    </tr>
+    <tr>
+      <td>patient.identifier</td>
+      <td>Patient identifier qualified with its system. Accepted systems: DIPS patient id, national identity number, D-number and temporary identity number ("Hjelpenummer"). An unqualified value is accepted only if it is a valid national identity number.</td>
+    </tr>
+    <tr>
+      <td>encounter.episodeofcare</td>
+      <td>Episode of care ("Omsorgsepisode") the documents were recorded on. Comma separated numeric ids, an empty string, or <code class="language-plaintext highlighter-rouge">null</code>. Letters are rejected.</td>
+    </tr>
+    <tr>
+      <td>encounter.hospitalization</td>
+      <td>Hospital stay the documents were recorded on. Same value shape as <code class="language-plaintext highlighter-rouge">encounter.episodeofcare</code>.</td>
+    </tr>
+    <tr>
+      <td>period.start</td>
+      <td>Lower bound on the document's event time. Format <code class="language-plaintext highlighter-rouge">yyyy-MM-dd</code> or <code class="language-plaintext highlighter-rouge">yyyy-MM-ddTHH:mm:ss</code>.</td>
+    </tr>
+    <tr>
+      <td>period.end</td>
+      <td>Upper bound on the document's event time, same two formats. A date-only value is widened to <code class="language-plaintext highlighter-rouge">T23:59:59</code>, so that day is included.</td>
+    </tr>
+    <tr>
+      <td>includebinary</td>
+      <td><code class="language-plaintext highlighter-rouge">true</code> embeds the attachment content in <code class="language-plaintext highlighter-rouge">content.attachment</code> instead of returning a Binary URL to fetch separately.</td>
+    </tr>
+    <tr>
+      <td>_count, _sort, page</td>
+      <td>Paging and ordering.</td>
+    </tr>
+    <tr>
+      <td>_summary=count</td>
+      <td>Returns the number of matching documents without the documents themselves.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Unlike a standard FHIR date search, <code class="language-plaintext highlighter-rouge">period.start</code> and <code class="language-plaintext highlighter-rouge">period.end</code> do not accept comparison
+prefixes such as <code class="language-plaintext highlighter-rouge">gt</code> or <code class="language-plaintext highlighter-rouge">ge</code> - the bound is implied by which of the two parameters is used, and a
+value in any other format is rejected with an error rather than ignored.</p>
+
+<p>Example requests</p>
+
+<p>All documents for a patient:
+<code class="language-plaintext highlighter-rouge">GET .../DocumentReference?patient=cdp1000239</code></p>
+
+<p>Documents for a patient, identified by national identity number:
+<code class="language-plaintext highlighter-rouge">GET .../DocumentReference?patient.identifier=urn:oid:2.16.578.1.12.4.1.4.1|15076500565</code></p>
+
+<p>Documents on one episode of care:
+<code class="language-plaintext highlighter-rouge">GET .../DocumentReference?encounter.episodeofcare=1000245</code></p>
+
+<p>Documents on several hospital stays:
+<code class="language-plaintext highlighter-rouge">GET .../DocumentReference?encounter.hospitalization=1000249,1000251</code></p>
+
+<p>Documents for a patient within an event time period, attachments embedded:
+<code class="language-plaintext highlighter-rouge">GET .../DocumentReference?patient=cdp1000239&amp;period.start=2023-05-01&amp;period.end=2023-05-31&amp;includebinary=true</code></p>
+
+<h4 id="request-search-by-named-query">Request: Search by named query</h4>
+
+<p>Nine named queries are supported through the <code class="language-plaintext highlighter-rouge">_query</code> parameter. A value outside this list is
+rejected with an error.</p>
+
+<p>Table 61. Named queries</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>_query</th>
+      <th>Parameters</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>documenttype</td>
+      <td>documenttypeids, patient</td>
+      <td>Filters a patient's documents by document type. Comma separated document type ids.</td>
+    </tr>
+    <tr>
+      <td>DepartmentId</td>
+      <td>DepartmentId, period.start, period.end</td>
+      <td>Filters documents by department over a date range.</td>
+    </tr>
+    <tr>
+      <td>documentTypeandDepartmentid</td>
+      <td>DepartmentId, documenttypeids, period.start, period.end</td>
+      <td>Filters documents by both document type and department over a date range.</td>
+    </tr>
+    <tr>
+      <td>eprgroupprofile</td>
+      <td>eprgroups, patient</td>
+      <td>Filters a patient's documents by EPR group. Comma separated numeric ids; letters are rejected.</td>
+    </tr>
+    <tr>
+      <td>showtechnicaldocumentstatus</td>
+      <td>showdocumentstatus, patient</td>
+      <td>Controls whether technical documents are included. Values <code class="language-plaintext highlighter-rouge">showboth</code>, <code class="language-plaintext highlighter-rouge">showonlytechnical</code>, <code class="language-plaintext highlighter-rouge">HideTechnical</code>.</td>
+    </tr>
+    <tr>
+      <td>booleanfilters</td>
+      <td>showdeleted, showactivedocument, showoldversions, patient</td>
+      <td>Controls whether deleted documents, active documents and superseded versions are included. Each takes <code class="language-plaintext highlighter-rouge">true</code> or <code class="language-plaintext highlighter-rouge">false</code>.</td>
+    </tr>
+    <tr>
+      <td>viewdocumenttypestemplate</td>
+      <td>text, text:contains, text:exact, documenttypeid</td>
+      <td>Returns document types and their templates, by name or by id.</td>
+    </tr>
+    <tr>
+      <td>journalgroupsprofile</td>
+      <td>patient</td>
+      <td>Filters a patient's documents by journal group.</td>
+    </tr>
+    <tr>
+      <td>pagesummary</td>
+      <td>patient</td>
+      <td>Returns a page summary over the matching documents.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>An ordinary search is rejected if it contains <code class="language-plaintext highlighter-rouge">text</code>, <code class="language-plaintext highlighter-rouge">text:contains</code>, <code class="language-plaintext highlighter-rouge">text:exact</code> or
+<code class="language-plaintext highlighter-rouge">documenttypeid</code> - those four work only with <code class="language-plaintext highlighter-rouge">_query=viewdocumenttypestemplate</code>.</p>
+
+<p>Ordinary searches hide technical documents and return active, non-deleted documents only; use
+<code class="language-plaintext highlighter-rouge">showtechnicaldocumentstatus</code> and <code class="language-plaintext highlighter-rouge">booleanfilters</code> to widen that.</p>
+
+<p>Example requests</p>
+
+<p>A patient's documents of two document types:
+<code class="language-plaintext highlighter-rouge">GET .../DocumentReference?_query=documenttype&amp;documenttypeids=1050,1051&amp;patient=cdp1000239</code></p>
+
+<p>Document types whose name contains "notat":
+<code class="language-plaintext highlighter-rouge">GET .../DocumentReference?_query=viewdocumenttypestemplate&amp;text:contains=notat</code></p>
+
+<p>Include deleted and superseded documents:
+<code class="language-plaintext highlighter-rouge">GET .../DocumentReference?_query=booleanfilters&amp;showdeleted=true&amp;showoldversions=true&amp;patient=cdp1000239</code></p>
+
+<h4 id="request-create">Request: Create</h4>
+
+<p>Table 62. OperationInformation</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://{server}/DIPS-WebAPI/HL7/FHIR-R4/DocumentReference</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>POST</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The document's metadata is carried in the DIPSR4DocumentReference extensions - see the profile's
+formal view for the full list. <code class="language-plaintext highlighter-rouge">subject</code>, <code class="language-plaintext highlighter-rouge">author</code>, <code class="language-plaintext highlighter-rouge">custodian</code>, <code class="language-plaintext highlighter-rouge">type</code> and <code class="language-plaintext highlighter-rouge">content.attachment</code>
+are required on creation. Creating a dictation additionally requires the
+<code class="language-plaintext highlighter-rouge">DIPSDocumentReferenceTemplateIdExtension</code> and <code class="language-plaintext highlighter-rouge">DIPSDocumentReferenceDictatedTime</code> extensions.</p>
+
+<h4 id="request-update-2">Request: Update</h4>
+
+<p>Table 63. OperationInformation</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://{server}/DIPS-WebAPI/HL7/FHIR-R4/DocumentReference/{id}</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>PUT</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Both the resource id and a request body are required; either being absent is rejected with a 400
+error.</p>
+
+<h4 id="operation-cancreatedocument">Operation: $CanCreateDocument</h4>
+
+<p>Reports whether the current user may create documents.</p>
+
+<p>Table 64. OperationInformation</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://{server}/DIPS-WebAPI/HL7/FHIR-R4/DocumentReference/$CanCreateDocument</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>POST</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 65. Parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>In/Out</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>UserRoleId</td>
+      <td>in</td>
+      <td>No</td>
+      <td>Checks a specific user role instead of the one carried on the JWT or DIPS ticket.</td>
+    </tr>
+    <tr>
+      <td>CanCreateDocument</td>
+      <td>out</td>
+      <td>Yes</td>
+      <td>Whether the user may create documents.</td>
+    </tr>
+    <tr>
+      <td>Reason</td>
+      <td>out</td>
+      <td>No</td>
+      <td>OperationOutcome with a code and text, present only when access is denied.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="operation-initdocument">Operation: $initDocument</h4>
+
+<p>Returns an initial document built from a document type, for the client to fill in and POST back.</p>
+
+<p>Table 66. OperationInformation</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>PATH</td>
+      <td>https://{server}/DIPS-WebAPI/HL7/FHIR-R4/DocumentReference/$initDocument</td>
+    </tr>
+    <tr>
+      <td>HTTP VERB</td>
+      <td>POST</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 67. Parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>In/Out</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>documentTypeId</td>
+      <td>in</td>
+      <td>Yes</td>
+      <td>Coding identifying the document type. Both <code class="language-plaintext highlighter-rouge">system</code> and <code class="language-plaintext highlighter-rouge">code</code> must be present - a missing or partial Coding is rejected with a 422 error. A system other than <code class="language-plaintext highlighter-rouge">http://dips.no/fhir/namingsystem/dips-documenttypeid</code> is resolved as an external document type through the service's mapping configuration.</td>
+    </tr>
+    <tr>
+      <td>templateId</td>
+      <td>in</td>
+      <td>No</td>
+      <td>Template to base the document on. A template that does not belong to the given document type is rejected with a 422 error.</td>
+    </tr>
+    <tr>
+      <td>initdocument</td>
+      <td>out</td>
+      <td>Yes</td>
+      <td>The initial DocumentReference.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example request</p>
+
+<p><code class="language-plaintext highlighter-rouge">POST .../DocumentReference/$initDocument</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Parameters xmlns="http://hl7.org/fhir"&gt;
+    &lt;parameter&gt;
+        &lt;name value="documentTypeId"/&gt;
+        &lt;valueCoding&gt;
+            &lt;system value="http://dips.no/fhir/namingsystem/dips-documenttypeid"/&gt;
+            &lt;code value="1050"/&gt;
+        &lt;/valueCoding&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;name value="templateId"/&gt;
+        &lt;valueString value="215364"/&gt;
+    &lt;/parameter&gt;
+&lt;/Parameters&gt;
+</code></pre></div></div>
+
+<h4 id="interactions-that-are-not-supported">Interactions that are not supported</h4>
+
+<p><code class="language-plaintext highlighter-rouge">vread</code>, <code class="language-plaintext highlighter-rouge">history</code> and <code class="language-plaintext highlighter-rouge">delete</code> return 404, and <code class="language-plaintext highlighter-rouge">patch</code> returns 501. They are routed but not
+implemented for this resource.</p>
+
+<h4 id="extension-urls">Extension URLs</h4>
+
+<p>Every extension defined by this profile is identified by a URL under
+<code class="language-plaintext highlighter-rouge">http://dips.no/fhir/StructureDefinition/</code>, for example
+<code class="language-plaintext highlighter-rouge">http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEventTime</code>. Note this differs from
+the canonical prefix used elsewhere in this guide: the DocumentReference extensions carry no <code class="language-plaintext highlighter-rouge">/R4/</code>
+segment. The service matches incoming extensions on this URL with an exact string comparison, so an
+extension sent under any other URL is silently ignored rather than rejected.</p>
+
+<p>Ten of these extensions are additionally returned under a second, underscored URL - for example
+<code class="language-plaintext highlighter-rouge">http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEvent_Time</code> - by the <code class="language-plaintext highlighter-rouge">documenttype</code>
+and <code class="language-plaintext highlighter-rouge">documentTypeandDepartmentid</code> named queries. Those variants are read-only: they appear in
+responses from those two queries only, and are not recognised on create or update.</p>
+
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>© 2023 DIPS AS
 All rights reserved.
 No part of this publication may be reproduced, stored in a retrieval system, transmitted, or
@@ -4552,7 +4932,7 @@ https://www.dips.no
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 17, 2026 19:39+0000">2026-09-17</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 18, 2026 19:41+0000">2026-09-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

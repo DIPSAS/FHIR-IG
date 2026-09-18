@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/CodeSystem/DIPSLocation | *Version*:0.1.0 |
-| Draft as of 2026-09-17 | *Computable Name*:DIPSLocation |
+| Draft as of 2026-09-18 | *Computable Name*:DIPSLocation |
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
@@ -30,7 +30,7 @@
   "version" : "0.1.0",
   "name" : "DIPSLocation",
   "status" : "draft",
-  "date" : "2026-09-17T19:39:02+00:00",
+  "date" : "2026-09-18T19:41:15+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

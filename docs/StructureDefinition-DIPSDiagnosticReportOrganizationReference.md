@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSDiagnosticReportOrganizationReference | *Version*:0.1.0 |
-| Draft as of 2026-09-17 | *Computable Name*:DIPSDiagnosticReportOrganizationReference |
+| Draft as of 2026-09-18 | *Computable Name*:DIPSDiagnosticReportOrganizationReference |
 
 **Usages:**
 
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSDiagnosticReport
   "version" : "0.1.0",
   "name" : "DIPSDiagnosticReportOrganizationReference",
   "status" : "draft",
-  "date" : "2026-09-17T19:39:02+00:00",
+  "date" : "2026-09-18T19:41:15+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

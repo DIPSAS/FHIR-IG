@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBodyTemp | *Version*:0.1.0 |
-| Draft as of 2026-09-17 | *Computable Name*:DIPSVitalSignsObservationBodyTemp |
+| Draft as of 2026-09-18 | *Computable Name*:DIPSVitalSignsObservationBodyTemp |
 
  
 DIPS profile for Body Temperature including some extensions 
@@ -103,7 +103,7 @@ This resource only supports search - there is no `GET [base]/Observation/[id]` r
   "name" : "DIPSVitalSignsObservationBodyTemp",
   "title" : "DIPS Vital Signs Observation - Body Temperature",
   "status" : "draft",
-  "date" : "2026-09-17T19:39:02+00:00",
+  "date" : "2026-09-18T19:41:15+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

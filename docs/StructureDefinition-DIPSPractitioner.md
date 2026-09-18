@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSPractitioner | *Version*:0.1.0 |
-| Draft as of 2026-09-17 | *Computable Name*:DIPSPractitioner |
+| Draft as of 2026-09-18 | *Computable Name*:DIPSPractitioner |
 
 The DIPS Practitioner Profile inherits from the FHIR Practitioner resource; refer to it for scope and usage definitions
 
@@ -94,7 +94,7 @@ The following search parameters and search parameter combinations SHALL be suppo
   "version" : "0.1.0",
   "name" : "DIPSPractitioner",
   "status" : "draft",
-  "date" : "2026-09-17T19:39:02+00:00",
+  "date" : "2026-09-18T19:41:15+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

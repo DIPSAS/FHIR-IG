@@ -1,0 +1,146 @@
+# docRef-pdf-full - DIPS Core Implementation Guide v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **docRef-pdf-full**
+
+## Example DocumentReference: docRef-pdf-full
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "DocumentReference",
+  "id" : "docRef-pdf-full",
+  "extension" : [{
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedTime",
+    "valueDateTime" : "2023-05-17T07:48:25+05:30"
+  },
+  {
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEventTime",
+    "valueDateTime" : "2021-09-30T08:30:30+05:30"
+  },
+  {
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastChangedBy",
+    "valueString" : "Linkdips (Testplan Bas-Team), Max"
+  },
+  {
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocumentFormat",
+    "valueString" : "9"
+  },
+  {
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedByName",
+    "valueString" : "Linkdips (Testplan Bas-Team), Max"
+  },
+  {
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreatedBy",
+    "valueString" : "Linkdips (Testplan Bas-Team), Max"
+  },
+  {
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStayId",
+    "valueString" : "1000249"
+  },
+  {
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceWard",
+    "valueReference" : {
+      "reference" : "Organization/ahl29",
+      "identifier" : {
+        "system" : "urn:oid:1.3.6.1.4.1.9038.70.4",
+        "value" : "29"
+      }
+    }
+  },
+  {
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSection",
+    "valueReference" : {
+      "reference" : "Organization/aju21",
+      "identifier" : {
+        "system" : "urn:oid:1.3.6.1.4.1.9038.70.5",
+        "value" : "21"
+      }
+    }
+  },
+  {
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPRGroup",
+    "valueString" : "59"
+  },
+  {
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceReferralId",
+    "valueReference" : {
+      "reference" : "ServiceRequest/ahr1003778",
+      "identifier" : {
+        "system" : "urn:oid:1.3.6.1.4.1.9038.60.1",
+        "value" : "1003778"
+      }
+    }
+  },
+  {
+    "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdatedTime",
+    "valueDateTime" : "2023-05-17T07:48:25+05:30"
+  }],
+  "status" : "current",
+  "docStatus" : "final",
+  "type" : {
+    "coding" : [{
+      "system" : "http://dips.no/fhir/namingsystem/dips-documenttypeid",
+      "code" : "1050",
+      "display" : "Daglig notat"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/cdp1000239",
+    "identifier" : {
+      "system" : "http://dips.no/fhir/namingsystem/dips-patientid",
+      "value" : "1000239"
+    }
+  },
+  "date" : "2023-05-17T07:48:25+05:30",
+  "author" : [{
+    "reference" : "PractitionerRole/agb113",
+    "identifier" : {
+      "system" : "urn:oid:1.3.6.1.4.1.9038.51.1",
+      "value" : "113"
+    }
+  }],
+  "authenticator" : {
+    "reference" : "PractitionerRole/agb91",
+    "identifier" : {
+      "system" : "urn:oid:1.3.6.1.4.1.9038.51.1",
+      "value" : "91"
+    }
+  },
+  "custodian" : {
+    "reference" : "Organization/afa22-docref",
+    "identifier" : {
+      "system" : "http://dips.no/fhir/namingsystem/dips-organizationid",
+      "value" : "22"
+    }
+  },
+  "description" : "Example PDF",
+  "content" : [{
+    "attachment" : {
+      "contentType" : "application/pdf",
+      "url" : "https://dips.no/DIPS-WebAPI/HL7/FHIR-R4/Binary/ako1020766"
+    }
+  }],
+  "context" : {
+    "encounter" : [{
+      "reference" : "Encounter/agy1000245-docref",
+      "identifier" : {
+        "system" : "http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid",
+        "value" : "1000245"
+      }
+    }],
+    "related" : [{
+      "reference" : "Appointment/ahi1000249",
+      "identifier" : {
+        "system" : "urn:oid:1.3.6.1.4.1.9038.41",
+        "value" : "1000249"
+      }
+    }]
+  }
+}
+
+```

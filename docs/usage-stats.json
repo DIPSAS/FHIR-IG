@@ -519,6 +519,244 @@
       ]
     },
     {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedByName",
+      "title": "DIPSDocumentReferenceApprovedByName",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedTime",
+      "title": "DIPSDocumentReferenceApprovedTime",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApproved_By_Name",
+      "title": "Approved By Name (named-query URL variant)",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApproved_Time",
+      "title": "Approved Time (named-query URL variant)",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreatedBy",
+      "title": "DIPSDocumentReferenceCreatedBy",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreated_By",
+      "title": "Created By (named-query URL variant)",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedDuration",
+      "title": "DIPSDocumentReferenceDictatedDuration",
+      "types": [
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedTime",
+      "title": "DIPSDocumentReferenceDictatedTime",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocumentFormat",
+      "title": "DIPSDocumentReferenceDocumentFormat",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocument_Format",
+      "title": "Document Format (named-query URL variant)",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPRGroup",
+      "title": "DIPSDocumentReferenceEPRGroup",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPR_Group",
+      "title": "EPR Group (named-query URL variant)",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEventTime",
+      "title": "DIPSDocumentReferenceEventTime",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEvent_Time",
+      "title": "Event Time (named-query URL variant)",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStayId",
+      "title": "DIPSDocumentReferenceHospitalStayId",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStay_Id",
+      "title": "Hospital Stay Id (named-query URL variant)",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastChangedBy",
+      "title": "DIPSDocumentReferenceLastChangedBy",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdatedTime",
+      "title": "DIPSDocumentReferenceLastUpdatedTime",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdated_Time",
+      "title": "Last Updated Time (named-query URL variant)",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLast_Changed_By",
+      "title": "Last Changed By (named-query URL variant)",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLocationIdExtension",
+      "title": "DIPSDocumentReferenceLocationIdExtension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceReferralId",
+      "title": "DIPSDocumentReferenceReferralId",
+      "types": [
+        "Reference",
+        "string",
+        "Extension",
+        "string",
+        "uri",
+        "Identifier",
+        "string",
+        "Extension",
+        "code",
+        "CodeableConcept",
+        "uri",
+        "string",
+        "Period",
+        "Reference",
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSection",
+      "title": "DIPSDocumentReferenceSection",
+      "types": [
+        "Reference",
+        "string",
+        "Extension",
+        "string",
+        "uri",
+        "Identifier",
+        "string",
+        "Extension",
+        "code",
+        "CodeableConcept",
+        "uri",
+        "string",
+        "Period",
+        "Reference",
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceTemplateIdExtension",
+      "title": "DIPSDocumentReferenceTemplateIdExtension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceTerminalAddress",
+      "title": "DIPSDocumentReferenceTerminalAddress",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceWard",
+      "title": "DIPSDocumentReferenceWard",
+      "types": [
+        "Reference",
+        "string",
+        "Extension",
+        "string",
+        "uri",
+        "Identifier",
+        "string",
+        "Extension",
+        "code",
+        "CodeableConcept",
+        "uri",
+        "string",
+        "Period",
+        "Reference",
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferencedictatedtime",
+      "title": "Dictated Time (named-query URL variant)",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
       "url": "http://dips.no/fhir/StructureDefinition/DIPSDocumentTypeId",
       "title": "DIPS Document Type Id",
       "types": [
@@ -2052,8 +2290,8 @@
   "profiles": {
     "Appointment": [
       {
-        "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSAppointment",
-        "title": "DIPSAppointment"
+        "url": "http://dips.no/fhir/StructureDefinition/DIPSDocRefContextAppointment",
+        "title": "DIPSDocumentReferenceAppointment"
       }
     ],
     "Schedule": [
@@ -2154,6 +2392,12 @@
       {
         "url": "http://dips.no/fhir/StructureDefinition/DIPSDiagnosticReport",
         "title": "DIPS DiagnosticReport"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "http://dips.no/fhir/StructureDefinition/DIPSR4DocumentReference",
+        "title": "DIPSR4DocumentReference"
       }
     ],
     "EpisodeOfCare": [
@@ -2390,6 +2634,87 @@
     ],
     "http://dips.no/fhir/StructureDefinition/DIPS-DiagnosticReport-WorkFlow": [
       "DiagnosticReport"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedByName": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedTime": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApproved_By_Name": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApproved_Time": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreatedBy": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreated_By": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedDuration": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedTime": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocumentFormat": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocument_Format": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPRGroup": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPR_Group": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEventTime": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEvent_Time": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStayId": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStay_Id": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastChangedBy": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdatedTime": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdated_Time": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLast_Changed_By": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLocationIdExtension": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceReferralId": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSection": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceTemplateIdExtension": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceTerminalAddress": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceWard": [
+      "DocumentReference"
+    ],
+    "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferencedictatedtime": [
+      "DocumentReference"
     ],
     "http://dips.no/fhir/StructureDefinition/DIPSDocumentTypeId": [
       "EpisodeOfCare"

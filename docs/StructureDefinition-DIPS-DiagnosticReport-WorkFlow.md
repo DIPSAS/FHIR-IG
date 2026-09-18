@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/DIPS-DiagnosticReport-WorkFlow | *Version*:0.1.0 |
-| Draft as of 2026-09-17 | *Computable Name*:DIPSDiagnosticReportWorkFlow |
+| Draft as of 2026-09-18 | *Computable Name*:DIPSDiagnosticReportWorkFlow |
 
 DIPS: workflow/signing state of the diagnostic report - signed, unsigned, or unsigned with urgency.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPS-DiagnosticRepor
   "name" : "DIPSDiagnosticReportWorkFlow",
   "title" : "DIPS DiagnosticReport WorkFlow",
   "status" : "draft",
-  "date" : "2026-09-17T19:39:02+00:00",
+  "date" : "2026-09-18T19:41:15+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/ImplementationGuide/dips.fhir.no.core | *Version*:0.1.0 |
-| Draft as of 2026-09-17 | *Computable Name*:DIPSCore |
+| Draft as of 2026-09-18 | *Computable Name*:DIPSCore |
 
 # DIPS Core Implementation Guide
 
@@ -40,7 +40,7 @@ This guide is intended for developers and integrators building or consuming inte
   "name" : "DIPSCore",
   "title" : "DIPS Core Implementation Guide",
   "status" : "draft",
-  "date" : "2026-09-17T19:39:02+00:00",
+  "date" : "2026-09-18T19:41:15+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -119,6 +119,380 @@ This guide is intended for developers and integrators building or consuming inte
     {
       "extension" : [{
         "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocRefContextAppointment"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocRefContextEncounter"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocRefOrganization"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedByName"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedTime"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApproved_By_Name"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApproved_Time"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceAuthPractionerRole"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreatedBy"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreated_By"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedDuration"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedTime"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocumentFormat"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocument_Format"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPRGroup"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPR_Group"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEventTime"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEvent_Time"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStayId"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStay_Id"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastChangedBy"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdatedTime"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdated_Time"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLast_Changed_By"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLocationIdExtension"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferencePractitionerRole"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceReferralId"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSection"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSubject"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceTemplateIdExtension"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceTerminalAddress"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceWard"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferencedictatedtime"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSR4DocumentReference"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueString" : "no-narrative"
       },
       {
@@ -146,6 +520,39 @@ This guide is intended for developers and integrators building or consuming inte
       {
         "url" : "value",
         "valueString" : "Encounter/agy100247"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "no-narrative"
+      },
+      {
+        "url" : "value",
+        "valueString" : "DocumentReference/docRef-pdf-full"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "no-narrative"
+      },
+      {
+        "url" : "value",
+        "valueString" : "DocumentReference/docref-dictated-duration-example"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "no-narrative"
+      },
+      {
+        "url" : "value",
+        "valueString" : "DocumentReference/docref-dictation-section-example"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -431,6 +838,380 @@ This guide is intended for developers and integrators building or consuming inte
     {
       "extension" : [{
         "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocRefContextAppointment"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocRefContextEncounter"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocRefOrganization"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedByName"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedTime"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApproved_By_Name"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApproved_Time"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceAuthPractionerRole"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreatedBy"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreated_By"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedDuration"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedTime"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocumentFormat"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocument_Format"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPRGroup"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPR_Group"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEventTime"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEvent_Time"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStayId"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStay_Id"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastChangedBy"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdatedTime"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdated_Time"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLast_Changed_By"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLocationIdExtension"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferencePractitionerRole"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceReferralId"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSection"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSubject"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceTemplateIdExtension"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceTerminalAddress"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceWard"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferencedictatedtime"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSR4DocumentReference"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueCode" : "no-narrative"
       },
       {
@@ -458,6 +1239,39 @@ This guide is intended for developers and integrators building or consuming inte
       {
         "url" : "value",
         "valueString" : "Encounter/agy100247"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "no-narrative"
+      },
+      {
+        "url" : "value",
+        "valueString" : "DocumentReference/docRef-pdf-full"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "no-narrative"
+      },
+      {
+        "url" : "value",
+        "valueString" : "DocumentReference/docref-dictated-duration-example"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "no-narrative"
+      },
+      {
+        "url" : "value",
+        "valueString" : "DocumentReference/docref-dictation-section-example"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -723,6 +1537,10 @@ This guide is intended for developers and integrators building or consuming inte
       "name" : "DiagnosticReport Profiles"
     },
     {
+      "id" : "DocumentReferenceProfiles",
+      "name" : "DocumentReference Profiles"
+    },
+    {
       "id" : "EncounterProfiles",
       "name" : "Encounter Profiles"
     },
@@ -782,6 +1600,11 @@ This guide is intended for developers and integrators building or consuming inte
       "id" : "ReferenceProfiles",
       "name" : "Reference Profiles",
       "description" : "Constraints on the Reference datatype used by this IG's resource profiles."
+    },
+    {
+      "id" : "SupportingReferenceProfiles",
+      "name" : "Supporting Reference Profiles",
+      "description" : "Profiles used only as Reference() targets by the profiles above. They constrain the identifiers a referencing profile may carry, and are not intended to be implemented directly."
     }],
     "resource" : [{
       "extension" : [{
@@ -1103,6 +1926,22 @@ This guide is intended for developers and integrators building or consuming inte
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Appointment"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Appointment-ahi1000249.html"
+      }],
+      "reference" : {
+        "reference" : "Appointment/ahi1000249"
+      },
+      "name" : "Appointment details of ahi1000249",
+      "description" : "Appointment details of ahi1000249",
+      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSDocRefContextAppointment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       },
       {
@@ -1129,6 +1968,38 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "approvalType",
       "description" : "approvalType",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceApprovedByNameNamedQuery.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceApprovedByNameNamedQuery"
+      },
+      "name" : "Approved By Name (named-query URL variant)",
+      "description" : "Same as DIPSDocumentReferenceApprovedByName, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceApprovedTimeNamedQuery.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceApprovedTimeNamedQuery"
+      },
+      "name" : "Approved Time (named-query URL variant)",
+      "description" : "Same as DIPSDocumentReferenceApprovedTime, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update.",
       "exampleBoolean" : false
     },
     {
@@ -1303,6 +2174,22 @@ This guide is intended for developers and integrators building or consuming inte
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceCreatedByNamedQuery.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceCreatedByNamedQuery"
+      },
+      "name" : "Created By (named-query URL variant)",
+      "description" : "Same as DIPSDocumentReferenceCreatedBy, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "StructureDefinition-Department.html"
       }],
       "reference" : {
@@ -1354,6 +2241,22 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "StructureDefinition/DiagnoseGroupExtension"
       },
       "name" : "DiagnoseGroupExtension",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceDictatedTimeNamedQuery.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceDictatedTimeNamedQuery"
+      },
+      "name" : "Dictated Time (named-query URL variant)",
+      "description" : "Same as DIPSDocumentReferenceDictatedTime, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit - note the all-lowercase tail. Read-only - not recognized on create or update.",
       "exampleBoolean" : false
     },
     {
@@ -2010,7 +2913,7 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "DIPSBasisOrganizationR4Reference",
       "exampleBoolean" : false,
-      "groupingId" : "OrganizationProfiles"
+      "groupingId" : "SupportingReferenceProfiles"
     },
     {
       "extension" : [{
@@ -2042,7 +2945,7 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "DIPSBasisPractitionerR4",
       "exampleBoolean" : false,
-      "groupingId" : "PractitionerProfiles"
+      "groupingId" : "SupportingReferenceProfiles"
     },
     {
       "extension" : [{
@@ -2058,7 +2961,7 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "DIPSBasisPractitionerRoleR4Reference",
       "exampleBoolean" : false,
-      "groupingId" : "PractitionerRoleProfiles"
+      "groupingId" : "SupportingReferenceProfiles"
     },
     {
       "extension" : [{
@@ -2121,7 +3024,7 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "DIPSDiagnosticReportOrganizationReference",
       "exampleBoolean" : false,
-      "groupingId" : "OrganizationProfiles"
+      "groupingId" : "SupportingReferenceProfiles"
     },
     {
       "extension" : [{
@@ -2137,7 +3040,7 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "DIPSDiagnosticReportPractitionerReference",
       "exampleBoolean" : false,
-      "groupingId" : "PractitionerProfiles"
+      "groupingId" : "SupportingReferenceProfiles"
     },
     {
       "extension" : [{
@@ -2153,7 +3056,334 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "DIPSDiagnosticReportSubjectReference",
       "exampleBoolean" : false,
-      "groupingId" : "PatientProfiles"
+      "groupingId" : "SupportingReferenceProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocRefContextAppointment.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocRefContextAppointment"
+      },
+      "name" : "DIPSDocumentReferenceAppointment",
+      "description" : "DIPS DocumentReference Appointment Profile",
+      "exampleBoolean" : false,
+      "groupingId" : "SupportingReferenceProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceApprovedByName.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceApprovedByName"
+      },
+      "name" : "DIPSDocumentReferenceApprovedByName",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceApprovedTime.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceApprovedTime"
+      },
+      "name" : "DIPSDocumentReferenceApprovedTime",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceAuthPractionerRole.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceAuthPractionerRole"
+      },
+      "name" : "DIPSDocumentReferenceAuthPractionerRole",
+      "description" : "PractionerRole Profile for Authenticator of DocumentReference",
+      "exampleBoolean" : false,
+      "groupingId" : "SupportingReferenceProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceCreatedBy.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceCreatedBy"
+      },
+      "name" : "DIPSDocumentReferenceCreatedBy",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceDictatedDuration.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceDictatedDuration"
+      },
+      "name" : "DIPSDocumentReferenceDictatedDuration",
+      "description" : "DictatedDuration can be mentioned either in seconds (s), minutes (min), hours (h)\nor days (d) in the POST request. However, the response will always return in (s)\nseconds.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceDictatedTime.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceDictatedTime"
+      },
+      "name" : "DIPSDocumentReferenceDictatedTime",
+      "description" : "This Extension is a mandatory property in creation and update of dictation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceDocumentFormat.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceDocumentFormat"
+      },
+      "name" : "DIPSDocumentReferenceDocumentFormat",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceEPRGroup.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceEPRGroup"
+      },
+      "name" : "DIPSDocumentReferenceEPRGroup",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceEventTime.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceEventTime"
+      },
+      "name" : "DIPSDocumentReferenceEventTime",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceHospitalStayId.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceHospitalStayId"
+      },
+      "name" : "DIPSDocumentReferenceHospitalStayId",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceLastChangedBy.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceLastChangedBy"
+      },
+      "name" : "DIPSDocumentReferenceLastChangedBy",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceLastUpdatedTime.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceLastUpdatedTime"
+      },
+      "name" : "DIPSDocumentReferenceLastUpdatedTime",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceLocationIdExtension.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceLocationIdExtension"
+      },
+      "name" : "DIPSDocumentReferenceLocationIdExtension",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferencePractitionerRole.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferencePractitionerRole"
+      },
+      "name" : "DIPSDocumentReferencePractitioner",
+      "description" : "Practioner Profile For DocumentReference",
+      "exampleBoolean" : false,
+      "groupingId" : "SupportingReferenceProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceReferralId.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceReferralId"
+      },
+      "name" : "DIPSDocumentReferenceReferralId",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceSection.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceSection"
+      },
+      "name" : "DIPSDocumentReferenceSection",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceSubject.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceSubject"
+      },
+      "name" : "DIPSDocumentReferenceSubject",
+      "description" : "Patient Profile of DocumentReference",
+      "exampleBoolean" : false,
+      "groupingId" : "SupportingReferenceProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceTemplateIdExtension.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceTemplateIdExtension"
+      },
+      "name" : "DIPSDocumentReferenceTemplateIdExtension",
+      "description" : "This is a mandatory property in create / update dictation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceTerminalAddress.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceTerminalAddress"
+      },
+      "name" : "DIPSDocumentReferenceTerminalAddress",
+      "description" : "As per the current implementation, saved documents are moved out of locked state to unlocked state\nafter a document is created. The device terminal address can be sent in the document create post data\nas an extension",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceWard.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceWard"
+      },
+      "name" : "DIPSDocumentReferenceWard",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -2169,7 +3399,7 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "DIPSEncounterLocation",
       "exampleBoolean" : false,
-      "groupingId" : "LocationProfiles"
+      "groupingId" : "SupportingReferenceProfiles"
     },
     {
       "extension" : [{
@@ -2185,7 +3415,7 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "DIPSEncounterOrganization",
       "exampleBoolean" : false,
-      "groupingId" : "OrganizationProfiles"
+      "groupingId" : "SupportingReferenceProfiles"
     },
     {
       "extension" : [{
@@ -2201,7 +3431,7 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "DIPSEncounterPractitionerReference",
       "exampleBoolean" : false,
-      "groupingId" : "PractitionerRoleProfiles"
+      "groupingId" : "SupportingReferenceProfiles"
     },
     {
       "extension" : [{
@@ -2233,7 +3463,7 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "DIPSEncounterSubjectReference",
       "exampleBoolean" : false,
-      "groupingId" : "PatientProfiles"
+      "groupingId" : "SupportingReferenceProfiles"
     },
     {
       "extension" : [{
@@ -2621,7 +3851,7 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "DIPSLocationReference",
       "exampleBoolean" : false,
-      "groupingId" : "LocationProfiles"
+      "groupingId" : "SupportingReferenceProfiles"
     },
     {
       "extension" : [{
@@ -2667,7 +3897,7 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "DIPSObservationSubjectReference",
       "exampleBoolean" : false,
-      "groupingId" : "PatientProfiles"
+      "groupingId" : "SupportingReferenceProfiles"
     },
     {
       "extension" : [{
@@ -2699,7 +3929,7 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "DipsOrganizationRef",
       "exampleBoolean" : false,
-      "groupingId" : "OrganizationProfiles"
+      "groupingId" : "SupportingReferenceProfiles"
     },
     {
       "extension" : [{
@@ -3468,6 +4698,22 @@ This guide is intended for developers and integrators building or consuming inte
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSR4DocumentReference.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSR4DocumentReference"
+      },
+      "name" : "DIPSR4DocumentReference",
+      "exampleBoolean" : false,
+      "groupingId" : "DocumentReferenceProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "StructureDefinition-DIPSR4Encounter.html"
       }],
       "reference" : {
@@ -3582,7 +4828,7 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "DIPSSubjectReference",
       "exampleBoolean" : false,
-      "groupingId" : "PatientProfiles"
+      "groupingId" : "SupportingReferenceProfiles"
     },
     {
       "extension" : [{
@@ -3741,7 +4987,7 @@ This guide is intended for developers and integrators building or consuming inte
       "name" : "DIPSVitalSignsObservationEncounterReference",
       "description" : "Encounter with Episode Of Care and Planned Contact",
       "exampleBoolean" : false,
-      "groupingId" : "EncounterProfiles"
+      "groupingId" : "SupportingReferenceProfiles"
     },
     {
       "extension" : [{
@@ -3790,7 +5036,7 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "DIPSVitalSignsObservationOrganizationReference",
       "exampleBoolean" : false,
-      "groupingId" : "OrganizationProfiles"
+      "groupingId" : "SupportingReferenceProfiles"
     },
     {
       "extension" : [{
@@ -3902,7 +5148,7 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "DIPSVitalSignsObservationSubjectReference",
       "exampleBoolean" : false,
-      "groupingId" : "PatientProfiles"
+      "groupingId" : "SupportingReferenceProfiles"
     },
     {
       "extension" : [{
@@ -3919,7 +5165,121 @@ This guide is intended for developers and integrators building or consuming inte
       "name" : "DIPSVitalSignsPerformerAuthorReference",
       "description" : "DIPS profile for Author",
       "exampleBoolean" : false,
-      "groupingId" : "PractitionerRoleProfiles"
+      "groupingId" : "SupportingReferenceProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "DocumentReference-docref-dictated-duration-example.html"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/docref-dictated-duration-example"
+      },
+      "name" : "docref-dictated-duration-example",
+      "description" : "Test R4 Dictation 1",
+      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSR4DocumentReference"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "DocumentReference-docref-dictation-section-example.html"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/docref-dictation-section-example"
+      },
+      "name" : "docref-dictation-section-example",
+      "description" : "Daglig notat",
+      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSR4DocumentReference"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "DocumentReference-docRef-pdf-full.html"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/docRef-pdf-full"
+      },
+      "name" : "docRef-pdf-full",
+      "description" : "Example PDF",
+      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSR4DocumentReference"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceDocumentFormatNamedQuery.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceDocumentFormatNamedQuery"
+      },
+      "name" : "Document Format (named-query URL variant)",
+      "description" : "Same as DIPSDocumentReferenceDocumentFormat, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocRefContextEncounter.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocRefContextEncounter"
+      },
+      "name" : "DocumentReferenceCotextEncounter",
+      "description" : "Profile Encountet for DocumentReference.Context.Ecnounter",
+      "exampleBoolean" : false,
+      "groupingId" : "SupportingReferenceProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocRefOrganization.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocRefOrganization"
+      },
+      "name" : "DocumentReferenceOrganization",
+      "description" : "Profile for DocumentReference Organization",
+      "exampleBoolean" : false,
+      "groupingId" : "SupportingReferenceProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Encounter-agy1000245-docref.html"
+      }],
+      "reference" : {
+        "reference" : "Encounter/agy1000245-docref"
+      },
+      "name" : "Encounter details of agy1000245",
+      "description" : "Encounter details of agy1000245, profiled as DIPSDocRefContextEncounter",
+      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSDocRefContextEncounter"
     },
     {
       "extension" : [{
@@ -3950,6 +5310,38 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "Encounter details of agy1002679",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceEPRGroupNamedQuery.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceEPRGroupNamedQuery"
+      },
+      "name" : "EPR Group (named-query URL variant)",
+      "description" : "Same as DIPSDocumentReferenceEPRGroup, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceEventTimeNamedQuery.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceEventTimeNamedQuery"
+      },
+      "name" : "Event Time (named-query URL variant)",
+      "description" : "Same as DIPSDocumentReferenceEventTime, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -4065,6 +5457,22 @@ This guide is intended for developers and integrators building or consuming inte
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceHospitalStayIdNamedQuery.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceHospitalStayIdNamedQuery"
+      },
+      "name" : "Hospital Stay Id (named-query URL variant)",
+      "description" : "Same as DIPSDocumentReferenceHospitalStayId, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "StructureDefinition-IsSpecialistExtension.html"
       }],
       "reference" : {
@@ -4150,6 +5558,38 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "languageid",
       "description" : "Valesets of languageid",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceLastChangedByNamedQuery.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceLastChangedByNamedQuery"
+      },
+      "name" : "Last Changed By (named-query URL variant)",
+      "description" : "Same as DIPSDocumentReferenceLastChangedBy, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSDocumentReferenceLastUpdatedTimeNamedQuery.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSDocumentReferenceLastUpdatedTimeNamedQuery"
+      },
+      "name" : "Last Updated Time (named-query URL variant)",
+      "description" : "Same as DIPSDocumentReferenceLastUpdatedTime, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update.",
       "exampleBoolean" : false
     },
     {
@@ -4632,6 +6072,22 @@ This guide is intended for developers and integrators building or consuming inte
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-afa22-docref.html"
+      }],
+      "reference" : {
+        "reference" : "Organization/afa22-docref"
+      },
+      "name" : "Organization details of afa22",
+      "description" : "Organization details of afa22, as referenced by the DocumentReference examples",
+      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSDocRefOrganization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "Organization-afa23.html"
       }],
       "reference" : {
@@ -4829,6 +6285,38 @@ This guide is intended for developers and integrators building or consuming inte
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-ahl29.html"
+      }],
+      "reference" : {
+        "reference" : "Organization/ahl29"
+      },
+      "name" : "Orgnization details of ahl29",
+      "description" : "Orgnization details of ahl29",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-aju21.html"
+      }],
+      "reference" : {
+        "reference" : "Organization/aju21"
+      },
+      "name" : "Orgnization details of aju21",
+      "description" : "Orgnization details of aju21",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       },
       {
@@ -5007,6 +6495,38 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "PractitionerRole/agb104"
       },
       "name" : "Practioner details of agb104",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "PractitionerRole-agb113.html"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/agb113"
+      },
+      "name" : "Practioner details of agb113",
+      "description" : "Practioner details of agb113",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "PractitionerRole-agb91.html"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/agb91"
+      },
+      "name" : "PractionerRole details of agb91",
+      "description" : "PractionerRole details of agb91",
       "exampleBoolean" : true
     },
     {
@@ -5255,6 +6775,22 @@ This guide is intended for developers and integrators building or consuming inte
       "name" : "SelfBookingSlot",
       "exampleBoolean" : false,
       "groupingId" : "SlotProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-ahr1003778.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/ahr1003778"
+      },
+      "name" : "ServiceRequest details of ahr1003778",
+      "description" : "ServiceRequest details of ahr1003778",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{

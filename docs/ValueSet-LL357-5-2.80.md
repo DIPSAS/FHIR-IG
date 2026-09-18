@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://loinc.org/vs/LL357-5 | *Version*:0.1.0 |
-| Active as of 2026-09-17 | *Computable Name*:GCS_3_Motor |
+| Active as of 2026-09-18 | *Computable Name*:GCS_3_Motor |
 | *Other Identifiers:*OID:1.3.6.1.4.1.12009.10.1.2215 | |
 | **Copyright/Legal**: This material contains content from LOINC (http://loinc.org). LOINC is copyright Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. | |
 
@@ -58,7 +58,7 @@ No Expansion for this valueset (Unknown Code System)
   "version" : "0.1.0",
   "name" : "GCS_3_Motor",
   "status" : "active",
-  "date" : "2026-09-17T19:39:02+00:00",
+  "date" : "2026-09-18T19:41:15+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

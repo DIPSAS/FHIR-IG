@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/R4/DeathRegisteredBy | *Version*:0.1.0 |
-| Draft as of 2026-09-17 | *Computable Name*:DipsPatientDeathRegisteredBy |
+| Draft as of 2026-09-18 | *Computable Name*:DipsPatientDeathRegisteredBy |
 
 **Context of Use**
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-DipsPatientDeathRegi
   "version" : "0.1.0",
   "name" : "DipsPatientDeathRegisteredBy",
   "status" : "draft",
-  "date" : "2026-09-17T19:39:02+00:00",
+  "date" : "2026-09-18T19:41:15+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

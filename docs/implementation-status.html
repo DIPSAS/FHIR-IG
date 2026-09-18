@@ -124,73 +124,24 @@
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
       FHIR Artifacts <b class="caret"></b>
     </a>
-    <!-- artifacts.html numbers its sections sequentially, so these anchors track the
-         order of the groups: block in sushi-config.yaml. Adding, removing or reordering
-         a group shifts every anchor after it - re-check these against a build. -->
     <ul class="dropdown-menu">
       <li>
-        <a href="artifacts.html#1">Observation Profiles</a>
+        <a href="artifacts.html#1">Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#2">Encounter Profiles</a>
+        <a href="artifacts.html#21">Extensions</a>
       </li>
       <li>
-        <a href="artifacts.html#3">EpisodeOfCare Profiles</a>
+        <a href="artifacts.html#20">Capability Statements</a>
       </li>
       <li>
-        <a href="artifacts.html#4">ServiceRequest Profiles</a>
+        <a href="artifacts.html#22">Value Sets</a>
       </li>
       <li>
-        <a href="artifacts.html#5">Appointment Profiles</a>
+        <a href="artifacts.html#23">Code Systems</a>
       </li>
       <li>
-        <a href="artifacts.html#6">Schedule Profiles</a>
-      </li>
-      <li>
-        <a href="artifacts.html#7">Slot Profiles</a>
-      </li>
-      <li>
-        <a href="artifacts.html#8">Patient Profiles</a>
-      </li>
-      <li>
-        <a href="artifacts.html#9">Person Profiles</a>
-      </li>
-      <li>
-        <a href="artifacts.html#10">RelatedPerson Profiles</a>
-      </li>
-      <li>
-        <a href="artifacts.html#11">Practitioner Profiles</a>
-      </li>
-      <li>
-        <a href="artifacts.html#12">PractitionerRole Profiles</a>
-      </li>
-      <li>
-        <a href="artifacts.html#13">Organization Profiles</a>
-      </li>
-      <li>
-        <a href="artifacts.html#14">HealthcareService Profiles</a>
-      </li>
-      <li>
-        <a href="artifacts.html#15">Location Profiles</a>
-      </li>
-      <li>
-        <a href="artifacts.html#16">Reference Profiles</a>
-      </li>
-      <li class="divider"></li>
-      <li>
-        <a href="artifacts.html#17">Capability Statements</a>
-      </li>
-      <li>
-        <a href="artifacts.html#18">Extensions</a>
-      </li>
-      <li>
-        <a href="artifacts.html#19">Value Sets</a>
-      </li>
-      <li>
-        <a href="artifacts.html#20">Code Systems</a>
-      </li>
-      <li>
-        <a href="artifacts.html#21">Example Instances</a>
+        <a href="artifacts.html#24">Example Instances</a>
       </li>
     </ul>
   </li>
@@ -268,105 +219,22 @@ owners, and mismatches don't generalize from one module to the next. This table 
 record of that per-module status; it is updated as part of every profile review, not on a separate
 schedule.</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Module (<code class="language-plaintext highlighter-rouge">fhir.core.r4</code> <code class="language-plaintext highlighter-rouge">src/</code>)</th>
-      <th>IG Profile</th>
-      <th>Last confirmed against <code class="language-plaintext highlighter-rouge">fhir.core.r4</code> version</th>
-      <th>Confirmed on</th>
-      <th>Status / open items</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>EpisodeOfCare</td>
-      <td>DIPSRemoteMonitoring</td>
-      <td>2.0.362 (baseline)</td>
-      <td>2026-09-07</td>
-      <td>Verified. <code class="language-plaintext highlighter-rouge">^url</code> overrides applied to match the service's served URLs (canonical scheme deviation is intentional, see FSH comments). <code class="language-plaintext highlighter-rouge">statusHistory</code> cardinality corrected to <code class="language-plaintext highlighter-rouge">0..*</code>.</td>
-    </tr>
-    <tr>
-      <td>HealthcareService</td>
-      <td>DIPSHealthcareService</td>
-      <td>2.0.362 (baseline)</td>
-      <td>2026-09-08</td>
-      <td>Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed to match served URLs. Main profile has no served canonical URL at all (bare name in <code class="language-plaintext highlighter-rouge">Meta.Profile</code>) — not fixable from the IG side; flagged for a human decision.</td>
-    </tr>
-    <tr>
-      <td>Location</td>
-      <td>DIPSLocation</td>
-      <td>2.0.362 (baseline)</td>
-      <td>2026-09-08</td>
-      <td>Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed. Main profile has no served canonical URL, and the service has no served StructureDefinition XML for this module at all — flagged, not fixed.</td>
-    </tr>
-    <tr>
-      <td>Organization</td>
-      <td>DIPSOrganization</td>
-      <td>2.0.362 (baseline)</td>
-      <td>2026-09-08</td>
-      <td>Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed. Main profile has no served canonical URL; the service's <code class="language-plaintext highlighter-rouge">GetStructureDefinition()</code> loads a file that does not exist in its repo — likely a broken endpoint, flagged for the service owners.</td>
-    </tr>
-    <tr>
-      <td>Patient</td>
-      <td>DIPSPatient</td>
-      <td>2.0.362 (baseline)</td>
-      <td>2026-09-08</td>
-      <td>Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed, including resolving <code class="language-plaintext highlighter-rouge">DipsPatientHospitalSectorId</code>/<code class="language-plaintext highlighter-rouge">Name</code> into their two genuinely distinct served extensions. Three served extensions (<code class="language-plaintext highlighter-rouge">DIPSCanReceiveSms</code>, <code class="language-plaintext highlighter-rouge">DIPSCommentText</code>, <code class="language-plaintext highlighter-rouge">DIPSConsentGiven</code>) are undocumented in the IG — open, larger scope than a URL fix.</td>
-    </tr>
-    <tr>
-      <td>Person</td>
-      <td>DIPSPerson</td>
-      <td>2.0.362 (baseline)</td>
-      <td>2026-09-08</td>
-      <td>Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed. Main profile has no served canonical URL — flagged.</td>
-    </tr>
-    <tr>
-      <td>Practitioner</td>
-      <td>DIPSPractitioner</td>
-      <td>2.0.362 (baseline)</td>
-      <td>2026-09-08</td>
-      <td>Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed. Main profile has no served canonical URL — flagged.</td>
-    </tr>
-    <tr>
-      <td>PractitionerRole</td>
-      <td>DIPSPractitionerRole</td>
-      <td>2.0.362 (baseline)</td>
-      <td>2026-09-08</td>
-      <td>Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed. Main profile has no served canonical URL — flagged.</td>
-    </tr>
-    <tr>
-      <td>RelatedPerson</td>
-      <td>DIPSRelatedPerson</td>
-      <td>2.0.362 (baseline)</td>
-      <td>2026-09-08</td>
-      <td>Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed.</td>
-    </tr>
-    <tr>
-      <td>Encounter</td>
-      <td>8 Encounter profiles + <code class="language-plaintext highlighter-rouge">MustOccurBefore</code> extension</td>
-      <td>not tracked</td>
-      <td>—</td>
-      <td>Owned by a different team. URL-scheme and other findings from the 2026-09-08 audit were documented but deliberately not applied — do not re-attempt without checking with that team first.</td>
-    </tr>
-    <tr>
-      <td>VitalSign</td>
-      <td>13 <code class="language-plaintext highlighter-rouge">DIPSVitalSignsObservation*</code> profiles + reference profiles + 6 DIPS-specific extensions</td>
-      <td>2.0.362</td>
-      <td>2026-09-16</td>
-      <td>Missing <code class="language-plaintext highlighter-rouge">^url</code> added to <code class="language-plaintext highlighter-rouge">DIPSVitalSignsObservationQSOFAScore</code> (matches the served, non-canonical scheme already used by the other 12). Dead <code class="language-plaintext highlighter-rouge">code.coding[HeartRateCode]</code> slice removed from HeartRate and Pulse — matched no real slice on either profile's NoDomain parent (<code class="language-plaintext highlighter-rouge">HeartRateSNOMEDCode</code>/<code class="language-plaintext highlighter-rouge">PulseSNOMEDCode</code>), a harmless but meaningless leftover. Open: the Consciousness template emits an undocumented extension, <code class="language-plaintext highlighter-rouge">DIPSVitalSignsObservationConsciousnessPainStimulus</code>, with no slice or extension definition in the IG — a fix was drafted but not kept, still needs adding. The HeartRate, Pulse, RespiratoryRate and Pulsoksymetri templates each emit at least one extension (HeartRhythmIrregularity/ClinicalDescription/SpontaneousBreathing/RespirationRateBodyPosition/FiO2/OnAir/ProsentO2) under a URL matching neither the real <code class="language-plaintext highlighter-rouge">hl7.fhir.no.domain.vitalsigns</code> extension nor any DIPS-specific one — a <code class="language-plaintext highlighter-rouge">fhir.core.r4</code> template bug (confirmed self-contradictory even within one template), not encoded in the IG; needs a developer fix at the source, not an IG change. <code class="language-plaintext highlighter-rouge">ObservationCapabilityStatement.xml</code>'s <code class="language-plaintext highlighter-rouge">supportedProfile</code> naming (<code class="language-plaintext highlighter-rouge">QSOFA</code> → <code class="language-plaintext highlighter-rouge">QSOFAScore</code>) was corrected directly in <code class="language-plaintext highlighter-rouge">fhir.core.r4</code>, separately from this IG.</td>
-    </tr>
-    <tr>
-      <td>DiagnosticReport</td>
-      <td>DIPSDiagnosticReport (+ DIPSDiagnosticOrderSpecimenReference, DIPSDiagnosticReportOrganizationReference/PractitionerReference/SubjectReference, DIPS-DiagnosticReport-WorkFlow extension)</td>
-      <td>2.0.362</td>
-      <td>2026-09-16</td>
-      <td>Verified against <code class="language-plaintext highlighter-rouge">LabRestServiceToFhirDiagnosticReportMapping</code> and fhir.core.r4's own committed integration-test fixtures. Fixed several hard conformance violations the served StructureDefinition's own documentation also got wrong: <code class="language-plaintext highlighter-rouge">basedOn</code>/<code class="language-plaintext highlighter-rouge">result</code>/<code class="language-plaintext highlighter-rouge">specimen</code> relaxed from an incorrect max of 1 to <code class="language-plaintext highlighter-rouge">0..*</code>/<code class="language-plaintext highlighter-rouge">1..*</code> (a real report in the service's own fixtures has 3 based-on and 3 result references); <code class="language-plaintext highlighter-rouge">performer</code> relaxed from <code class="language-plaintext highlighter-rouge">1..1</code> to <code class="language-plaintext highlighter-rouge">0..*</code> and broadened to allow <code class="language-plaintext highlighter-rouge">DIPSDiagnosticReportPractitionerReference</code> alongside Organization (mapping can emit either, and a real fixture has zero performers); <code class="language-plaintext highlighter-rouge">code.coding</code> corrected from forbidden (<code class="language-plaintext highlighter-rouge">..0</code>) to <code class="language-plaintext highlighter-rouge">1..1</code> with a fixed system, since the mapper always emits one. Also corrected <code class="language-plaintext highlighter-rouge">identifier[requsition_id].use</code> from a wrong fixed <code class="language-plaintext highlighter-rouge">secondary</code> to the real <code class="language-plaintext highlighter-rouge">official</code>, and removed an invalid fixed <code class="language-plaintext highlighter-rouge">category.coding[DIPS_rekvisisjonstype].code</code> (real value is dynamic). All changes verified via <code class="language-plaintext highlighter-rouge">sushi .</code> (0 errors, no new warnings). Not fixed / open: <code class="language-plaintext highlighter-rouge">performer.identifier</code>'s elaborate identifier slicing (DIPSLocationId/DIPSDepartmentID/PractitionerHCP etc.) appears unpopulated by the currently-reviewed mapping code path (<code class="language-plaintext highlighter-rouge">ResourceReferenceBuilder.GetNewResourceReference</code> sets only <code class="language-plaintext highlighter-rouge">.Reference</code>/<code class="language-plaintext highlighter-rouge">.Display</code>) — left as-is since it isn't a proven violation, just unconfirmed as currently active; flagged for the module owner. <code class="language-plaintext highlighter-rouge">category.coding[DIPS_rekvisisjonstype].system</code>/<code class="language-plaintext highlighter-rouge">[FHIR_standard_code].system</code> pin a ValueSet canonical rather than a CodeSystem canonical (pre-existing, cross-cutting wire-format question, category 6 — not changed).</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>"Baseline" means the exact <code class="language-plaintext highlighter-rouge">fhir.core.r4</code> version at the time of review wasn't recorded, and
+<p>| Module (<code class="language-plaintext highlighter-rouge">fhir.core.r4</code> <code class="language-plaintext highlighter-rouge">src/</code>) | IG Profile | Last confirmed against <code class="language-plaintext highlighter-rouge">fhir.core.r4</code> version | Confirmed on | Status / open items |
+|—|—|—|—|—|
+| EpisodeOfCare | DIPSRemoteMonitoring | 2.0.362 (baseline) | 2026-09-07 | Verified. <code class="language-plaintext highlighter-rouge">^url</code> overrides applied to match the service's served URLs (canonical scheme deviation is intentional, see FSH comments). <code class="language-plaintext highlighter-rouge">statusHistory</code> cardinality corrected to <code class="language-plaintext highlighter-rouge">0..*</code>. |
+| HealthcareService | DIPSHealthcareService | 2.0.362 (baseline) | 2026-09-08 | Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed to match served URLs. Main profile has no served canonical URL at all (bare name in <code class="language-plaintext highlighter-rouge">Meta.Profile</code>) — not fixable from the IG side; flagged for a human decision. |
+| Location | DIPSLocation | 2.0.362 (baseline) | 2026-09-08 | Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed. Main profile has no served canonical URL, and the service has no served StructureDefinition XML for this module at all — flagged, not fixed. |
+| Organization | DIPSOrganization | 2.0.362 (baseline) | 2026-09-08 | Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed. Main profile has no served canonical URL; the service's <code class="language-plaintext highlighter-rouge">GetStructureDefinition()</code> loads a file that does not exist in its repo — likely a broken endpoint, flagged for the service owners. |
+| Patient | DIPSPatient | 2.0.362 (baseline) | 2026-09-08 | Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed, including resolving <code class="language-plaintext highlighter-rouge">DipsPatientHospitalSectorId</code>/<code class="language-plaintext highlighter-rouge">Name</code> into their two genuinely distinct served extensions. Three served extensions (<code class="language-plaintext highlighter-rouge">DIPSCanReceiveSms</code>, <code class="language-plaintext highlighter-rouge">DIPSCommentText</code>, <code class="language-plaintext highlighter-rouge">DIPSConsentGiven</code>) are undocumented in the IG — open, larger scope than a URL fix. |
+| Person | DIPSPerson | 2.0.362 (baseline) | 2026-09-08 | Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed. Main profile has no served canonical URL — flagged. |
+| Practitioner | DIPSPractitioner | 2.0.362 (baseline) | 2026-09-08 | Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed. Main profile has no served canonical URL — flagged. |
+| PractitionerRole | DIPSPractitionerRole | 2.0.362 (baseline) | 2026-09-08 | Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed. Main profile has no served canonical URL — flagged. |
+| RelatedPerson | DIPSRelatedPerson | 2.0.362 (baseline) | 2026-09-08 | Extension <code class="language-plaintext highlighter-rouge">^url</code>s fixed. |
+| Encounter | 8 Encounter profiles + <code class="language-plaintext highlighter-rouge">MustOccurBefore</code> extension | not tracked | — | Owned by a different team. URL-scheme and other findings from the 2026-09-08 audit were documented but deliberately not applied — do not re-attempt without checking with that team first. |
+| VitalSign | 13 <code class="language-plaintext highlighter-rouge">DIPSVitalSignsObservation*</code> profiles + reference profiles + 6 DIPS-specific extensions | 2.0.362 | 2026-09-16 | Missing <code class="language-plaintext highlighter-rouge">^url</code> added to <code class="language-plaintext highlighter-rouge">DIPSVitalSignsObservationQSOFAScore</code> (matches the served, non-canonical scheme already used by the other 12). Dead <code class="language-plaintext highlighter-rouge">code.coding[HeartRateCode]</code> slice removed from HeartRate and Pulse — matched no real slice on either profile's NoDomain parent (<code class="language-plaintext highlighter-rouge">HeartRateSNOMEDCode</code>/<code class="language-plaintext highlighter-rouge">PulseSNOMEDCode</code>), a harmless but meaningless leftover. Open: the Consciousness template emits an undocumented extension, <code class="language-plaintext highlighter-rouge">DIPSVitalSignsObservationConsciousnessPainStimulus</code>, with no slice or extension definition in the IG — a fix was drafted but not kept, still needs adding. The HeartRate, Pulse, RespiratoryRate and Pulsoksymetri templates each emit at least one extension (HeartRhythmIrregularity/ClinicalDescription/SpontaneousBreathing/RespirationRateBodyPosition/FiO2/OnAir/ProsentO2) under a URL matching neither the real <code class="language-plaintext highlighter-rouge">hl7.fhir.no.domain.vitalsigns</code> extension nor any DIPS-specific one — a <code class="language-plaintext highlighter-rouge">fhir.core.r4</code> template bug (confirmed self-contradictory even within one template), not encoded in the IG; needs a developer fix at the source, not an IG change. <code class="language-plaintext highlighter-rouge">ObservationCapabilityStatement.xml</code>'s <code class="language-plaintext highlighter-rouge">supportedProfile</code> naming (<code class="language-plaintext highlighter-rouge">QSOFA</code> → <code class="language-plaintext highlighter-rouge">QSOFAScore</code>) was corrected directly in <code class="language-plaintext highlighter-rouge">fhir.core.r4</code>, separately from this IG. |
+| DiagnosticReport | DIPSDiagnosticReport (+ DIPSDiagnosticOrderSpecimenReference, DIPSDiagnosticReportOrganizationReference/PractitionerReference/SubjectReference, DIPS-DiagnosticReport-WorkFlow extension) | 2.0.362 | 2026-09-16 | Verified against <code class="language-plaintext highlighter-rouge">LabRestServiceToFhirDiagnosticReportMapping</code> and fhir.core.r4's own committed integration-test fixtures. Fixed several hard conformance violations the served StructureDefinition's own documentation also got wrong: <code class="language-plaintext highlighter-rouge">basedOn</code>/<code class="language-plaintext highlighter-rouge">result</code>/<code class="language-plaintext highlighter-rouge">specimen</code> relaxed from an incorrect max of 1 to <code class="language-plaintext highlighter-rouge">0..*</code>/<code class="language-plaintext highlighter-rouge">1..*</code> (a real report in the service's own fixtures has 3 based-on and 3 result references); <code class="language-plaintext highlighter-rouge">performer</code> relaxed from <code class="language-plaintext highlighter-rouge">1..1</code> to <code class="language-plaintext highlighter-rouge">0..*</code> and broadened to allow <code class="language-plaintext highlighter-rouge">DIPSDiagnosticReportPractitionerReference</code> alongside Organization (mapping can emit either, and a real fixture has zero performers); <code class="language-plaintext highlighter-rouge">code.coding</code> corrected from forbidden (<code class="language-plaintext highlighter-rouge">..0</code>) to <code class="language-plaintext highlighter-rouge">1..1</code> with a fixed system, since the mapper always emits one. Also corrected <code class="language-plaintext highlighter-rouge">identifier[requsition_id].use</code> from a wrong fixed <code class="language-plaintext highlighter-rouge">secondary</code> to the real <code class="language-plaintext highlighter-rouge">official</code>, and removed an invalid fixed <code class="language-plaintext highlighter-rouge">category.coding[DIPS_rekvisisjonstype].code</code> (real value is dynamic). All changes verified via <code class="language-plaintext highlighter-rouge">sushi .</code> (0 errors, no new warnings). Not fixed / open: <code class="language-plaintext highlighter-rouge">performer.identifier</code>'s elaborate identifier slicing (DIPSLocationId/DIPSDepartmentID/PractitionerHCP etc.) appears unpopulated by the currently-reviewed mapping code path (<code class="language-plaintext highlighter-rouge">ResourceReferenceBuilder.GetNewResourceReference</code> sets only <code class="language-plaintext highlighter-rouge">.Reference</code>/<code class="language-plaintext highlighter-rouge">.Display</code>) — left as-is since it isn't a proven violation, just unconfirmed as currently active; flagged for the module owner. <code class="language-plaintext highlighter-rouge">category.coding[DIPS_rekvisisjonstype].system</code>/<code class="language-plaintext highlighter-rouge">[FHIR_standard_code].system</code> pin a ValueSet canonical rather than a CodeSystem canonical (pre-existing, cross-cutting wire-format question, category 6 — not changed). |
+| DocumentReference | DIPSR4DocumentReference (+ DIPSDocRefContextAppointment, DIPSDocRefContextEncounter, DIPSDocRefOrganization, DIPSDocumentReferenceAuthPractionerRole, DIPSDocumentReferencePractitionerRole, DIPSDocumentReferenceSubject and 17 DIPSDocumentReference* extensions) | 2.0.362 | 2026-09-17 | Moved in from the standalone <code class="language-plaintext highlighter-rouge">FhirDocumentReference.R4</code> repo and reviewed against the module's running code (<code class="language-plaintext highlighter-rouge">DocumentServiceWrapper</code>, <code class="language-plaintext highlighter-rouge">HealthRecordGraphQLService</code>, <code class="language-plaintext highlighter-rouge">ExtensionHelper</code>/<code class="language-plaintext highlighter-rouge">GenericHelper</code>, <code class="language-plaintext highlighter-rouge">DocumentReferenceServiceHelper</code>) and its test fixtures.. <strong>Canonical URLs corrected</strong>: every profile and extension now carries an explicit <code class="language-plaintext highlighter-rouge">^url</code> without the <code class="language-plaintext highlighter-rouge">/R4/</code> segment this IG's canonical would insert, because <code class="language-plaintext highlighter-rouge">src/DocumentReference</code> builds and matches every URL from <code class="language-plaintext highlighter-rouge">http://dips.no/fhir/StructureDefinition/</code> and produces no <code class="language-plaintext highlighter-rouge">/R4/</code> URL anywhere — the <code class="language-plaintext highlighter-rouge">/R4/</code> form was silently ignored on POST and unrecognized on read. All 27 extension URLs the module's code builds are now defined in the IG and match exactly — the 17 used by the ordinary read/write path, plus 10 <code class="language-plaintext highlighter-rouge">*NamedQuery</code> variants for the underscored URLs the <code class="language-plaintext highlighter-rouge">documenttype</code> and <code class="language-plaintext highlighter-rouge">documentTypeandDepartmentid</code> named queries emit (<code class="language-plaintext highlighter-rouge">...Event_Time</code>, <code class="language-plaintext highlighter-rouge">...Last_Changed_By</code>, lowercase <code class="language-plaintext highlighter-rouge">...dictatedtime</code>, etc.), declared as their own slices so a response from those two endpoints validates. Those 10 are read-only: the service matches inbound extensions on the un-suffixed URLs only, so sending a <code class="language-plaintext highlighter-rouge">*_*</code> URL on a create or update is silently ignored. They exist because of ten free-text string literals in <code class="language-plaintext highlighter-rouge">HealthRecordGraphQLService.cs</code>; if that is fixed at source, delete <code class="language-plaintext highlighter-rouge">extensions/DIPSDocumentReference/NamedQueryVariants.fsh</code> and the 10 slices. The 7 profile <code class="language-plaintext highlighter-rouge">^url</code>s follow the same base scheme but the code never names them, so they remain unconfirmed. <strong>Cardinalities corrected</strong>: <code class="language-plaintext highlighter-rouge">identifier</code> (<code class="language-plaintext highlighter-rouge">..0</code> → <code class="language-plaintext highlighter-rouge">0..*</code>), <code class="language-plaintext highlighter-rouge">masterIdentifier</code> (<code class="language-plaintext highlighter-rouge">..0</code> → <code class="language-plaintext highlighter-rouge">0..1</code>), <code class="language-plaintext highlighter-rouge">relatesTo</code> (<code class="language-plaintext highlighter-rouge">..0</code> → <code class="language-plaintext highlighter-rouge">0..*</code>) and <code class="language-plaintext highlighter-rouge">text</code> (<code class="language-plaintext highlighter-rouge">..0</code> → <code class="language-plaintext highlighter-rouge">0..1</code>) were forbidden by this IG but populated by the mapping on every read — no real response could conform. The service's own served profile never forbade them either; the <code class="language-plaintext highlighter-rouge">..0</code> originated here. <code class="language-plaintext highlighter-rouge">meta ..0</code> was checked and kept: nothing in <code class="language-plaintext highlighter-rouge">src/DocumentReference</code> or in Core sets <code class="language-plaintext highlighter-rouge">DocumentReference.meta</code>. <code class="language-plaintext highlighter-rouge">-intro.md</code>/<code class="language-plaintext highlighter-rouge">-notes.md</code> were added, documenting the supported interactions, operations, and search parameters. |
+"Baseline" means the exact <code class="language-plaintext highlighter-rouge">fhir.core.r4</code> version at the time of review wasn't recorded, and
 <code class="language-plaintext highlighter-rouge">2.0.362</code> (the top numbered entry in <code class="language-plaintext highlighter-rouge">release-notes.yaml</code> as of when this table was created,
 2026-09-10) is used as the closest known reference point rather than a guess at the precise
 git-height version. Every review from this point forward should record the actual version in place
@@ -391,7 +259,7 @@ of "(baseline)".</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 17, 2026 19:39+0000">2026-09-17</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 18, 2026 19:41+0000">2026-09-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

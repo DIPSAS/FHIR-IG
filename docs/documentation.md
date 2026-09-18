@@ -2345,6 +2345,195 @@ Example request
 
 ```
 
+### FHIR DocumentReference
+
+DIPSR4DocumentReference covers clinical documents (journal entries) in DIPS Arena as FHIR `DocumentReference` resources - dictations, PDFs, rich text and CDA documents alike. A document's resource id carries the `ako` prefix.
+
+Table 57. Supported FHIR Operations
+
+| | |
+| :--- | :--- |
+| Read | Yes |
+| VRead | No |
+| Create | Yes |
+| Update | Yes |
+| History | No |
+| Search | Yes |
+| Delete | No |
+| Patch | No |
+
+#### Request: Read
+
+Table 58. OperationInformation
+
+| | |
+| :--- | :--- |
+| PATH | https://{server}/DIPS-WebAPI/HL7/FHIR-R4/DocumentReference/{id} |
+| HTTP VERB | GET |
+
+Example request
+
+`GET .../DocumentReference/ako1020766`
+
+#### Request: Search
+
+Table 59. OperationInformation
+
+| | |
+| :--- | :--- |
+| PATH | https://{server}/DIPS-WebAPI/HL7/FHIR-R4/DocumentReference?{SearchParameters} |
+| HTTP VERB | GET |
+
+Table 60. Parameters
+
+| | |
+| :--- | :--- |
+| _id | Document id. Matched case-insensitively; only the numeric part of the value is read, so the`ako`prefix is optional. |
+| patient | Patient the documents belong to. Must carry the`cdp`or`Patient/cdp`prefix - any other value is rejected with a 400 error. |
+| patient.identifier | Patient identifier qualified with its system. Accepted systems: DIPS patient id, national identity number, D-number and temporary identity number ("Hjelpenummer"). An unqualified value is accepted only if it is a valid national identity number. |
+| encounter.episodeofcare | Episode of care ("Omsorgsepisode") the documents were recorded on. Comma separated numeric ids, an empty string, or`null`. Letters are rejected. |
+| encounter.hospitalization | Hospital stay the documents were recorded on. Same value shape as`encounter.episodeofcare`. |
+| period.start | Lower bound on the document's event time. Format`yyyy-MM-dd`or`yyyy-MM-ddTHH:mm:ss`. |
+| period.end | Upper bound on the document's event time, same two formats. A date-only value is widened to`T23:59:59`, so that day is included. |
+| includebinary | `true`embeds the attachment content in`content.attachment`instead of returning a Binary URL to fetch separately. |
+| _count, _sort, page | Paging and ordering. |
+| _summary=count | Returns the number of matching documents without the documents themselves. |
+
+Unlike a standard FHIR date search, `period.start` and `period.end` do not accept comparison prefixes such as `gt` or `ge` - the bound is implied by which of the two parameters is used, and a value in any other format is rejected with an error rather than ignored.
+
+Example requests
+
+All documents for a patient: `GET .../DocumentReference?patient=cdp1000239`
+
+Documents for a patient, identified by national identity number: `GET .../DocumentReference?patient.identifier=urn:oid:2.16.578.1.12.4.1.4.1|15076500565`
+
+Documents on one episode of care: `GET .../DocumentReference?encounter.episodeofcare=1000245`
+
+Documents on several hospital stays: `GET .../DocumentReference?encounter.hospitalization=1000249,1000251`
+
+Documents for a patient within an event time period, attachments embedded: `GET .../DocumentReference?patient=cdp1000239&period.start=2023-05-01&period.end=2023-05-31&includebinary=true`
+
+#### Request: Search by named query
+
+Nine named queries are supported through the `_query` parameter. A value outside this list is rejected with an error.
+
+Table 61. Named queries
+
+| | | |
+| :--- | :--- | :--- |
+| documenttype | documenttypeids, patient | Filters a patient's documents by document type. Comma separated document type ids. |
+| DepartmentId | DepartmentId, period.start, period.end | Filters documents by department over a date range. |
+| documentTypeandDepartmentid | DepartmentId, documenttypeids, period.start, period.end | Filters documents by both document type and department over a date range. |
+| eprgroupprofile | eprgroups, patient | Filters a patient's documents by EPR group. Comma separated numeric ids; letters are rejected. |
+| showtechnicaldocumentstatus | showdocumentstatus, patient | Controls whether technical documents are included. Values`showboth`,`showonlytechnical`,`HideTechnical`. |
+| booleanfilters | showdeleted, showactivedocument, showoldversions, patient | Controls whether deleted documents, active documents and superseded versions are included. Each takes`true`or`false`. |
+| viewdocumenttypestemplate | text, text:contains, text:exact, documenttypeid | Returns document types and their templates, by name or by id. |
+| journalgroupsprofile | patient | Filters a patient's documents by journal group. |
+| pagesummary | patient | Returns a page summary over the matching documents. |
+
+An ordinary search is rejected if it contains `text`, `text:contains`, `text:exact` or `documenttypeid` - those four work only with `_query=viewdocumenttypestemplate`.
+
+Ordinary searches hide technical documents and return active, non-deleted documents only; use `showtechnicaldocumentstatus` and `booleanfilters` to widen that.
+
+Example requests
+
+A patient's documents of two document types: `GET .../DocumentReference?_query=documenttype&documenttypeids=1050,1051&patient=cdp1000239`
+
+Document types whose name contains "notat": `GET .../DocumentReference?_query=viewdocumenttypestemplate&text:contains=notat`
+
+Include deleted and superseded documents: `GET .../DocumentReference?_query=booleanfilters&showdeleted=true&showoldversions=true&patient=cdp1000239`
+
+#### Request: Create
+
+Table 62. OperationInformation
+
+| | |
+| :--- | :--- |
+| PATH | https://{server}/DIPS-WebAPI/HL7/FHIR-R4/DocumentReference |
+| HTTP VERB | POST |
+
+The document's metadata is carried in the DIPSR4DocumentReference extensions - see the profile's formal view for the full list. `subject`, `author`, `custodian`, `type` and `content.attachment` are required on creation. Creating a dictation additionally requires the `DIPSDocumentReferenceTemplateIdExtension` and `DIPSDocumentReferenceDictatedTime` extensions.
+
+#### Request: Update
+
+Table 63. OperationInformation
+
+| | |
+| :--- | :--- |
+| PATH | https://{server}/DIPS-WebAPI/HL7/FHIR-R4/DocumentReference/{id} |
+| HTTP VERB | PUT |
+
+Both the resource id and a request body are required; either being absent is rejected with a 400 error.
+
+#### Operation: $CanCreateDocument
+
+Reports whether the current user may create documents.
+
+Table 64. OperationInformation
+
+| | |
+| :--- | :--- |
+| PATH | https://{server}/DIPS-WebAPI/HL7/FHIR-R4/DocumentReference/$CanCreateDocument |
+| HTTP VERB | POST |
+
+Table 65. Parameters
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| UserRoleId | in | No | Checks a specific user role instead of the one carried on the JWT or DIPS ticket. |
+| CanCreateDocument | out | Yes | Whether the user may create documents. |
+| Reason | out | No | OperationOutcome with a code and text, present only when access is denied. |
+
+#### Operation: $initDocument
+
+Returns an initial document built from a document type, for the client to fill in and POST back.
+
+Table 66. OperationInformation
+
+| | |
+| :--- | :--- |
+| PATH | https://{server}/DIPS-WebAPI/HL7/FHIR-R4/DocumentReference/$initDocument |
+| HTTP VERB | POST |
+
+Table 67. Parameters
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| documentTypeId | in | Yes | Coding identifying the document type. Both`system`and`code`must be present - a missing or partial Coding is rejected with a 422 error. A system other than`http://dips.no/fhir/namingsystem/dips-documenttypeid`is resolved as an external document type through the service's mapping configuration. |
+| templateId | in | No | Template to base the document on. A template that does not belong to the given document type is rejected with a 422 error. |
+| initdocument | out | Yes | The initial DocumentReference. |
+
+Example request
+
+`POST .../DocumentReference/$initDocument`
+
+```
+<Parameters xmlns="http://hl7.org/fhir">
+    <parameter>
+        <name value="documentTypeId"/>
+        <valueCoding>
+            <system value="http://dips.no/fhir/namingsystem/dips-documenttypeid"/>
+            <code value="1050"/>
+        </valueCoding>
+    </parameter>
+    <parameter>
+        <name value="templateId"/>
+        <valueString value="215364"/>
+    </parameter>
+</Parameters>
+
+```
+
+#### Interactions that are not supported
+
+`vread`, `history` and `delete` return 404, and `patch` returns 501. They are routed but not implemented for this resource.
+
+#### Extension URLs
+
+Every extension defined by this profile is identified by a URL under `http://dips.no/fhir/StructureDefinition/`, for example `http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEventTime`. Note this differs from the canonical prefix used elsewhere in this guide: the DocumentReference extensions carry no `/R4/` segment. The service matches incoming extensions on this URL with an exact string comparison, so an extension sent under any other URL is silently ignored rather than rejected.
+
+Ten of these extensions are additionally returned under a second, underscored URL - for example `http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEvent_Time` - by the `documenttype` and `documentTypeandDepartmentid` named queries. Those variants are read-only: they appear in responses from those two queries only, and are not recognised on create or update.
+
 ```
 © 2023 DIPS AS
 All rights reserved.

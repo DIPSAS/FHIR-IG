@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="agy1000245-docref"/>
+  <meta>
+    <profile value="http://dips.no/fhir/StructureDefinition/DIPSDocRefContextEncounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter agy1000245-docref</b></p><a name="agy1000245-docref"> </a><a name="hcagy1000245-docref"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-DIPSDocRefContextEncounter.html">DocumentReferenceCotextEncounter</a></p></div><p><b>identifier</b>: <code>http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid</code>/1000245</p><p><b>status</b>: Arrived</p><p><b>class</b>: <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB">ActCode: AMB</a> (ambulatory)</p></div>
+  </text>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid"/>
+    <value value="1000245"/>
+  </identifier>
+  <status value="arrived"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="AMB"/>
+  </class>
+</Encounter>

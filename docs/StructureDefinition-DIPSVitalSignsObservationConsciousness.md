@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationConsciousness | *Version*:0.1.0 |
-| Draft as of 2026-09-17 | *Computable Name*:DIPSVitalSignsObservationConsciousness |
+| Draft as of 2026-09-18 | *Computable Name*:DIPSVitalSignsObservationConsciousness |
 
  
 DIPS profile for Level of Consciousness including some extensions 
@@ -104,7 +104,7 @@ This resource only supports search - there is no `GET [base]/Observation/[id]` r
   "name" : "DIPSVitalSignsObservationConsciousness",
   "title" : "DIPS Vital Signs Observation - Level of Consciousness",
   "status" : "draft",
-  "date" : "2026-09-17T19:39:02+00:00",
+  "date" : "2026-09-18T19:41:15+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

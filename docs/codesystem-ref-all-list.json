@@ -74,8 +74,8 @@
     "description" : "",
     "uses" : {
     },
-    "ValueSet-DIPSVitalSignsObservationHeartRateMeasurementMethod.html" : "DIPSVitalSignsObservationHeartRateMeasurementMethod",
     "ValueSet-DIPSVitalSignsObservationBloodPressureMeasurementMethod.html" : "DIPSVitalSignsObservationBloodPressureMeasurementMethod",
+    "ValueSet-DIPSVitalSignsObservationHeartRateMeasurementMethod.html" : "DIPSVitalSignsObservationHeartRateMeasurementMethod",
     "ValueSet-DIPSVitalSignsObservationPulseMeasurementMethod.html" : "DIPSVitalSignsObservationPulseMeasurementMethod"
   },
   {
@@ -215,6 +215,18 @@
     "http://hl7.org/fhir/R4/valueset-appointmentstatus.html" : "AppointmentStatus"
   },
   {
+    "url" : "http://hl7.org/fhir/composition-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CompositionStatus",
+    "title" : "CompositionStatus",
+    "description" : "The workflow/clinical status of the composition.",
+    "oids" : ["2.16.840.1.113883.4.642.4.242"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-composition-status.html" : "CompositionStatus"
+  },
+  {
     "url" : "http://hl7.org/fhir/contact-point-system",
     "version" : "4.0.1",
     "status" : "active",
@@ -261,6 +273,30 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-diagnostic-report-status.html" : "DiagnosticReportStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/document-reference-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DocumentReferenceStatus",
+    "title" : "DocumentReferenceStatus",
+    "description" : "The status of the document reference.",
+    "oids" : ["2.16.840.1.113883.4.642.4.8"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-document-reference-status.html" : "DocumentReferenceStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/document-relationship-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DocumentRelationshipType",
+    "title" : "DocumentRelationshipType",
+    "description" : "The type of relationship between documents.",
+    "oids" : ["2.16.840.1.113883.4.642.4.245"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-document-relationship-type.html" : "DocumentRelationshipType"
   },
   {
     "url" : "http://hl7.org/fhir/encounter-location-status",
@@ -499,23 +535,24 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
-    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "ValueSet-DIPSVitalSignsObservationBodySite.html" : "DIPSVitalSignsObservationBodySite",
     "https://hl7.no/fhir/no-domain/vitalsigns/ValueSet-NoDomainVitalSignsHeartRateBodySiteValueSet.html" : "NoDomainVitalSignsHeartRateBodySite-ValueSet",
+    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+    "https://hl7.no/fhir/no-domain/vitalsigns/ValueSet-NoDomainVitalSignsBodyTempBodySiteValueSet.html" : "NoDomainVitalSignsBodyTempBodySite-ValueSet",
+    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+    "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
+    "https://hl7.no/fhir/no-domain/vitalsigns/ValueSet-NoDomainVitalSignsBloodpressureBodySiteValueSet.html" : "NoDomainVitalSignsBloodpressureBodySite-ValueSet",
     "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+    "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+    "ValueSet-DIPSVitalSignsObservationBodySite.html" : "DIPSVitalSignsObservationBodySite",
+    "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+    "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
     "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
     "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
-    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-    "https://hl7.no/fhir/no-domain/vitalsigns/ValueSet-NoDomainVitalSignsBodyTempBodySiteValueSet.html" : "NoDomainVitalSignsBodyTempBodySite-ValueSet",
-    "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-    "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
-    "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
-    "https://hl7.no/fhir/no-domain/vitalsigns/ValueSet-NoDomainVitalSignsBloodpressureBodySiteValueSet.html" : "NoDomainVitalSignsBloodpressureBodySite-ValueSet",
-    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-    "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes"
+    "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -827,8 +864,8 @@
     "oids" : ["2.16.840.1.113883.18.58"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type",
-    "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
+    "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship ",
+    "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
@@ -864,8 +901,9 @@
     "oids" : ["2.16.840.1.113883.5.4"],
     "uses" : {
     },
-    "ValueSet-DIPSEncounterV3.html" : "DIPSEncounterV3",
-    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode"
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
+    "ValueSet-DIPSEncounterV3.html" : "DIPSEncounterV3"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
@@ -925,8 +963,8 @@
     "oids" : ["2.16.840.1.113883.5.1008"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy",
-    "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+    "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus",
+    "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",

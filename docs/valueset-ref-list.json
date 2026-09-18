@@ -9,8 +9,8 @@
     "systems" : ["urn:oid:2.16.578.1.12.4.1.1.8240"],
     "uses" : {
     },
-    "StructureDefinition-ContactTypeExtension.html" : "ContactTypeExtension",
-    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter"
+    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
+    "StructureDefinition-ContactTypeExtension.html" : "ContactTypeExtension"
   },
   {
     "url" : "http://dips.no/fhir/R4/ValueSet/DIPSEncounterV3",
@@ -22,8 +22,8 @@
     "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
     "uses" : {
     },
-    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
-    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter"
+    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
+    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter"
   },
   {
     "url" : "http://dips.no/fhir/R4/ValueSet/DIPSGCSEyeOpeningScore",
@@ -493,6 +493,20 @@
     "StructureDefinition-DIPSAppointment.html" : "DIPSAppointment"
   },
   {
+    "url" : "http://hl7.org/fhir/ValueSet/composition-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CompositionStatus",
+    "title" : "CompositionStatus",
+    "description" : "The workflow/clinical status of the composition.",
+    "systems" : ["http://hl7.org/fhir/composition-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.241"],
+    "sources" : ["2.16.840.1.113883.4.642.3.241"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSR4DocumentReference.html" : "DIPSR4DocumentReference"
+  },
+  {
     "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
     "version" : "4.0.1",
     "status" : "active",
@@ -519,6 +533,20 @@
     "uses" : {
     },
     "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/document-reference-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DocumentReferenceStatus",
+    "title" : "DocumentReferenceStatus",
+    "description" : "The status of the document reference.",
+    "systems" : ["http://hl7.org/fhir/document-reference-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.7"],
+    "sources" : ["2.16.840.1.113883.4.642.3.7"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSR4DocumentReference.html" : "DIPSR4DocumentReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
@@ -575,8 +603,22 @@
     "sources" : ["2.16.840.1.113883.4.642.3.328"],
     "uses" : {
     },
-    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
-    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation"
+    "StructureDefinition-DIPSEncounterLocation.html" : "DIPSEncounterLocation",
+    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/mimetypes",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "Mime Types",
+    "title" : "MimeType",
+    "description" : "This value set includes all possible codes from BCP-13 (http://tools.ietf.org/html/bcp13)",
+    "systems" : ["urn:ietf:bcp:13"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1024"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1024"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSR4DocumentReference.html" : "DIPSR4DocumentReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/narrative-status",

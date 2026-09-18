@@ -1,0 +1,160 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/R4/DocumentReference/docRef-pdf-full> a fhir:DocumentReference ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "docRef-pdf-full"] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedTime" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2023-05-17T07:48:25+05:30"^^xsd:dateTime ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEventTime" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2021-09-30T08:30:30+05:30"^^xsd:dateTime ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastChangedBy" ] ;
+     fhir:Extension.valueString [ fhir:value "Linkdips (Testplan Bas-Team), Max" ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocumentFormat" ] ;
+     fhir:Extension.valueString [ fhir:value "9" ]
+  ], [
+     fhir:index 4 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedByName" ] ;
+     fhir:Extension.valueString [ fhir:value "Linkdips (Testplan Bas-Team), Max" ]
+  ], [
+     fhir:index 5 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreatedBy" ] ;
+     fhir:Extension.valueString [ fhir:value "Linkdips (Testplan Bas-Team), Max" ]
+  ], [
+     fhir:index 6 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStayId" ] ;
+     fhir:Extension.valueString [ fhir:value "1000249" ]
+  ], [
+     fhir:index 7 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceWard" ] ;
+     fhir:Extension.valueReference [
+       fhir:link <http://dips.no/fhir/R4/Organization/ahl29> ;
+       fhir:Reference.reference [ fhir:value "Organization/ahl29" ] ;
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.70.4" ] ;
+         fhir:Identifier.value [ fhir:value "29" ]
+       ]
+     ]
+  ], [
+     fhir:index 8 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSection" ] ;
+     fhir:Extension.valueReference [
+       fhir:link <http://dips.no/fhir/R4/Organization/aju21> ;
+       fhir:Reference.reference [ fhir:value "Organization/aju21" ] ;
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.70.5" ] ;
+         fhir:Identifier.value [ fhir:value "21" ]
+       ]
+     ]
+  ], [
+     fhir:index 9 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPRGroup" ] ;
+     fhir:Extension.valueString [ fhir:value "59" ]
+  ], [
+     fhir:index 10 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceReferralId" ] ;
+     fhir:Extension.valueReference [
+       fhir:link <http://dips.no/fhir/R4/ServiceRequest/ahr1003778> ;
+       fhir:Reference.reference [ fhir:value "ServiceRequest/ahr1003778" ] ;
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.60.1" ] ;
+         fhir:Identifier.value [ fhir:value "1003778" ]
+       ]
+     ]
+  ], [
+     fhir:index 11 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdatedTime" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2023-05-17T07:48:25+05:30"^^xsd:dateTime ]
+  ] ;
+  fhir:DocumentReference.status [ fhir:value "current"] ;
+  fhir:DocumentReference.docStatus [ fhir:value "final"] ;
+  fhir:DocumentReference.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-documenttypeid" ] ;
+       fhir:Coding.code [ fhir:value "1050" ] ;
+       fhir:Coding.display [ fhir:value "Daglig notat" ]
+     ]
+  ] ;
+  fhir:DocumentReference.subject [
+     fhir:link <http://dips.no/fhir/R4/Patient/cdp1000239> ;
+     fhir:Reference.reference [ fhir:value "Patient/cdp1000239" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-patientid" ] ;
+       fhir:Identifier.value [ fhir:value "1000239" ]
+     ]
+  ] ;
+  fhir:DocumentReference.date [ fhir:value "2023-05-17T07:48:25+05:30"^^xsd:dateTime] ;
+  fhir:DocumentReference.author [
+     fhir:index 0 ;
+     fhir:link <http://dips.no/fhir/R4/PractitionerRole/agb113> ;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/agb113" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.51.1" ] ;
+       fhir:Identifier.value [ fhir:value "113" ]
+     ]
+  ] ;
+  fhir:DocumentReference.authenticator [
+     fhir:link <http://dips.no/fhir/R4/PractitionerRole/agb91> ;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/agb91" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.51.1" ] ;
+       fhir:Identifier.value [ fhir:value "91" ]
+     ]
+  ] ;
+  fhir:DocumentReference.custodian [
+     fhir:link <http://dips.no/fhir/R4/Organization/afa22-docref> ;
+     fhir:Reference.reference [ fhir:value "Organization/afa22-docref" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-organizationid" ] ;
+       fhir:Identifier.value [ fhir:value "22" ]
+     ]
+  ] ;
+  fhir:DocumentReference.description [ fhir:value "Example PDF"] ;
+  fhir:DocumentReference.content [
+     fhir:index 0 ;
+     fhir:DocumentReference.content.attachment [
+       fhir:Attachment.contentType [ fhir:value "application/pdf" ] ;
+       fhir:Attachment.url [ fhir:value "https://dips.no/DIPS-WebAPI/HL7/FHIR-R4/Binary/ako1020766" ]
+     ]
+  ] ;
+  fhir:DocumentReference.context [
+     fhir:DocumentReference.context.encounter [
+       fhir:index 0 ;
+       fhir:link <http://dips.no/fhir/R4/Encounter/agy1000245-docref> ;
+       fhir:Reference.reference [ fhir:value "Encounter/agy1000245-docref" ] ;
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid" ] ;
+         fhir:Identifier.value [ fhir:value "1000245" ]
+       ]
+     ] ;
+     fhir:DocumentReference.context.related [
+       fhir:index 0 ;
+       fhir:link <http://dips.no/fhir/R4/Appointment/ahi1000249> ;
+       fhir:Reference.reference [ fhir:value "Appointment/ahi1000249" ] ;
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.41" ] ;
+         fhir:Identifier.value [ fhir:value "1000249" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://dips.no/fhir/R4/DocumentReference/docRef-pdf-full.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

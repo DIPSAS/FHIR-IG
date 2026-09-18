@@ -1,0 +1,12 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "agb113",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole agb113</b></p><a name=\"agb113\"> </a><a name=\"hcagb113\"> </a><p><b>identifier</b>: <code>urn:oid:1.3.6.1.4.1.9038.51.1</code>/113</p></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:oid:1.3.6.1.4.1.9038.51.1",
+    "value" : "113"
+  }]
+}

@@ -6,14 +6,14 @@
   "status" : "draft",
   "package-id" : "dips.fhir.no.core",
   "ig-ver" : "0.1.0",
-  "date" : "Thu, 17 Sep, 2026 19:39:02 +0000",
-  "dateISO8601" : "2026-09-17T19:39:02+00:00",
+  "date" : "Fri, 18 Sep, 2026 19:41:15 +0000",
+  "dateISO8601" : "2026-09-18T19:41:15+00:00",
   "errs" : 394,
-  "warnings" : 1279,
-  "hints" : 572,
+  "warnings" : 1379,
+  "hints" : 616,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 2389210024
+  "maxMemory" : 2986239584
 }

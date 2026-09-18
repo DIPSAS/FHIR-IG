@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/R4/IsSpecialistExtension | *Version*:0.1.0 |
-| Draft as of 2026-09-17 | *Computable Name*:IsSpecialistExtension |
+| Draft as of 2026-09-18 | *Computable Name*:IsSpecialistExtension |
 
 **Context of Use**
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-IsSpecialistExtensio
   "version" : "0.1.0",
   "name" : "IsSpecialistExtension",
   "status" : "draft",
-  "date" : "2026-09-17T19:39:02+00:00",
+  "date" : "2026-09-18T19:41:15+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

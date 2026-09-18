@@ -74,8 +74,8 @@
     "description" : "",
     "uses" : {
     },
-    "ValueSet-DIPSVitalSignsObservationHeartRateMeasurementMethod.html" : "DIPSVitalSignsObservationHeartRateMeasurementMethod",
     "ValueSet-DIPSVitalSignsObservationBloodPressureMeasurementMethod.html" : "DIPSVitalSignsObservationBloodPressureMeasurementMethod",
+    "ValueSet-DIPSVitalSignsObservationHeartRateMeasurementMethod.html" : "DIPSVitalSignsObservationHeartRateMeasurementMethod",
     "ValueSet-DIPSVitalSignsObservationPulseMeasurementMethod.html" : "DIPSVitalSignsObservationPulseMeasurementMethod"
   },
   {
@@ -170,6 +170,18 @@
     "http://hl7.org/fhir/R4/valueset-appointmentstatus.html" : "AppointmentStatus"
   },
   {
+    "url" : "http://hl7.org/fhir/composition-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CompositionStatus",
+    "title" : "CompositionStatus",
+    "description" : "The workflow/clinical status of the composition.",
+    "oids" : ["2.16.840.1.113883.4.642.4.242"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-composition-status.html" : "CompositionStatus"
+  },
+  {
     "url" : "http://hl7.org/fhir/contact-point-system",
     "version" : "4.0.1",
     "status" : "active",
@@ -192,6 +204,18 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-contact-point-use.html" : "ContactPointUse"
+  },
+  {
+    "url" : "http://hl7.org/fhir/document-reference-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DocumentReferenceStatus",
+    "title" : "DocumentReferenceStatus",
+    "description" : "The status of the document reference.",
+    "oids" : ["2.16.840.1.113883.4.642.4.8"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-document-reference-status.html" : "DocumentReferenceStatus"
   },
   {
     "url" : "http://hl7.org/fhir/encounter-location-status",
@@ -275,8 +299,8 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "ValueSet-DIPSVitalSignsObservationBodySite.html" : "DIPSVitalSignsObservationBodySite",
-    "https://hl7.no/fhir/no-domain/vitalsigns/ValueSet-NoDomainVitalSignsHeartRateBodySiteValueSet.html" : "NoDomainVitalSignsHeartRateBodySite-ValueSet"
+    "https://hl7.no/fhir/no-domain/vitalsigns/ValueSet-NoDomainVitalSignsHeartRateBodySiteValueSet.html" : "NoDomainVitalSignsHeartRateBodySite-ValueSet",
+    "ValueSet-DIPSVitalSignsObservationBodySite.html" : "DIPSVitalSignsObservationBodySite"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",

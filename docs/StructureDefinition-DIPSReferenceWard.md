@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSReferenceWard | *Version*:0.1.0 |
-| Draft as of 2026-09-17 | *Computable Name*:DIPSReferenceWard |
+| Draft as of 2026-09-18 | *Computable Name*:DIPSReferenceWard |
 
 A reference to the DIPS hospital Ward, modelled as an Organization, associated with this remote monitoring episode of care.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSReferenceWard.cs
   "name" : "DIPSReferenceWard",
   "title" : "DIPS Reference Ward",
   "status" : "draft",
-  "date" : "2026-09-17T19:39:02+00:00",
+  "date" : "2026-09-18T19:41:15+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

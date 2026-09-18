@@ -726,6 +726,237 @@
   "name" : "DIPSDiagnosticReportSubjectReference"
 },
 {
+  "id" : "DIPSDocRefContextAppointment",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocRefContextAppointment",
+  "version" : "0.1.0",
+  "name" : "DIPSDocRefContextAppointment"
+},
+{
+  "id" : "DIPSDocRefContextEncounter",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocRefContextEncounter",
+  "version" : "0.1.0",
+  "name" : "DIPSDocRefContextEncounter"
+},
+{
+  "id" : "DIPSDocRefOrganization",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocRefOrganization",
+  "version" : "0.1.0",
+  "name" : "DIPSDocRefOrganization"
+},
+{
+  "id" : "DIPSDocumentReferenceApprovedByName",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedByName",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceApprovedByName"
+},
+{
+  "id" : "DIPSDocumentReferenceApprovedTime",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedTime",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceApprovedTime"
+},
+{
+  "id" : "DIPSDocumentReferenceApprovedByNameNamedQuery",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApproved_By_Name",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceApprovedByNameNamedQuery"
+},
+{
+  "id" : "DIPSDocumentReferenceApprovedTimeNamedQuery",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApproved_Time",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceApprovedTimeNamedQuery"
+},
+{
+  "id" : "DIPSDocumentReferenceAuthPractionerRole",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceAuthPractionerRole",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceAuthPractionerRole"
+},
+{
+  "id" : "DIPSDocumentReferenceCreatedBy",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreatedBy",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceCreatedBy"
+},
+{
+  "id" : "DIPSDocumentReferenceCreatedByNamedQuery",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreated_By",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceCreatedByNamedQuery"
+},
+{
+  "id" : "DIPSDocumentReferenceDictatedDuration",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedDuration",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceDictatedDuration"
+},
+{
+  "id" : "DIPSDocumentReferenceDictatedTime",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedTime",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceDictatedTime"
+},
+{
+  "id" : "DIPSDocumentReferenceDocumentFormat",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocumentFormat",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceDocumentFormat"
+},
+{
+  "id" : "DIPSDocumentReferenceDocumentFormatNamedQuery",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocument_Format",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceDocumentFormatNamedQuery"
+},
+{
+  "id" : "DIPSDocumentReferenceEPRGroup",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPRGroup",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceEPRGroup"
+},
+{
+  "id" : "DIPSDocumentReferenceEPRGroupNamedQuery",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPR_Group",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceEPRGroupNamedQuery"
+},
+{
+  "id" : "DIPSDocumentReferenceEventTime",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEventTime",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceEventTime"
+},
+{
+  "id" : "DIPSDocumentReferenceEventTimeNamedQuery",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEvent_Time",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceEventTimeNamedQuery"
+},
+{
+  "id" : "DIPSDocumentReferenceHospitalStayId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStayId",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceHospitalStayId"
+},
+{
+  "id" : "DIPSDocumentReferenceHospitalStayIdNamedQuery",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStay_Id",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceHospitalStayIdNamedQuery"
+},
+{
+  "id" : "DIPSDocumentReferenceLastChangedBy",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastChangedBy",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceLastChangedBy"
+},
+{
+  "id" : "DIPSDocumentReferenceLastUpdatedTime",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdatedTime",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceLastUpdatedTime"
+},
+{
+  "id" : "DIPSDocumentReferenceLastUpdatedTimeNamedQuery",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdated_Time",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceLastUpdatedTimeNamedQuery"
+},
+{
+  "id" : "DIPSDocumentReferenceLastChangedByNamedQuery",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLast_Changed_By",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceLastChangedByNamedQuery"
+},
+{
+  "id" : "DIPSDocumentReferenceLocationIdExtension",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLocationIdExtension",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceLocationIdExtension"
+},
+{
+  "id" : "DIPSDocumentReferencePractitionerRole",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferencePractitionerRole",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferencePractitionerRole"
+},
+{
+  "id" : "DIPSDocumentReferenceReferralId",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceReferralId",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceReferralId"
+},
+{
+  "id" : "DIPSDocumentReferenceSection",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSection",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceSection"
+},
+{
+  "id" : "DIPSDocumentReferenceSubject",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSubject",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceSubject"
+},
+{
+  "id" : "DIPSDocumentReferenceTemplateIdExtension",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceTemplateIdExtension",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceTemplateIdExtension"
+},
+{
+  "id" : "DIPSDocumentReferenceTerminalAddress",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceTerminalAddress",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceTerminalAddress"
+},
+{
+  "id" : "DIPSDocumentReferenceWard",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceWard",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceWard"
+},
+{
+  "id" : "DIPSDocumentReferenceDictatedTimeNamedQuery",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferencedictatedtime",
+  "version" : "0.1.0",
+  "name" : "DIPSDocumentReferenceDictatedTimeNamedQuery"
+},
+{
   "id" : "DIPSDocumentTypeId",
   "type" : "StructureDefinition",
   "url" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentTypeId",
@@ -773,6 +1004,13 @@
   "url" : "http://dips.no/fhir/StructureDefinition/DIPSObservationSubjectReference",
   "version" : "0.1.0",
   "name" : "DIPSObservationSubjectReference"
+},
+{
+  "id" : "DIPSR4DocumentReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSR4DocumentReference",
+  "version" : "0.1.0",
+  "name" : "DIPSR4DocumentReference"
 },
 {
   "id" : "DIPSReferenceLocation",

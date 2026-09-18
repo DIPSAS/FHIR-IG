@@ -1,0 +1,24 @@
+{
+  "resourceType" : "Appointment",
+  "id" : "ahi1000249",
+  "meta" : {
+    "profile" : ["http://dips.no/fhir/StructureDefinition/DIPSDocRefContextAppointment"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Appointment ahi1000249</b></p><a name=\"ahi1000249\"> </a><a name=\"hcahi1000249\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DIPSDocRefContextAppointment.html\">DIPSDocumentReferenceAppointment</a></p></div><p><b>identifier</b>: <code>urn:oid:1.3.6.1.4.1.9038.41</code>/1000249</p><p><b>status</b>: Proposed</p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">PART</span></td><td>Needs Action</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:oid:1.3.6.1.4.1.9038.41",
+    "value" : "1000249"
+  }],
+  "status" : "proposed",
+  "participant" : [{
+    "type" : [{
+      "coding" : [{
+        "code" : "PART"
+      }]
+    }],
+    "status" : "needs-action"
+  }]
+}

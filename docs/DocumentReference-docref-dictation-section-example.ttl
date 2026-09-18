@@ -1,0 +1,114 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/R4/DocumentReference/docref-dictation-section-example> a fhir:DocumentReference ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "docref-dictation-section-example"] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEventTime" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2023-05-16T17:23:03+05:30"^^xsd:dateTime ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastChangedBy" ] ;
+     fhir:Extension.valueString [ fhir:value "Linkdips (Testplan Bas-Team), Max" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocumentFormat" ] ;
+     fhir:Extension.valueString [ fhir:value "0" ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreatedBy" ] ;
+     fhir:Extension.valueString [ fhir:value "Linkdips (Testplan Bas-Team), Max" ]
+  ], [
+     fhir:index 4 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSection" ] ;
+     fhir:Extension.valueReference [
+       fhir:link <http://dips.no/fhir/R4/Organization/aju21> ;
+       fhir:Reference.reference [ fhir:value "Organization/aju21" ] ;
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.70.5" ] ;
+         fhir:Identifier.value [ fhir:value "21" ]
+       ]
+     ]
+  ], [
+     fhir:index 5 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPRGroup" ] ;
+     fhir:Extension.valueString [ fhir:value "59" ]
+  ], [
+     fhir:index 6 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedTime" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2021-06-12T03:47:34+05:30"^^xsd:dateTime ]
+  ], [
+     fhir:index 7 ;
+     fhir:Extension.url [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdatedTime" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2023-05-16T17:23:04+05:30"^^xsd:dateTime ]
+  ] ;
+  fhir:DocumentReference.status [ fhir:value "current"] ;
+  fhir:DocumentReference.docStatus [ fhir:value "preliminary"] ;
+  fhir:DocumentReference.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-documenttypeid" ] ;
+       fhir:Coding.code [ fhir:value "1050" ] ;
+       fhir:Coding.display [ fhir:value "Daglig notat" ]
+     ]
+  ] ;
+  fhir:DocumentReference.subject [
+     fhir:link <http://dips.no/fhir/R4/Patient/cdp1000807> ;
+     fhir:Reference.reference [ fhir:value "Patient/cdp1000807" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-patientid" ] ;
+       fhir:Identifier.value [ fhir:value "1000807" ]
+     ]
+  ] ;
+  fhir:DocumentReference.date [ fhir:value "2023-05-16T17:23:04+05:30"^^xsd:dateTime] ;
+  fhir:DocumentReference.author [
+     fhir:index 0 ;
+     fhir:link <http://dips.no/fhir/R4/PractitionerRole/agb113> ;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/agb113" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.51.1" ] ;
+       fhir:Identifier.value [ fhir:value "113" ]
+     ]
+  ] ;
+  fhir:DocumentReference.custodian [
+     fhir:link <http://dips.no/fhir/R4/Organization/afa22-docref> ;
+     fhir:Reference.reference [ fhir:value "Organization/afa22-docref" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-organizationid" ] ;
+       fhir:Identifier.value [ fhir:value "22" ]
+     ]
+  ] ;
+  fhir:DocumentReference.description [ fhir:value "Daglig notat"] ;
+  fhir:DocumentReference.content [
+     fhir:index 0 ;
+     fhir:DocumentReference.content.attachment [
+       fhir:Attachment.contentType [ fhir:value "application/pdf" ] ;
+       fhir:Attachment.url [ fhir:value "https://dips.no/DIPS-WebAPI/HL7/FHIR-R4/Binary/ako1020534" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:DocumentReference.content.attachment [
+       fhir:Attachment.contentType [ fhir:value "audio/x-hx-aac-adts" ] ;
+       fhir:Attachment.url [ fhir:value "https://dips.no/DIPS-WebAPI/HL7/FHIR-R4/Binary?_id=ako1020534&contentType=audio/x-hx-aac-adts" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:DocumentReference.content.attachment [
+       fhir:Attachment.contentType [ fhir:value "application/rtf" ] ;
+       fhir:Attachment.url [ fhir:value "https://dips.no/DIPS-WebAPI/HL7/FHIR-R4/Binary?_id=ako1020534&contentType=application/rtf" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://dips.no/fhir/R4/DocumentReference/docref-dictation-section-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

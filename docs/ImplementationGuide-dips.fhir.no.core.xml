@@ -11,7 +11,7 @@
   <name value="DIPSCore"/>
   <title value="DIPS Core Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-09-17T19:39:02+00:00"/>
+  <date value="2026-09-18T19:41:15+00:00"/>
   <publisher value="DIPS AS"/>
   <contact>
     <name value="Lars-Andreas Nystad"/>
@@ -77,6 +77,278 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocRefContextAppointment"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocRefContextEncounter"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocRefOrganization"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedByName"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedTime"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApproved_By_Name"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApproved_Time"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceAuthPractionerRole"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreatedBy"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreated_By"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedDuration"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedTime"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocumentFormat"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocument_Format"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPRGroup"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPR_Group"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEventTime"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEvent_Time"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStayId"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStay_Id"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastChangedBy"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdatedTime"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdated_Time"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLast_Changed_By"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLocationIdExtension"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferencePractitionerRole"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceReferralId"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSection"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSubject"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceTemplateIdExtension"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceTerminalAddress"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceWard"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferencedictatedtime"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSR4DocumentReference"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueString value="no-narrative"/>
       </extension>
       <extension url="value">
@@ -97,6 +369,30 @@
       </extension>
       <extension url="value">
         <valueString value="Encounter/agy100247"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="DocumentReference/docRef-pdf-full"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="DocumentReference/docref-dictated-duration-example"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="DocumentReference/docref-dictation-section-example"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -304,6 +600,278 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocRefContextAppointment"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocRefContextEncounter"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocRefOrganization"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedByName"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedTime"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApproved_By_Name"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApproved_Time"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceAuthPractionerRole"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreatedBy"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreated_By"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedDuration"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedTime"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocumentFormat"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocument_Format"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPRGroup"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPR_Group"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEventTime"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEvent_Time"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStayId"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStay_Id"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastChangedBy"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdatedTime"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdated_Time"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLast_Changed_By"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLocationIdExtension"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferencePractitionerRole"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceReferralId"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSection"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSubject"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceTemplateIdExtension"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceTerminalAddress"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceWard"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferencedictatedtime"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSR4DocumentReference"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueCode value="no-narrative"/>
       </extension>
       <extension url="value">
@@ -324,6 +892,30 @@
       </extension>
       <extension url="value">
         <valueString value="Encounter/agy100247"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="DocumentReference/docRef-pdf-full"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="DocumentReference/docref-dictated-duration-example"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="DocumentReference/docref-dictation-section-example"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -516,6 +1108,9 @@
     <grouping id="DiagnosticReportProfiles">
       <name value="DiagnosticReport Profiles"/>
     </grouping>
+    <grouping id="DocumentReferenceProfiles">
+      <name value="DocumentReference Profiles"/>
+    </grouping>
     <grouping id="EncounterProfiles">
       <name value="Encounter Profiles"/>
     </grouping>
@@ -561,6 +1156,10 @@
     <grouping id="ReferenceProfiles">
       <name value="Reference Profiles"/>
       <description value="Constraints on the Reference datatype used by this IG's resource profiles."/>
+    </grouping>
+    <grouping id="SupportingReferenceProfiles">
+      <name value="Supporting Reference Profiles"/>
+      <description value="Profiles used only as Reference() targets by the profiles above. They constrain the identifiers a referencing profile may carry, and are not intended to be implemented directly."/>
     </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -776,6 +1375,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/ahi1000249"/>
+      </reference>
+      <name value="Appointment details of ahi1000249"/>
+      <description value="Appointment details of ahi1000249"/>
+      <exampleCanonical value="http://dips.no/fhir/StructureDefinition/DIPSDocRefContextAppointment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -793,6 +1403,28 @@
       </reference>
       <name value="approvalType"/>
       <description value="approvalType"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceApprovedByNameNamedQuery"/>
+      </reference>
+      <name value="Approved By Name (named-query URL variant)"/>
+      <description value="Same as DIPSDocumentReferenceApprovedByName, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceApprovedTimeNamedQuery"/>
+      </reference>
+      <name value="Approved Time (named-query URL variant)"/>
+      <description value="Same as DIPSDocumentReferenceApprovedTime, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -910,6 +1542,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceCreatedByNamedQuery"/>
+      </reference>
+      <name value="Created By (named-query URL variant)"/>
+      <description value="Same as DIPSDocumentReferenceCreatedBy, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/Department"/>
       </reference>
       <name value="Department"/>
@@ -943,6 +1586,17 @@
         <reference value="StructureDefinition/DiagnoseGroupExtension"/>
       </reference>
       <name value="DiagnoseGroupExtension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceDictatedTimeNamedQuery"/>
+      </reference>
+      <name value="Dictated Time (named-query URL variant)"/>
+      <description value="Same as DIPSDocumentReferenceDictatedTime, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit - note the all-lowercase tail. Read-only - not recognized on create or update."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1394,7 +2048,7 @@
       </reference>
       <name value="DIPSBasisOrganizationR4Reference"/>
       <exampleBoolean value="false"/>
-      <groupingId value="OrganizationProfiles"/>
+      <groupingId value="SupportingReferenceProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1416,7 +2070,7 @@
       </reference>
       <name value="DIPSBasisPractitionerR4"/>
       <exampleBoolean value="false"/>
-      <groupingId value="PractitionerProfiles"/>
+      <groupingId value="SupportingReferenceProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1427,7 +2081,7 @@
       </reference>
       <name value="DIPSBasisPractitionerRoleR4Reference"/>
       <exampleBoolean value="false"/>
-      <groupingId value="PractitionerRoleProfiles"/>
+      <groupingId value="SupportingReferenceProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1470,7 +2124,7 @@
       </reference>
       <name value="DIPSDiagnosticReportOrganizationReference"/>
       <exampleBoolean value="false"/>
-      <groupingId value="OrganizationProfiles"/>
+      <groupingId value="SupportingReferenceProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1481,7 +2135,7 @@
       </reference>
       <name value="DIPSDiagnosticReportPractitionerReference"/>
       <exampleBoolean value="false"/>
-      <groupingId value="PractitionerProfiles"/>
+      <groupingId value="SupportingReferenceProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1492,7 +2146,229 @@
       </reference>
       <name value="DIPSDiagnosticReportSubjectReference"/>
       <exampleBoolean value="false"/>
-      <groupingId value="PatientProfiles"/>
+      <groupingId value="SupportingReferenceProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocRefContextAppointment"/>
+      </reference>
+      <name value="DIPSDocumentReferenceAppointment"/>
+      <description value="DIPS DocumentReference Appointment Profile"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="SupportingReferenceProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceApprovedByName"/>
+      </reference>
+      <name value="DIPSDocumentReferenceApprovedByName"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceApprovedTime"/>
+      </reference>
+      <name value="DIPSDocumentReferenceApprovedTime"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceAuthPractionerRole"/>
+      </reference>
+      <name value="DIPSDocumentReferenceAuthPractionerRole"/>
+      <description value="PractionerRole Profile for Authenticator of DocumentReference"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="SupportingReferenceProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceCreatedBy"/>
+      </reference>
+      <name value="DIPSDocumentReferenceCreatedBy"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceDictatedDuration"/>
+      </reference>
+      <name value="DIPSDocumentReferenceDictatedDuration"/>
+      <description value="DictatedDuration can be mentioned either in seconds (s), minutes (min), hours (h)&#xA;or days (d) in the POST request. However, the response will always return in (s)&#xA;seconds."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceDictatedTime"/>
+      </reference>
+      <name value="DIPSDocumentReferenceDictatedTime"/>
+      <description value="This Extension is a mandatory property in creation and update of dictation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceDocumentFormat"/>
+      </reference>
+      <name value="DIPSDocumentReferenceDocumentFormat"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceEPRGroup"/>
+      </reference>
+      <name value="DIPSDocumentReferenceEPRGroup"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceEventTime"/>
+      </reference>
+      <name value="DIPSDocumentReferenceEventTime"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceHospitalStayId"/>
+      </reference>
+      <name value="DIPSDocumentReferenceHospitalStayId"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceLastChangedBy"/>
+      </reference>
+      <name value="DIPSDocumentReferenceLastChangedBy"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceLastUpdatedTime"/>
+      </reference>
+      <name value="DIPSDocumentReferenceLastUpdatedTime"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceLocationIdExtension"/>
+      </reference>
+      <name value="DIPSDocumentReferenceLocationIdExtension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferencePractitionerRole"/>
+      </reference>
+      <name value="DIPSDocumentReferencePractitioner"/>
+      <description value="Practioner Profile For DocumentReference"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="SupportingReferenceProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceReferralId"/>
+      </reference>
+      <name value="DIPSDocumentReferenceReferralId"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceSection"/>
+      </reference>
+      <name value="DIPSDocumentReferenceSection"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceSubject"/>
+      </reference>
+      <name value="DIPSDocumentReferenceSubject"/>
+      <description value="Patient Profile of DocumentReference"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="SupportingReferenceProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceTemplateIdExtension"/>
+      </reference>
+      <name value="DIPSDocumentReferenceTemplateIdExtension"/>
+      <description value="This is a mandatory property in create / update dictation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceTerminalAddress"/>
+      </reference>
+      <name value="DIPSDocumentReferenceTerminalAddress"/>
+      <description value="As per the current implementation, saved documents are moved out of locked state to unlocked state&#xA;after a document is created. The device terminal address can be sent in the document create post data&#xA;as an extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceWard"/>
+      </reference>
+      <name value="DIPSDocumentReferenceWard"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1503,7 +2379,7 @@
       </reference>
       <name value="DIPSEncounterLocation"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LocationProfiles"/>
+      <groupingId value="SupportingReferenceProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1514,7 +2390,7 @@
       </reference>
       <name value="DIPSEncounterOrganization"/>
       <exampleBoolean value="false"/>
-      <groupingId value="OrganizationProfiles"/>
+      <groupingId value="SupportingReferenceProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1525,7 +2401,7 @@
       </reference>
       <name value="DIPSEncounterPractitionerReference"/>
       <exampleBoolean value="false"/>
-      <groupingId value="PractitionerRoleProfiles"/>
+      <groupingId value="SupportingReferenceProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1547,7 +2423,7 @@
       </reference>
       <name value="DIPSEncounterSubjectReference"/>
       <exampleBoolean value="false"/>
-      <groupingId value="PatientProfiles"/>
+      <groupingId value="SupportingReferenceProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1810,7 +2686,7 @@
       </reference>
       <name value="DIPSLocationReference"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LocationProfiles"/>
+      <groupingId value="SupportingReferenceProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1841,7 +2717,7 @@
       </reference>
       <name value="DIPSObservationSubjectReference"/>
       <exampleBoolean value="false"/>
-      <groupingId value="PatientProfiles"/>
+      <groupingId value="SupportingReferenceProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1863,7 +2739,7 @@
       </reference>
       <name value="DipsOrganizationRef"/>
       <exampleBoolean value="false"/>
-      <groupingId value="OrganizationProfiles"/>
+      <groupingId value="SupportingReferenceProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2380,6 +3256,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/DIPSR4DocumentReference"/>
+      </reference>
+      <name value="DIPSR4DocumentReference"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="DocumentReferenceProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/DIPSR4Encounter"/>
       </reference>
       <name value="DIPSR4Encounter"/>
@@ -2456,7 +3343,7 @@
       </reference>
       <name value="DIPSSubjectReference"/>
       <exampleBoolean value="false"/>
-      <groupingId value="PatientProfiles"/>
+      <groupingId value="SupportingReferenceProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2565,7 +3452,7 @@
       <name value="DIPSVitalSignsObservationEncounterReference"/>
       <description value="Encounter with Episode Of Care and Planned Contact"/>
       <exampleBoolean value="false"/>
-      <groupingId value="EncounterProfiles"/>
+      <groupingId value="SupportingReferenceProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2599,7 +3486,7 @@
       </reference>
       <name value="DIPSVitalSignsObservationOrganizationReference"/>
       <exampleBoolean value="false"/>
-      <groupingId value="OrganizationProfiles"/>
+      <groupingId value="SupportingReferenceProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2676,7 +3563,7 @@
       </reference>
       <name value="DIPSVitalSignsObservationSubjectReference"/>
       <exampleBoolean value="false"/>
-      <groupingId value="PatientProfiles"/>
+      <groupingId value="SupportingReferenceProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2688,7 +3575,86 @@
       <name value="DIPSVitalSignsPerformerAuthorReference"/>
       <description value="DIPS profile for Author"/>
       <exampleBoolean value="false"/>
-      <groupingId value="PractitionerRoleProfiles"/>
+      <groupingId value="SupportingReferenceProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/docref-dictated-duration-example"/>
+      </reference>
+      <name value="docref-dictated-duration-example"/>
+      <description value="Test R4 Dictation 1"/>
+      <exampleCanonical value="http://dips.no/fhir/StructureDefinition/DIPSR4DocumentReference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/docref-dictation-section-example"/>
+      </reference>
+      <name value="docref-dictation-section-example"/>
+      <description value="Daglig notat"/>
+      <exampleCanonical value="http://dips.no/fhir/StructureDefinition/DIPSR4DocumentReference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/docRef-pdf-full"/>
+      </reference>
+      <name value="docRef-pdf-full"/>
+      <description value="Example PDF"/>
+      <exampleCanonical value="http://dips.no/fhir/StructureDefinition/DIPSR4DocumentReference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceDocumentFormatNamedQuery"/>
+      </reference>
+      <name value="Document Format (named-query URL variant)"/>
+      <description value="Same as DIPSDocumentReferenceDocumentFormat, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocRefContextEncounter"/>
+      </reference>
+      <name value="DocumentReferenceCotextEncounter"/>
+      <description value="Profile Encountet for DocumentReference.Context.Ecnounter"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="SupportingReferenceProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocRefOrganization"/>
+      </reference>
+      <name value="DocumentReferenceOrganization"/>
+      <description value="Profile for DocumentReference Organization"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="SupportingReferenceProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/agy1000245-docref"/>
+      </reference>
+      <name value="Encounter details of agy1000245"/>
+      <description value="Encounter details of agy1000245, profiled as DIPSDocRefContextEncounter"/>
+      <exampleCanonical value="http://dips.no/fhir/StructureDefinition/DIPSDocRefContextEncounter"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2709,6 +3675,28 @@
       </reference>
       <name value="Encounter details of agy1002679"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceEPRGroupNamedQuery"/>
+      </reference>
+      <name value="EPR Group (named-query URL variant)"/>
+      <description value="Same as DIPSDocumentReferenceEPRGroup, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceEventTimeNamedQuery"/>
+      </reference>
+      <name value="Event Time (named-query URL variant)"/>
+      <description value="Same as DIPSDocumentReferenceEventTime, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2787,6 +3775,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceHospitalStayIdNamedQuery"/>
+      </reference>
+      <name value="Hospital Stay Id (named-query URL variant)"/>
+      <description value="Same as DIPSDocumentReferenceHospitalStayId, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/IsSpecialistExtension"/>
       </reference>
       <name value="IsSpecialistExtension"/>
@@ -2844,6 +3843,28 @@
       </reference>
       <name value="languageid"/>
       <description value="Valesets of languageid"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceLastChangedByNamedQuery"/>
+      </reference>
+      <name value="Last Changed By (named-query URL variant)"/>
+      <description value="Same as DIPSDocumentReferenceLastChangedBy, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSDocumentReferenceLastUpdatedTimeNamedQuery"/>
+      </reference>
+      <name value="Last Updated Time (named-query URL variant)"/>
+      <description value="Same as DIPSDocumentReferenceLastUpdatedTime, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -3169,6 +4190,17 @@
         <valueString value="Organization"/>
       </extension>
       <reference>
+        <reference value="Organization/afa22-docref"/>
+      </reference>
+      <name value="Organization details of afa22"/>
+      <description value="Organization details of afa22, as referenced by the DocumentReference examples"/>
+      <exampleCanonical value="http://dips.no/fhir/StructureDefinition/DIPSDocRefOrganization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
         <reference value="Organization/afa23"/>
       </reference>
       <name value="Organization details of afa23"/>
@@ -3302,6 +4334,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/ahl29"/>
+      </reference>
+      <name value="Orgnization details of ahl29"/>
+      <description value="Orgnization details of ahl29"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/aju21"/>
+      </reference>
+      <name value="Orgnization details of aju21"/>
+      <description value="Orgnization details of aju21"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -3421,6 +4475,28 @@
         <reference value="PractitionerRole/agb104"/>
       </reference>
       <name value="Practioner details of agb104"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/agb113"/>
+      </reference>
+      <name value="Practioner details of agb113"/>
+      <description value="Practioner details of agb113"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/agb91"/>
+      </reference>
+      <name value="PractionerRole details of agb91"/>
+      <description value="PractionerRole details of agb91"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -3589,6 +4665,17 @@
       <name value="SelfBookingSlot"/>
       <exampleBoolean value="false"/>
       <groupingId value="SlotProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/ahr1003778"/>
+      </reference>
+      <name value="ServiceRequest details of ahr1003778"/>
+      <description value="ServiceRequest details of ahr1003778"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

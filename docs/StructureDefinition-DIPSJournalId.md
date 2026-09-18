@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSJournalId | *Version*:0.1.0 |
-| Draft as of 2026-09-17 | *Computable Name*:DIPSJournalId |
+| Draft as of 2026-09-18 | *Computable Name*:DIPSJournalId |
 
 DIPS extension for Journal ID, common for all DIPS vital sign profiles
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSJournalId.csv), 
   "version" : "0.1.0",
   "name" : "DIPSJournalId",
   "status" : "draft",
-  "date" : "2026-09-17T19:39:02+00:00",
+  "date" : "2026-09-18T19:41:15+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
