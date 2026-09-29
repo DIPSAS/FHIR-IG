@@ -3,7 +3,7 @@ DIPSCore : Validation Results
 
 err = 410, warn = 1437, info = 630
 IG Publisher Version: 2.3.4
-Generated Tue Sep 29 04:05:31 UTC 2026. FHIR version 4.0.1 for dips.fhir.no.core#0.1.0 (canonical = http://dips.no/fhir/R4)
+Generated Tue Sep 29 04:27:12 UTC 2026. FHIR version 4.0.1 for dips.fhir.no.core#0.1.0 (canonical = http://dips.no/fhir/R4)
  Build Errors : 7 / 245 / 0
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Appointment-ahi1000249 : 0 / 2 / 1
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Appointment-ahi1004667 : 0 / 1 / 1
@@ -609,12 +609,12 @@ WARNING: Practitioner.qualification.code.coding: The reference urn:oid:2.16.578.
 WARNING: PractitionerRole.code: The reference urn:oid:2.16.578.1.12.4.1.1.9034 could not be resolved
 WARNING: PractitionerRole.specialty: The reference urn:oid:2.16.578.1.12.4.1.1.8451 could not be resolved
 ERROR: ?pkp-1?: The reference http://hl7.no/Fhir/Profile/Diagnosis#ATC-Code could not be resolved
-ERROR: ValueSet-DIPSEncounterTypeCom.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 298, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
-ERROR: ValueSet-DIPSEncounterV3.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 298, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
-ERROR: ValueSet-HealthPersonallCategoryValueset.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 298, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
-ERROR: ValueSet-NprLevelOfCare.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 298, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
-ERROR: ValueSet-approvalType.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 298, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
-ERROR: ValueSet-healthPersonnelSpecialization.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 298, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
+ERROR: ValueSet-DIPSEncounterTypeCom.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 301, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
+ERROR: ValueSet-DIPSEncounterV3.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 301, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
+ERROR: ValueSet-HealthPersonallCategoryValueset.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 301, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
+ERROR: ValueSet-NprLevelOfCare.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 301, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
+ERROR: ValueSet-approvalType.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 301, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
+ERROR: ValueSet-healthPersonnelSpecialization.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 301, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide

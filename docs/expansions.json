@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "150d12a9-d4c3-441e-8940-f07cd42432b7",
+  "id" : "b5a9512c-88da-4c7b-adca-64f6b5fa48e4",
   "meta" : {
-    "lastUpdated" : "2026-09-29T03:57:01.897+00:00"
+    "lastUpdated" : "2026-09-29T04:18:52.655+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -23,7 +23,7 @@
       "title" : "DIPSEncounterV3",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-09-29T03:57:01+00:00",
+      "date" : "2026-09-29T04:18:52+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -32,8 +32,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:be53e968-afca-44da-a58c-4c830ff9f0d1",
-        "timestamp" : "2026-09-29T04:00:58+00:00",
+        "identifier" : "urn:uuid:f6c27fb4-38e1-45da-bc41-2345ad8247f1",
+        "timestamp" : "2026-09-29T04:22:45+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -94,8 +94,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3dc72a2a-0b0a-4cc5-8eaf-95aa4a3bb584",
-        "timestamp" : "2026-09-29T04:00:58+00:00",
+        "identifier" : "urn:uuid:d7b4b53c-1101-4c37-a213-c7dde89a614c",
+        "timestamp" : "2026-09-29T04:22:45+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -164,8 +164,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:0e79e3ea-7845-4c26-b16c-38a56008050f",
-        "timestamp" : "2026-09-29T04:00:58+00:00",
+        "identifier" : "urn:uuid:7d5ea5c1-5467-47bf-ac38-9a043721584f",
+        "timestamp" : "2026-09-29T04:22:45+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -242,8 +242,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:462babb7-79a8-45db-96be-5c2898e6b2a5",
-        "timestamp" : "2026-09-29T04:00:58+00:00",
+        "identifier" : "urn:uuid:6120143a-13c6-4836-8947-874d6fe64aa5",
+        "timestamp" : "2026-09-29T04:22:45+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -316,8 +316,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:dcc3aa56-1ae5-4c05-b49f-e55d35b5926f",
-        "timestamp" : "2026-09-29T04:00:58+00:00",
+        "identifier" : "urn:uuid:ad65b61c-1f34-4072-83b3-4a5620a096e7",
+        "timestamp" : "2026-09-29T04:22:45+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -390,8 +390,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:2e4db0ec-650f-4b1e-91ed-0b1af6ace845",
-        "timestamp" : "2026-09-29T04:00:58+00:00",
+        "identifier" : "urn:uuid:70a64392-4265-430a-bfbe-d6a9dda77fe8",
+        "timestamp" : "2026-09-29T04:22:45+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -452,8 +452,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:4f80cb3a-3ce6-467a-86dd-5e6267f6827a",
-        "timestamp" : "2026-09-29T04:00:58+00:00",
+        "identifier" : "urn:uuid:6dbaeb76-b15b-476a-9fab-c58b1929390a",
+        "timestamp" : "2026-09-29T04:22:45+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -514,8 +514,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7a282579-d9cd-4664-93b7-ea6e90bededa",
-        "timestamp" : "2026-09-29T04:00:58+00:00",
+        "identifier" : "urn:uuid:2553efab-3233-4b86-8a74-b48e77510f9f",
+        "timestamp" : "2026-09-29T04:22:45+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -576,8 +576,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d957a1b3-c9bc-4f9b-aeec-6e8ffcec99e7",
-        "timestamp" : "2026-09-29T04:00:59+00:00",
+        "identifier" : "urn:uuid:0d634450-7463-4155-9712-97b21d8775e2",
+        "timestamp" : "2026-09-29T04:22:45+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -638,8 +638,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:198297bc-3daf-4430-a9f9-dbea07db30ce",
-        "timestamp" : "2026-09-29T04:00:59+00:00",
+        "identifier" : "urn:uuid:648ff325-f0a6-4551-b71b-a3e97190eaaa",
+        "timestamp" : "2026-09-29T04:22:45+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -712,8 +712,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:637dad94-276b-4441-bda8-83d3abae93b8",
-        "timestamp" : "2026-09-29T04:00:59+00:00",
+        "identifier" : "urn:uuid:579d04e3-5bb9-4388-aeb9-3d48209350f3",
+        "timestamp" : "2026-09-29T04:22:45+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{

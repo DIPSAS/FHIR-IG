@@ -11,7 +11,7 @@
   <name value="DIPSCore"/>
   <title value="DIPS Core Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-09-29T03:57:01+00:00"/>
+  <date value="2026-09-29T04:18:52+00:00"/>
   <publisher value="DIPS AS"/>
   <contact>
     <name value="Lars-Andreas Nystad"/>
@@ -5023,6 +5023,198 @@
         </extension>
         <nameUrl value="reference-diagrams.html"/>
         <title value="Reference Diagrams"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist.html"/>
+        </extension>
+        <nameUrl value="resourcelist.html"/>
+        <title value="Resourcelist"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-appointment.html"/>
+        </extension>
+        <nameUrl value="resourcelist-appointment.html"/>
+        <title value="Resourcelist Appointment"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-capabilitystatement.html"/>
+        </extension>
+        <nameUrl value="resourcelist-capabilitystatement.html"/>
+        <title value="Resourcelist Capabilitystatement"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-codesystem.html"/>
+        </extension>
+        <nameUrl value="resourcelist-codesystem.html"/>
+        <title value="Resourcelist Codesystem"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-condition.html"/>
+        </extension>
+        <nameUrl value="resourcelist-condition.html"/>
+        <title value="Resourcelist Condition"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-diagnosticreport.html"/>
+        </extension>
+        <nameUrl value="resourcelist-diagnosticreport.html"/>
+        <title value="Resourcelist Diagnosticreport"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-documentreference.html"/>
+        </extension>
+        <nameUrl value="resourcelist-documentreference.html"/>
+        <title value="Resourcelist Documentreference"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-encounter.html"/>
+        </extension>
+        <nameUrl value="resourcelist-encounter.html"/>
+        <title value="Resourcelist Encounter"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-episodeofcare.html"/>
+        </extension>
+        <nameUrl value="resourcelist-episodeofcare.html"/>
+        <title value="Resourcelist Episodeofcare"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-healthcareservice.html"/>
+        </extension>
+        <nameUrl value="resourcelist-healthcareservice.html"/>
+        <title value="Resourcelist Healthcareservice"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-location.html"/>
+        </extension>
+        <nameUrl value="resourcelist-location.html"/>
+        <title value="Resourcelist Location"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-not-profiled.html"/>
+        </extension>
+        <nameUrl value="resourcelist-not-profiled.html"/>
+        <title value="Resourcelist Not Profiled"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-observation.html"/>
+        </extension>
+        <nameUrl value="resourcelist-observation.html"/>
+        <title value="Resourcelist Observation"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-organization.html"/>
+        </extension>
+        <nameUrl value="resourcelist-organization.html"/>
+        <title value="Resourcelist Organization"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-patient.html"/>
+        </extension>
+        <nameUrl value="resourcelist-patient.html"/>
+        <title value="Resourcelist Patient"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-person.html"/>
+        </extension>
+        <nameUrl value="resourcelist-person.html"/>
+        <title value="Resourcelist Person"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-practitioner.html"/>
+        </extension>
+        <nameUrl value="resourcelist-practitioner.html"/>
+        <title value="Resourcelist Practitioner"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-practitionerrole.html"/>
+        </extension>
+        <nameUrl value="resourcelist-practitionerrole.html"/>
+        <title value="Resourcelist Practitionerrole"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-procedure.html"/>
+        </extension>
+        <nameUrl value="resourcelist-procedure.html"/>
+        <title value="Resourcelist Procedure"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-relatedperson.html"/>
+        </extension>
+        <nameUrl value="resourcelist-relatedperson.html"/>
+        <title value="Resourcelist Relatedperson"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-schedule.html"/>
+        </extension>
+        <nameUrl value="resourcelist-schedule.html"/>
+        <title value="Resourcelist Schedule"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-servicerequest.html"/>
+        </extension>
+        <nameUrl value="resourcelist-servicerequest.html"/>
+        <title value="Resourcelist Servicerequest"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-slot.html"/>
+        </extension>
+        <nameUrl value="resourcelist-slot.html"/>
+        <title value="Resourcelist Slot"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="resourcelist-valueset.html"/>
+        </extension>
+        <nameUrl value="resourcelist-valueset.html"/>
+        <title value="Resourcelist Valueset"/>
         <generation value="markdown"/>
       </page>
     </page>

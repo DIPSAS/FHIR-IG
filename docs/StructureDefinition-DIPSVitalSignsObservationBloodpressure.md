@@ -104,7 +104,7 @@ This resource only supports search - there is no `GET [base]/Observation/[id]` r
   "name" : "DIPSVitalSignsObservationBloodpressure",
   "title" : "DIPS Vital Signs Observation - Blood Pressure",
   "status" : "draft",
-  "date" : "2026-09-29T03:57:01+00:00",
+  "date" : "2026-09-29T04:18:52+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

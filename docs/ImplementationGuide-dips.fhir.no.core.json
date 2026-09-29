@@ -10,7 +10,7 @@
   "name" : "DIPSCore",
   "title" : "DIPS Core Implementation Guide",
   "status" : "draft",
-  "date" : "2026-09-29T03:57:01+00:00",
+  "date" : "2026-09-29T04:18:52+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -5812,6 +5812,222 @@
         }],
         "nameUrl" : "reference-diagrams.html",
         "title" : "Reference Diagrams",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist.html"
+        }],
+        "nameUrl" : "resourcelist.html",
+        "title" : "Resourcelist",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-appointment.html"
+        }],
+        "nameUrl" : "resourcelist-appointment.html",
+        "title" : "Resourcelist Appointment",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-capabilitystatement.html"
+        }],
+        "nameUrl" : "resourcelist-capabilitystatement.html",
+        "title" : "Resourcelist Capabilitystatement",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-codesystem.html"
+        }],
+        "nameUrl" : "resourcelist-codesystem.html",
+        "title" : "Resourcelist Codesystem",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-condition.html"
+        }],
+        "nameUrl" : "resourcelist-condition.html",
+        "title" : "Resourcelist Condition",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-diagnosticreport.html"
+        }],
+        "nameUrl" : "resourcelist-diagnosticreport.html",
+        "title" : "Resourcelist Diagnosticreport",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-documentreference.html"
+        }],
+        "nameUrl" : "resourcelist-documentreference.html",
+        "title" : "Resourcelist Documentreference",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-encounter.html"
+        }],
+        "nameUrl" : "resourcelist-encounter.html",
+        "title" : "Resourcelist Encounter",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-episodeofcare.html"
+        }],
+        "nameUrl" : "resourcelist-episodeofcare.html",
+        "title" : "Resourcelist Episodeofcare",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-healthcareservice.html"
+        }],
+        "nameUrl" : "resourcelist-healthcareservice.html",
+        "title" : "Resourcelist Healthcareservice",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-location.html"
+        }],
+        "nameUrl" : "resourcelist-location.html",
+        "title" : "Resourcelist Location",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-not-profiled.html"
+        }],
+        "nameUrl" : "resourcelist-not-profiled.html",
+        "title" : "Resourcelist Not Profiled",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-observation.html"
+        }],
+        "nameUrl" : "resourcelist-observation.html",
+        "title" : "Resourcelist Observation",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-organization.html"
+        }],
+        "nameUrl" : "resourcelist-organization.html",
+        "title" : "Resourcelist Organization",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-patient.html"
+        }],
+        "nameUrl" : "resourcelist-patient.html",
+        "title" : "Resourcelist Patient",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-person.html"
+        }],
+        "nameUrl" : "resourcelist-person.html",
+        "title" : "Resourcelist Person",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-practitioner.html"
+        }],
+        "nameUrl" : "resourcelist-practitioner.html",
+        "title" : "Resourcelist Practitioner",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-practitionerrole.html"
+        }],
+        "nameUrl" : "resourcelist-practitionerrole.html",
+        "title" : "Resourcelist Practitionerrole",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-procedure.html"
+        }],
+        "nameUrl" : "resourcelist-procedure.html",
+        "title" : "Resourcelist Procedure",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-relatedperson.html"
+        }],
+        "nameUrl" : "resourcelist-relatedperson.html",
+        "title" : "Resourcelist Relatedperson",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-schedule.html"
+        }],
+        "nameUrl" : "resourcelist-schedule.html",
+        "title" : "Resourcelist Schedule",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-servicerequest.html"
+        }],
+        "nameUrl" : "resourcelist-servicerequest.html",
+        "title" : "Resourcelist Servicerequest",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-slot.html"
+        }],
+        "nameUrl" : "resourcelist-slot.html",
+        "title" : "Resourcelist Slot",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resourcelist-valueset.html"
+        }],
+        "nameUrl" : "resourcelist-valueset.html",
+        "title" : "Resourcelist Valueset",
         "generation" : "markdown"
       }]
     },

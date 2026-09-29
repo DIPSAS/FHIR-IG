@@ -146,7 +146,7 @@ The following named queries are supported through the `_query` parameter. An unr
   "version" : "0.1.0",
   "name" : "DIPSR4DocumentReference",
   "status" : "draft",
-  "date" : "2026-09-29T03:57:01+00:00",
+  "date" : "2026-09-29T04:18:52+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
