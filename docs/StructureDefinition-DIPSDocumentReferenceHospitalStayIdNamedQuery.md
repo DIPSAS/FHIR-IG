@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStay_Id | *Version*:0.1.0 |
-| Draft as of 2026-09-18 | *Computable Name*:DIPSDocumentReferenceHospitalStayIdNamedQuery |
+| Draft as of 2026-09-29 | *Computable Name*:DIPSDocumentReferenceHospitalStayIdNamedQuery |
 
 Same as DIPSDocumentReferenceHospitalStayId, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSDocumentReferenc
   "name" : "DIPSDocumentReferenceHospitalStayIdNamedQuery",
   "title" : "Hospital Stay Id (named-query URL variant)",
   "status" : "draft",
-  "date" : "2026-09-18T19:41:15+00:00",
+  "date" : "2026-09-29T03:57:01+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

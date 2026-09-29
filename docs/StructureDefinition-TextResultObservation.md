@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://DIPS.no/fhir/StructureDefinition/TextResultObservation | *Version*:0.1.0 |
-| Draft as of 2026-09-18 | *Computable Name*:TextResultObservation |
+| Draft as of 2026-09-29 | *Computable Name*:TextResultObservation |
 
 DIPS: textual rendering of a lab result that is otherwise carried as a Quantity.
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-TextResultObservatio
   "version" : "0.1.0",
   "name" : "TextResultObservation",
   "status" : "draft",
-  "date" : "2026-09-18T19:41:15+00:00",
+  "date" : "2026-09-29T03:57:01+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

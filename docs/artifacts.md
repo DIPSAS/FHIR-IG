@@ -32,6 +32,14 @@ This page provides a list of the FHIR artifacts defined as part of this implemen
 
 *  [DIPSR4DocumentReference](StructureDefinition-DIPSR4DocumentReference.md) 
 
+### Condition Profiles 
+
+*  [DIPS R4 Condition](StructureDefinition-DIPSR4Condition.md) 
+
+### Procedure Profiles 
+
+*  [DIPS R4 Procedure](StructureDefinition-DIPSR4Procedure.md) 
+
 ### Encounter Profiles 
 
 *  [DIPSHospitalStayEncounter](StructureDefinition-DIPSHospitalStayEncounter.md) 
@@ -104,6 +112,13 @@ Constraints on the Reference datatype used by this IG's resource profiles.
 
 Profiles used only as Reference() targets by the profiles above. They constrain the identifiers a referencing profile may carry, and are not intended to be implemented directly.
 
+*  [DIPS Condition Asserter Reference (Organization)](StructureDefinition-DIPSConditionAsserterReferenceOrg.md) 
+*  [DIPS Condition Asserter Reference (PractitionerRole)](StructureDefinition-DIPSConditionAsserterReferencePR.md) 
+*  [DIPS Condition Encounter Reference](StructureDefinition-DIPSConditionEncounterReference.md) 
+*  [DIPS Condition Subject Reference](StructureDefinition-DIPSConditionSubjectReference.md) 
+*  [DIPS Procedure Encounter Reference](StructureDefinition-DIPSProcedureEncounterReference.md) 
+*  [DIPS Procedure Performer Reference](StructureDefinition-DIPSProcedurePerformerAuthorreference.md) 
+*  [DIPS Procedure Subject Reference](StructureDefinition-DIPSProcedureSubjectReference.md) 
 *  [DIPSBasisOrganizationR4Reference](StructureDefinition-DIPSBasisOrganizationR4Reference.md) 
 *  [DIPSBasisPractitionerR4](StructureDefinition-DIPSBasisPractitionerR4.md) 
 *  [DIPSBasisPractitionerRoleR4Reference](StructureDefinition-DIPSBasisPractitionerRoleR4Reference.md) 
@@ -224,6 +239,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 *  [DepartmentExtension](StructureDefinition-DepartmentExtension.md) 
 *  [DepartmentTypeCodeId](StructureDefinition-DepartmentTypeCodeId.md) 
 *  [DiagnoseGroupExtension](StructureDefinition-DiagnoseGroupExtension.md) 
+*  [Diagnosis ATC Code](StructureDefinition-DiagnosisATCCode.md) 
 *  [Dictated Time (named-query URL variant)](StructureDefinition-DIPSDocumentReferenceDictatedTimeNamedQuery.md) 
 *  [DipsLocationExtension](StructureDefinition-DipsLocationExtension.md) 
 *  [DipsPatientDeathComment](StructureDefinition-DipsPatientDeathComment.md) 
@@ -383,12 +399,19 @@ These are example instances that show what data produced and consumed by systems
 *  [PractitionerRole-Physiotherapist](PractitionerRole-PractitionerRole-Physiotherapist.md) 
 *  [PractitionerRole-agb1000203](PractitionerRole-PractitionerRole-agb1000203.md) 
 *  [ServiceRequest details of ahr1003778](ServiceRequest-ahr1003778.md) 
+*  [afn1003621](Condition-afn1003621.md) 
+*  [afn1003623](Condition-afn1003623.md) 
 *  [agb1000204](PractitionerRole-agb1000204.md) 
+*  [agb1001233](PractitionerRole-agb1001233.md) 
 *  [agb42](PractitionerRole-agb42.md) 
 *  [agb61](PractitionerRole-agb61.md) 
 *  [agc1002251](ServiceRequest-agc1002251.md) 
 *  [agc48](ServiceRequest-agc48.md) 
+*  [agv1001423](Procedure-agv1001423.md) 
+*  [agv1001425](Procedure-agv1001425.md) 
 *  [agy1002135](Encounter-agy1002135.md) 
+*  [agy1002679-diag](Encounter-agy1002679-diag.md) 
+*  [agy1002907](Encounter-agy1002907.md) 
 *  [agy27](Encounter-agy27.md) 
 *  [ahi1004667](Appointment-ahi1004667.md) 
 *  [ahi38](Appointment-ahi38.md) 
@@ -409,6 +432,7 @@ These are example instances that show what data produced and consumed by systems
 *  [cdp138](Patient-cdp138.md) 
 *  [cdp2007964](Patient-cdp2007964.md) 
 *  [cdp2008844](Patient-cdp2008844.md) 
+*  [cdp2009672](Patient-cdp2009672.md) 
 *  [dips-QSOFAScore-create](Observation-dips-QSOFAScore-create.md) 
 *  [dips-blood-pressure-create](Observation-dips-blood-pressure-create.md) 
 *  [dips-bloodpressureexample](Observation-dips-bloodpressureexample.md) 

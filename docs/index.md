@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/ImplementationGuide/dips.fhir.no.core | *Version*:0.1.0 |
-| Draft as of 2026-09-18 | *Computable Name*:DIPSCore |
+| Draft as of 2026-09-29 | *Computable Name*:DIPSCore |
 
 # DIPS Core Implementation Guide
 
@@ -40,7 +40,7 @@ This guide is intended for developers and integrators building or consuming inte
   "name" : "DIPSCore",
   "title" : "DIPS Core Implementation Guide",
   "status" : "draft",
-  "date" : "2026-09-18T19:41:15+00:00",
+  "date" : "2026-09-29T03:57:01+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -69,7 +69,7 @@ This guide is intended for developers and integrators building or consuming inte
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.3.0"
+    "version" : "7.4.0"
   },
   {
     "id" : "hl7ext",
@@ -113,6 +113,17 @@ This guide is intended for developers and integrators building or consuming inte
       {
         "url" : "value",
         "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.no/Fhir/Profile/Diagnosis#ATC-Code"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -842,6 +853,17 @@ This guide is intended for developers and integrators building or consuming inte
       },
       {
         "url" : "value",
+        "valueString" : "http://hl7.no/Fhir/Profile/Diagnosis#ATC-Code"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
         "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocRefContextAppointment"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -1541,6 +1563,14 @@ This guide is intended for developers and integrators building or consuming inte
       "name" : "DocumentReference Profiles"
     },
     {
+      "id" : "ConditionProfiles",
+      "name" : "Condition Profiles"
+    },
+    {
+      "id" : "ProcedureProfiles",
+      "name" : "Procedure Profiles"
+    },
+    {
       "id" : "EncounterProfiles",
       "name" : "Encounter Profiles"
     },
@@ -1624,6 +1654,36 @@ This guide is intended for developers and integrators building or consuming inte
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Condition-afn1003621.html"
+      }],
+      "reference" : {
+        "reference" : "Condition/afn1003621"
+      },
+      "name" : "afn1003621",
+      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/DIPSR4Condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Condition-afn1003623.html"
+      }],
+      "reference" : {
+        "reference" : "Condition/afn1003623"
+      },
+      "name" : "afn1003623",
+      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/DIPSR4Condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "PractitionerRole"
       },
       {
@@ -1635,6 +1695,21 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "agb1000204",
       "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRole"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "PractitionerRole-agb1001233.html"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/agb1001233"
+      },
+      "name" : "agb1001233",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1699,6 +1774,36 @@ This guide is intended for developers and integrators building or consuming inte
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Procedure-agv1001423.html"
+      }],
+      "reference" : {
+        "reference" : "Procedure/agv1001423"
+      },
+      "name" : "agv1001423",
+      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/DIPSR4Procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Procedure-agv1001425.html"
+      }],
+      "reference" : {
+        "reference" : "Procedure/agv1001425"
+      },
+      "name" : "agv1001425",
+      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/DIPSR4Procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Encounter"
       },
       {
@@ -1710,6 +1815,36 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "agy1002135",
       "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/DIPSR4Encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Encounter-agy1002679-diag.html"
+      }],
+      "reference" : {
+        "reference" : "Encounter/agy1002679-diag"
+      },
+      "name" : "agy1002679-diag",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Encounter-agy1002907.html"
+      }],
+      "reference" : {
+        "reference" : "Encounter/agy1002907"
+      },
+      "name" : "agy1002907",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -2155,6 +2290,21 @@ This guide is intended for developers and integrators building or consuming inte
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Patient-cdp2009672.html"
+      }],
+      "reference" : {
+        "reference" : "Patient/cdp2009672"
+      },
+      "name" : "cdp2009672",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       },
       {
@@ -2250,6 +2400,22 @@ This guide is intended for developers and integrators building or consuming inte
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DiagnosisATCCode.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DiagnosisATCCode"
+      },
+      "name" : "Diagnosis ATC Code",
+      "description" : "ATC code associated with a diagnosis, carried as a Coding on DIPS Condition.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "StructureDefinition-DIPSDocumentReferenceDictatedTimeNamedQuery.html"
       }],
       "reference" : {
@@ -2290,6 +2456,74 @@ This guide is intended for developers and integrators building or consuming inte
       "name" : "DIPS Comment Text",
       "description" : "A free-text comment associated with this phone number.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSConditionAsserterReferenceOrg.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSConditionAsserterReferenceOrg"
+      },
+      "name" : "DIPS Condition Asserter Reference (Organization)",
+      "description" : "Organization form of a DIPS Condition asserter. Not referenced by DIPSR4Condition - base FHIR does not permit Organization on Condition.asserter.",
+      "exampleBoolean" : false,
+      "groupingId" : "SupportingReferenceProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSConditionAsserterReferencePR.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSConditionAsserterReferencePR"
+      },
+      "name" : "DIPS Condition Asserter Reference (PractitionerRole)",
+      "description" : "The practitioner role that asserted a DIPS Condition, constraining the identifiers the asserter reference may carry.",
+      "exampleBoolean" : false,
+      "groupingId" : "SupportingReferenceProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSConditionEncounterReference.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSConditionEncounterReference"
+      },
+      "name" : "DIPS Condition Encounter Reference",
+      "description" : "The encounter a DIPS Condition was recorded on, constraining the identifiers the encounter reference may carry.",
+      "exampleBoolean" : false,
+      "groupingId" : "SupportingReferenceProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSConditionSubjectReference.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSConditionSubjectReference"
+      },
+      "name" : "DIPS Condition Subject Reference",
+      "description" : "The patient a DIPS Condition is about, constraining the identifiers the subject reference may carry.",
+      "exampleBoolean" : false,
+      "groupingId" : "SupportingReferenceProfiles"
     },
     {
       "extension" : [{
@@ -2387,6 +2621,91 @@ This guide is intended for developers and integrators building or consuming inte
       "name" : "DIPS Monitoring Notes",
       "description" : "Free-text clinical notes recorded against this remote monitoring episode of care.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSProcedureEncounterReference.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSProcedureEncounterReference"
+      },
+      "name" : "DIPS Procedure Encounter Reference",
+      "description" : "The episode of care a DIPS Procedure was recorded on, constraining the identifiers the encounter reference may carry.",
+      "exampleBoolean" : false,
+      "groupingId" : "SupportingReferenceProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSProcedurePerformerAuthorreference.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSProcedurePerformerAuthorreference"
+      },
+      "name" : "DIPS Procedure Performer Reference",
+      "description" : "The practitioner role that performed a DIPS Procedure, constraining the identifiers the performer reference may carry.",
+      "exampleBoolean" : false,
+      "groupingId" : "SupportingReferenceProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSProcedureSubjectReference.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSProcedureSubjectReference"
+      },
+      "name" : "DIPS Procedure Subject Reference",
+      "description" : "The patient a DIPS Procedure is about, constraining the identifiers the subject reference may carry.",
+      "exampleBoolean" : false,
+      "groupingId" : "SupportingReferenceProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSR4Condition.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSR4Condition"
+      },
+      "name" : "DIPS R4 Condition",
+      "description" : "Diagnosis registered on a patient in DIPS Arena. Resource ids carry the `afn` prefix.",
+      "exampleBoolean" : false,
+      "groupingId" : "ConditionProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSR4Procedure.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSR4Procedure"
+      },
+      "name" : "DIPS R4 Procedure",
+      "description" : "Procedure registered on a patient in DIPS Arena. Resource ids carry the `agv` prefix.",
+      "exampleBoolean" : false,
+      "groupingId" : "ProcedureProfiles"
     },
     {
       "extension" : [{

@@ -2534,6 +2534,100 @@ Every extension defined by this profile is identified by a URL under `http://dip
 
 Ten of these extensions are additionally returned under a second, underscored URL - for example `http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEvent_Time` - by the `documenttype` and `documentTypeandDepartmentid` named queries. Those variants are read-only: they appear in responses from those two queries only, and are not recognised on create or update.
 
+### FHIR Condition
+
+DIPSR4Condition covers diagnoses registered on a patient in DIPS Arena as FHIR `Condition` resources. A condition's resource id carries the `afn` prefix.
+
+Table 68. Supported FHIR Operations
+
+| | |
+| :--- | :--- |
+| Read | Yes |
+| VRead | No |
+| Create | Yes |
+| Update | No |
+| History | No |
+| Search | Yes |
+| Delete | Yes |
+| Patch | No |
+
+Delete is also supported conditionally (`conditionalDelete` = `single`).
+
+Table 69. Search parameters
+
+| | |
+| :--- | :--- |
+| _id | Condition id. Must match`afn`followed by digits. |
+| identifier | Diagnosis identifier qualified with its system. The DIPS system is`http://dips.no/fhir/namingsystem/dips-diagnosisid`; any other system is matched against the external identifiers the condition was created with. |
+| patient | Patient the diagnoses belong to, by logical id. |
+| patient.identifier | Patient identifier qualified with its system. Accepted systems: national identity number, D-number and temporary identity number ("Hjelpenummer"). An unqualified value is treated as a national identity number. |
+| encounter | Encounter the diagnosis was recorded on. Accepts an episode-of-care id (`agy…`) or a planned-contact id (`ahi…`). |
+| encounter.identifier | Episode of care, qualified with`http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid`. Any other system is rejected. |
+| asserter:Practitioner | Practitioner who asserted the diagnosis, by logical id. |
+| asserter:Practitioner.identifier | Practitioner identifier qualified with its system. Accepted systems: DIPS practitioner code, HPR number and HER-id. |
+| code | Diagnosis code qualified with its system. Accepted systems:`urn:oid:2.16.578.1.12.4.1.1.7110`and`http://hl7.org/fhir/sid/icd-10`. A bare numeric value is read as an internal DIPS code id; any other bare value is treated as an ICD-10 code. |
+| date-recorded | Bounds on`recordedDate`. Both ends are inclusive. |
+
+At least one of `patient`, `patient.identifier`, `asserter:Practitioner`, `asserter:Practitioner.identifier`, `identifier`, `date-recorded`, `encounter` or `code` must be supplied; a search with none of them is rejected with a 400 error.
+
+Example requests
+
+All diagnoses for a patient: `GET .../Condition?patient=cdp2009672`
+
+Diagnoses on one episode of care: `GET .../Condition?encounter=agy1002907`
+
+Diagnoses recorded in a period: `GET .../Condition?date-recorded=ge2021-09-01&date-recorded=le2021-09-30`
+
+### FHIR Procedure
+
+DIPSR4Procedure covers procedures registered on a patient in DIPS Arena as FHIR `Procedure` resources. A procedure's resource id carries the `agv` prefix.
+
+Table 70. Supported FHIR Operations
+
+| | |
+| :--- | :--- |
+| Read | Yes |
+| VRead | No |
+| Create | Yes |
+| Update | No |
+| History | No |
+| Search | Yes |
+| Delete | Yes |
+| Patch | No |
+
+Delete is also supported conditionally (`conditionalDelete` = `single`).
+
+Table 71. Search parameters
+
+| | |
+| :--- | :--- |
+| _id | Procedure id. The`agv`prefix is required. |
+| identifier | Procedure identifier qualified with its system. The DIPS system is`http://dips.no/fhir/namingsystem/dips-procedureid`; any other system is matched against the external identifiers the procedure was created with. |
+| patient | Patient the procedures belong to, by logical id. |
+| patient.identifier | Patient identifier qualified with its system. Accepted systems: DIPS patient id, DIPS NPR id, national identity number, D-number and temporary identity number ("Hjelpenummer"). An unqualified value is treated as a national identity number. |
+| encounter | Episode of care the procedure was recorded on. Must match`agy`followed by digits. |
+| encounter.identifier | Episode of care, qualified with`http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid`. Any other system is rejected. |
+| performer:Practitioner | Practitioner who performed the procedure, by logical id. |
+| performer:Practitioner.identifier | Practitioner identifier qualified with its system. Accepted systems: DIPS practitioner code and HPR number. The system is mandatory - a bare value is rejected. |
+| code | Procedure code qualified with its system. Accepted systems: NCMP (`…7220`), NCSP (`…7210`), NCRP (`…7270`) and Norwegian-specific codes (`…7020`), all under`urn:oid:2.16.578.1.12.4.1.1.`. Further code systems may be configured per deployment. |
+| date | Bounds on`performedPeriod`. Both ends are inclusive; a start later than the end is rejected. |
+
+At least one of `_id`, `patient`, `patient.Identifier`, `encounter`, `encounter.identifier`, `performer:Practitioner`, `performer:Practitioner.Identifier`, `code` or `date` must be supplied; a search with none of them is rejected with a 400 error.
+
+Example requests
+
+All procedures for a patient: `GET .../Procedure?patient=cdp2009672`
+
+Procedures with a given NCMP code: `GET .../Procedure?code=urn:oid:2.16.578.1.12.4.1.1.7220|WURX30`
+
+Procedures performed in a period: `GET .../Procedure?date=ge2021-09-11&date=le2021-09-12`
+
+#### Notes common to both resources
+
+The `code` and `date` / `date-recorded` parameters are declared with type `reference` in the CapabilityStatements, but are parsed as a token and a date respectively. Parameter names are matched case-insensitively, so `patient.identifier` and `patient.Identifier` are equivalent.
+
+Conditional delete reads different parameters from search: `subject` and `subject.identifier` rather than `patient` and `patient.identifier`. For Procedure, its `encounter` value is a planned-contact id (`ahi…`) rather than the episode-of-care id (`agy…`) search expects.
+
 ```
 © 2023 DIPS AS
 All rights reserved.

@@ -2230,6 +2230,13 @@
       ]
     },
     {
+      "url": "http://hl7.no/Fhir/Profile/Diagnosis#ATC-Code",
+      "title": "Diagnosis ATC Code",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
       "url": "http://hl7.no/fhir/StructureDefinition/dips-patient-language-id",
       "title": "dips-patient-language-id",
       "types": [
@@ -2306,16 +2313,6 @@
         "title": "DIPSDiagnosticReportPractitionerReference"
       }
     ],
-    "Location": [
-      {
-        "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSLocation",
-        "title": "DIPSLocation"
-      },
-      {
-        "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSLocationReference",
-        "title": "DIPSLocationReference"
-      }
-    ],
     "Organization": [
       {
         "url": "http://dips.no/fhir/StructureDefinition/R4/DIPSBasisOrganizationR4Reference",
@@ -2328,10 +2325,10 @@
         "title": "DIPSBasisPractitionerRoleR4Reference"
       }
     ],
-    "ServiceRequest": [
+    "Encounter": [
       {
-        "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSEncounterServiceRequest",
-        "title": "DIPSEncounterServiceRequest"
+        "url": "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationEncounterReference",
+        "title": "DIPSVitalSignsObservationEncounterReference"
       }
     ],
     "Patient": [
@@ -2340,22 +2337,44 @@
         "title": "DIPSPatient"
       }
     ],
+    "Location": [
+      {
+        "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSLocation",
+        "title": "DIPSLocation"
+      },
+      {
+        "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSLocationReference",
+        "title": "DIPSLocationReference"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSEncounterServiceRequest",
+        "title": "DIPSEncounterServiceRequest"
+      }
+    ],
     "HealthcareService": [
       {
         "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareService",
         "title": "DIPSHealthcareService"
       }
     ],
-    "Encounter": [
-      {
-        "url": "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationEncounterReference",
-        "title": "DIPSVitalSignsObservationEncounterReference"
-      }
-    ],
     "Person": [
       {
         "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSPerson",
         "title": "DIPSPerson"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSR4Condition",
+        "title": "DIPS R4 Condition"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "http://dips.no/fhir/R4/StructureDefinition/DIPSR4Procedure",
+        "title": "DIPS R4 Procedure"
       }
     ],
     "RelatedPerson": [
@@ -2920,6 +2939,9 @@
     ],
     "http://dips.no/fhir/observation/requester-signing-status-extension": [
       "Observation"
+    ],
+    "http://hl7.no/Fhir/Profile/Diagnosis#ATC-Code": [
+      "Condition"
     ],
     "http://hl7.no/fhir/StructureDefinition/R4/no-basis-propertyinformation": [
       "Organization.address"

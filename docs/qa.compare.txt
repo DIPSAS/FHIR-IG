@@ -1,10 +1,10 @@
 DIPSCore : Validation Results
 =========================================
 
-err = 394, warn = 1379, info = 616
+err = 410, warn = 1437, info = 630
 $--
 Generated $--. FHIR version $-- for dips.fhir.no.core#$-- (canonical = http://dips.no/fhir/R4)
- Build Errors : 6 / 237 / 0
+ Build Errors : 7 / 245 / 0
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Appointment-ahi1000249 : 0 / 2 / 1
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Appointment-ahi1004667 : 0 / 1 / 1
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Appointment-ahi38 : 0 / 1 / 1
@@ -22,6 +22,8 @@ Generated $--. FHIR version $-- for dips.fhir.no.core#$-- (canonical = http://di
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/CodeSystem-DIPSQSOFAcomponentCodeSystem : 0 / 7 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/CodeSystem-DIPSVitalSignsObservationConsciousness : 0 / 7 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/CodeSystem-DIPSVitalSignsObservationPrePostduktal : 0 / 7 / 2
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Condition-afn1003621 : 5 / 6 / 3
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Condition-afn1003623 : 3 / 6 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/DocumentReference-ako1041394 : 0 / 1 / 1
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/DocumentReference-ako124 : 0 / 1 / 1
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/DocumentReference-docRef-pdf-full : 0 / 11 / 3
@@ -32,6 +34,8 @@ Generated $--. FHIR version $-- for dips.fhir.no.core#$-- (canonical = http://di
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Encounter-agy1002135 : 0 / 21 / 9
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Encounter-agy100247 : 0 / 2 / 1
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Encounter-agy1002679 : 0 / 1 / 1
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Encounter-agy1002679-diag : 0 / 2 / 1
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Encounter-agy1002907 : 0 / 2 / 1
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Encounter-agy27 : 0 / 19 / 9
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/HealthcareService-HealthcareService-1 : 0 / 13 / 4
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/HealthcareService-HealthcareService-Emergency-Room : 11 / 17 / 19
@@ -91,6 +95,7 @@ Generated $--. FHIR version $-- for dips.fhir.no.core#$-- (canonical = http://di
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Patient-cdp2007964 : 2 / 5 / 3
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Patient-cdp2008844 : 0 / 1 / 1
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Patient-cdp2009597 : 0 / 0 / 1
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Patient-cdp2009672 : 0 / 1 / 1
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Person-ajf1000001 : 15 / 2 / 15
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Person-ajf242 : 1 / 2 / 12
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Practitioner-Practitioner-stf39 : 2 / 3 / 4
@@ -100,6 +105,7 @@ Generated $--. FHIR version $-- for dips.fhir.no.core#$-- (canonical = http://di
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/PractitionerRole-agb1000043 : 0 / 0 / 1
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/PractitionerRole-agb1000204 : 14 / 11 / 11
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/PractitionerRole-agb1000456 : 0 / 0 / 1
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/PractitionerRole-agb1001233 : 0 / 1 / 1
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/PractitionerRole-agb103 : 0 / 1 / 1
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/PractitionerRole-agb104 : 0 / 1 / 1
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/PractitionerRole-agb113 : 0 / 1 / 1
@@ -110,6 +116,8 @@ Generated $--. FHIR version $-- for dips.fhir.no.core#$-- (canonical = http://di
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/PractitionerRole-agb59 : 0 / 1 / 1
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/PractitionerRole-agb61 : 0 / 1 / 1
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/PractitionerRole-agb91 : 0 / 1 / 1
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Procedure-agv1001423 : 2 / 7 / 1
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Procedure-agv1001425 : 1 / 5 / 1
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/RelatedPerson-ain1000001 : 3 / 4 / 10
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/RelatedPerson-ain1000003 : 3 / 4 / 10
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/RelatedPerson-aoz1000067cdp1000063 : 2 / 4 / 14
@@ -131,6 +139,10 @@ Generated $--. FHIR version $-- for dips.fhir.no.core#$-- (canonical = http://di
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSBasisPatientR4Reference : 0 / 1 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSBasisPractitionerR4 : 0 / 2 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSBasisPractitionerRoleR4Reference : 2 / 2 / 2
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSConditionAsserterReferenceOrg : 0 / 2 / 2
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSConditionAsserterReferencePR : 0 / 2 / 2
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSConditionEncounterReference : 0 / 2 / 2
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSConditionSubjectReference : 0 / 2 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSDiagnosticOrderSpecimenReference : 2 / 2 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSDiagnosticReport : 2 / 2 / 3
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSDiagnosticReportOrganizationReference : 2 / 2 / 2
@@ -227,8 +239,13 @@ Generated $--. FHIR version $-- for dips.fhir.no.core#$-- (canonical = http://di
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSPractitionerRoleUserRoleName : 2 / 2 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSPractitionerRoleWard : 2 / 2 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSPractitionerSpecialist : 2 / 2 / 2
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSProcedureEncounterReference : 0 / 2 / 2
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSProcedurePerformerAuthorreference : 0 / 2 / 2
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSProcedureSubjectReference : 0 / 2 / 2
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSR4Condition : 4 / 4 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSR4DocumentReference : 0 / 2 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSR4Encounter : 0 / 1 / 2
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSR4Procedure : 0 / 1 / 3
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSReferenceLocation : 2 / 2 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSReferenceSection : 2 / 2 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSReferenceWard : 2 / 2 / 2
@@ -266,6 +283,7 @@ Generated $--. FHIR version $-- for dips.fhir.no.core#$-- (canonical = http://di
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DepartmentExtension : 0 / 3 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DepartmentTypeCodeId : 2 / 2 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DiagnoseGroupExtension : 0 / 3 / 2
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DiagnosisATCCode : 0 / 1 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DipsCanReceiveSms : 2 / 2 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DipsCommentText : 2 / 2 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DipsLocationExtension : 0 / 2 / 2
@@ -528,12 +546,19 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/agb30.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/PractitionerRole-Physiotherapist.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/PractitionerRole-agb1000203.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/afn1003621.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/afn1003623.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/agb1000204.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/agb1001233.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/agb42.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/agb61.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/agc1002251.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/agc48.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Procedure/agv1001423.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Procedure/agv1001425.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/agy1002135.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/agy1002679-diag.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/agy1002907.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/agy27.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Appointment/ahi1004667.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Appointment/ahi38.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -552,6 +577,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/cdp138.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/cdp2007964.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/cdp2008844.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/cdp2009672.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/dips-QSOFAScore-create.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/dips-blood-pressure-create.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/dips-bloodpressureexample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -582,6 +608,7 @@ WARNING: Practitioner.qualification.code.coding: The reference urn:oid:2.16.578.
 WARNING: Practitioner.qualification.code.coding: The reference urn:oid:2.16.578.1.12.4.1.1.7426 could not be resolved
 WARNING: PractitionerRole.code: The reference urn:oid:2.16.578.1.12.4.1.1.9034 could not be resolved
 WARNING: PractitionerRole.specialty: The reference urn:oid:2.16.578.1.12.4.1.1.8451 could not be resolved
+ERROR: ?pkp-1?: The reference http://hl7.no/Fhir/Profile/Diagnosis#ATC-Code could not be resolved
 ERROR: ValueSet-DIPSEncounterTypeCom.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 298, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
 ERROR: ValueSet-DIPSEncounterV3.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 298, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
 ERROR: ValueSet-HealthPersonallCategoryValueset.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 298, column 4: The link 'www.dips.no' for "www.dips.no" cannot be resolved
@@ -719,6 +746,31 @@ WARNING: CodeSystem/DIPSVitalSignsObservationPrePostduktal: CodeSystem: Publishe
 WARNING: CodeSystem/DIPSVitalSignsObservationPrePostduktal: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
 WARNING: CodeSystem/DIPSVitalSignsObservationPrePostduktal: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 WARNING: Resource: The resource CodeSystem/DIPSVitalSignsObservationPrePostduktal should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/Condition-afn1003621.json ==
+ERROR: Condition/afn1003621: Condition.extension[0]: Slicing cannot be evaluated: Problem with use of resolve() - profile [CanonicalType[http://hl7.no/Fhir/Profile/Diagnosis#ATC-Code]] on Condition.extension:ACTCode could not be resolved (@char 1)
+ERROR: Condition/afn1003621: Condition.identifier[0]: Slicing cannot be evaluated: Could not match discriminator (system) for slice Condition.identifier:External_Identifier in profile http://dips.no/fhir/R4/StructureDefinition/DIPSR4Condition|0.1.0 - the discriminator [system] does not have fixed value, binding or existence assertions
+ERROR: Condition/afn1003621: Condition.identifier[1]: Slicing cannot be evaluated: Could not match discriminator (system) for slice Condition.identifier:External_Identifier in profile http://dips.no/fhir/R4/StructureDefinition/DIPSR4Condition|0.1.0 - the discriminator [system] does not have fixed value, binding or existence assertions
+ERROR: Condition/afn1003621: Condition.extension[0]: The extension http://hl7.no/Fhir/Profile/Diagnosis#ATC-Code could not be found so is not allowed here
+INFORMATION: Condition/afn1003621: Condition.extension[0].value.ofType(Coding).system: A definition for CodeSystem 'http://www.whocc.no/atc' could not be found, so the code cannot be validated
+WARNING: Condition/afn1003621: Condition.identifier[0].system: No definition could be found for URL value 'http://dips.no/fhir/namingsystem/dips-diagnosisid'
+WARNING: Condition/afn1003621: Condition.identifier[1].system: No definition could be found for URL value 'http://hl7.no/fhir/PartusConditionID'
+INFORMATION: Condition/afn1003621: Condition.category[0]: Could not confirm that the codes provided are from the extensible value set http://hl7.org/fhir/ValueSet/condition-category|4.0.1 because there is no terminology service
+ERROR: Condition/afn1003621: Condition.category[0].coding[0].system: No definition could be found for URL value 'http://hl7.org/fhir/condition-category'
+WARNING: Condition/afn1003621: Condition.code.coding[0].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.7110' could not be found, so the code cannot be validated
+WARNING: Condition/afn1003621: Condition.subject.identifier.system: No definition could be found for URL value 'http://dips.no/fhir/namingsystem/dips-patientid'
+WARNING: Condition/afn1003621: Condition.encounter.identifier.system: No definition could be found for URL value 'http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid'
+WARNING: Condition/afn1003621: Condition.asserter.identifier.system: No definition could be found for URL value 'urn:oid:1.3.6.1.4.1.9038.51.1'
+== fsh-generated/resources/Condition-afn1003623.json ==
+ERROR: Condition/afn1003623: Condition.identifier[0]: Slicing cannot be evaluated: Could not match discriminator (system) for slice Condition.identifier:External_Identifier in profile http://dips.no/fhir/R4/StructureDefinition/DIPSR4Condition|0.1.0 - the discriminator [system] does not have fixed value, binding or existence assertions
+ERROR: Condition/afn1003623: Condition.identifier[1]: Slicing cannot be evaluated: Could not match discriminator (system) for slice Condition.identifier:External_Identifier in profile http://dips.no/fhir/R4/StructureDefinition/DIPSR4Condition|0.1.0 - the discriminator [system] does not have fixed value, binding or existence assertions
+WARNING: Condition/afn1003623: Condition.identifier[0].system: No definition could be found for URL value 'http://dips.no/fhir/namingsystem/dips-diagnosisid'
+WARNING: Condition/afn1003623: Condition.identifier[1].system: No definition could be found for URL value 'http://hl7.no/fhir/PartusConditionID'
+INFORMATION: Condition/afn1003623: Condition.category[0]: Could not confirm that the codes provided are from the extensible value set http://hl7.org/fhir/ValueSet/condition-category|4.0.1 because there is no terminology service
+ERROR: Condition/afn1003623: Condition.category[0].coding[0].system: No definition could be found for URL value 'http://hl7.org/fhir/condition-category'
+WARNING: Condition/afn1003623: Condition.code.coding[0].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.7110' could not be found, so the code cannot be validated
+WARNING: Condition/afn1003623: Condition.subject.identifier.system: No definition could be found for URL value 'http://dips.no/fhir/namingsystem/dips-patientid'
+WARNING: Condition/afn1003623: Condition.encounter.identifier.system: No definition could be found for URL value 'http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid'
+WARNING: Condition/afn1003623: Condition.asserter.identifier.system: No definition could be found for URL value 'urn:oid:1.3.6.1.4.1.9038.51.1'
 == fsh-generated/resources/DocumentReference-ako1041394.json ==
 WARNING: DocumentReference/ako1041394: DocumentReference.content[0].attachment: Attachments have data and/or url, or else SHOULD have either contentType and/or language
 == fsh-generated/resources/DocumentReference-ako124.json ==
@@ -800,6 +852,12 @@ WARNING: Encounter/agy100247: Encounter.identifier[0].system: No definition coul
 WARNING: Encounter/agy100247: Encounter: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 == fsh-generated/resources/Encounter-agy1002679.json ==
 WARNING: Encounter/agy1002679: Encounter.identifier[0].system: No definition could be found for URL value 'http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid'
+== fsh-generated/resources/Encounter-agy1002679-diag.json ==
+WARNING: Encounter/agy1002679-diag: Encounter.identifier[0].system: No definition could be found for URL value 'http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid'
+WARNING: Encounter/agy1002679-diag: Encounter.class: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/Encounter-agy1002907.json ==
+WARNING: Encounter/agy1002907: Encounter.identifier[0].system: No definition could be found for URL value 'http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid'
+WARNING: Encounter/agy1002907: Encounter.class: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/Encounter-agy27.json ==
 INFORMATION: Encounter/agy27: Encounter.meta.tag[0].system: A definition for CodeSystem 'http://dips.no/fhir/namingsystem/encountersource' could not be found, so the code cannot be validated
 INFORMATION: Encounter/agy27: Encounter.contained[0]/*Encounter/amw38*/.meta.tag[0].system: A definition for CodeSystem 'http://dips.no/fhir/namingsystem/encountersource' could not be found, so the code cannot be validated
@@ -1490,6 +1548,8 @@ WARNING: Patient/cdp2007964: Patient.meta.profile[1]: Profile reference 'http://
 == fsh-generated/resources/Patient-cdp2008844.json ==
 WARNING: Patient/cdp2008844: Patient.identifier[0].system: No definition could be found for URL value 'http://dips.no/fhir/namingsystem/dips-patientid'
 == fsh-generated/resources/Patient-cdp2009597.json ==
+== fsh-generated/resources/Patient-cdp2009672.json ==
+WARNING: Patient/cdp2009672: Patient.identifier[0].system: No definition could be found for URL value 'http://dips.no/fhir/namingsystem/dips-patientid'
 == fsh-generated/resources/Person-ajf1000001.json ==
 INFORMATION: Person/ajf1000001: Person.extension[0]: This element does not match any known slice defined in the profile http://dips.no/fhir/R4/StructureDefinition/DIPSPerson|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Person/ajf1000001: Person.identifier[0]: This element does not match any known slice defined in the profile http://dips.no/fhir/R4/StructureDefinition/DIPSPerson|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -1665,6 +1725,8 @@ WARNING: PractitionerRole/agb1000204: PractitionerRole.identifier[1].system: No 
 WARNING: PractitionerRole/agb1000204: PractitionerRole.organization.identifier.system: No definition could be found for URL value 'urn:oid:2.16.578.1.12.4.1.4.101'
 WARNING: PractitionerRole/agb1000204: PractitionerRole.meta.profile[1]: Profile reference 'http://dips.no/fhir/R4/StructureDefinition/NoBasisPractitionerRole' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
 == fsh-generated/resources/PractitionerRole-agb1000456.json ==
+== fsh-generated/resources/PractitionerRole-agb1001233.json ==
+WARNING: PractitionerRole/agb1001233: PractitionerRole.identifier[0].system: No definition could be found for URL value 'urn:oid:1.3.6.1.4.1.9038.51.1'
 == fsh-generated/resources/PractitionerRole-agb103.json ==
 WARNING: PractitionerRole/agb103: PractitionerRole.identifier[0].system: No definition could be found for URL value 'urn:oid:1.3.6.1.4.1.9038.51.1'
 == fsh-generated/resources/PractitionerRole-agb104.json ==
@@ -1685,6 +1747,23 @@ WARNING: PractitionerRole/agb59: PractitionerRole.identifier[0].system: No defin
 WARNING: PractitionerRole/agb61: PractitionerRole.identifier[0].system: No definition could be found for URL value 'urn:oid:1.3.6.1.4.1.9038.51.1'
 == fsh-generated/resources/PractitionerRole-agb91.json ==
 WARNING: PractitionerRole/agb91: PractitionerRole.identifier[0].system: No definition could be found for URL value 'urn:oid:1.3.6.1.4.1.9038.51.1'
+== fsh-generated/resources/Procedure-agv1001423.json ==
+ERROR: Procedure/agv1001423: Procedure.identifier[0]: Slicing cannot be evaluated: Could not match discriminator (system) for slice Procedure.identifier:External_Identifier in profile http://dips.no/fhir/R4/StructureDefinition/DIPSR4Procedure|0.1.0 - the discriminator [system] does not have fixed value, binding or existence assertions
+ERROR: Procedure/agv1001423: Procedure.identifier[1]: Slicing cannot be evaluated: Could not match discriminator (system) for slice Procedure.identifier:External_Identifier in profile http://dips.no/fhir/R4/StructureDefinition/DIPSR4Procedure|0.1.0 - the discriminator [system] does not have fixed value, binding or existence assertions
+WARNING: Procedure/agv1001423: Procedure.identifier[0].system: No definition could be found for URL value 'http://dips.no/fhir/namingsystem/dips-procedureid'
+WARNING: Procedure/agv1001423: Procedure.identifier[1].system: No definition could be found for URL value 'http://externalsystem.com/fhir/procedures'
+WARNING: Procedure/agv1001423: Procedure.category.coding[0].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.7220' could not be found, so the code cannot be validated
+WARNING: Procedure/agv1001423: Procedure.code.coding[0].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.7220' could not be found, so the code cannot be validated
+WARNING: Procedure/agv1001423: Procedure.subject.identifier.system: No definition could be found for URL value 'http://dips.no/fhir/namingsystem/dips-patientid'
+WARNING: Procedure/agv1001423: Procedure.encounter.identifier.system: No definition could be found for URL value 'http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid'
+WARNING: Procedure/agv1001423: Procedure.performer[0].actor.identifier.system: No definition could be found for URL value 'urn:oid:1.3.6.1.4.1.9038.51.1'
+== fsh-generated/resources/Procedure-agv1001425.json ==
+ERROR: Procedure/agv1001425: Procedure.identifier[0]: Slicing cannot be evaluated: Could not match discriminator (system) for slice Procedure.identifier:External_Identifier in profile http://dips.no/fhir/R4/StructureDefinition/DIPSR4Procedure|0.1.0 - the discriminator [system] does not have fixed value, binding or existence assertions
+WARNING: Procedure/agv1001425: Procedure.identifier[0].system: No definition could be found for URL value 'http://dips.no/fhir/namingsystem/dips-procedureid'
+WARNING: Procedure/agv1001425: Procedure.category.coding[0].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.7220' could not be found, so the code cannot be validated
+WARNING: Procedure/agv1001425: Procedure.code.coding[0].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.7220' could not be found, so the code cannot be validated
+WARNING: Procedure/agv1001425: Procedure.subject.identifier.system: No definition could be found for URL value 'http://dips.no/fhir/namingsystem/dips-patientid'
+WARNING: Procedure/agv1001425: Procedure.encounter.identifier.system: No definition could be found for URL value 'http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid'
 == fsh-generated/resources/RelatedPerson-ain1000001.json ==
 INFORMATION: RelatedPerson/ain1000001: RelatedPerson.extension[0]: This element does not match any known slice defined in the profile http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPerson|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: RelatedPerson/ain1000001: RelatedPerson.extension[1]: This element does not match any known slice defined in the profile http://dips.no/fhir/R4/StructureDefinition/DIPSRelatedPerson|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -1826,6 +1905,22 @@ WARNING: StructureDefinition/DIPSBasisPractitionerRoleR4Reference: StructureDefi
 INFORMATION: Resource: The resource StructureDefinition/DIPSBasisPractitionerRoleR4Reference could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: StructureDefinition.where(url = 'http://dips.no/fhir/StructureDefinition/R4/DIPSBasisPractitionerRoleR4Reference'): The Implementation Guide contains no examples for this profile
 ERROR: /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSBasisPractitionerRoleR4Reference: URL Mismatch http://dips.no/fhir/R4/StructureDefinition/DIPSBasisPractitionerRoleR4Reference vs http://dips.no/fhir/StructureDefinition/R4/DIPSBasisPractitionerRoleR4Reference
+== fsh-generated/resources/StructureDefinition-DIPSConditionAsserterReferenceOrg.json ==
+WARNING: StructureDefinition/DIPSConditionAsserterReferenceOrg: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+INFORMATION: Resource: The resource StructureDefinition/DIPSConditionAsserterReferenceOrg could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'http://dips.no/fhir/R4/StructureDefinition/DIPSConditionAsserterReferenceOrg'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-DIPSConditionAsserterReferencePR.json ==
+WARNING: StructureDefinition/DIPSConditionAsserterReferencePR: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+INFORMATION: Resource: The resource StructureDefinition/DIPSConditionAsserterReferencePR could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'http://dips.no/fhir/R4/StructureDefinition/DIPSConditionAsserterReferencePR'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-DIPSConditionEncounterReference.json ==
+WARNING: StructureDefinition/DIPSConditionEncounterReference: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+INFORMATION: Resource: The resource StructureDefinition/DIPSConditionEncounterReference could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'http://dips.no/fhir/R4/StructureDefinition/DIPSConditionEncounterReference'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-DIPSConditionSubjectReference.json ==
+WARNING: StructureDefinition/DIPSConditionSubjectReference: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+INFORMATION: Resource: The resource StructureDefinition/DIPSConditionSubjectReference could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'http://dips.no/fhir/R4/StructureDefinition/DIPSConditionSubjectReference'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-DIPSDiagnosticOrderSpecimenReference.json ==
 ERROR: StructureDefinition.where(url = 'http://dips.no/fhir/StructureDefinition/DIPSDiagnosticOrderSpecimenReference'): Conformance resource /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSDiagnosticOrderSpecimenReference.json - the canonical URL (http://dips.no/fhir/R4/StructureDefinition/DIPSDiagnosticOrderSpecimenReference) does not match the URL (http://dips.no/fhir/StructureDefinition/DIPSDiagnosticOrderSpecimenReference). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/DIPSDiagnosticOrderSpecimenReference: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
@@ -2347,6 +2442,28 @@ WARNING: StructureDefinition/DIPSPractitionerSpecialist: StructureDefinition.jur
 INFORMATION: Resource: The resource StructureDefinition/DIPSPractitionerSpecialist could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: StructureDefinition.where(url = 'http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerSpecialist'): The Implementation Guide contains no examples for this extension
 ERROR: /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSPractitionerSpecialist: URL Mismatch http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerSpecialist vs http://dips.no/fhir/StructureDefinition/R4/DIPSPractitionerSpecialist
+== fsh-generated/resources/StructureDefinition-DIPSProcedureEncounterReference.json ==
+WARNING: StructureDefinition/DIPSProcedureEncounterReference: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+INFORMATION: Resource: The resource StructureDefinition/DIPSProcedureEncounterReference could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'http://dips.no/fhir/R4/StructureDefinition/DIPSProcedureEncounterReference'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-DIPSProcedurePerformerAuthorreference.json ==
+WARNING: StructureDefinition/DIPSProcedurePerformerAuthorreference: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+INFORMATION: Resource: The resource StructureDefinition/DIPSProcedurePerformerAuthorreference could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'http://dips.no/fhir/R4/StructureDefinition/DIPSProcedurePerformerAuthorreference'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-DIPSProcedureSubjectReference.json ==
+WARNING: StructureDefinition/DIPSProcedureSubjectReference: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+INFORMATION: Resource: The resource StructureDefinition/DIPSProcedureSubjectReference could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'http://dips.no/fhir/R4/StructureDefinition/DIPSProcedureSubjectReference'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-DIPSR4Condition.json ==
+WARNING: StructureDefinition.snapshot.element[8]: The type of profile http://hl7.no/Fhir/Profile/Diagnosis#ATC-Code cannot be checked as the profile is not known
+WARNING: StructureDefinition/DIPSR4Condition: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+ERROR: StructureDefinition/DIPSR4Condition: StructureDefinition.snapshot.element[56].fixed.ofType(uri): No definition could be found for URL value 'http://hl7.org/fhir/condition-category'
+ERROR: StructureDefinition/DIPSR4Condition: StructureDefinition.differential.element[38].fixed.ofType(uri): No definition could be found for URL value 'http://hl7.org/fhir/condition-category'
+WARNING: StructureDefinition/DIPSR4Condition: StructureDefinition.differential.element[6].type[0].profile[0]: Unable to resolve profile http://hl7.no/Fhir/Profile/Diagnosis#ATC-Code
+WARNING: StructureDefinition/DIPSR4Condition: StructureDefinition.snapshot.element[8].type[0].profile[0]: Unable to resolve profile http://hl7.no/Fhir/Profile/Diagnosis#ATC-Code
+ERROR: DIPSR4Condition: Unable to find Extension 'http://hl7.no/Fhir/Profile/Diagnosis#ATC-Code' referenced at http://dips.no/fhir/R4/StructureDefinition/DIPSR4Condition differential Condition.extension (ACTCode)
+ERROR: DIPSR4Condition: Unable to find Extension 'http://hl7.no/Fhir/Profile/Diagnosis#ATC-Code' referenced at http://dips.no/fhir/R4/StructureDefinition/DIPSR4Condition snapshot Condition.extension (ACTCode)
+INFORMATION: Resource: The resource StructureDefinition/DIPSR4Condition could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-DIPSR4DocumentReference.json ==
 WARNING: DIPSR4DocumentReference.DocumentReference.content.attachment.contentType: Binding http://hl7.org/fhir/ValueSet/mimetypes|4.0.1 could not be expanded
 WARNING: StructureDefinition/DIPSR4DocumentReference: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
@@ -2354,6 +2471,10 @@ INFORMATION: Resource: The resource StructureDefinition/DIPSR4DocumentReference 
 == fsh-generated/resources/StructureDefinition-DIPSR4Encounter.json ==
 WARNING: StructureDefinition/DIPSR4Encounter: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
 INFORMATION: Resource: The resource StructureDefinition/DIPSR4Encounter could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-DIPSR4Procedure.json ==
+INFORMATION: StructureDefinition.snapshot.element[49]: The slice definition for Procedure.code.coding has a maximum of 1 but the slices add up to a maximum of 4. Check that this is what is intended
+WARNING: StructureDefinition/DIPSR4Procedure: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+INFORMATION: Resource: The resource StructureDefinition/DIPSR4Procedure could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-DIPSReferenceLocation.json ==
 ERROR: StructureDefinition.where(url = 'http://dips.no/fhir/StructureDefinition/DIPSReferenceLocation'): Conformance resource /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DIPSReferenceLocation.json - the canonical URL (http://dips.no/fhir/R4/StructureDefinition/DIPSReferenceLocation) does not match the URL (http://dips.no/fhir/StructureDefinition/DIPSReferenceLocation). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/DIPSReferenceLocation: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
@@ -2559,6 +2680,9 @@ WARNING: StructureDefinition/DiagnoseGroupExtension: StructureDefinition.jurisdi
 WARNING: StructureDefinition/DiagnoseGroupExtension: StructureDefinition.context[0]: Review the extension type for DiagnoseGroupExtension: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 INFORMATION: Resource: The resource StructureDefinition/DiagnoseGroupExtension could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: StructureDefinition.where(url = 'http://dips.no/fhir/R4/StructureDefinition/DiagnoseGroupExtension'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-DiagnosisATCCode.json ==
+WARNING: StructureDefinition/DiagnosisATCCode: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+INFORMATION: Resource: The resource StructureDefinition/DiagnosisATCCode could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-DipsCanReceiveSms.json ==
 ERROR: StructureDefinition.where(url = 'http://dips.no/fhir/StructureDefinition/R4/DIPSCanReceiveSms'): Conformance resource /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/StructureDefinition-DipsCanReceiveSms.json - the canonical URL (http://dips.no/fhir/R4/StructureDefinition/DipsCanReceiveSms) does not match the URL (http://dips.no/fhir/StructureDefinition/R4/DIPSCanReceiveSms). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/DipsCanReceiveSms: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
@@ -2828,7 +2952,7 @@ INFORMATION: ValueSet/DIPSEncounterTypeCom: ValueSet.compose.include[0]: The con
 WARNING: Resource: The resource ValueSet/DIPSEncounterTypeCom should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: ValueSet.where(id = 'DIPSEncounterTypeCom'): A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8240' could not be found, so the value set cannot be expanded
 == fsh-generated/resources/ValueSet-DIPSEncounterV3.json ==
-INFORMATION: ValueSet.compose.include[0]: Pinned the version of http://terminology.hl7.org/CodeSystem/v3-ActCode to 11.0.0 from choices of 10.0.0 (hl7.terminology.r4#7.1.0), 11.0.0 (hl7.terminology.r4#7.3.0)
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of http://terminology.hl7.org/CodeSystem/v3-ActCode to 11.0.0 from choices of 10.0.0 (hl7.terminology.r4#7.1.0), 11.0.0 (hl7.terminology.r4#7.4.0)
 WARNING: ValueSet/DIPSEncounterV3: ValueSet.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
 INFORMATION: ValueSet/DIPSEncounterV3: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
 WARNING: Resource: The resource ValueSet/DIPSEncounterV3 should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

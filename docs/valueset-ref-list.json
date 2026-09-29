@@ -9,8 +9,8 @@
     "systems" : ["urn:oid:2.16.578.1.12.4.1.1.8240"],
     "uses" : {
     },
-    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
-    "StructureDefinition-ContactTypeExtension.html" : "ContactTypeExtension"
+    "StructureDefinition-ContactTypeExtension.html" : "ContactTypeExtension",
+    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter"
   },
   {
     "url" : "http://dips.no/fhir/R4/ValueSet/DIPSEncounterV3",
@@ -22,8 +22,8 @@
     "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
     "uses" : {
     },
-    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter",
-    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter"
+    "StructureDefinition-DIPSR4Encounter.html" : "DIPSR4Encounter",
+    "StructureDefinition-DIPSHospitalStayEncounter.html" : "DIPSHospitalStayEncounter"
   },
   {
     "url" : "http://dips.no/fhir/R4/ValueSet/DIPSGCSEyeOpeningScore",
@@ -507,6 +507,34 @@
     "StructureDefinition-DIPSR4DocumentReference.html" : "DIPSR4DocumentReference"
   },
   {
+    "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ConditionClinicalStatusCodes",
+    "title" : "Condition Clinical Status Codes",
+    "description" : "Preferred value set for Condition Clinical Status.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+    "oids" : ["2.16.840.1.113883.4.642.3.164"],
+    "sources" : ["2.16.840.1.113883.4.642.3.164"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSR4Condition.html" : "DIPS R4 Condition"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ConditionVerificationStatus",
+    "title" : "ConditionVerificationStatus",
+    "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.166"],
+    "sources" : ["2.16.840.1.113883.4.642.3.166"],
+    "uses" : {
+    },
+    "StructureDefinition-DIPSR4Condition.html" : "DIPS R4 Condition"
+  },
+  {
     "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
     "version" : "4.0.1",
     "status" : "active",
@@ -588,8 +616,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.57"],
     "uses" : {
     },
-    "StructureDefinition-DIPSOrganizationReference.html" : "DIPSOrganizationReference",
-    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization"
+    "StructureDefinition-DIPSOrganization.html" : "DIPSOrganization",
+    "StructureDefinition-DIPSOrganizationReference.html" : "DIPSOrganizationReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",

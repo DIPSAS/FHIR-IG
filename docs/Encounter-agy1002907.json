@@ -1,0 +1,16 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "agy1002907",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter agy1002907</b></p><a name=\"agy1002907\"> </a><a name=\"hcagy1002907\"> </a><p><b>identifier</b>: <code>http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid</code>/1002907</p><p><b>status</b>: Planned</p><p><b>class</b>: [not stated]: AMB (AMB)</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid",
+    "value" : "1002907"
+  }],
+  "status" : "planned",
+  "class" : {
+    "code" : "AMB"
+  }
+}

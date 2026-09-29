@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/R4/Procedure/agv1001423> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agv1001423"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSR4Procedure" ;
+       fhir:index 0 ;
+       fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSR4Procedure>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure agv1001423</b></p><a name=\"agv1001423\"> </a><a name=\"hcagv1001423\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DIPSR4Procedure.html\">DIPS R4 Procedure</a></p></div><p><b>identifier</b>: <code>http://dips.no/fhir/namingsystem/dips-procedureid</code>/1001423, <code>http://externalsystem.com/fhir/procedures</code>/O3O9IA</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{urn:oid:2.16.578.1.12.4.1.1.7220 MP}\">NCMP Medisinske prosedyrekoder</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:2.16.578.1.12.4.1.1.7220 WURX30}\">Utredning av språkforståelse</span></p><p><b>subject</b>: <a href=\"Patient-cdp2009672.html\">BUP, BJØRN</a></p><p><b>encounter</b>: <a href=\"Encounter-agy1002907.html\">Encounter: identifier = http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid#1002907; status = planned; class = AMB (AMB)</a></p><p><b>performed</b>: 2021-09-11 06:40:00+0000 --&gt; 2021-09-11 09:45:00+0000</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-agb1001233.html\">MINEPASIENTER, LISTE, TESTSYKEHUSET HF</a></td></tr></table></div>"
+  ] ;
+  fhir:Procedure.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-procedureid" ] ;
+     fhir:Identifier.value [ fhir:value "1001423" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.system [ fhir:value "http://externalsystem.com/fhir/procedures" ] ;
+     fhir:Identifier.value [ fhir:value "O3O9IA" ]
+  ] ;
+  fhir:Procedure.status [ fhir:value "completed"] ;
+  fhir:Procedure.category [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.1.7220" ] ;
+       fhir:Coding.code [ fhir:value "MP" ] ;
+       fhir:Coding.display [ fhir:value "NCMP Medisinske prosedyrekoder" ]
+     ]
+  ] ;
+  fhir:Procedure.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.1.7220" ] ;
+       fhir:Coding.code [ fhir:value "WURX30" ] ;
+       fhir:Coding.display [ fhir:value "Utredning av språkforståelse" ]
+     ]
+  ] ;
+  fhir:Procedure.subject [
+     fhir:link <http://dips.no/fhir/R4/Patient/cdp2009672> ;
+     fhir:Reference.reference [ fhir:value "Patient/cdp2009672" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-patientid" ] ;
+       fhir:Identifier.value [ fhir:value "2009672" ]
+     ] ;
+     fhir:Reference.display [ fhir:value "BUP, BJØRN" ]
+  ] ;
+  fhir:Procedure.encounter [
+     fhir:link <http://dips.no/fhir/R4/Encounter/agy1002907> ;
+     fhir:Reference.reference [ fhir:value "Encounter/agy1002907" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid" ] ;
+       fhir:Identifier.value [ fhir:value "1002907" ]
+     ]
+  ] ;
+  fhir:Procedure.performedPeriod [
+     fhir:Period.start [ fhir:value "2021-09-11T06:40:00+00:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2021-09-11T09:45:00+00:00"^^xsd:dateTime ]
+  ] ;
+  fhir:Procedure.performer [
+     fhir:index 0 ;
+     fhir:Procedure.performer.actor [
+       fhir:link <http://dips.no/fhir/R4/PractitionerRole/agb1001233> ;
+       fhir:Reference.reference [ fhir:value "PractitionerRole/agb1001233" ] ;
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "urn:oid:1.3.6.1.4.1.9038.51.1" ] ;
+         fhir:Identifier.value [ fhir:value "1001233" ]
+       ] ;
+       fhir:Reference.display [ fhir:value "MINEPASIENTER, LISTE, TESTSYKEHUSET HF" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://dips.no/fhir/R4/Procedure/agv1001423.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

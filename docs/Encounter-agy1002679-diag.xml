@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="agy1002679-diag"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter agy1002679-diag</b></p><a name="agy1002679-diag"> </a><a name="hcagy1002679-diag"> </a><p><b>identifier</b>: <code>http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid</code>/1002679</p><p><b>status</b>: Planned</p><p><b>class</b>: [not stated]: AMB (AMB)</p></div>
+  </text>
+  <identifier>
+    <system value="http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid"/>
+    <value value="1002679"/>
+  </identifier>
+  <status value="planned"/>
+  <class>
+    <code value="AMB"/>
+  </class>
+</Encounter>

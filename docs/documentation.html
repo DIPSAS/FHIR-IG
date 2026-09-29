@@ -129,19 +129,19 @@
         <a href="artifacts.html#1">Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#21">Extensions</a>
+        <a href="artifacts.html#23">Extensions</a>
       </li>
       <li>
-        <a href="artifacts.html#20">Capability Statements</a>
+        <a href="artifacts.html#22">Capability Statements</a>
       </li>
       <li>
-        <a href="artifacts.html#22">Value Sets</a>
+        <a href="artifacts.html#24">Value Sets</a>
       </li>
       <li>
-        <a href="artifacts.html#23">Code Systems</a>
+        <a href="artifacts.html#25">Code Systems</a>
       </li>
       <li>
-        <a href="artifacts.html#24">Example Instances</a>
+        <a href="artifacts.html#26">Example Instances</a>
       </li>
     </ul>
   </li>
@@ -225,6 +225,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#fhir-valueset-dipsr4valueset" id="markdown-toc-fhir-valueset-dipsr4valueset">FHIR ValueSet (DIPSR4ValueSet)</a></li>
   <li><a href="#fhir-vitalsign-observation" id="markdown-toc-fhir-vitalsign-observation">FHIR VitalSign Observation</a></li>
   <li><a href="#fhir-documentreference" id="markdown-toc-fhir-documentreference">FHIR DocumentReference</a></li>
+  <li><a href="#fhir-condition" id="markdown-toc-fhir-condition">FHIR Condition</a></li>
+  <li><a href="#fhir-procedure" id="markdown-toc-fhir-procedure">FHIR Procedure</a></li>
 </ul>
 
 </div>
@@ -4898,6 +4900,256 @@ extension sent under any other URL is silently ignored rather than rejected.</p>
 and <code class="language-plaintext highlighter-rouge">documentTypeandDepartmentid</code> named queries. Those variants are read-only: they appear in
 responses from those two queries only, and are not recognised on create or update.</p>
 
+<h3 id="fhir-condition">FHIR Condition</h3>
+
+<p>DIPSR4Condition covers diagnoses registered on a patient in DIPS Arena as FHIR <code class="language-plaintext highlighter-rouge">Condition</code>
+resources. A condition's resource id carries the <code class="language-plaintext highlighter-rouge">afn</code> prefix.</p>
+
+<p>Table 68. Supported FHIR Operations</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Operation</th>
+      <th>Supported</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Read</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>VRead</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Create</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Update</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>History</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Search</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Delete</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Patch</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Delete is also supported conditionally (<code class="language-plaintext highlighter-rouge">conditionalDelete</code> = <code class="language-plaintext highlighter-rouge">single</code>).</p>
+
+<p>Table 69. Search parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>_id</td>
+      <td>Condition id. Must match <code class="language-plaintext highlighter-rouge">afn</code> followed by digits.</td>
+    </tr>
+    <tr>
+      <td>identifier</td>
+      <td>Diagnosis identifier qualified with its system. The DIPS system is <code class="language-plaintext highlighter-rouge">http://dips.no/fhir/namingsystem/dips-diagnosisid</code>; any other system is matched against the external identifiers the condition was created with.</td>
+    </tr>
+    <tr>
+      <td>patient</td>
+      <td>Patient the diagnoses belong to, by logical id.</td>
+    </tr>
+    <tr>
+      <td>patient.identifier</td>
+      <td>Patient identifier qualified with its system. Accepted systems: national identity number, D-number and temporary identity number ("Hjelpenummer"). An unqualified value is treated as a national identity number.</td>
+    </tr>
+    <tr>
+      <td>encounter</td>
+      <td>Encounter the diagnosis was recorded on. Accepts an episode-of-care id (<code class="language-plaintext highlighter-rouge">agy…</code>) or a planned-contact id (<code class="language-plaintext highlighter-rouge">ahi…</code>).</td>
+    </tr>
+    <tr>
+      <td>encounter.identifier</td>
+      <td>Episode of care, qualified with <code class="language-plaintext highlighter-rouge">http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid</code>. Any other system is rejected.</td>
+    </tr>
+    <tr>
+      <td>asserter:Practitioner</td>
+      <td>Practitioner who asserted the diagnosis, by logical id.</td>
+    </tr>
+    <tr>
+      <td>asserter:Practitioner.identifier</td>
+      <td>Practitioner identifier qualified with its system. Accepted systems: DIPS practitioner code, HPR number and HER-id.</td>
+    </tr>
+    <tr>
+      <td>code</td>
+      <td>Diagnosis code qualified with its system. Accepted systems: <code class="language-plaintext highlighter-rouge">urn:oid:2.16.578.1.12.4.1.1.7110</code> and <code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/sid/icd-10</code>. A bare numeric value is read as an internal DIPS code id; any other bare value is treated as an ICD-10 code.</td>
+    </tr>
+    <tr>
+      <td>date-recorded</td>
+      <td>Bounds on <code class="language-plaintext highlighter-rouge">recordedDate</code>. Both ends are inclusive.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>At least one of <code class="language-plaintext highlighter-rouge">patient</code>, <code class="language-plaintext highlighter-rouge">patient.identifier</code>, <code class="language-plaintext highlighter-rouge">asserter:Practitioner</code>,
+<code class="language-plaintext highlighter-rouge">asserter:Practitioner.identifier</code>, <code class="language-plaintext highlighter-rouge">identifier</code>, <code class="language-plaintext highlighter-rouge">date-recorded</code>, <code class="language-plaintext highlighter-rouge">encounter</code> or <code class="language-plaintext highlighter-rouge">code</code> must be
+supplied; a search with none of them is rejected with a 400 error.</p>
+
+<p>Example requests</p>
+
+<p>All diagnoses for a patient:
+<code class="language-plaintext highlighter-rouge">GET .../Condition?patient=cdp2009672</code></p>
+
+<p>Diagnoses on one episode of care:
+<code class="language-plaintext highlighter-rouge">GET .../Condition?encounter=agy1002907</code></p>
+
+<p>Diagnoses recorded in a period:
+<code class="language-plaintext highlighter-rouge">GET .../Condition?date-recorded=ge2021-09-01&amp;date-recorded=le2021-09-30</code></p>
+
+<h3 id="fhir-procedure">FHIR Procedure</h3>
+
+<p>DIPSR4Procedure covers procedures registered on a patient in DIPS Arena as FHIR <code class="language-plaintext highlighter-rouge">Procedure</code>
+resources. A procedure's resource id carries the <code class="language-plaintext highlighter-rouge">agv</code> prefix.</p>
+
+<p>Table 70. Supported FHIR Operations</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Operation</th>
+      <th>Supported</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Read</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>VRead</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Create</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Update</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>History</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Search</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Delete</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Patch</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Delete is also supported conditionally (<code class="language-plaintext highlighter-rouge">conditionalDelete</code> = <code class="language-plaintext highlighter-rouge">single</code>).</p>
+
+<p>Table 71. Search parameters</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>_id</td>
+      <td>Procedure id. The <code class="language-plaintext highlighter-rouge">agv</code> prefix is required.</td>
+    </tr>
+    <tr>
+      <td>identifier</td>
+      <td>Procedure identifier qualified with its system. The DIPS system is <code class="language-plaintext highlighter-rouge">http://dips.no/fhir/namingsystem/dips-procedureid</code>; any other system is matched against the external identifiers the procedure was created with.</td>
+    </tr>
+    <tr>
+      <td>patient</td>
+      <td>Patient the procedures belong to, by logical id.</td>
+    </tr>
+    <tr>
+      <td>patient.identifier</td>
+      <td>Patient identifier qualified with its system. Accepted systems: DIPS patient id, DIPS NPR id, national identity number, D-number and temporary identity number ("Hjelpenummer"). An unqualified value is treated as a national identity number.</td>
+    </tr>
+    <tr>
+      <td>encounter</td>
+      <td>Episode of care the procedure was recorded on. Must match <code class="language-plaintext highlighter-rouge">agy</code> followed by digits.</td>
+    </tr>
+    <tr>
+      <td>encounter.identifier</td>
+      <td>Episode of care, qualified with <code class="language-plaintext highlighter-rouge">http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid</code>. Any other system is rejected.</td>
+    </tr>
+    <tr>
+      <td>performer:Practitioner</td>
+      <td>Practitioner who performed the procedure, by logical id.</td>
+    </tr>
+    <tr>
+      <td>performer:Practitioner.identifier</td>
+      <td>Practitioner identifier qualified with its system. Accepted systems: DIPS practitioner code and HPR number. The system is mandatory - a bare value is rejected.</td>
+    </tr>
+    <tr>
+      <td>code</td>
+      <td>Procedure code qualified with its system. Accepted systems: NCMP (<code class="language-plaintext highlighter-rouge">…7220</code>), NCSP (<code class="language-plaintext highlighter-rouge">…7210</code>), NCRP (<code class="language-plaintext highlighter-rouge">…7270</code>) and Norwegian-specific codes (<code class="language-plaintext highlighter-rouge">…7020</code>), all under <code class="language-plaintext highlighter-rouge">urn:oid:2.16.578.1.12.4.1.1.</code>. Further code systems may be configured per deployment.</td>
+    </tr>
+    <tr>
+      <td>date</td>
+      <td>Bounds on <code class="language-plaintext highlighter-rouge">performedPeriod</code>. Both ends are inclusive; a start later than the end is rejected.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>At least one of <code class="language-plaintext highlighter-rouge">_id</code>, <code class="language-plaintext highlighter-rouge">patient</code>, <code class="language-plaintext highlighter-rouge">patient.Identifier</code>, <code class="language-plaintext highlighter-rouge">encounter</code>, <code class="language-plaintext highlighter-rouge">encounter.identifier</code>,
+<code class="language-plaintext highlighter-rouge">performer:Practitioner</code>, <code class="language-plaintext highlighter-rouge">performer:Practitioner.Identifier</code>, <code class="language-plaintext highlighter-rouge">code</code> or <code class="language-plaintext highlighter-rouge">date</code> must be supplied; a
+search with none of them is rejected with a 400 error.</p>
+
+<p>Example requests</p>
+
+<p>All procedures for a patient:
+<code class="language-plaintext highlighter-rouge">GET .../Procedure?patient=cdp2009672</code></p>
+
+<p>Procedures with a given NCMP code:
+<code class="language-plaintext highlighter-rouge">GET .../Procedure?code=urn:oid:2.16.578.1.12.4.1.1.7220|WURX30</code></p>
+
+<p>Procedures performed in a period:
+<code class="language-plaintext highlighter-rouge">GET .../Procedure?date=ge2021-09-11&amp;date=le2021-09-12</code></p>
+
+<h4 id="notes-common-to-both-resources">Notes common to both resources</h4>
+
+<p>The <code class="language-plaintext highlighter-rouge">code</code> and <code class="language-plaintext highlighter-rouge">date</code> / <code class="language-plaintext highlighter-rouge">date-recorded</code> parameters are declared with type <code class="language-plaintext highlighter-rouge">reference</code> in the
+CapabilityStatements, but are parsed as a token and a date respectively. Parameter names are
+matched case-insensitively, so <code class="language-plaintext highlighter-rouge">patient.identifier</code> and <code class="language-plaintext highlighter-rouge">patient.Identifier</code> are equivalent.</p>
+
+<p>Conditional delete reads different parameters from search: <code class="language-plaintext highlighter-rouge">subject</code> and <code class="language-plaintext highlighter-rouge">subject.identifier</code>
+rather than <code class="language-plaintext highlighter-rouge">patient</code> and <code class="language-plaintext highlighter-rouge">patient.identifier</code>. For Procedure, its <code class="language-plaintext highlighter-rouge">encounter</code> value is a
+planned-contact id (<code class="language-plaintext highlighter-rouge">ahi…</code>) rather than the episode-of-care id (<code class="language-plaintext highlighter-rouge">agy…</code>) search expects.</p>
+
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>© 2023 DIPS AS
 All rights reserved.
 No part of this publication may be reproduced, stored in a retrieval system, transmitted, or
@@ -4932,7 +5184,7 @@ https://www.dips.no
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 18, 2026 19:41+0000">2026-09-18</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 29, 2026 03:57+0000">2026-09-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,0 +1,31 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/R4/Encounter/agy1002907> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agy1002907"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter agy1002907</b></p><a name=\"agy1002907\"> </a><a name=\"hcagy1002907\"> </a><p><b>identifier</b>: <code>http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid</code>/1002907</p><p><b>status</b>: Planned</p><p><b>class</b>: [not stated]: AMB (AMB)</p></div>"
+  ] ;
+  fhir:Encounter.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid" ] ;
+     fhir:Identifier.value [ fhir:value "1002907" ]
+  ] ;
+  fhir:Encounter.status [ fhir:value "planned"] ;
+  fhir:Encounter.class [
+     fhir:Coding.code [ fhir:value "AMB" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://dips.no/fhir/R4/Encounter/agy1002907.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

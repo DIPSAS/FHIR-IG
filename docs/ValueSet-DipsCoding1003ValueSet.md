@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/ValueSet/DipsCoding1003ValueSet | *Version*:0.1.0 |
-| Active as of 2026-09-18 | *Computable Name*:DipsCoding1003ValueSet |
+| Active as of 2026-09-29 | *Computable Name*:DipsCoding1003ValueSet |
 
  
 Value Sets of DipsCoding1003ValueSet 
@@ -55,7 +55,7 @@ No Expansion for this valueset (Unknown Code System)
   "version" : "0.1.0",
   "name" : "DipsCoding1003ValueSet",
   "status" : "active",
-  "date" : "2026-09-18T19:41:15+00:00",
+  "date" : "2026-09-29T03:57:01+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

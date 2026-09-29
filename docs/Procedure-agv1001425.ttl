@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/R4/Procedure/agv1001425> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agv1001425"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://dips.no/fhir/R4/StructureDefinition/DIPSR4Procedure" ;
+       fhir:index 0 ;
+       fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSR4Procedure>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure agv1001425</b></p><a name=\"agv1001425\"> </a><a name=\"hcagv1001425\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DIPSR4Procedure.html\">DIPS R4 Procedure</a></p></div><p><b>identifier</b>: <code>http://dips.no/fhir/namingsystem/dips-procedureid</code>/1001425</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{urn:oid:2.16.578.1.12.4.1.1.7220 MP}\">NCMP Medisinske prosedyrekoder</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:2.16.578.1.12.4.1.1.7220 WMEC10}\">Ergonomisk utredning</span></p><p><b>subject</b>: <a href=\"Patient-cdp2009672.html\">BUP, BJØRN</a></p><p><b>encounter</b>: <a href=\"Encounter-agy1002907.html\">Encounter: identifier = http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid#1002907; status = planned; class = AMB (AMB)</a></p><p><b>performed</b>: 2023-07-20 02:56:30+0000 --&gt; 2023-07-20 02:56:30+0000</p></div>"
+  ] ;
+  fhir:Procedure.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-procedureid" ] ;
+     fhir:Identifier.value [ fhir:value "1001425" ]
+  ] ;
+  fhir:Procedure.status [ fhir:value "completed"] ;
+  fhir:Procedure.category [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.1.7220" ] ;
+       fhir:Coding.code [ fhir:value "MP" ] ;
+       fhir:Coding.display [ fhir:value "NCMP Medisinske prosedyrekoder" ]
+     ]
+  ] ;
+  fhir:Procedure.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.1.7220" ] ;
+       fhir:Coding.code [ fhir:value "WMEC10" ] ;
+       fhir:Coding.display [ fhir:value "Ergonomisk utredning" ]
+     ]
+  ] ;
+  fhir:Procedure.subject [
+     fhir:link <http://dips.no/fhir/R4/Patient/cdp2009672> ;
+     fhir:Reference.reference [ fhir:value "Patient/cdp2009672" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-patientid" ] ;
+       fhir:Identifier.value [ fhir:value "2009672" ]
+     ] ;
+     fhir:Reference.display [ fhir:value "BUP, BJØRN" ]
+  ] ;
+  fhir:Procedure.encounter [
+     fhir:link <http://dips.no/fhir/R4/Encounter/agy1002907> ;
+     fhir:Reference.reference [ fhir:value "Encounter/agy1002907" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://dips.no/fhir/namingsystem/dips-omsorgsepisodeid" ] ;
+       fhir:Identifier.value [ fhir:value "1002907" ]
+     ]
+  ] ;
+  fhir:Procedure.performedPeriod [
+     fhir:Period.start [ fhir:value "2023-07-20T02:56:30+00:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2023-07-20T02:56:30+00:00"^^xsd:dateTime ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://dips.no/fhir/R4/Procedure/agv1001425.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="f38e3a35-fbd5-45d8-a891-5f77aa5e3b3d"/>
+  <id value="150d12a9-d4c3-441e-8940-f07cd42432b7"/>
   <meta>
-    <lastUpdated value="2026-09-18T19:41:15.390+00:00"/>
+    <lastUpdated value="2026-09-29T03:57:01.897+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -19,7 +19,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html">codesystem ActCode v11.0.0 (CodeSystem)</a>
+              <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActCode.html">codesystem ActCode v11.0.0 (CodeSystem)</a>
               <span class="copy-text-inline">
                 <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/v3-ActCode|11.0.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
@@ -52,7 +52,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP">IMP</a>
+                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP">IMP</a>
                 </td>
                 <td/>
                 <td>
@@ -78,7 +78,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB">AMB</a>
+                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB">AMB</a>
                 </td>
                 <td/>
                 <td>
@@ -107,7 +107,7 @@
         <title value="DIPSEncounterV3"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-09-18T19:41:15+00:00"/>
+        <date value="2026-09-29T03:57:01+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -116,8 +116,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d2772c26-cf25-4521-bb40-33abfe9a1603"/>
-          <timestamp value="2026-09-18T19:45:19+00:00"/>
+          <identifier value="urn:uuid:be53e968-afca-44da-a58c-4c830ff9f0d1"/>
+          <timestamp value="2026-09-29T04:00:58+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -294,8 +294,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:baa032cd-6654-4df4-8e60-8428cdc0e26e"/>
-          <timestamp value="2026-09-18T19:45:19+00:00"/>
+          <identifier value="urn:uuid:3dc72a2a-0b0a-4cc5-8eaf-95aa4a3bb584"/>
+          <timestamp value="2026-09-29T04:00:58+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -522,8 +522,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a18f599e-750a-4904-8c61-82a1dc498449"/>
-          <timestamp value="2026-09-18T19:45:19+00:00"/>
+          <identifier value="urn:uuid:0e79e3ea-7845-4c26-b16c-38a56008050f"/>
+          <timestamp value="2026-09-29T04:00:58+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -737,8 +737,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e138f467-5d9a-4df5-bc02-7b49fc63665a"/>
-          <timestamp value="2026-09-18T19:45:19+00:00"/>
+          <identifier value="urn:uuid:462babb7-79a8-45db-96be-5c2898e6b2a5"/>
+          <timestamp value="2026-09-29T04:00:58+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -948,8 +948,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:65f67409-c968-4479-9190-50fa9660c974"/>
-          <timestamp value="2026-09-18T19:45:19+00:00"/>
+          <identifier value="urn:uuid:dcc3aa56-1ae5-4c05-b49f-e55d35b5926f"/>
+          <timestamp value="2026-09-29T04:00:58+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -1096,8 +1096,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:05ca5b80-d4b6-4414-86f2-a87e748b285c"/>
-          <timestamp value="2026-09-18T19:45:19+00:00"/>
+          <identifier value="urn:uuid:2e4db0ec-650f-4b1e-91ed-0b1af6ace845"/>
+          <timestamp value="2026-09-29T04:00:58+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1232,8 +1232,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e3b75f50-7f88-481e-8df3-6a6a92de8718"/>
-          <timestamp value="2026-09-18T19:45:19+00:00"/>
+          <identifier value="urn:uuid:4f80cb3a-3ce6-467a-86dd-5e6267f6827a"/>
+          <timestamp value="2026-09-29T04:00:58+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1368,8 +1368,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5eb9b06c-4f07-466f-bdbe-ee88f7f1a8b7"/>
-          <timestamp value="2026-09-18T19:45:19+00:00"/>
+          <identifier value="urn:uuid:7a282579-d9cd-4664-93b7-ea6e90bededa"/>
+          <timestamp value="2026-09-29T04:00:58+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1504,8 +1504,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:28cf294f-f1f9-4656-88a6-f11f5300e35f"/>
-          <timestamp value="2026-09-18T19:45:19+00:00"/>
+          <identifier value="urn:uuid:d957a1b3-c9bc-4f9b-aeec-6e8ffcec99e7"/>
+          <timestamp value="2026-09-29T04:00:59+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1703,8 +1703,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1b333963-e7d8-4eab-9b26-70f75de9ca4c"/>
-          <timestamp value="2026-09-18T19:45:19+00:00"/>
+          <identifier value="urn:uuid:198297bc-3daf-4430-a9f9-dbea07db30ce"/>
+          <timestamp value="2026-09-29T04:00:59+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -1872,8 +1872,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f3a064f2-b0d6-41aa-9b7f-62140da112c6"/>
-          <timestamp value="2026-09-18T19:45:19+00:00"/>
+          <identifier value="urn:uuid:637dad94-276b-4441-bda8-83d3abae93b8"/>
+          <timestamp value="2026-09-29T04:00:59+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>

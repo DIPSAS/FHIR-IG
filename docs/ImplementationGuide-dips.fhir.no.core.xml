@@ -11,7 +11,7 @@
   <name value="DIPSCore"/>
   <title value="DIPS Core Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-09-18T19:41:15+00:00"/>
+  <date value="2026-09-29T03:57:01+00:00"/>
   <publisher value="DIPS AS"/>
   <contact>
     <name value="Lars-Andreas Nystad"/>
@@ -38,7 +38,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="7.3.0"/>
+    <version value="7.4.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -73,6 +73,14 @@
       </extension>
       <extension url="value">
         <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.no/Fhir/Profile/Diagnosis#ATC-Code"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -603,6 +611,14 @@
         <valueCode value="special-url"/>
       </extension>
       <extension url="value">
+        <valueString value="http://hl7.no/Fhir/Profile/Diagnosis#ATC-Code"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
         <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocRefContextAppointment"/>
       </extension>
     </extension>
@@ -1111,6 +1127,12 @@
     <grouping id="DocumentReferenceProfiles">
       <name value="DocumentReference Profiles"/>
     </grouping>
+    <grouping id="ConditionProfiles">
+      <name value="Condition Profiles"/>
+    </grouping>
+    <grouping id="ProcedureProfiles">
+      <name value="Procedure Profiles"/>
+    </grouping>
     <grouping id="EncounterProfiles">
       <name value="Encounter Profiles"/>
     </grouping>
@@ -1173,6 +1195,26 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/afn1003621"/>
+      </reference>
+      <name value="afn1003621"/>
+      <exampleCanonical value="http://dips.no/fhir/R4/StructureDefinition/DIPSR4Condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/afn1003623"/>
+      </reference>
+      <name value="afn1003623"/>
+      <exampleCanonical value="http://dips.no/fhir/R4/StructureDefinition/DIPSR4Condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="PractitionerRole"/>
       </extension>
       <reference>
@@ -1180,6 +1222,16 @@
       </reference>
       <name value="agb1000204"/>
       <exampleCanonical value="http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRole"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/agb1001233"/>
+      </reference>
+      <name value="agb1001233"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1223,6 +1275,26 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/agv1001423"/>
+      </reference>
+      <name value="agv1001423"/>
+      <exampleCanonical value="http://dips.no/fhir/R4/StructureDefinition/DIPSR4Procedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/agv1001425"/>
+      </reference>
+      <name value="agv1001425"/>
+      <exampleCanonical value="http://dips.no/fhir/R4/StructureDefinition/DIPSR4Procedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Encounter"/>
       </extension>
       <reference>
@@ -1230,6 +1302,26 @@
       </reference>
       <name value="agy1002135"/>
       <exampleCanonical value="http://dips.no/fhir/R4/StructureDefinition/DIPSR4Encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/agy1002679-diag"/>
+      </reference>
+      <name value="agy1002679-diag"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/agy1002907"/>
+      </reference>
+      <name value="agy1002907"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1529,6 +1621,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/cdp2009672"/>
+      </reference>
+      <name value="cdp2009672"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -1593,6 +1695,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/DiagnosisATCCode"/>
+      </reference>
+      <name value="Diagnosis ATC Code"/>
+      <description value="ATC code associated with a diagnosis, carried as a Coding on DIPS Condition."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/DIPSDocumentReferenceDictatedTimeNamedQuery"/>
       </reference>
       <name value="Dictated Time (named-query URL variant)"/>
@@ -1620,6 +1733,54 @@
       <name value="DIPS Comment Text"/>
       <description value="A free-text comment associated with this phone number."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSConditionAsserterReferenceOrg"/>
+      </reference>
+      <name value="DIPS Condition Asserter Reference (Organization)"/>
+      <description value="Organization form of a DIPS Condition asserter. Not referenced by DIPSR4Condition - base FHIR does not permit Organization on Condition.asserter."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="SupportingReferenceProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSConditionAsserterReferencePR"/>
+      </reference>
+      <name value="DIPS Condition Asserter Reference (PractitionerRole)"/>
+      <description value="The practitioner role that asserted a DIPS Condition, constraining the identifiers the asserter reference may carry."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="SupportingReferenceProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSConditionEncounterReference"/>
+      </reference>
+      <name value="DIPS Condition Encounter Reference"/>
+      <description value="The encounter a DIPS Condition was recorded on, constraining the identifiers the encounter reference may carry."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="SupportingReferenceProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSConditionSubjectReference"/>
+      </reference>
+      <name value="DIPS Condition Subject Reference"/>
+      <description value="The patient a DIPS Condition is about, constraining the identifiers the subject reference may carry."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="SupportingReferenceProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1687,6 +1848,66 @@
       <name value="DIPS Monitoring Notes"/>
       <description value="Free-text clinical notes recorded against this remote monitoring episode of care."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSProcedureEncounterReference"/>
+      </reference>
+      <name value="DIPS Procedure Encounter Reference"/>
+      <description value="The episode of care a DIPS Procedure was recorded on, constraining the identifiers the encounter reference may carry."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="SupportingReferenceProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSProcedurePerformerAuthorreference"/>
+      </reference>
+      <name value="DIPS Procedure Performer Reference"/>
+      <description value="The practitioner role that performed a DIPS Procedure, constraining the identifiers the performer reference may carry."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="SupportingReferenceProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSProcedureSubjectReference"/>
+      </reference>
+      <name value="DIPS Procedure Subject Reference"/>
+      <description value="The patient a DIPS Procedure is about, constraining the identifiers the subject reference may carry."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="SupportingReferenceProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSR4Condition"/>
+      </reference>
+      <name value="DIPS R4 Condition"/>
+      <description value="Diagnosis registered on a patient in DIPS Arena. Resource ids carry the `afn` prefix."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="ConditionProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DIPSR4Procedure"/>
+      </reference>
+      <name value="DIPS R4 Procedure"/>
+      <description value="Procedure registered on a patient in DIPS Arena. Resource ids carry the `agv` prefix."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="ProcedureProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

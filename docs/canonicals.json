@@ -285,6 +285,34 @@
   "name" : "DIPSBasisPractitionerR4"
 },
 {
+  "id" : "DIPSConditionAsserterReferenceOrg",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSConditionAsserterReferenceOrg",
+  "version" : "0.1.0",
+  "name" : "DIPSConditionAsserterReferenceOrg"
+},
+{
+  "id" : "DIPSConditionAsserterReferencePR",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSConditionAsserterReferencePR",
+  "version" : "0.1.0",
+  "name" : "DIPSConditionAsserterReferencePR"
+},
+{
+  "id" : "DIPSConditionEncounterReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSConditionEncounterReference",
+  "version" : "0.1.0",
+  "name" : "DIPSConditionEncounterReference"
+},
+{
+  "id" : "DIPSConditionSubjectReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSConditionSubjectReference",
+  "version" : "0.1.0",
+  "name" : "DIPSConditionSubjectReference"
+},
+{
   "id" : "DIPSEncounterLocation",
   "type" : "StructureDefinition",
   "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSEncounterLocation",
@@ -383,11 +411,46 @@
   "name" : "DIPSPractitionerRole"
 },
 {
+  "id" : "DIPSProcedureEncounterReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSProcedureEncounterReference",
+  "version" : "0.1.0",
+  "name" : "DIPSProcedureEncounterReference"
+},
+{
+  "id" : "DIPSProcedurePerformerAuthorreference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSProcedurePerformerAuthorreference",
+  "version" : "0.1.0",
+  "name" : "DIPSProcedurePerformerAuthorreference"
+},
+{
+  "id" : "DIPSProcedureSubjectReference",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSProcedureSubjectReference",
+  "version" : "0.1.0",
+  "name" : "DIPSProcedureSubjectReference"
+},
+{
+  "id" : "DIPSR4Condition",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSR4Condition",
+  "version" : "0.1.0",
+  "name" : "DIPSR4Condition"
+},
+{
   "id" : "DIPSR4Encounter",
   "type" : "StructureDefinition",
   "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSR4Encounter",
   "version" : "0.1.0",
   "name" : "DIPSR4Encounter"
+},
+{
+  "id" : "DIPSR4Procedure",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/R4/StructureDefinition/DIPSR4Procedure",
+  "version" : "0.1.0",
+  "name" : "DIPSR4Procedure"
 },
 {
   "id" : "DIPSRelatedPerson",
@@ -1683,6 +1746,13 @@
   "url" : "http://dips.no/fhir/observation/requester-signing-status-extension",
   "version" : "0.1.0",
   "name" : "requesterSigningStatus"
+},
+{
+  "id" : "DiagnosisATCCode",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.no/Fhir/Profile/Diagnosis#ATC-Code",
+  "version" : "0.1.0",
+  "name" : "DiagnosisATCCode"
 },
 {
   "id" : "DipsPatientLanguageId",

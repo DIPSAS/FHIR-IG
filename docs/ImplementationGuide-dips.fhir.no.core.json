@@ -10,7 +10,7 @@
   "name" : "DIPSCore",
   "title" : "DIPS Core Implementation Guide",
   "status" : "draft",
-  "date" : "2026-09-18T19:41:15+00:00",
+  "date" : "2026-09-29T03:57:01+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -39,7 +39,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.3.0"
+    "version" : "7.4.0"
   },
   {
     "id" : "hl7ext",
@@ -83,6 +83,17 @@
       {
         "url" : "value",
         "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.no/Fhir/Profile/Diagnosis#ATC-Code"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -812,6 +823,17 @@
       },
       {
         "url" : "value",
+        "valueString" : "http://hl7.no/Fhir/Profile/Diagnosis#ATC-Code"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
         "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocRefContextAppointment"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -1511,6 +1533,14 @@
       "name" : "DocumentReference Profiles"
     },
     {
+      "id" : "ConditionProfiles",
+      "name" : "Condition Profiles"
+    },
+    {
+      "id" : "ProcedureProfiles",
+      "name" : "Procedure Profiles"
+    },
+    {
       "id" : "EncounterProfiles",
       "name" : "Encounter Profiles"
     },
@@ -1590,6 +1620,28 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/afn1003621"
+      },
+      "name" : "afn1003621",
+      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/DIPSR4Condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/afn1003623"
+      },
+      "name" : "afn1003623",
+      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/DIPSR4Condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "PractitionerRole"
       }],
       "reference" : {
@@ -1597,6 +1649,17 @@
       },
       "name" : "agb1000204",
       "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRole"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/agb1001233"
+      },
+      "name" : "agb1001233",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1645,6 +1708,28 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/agv1001423"
+      },
+      "name" : "agv1001423",
+      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/DIPSR4Procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/agv1001425"
+      },
+      "name" : "agv1001425",
+      "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/DIPSR4Procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Encounter"
       }],
       "reference" : {
@@ -1652,6 +1737,28 @@
       },
       "name" : "agy1002135",
       "exampleCanonical" : "http://dips.no/fhir/R4/StructureDefinition/DIPSR4Encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/agy1002679-diag"
+      },
+      "name" : "agy1002679-diag",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/agy1002907"
+      },
+      "name" : "agy1002907",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1981,6 +2088,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/cdp2009672"
+      },
+      "name" : "cdp2009672",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -2051,6 +2169,18 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/DiagnosisATCCode"
+      },
+      "name" : "Diagnosis ATC Code",
+      "description" : "ATC code associated with a diagnosis, carried as a Coding on DIPS Condition.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/DIPSDocumentReferenceDictatedTimeNamedQuery"
       },
       "name" : "Dictated Time (named-query URL variant)",
@@ -2080,6 +2210,58 @@
       "name" : "DIPS Comment Text",
       "description" : "A free-text comment associated with this phone number.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSConditionAsserterReferenceOrg"
+      },
+      "name" : "DIPS Condition Asserter Reference (Organization)",
+      "description" : "Organization form of a DIPS Condition asserter. Not referenced by DIPSR4Condition - base FHIR does not permit Organization on Condition.asserter.",
+      "exampleBoolean" : false,
+      "groupingId" : "SupportingReferenceProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSConditionAsserterReferencePR"
+      },
+      "name" : "DIPS Condition Asserter Reference (PractitionerRole)",
+      "description" : "The practitioner role that asserted a DIPS Condition, constraining the identifiers the asserter reference may carry.",
+      "exampleBoolean" : false,
+      "groupingId" : "SupportingReferenceProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSConditionEncounterReference"
+      },
+      "name" : "DIPS Condition Encounter Reference",
+      "description" : "The encounter a DIPS Condition was recorded on, constraining the identifiers the encounter reference may carry.",
+      "exampleBoolean" : false,
+      "groupingId" : "SupportingReferenceProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSConditionSubjectReference"
+      },
+      "name" : "DIPS Condition Subject Reference",
+      "description" : "The patient a DIPS Condition is about, constraining the identifiers the subject reference may carry.",
+      "exampleBoolean" : false,
+      "groupingId" : "SupportingReferenceProfiles"
     },
     {
       "extension" : [{
@@ -2153,6 +2335,71 @@
       "name" : "DIPS Monitoring Notes",
       "description" : "Free-text clinical notes recorded against this remote monitoring episode of care.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSProcedureEncounterReference"
+      },
+      "name" : "DIPS Procedure Encounter Reference",
+      "description" : "The episode of care a DIPS Procedure was recorded on, constraining the identifiers the encounter reference may carry.",
+      "exampleBoolean" : false,
+      "groupingId" : "SupportingReferenceProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSProcedurePerformerAuthorreference"
+      },
+      "name" : "DIPS Procedure Performer Reference",
+      "description" : "The practitioner role that performed a DIPS Procedure, constraining the identifiers the performer reference may carry.",
+      "exampleBoolean" : false,
+      "groupingId" : "SupportingReferenceProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSProcedureSubjectReference"
+      },
+      "name" : "DIPS Procedure Subject Reference",
+      "description" : "The patient a DIPS Procedure is about, constraining the identifiers the subject reference may carry.",
+      "exampleBoolean" : false,
+      "groupingId" : "SupportingReferenceProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSR4Condition"
+      },
+      "name" : "DIPS R4 Condition",
+      "description" : "Diagnosis registered on a patient in DIPS Arena. Resource ids carry the `afn` prefix.",
+      "exampleBoolean" : false,
+      "groupingId" : "ConditionProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSR4Procedure"
+      },
+      "name" : "DIPS R4 Procedure",
+      "description" : "Procedure registered on a patient in DIPS Arena. Resource ids carry the `agv` prefix.",
+      "exampleBoolean" : false,
+      "groupingId" : "ProcedureProfiles"
     },
     {
       "extension" : [{
