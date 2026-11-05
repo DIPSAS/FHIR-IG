@@ -36,8 +36,8 @@ Profile: [DIPS Vital Signs Observation - Blood Pressure](StructureDefinition-DIP
 
 **performer**: 
 
-* [PractitionerRole: identifier = urn:oid:1.3.6.1.4.1.9038.51.1#27](PractitionerRole-agb27.md)
-* [Organization: identifier = urn:oid:1.3.6.1.4.1.9038.70.3#22](Organization-afa22.md)
+* [(no practitioner) (urn:oid:1.3.6.1.4.1.9038.51.1#27)](PractitionerRole-agb27.md)
+* [Unnamed Organization (urn:oid:1.3.6.1.4.1.9038.70.3#22)](Organization-afa22.md)
 
 > **component****code**: Systolic blood pressure**value**: 123 mm[Hg] (Details: UCUM codemm[Hg] = 'mm[Hg]')
 

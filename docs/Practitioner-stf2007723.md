@@ -6,7 +6,9 @@
 
 ## Example Practitioner: Location details of stf2007723
 
-**identifier**: HelsepersonellregisteretNummer/1215
+Anonymous Practitioner (urn:oid:2.16.578.1.12.4.1.4.4#HelsepersonellregisteretNummer#1215)
+
+-------
 
 
 

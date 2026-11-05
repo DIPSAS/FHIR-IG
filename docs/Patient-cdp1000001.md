@@ -15,10 +15,10 @@ Skålsvik (Testplan Edi), Eddie(official) Male, DoB: 1959-04-23 ( http://dips.no
 | | | | |
 | :--- | :--- | :--- | :--- |
 | Active: | true | Deceased: | false |
-| Other Id: | FellesHjelpenummer/23445949728 (use: temp, ) | | |
+| Other Id: | FellesHjelpenummer/23445949728 (use: temp) | | |
 | Contact Detail | Bestemorenga Bodø 18 8013 Norge (home) | | |
 | Language: | Engelsk | | |
-| Links: | * General Practitioner: [PractitionerRole: identifier = urn:oid:1.3.6.1.4.1.9038.60.1#57](PractitionerRole-agb57.md)
+| Links: | * General Practitioner: [(no practitioner) (urn:oid:1.3.6.1.4.1.9038.60.1#57)](PractitionerRole-agb57.md)
  | | |
 
 

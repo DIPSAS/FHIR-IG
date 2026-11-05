@@ -3,6 +3,6 @@
 <PractitionerRole xmlns="http://hl7.org/fhir">
   <id value="agb1000043"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PractitionerRole agb1000043</b></p><a name="agb1000043"> </a><a name="hcagb1000043"> </a></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PractitionerRole agb1000043</b></p><a name="agb1000043"> </a><a name="hcagb1000043"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">(no practitioner)</p><hr/></div>
   </text>
 </PractitionerRole>

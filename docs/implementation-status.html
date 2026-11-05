@@ -315,9 +315,9 @@ schedule.</p>
     <tr>
       <td>VitalSign</td>
       <td>13 <code class="language-plaintext highlighter-rouge">DIPSVitalSignsObservation*</code> profiles + reference profiles + 6 DIPS-specific extensions</td>
-      <td>2.0.362</td>
-      <td>2026-09-16</td>
-      <td>Verified, with open items — see <a href="#vitalsign">VitalSign</a></td>
+      <td>2.0.415 (qSOFA only; others 2.0.362)</td>
+      <td>2026-10-27</td>
+      <td>qSOFA renamed and SNOMED-coded in the IG ahead of the service; fhir.core.r4 change pending with its developer. Other open items unchanged — see <a href="#vitalsign">VitalSign</a></td>
     </tr>
     <tr>
       <td>DiagnosticReport</td>
@@ -354,11 +354,17 @@ of "(baseline)".</p>
 <p><strong>Fixed</strong></p>
 
 <ul>
-  <li>Missing <code class="language-plaintext highlighter-rouge">^url</code> added to <code class="language-plaintext highlighter-rouge">DIPSVitalSignsObservationQSOFAScore</code> (matches the served, non-canonical
-scheme already used by the other 12).</li>
+  <li>Missing <code class="language-plaintext highlighter-rouge">^url</code> added to the qSOFA profile, then named <code class="language-plaintext highlighter-rouge">DIPSVitalSignsObservationQSOFAScore</code>
+(matches the served, non-canonical scheme already used by the other 12). The profile has since
+been renamed <code class="language-plaintext highlighter-rouge">DIPSVitalSignsObservationqSOFA</code> — see Open.</li>
   <li>Dead <code class="language-plaintext highlighter-rouge">code.coding[HeartRateCode]</code> slice removed from HeartRate and Pulse — matched no real slice on
 either profile's NoDomain parent (<code class="language-plaintext highlighter-rouge">HeartRateSNOMEDCode</code>/<code class="language-plaintext highlighter-rouge">PulseSNOMEDCode</code>), a harmless but
 meaningless leftover.</li>
+  <li><code class="language-plaintext highlighter-rouge">^url</code> added to the 10 VitalSign CodeSystems and the 6 GCS/qSOFA ValueSets that had none, so they
+publish as <code class="language-plaintext highlighter-rouge">http://dips.no/fhir/CodeSystem/&lt;id&gt;</code> / <code class="language-plaintext highlighter-rouge">http://dips.no/fhir/ValueSet/&lt;id&gt;</code> instead of
+under the IG canonical (<code class="language-plaintext highlighter-rouge">http://dips.no/fhir/R4/...</code>). The service already serves the CodeSystem
+URLs without <code class="language-plaintext highlighter-rouge">/R4/</code>, so served qSOFA/GCS/BMI/PrePostduktal values failed the IG's required
+bindings; the other VitalSign ValueSets already used this scheme.</li>
 </ul>
 
 <p><strong>Open</strong></p>
@@ -372,13 +378,38 @@ IG — a fix was drafted but not kept, still needs adding.</li>
 under a URL matching neither the real <code class="language-plaintext highlighter-rouge">hl7.fhir.no.domain.vitalsigns</code> extension nor any
 DIPS-specific one — a <code class="language-plaintext highlighter-rouge">fhir.core.r4</code> template bug (confirmed self-contradictory even within one
 template), not encoded in the IG; needs a developer fix at the source, not an IG change.</li>
+  <li><strong>qSOFA: IG deliberately ahead of the service (2026-10-27).</strong> The two changes below were made in
+the IG first; the <code class="language-plaintext highlighter-rouge">fhir.core.r4</code> developer has been told, and the service is expected to follow.
+Until it does, served qSOFA resources don't conform to the IG profile. Checked against
+<code class="language-plaintext highlighter-rouge">fhir.core.r4</code> <code class="language-plaintext highlighter-rouge">2.0.415</code>.
+    <ul>
+      <li>Profile renamed from <code class="language-plaintext highlighter-rouge">DIPSVitalSignsObservationQSOFAScore</code> to <code class="language-plaintext highlighter-rouge">DIPSVitalSignsObservationqSOFA</code>
+(<code class="language-plaintext highlighter-rouge">^url</code> included). The service still uses <code class="language-plaintext highlighter-rouge">.../DIPSVitalSignsObservationQSOFAScore</code> in the QSOFA
+<code class="language-plaintext highlighter-rouge">config.json</code> (<code class="language-plaintext highlighter-rouge">Profiles</code> <code class="language-plaintext highlighter-rouge">Name</code>/<code class="language-plaintext highlighter-rouge">Url</code>, <code class="language-plaintext highlighter-rouge">Templates</code> <code class="language-plaintext highlighter-rouge">Source</code>/<code class="language-plaintext highlighter-rouge">Target</code>), in <code class="language-plaintext highlighter-rouge">fhir-template.hbs</code>'s
+<code class="language-plaintext highlighter-rouge">meta.profile</code> and in the VitalSign integration test. <code class="language-plaintext highlighter-rouge">ObservationCapabilityStatement.xml</code> lists
+<code class="language-plaintext highlighter-rouge">DIPSVitalSignsObservationQSOFA</code> (a bare name, differing from the new IG id only in the case of
+the <code class="language-plaintext highlighter-rouge">q</code>).</li>
+      <li>Components re-coded with SNOMED CT, reusing the codes of the matching RespirationRate,
+Bloodpressure and Consciousness profiles (respiration rate <code class="language-plaintext highlighter-rouge">271625008</code>, systolic blood pressure
+<code class="language-plaintext highlighter-rouge">4471000202106</code>, mental status <code class="language-plaintext highlighter-rouge">1104441000000107</code>), and <code class="language-plaintext highlighter-rouge">DIPSQSOFAcomponentCodeSystem</code> removed.
+The service's <code class="language-plaintext highlighter-rouge">fhir-template.hbs</code> still emits the old <code class="language-plaintext highlighter-rouge">DIPSQSOFAcomponentCodeSystem</code> codes
+(<code class="language-plaintext highlighter-rouge">QsofaResRate</code>/<code class="language-plaintext highlighter-rouge">QsofaSystolicBP</code>/<code class="language-plaintext highlighter-rouge">QsofaMentalStatus</code>), and <code class="language-plaintext highlighter-rouge">composition-template.hbs</code> matches
+inbound components by those codes, so a SNOMED-coded create loses its component values. Both
+the <code class="language-plaintext highlighter-rouge">src/VitalSign</code> and <code class="language-plaintext highlighter-rouge">helm/</code> copies of the templates need the change.</li>
+    </ul>
+  </li>
+  <li>qSOFA total-score code <code class="language-plaintext highlighter-rouge">63451000122107</code> (used by both the IG and the service's <code class="language-plaintext highlighter-rouge">config.json</code> and
+<code class="language-plaintext highlighter-rouge">fhir-template.hbs</code>) is in neither the SNOMED CT International Edition nor the Norwegian edition
+(<code class="language-plaintext highlighter-rouge">SNOMEDCT-NO</code>, checked 2026-10-27), so the IG Publisher reports it as an unknown code. Its
+origin needs confirming before it is changed on either side.</li>
 </ul>
 
-<p><strong>Handled outside this IG</strong></p>
+<p><strong>Corrected</strong></p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">ObservationCapabilityStatement.xml</code>'s <code class="language-plaintext highlighter-rouge">supportedProfile</code> naming (<code class="language-plaintext highlighter-rouge">QSOFA</code> → <code class="language-plaintext highlighter-rouge">QSOFAScore</code>) was
-corrected directly in <code class="language-plaintext highlighter-rouge">fhir.core.r4</code>, separately from this IG.</li>
+  <li>An earlier version of this page said <code class="language-plaintext highlighter-rouge">ObservationCapabilityStatement.xml</code>'s <code class="language-plaintext highlighter-rouge">supportedProfile</code>
+had been renamed from <code class="language-plaintext highlighter-rouge">QSOFA</code> to <code class="language-plaintext highlighter-rouge">QSOFAScore</code> in <code class="language-plaintext highlighter-rouge">fhir.core.r4</code>. As of <code class="language-plaintext highlighter-rouge">2.0.415</code>
+(<code class="language-plaintext highlighter-rouge">origin/master</code>), it still reads <code class="language-plaintext highlighter-rouge">DIPSVitalSignsObservationQSOFA</code>.</li>
 </ul>
 
 <h3 id="diagnosticreport">DiagnosticReport</h3>
@@ -536,7 +567,7 @@ sets <code class="language-plaintext highlighter-rouge">Meta.Profile</code>, so 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 29, 2026 04:18+0000">2026-09-29</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 5, 2026 07:34+0000">2026-11-05</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

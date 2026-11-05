@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem | *Version*:0.1.0 |
-| Draft as of 2026-09-29 | *Computable Name*:DIPSGCSMotorScoreCodeSystem |
+| *Official URL*:http://dips.no/fhir/CodeSystem/DIPSGCSMotorScoreCodeSystem | *Version*:0.1.0 |
+| Draft as of 2026-11-05 | *Computable Name*:DIPSGCSMotorScoreCodeSystem |
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
@@ -23,14 +23,14 @@
 {
   "resourceType" : "CodeSystem",
   "id" : "DIPSGCSMotorScoreCodeSystem",
-  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem",
+  "url" : "http://dips.no/fhir/CodeSystem/DIPSGCSMotorScoreCodeSystem",
   "identifier" : [{
     "system" : "http://dips.no/fhir/namingsystem/dips-gcs-motor"
   }],
   "version" : "0.1.0",
   "name" : "DIPSGCSMotorScoreCodeSystem",
   "status" : "draft",
-  "date" : "2026-09-29T04:18:52+00:00",
+  "date" : "2026-11-05T07:34:57+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

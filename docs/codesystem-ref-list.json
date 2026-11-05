@@ -1,6 +1,6 @@
 {
   "codeSystems" : [{
-    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod",
+    "url" : "http://dips.no/fhir/CodeSystem/DIPSBodyMassIndexMeasurementMethod",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DIPSBodyMassIndexMeasurementMethod",
@@ -11,7 +11,7 @@
     "ValueSet-DIPSVitalSignsObservationBodyMassIndexFormula.html" : "DIPSVitalSignsObservationBodyMassIndexFormula"
   },
   {
-    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem",
+    "url" : "http://dips.no/fhir/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DIPSGCSEyeOpeningScoreCodeSystem",
@@ -22,7 +22,7 @@
     "ValueSet-DIPSGCSEyeOpeningScore.html" : "DIPSGCSEyeOpeningScore"
   },
   {
-    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem",
+    "url" : "http://dips.no/fhir/CodeSystem/DIPSGCSMotorScoreCodeSystem",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DIPSGCSMotorScoreCodeSystem",
@@ -33,7 +33,7 @@
     "ValueSet-DIPSGCSMotorScore.html" : "DIPSGCSMotorScore"
   },
   {
-    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem",
+    "url" : "http://dips.no/fhir/CodeSystem/DIPSGCSVerbalScoreCodeSystem",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DIPSGCSVerbalScoreCodeSystem",
@@ -42,6 +42,74 @@
     "uses" : {
     },
     "ValueSet-DIPSGCSVerbalScore.html" : "DIPSGCSVerbalScore"
+  },
+  {
+    "url" : "http://dips.no/fhir/CodeSystem/DIPSMeasurementMethod",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSMeasurementMethod",
+    "title" : null,
+    "description" : "",
+    "uses" : {
+    },
+    "ValueSet-DIPSVitalSignsObservationPulseMeasurementMethod.html" : "DIPSVitalSignsObservationPulseMeasurementMethod",
+    "ValueSet-DIPSVitalSignsObservationBloodPressureMeasurementMethod.html" : "DIPSVitalSignsObservationBloodPressureMeasurementMethod",
+    "ValueSet-DIPSVitalSignsObservationHeartRateMeasurementMethod.html" : "DIPSVitalSignsObservationHeartRateMeasurementMethod"
+  },
+  {
+    "url" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreBPCodeSystem",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSQSOFAScoreBPCodeSystem",
+    "title" : null,
+    "description" : "",
+    "uses" : {
+    },
+    "ValueSet-DIPSQSOFAScoreBPValueSet.html" : "DIPSQSOFAScoreBPValueSet"
+  },
+  {
+    "url" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSQSOFAScoreMentalSatusCodeSystem",
+    "title" : null,
+    "description" : "",
+    "uses" : {
+    },
+    "ValueSet-DIPSQSOFAScoreMentalSatusValueSet.html" : "DIPSQSOFAScoreMentalSatusValueSet"
+  },
+  {
+    "url" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreResRateCodeSystem",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSQSOFAScoreResRateCodeSystem",
+    "title" : null,
+    "description" : "",
+    "uses" : {
+    },
+    "ValueSet-DIPSQSOFAScoreResRateValueSet.html" : "DIPSQSOFAScoreBPValueSet"
+  },
+  {
+    "url" : "http://dips.no/fhir/CodeSystem/DIPSVitalSignsObservationConsciousness",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSVitalSignsObservationConsciousness",
+    "title" : null,
+    "description" : "",
+    "uses" : {
+    },
+    "ValueSet-DIPSVitalSignsObservationConsciousness.html" : "SNOMED CT Consciousness Structures"
+  },
+  {
+    "url" : "http://dips.no/fhir/CodeSystem/DIPSVitalSignsObservationPrePostduktal",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSVitalSignsObservationPrePostduktal",
+    "title" : null,
+    "description" : "",
+    "uses" : {
+    },
+    "ValueSet-DIPSVitalSignsObservationPrePostduktal.html" : "DIPSVitalSignsObservationPrePostduktal"
   },
   {
     "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSLocation",
@@ -64,74 +132,6 @@
     "uses" : {
     },
     "ValueSet-LocationTypes.html" : "LocationTypes"
-  },
-  {
-    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSMeasurementMethod",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "DIPSMeasurementMethod",
-    "title" : null,
-    "description" : "",
-    "uses" : {
-    },
-    "ValueSet-DIPSVitalSignsObservationBloodPressureMeasurementMethod.html" : "DIPSVitalSignsObservationBloodPressureMeasurementMethod",
-    "ValueSet-DIPSVitalSignsObservationHeartRateMeasurementMethod.html" : "DIPSVitalSignsObservationHeartRateMeasurementMethod",
-    "ValueSet-DIPSVitalSignsObservationPulseMeasurementMethod.html" : "DIPSVitalSignsObservationPulseMeasurementMethod"
-  },
-  {
-    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "DIPSQSOFAScoreBPCodeSystem",
-    "title" : null,
-    "description" : "",
-    "uses" : {
-    },
-    "ValueSet-DIPSQSOFAScoreBPValueSet.html" : "DIPSQSOFAScoreBPValueSet"
-  },
-  {
-    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "DIPSQSOFAScoreMentalSatusCodeSystem",
-    "title" : null,
-    "description" : "",
-    "uses" : {
-    },
-    "ValueSet-DIPSQSOFAScoreMentalSatusValueSet.html" : "DIPSQSOFAScoreMentalSatusValueSet"
-  },
-  {
-    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreResRateCodeSystem",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "DIPSQSOFAScoreResRateCodeSystem",
-    "title" : null,
-    "description" : "",
-    "uses" : {
-    },
-    "ValueSet-DIPSQSOFAScoreResRateValueSet.html" : "DIPSQSOFAScoreBPValueSet"
-  },
-  {
-    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "DIPSVitalSignsObservationConsciousness",
-    "title" : null,
-    "description" : "",
-    "uses" : {
-    },
-    "ValueSet-DIPSVitalSignsObservationConsciousness.html" : "SNOMED CT Consciousness Structures"
-  },
-  {
-    "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "DIPSVitalSignsObservationPrePostduktal",
-    "title" : null,
-    "description" : "",
-    "uses" : {
-    },
-    "ValueSet-DIPSVitalSignsObservationPrePostduktal.html" : "DIPSVitalSignsObservationPrePostduktal"
   },
   {
     "url" : "http://hl7.org/fhir/address-type",
@@ -299,8 +299,8 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "https://hl7.no/fhir/no-domain/vitalsigns/ValueSet-NoDomainVitalSignsHeartRateBodySiteValueSet.html" : "NoDomainVitalSignsHeartRateBodySite-ValueSet",
-    "ValueSet-DIPSVitalSignsObservationBodySite.html" : "DIPSVitalSignsObservationBodySite"
+    "ValueSet-DIPSVitalSignsObservationBodySite.html" : "DIPSVitalSignsObservationBodySite",
+    "https://hl7.no/fhir/no-domain/vitalsigns/ValueSet-NoDomainVitalSignsHeartRateBodySiteValueSet.html" : "NoDomainVitalSignsHeartRateBodySite-ValueSet"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/condition-clinical",

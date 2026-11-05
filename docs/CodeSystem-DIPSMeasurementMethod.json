@@ -3,16 +3,16 @@
   "id" : "DIPSMeasurementMethod",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DIPSMeasurementMethod</b></p><a name=\"DIPSMeasurementMethod\"> </a><a name=\"hcDIPSMeasurementMethod\"> </a><p>This  code system <code>http://dips.no/fhir/R4/CodeSystem/DIPSMeasurementMethod</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">D0003<a name=\"DIPSMeasurementMethod-D0003\"> </a></td><td>Automatisk, non-invasivt</td><td>Automatisk, non-invasivt</td></tr><tr><td style=\"white-space:nowrap\">D0004<a name=\"DIPSMeasurementMethod-D0004\"> </a></td><td>Automatisk, invasivt</td><td>Automatisk, invasivt</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DIPSMeasurementMethod</b></p><a name=\"DIPSMeasurementMethod\"> </a><a name=\"hcDIPSMeasurementMethod\"> </a><p>This  code system <code>http://dips.no/fhir/CodeSystem/DIPSMeasurementMethod</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">D0003<a name=\"DIPSMeasurementMethod-D0003\"> </a></td><td>Automatisk, non-invasivt</td><td>Automatisk, non-invasivt</td></tr><tr><td style=\"white-space:nowrap\">D0004<a name=\"DIPSMeasurementMethod-D0004\"> </a></td><td>Automatisk, invasivt</td><td>Automatisk, invasivt</td></tr></table></div>"
   },
-  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSMeasurementMethod",
+  "url" : "http://dips.no/fhir/CodeSystem/DIPSMeasurementMethod",
   "identifier" : [{
     "system" : "http://dips.no/fhir/namingsystem/dips-measurementmethod"
   }],
   "version" : "0.1.0",
   "name" : "DIPSMeasurementMethod",
   "status" : "draft",
-  "date" : "2026-09-29T04:18:52+00:00",
+  "date" : "2026-11-05T07:34:57+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

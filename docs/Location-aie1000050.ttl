@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "aie1000050"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location aie1000050</b></p><a name=\"aie1000050\"> </a><a name=\"hcaie1000050\"> </a><p><b>identifier</b>: <code>http://dips.no/fhir/namingsystem/dips-bedid</code>/1000050</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location aie1000050</b></p><a name=\"aie1000050\"> </a><a name=\"hcaie1000050\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Unnamed Location (http://dips.no/fhir/namingsystem/dips-bedid#1000050)</p><hr/></div>"
   ] ;
   fhir:Location.identifier [
      fhir:index 0 ;

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBodyHeight | *Version*:0.1.0 |
-| Draft as of 2026-09-29 | *Computable Name*:DIPSVitalSignsObservationBodyHeight |
+| Draft as of 2026-11-05 | *Computable Name*:DIPSVitalSignsObservationBodyHeight |
 
  
 DIPS profile for Body Height including some extensions 
@@ -104,7 +104,7 @@ This resource only supports search - there is no `GET [base]/Observation/[id]` r
   "name" : "DIPSVitalSignsObservationBodyHeight",
   "title" : "DIPS Vital Signs Observation - Body Height",
   "status" : "draft",
-  "date" : "2026-09-29T04:18:52+00:00",
+  "date" : "2026-11-05T07:34:57+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

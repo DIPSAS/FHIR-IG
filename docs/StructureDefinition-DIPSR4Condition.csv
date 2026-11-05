@@ -178,7 +178,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Condition.category.coding:Diagnosis","Condition.category.coding","Diagnosis","","",1,1,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22","union(., ./translation)"
-"Condition.category.coding:Diagnosis.id","Condition.category.coding.id","","","",0,0,"","","","string {[]} {[]}
+"Condition.category.coding:Diagnosis.id","Condition.category.coding.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Condition.category.coding:Diagnosis.extension","Condition.category.coding.extension","","extensions
 user content","",0,*,"","","","Extension {[]} {[]}
@@ -203,7 +203,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Condition.category.coding:Diagnosis_SubType","Condition.category.coding","Diagnosis_SubType","","",1,1,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22","union(., ./translation)"
-"Condition.category.coding:Diagnosis_SubType.id","Condition.category.coding.id","","","",0,0,"","","","string {[]} {[]}
+"Condition.category.coding:Diagnosis_SubType.id","Condition.category.coding.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Condition.category.coding:Diagnosis_SubType.extension","Condition.category.coding.extension","","extensions
 user content","",0,*,"","","","Extension {[]} {[]}
@@ -228,7 +228,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Condition.category.coding:Diagnosis_Coding_System","Condition.category.coding","Diagnosis_Coding_System","","",0,1,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22","union(., ./translation)"
-"Condition.category.coding:Diagnosis_Coding_System.id","Condition.category.coding.id","","","",0,0,"","","","string {[]} {[]}
+"Condition.category.coding:Diagnosis_Coding_System.id","Condition.category.coding.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Condition.category.coding:Diagnosis_Coding_System.extension","Condition.category.coding.extension","","extensions
 user content","",0,*,"","","","Extension {[]} {[]}

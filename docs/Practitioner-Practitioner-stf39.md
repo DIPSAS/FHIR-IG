@@ -12,17 +12,14 @@ Profiles: [DIPSPractitioner](StructureDefinition-DIPSPractitioner.md), [http://d
 
 Tag: 
 
-**no/fhir/R4/StructureDefinition/IsSpecialistExtension**: false
+Lasse Asslege (Testplan For Epj) (urn:oid:2.16.578.1.12.4.1.4.4#HelsepersonellregisteretNummer#12256545 (use: official))
 
-**no/fhir/R4/StructureDefinition/DIPSPractitionerSpecialist**: false
+-------
 
-**identifier**: HelsepersonellregisteretNummer/12256545 (use: official, ), `http://dips.no/fhir/namingsystem/dips-personid`/39 (use: official, )
-
-**active**: true
-
-**name**: Lasse Asslege (Testplan For Epj) 
-
-**gender**: Unknown
+| | | | |
+| :--- | :--- | :--- | :--- |
+| Active: | true | Gender: | Unknown |
+| Other Id: | `http://dips.no/fhir/namingsystem/dips-personid`/39 (use: official) | | |
 
 
 

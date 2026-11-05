@@ -8,13 +8,14 @@
 
 Profile: [DIPSOrganization](StructureDefinition-DIPSOrganization.md)
 
-**identifier**: `urn:oid:1.3.6.1.4.1.9038.70.1`/1000004
+Helse Nord (urn:oid:1.3.6.1.4.1.9038.70.1#1000004)
 
-**active**: true
+-------
 
-**name**: Helse Nord
-
-**address**: Bankgata 12 Bodø NORDLAND FYLKESKOMMUNE 8012 (work)
+| | |
+| :--- | :--- |
+| Active: | true |
+| Contact Detail | Bankgata 12 Bodø NORDLAND FYLKESKOMMUNE 8012 (work) |
 
 
 

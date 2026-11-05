@@ -91,7 +91,7 @@ No Expansion for this valueset (Unknown Code System)
       "valueSet" : ["http://hl7.no/fhir/no-domain/vitalsigns/ValueSet/NoDomainVitalSignsHeartRateMeasurementMethodValueSet"]
     },
     {
-      "system" : "http://dips.no/fhir/R4/CodeSystem/DIPSMeasurementMethod",
+      "system" : "http://dips.no/fhir/CodeSystem/DIPSMeasurementMethod",
       "concept" : [{
         "code" : "D0003",
         "display" : "Automatisk, non-invasivt"

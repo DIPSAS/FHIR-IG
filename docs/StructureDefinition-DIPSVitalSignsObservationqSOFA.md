@@ -1,15 +1,15 @@
-# DIPSVitalSignsObservationQSOFAScore - DIPS Core Implementation Guide v0.1.0
+# DIPS Vital Signs Observation - qSOFA - DIPS Core Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DIPSVitalSignsObservationQSOFAScore**
+* **DIPS Vital Signs Observation - qSOFA**
 
-## Resource Profile: DIPSVitalSignsObservationQSOFAScore 
+## Resource Profile: DIPS Vital Signs Observation - qSOFA 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationQSOFAScore | *Version*:0.1.0 |
-| Draft as of 2025-01-28 | *Computable Name*:DIPSVitalSignsObservationQSOFAScore |
+| *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationqSOFA | *Version*:0.1.0 |
+| Draft as of 2025-01-28 | *Computable Name*:DIPSVitalSignsObservationqSOFA |
 
  
 Quick Sepsis-related Organ Failure Assessment (qSOFA) is a simplified version of the SOFA score, which is used outside intensive care units to quickly assess sepsis risk in adults. 
@@ -17,19 +17,19 @@ Quick Sepsis-related Organ Failure Assessment (qSOFA) is a simplified version of
  
 To record qSOFA answers and score. 
 
-The DIPS qSOFA Score Profile inherits from the FHIR Observation resource; refer to it for scope and usage definitions
+The DIPS qSOFA Profile inherits from the FHIR Observation resource; refer to it for scope and usage definitions
 
 **Example Usage Scenarios:**
 
 The following are example usage scenarios for this profile:
 
-Query the recorded qSOFA Score observation(s) belonging to one clinical document (journal entry)
+Query the recorded qSOFA observation(s) belonging to one clinical document (journal entry)
 
 **Usages:**
 
 * Examples for this Profile: [Observation/dips-QSOFAScore-create](Observation-dips-QSOFAScore-create.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.no.core|current/StructureDefinition/StructureDefinition-DIPSVitalSignsObservationQSOFAScore.json)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.no.core|current/StructureDefinition/StructureDefinition-DIPSVitalSignsObservationqSOFA.json)
 
 ### Formal Views of Profile Content
 
@@ -37,7 +37,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
  
 
-Other representations of profile: [CSV](StructureDefinition-DIPSVitalSignsObservationQSOFAScore.csv), [Excel](StructureDefinition-DIPSVitalSignsObservationQSOFAScore.xlsx), [Schematron](StructureDefinition-DIPSVitalSignsObservationQSOFAScore.sch) 
+Other representations of profile: [CSV](StructureDefinition-DIPSVitalSignsObservationqSOFA.csv), [Excel](StructureDefinition-DIPSVitalSignsObservationqSOFA.xlsx), [Schematron](StructureDefinition-DIPSVitalSignsObservationqSOFA.sch) 
 
 ### Notes:
 
@@ -52,7 +52,7 @@ This resource only supports search - there is no `GET [base]/Observation/[id]` r
 **Implementation Notes:** `documentId` identifies the DIPS clinical document (journal entry) the vital sign was recorded in, not the Observation's own resource id. Fetches a bundle containing every vital sign Observation recorded in that document whose type matches this profile ([how to search by string]).
 1. At least one of `patient`, `fhirId`, `externalFhirId` or `documentId` is required, or the search is rejected with a 422 error. Of these, only `documentId` currently returns matching results - `patient`, `fhirId` and `externalFhirId` are accepted by this validation but the search behind them is not yet implemented, so a request using only one of them returns an empty bundle rather than an error or a result.
 1. The standard `_profile` search parameter can also be appended to a request:`GET [base]/Observation?documentId=[id]&_profile=[profile]`Example:
-1. GET [base]/Observation?documentId=1009024&_profile=DIPSVitalSignsObservationQSOFAScore
+1. GET [base]/Observation?documentId=1009024&_profile=DIPSVitalSignsObservationqSOFA
 **Implementation Notes:** `_profile` is not currently read by this endpoint - it has no effect on the result, whether or not it's present, and whichever profile is passed. It is accepted here only because it is a standard FHIR search parameter the underlying framework parses generically; nothing in the vital sign search code consults it. The set of values it is meant to take, once implemented, is the 13 `DIPSVitalSignsObservation*` profile ids - see the "FHIR VitalSign Observation" section of [Documentation](documentation.md) for the full list.
 
 **Operation: $SaveExtData**
@@ -100,11 +100,11 @@ This resource only supports search - there is no `GET [base]/Observation/[id]` r
 ```json
 {
   "resourceType" : "StructureDefinition",
-  "id" : "DIPSVitalSignsObservationQSOFAScore",
-  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationQSOFAScore",
+  "id" : "DIPSVitalSignsObservationqSOFA",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationqSOFA",
   "version" : "0.1.0",
-  "name" : "DIPSVitalSignsObservationQSOFAScore",
-  "title" : "DIPSVitalSignsObservationQSOFAScore",
+  "name" : "DIPSVitalSignsObservationqSOFA",
+  "title" : "DIPS Vital Signs Observation - qSOFA",
   "status" : "draft",
   "date" : "2025-01-28",
   "publisher" : "DIPS AS",
@@ -738,8 +738,9 @@ This resource only supports search - there is no `GET [base]/Observation/[id]` r
       "path" : "Observation.component.code",
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAcomponentCodeSystem",
-          "code" : "QsofaResRate"
+          "system" : "http://snomed.info/sct",
+          "code" : "271625008",
+          "display" : "Rate of spontaneous respiration"
         }]
       }
     },
@@ -788,7 +789,7 @@ This resource only supports search - there is no `GET [base]/Observation/[id]` r
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreResRateValueSet"
+        "valueSet" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreResRateValueSet"
       }
     },
     {
@@ -839,8 +840,9 @@ This resource only supports search - there is no `GET [base]/Observation/[id]` r
       "path" : "Observation.component.code",
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAcomponentCodeSystem",
-          "code" : "QsofaSystolicBP"
+          "system" : "http://snomed.info/sct",
+          "code" : "4471000202106",
+          "display" : "Systolic blood pressure"
         }]
       }
     },
@@ -889,7 +891,7 @@ This resource only supports search - there is no `GET [base]/Observation/[id]` r
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreBPValueSet"
+        "valueSet" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreBPValueSet"
       }
     },
     {
@@ -940,8 +942,9 @@ This resource only supports search - there is no `GET [base]/Observation/[id]` r
       "path" : "Observation.component.code",
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAcomponentCodeSystem",
-          "code" : "QsofaMentalStatus"
+          "system" : "http://snomed.info/sct",
+          "code" : "1104441000000107",
+          "display" : "Alert Confusion Voice Pain Unresponsive scale score"
         }]
       }
     },
@@ -990,7 +993,7 @@ This resource only supports search - there is no `GET [base]/Observation/[id]` r
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreMentalSatusValueSet"
+        "valueSet" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalSatusValueSet"
       }
     },
     {

@@ -20,7 +20,6 @@ CodeSystem artifacts this guide defines. Selecting any entry opens its page.
 * [DIPSLocation](CodeSystem-DIPSLocation.md)
 * [DIPSLocationTopLevel](CodeSystem-DIPSLocationTopLevel.md)
 * [DIPSMeasurementMethod](CodeSystem-DIPSMeasurementMethod.md)
-* [DIPSQSOFAcomponentCodeSystem](CodeSystem-DIPSQSOFAcomponentCodeSystem.md)
 * [DIPSQSOFAScoreBPCodeSystem](CodeSystem-DIPSQSOFAScoreBPCodeSystem.md)
 * [DIPSQSOFAScoreMentalSatusCodeSystem](CodeSystem-DIPSQSOFAScoreMentalSatusCodeSystem.md)
 * [DIPSQSOFAScoreResRateCodeSystem](CodeSystem-DIPSQSOFAScoreResRateCodeSystem.md)

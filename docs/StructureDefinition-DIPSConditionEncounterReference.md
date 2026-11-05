@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSConditionEncounterReference | *Version*:0.1.0 |
-| Draft as of 2026-09-29 | *Computable Name*:DIPSConditionEncounterReference |
+| Draft as of 2026-11-05 | *Computable Name*:DIPSConditionEncounterReference |
 
  
 The encounter a DIPS Condition was recorded on, constraining the identifiers the encounter reference may carry. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSConditionEncount
   "name" : "DIPSConditionEncounterReference",
   "title" : "DIPS Condition Encounter Reference",
   "status" : "draft",
-  "date" : "2026-09-29T04:18:52+00:00",
+  "date" : "2026-11-05T07:34:57+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

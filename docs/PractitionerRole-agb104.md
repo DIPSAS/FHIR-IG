@@ -6,7 +6,9 @@
 
 ## Example PractitionerRole: Practioner details of agb104
 
-**identifier**: `urn:oid:1.3.6.1.4.1.9038.51.1`/104
+(no practitioner) (urn:oid:1.3.6.1.4.1.9038.51.1#104)
+
+-------
 
 
 

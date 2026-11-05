@@ -87,7 +87,7 @@ Codes representing consciousness
   }],
   "compose" : {
     "include" : [{
-      "system" : "http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness",
+      "system" : "http://dips.no/fhir/CodeSystem/DIPSVitalSignsObservationConsciousness",
       "concept" : [{
         "code" : "D0005",
         "display" : "Våken"

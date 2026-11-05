@@ -12,26 +12,24 @@ Tag:
 
 Security Label: 
 
-**no/fhir/R4/StructureDefinition/BankAccountNumber1**: 1 234 567001
+Testsykehuset Hf (Helseforetak, HF|Helseforetak) (urn:oid:1.3.6.1.4.1.9038.70.1#1 (use: official))
 
-**no/fhir/R4/StructureDefinition/BankAccountNumber2**: 1234567
+-------
 
-**identifier**: `urn:oid:1.3.6.1.4.1.9038.70.1`/1 (use: official, ), `urn:oid:2.16.578.1.12.4.1.4.101`/970948139 (use: official, ), `urn:oid:2.16.578.1.12.4.1.2`/79744 (use: official, )
-
-**active**: true
-
-**type**: Helseforetak, HF|Helseforetak
-
-**name**: Testsykehuset Hf
-
-**telecom**: ph: 75505000(Work)
-
-**address**: 
-
+| | |
+| :--- | :--- |
+| Active: | true |
+| Type: | * Helseforetak
+* HF|Helseforetak
+ |
+| Part Of: | [Helse Nord](Organization-aks1000004.md) |
+| Other Ids: | * `urn:oid:2.16.578.1.12.4.1.4.101`/970948139 (use: official)
+* `urn:oid:2.16.578.1.12.4.1.2`/79744 (use: official)
+ |
+| Contact Detail | * ph: 75505000(Work)
 * Testveien 10 Bodø NORDLAND FYLKESKOMMUNE 8015 (work)
 * Legeveien 22 Bodø 8009 (billing)
-
-**partOf**: [Helse Nord](Organization-aks1000004.md)
+ |
 
 
 

@@ -6,7 +6,9 @@
 
 ## Example Organization: Organization details of afa1000061
 
-**identifier**: `urn:oid:1.3.6.1.4.1.9038.70.3`/1000061
+Unnamed Organization (urn:oid:1.3.6.1.4.1.9038.70.3#1000061)
+
+-------
 
 
 

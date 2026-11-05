@@ -36,8 +36,8 @@ Profile: [DIPS Vital Signs Observation - Body Mass Index(BMI)](StructureDefiniti
 
 **performer**: 
 
-* [PractitionerRole: identifier = urn:oid:1.3.6.1.4.1.9038.51.1#27](PractitionerRole-agb27.md)
-* [Organization: identifier = urn:oid:1.3.6.1.4.1.9038.70.3#22](Organization-afa22.md)
+* [(no practitioner) (urn:oid:1.3.6.1.4.1.9038.51.1#27)](PractitionerRole-agb27.md)
+* [Unnamed Organization (urn:oid:1.3.6.1.4.1.9038.70.3#22)](Organization-afa22.md)
 
 **value**: 24 kg/m2 (Details: UCUM codekg/m2 = 'kg/m2')
 
@@ -171,7 +171,7 @@ Demo BMI
   }],
   "method" : {
     "coding" : [{
-      "system" : "http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod",
+      "system" : "http://dips.no/fhir/CodeSystem/DIPSBodyMassIndexMeasurementMethod",
       "code" : "D0001",
       "display" : "Automatisk registrering"
     }]

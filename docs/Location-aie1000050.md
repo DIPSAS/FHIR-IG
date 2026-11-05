@@ -6,7 +6,9 @@
 
 ## Example Location: aie1000050
 
-**identifier**: `http://dips.no/fhir/namingsystem/dips-bedid`/1000050
+Unnamed Location (http://dips.no/fhir/namingsystem/dips-bedid#1000050)
+
+-------
 
 
 

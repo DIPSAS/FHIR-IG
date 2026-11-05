@@ -26,8 +26,8 @@ Profile: [DIPSVitalSignsObservationGCS](StructureDefinition-DIPSVitalSignsObserv
 
 **performer**: 
 
-* [PractitionerRole: extension = Ward,Epikrise,id: urn:oid:1.3.6.1.4.1.9038.70.4#1000057 (use: official, ),id: urn:oid:2.16.578.1.12.4.1.4.101#970948139 (use: official, ),Habiliteringspost; identifier = urn:oid:1.3.6.1.4.1.9038.51#HA1 (use: official, ),urn:oid:1.3.6.1.4.1.9038.51.1#1000204 (use: official, ); telecom = ph: 75505000(Work)](PractitionerRole-agb1000204.md)
-* [Organization Testsykehuset Hf](Organization-Organizationaks2.md)
+* [(no practitioner) at id: urn:oid:2.16.578.1.12.4.1.4.101#970948139 (use: official) (urn:oid:1.3.6.1.4.1.9038.51#HA1 (use: official))](PractitionerRole-agb1000204.md)
+* [Testsykehuset Hf (Helseforetak, HF|Helseforetak) (urn:oid:1.3.6.1.4.1.9038.70.1#2 (use: official))](Organization-Organizationaks2.md)
 
 **value**: 13 ScoreOf (Details: UCUM code{ScoreOf} = '{ScoreOf}')
 

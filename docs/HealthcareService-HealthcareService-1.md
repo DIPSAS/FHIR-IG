@@ -12,17 +12,19 @@ Profiles: [DIPSHealthcareService](StructureDefinition-DIPSHealthcareService.md),
 
 Tag: 
 
-**identifier**: `urn:oid:1.3.6.1.4.1.9038.51.1`/1001131 (use: official, ), `urn:oid:2.16.578.1.12.4.1.2`/666 (use: official, ), `http://dips.no/fhir/namingsystem/healthcareserviceId`/9010D30E72C3521AE040000A0D654D38 (use: official, )
+Hs-8663 Kommunale Helse- Og Sosialtjenester (Pleie- og omsorgstjeneste (ikke i bruk)) by Unnamed Organization (urn:oid:1.3.6.1.4.1.9038.70.1#1000174) (urn:oid:1.3.6.1.4.1.9038.51.1#1001131 (use: official))
 
-**active**: true
+-------
 
-**providedBy**: [Organization: identifier = urn:oid:1.3.6.1.4.1.9038.70.1#1000174](Organization-aks1000174.md)
-
-**category**: Annet
-
-**type**: Pleie- og omsorgstjeneste (ikke i bruk)
-
-**name**: Hs-8663 Kommunale Helse- Og Sosialtjenester
+| | |
+| :--- | :--- |
+| Active: | true |
+| Provided By: | [Unnamed Organization (urn:oid:1.3.6.1.4.1.9038.70.1#1000174)](Organization-aks1000174.md) |
+| Category: | Annet |
+| Type: | Pleie- og omsorgstjeneste (ikke i bruk) |
+| Other Ids: | * `urn:oid:2.16.578.1.12.4.1.2`/666 (use: official)
+* `http://dips.no/fhir/namingsystem/healthcareserviceId`/9010D30E72C3521AE040000A0D654D38 (use: official)
+ |
 
 
 

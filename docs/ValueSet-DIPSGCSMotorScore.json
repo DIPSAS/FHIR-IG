@@ -7,7 +7,7 @@
   },
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet DIPSGCSMotorScore</b></p><a name=\"DIPSGCSMotorScore\"> </a><a name=\"hcDIPSGCSMotorScore\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2021-03-17 00:00:00+0000</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href=\"CodeSystem-DIPSGCSMotorScoreCodeSystem.html\"><code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-DIPSGCSMotorScoreCodeSystem.html#DIPSGCSMotorScoreCodeSystem-1\">1</a></td><td>Ingen reaksjon</td><td>Ingen reaksjon</td></tr><tr><td><a href=\"CodeSystem-DIPSGCSMotorScoreCodeSystem.html#DIPSGCSMotorScoreCodeSystem-2\">2</a></td><td>Ekstensjon ved smerte</td><td>Ekstensjon ved smerte</td></tr><tr><td><a href=\"CodeSystem-DIPSGCSMotorScoreCodeSystem.html#DIPSGCSMotorScoreCodeSystem-3\">3</a></td><td>Fleksjon ved smerte</td><td>Fleksjon ved smerte</td></tr><tr><td><a href=\"CodeSystem-DIPSGCSMotorScoreCodeSystem.html#DIPSGCSMotorScoreCodeSystem-4\">4</a></td><td>Avverger smerte</td><td>Avverger smerte</td></tr><tr><td><a href=\"CodeSystem-DIPSGCSMotorScoreCodeSystem.html#DIPSGCSMotorScoreCodeSystem-5\">5</a></td><td>Lokaliserer smerte</td><td>Lokaliserer smerte</td></tr><tr><td><a href=\"CodeSystem-DIPSGCSMotorScoreCodeSystem.html#DIPSGCSMotorScoreCodeSystem-6\">6</a></td><td>Følger oppfordringer</td><td>Følger oppfordringer</td></tr></table></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet DIPSGCSMotorScore</b></p><a name=\"DIPSGCSMotorScore\"> </a><a name=\"hcDIPSGCSMotorScore\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2021-03-17 00:00:00+0000</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href=\"CodeSystem-DIPSGCSMotorScoreCodeSystem.html\"><code>http://dips.no/fhir/CodeSystem/DIPSGCSMotorScoreCodeSystem</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-DIPSGCSMotorScoreCodeSystem.html#DIPSGCSMotorScoreCodeSystem-1\">1</a></td><td>Ingen reaksjon</td><td>Ingen reaksjon</td></tr><tr><td><a href=\"CodeSystem-DIPSGCSMotorScoreCodeSystem.html#DIPSGCSMotorScoreCodeSystem-2\">2</a></td><td>Ekstensjon ved smerte</td><td>Ekstensjon ved smerte</td></tr><tr><td><a href=\"CodeSystem-DIPSGCSMotorScoreCodeSystem.html#DIPSGCSMotorScoreCodeSystem-3\">3</a></td><td>Fleksjon ved smerte</td><td>Fleksjon ved smerte</td></tr><tr><td><a href=\"CodeSystem-DIPSGCSMotorScoreCodeSystem.html#DIPSGCSMotorScoreCodeSystem-4\">4</a></td><td>Avverger smerte</td><td>Avverger smerte</td></tr><tr><td><a href=\"CodeSystem-DIPSGCSMotorScoreCodeSystem.html#DIPSGCSMotorScoreCodeSystem-5\">5</a></td><td>Lokaliserer smerte</td><td>Lokaliserer smerte</td></tr><tr><td><a href=\"CodeSystem-DIPSGCSMotorScoreCodeSystem.html#DIPSGCSMotorScoreCodeSystem-6\">6</a></td><td>Følger oppfordringer</td><td>Følger oppfordringer</td></tr></table></li></ul></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
@@ -21,7 +21,7 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
     "valueInteger" : 1
   }],
-  "url" : "http://dips.no/fhir/R4/ValueSet/DIPSGCSMotorScore",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSGCSMotorScore",
   "version" : "0.1.0",
   "name" : "DIPSGCSMotorScore",
   "title" : "DIPSGCSMotorScore",
@@ -47,7 +47,7 @@
   }],
   "compose" : {
     "include" : [{
-      "system" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem",
+      "system" : "http://dips.no/fhir/CodeSystem/DIPSGCSMotorScoreCodeSystem",
       "concept" : [{
         "code" : "1",
         "display" : "Ingen reaksjon"

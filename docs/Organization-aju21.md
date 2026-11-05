@@ -6,7 +6,9 @@
 
 ## Example Organization: Orgnization details of aju21
 
-**identifier**: `urn:oid:1.3.6.1.4.1.9038.70.5`/21
+Unnamed Organization (urn:oid:1.3.6.1.4.1.9038.70.5#21)
+
+-------
 
 
 

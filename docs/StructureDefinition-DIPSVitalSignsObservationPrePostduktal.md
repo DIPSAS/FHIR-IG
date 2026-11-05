@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationPrePostduktal | *Version*:0.1.0 |
-| Draft as of 2026-09-29 | *Computable Name*:DIPSVitalSignsObservationPrePostduktal |
+| Draft as of 2026-11-05 | *Computable Name*:DIPSVitalSignsObservationPrePostduktal |
 
 Description of the pre/post/intermediate level of ductal
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSVitalSignsObserv
   "version" : "0.1.0",
   "name" : "DIPSVitalSignsObservationPrePostduktal",
   "status" : "draft",
-  "date" : "2026-09-29T04:18:52+00:00",
+  "date" : "2026-11-05T07:34:57+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

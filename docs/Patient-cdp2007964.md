@@ -15,9 +15,9 @@ Kommune (Testplan Elin-K), Elin(official) Female, DoB: 1977-06-26 ( http://dips.
 | | | | |
 | :--- | :--- | :--- | :--- |
 | Active: | true | Deceased: | false |
-| Other Id: | FellesHjelpenummer/26467749659 (use: temp, ) | | |
+| Other Id: | FellesHjelpenummer/26467749659 (use: temp) | | |
 | Contact Detail | Dipsbyen 2 Bodø 18 8037 Norge (home) | | |
-| Links: | * General Practitioner: [PractitionerRole: identifier = urn:oid:1.3.6.1.4.1.9038.60.1#59](PractitionerRole-agb59.md)
+| Links: | * General Practitioner: [(no practitioner) (urn:oid:1.3.6.1.4.1.9038.60.1#59)](PractitionerRole-agb59.md)
  | | |
 
 

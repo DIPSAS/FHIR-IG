@@ -3,16 +3,16 @@
   "id" : "DIPSVitalSignsObservationConsciousness",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DIPSVitalSignsObservationConsciousness</b></p><a name=\"DIPSVitalSignsObservationConsciousness\"> </a><a name=\"hcDIPSVitalSignsObservationConsciousness\"> </a><p>This  code system <code>http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">D0005<a name=\"DIPSVitalSignsObservationConsciousness-D0005\"> </a></td><td>Våken</td><td>Våken</td></tr><tr><td style=\"white-space:nowrap\">D0006<a name=\"DIPSVitalSignsObservationConsciousness-D0006\"> </a></td><td>Tiltale</td><td>Tiltale</td></tr><tr><td style=\"white-space:nowrap\">D0007<a name=\"DIPSVitalSignsObservationConsciousness-D0007\"> </a></td><td>Smerte</td><td>Smerte</td></tr><tr><td style=\"white-space:nowrap\">D0008<a name=\"DIPSVitalSignsObservationConsciousness-D0008\"> </a></td><td>Reagerer ikke</td><td>Reagerer ikke</td></tr><tr><td style=\"white-space:nowrap\">D0012<a name=\"DIPSVitalSignsObservationConsciousness-D0012\"> </a></td><td>forvirring</td><td>forvirring</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DIPSVitalSignsObservationConsciousness</b></p><a name=\"DIPSVitalSignsObservationConsciousness\"> </a><a name=\"hcDIPSVitalSignsObservationConsciousness\"> </a><p>This  code system <code>http://dips.no/fhir/CodeSystem/DIPSVitalSignsObservationConsciousness</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">D0005<a name=\"DIPSVitalSignsObservationConsciousness-D0005\"> </a></td><td>Våken</td><td>Våken</td></tr><tr><td style=\"white-space:nowrap\">D0006<a name=\"DIPSVitalSignsObservationConsciousness-D0006\"> </a></td><td>Tiltale</td><td>Tiltale</td></tr><tr><td style=\"white-space:nowrap\">D0007<a name=\"DIPSVitalSignsObservationConsciousness-D0007\"> </a></td><td>Smerte</td><td>Smerte</td></tr><tr><td style=\"white-space:nowrap\">D0008<a name=\"DIPSVitalSignsObservationConsciousness-D0008\"> </a></td><td>Reagerer ikke</td><td>Reagerer ikke</td></tr><tr><td style=\"white-space:nowrap\">D0012<a name=\"DIPSVitalSignsObservationConsciousness-D0012\"> </a></td><td>forvirring</td><td>forvirring</td></tr></table></div>"
   },
-  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness",
+  "url" : "http://dips.no/fhir/CodeSystem/DIPSVitalSignsObservationConsciousness",
   "identifier" : [{
     "system" : "http://dips.no/fhir/namingsystem/dips-consciousness"
   }],
   "version" : "0.1.0",
   "name" : "DIPSVitalSignsObservationConsciousness",
   "status" : "draft",
-  "date" : "2026-09-29T04:18:52+00:00",
+  "date" : "2026-11-05T07:34:57+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

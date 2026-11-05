@@ -8,19 +8,19 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/ImplementationGuide/dips.fhir.no.core | *Version*:0.1.0 |
-| Draft as of 2026-09-29 | *Computable Name*:DIPSCore |
+| Draft as of 2026-11-05 | *Computable Name*:DIPSCore |
 
-# DIPS Core Implementation Guide
+### DIPS Core Implementation Guide
 
 This Implementation Guide describes the FHIR R4 profiles, extensions, value sets, code systems and examples used by DIPS AS to expose core clinical and administrative data — such as Patient, Person, Organization, Location, Practitioner, PractitionerRole, RelatedPerson, HealthcareService, Encounter and vital sign observations — through the DIPS FHIR R4 API.
 
 The profiles in this guide build on [hl7.fhir.no.basis](https://simplifier.net/HL7Norway/), the Norwegian national base profiles, adding DIPS-specific extensions and constraints required to represent data from the DIPS core system.
 
-### Intended audience
+##### Intended audience
 
 This guide is intended for developers and integrators building or consuming integrations against the DIPS FHIR R4 API. See the [Documentation](documentation.md) page for details on authentication and how to call the API, [Artifacts](artifacts.md) for the full list of profiles, extensions, value sets and code systems, and [Download](download.md) for how to obtain the packaged IG.
 
-### Scope
+##### Scope
 
 * **Demographics**: Patient, Person, RelatedPerson
 * **Organizational structure**: Organization, Location, HealthcareService
@@ -40,7 +40,7 @@ This guide is intended for developers and integrators building or consuming inte
   "name" : "DIPSCore",
   "title" : "DIPS Core Implementation Guide",
   "status" : "draft",
-  "date" : "2026-09-29T04:18:52+00:00",
+  "date" : "2026-11-05T07:34:57+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -69,7 +69,7 @@ This guide is intended for developers and integrators building or consuming inte
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.4.0"
+    "version" : "7.5.0"
   },
   {
     "id" : "hl7ext",
@@ -79,7 +79,7 @@ This guide is intended for developers and integrators building or consuming inte
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.3.0"
+    "version" : "5.4.0"
   },
   {
     "id" : "hl7_fhir_no_basis",
@@ -95,734 +95,8 @@ This guide is intended for developers and integrators building or consuming inte
   }],
   "definition" : {
     "extension" : [{
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "copyrightyear"
-      },
-      {
-        "url" : "value",
-        "valueString" : "2023+"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "releaselabel"
-      },
-      {
-        "url" : "value",
-        "valueString" : "ci-build"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://hl7.no/Fhir/Profile/Diagnosis#ATC-Code"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocRefContextAppointment"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocRefContextEncounter"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocRefOrganization"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedByName"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedTime"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApproved_By_Name"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApproved_Time"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceAuthPractionerRole"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreatedBy"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreated_By"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedDuration"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedTime"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocumentFormat"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocument_Format"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPRGroup"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPR_Group"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEventTime"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEvent_Time"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStayId"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStay_Id"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastChangedBy"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdatedTime"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdated_Time"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLast_Changed_By"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLocationIdExtension"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferencePractitionerRole"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceReferralId"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSection"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSubject"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceTemplateIdExtension"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceTerminalAddress"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceWard"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferencedictatedtime"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/StructureDefinition/DIPSR4DocumentReference"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Encounter/agy27"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Encounter/agy1002135"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Encounter/agy100247"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "DocumentReference/docRef-pdf-full"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "DocumentReference/docref-dictated-duration-example"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "no-narrative"
-      },
-      {
-        "url" : "value",
-        "valueString" : "DocumentReference/docref-dictation-section-example"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "autoload-resources"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-liquid"
-      },
-      {
-        "url" : "value",
-        "valueString" : "template/liquid"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-liquid"
-      },
-      {
-        "url" : "value",
-        "valueString" : "input/liquid"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-qa"
-      },
-      {
-        "url" : "value",
-        "valueString" : "temp/qa"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-temp"
-      },
-      {
-        "url" : "value",
-        "valueString" : "temp/pages"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-output"
-      },
-      {
-        "url" : "value",
-        "valueString" : "output"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-suppressed-warnings"
-      },
-      {
-        "url" : "value",
-        "valueString" : "input/ignoreWarnings.txt"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-history"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://dips.no/fhir/R4/history.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "template-html"
-      },
-      {
-        "url" : "value",
-        "valueString" : "template-page.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "template-md"
-      },
-      {
-        "url" : "value",
-        "valueString" : "template-page-md.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-contact"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-context"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-copyright"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-jurisdiction"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-license"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-publisher"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-version"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-wg"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "active-tables"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "fmm-definition"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "propagate-status"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "excludelogbinaryformat"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "tabbed-snapshots"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
+      "valueCode" : "hl7.fhir.uv.tools.r4#1.3.0"
     },
     {
       "extension" : [{
@@ -2949,6 +2223,23 @@ This guide is intended for developers and integrators building or consuming inte
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationqSOFA.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsObservationqSOFA"
+      },
+      "name" : "DIPS Vital Signs Observation - qSOFA",
+      "description" : "Quick Sepsis-related Organ Failure Assessment (qSOFA) is a simplified version of the SOFA score, which is used outside intensive care units to quickly assess sepsis risk in adults.",
+      "exampleBoolean" : false,
+      "groupingId" : "ObservationProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "StructureDefinition-DIPSVitalSignsObservationRespirationRate.html"
       }],
       "reference" : {
@@ -3153,7 +2444,7 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "Observation/dips-QSOFAScore-create"
       },
       "name" : "dips-QSOFAScore-create",
-      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationQSOFAScore"
+      "exampleCanonical" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationqSOFA"
     },
     {
       "extension" : [{
@@ -4909,21 +4200,6 @@ This guide is intended for developers and integrators building or consuming inte
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-DIPSQSOFAcomponentCodeSystem.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/DIPSQSOFAcomponentCodeSystem"
-      },
-      "name" : "DIPSQSOFAcomponentCodeSystem",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "CodeSystem-DIPSQSOFAScoreBPCodeSystem.html"
       }],
       "reference" : {
@@ -4945,7 +4221,7 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "ValueSet/DIPSQSOFAScoreBPValueSet"
       },
       "name" : "DIPSQSOFAScoreBPValueSet",
-      "description" : "ValueSet of QSOFA Blood Pressure",
+      "description" : "ValueSet of qSOFA Blood Pressure",
       "exampleBoolean" : false
     },
     {
@@ -4961,7 +4237,7 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "ValueSet/DIPSQSOFAScoreResRateValueSet"
       },
       "name" : "DIPSQSOFAScoreBPValueSet",
-      "description" : "ValueSet of QSOFA Respiration Rate",
+      "description" : "ValueSet of qSOFA Respiration Rate",
       "exampleBoolean" : false
     },
     {
@@ -4992,7 +4268,7 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "ValueSet/DIPSQSOFAScoreMentalSatusValueSet"
       },
       "name" : "DIPSQSOFAScoreMentalSatusValueSet",
-      "description" : "ValueSet of QSOFA Blood Pressure",
+      "description" : "ValueSet of qSOFA Blood Pressure",
       "exampleBoolean" : false
     },
     {
@@ -5435,23 +4711,6 @@ This guide is intended for developers and integrators building or consuming inte
       "name" : "DIPSVitalSignsObservationPulseMeasurementMethod",
       "description" : "Codes representing measurement method",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationQSOFAScore.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/DIPSVitalSignsObservationQSOFAScore"
-      },
-      "name" : "DIPSVitalSignsObservationQSOFAScore",
-      "description" : "Quick Sepsis-related Organ Failure Assessment (qSOFA) is a simplified version of the SOFA score, which is used outside intensive care units to quickly assess sepsis risk in adults.",
-      "exampleBoolean" : false,
-      "groupingId" : "ObservationProfiles"
     },
     {
       "extension" : [{

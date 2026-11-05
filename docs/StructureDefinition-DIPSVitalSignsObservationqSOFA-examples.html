@@ -1,3 +1,5 @@
+<!-- get modelType -->
+
 
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -5,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>DIPSQSOFAcomponentCodeSystem - JSON Representation - DIPS Core Implementation Guide v0.1.0</title>
+    <title>DIPS Vital Signs Observation - qSOFA - Examples - DIPS Core Implementation Guide v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -64,8 +66,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"31.249"}
-    h3,h4,h5,h6{--heading-prefix:"31.249"}</style>
+    <style type="text/css">h2{--heading-prefix:"31.11"}
+    h3,h4,h5,h6{--heading-prefix:"31.11"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -178,7 +180,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>DIPSQSOFAcomponentCodeSystem</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>DIPS Vital Signs Observation - qSOFA</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -190,8 +192,11 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">DIPS Core Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/R4/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<div style="counter-reset: section 6" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">DIPS Core Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/R4/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
 
 
 
@@ -204,40 +209,65 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="CodeSystem-DIPSQSOFAcomponentCodeSystem.html">Narrative Content</a>
+    <a href="StructureDefinition-DIPSVitalSignsObservationqSOFA.html">Content</a>
+  </li>
+
+
+
+  <li>
+    <a href="StructureDefinition-DIPSVitalSignsObservationqSOFA-definitions.html">Detailed Descriptions</a>
   </li>
 
 
 
   
     <li>
-      <a href="CodeSystem-DIPSQSOFAcomponentCodeSystem.xml.html">XML</a>
+      <a href="StructureDefinition-DIPSVitalSignsObservationqSOFA-mappings.html">Mappings</a>
     </li>
   
 
 
+
+
+
+
   
-    <li class="active">
-      <a href="#">JSON</a>
+    
+      <li class="active">
+        <a href="#">Examples</a>
+      </li>
+    
+  
+
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-DIPSVitalSignsObservationqSOFA.profile.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="CodeSystem-DIPSQSOFAcomponentCodeSystem.ttl.html">TTL</a>
+      <a href="StructureDefinition-DIPSVitalSignsObservationqSOFA.profile.json.html">JSON</a>
     </li>
   
 
+
+  
+    <li>
+      <a href="StructureDefinition-DIPSVitalSignsObservationqSOFA.profile.ttl.html">TTL</a>
+    </li>
+  
 
 
 </ul>
 
 
-<a name="root"> </a>
-
-
-<h2 id="root">: DIPSQSOFAcomponentCodeSystem - JSON Representation</h2>
+  <a name="root"> </a>
+  <h2 id="root">Resource Profile: DIPSVitalSignsObservationqSOFA - Examples</h2>
 
   <table class="colsd">
     <tr>
@@ -246,7 +276,7 @@
         
           Draft
           
-            as of 2026-09-29
+            as of 2025-01-28
           
         
       </td>
@@ -255,82 +285,34 @@
   </table>
 
 
-<p><a href="CodeSystem-DIPSQSOFAcomponentCodeSystem.json" no-download="true">Raw json</a> | <a href="CodeSystem-DIPSQSOFAcomponentCodeSystem.json" download>Download</a></p>
-
-  <!-- insert intro if present -->
-  
+   <!-- insert intro if present -->
+    
 
 
 
-  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
-  "<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">id</a>" : "DIPSQSOFAcomponentCodeSystem",
-  "<a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem DIPSQSOFAcomponentCodeSystem&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;DIPSQSOFAcomponentCodeSystem\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcDIPSQSOFAcomponentCodeSystem\&quot;&gt; &lt;/a&gt;&lt;p&gt;This  code system &lt;code&gt;http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAcomponentCodeSystem&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;QsofaMentalStatus&lt;a name=\&quot;DIPSQSOFAcomponentCodeSystem-QsofaMentalStatus\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;QsofaMentalStatus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;QsofaSystolicBP&lt;a name=\&quot;DIPSQSOFAcomponentCodeSystem-QsofaSystolicBP\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;QsofaSystolicBP&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;QsofaResRate&lt;a name=\&quot;DIPSQSOFAcomponentCodeSystem-QsofaResRate\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;QsofaResRate&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
-  },
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAcomponentCodeSystem",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.identifier">identifier</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://dips.no/fhir/namingsystem/dips-qsofacodes"
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.1.0",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "DIPSQSOFAcomponentCodeSystem",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2026-09-29T04:18:52+00:00",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "DIPS AS",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Lars-Andreas Nystad",
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "mailto:lan@dips.no",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "work"
-        }
-      ]
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.jurisdiction">jurisdiction</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "NO",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Norway"
-        }
-      ]
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 3,
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "QsofaMentalStatus",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "QsofaMentalStatus",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "QsofaMentalStatus"
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "QsofaSystolicBP",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "QsofaSystolicBP",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "QsofaSystolicBP"
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "QsofaResRate",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "QsofaResRate",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "QsofaResRate"
-    }
-  ]
-}</code></pre>
 
 
-  <!-- insert notes if present -->
-  
+  <p>Examples for the DIPSVitalSignsObservationqSOFA Profile.</p>
+  <table style="grid">
+    <tbody>
+      
+        <tr>
+          <td>
+            <a href="Observation-dips-QSOFAScore-create.html">dips-QSOFAScore-create</a>
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+<!-- insert notes if present -->
+
 
 
 
 </div>
+
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -339,6 +321,8 @@
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
+  <script type="text/javascript" src="assets/js/tabs.js"> </script>
+
   <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
@@ -346,7 +330,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 29, 2026 04:18+0000">2026-09-29</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 5, 2026 07:34+0000">2026-11-05</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

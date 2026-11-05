@@ -18,33 +18,6 @@
     "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"]
   },
   {
-    "url" : "http://dips.no/fhir/R4/ValueSet/DIPSGCSEyeOpeningScore",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "DIPSGCSEyeOpeningScore",
-    "title" : "DIPSGCSEyeOpeningScore",
-    "description" : "ValueSet of GCS Eye OpeningScore",
-    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem"]
-  },
-  {
-    "url" : "http://dips.no/fhir/R4/ValueSet/DIPSGCSMotorScore",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "DIPSGCSMotorScore",
-    "title" : "DIPSGCSMotorScore",
-    "description" : "ValueSet of GCS Motor Score",
-    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem"]
-  },
-  {
-    "url" : "http://dips.no/fhir/R4/ValueSet/DIPSGCSVerbalScore",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "DIPSGCSVerbalScore",
-    "title" : "DIPSGCSVerbalScore",
-    "description" : "ValueSet of GCS Verbal Score",
-    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem"]
-  },
-  {
     "url" : "http://dips.no/fhir/R4/ValueSet/DIPSHealthcareServiceTypes",
     "version" : "0.1.0",
     "status" : "active",
@@ -57,33 +30,6 @@
     "urn:oid:1.3.6.1.4.1.9038.52.4584",
     "urn:oid:1.3.6.1.4.1.9038.52.4639",
     "urn:oid:1.3.6.1.4.1.9038.52.4582"]
-  },
-  {
-    "url" : "http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreBPValueSet",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "DIPSQSOFAScoreBPValueSet",
-    "title" : "DIPSQSOFAScoreBPValueSet",
-    "description" : "ValueSet of QSOFA Blood Pressure",
-    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem"]
-  },
-  {
-    "url" : "http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreMentalSatusValueSet",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "DIPSQSOFAScoreMentalSatusValueSet",
-    "title" : "DIPSQSOFAScoreMentalSatusValueSet",
-    "description" : "ValueSet of QSOFA Blood Pressure",
-    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem"]
-  },
-  {
-    "url" : "http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreResRateValueSet",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "DIPSQSOFAScoreResRateValueSet",
-    "title" : "DIPSQSOFAScoreBPValueSet",
-    "description" : "ValueSet of QSOFA Respiration Rate",
-    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreResRateCodeSystem"]
   },
   {
     "url" : "http://dips.no/fhir/R4/ValueSet/DipsCoding1003ValueSet",
@@ -211,6 +157,33 @@
     "systems" : ["urn:oid:1.3.6.1.4.1.9038.52.3508"]
   },
   {
+    "url" : "http://dips.no/fhir/ValueSet/DIPSGCSEyeOpeningScore",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSGCSEyeOpeningScore",
+    "title" : "DIPSGCSEyeOpeningScore",
+    "description" : "ValueSet of GCS Eye OpeningScore",
+    "systems" : ["http://dips.no/fhir/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem"]
+  },
+  {
+    "url" : "http://dips.no/fhir/ValueSet/DIPSGCSMotorScore",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSGCSMotorScore",
+    "title" : "DIPSGCSMotorScore",
+    "description" : "ValueSet of GCS Motor Score",
+    "systems" : ["http://dips.no/fhir/CodeSystem/DIPSGCSMotorScoreCodeSystem"]
+  },
+  {
+    "url" : "http://dips.no/fhir/ValueSet/DIPSGCSVerbalScore",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSGCSVerbalScore",
+    "title" : "DIPSGCSVerbalScore",
+    "description" : "ValueSet of GCS Verbal Score",
+    "systems" : ["http://dips.no/fhir/CodeSystem/DIPSGCSVerbalScoreCodeSystem"]
+  },
+  {
     "url" : "http://dips.no/fhir/ValueSet/DIPSLocation",
     "version" : "0.1.0",
     "status" : "draft",
@@ -218,6 +191,33 @@
     "title" : "DIPSLocation",
     "description" : "DIPSLocation",
     "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSLocation"]
+  },
+  {
+    "url" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreBPValueSet",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSQSOFAScoreBPValueSet",
+    "title" : "DIPSQSOFAScoreBPValueSet",
+    "description" : "ValueSet of qSOFA Blood Pressure",
+    "systems" : ["http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreBPCodeSystem"]
+  },
+  {
+    "url" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalSatusValueSet",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSQSOFAScoreMentalSatusValueSet",
+    "title" : "DIPSQSOFAScoreMentalSatusValueSet",
+    "description" : "ValueSet of qSOFA Blood Pressure",
+    "systems" : ["http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem"]
+  },
+  {
+    "url" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreResRateValueSet",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DIPSQSOFAScoreResRateValueSet",
+    "title" : "DIPSQSOFAScoreBPValueSet",
+    "description" : "ValueSet of qSOFA Respiration Rate",
+    "systems" : ["http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreResRateCodeSystem"]
   },
   {
     "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsHeartRhythmIrregularity",
@@ -235,7 +235,7 @@
     "name" : "DIPSVitalSignsObservationBloodPressureMeasurementMethod",
     "title" : null,
     "description" : "Codes representing measurement method",
-    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSMeasurementMethod",
+    "systems" : ["http://dips.no/fhir/CodeSystem/DIPSMeasurementMethod",
     "http://snomed.info/sct"]
   },
   {
@@ -245,7 +245,7 @@
     "name" : "DIPSVitalSignsObservationBodyMassIndexFormula",
     "title" : "DIPSVitalSignsObservationBodyMassIndexFormula",
     "description" : "Value set for DIPS Body Mass Index Formula Measurment methods",
-    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod"]
+    "systems" : ["http://dips.no/fhir/CodeSystem/DIPSBodyMassIndexMeasurementMethod"]
   },
   {
     "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationBodySite",
@@ -263,7 +263,7 @@
     "name" : "DIPSVitalSignsObservationConsciousness",
     "title" : "SNOMED CT Consciousness Structures",
     "description" : "Codes representing consciousness",
-    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness"]
+    "systems" : ["http://dips.no/fhir/CodeSystem/DIPSVitalSignsObservationConsciousness"]
   },
   {
     "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationHeartRateMeasurementMethod",
@@ -272,7 +272,7 @@
     "name" : "DIPSVitalSignsObservationHeartRateMeasurementMethod",
     "title" : null,
     "description" : "Codes representing measurement method",
-    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSMeasurementMethod",
+    "systems" : ["http://dips.no/fhir/CodeSystem/DIPSMeasurementMethod",
     "http://snomed.info/sct"]
   },
   {
@@ -282,7 +282,7 @@
     "name" : "DIPSVitalSignsObservationPrePostduktal",
     "title" : "DIPSVitalSignsObservationPrePostduktal",
     "description" : "Codes representing pre/post ductal",
-    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal"]
+    "systems" : ["http://dips.no/fhir/CodeSystem/DIPSVitalSignsObservationPrePostduktal"]
   },
   {
     "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationPulseBodySite",
@@ -300,7 +300,7 @@
     "name" : "DIPSVitalSignsObservationPulseMeasurementMethod",
     "title" : null,
     "description" : "Codes representing measurement method",
-    "systems" : ["http://dips.no/fhir/R4/CodeSystem/DIPSMeasurementMethod",
+    "systems" : ["http://dips.no/fhir/CodeSystem/DIPSMeasurementMethod",
     "http://snomed.info/sct"]
   },
   {

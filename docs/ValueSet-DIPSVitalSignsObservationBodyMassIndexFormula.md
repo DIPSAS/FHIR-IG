@@ -87,7 +87,7 @@ Value set for DIPS Body Mass Index Formula Measurment methods
   }],
   "compose" : {
     "include" : [{
-      "system" : "http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod",
+      "system" : "http://dips.no/fhir/CodeSystem/DIPSBodyMassIndexMeasurementMethod",
       "concept" : [{
         "code" : "D0001",
         "display" : "Automatisk registrering"

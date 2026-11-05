@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/ValueSet/DIPSGCSMotorScore | *Version*:0.1.0 | |
+| *Official URL*:http://dips.no/fhir/ValueSet/DIPSGCSMotorScore | *Version*:0.1.0 | |
 | * Standards status: *[Draft](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:DIPSGCSMotorScore |
 
  
@@ -61,7 +61,7 @@ ValueSet of GCS Motor Score
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
     "valueInteger" : 1
   }],
-  "url" : "http://dips.no/fhir/R4/ValueSet/DIPSGCSMotorScore",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSGCSMotorScore",
   "version" : "0.1.0",
   "name" : "DIPSGCSMotorScore",
   "title" : "DIPSGCSMotorScore",
@@ -87,7 +87,7 @@ ValueSet of GCS Motor Score
   }],
   "compose" : {
     "include" : [{
-      "system" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem",
+      "system" : "http://dips.no/fhir/CodeSystem/DIPSGCSMotorScoreCodeSystem",
       "concept" : [{
         "code" : "1",
         "display" : "Ingen reaksjon"

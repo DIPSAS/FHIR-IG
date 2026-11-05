@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness | *Version*:0.1.0 |
-| Draft as of 2026-09-29 | *Computable Name*:DIPSVitalSignsObservationConsciousness |
+| *Official URL*:http://dips.no/fhir/CodeSystem/DIPSVitalSignsObservationConsciousness | *Version*:0.1.0 |
+| Draft as of 2026-11-05 | *Computable Name*:DIPSVitalSignsObservationConsciousness |
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
@@ -23,14 +23,14 @@
 {
   "resourceType" : "CodeSystem",
   "id" : "DIPSVitalSignsObservationConsciousness",
-  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness",
+  "url" : "http://dips.no/fhir/CodeSystem/DIPSVitalSignsObservationConsciousness",
   "identifier" : [{
     "system" : "http://dips.no/fhir/namingsystem/dips-consciousness"
   }],
   "version" : "0.1.0",
   "name" : "DIPSVitalSignsObservationConsciousness",
   "status" : "draft",
-  "date" : "2026-09-29T04:18:52+00:00",
+  "date" : "2026-11-05T07:34:57+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

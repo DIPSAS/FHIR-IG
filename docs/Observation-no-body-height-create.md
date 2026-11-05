@@ -29,7 +29,7 @@ Profile: [no-domain-VitalSigns-Observation-bodyheight Profile](https://hl7.no/fh
 **performer**: 
 
 * Identifier: `urn:oid:2.16.578.1.12.4.1.2`/889911
-* [Organization: identifier = urn:oid:1.3.6.1.4.1.9038.70.3#23](Organization-afa23.md)
+* [Unnamed Organization (urn:oid:1.3.6.1.4.1.9038.70.3#23)](Organization-afa23.md)
 
 **value**: 156 cm (Details: UCUM codecm = 'cm')
 

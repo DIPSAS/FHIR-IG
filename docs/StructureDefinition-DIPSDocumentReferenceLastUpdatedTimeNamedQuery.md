@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdated_Time | *Version*:0.1.0 |
-| Draft as of 2026-09-29 | *Computable Name*:DIPSDocumentReferenceLastUpdatedTimeNamedQuery |
+| Draft as of 2026-11-05 | *Computable Name*:DIPSDocumentReferenceLastUpdatedTimeNamedQuery |
 
 Same as DIPSDocumentReferenceLastUpdatedTime, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSDocumentReferenc
   "name" : "DIPSDocumentReferenceLastUpdatedTimeNamedQuery",
   "title" : "Last Updated Time (named-query URL variant)",
   "status" : "draft",
-  "date" : "2026-09-29T04:18:52+00:00",
+  "date" : "2026-11-05T07:34:57+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

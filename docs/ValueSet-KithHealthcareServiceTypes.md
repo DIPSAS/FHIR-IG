@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/ValueSet/KithHealthcareServiceTypes | *Version*:0.1.0 |
-| Active as of 2026-09-29 | *Computable Name*:KithHealthcareServiceTypes |
+| Active as of 2026-11-05 | *Computable Name*:KithHealthcareServiceTypes |
 
  
 Value Sets of KithHealthcareServiceTypes 
@@ -55,7 +55,7 @@ No Expansion for this valueset (Unknown Code System)
   "version" : "0.1.0",
   "name" : "KithHealthcareServiceTypes",
   "status" : "active",
-  "date" : "2026-09-29T04:18:52+00:00",
+  "date" : "2026-11-05T07:34:57+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

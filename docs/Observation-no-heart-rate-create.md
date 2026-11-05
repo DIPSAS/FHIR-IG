@@ -38,7 +38,7 @@ Clinical description sample
 **performer**: 
 
 * Identifier: `urn:oid:2.16.578.1.12.4.1.2`/889911
-* [Organization: identifier = urn:oid:1.3.6.1.4.1.9038.70.3#23](Organization-afa23.md)
+* [Unnamed Organization (urn:oid:1.3.6.1.4.1.9038.70.3#23)](Organization-afa23.md)
 
 **value**: 61 /min (Details: UCUM code/min = '/min')
 

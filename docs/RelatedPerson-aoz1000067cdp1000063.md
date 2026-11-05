@@ -8,23 +8,18 @@
 
 Profiles: [DIPSRelatedPerson](StructureDefinition-DIPSRelatedPerson.md), [no-basis-RelatedPerson](https://simplifier.net/resolve?scope=hl7.fhir.no.domain.vitalsigns@0.9.74&canonical=http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson)
 
-**no/fhir/R4/StructureDefinition/DIPSRelatedPersonKinship**: Mor
+Voksen (Testplan - Bas-Team), Dame - HovedpÃ¥rÃ¸rende (http://dips.no/fhir/namingsystem/dips-relativeid#aoz1000067cdp1000063 (use: official))
 
-**identifier**: FellesHjelpenummer/12526845852 (use: temp, ), `http://dips.no/fhir/namingsystem/dips-relativeid`/aoz1000067cdp1000063 (use: official, )
+-------
 
-**active**: true
-
-**patient**: [Anonymous Patient (no stated gender), DoB Unknown ( http://dips.no/fhir/namingsystem/dips-patientid#1000063)](Patient-cdp1000063.md)
-
-**relationship**: HovedpÃ¥rÃ¸rende
-
-**name**: Voksen (Testplan - Bas-Team), Dame
-
-**gender**: Female
-
-**birthDate**: 1968-12-12
-
-**address**: Gravdal 18 8372 Norway (home)
+| | | | |
+| :--- | :--- | :--- | :--- |
+| Active: | true | Gender: | Female |
+| Date of Birth: | 1968-12-12 | | |
+| Patient: | [Anonymous Patient (no stated gender), DoB Unknown ( http://dips.no/fhir/namingsystem/dips-patientid#1000063)](Patient-cdp1000063.md) | | |
+| Relationship: | HovedpÃ¥rÃ¸rende | | |
+| Other Id: | FellesHjelpenummer/12526845852 (use: temp) | | |
+| Contact Detail | Gravdal 18 8372 Norway (home) | | |
 
 
 

@@ -12,21 +12,16 @@ Tag:
 
 Security Label: 
 
-**identifier**: `http://dips.no/fhir/namingsystem/dips-bedid`/1000048 (use: official, )
+Gul 2 (Vanlig) (http://dips.no/fhir/namingsystem/dips-bedid#1000048 (use: official))
 
-**status**: Active
+-------
 
-**operationalStatus**: dips-bedstatus: (Ledig)
-
-**name**: Gul 2
-
-**mode**: Instance
-
-**type**: Vanlig
-
-**physicalType**: Bed
-
-**partOf**: [Location: identifier = urn:oid:1.3.6.1.4.1.9038.70.4#25](Location-ahl25.md)
+| | | | |
+| :--- | :--- | :--- | :--- |
+| Status: | Active | Operational Status: | dips-bedstatus: (Ledig) |
+| Mode: | Instance | Form: | Bed |
+| Type: | Vanlig | | |
+| Part Of: | [Unnamed Location (urn:oid:1.3.6.1.4.1.9038.70.4#25)](Location-ahl25.md) | | |
 
 
 

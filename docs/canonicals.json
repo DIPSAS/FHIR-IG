@@ -132,38 +132,80 @@
   "name" : "TextResultObservation"
 },
 {
-  "id" : "DIPSVitalSignsObservation",
-  "type" : "CapabilityStatement",
-  "url" : "http://dips.no/fhir/R4/CapabilityStatement/DIPSVitalSignsObservation",
-  "version" : "0.1.0"
-},
-{
   "id" : "DIPSBodyMassIndexMeasurementMethod",
   "type" : "CodeSystem",
-  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod",
+  "url" : "http://dips.no/fhir/CodeSystem/DIPSBodyMassIndexMeasurementMethod",
   "version" : "0.1.0",
   "name" : "DIPSBodyMassIndexMeasurementMethod"
 },
 {
   "id" : "DIPSGCSEyeOpeningScoreCodeSystem",
   "type" : "CodeSystem",
-  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem",
+  "url" : "http://dips.no/fhir/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem",
   "version" : "0.1.0",
   "name" : "DIPSGCSEyeOpeningScoreCodeSystem"
 },
 {
   "id" : "DIPSGCSMotorScoreCodeSystem",
   "type" : "CodeSystem",
-  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSMotorScoreCodeSystem",
+  "url" : "http://dips.no/fhir/CodeSystem/DIPSGCSMotorScoreCodeSystem",
   "version" : "0.1.0",
   "name" : "DIPSGCSMotorScoreCodeSystem"
 },
 {
   "id" : "DIPSGCSVerbalScoreCodeSystem",
   "type" : "CodeSystem",
-  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem",
+  "url" : "http://dips.no/fhir/CodeSystem/DIPSGCSVerbalScoreCodeSystem",
   "version" : "0.1.0",
   "name" : "DIPSGCSVerbalScoreCodeSystem"
+},
+{
+  "id" : "DIPSMeasurementMethod",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/CodeSystem/DIPSMeasurementMethod",
+  "version" : "0.1.0",
+  "name" : "DIPSMeasurementMethod"
+},
+{
+  "id" : "DIPSQSOFAScoreBPCodeSystem",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreBPCodeSystem",
+  "version" : "0.1.0",
+  "name" : "DIPSQSOFAScoreBPCodeSystem"
+},
+{
+  "id" : "DIPSQSOFAScoreMentalSatusCodeSystem",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem",
+  "version" : "0.1.0",
+  "name" : "DIPSQSOFAScoreMentalSatusCodeSystem"
+},
+{
+  "id" : "DIPSQSOFAScoreResRateCodeSystem",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreResRateCodeSystem",
+  "version" : "0.1.0",
+  "name" : "DIPSQSOFAScoreResRateCodeSystem"
+},
+{
+  "id" : "DIPSVitalSignsObservationConsciousness",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/CodeSystem/DIPSVitalSignsObservationConsciousness",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationConsciousness"
+},
+{
+  "id" : "DIPSVitalSignsObservationPrePostduktal",
+  "type" : "CodeSystem",
+  "url" : "http://dips.no/fhir/CodeSystem/DIPSVitalSignsObservationPrePostduktal",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationPrePostduktal"
+},
+{
+  "id" : "DIPSVitalSignsObservation",
+  "type" : "CapabilityStatement",
+  "url" : "http://dips.no/fhir/R4/CapabilityStatement/DIPSVitalSignsObservation",
+  "version" : "0.1.0"
 },
 {
   "id" : "DIPSLocation",
@@ -178,55 +220,6 @@
   "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSLocationTopLevel",
   "version" : "0.1.0",
   "name" : "DIPSLocationTopLevel"
-},
-{
-  "id" : "DIPSMeasurementMethod",
-  "type" : "CodeSystem",
-  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSMeasurementMethod",
-  "version" : "0.1.0",
-  "name" : "DIPSMeasurementMethod"
-},
-{
-  "id" : "DIPSQSOFAScoreBPCodeSystem",
-  "type" : "CodeSystem",
-  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem",
-  "version" : "0.1.0",
-  "name" : "DIPSQSOFAScoreBPCodeSystem"
-},
-{
-  "id" : "DIPSQSOFAScoreMentalSatusCodeSystem",
-  "type" : "CodeSystem",
-  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem",
-  "version" : "0.1.0",
-  "name" : "DIPSQSOFAScoreMentalSatusCodeSystem"
-},
-{
-  "id" : "DIPSQSOFAScoreResRateCodeSystem",
-  "type" : "CodeSystem",
-  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreResRateCodeSystem",
-  "version" : "0.1.0",
-  "name" : "DIPSQSOFAScoreResRateCodeSystem"
-},
-{
-  "id" : "DIPSQSOFAcomponentCodeSystem",
-  "type" : "CodeSystem",
-  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAcomponentCodeSystem",
-  "version" : "0.1.0",
-  "name" : "DIPSQSOFAcomponentCodeSystem"
-},
-{
-  "id" : "DIPSVitalSignsObservationConsciousness",
-  "type" : "CodeSystem",
-  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness",
-  "version" : "0.1.0",
-  "name" : "DIPSVitalSignsObservationConsciousness"
-},
-{
-  "id" : "DIPSVitalSignsObservationPrePostduktal",
-  "type" : "CodeSystem",
-  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal",
-  "version" : "0.1.0",
-  "name" : "DIPSVitalSignsObservationPrePostduktal"
 },
 {
   "id" : "dips.fhir.no.core",
@@ -600,53 +593,11 @@
   "name" : "DIPSEncounterV3"
 },
 {
-  "id" : "DIPSGCSEyeOpeningScore",
-  "type" : "ValueSet",
-  "url" : "http://dips.no/fhir/R4/ValueSet/DIPSGCSEyeOpeningScore",
-  "version" : "0.1.0",
-  "name" : "DIPSGCSEyeOpeningScore"
-},
-{
-  "id" : "DIPSGCSMotorScore",
-  "type" : "ValueSet",
-  "url" : "http://dips.no/fhir/R4/ValueSet/DIPSGCSMotorScore",
-  "version" : "0.1.0",
-  "name" : "DIPSGCSMotorScore"
-},
-{
-  "id" : "DIPSGCSVerbalScore",
-  "type" : "ValueSet",
-  "url" : "http://dips.no/fhir/R4/ValueSet/DIPSGCSVerbalScore",
-  "version" : "0.1.0",
-  "name" : "DIPSGCSVerbalScore"
-},
-{
   "id" : "DIPSHealthcareServiceTypes",
   "type" : "ValueSet",
   "url" : "http://dips.no/fhir/R4/ValueSet/DIPSHealthcareServiceTypes",
   "version" : "0.1.0",
   "name" : "DIPSHealthcareServiceTypes"
-},
-{
-  "id" : "DIPSQSOFAScoreBPValueSet",
-  "type" : "ValueSet",
-  "url" : "http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreBPValueSet",
-  "version" : "0.1.0",
-  "name" : "DIPSQSOFAScoreBPValueSet"
-},
-{
-  "id" : "DIPSQSOFAScoreMentalSatusValueSet",
-  "type" : "ValueSet",
-  "url" : "http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreMentalSatusValueSet",
-  "version" : "0.1.0",
-  "name" : "DIPSQSOFAScoreMentalSatusValueSet"
-},
-{
-  "id" : "DIPSQSOFAScoreResRateValueSet",
-  "type" : "ValueSet",
-  "url" : "http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreResRateValueSet",
-  "version" : "0.1.0",
-  "name" : "DIPSQSOFAScoreResRateValueSet"
 },
 {
   "id" : "DipsCoding1003ValueSet",
@@ -1216,13 +1167,6 @@
   "name" : "DIPSVitalSignsObservationPulse"
 },
 {
-  "id" : "DIPSVitalSignsObservationQSOFAScore",
-  "type" : "StructureDefinition",
-  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationQSOFAScore",
-  "version" : "0.1.0",
-  "name" : "DIPSVitalSignsObservationQSOFAScore"
-},
-{
   "id" : "DIPSVitalSignsObservationRespirationRate",
   "type" : "StructureDefinition",
   "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationRespirationRate",
@@ -1235,6 +1179,13 @@
   "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationSubjectReference",
   "version" : "0.1.0",
   "name" : "DIPSVitalSignsObservationSubjectReference"
+},
+{
+  "id" : "DIPSVitalSignsObservationqSOFA",
+  "type" : "StructureDefinition",
+  "url" : "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationqSOFA",
+  "version" : "0.1.0",
+  "name" : "DIPSVitalSignsObservationqSOFA"
 },
 {
   "id" : "DIPSVitalSignsPerformerAuthorReference",
@@ -1671,11 +1622,53 @@
   "name" : "WardTypeCodeId"
 },
 {
+  "id" : "DIPSGCSEyeOpeningScore",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSGCSEyeOpeningScore",
+  "version" : "0.1.0",
+  "name" : "DIPSGCSEyeOpeningScore"
+},
+{
+  "id" : "DIPSGCSMotorScore",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSGCSMotorScore",
+  "version" : "0.1.0",
+  "name" : "DIPSGCSMotorScore"
+},
+{
+  "id" : "DIPSGCSVerbalScore",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSGCSVerbalScore",
+  "version" : "0.1.0",
+  "name" : "DIPSGCSVerbalScore"
+},
+{
   "id" : "DIPSLocation",
   "type" : "ValueSet",
   "url" : "http://dips.no/fhir/ValueSet/DIPSLocation",
   "version" : "0.1.0",
   "name" : "DIPSLocation"
+},
+{
+  "id" : "DIPSQSOFAScoreBPValueSet",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreBPValueSet",
+  "version" : "0.1.0",
+  "name" : "DIPSQSOFAScoreBPValueSet"
+},
+{
+  "id" : "DIPSQSOFAScoreMentalSatusValueSet",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalSatusValueSet",
+  "version" : "0.1.0",
+  "name" : "DIPSQSOFAScoreMentalSatusValueSet"
+},
+{
+  "id" : "DIPSQSOFAScoreResRateValueSet",
+  "type" : "ValueSet",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreResRateValueSet",
+  "version" : "0.1.0",
+  "name" : "DIPSQSOFAScoreResRateValueSet"
 },
 {
   "id" : "DIPSVitalSignsHeartRhythmIrregularity",

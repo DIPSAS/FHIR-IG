@@ -19,10 +19,10 @@ This page provides a list of the FHIR artifacts defined as part of this implemen
 *  [DIPS Vital Signs Observation - NEWS2](StructureDefinition-DIPSVitalSignsObservationNews2Score.md) 
 *  [DIPS Vital Signs Observation - Oxygen Saturation](StructureDefinition-DIPSVitalSignsObservationOxygenSaturation.md) 
 *  [DIPS Vital Signs Observation - Pulse](StructureDefinition-DIPSVitalSignsObservationPulse.md) 
+*  [DIPS Vital Signs Observation - qSOFA](StructureDefinition-DIPSVitalSignsObservationqSOFA.md) 
 *  [DIPS Vital Signs Observation - Respiration Rate](StructureDefinition-DIPSVitalSignsObservationRespirationRate.md) 
 *  [DIPSBasisLabObservationR4](StructureDefinition-DIPSBasisLabObservationR4.md) 
 *  [DIPSVitalSignsObservationGCS](StructureDefinition-DIPSVitalSignsObservationGCS.md) 
-*  [DIPSVitalSignsObservationQSOFAScore](StructureDefinition-DIPSVitalSignsObservationQSOFAScore.md) 
 
 ### DiagnosticReport Profiles 
 
@@ -344,7 +344,6 @@ These define new code systems used by systems conforming to this implementation 
 *  [DIPSQSOFAScoreBPCodeSystem](CodeSystem-DIPSQSOFAScoreBPCodeSystem.md) 
 *  [DIPSQSOFAScoreMentalSatusCodeSystem](CodeSystem-DIPSQSOFAScoreMentalSatusCodeSystem.md) 
 *  [DIPSQSOFAScoreResRateCodeSystem](CodeSystem-DIPSQSOFAScoreResRateCodeSystem.md) 
-*  [DIPSQSOFAcomponentCodeSystem](CodeSystem-DIPSQSOFAcomponentCodeSystem.md) 
 *  [DIPSVitalSignsObservationConsciousness](CodeSystem-DIPSVitalSignsObservationConsciousness.md) 
 *  [DIPSVitalSignsObservationPrePostduktal](CodeSystem-DIPSVitalSignsObservationPrePostduktal.md) 
 

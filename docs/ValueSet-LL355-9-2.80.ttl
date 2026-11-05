@@ -14,7 +14,7 @@
   ] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet LL355-9-2.80</b></p><a name=\"LL355-9-2.80\"> </a><a name=\"hcLL355-9-2.80\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1; Last updated: 2025-02-26 19:25:44+0000</p></div><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA6553-7/\">LA6553-7</a></td><td>No eye opening</td></tr><tr><td><a href=\"https://loinc.org/LA6554-5/\">LA6554-5</a></td><td>Eye opening to pain</td></tr><tr><td><a href=\"https://loinc.org/LA6555-2/\">LA6555-2</a></td><td>Eye opening to verbal command</td></tr><tr><td><a href=\"https://loinc.org/LA6556-0/\">LA6556-0</a></td><td>Eyes open spontaneously</td></tr></table></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet LL355-9-2.80</b></p><a name=\"LL355-9-2.80\"> </a><a name=\"hcLL355-9-2.80\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1; Last updated: 2025-02-26 19:25:44+0000</p></div><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA6553-7/\">LA6553-7</a></td><td>No eye opening</td></tr><tr><td><a href=\"https://loinc.org/LA6554-5/\">LA6554-5</a></td><td>Eye opening to pain</td></tr><tr><td><a href=\"https://loinc.org/LA6555-2/\">LA6555-2</a></td><td>Eye opening to verbal command</td></tr><tr><td><a href=\"https://loinc.org/LA6556-0/\">LA6556-0</a></td><td>Eyes open spontaneously</td></tr></table></li></ul></div>"
   ] ;
   fhir:ValueSet.url [ fhir:value "http://loinc.org/vs/LL355-9"] ;
   fhir:ValueSet.identifier [
@@ -25,7 +25,7 @@
   fhir:ValueSet.version [ fhir:value "0.1.0"] ;
   fhir:ValueSet.name [ fhir:value "GCS_1_Eye"] ;
   fhir:ValueSet.status [ fhir:value "active"] ;
-  fhir:ValueSet.date [ fhir:value "2026-09-29T04:18:52+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.date [ fhir:value "2026-11-05T07:34:57+00:00"^^xsd:dateTime] ;
   fhir:ValueSet.publisher [ fhir:value "DIPS AS"] ;
   fhir:ValueSet.contact [
      fhir:index 0 ;

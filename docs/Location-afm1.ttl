@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "afm1"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location afm1</b></p><a name=\"afm1\"> </a><a name=\"hcafm1\"> </a></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location afm1</b></p><a name=\"afm1\"> </a><a name=\"hcafm1\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Unnamed Location</p><hr/></div>"
   ] .
 
 # - ontology header ------------------------------------------------------------

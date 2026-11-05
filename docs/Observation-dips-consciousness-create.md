@@ -32,8 +32,8 @@ Profile: [DIPS Vital Signs Observation - Level of Consciousness](StructureDefini
 
 **performer**: 
 
-* [PractitionerRole: identifier = urn:oid:1.3.6.1.4.1.9038.51.1#103](PractitionerRole-agb103.md)
-* [Organization: identifier = urn:oid:1.3.6.1.4.1.9038.70.3#22](Organization-afa22.md)
+* [(no practitioner) (urn:oid:1.3.6.1.4.1.9038.51.1#103)](PractitionerRole-agb103.md)
+* [Unnamed Organization (urn:oid:1.3.6.1.4.1.9038.70.3#22)](Organization-afa22.md)
 
 **value**: Våken
 
@@ -127,7 +127,7 @@ Profile: [DIPS Vital Signs Observation - Level of Consciousness](StructureDefini
   }],
   "valueCodeableConcept" : {
     "coding" : [{
-      "system" : "http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness",
+      "system" : "http://dips.no/fhir/CodeSystem/DIPSVitalSignsObservationConsciousness",
       "code" : "D0005",
       "display" : "Våken"
     }]

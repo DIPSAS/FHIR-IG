@@ -16,7 +16,7 @@ Profile: [DIPS Vital Signs Observation - Oxygen Saturation](StructureDefinition-
 
 **DIPSVitalSignsLocation**: [DIPSLocation: School](CodeSystem-DIPSLocation.md#DIPSLocation-School) (At School)
 
-**DIPSVitalSignsObservationPrePostduktal**: DIPSVitalSignsObservationPrePostduktal: D0009 (Preduktal)
+**DIPSVitalSignsObservationPrePostduktal**: [DIPSVitalSignsObservationPrePostduktal: D0009](CodeSystem-DIPSVitalSignsObservationPrePostduktal.md#DIPSVitalSignsObservationPrePostduktal-D0009) (Preduktal)
 
 > **NoDomainVitalSignsInspiredOxygen-Extension**
 * http://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition/NoDomainVitalSignsFlowExtension: 6100 ml/min
@@ -40,8 +40,8 @@ Profile: [DIPS Vital Signs Observation - Oxygen Saturation](StructureDefinition-
 
 **performer**: 
 
-* [PractitionerRole: identifier = urn:oid:1.3.6.1.4.1.9038.51.1#27](PractitionerRole-agb27.md)
-* [Organization: identifier = urn:oid:1.3.6.1.4.1.9038.70.3#22](Organization-afa22.md)
+* [(no practitioner) (urn:oid:1.3.6.1.4.1.9038.51.1#27)](PractitionerRole-agb27.md)
+* [Unnamed Organization (urn:oid:1.3.6.1.4.1.9038.70.3#22)](Organization-afa22.md)
 
 **value**: 96 % (Details: UCUM code% = '%')
 

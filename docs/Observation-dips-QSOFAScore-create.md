@@ -10,7 +10,7 @@ version: 0; Last updated: 2014-01-30 11:35:23+0000;
 
 Information Source: [dips](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&canonical=http://fhir.org/packages/hl7.fhir.no.basis/dips)
 
-Profile: [DIPSVitalSignsObservationQSOFAScore](StructureDefinition-DIPSVitalSignsObservationQSOFAScore.md)
+Profile: [DIPS Vital Signs Observation - qSOFA](StructureDefinition-DIPSVitalSignsObservationqSOFA.md)
 
 **DIPSJournalId**: [DocumentReference: status = current; docStatus = final](DocumentReference-ako124.md)
 
@@ -30,16 +30,16 @@ Profile: [DIPSVitalSignsObservationQSOFAScore](StructureDefinition-DIPSVitalSign
 
 **performer**: 
 
-* [PractitionerRole: extension = Ward,Epikrise,id: urn:oid:1.3.6.1.4.1.9038.70.4#1000057 (use: official, ),id: urn:oid:2.16.578.1.12.4.1.4.101#970948139 (use: official, ),Habiliteringspost; identifier = urn:oid:1.3.6.1.4.1.9038.51#HA1 (use: official, ),urn:oid:1.3.6.1.4.1.9038.51.1#1000204 (use: official, ); telecom = ph: 75505000(Work)](PractitionerRole-agb1000204.md)
-* [Organization Testsykehuset Hf](Organization-Organizationaks2.md)
+* [(no practitioner) at id: urn:oid:2.16.578.1.12.4.1.4.101#970948139 (use: official) (urn:oid:1.3.6.1.4.1.9038.51#HA1 (use: official))](PractitionerRole-agb1000204.md)
+* [Testsykehuset Hf (Helseforetak, HF|Helseforetak) (urn:oid:1.3.6.1.4.1.9038.70.1#2 (use: official))](Organization-Organizationaks2.md)
 
 **value**: 3 ScoreOf (Details: UCUM code{ScoreOf} = '{ScoreOf}')
 
-> **component****code**: QsofaResRate**value**: 1 - Respirasjonsfrekvens ≥22
+> **component****code**: Rate of spontaneous respiration**value**: 1 - Respirasjonsfrekvens ≥22
 
-> **component****code**: QsofaSystolicBP**value**: 1 - Systolisk blodtrykk ≤100
+> **component****code**: Systolic blood pressure**value**: 1 - Systolisk blodtrykk ≤100
 
-> **component****code**: QsofaMentalStatus**value**: 1 - Endret mental status
+> **component****code**: Alert Confusion Voice Pain Unresponsive scale score**value**: 1 - Endret mental status
 
 
 
@@ -53,7 +53,7 @@ Profile: [DIPSVitalSignsObservationQSOFAScore](StructureDefinition-DIPSVitalSign
     "versionId" : "0",
     "lastUpdated" : "2014-01-30T11:35:23+00:00",
     "source" : "dips",
-    "profile" : ["http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationQSOFAScore"]
+    "profile" : ["http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationqSOFA"]
   },
   "extension" : [{
     "url" : "http://dips.no/fhir/StructureDefinition/DIPSJournalId",
@@ -135,9 +135,9 @@ Profile: [DIPSVitalSignsObservationQSOFAScore](StructureDefinition-DIPSVitalSign
   "component" : [{
     "code" : {
       "coding" : [{
-        "system" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAcomponentCodeSystem",
-        "code" : "QsofaResRate",
-        "display" : "QsofaResRate"
+        "system" : "http://snomed.info/sct",
+        "code" : "271625008",
+        "display" : "Rate of spontaneous respiration"
       }]
     },
     "valueCodeableConcept" : {
@@ -152,9 +152,9 @@ Profile: [DIPSVitalSignsObservationQSOFAScore](StructureDefinition-DIPSVitalSign
   {
     "code" : {
       "coding" : [{
-        "system" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAcomponentCodeSystem",
-        "code" : "QsofaSystolicBP",
-        "display" : "QsofaSystolicBP"
+        "system" : "http://snomed.info/sct",
+        "code" : "4471000202106",
+        "display" : "Systolic blood pressure"
       }]
     },
     "valueCodeableConcept" : {
@@ -169,9 +169,9 @@ Profile: [DIPSVitalSignsObservationQSOFAScore](StructureDefinition-DIPSVitalSign
   {
     "code" : {
       "coding" : [{
-        "system" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAcomponentCodeSystem",
-        "code" : "QsofaMentalStatus",
-        "display" : "QsofaMentalStatus"
+        "system" : "http://snomed.info/sct",
+        "code" : "1104441000000107",
+        "display" : "Alert Confusion Voice Pain Unresponsive scale score"
       }]
     },
     "valueCodeableConcept" : {

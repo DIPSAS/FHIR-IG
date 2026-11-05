@@ -87,7 +87,7 @@ Codes representing pre/post ductal
   }],
   "compose" : {
     "include" : [{
-      "system" : "http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationPrePostduktal",
+      "system" : "http://dips.no/fhir/CodeSystem/DIPSVitalSignsObservationPrePostduktal",
       "concept" : [{
         "code" : "D0009",
         "display" : "Preduktal"

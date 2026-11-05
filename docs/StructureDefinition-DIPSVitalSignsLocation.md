@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSLocation | *Version*:0.1.0 |
-| Draft as of 2026-09-29 | *Computable Name*:DIPSVitalSignsLocation |
+| Draft as of 2026-11-05 | *Computable Name*:DIPSVitalSignsLocation |
 
 the physical location where the care delivery took place
 
@@ -19,7 +19,7 @@ the physical location where the care delivery took place
 
 **Usages:**
 
-* Use this Extension: [DIPS Vital Signs Observation - Blood Pressure](StructureDefinition-DIPSVitalSignsObservationBloodpressure.md), [DIPS Vital Signs Observation - Body Height](StructureDefinition-DIPSVitalSignsObservationBodyHeight.md), [DIPS Vital Signs Observation - Body Mass Index(BMI)](StructureDefinition-DIPSVitalSignsObservationBodyMassIndex.md), [DIPS Vital Signs Observation - Body Temperature](StructureDefinition-DIPSVitalSignsObservationBodyTemp.md)... Show 9 more, [DIPS Vital Signs Observation - Body Weight](StructureDefinition-DIPSVitalSignsObservationBodyWeight.md), [DIPS Vital Signs Observation - Level of Consciousness](StructureDefinition-DIPSVitalSignsObservationConsciousness.md), [DIPSVitalSignsObservationGCS](StructureDefinition-DIPSVitalSignsObservationGCS.md), [DIPS Vital Signs Observation - Heart Rate](StructureDefinition-DIPSVitalSignsObservationHeartRate.md), [DIPS Vital Signs Observation - NEWS2](StructureDefinition-DIPSVitalSignsObservationNews2Score.md), [DIPS Vital Signs Observation - Oxygen Saturation](StructureDefinition-DIPSVitalSignsObservationOxygenSaturation.md), [DIPS Vital Signs Observation - Pulse](StructureDefinition-DIPSVitalSignsObservationPulse.md), [DIPSVitalSignsObservationQSOFAScore](StructureDefinition-DIPSVitalSignsObservationQSOFAScore.md) and [DIPS Vital Signs Observation - Respiration Rate](StructureDefinition-DIPSVitalSignsObservationRespirationRate.md)
+* Use this Extension: [DIPS Vital Signs Observation - Blood Pressure](StructureDefinition-DIPSVitalSignsObservationBloodpressure.md), [DIPS Vital Signs Observation - Body Height](StructureDefinition-DIPSVitalSignsObservationBodyHeight.md), [DIPS Vital Signs Observation - Body Mass Index(BMI)](StructureDefinition-DIPSVitalSignsObservationBodyMassIndex.md), [DIPS Vital Signs Observation - Body Temperature](StructureDefinition-DIPSVitalSignsObservationBodyTemp.md)... Show 9 more, [DIPS Vital Signs Observation - Body Weight](StructureDefinition-DIPSVitalSignsObservationBodyWeight.md), [DIPS Vital Signs Observation - Level of Consciousness](StructureDefinition-DIPSVitalSignsObservationConsciousness.md), [DIPSVitalSignsObservationGCS](StructureDefinition-DIPSVitalSignsObservationGCS.md), [DIPS Vital Signs Observation - Heart Rate](StructureDefinition-DIPSVitalSignsObservationHeartRate.md), [DIPS Vital Signs Observation - NEWS2](StructureDefinition-DIPSVitalSignsObservationNews2Score.md), [DIPS Vital Signs Observation - Oxygen Saturation](StructureDefinition-DIPSVitalSignsObservationOxygenSaturation.md), [DIPS Vital Signs Observation - Pulse](StructureDefinition-DIPSVitalSignsObservationPulse.md), [DIPS Vital Signs Observation - Respiration Rate](StructureDefinition-DIPSVitalSignsObservationRespirationRate.md) and [DIPS Vital Signs Observation - qSOFA](StructureDefinition-DIPSVitalSignsObservationqSOFA.md)
 * Examples for this Extension: [Observation/bloodpressure-save-complete-instance](Observation-bloodpressure-save-complete-instance.md), [Observation/dips-QSOFAScore-create](Observation-dips-QSOFAScore-create.md), [Observation/dips-blood-pressure-create](Observation-dips-blood-pressure-create.md), [Observation/dips-bloodpressureexample](Observation-dips-bloodpressureexample.md)... Show 9 more, [Observation/dips-body-height-create](Observation-dips-body-height-create.md), [Observation/dips-body-mass-index-create](Observation-dips-body-mass-index-create.md), [Observation/dips-body-temperature-create](Observation-dips-body-temperature-create.md), [Observation/dips-body-weight-create](Observation-dips-body-weight-create.md), [Observation/dips-consciousness-create](Observation-dips-consciousness-create.md), [Observation/dips-heart-rate-create](Observation-dips-heart-rate-create.md), [Observation/dips-news2-create](Observation-dips-news2-create.md), [Observation/dips-oxygen-saturation-create](Observation-dips-oxygen-saturation-create.md) and [Observation/dips-respiratory-rate-create](Observation-dips-respiratory-rate-create.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.no.core|current/StructureDefinition/StructureDefinition-DIPSVitalSignsLocation.json)
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSVitalSignsLocati
   "version" : "0.1.0",
   "name" : "DIPSVitalSignsLocation",
   "status" : "draft",
-  "date" : "2026-09-29T04:18:52+00:00",
+  "date" : "2026-11-05T07:34:57+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

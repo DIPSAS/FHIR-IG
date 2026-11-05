@@ -5,7 +5,7 @@
 
 ## Reference Diagrams
 
-# DIPSFhirOrganizationReference
+### DIPSFhirOrganizationReference
 
-####  Extensions connected to DIPS FHIR R4 Organization Reference 
+######  Extensions connected to DIPS FHIR R4 Organization Reference 
 

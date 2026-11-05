@@ -8,29 +8,19 @@
 
 Profiles: [DIPSRelatedPerson](StructureDefinition-DIPSRelatedPerson.md), [no-basis-RelatedPerson](https://simplifier.net/resolve?scope=hl7.fhir.no.domain.vitalsigns@0.9.74&canonical=http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson)
 
-**no/fhir/R4/StructureDefinition/DIPSRelatedPersonAppointedByMunicipality**: [not stated]: 524 (Mandal)
+Verge, Hjelpe - Hjelpeverge (http://dips.no/fhir/namingsystem/dips-guardianid#1000001 (use: official))
 
-**no/fhir/R4/StructureDefinition/DIPSRelatedPersonAdditionalInformation**: Dette er vergetype 'Hjelpeverge' for pasient "Mange Verger"
+-------
 
-**no/fhir/R4/StructureDefinition/DIPSRelatedPersonResponsibleRequisitioner**: [KIRURG, HOFTE, TESTSYKEHUSET HF](PractitionerRole-agb1000456.md)
-
-**identifier**: `http://dips.no/fhir/namingsystem/dips-guardianid`/1000001 (use: official, )
-
-**active**: false
-
-**patient**: [Anonymous Patient (no stated gender), DoB Unknown ( http://dips.no/fhir/namingsystem/dips-patientid#2007860)](Patient-cdp2007860.md)
-
-**relationship**: Hjelpeverge
-
-**name**: Verge, Hjelpe
-
-**telecom**: ph: 45122255(Home)
-
-**gender**: Unknown
-
-**address**: Hjelpeveien Mandal 4504 
-
-**period**: 2008-02-04 00:00:00+0000 --> 2015-05-12 00:00:00+0000
+| | | | |
+| :--- | :--- | :--- | :--- |
+| Active: | false | Valid Period: | 2008-02-04 00:00:00+0000 --> 2015-05-12 00:00:00+0000 |
+| Gender: | Unknown | | |
+| Patient: | [Anonymous Patient (no stated gender), DoB Unknown ( http://dips.no/fhir/namingsystem/dips-patientid#2007860)](Patient-cdp2007860.md) | | |
+| Relationship: | Hjelpeverge | | |
+| Contact Detail | * ph: 45122255(Home)
+* Hjelpeveien Mandal 4504 
+ | | |
 
 
 

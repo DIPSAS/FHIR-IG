@@ -8,25 +8,18 @@
 
 Profiles: [DIPSRelatedPerson](StructureDefinition-DIPSRelatedPerson.md), [no-basis-RelatedPerson](https://simplifier.net/resolve?scope=hl7.fhir.no.domain.vitalsigns@0.9.74&canonical=http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson)
 
-**no/fhir/R4/StructureDefinition/DIPSRelatedPersonKinship**: sÃ¸ster
+SammenslÃ¥s, SynnÃ¸ve Skal Slettes - Annen pÃ¥rÃ¸rende (http://dips.no/fhir/namingsystem/dips-relativeid#aoz2007976cdp2009597 (use: official))
 
-**no/fhir/R4/StructureDefinition/DIPSRelatedPersonParentalResponsibility**: false
+-------
 
-**identifier**: FellesHjelpenummer/01486848800 (use: temp, ), `http://dips.no/fhir/namingsystem/dips-relativeid`/aoz2007976cdp2009597 (use: official, )
-
-**active**: true
-
-**patient**: [Anonymous Patient (no stated gender), DoB Unknown](Patient-cdp2009597.md)
-
-**relationship**: Annen pÃ¥rÃ¸rende
-
-**name**: SammenslÃ¥s, SynnÃ¸ve Skal Slettes
-
-**gender**: Female
-
-**birthDate**: 1968-08-01
-
-**address**: Hjemme Oslo 03 0870 Norway (home)
+| | | | |
+| :--- | :--- | :--- | :--- |
+| Active: | true | Gender: | Female |
+| Date of Birth: | 1968-08-01 | | |
+| Patient: | [Anonymous Patient (no stated gender), DoB Unknown](Patient-cdp2009597.md) | | |
+| Relationship: | Annen pÃ¥rÃ¸rende | | |
+| Other Id: | FellesHjelpenummer/01486848800 (use: temp) | | |
+| Contact Detail | Hjemme Oslo 03 0870 Norway (home) | | |
 
 
 

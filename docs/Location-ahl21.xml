@@ -3,6 +3,6 @@
 <Location xmlns="http://hl7.org/fhir">
   <id value="ahl21"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location ahl21</b></p><a name="ahl21"> </a><a name="hcahl21"> </a></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location ahl21</b></p><a name="ahl21"> </a><a name="hcahl21"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Unnamed Location</p><hr/></div>
   </text>
 </Location>

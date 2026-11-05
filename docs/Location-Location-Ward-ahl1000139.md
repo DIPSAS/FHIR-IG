@@ -12,19 +12,19 @@ Tag:
 
 Security Label: 
 
-**identifier**: `urn:oid:1.3.6.1.4.1.9038.70.4`/1000139 (use: official, ), `http://dips.no/fhir/namingsystem/dips-wardshortname`/K2 Sd (use: official, )
+Kirurgisk Post 2, Sd (0, Post) (urn:oid:1.3.6.1.4.1.9038.70.4#1000139 (use: official))
 
-**status**: Active
+-------
 
-**name**: Kirurgisk Post 2, Sd
-
-**mode**: Instance
-
-**type**: 0, Post
-
-**address**: (work)
-
-**physicalType**: Ward
+| | | | |
+| :--- | :--- | :--- | :--- |
+| Status: | Active | Mode: | Instance |
+| Form: | Ward | | |
+| Type: | * 0
+* Post
+ | | |
+| Address: | (work) | | |
+| Other Id: | `http://dips.no/fhir/namingsystem/dips-wardshortname`/K2 Sd (use: official) | | |
 
 
 

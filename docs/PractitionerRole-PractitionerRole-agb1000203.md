@@ -12,23 +12,16 @@ Profiles: [DIPSPractitionerRole](StructureDefinition-DIPSPractitionerRole.md), [
 
 Tag: 
 
-**no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHealthCarePartyType**: Ward
+(no practitioner) at Testsykehuset Hf (urn:oid:1.3.6.1.4.1.9038.51#HA1 (use: official))
 
-**no/fhir/R4/StructureDefinition/DIPSPractitionerRoleCommunicationType**: Epikrise
+-------
 
-**no/fhir/R4/StructureDefinition/DIPSPractitionerRoleWard**: [Organization: identifier = urn:oid:1.3.6.1.4.1.9038.70.4#1000057](Organization-ahl1000057.md)
-
-**no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHospital**: [Organization/afm1](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&canonical=http://fhir.org/packages/hl7.fhir.no.basis/Organization/afm1)
-
-**no/fhir/R4/StructureDefinition/DIPSPractitionerRoleHcpRoleName**: Habiliteringspost
-
-**identifier**: `urn:oid:1.3.6.1.4.1.9038.51`/HA1 (use: official, ), `urn:oid:1.3.6.1.4.1.9038.51.1`/1000203 (use: official, )
-
-**active**: true
-
-**organization**: [Testsykehuset Hf](Organization-aks1.md)
-
-**telecom**: ph: 75505000(Work)
+| | |
+| :--- | :--- |
+| Active: | true |
+| Organization: | [Testsykehuset Hf](Organization-aks1.md) |
+| Other Id: | `urn:oid:1.3.6.1.4.1.9038.51.1`/1000203 (use: official) |
+| Contact Detail | ph: 75505000(Work) |
 
 
 

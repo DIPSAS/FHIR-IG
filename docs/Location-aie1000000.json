@@ -3,7 +3,7 @@
   "id" : "aie1000000",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location aie1000000</b></p><a name=\"aie1000000\"> </a><a name=\"hcaie1000000\"> </a><p><b>identifier</b>: <code>http://dips.no/fhir/namingsystem/dips-bedid</code>/1000000</p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location aie1000000</b></p><a name=\"aie1000000\"> </a><a name=\"hcaie1000000\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Unnamed Location (http://dips.no/fhir/namingsystem/dips-bedid#1000000)</p><hr/></div>"
   },
   "identifier" : [{
     "system" : "http://dips.no/fhir/namingsystem/dips-bedid",

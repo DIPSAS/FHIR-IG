@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "agb59"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole agb59</b></p><a name=\"agb59\"> </a><a name=\"hcagb59\"> </a><p><b>identifier</b>: <code>urn:oid:1.3.6.1.4.1.9038.60.1</code>/59</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole agb59</b></p><a name=\"agb59\"> </a><a name=\"hcagb59\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">(no practitioner) (urn:oid:1.3.6.1.4.1.9038.60.1#59)</p><hr/></div>"
   ] ;
   fhir:PractitionerRole.identifier [
      fhir:index 0 ;

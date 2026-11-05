@@ -21,7 +21,7 @@ This page tracks, per module, which `fhir.core.r4` release each part of this IG 
 | PractitionerRole | DIPSPractitionerRole | 2.0.362 (baseline) | 2026-09-08 | Extension`^url`s fixed. Main profile has no served canonical URL — flagged. |
 | RelatedPerson | DIPSRelatedPerson | 2.0.362 (baseline) | 2026-09-08 | Extension`^url`s fixed. |
 | Encounter | 8 Encounter profiles +`MustOccurBefore`extension | not tracked | — | Owned by a different team. URL-scheme and other findings from the 2026-09-08 audit were documented but deliberately not applied — do not re-attempt without checking with that team first. |
-| VitalSign | 13`DIPSVitalSignsObservation*`profiles + reference profiles + 6 DIPS-specific extensions | 2.0.362 | 2026-09-16 | Verified, with open items — see[VitalSign](#vitalsign) |
+| VitalSign | 13`DIPSVitalSignsObservation*`profiles + reference profiles + 6 DIPS-specific extensions | 2.0.415 (qSOFA only; others 2.0.362) | 2026-10-27 | qSOFA renamed and SNOMED-coded in the IG ahead of the service; fhir.core.r4 change pending with its developer. Other open items unchanged — see[VitalSign](#vitalsign) |
 | DiagnosticReport | DIPSDiagnosticReport (+ DIPSDiagnosticOrderSpecimenReference, DIPSDiagnosticReportOrganizationReference/PractitionerReference/SubjectReference, DIPS-DiagnosticReport-WorkFlow extension) | 2.0.362 | 2026-09-16 | Verified, with open items — see[DiagnosticReport](#diagnosticreport) |
 | DocumentReference | DIPSR4DocumentReference (+ DIPSDocRefContextAppointment, DIPSDocRefContextEncounter, DIPSDocRefOrganization, DIPSDocumentReferenceAuthPractionerRole, DIPSDocumentReferencePractitionerRole, DIPSDocumentReferenceSubject and 17 DIPSDocumentReference* extensions) | 2.0.362 | 2026-09-17 | Verified, with notes — see[DocumentReference](#documentreference) |
 | Condition / Procedure | DIPSR4Condition, DIPSR4Procedure (+ DIPSConditionSubjectReference, DIPSConditionEncounterReference, DIPSConditionAsserterReferencePR, DIPSConditionAsserterReferenceOrg, DIPSProcedureSubjectReference, DIPSProcedureEncounterReference, DIPSProcedurePerformerAuthorreference, DiagnosisATCCode extension) | 2.0.362 | 2026-09-25 | Reviewed, with open items — see[Condition and Procedure](#condition-and-procedure) |
@@ -32,17 +32,23 @@ This page tracks, per module, which `fhir.core.r4` release each part of this IG 
 
 **Fixed**
 
-* Missing `^url` added to `DIPSVitalSignsObservationQSOFAScore` (matches the served, non-canonical scheme already used by the other 12).
+* Missing `^url` added to the qSOFA profile, then named `DIPSVitalSignsObservationQSOFAScore` (matches the served, non-canonical scheme already used by the other 12). The profile has since been renamed `DIPSVitalSignsObservationqSOFA` — see Open.
 * Dead `code.coding[HeartRateCode]` slice removed from HeartRate and Pulse — matched no real slice on either profile's NoDomain parent (`HeartRateSNOMEDCode`/`PulseSNOMEDCode`), a harmless but meaningless leftover.
+* `^url` added to the 10 VitalSign CodeSystems and the 6 GCS/qSOFA ValueSets that had none, so they publish as `http://dips.no/fhir/CodeSystem/<id>` / `http://dips.no/fhir/ValueSet/<id>` instead of under the IG canonical (`http://dips.no/fhir/R4/...`). The service already serves the CodeSystem URLs without `/R4/`, so served qSOFA/GCS/BMI/PrePostduktal values failed the IG's required bindings; the other VitalSign ValueSets already used this scheme.
 
 **Open**
 
 * The Consciousness template emits an undocumented extension, `DIPSVitalSignsObservationConsciousnessPainStimulus`, with no slice or extension definition in the IG — a fix was drafted but not kept, still needs adding.
 * The HeartRate, Pulse, RespiratoryRate and Pulsoksymetri templates each emit at least one extension (HeartRhythmIrregularity/ClinicalDescription/SpontaneousBreathing/RespirationRateBodyPosition/FiO2/OnAir/ProsentO2) under a URL matching neither the real `hl7.fhir.no.domain.vitalsigns` extension nor any DIPS-specific one — a `fhir.core.r4` template bug (confirmed self-contradictory even within one template), not encoded in the IG; needs a developer fix at the source, not an IG change.
+* **qSOFA: IG deliberately ahead of the service (2026-10-27).** The two changes below were made in the IG first; the `fhir.core.r4` developer has been told, and the service is expected to follow. Until it does, served qSOFA resources don't conform to the IG profile. Checked against `fhir.core.r4` `2.0.415`. 
+* Profile renamed from `DIPSVitalSignsObservationQSOFAScore` to `DIPSVitalSignsObservationqSOFA` (`^url` included). The service still uses `.../DIPSVitalSignsObservationQSOFAScore` in the QSOFA `config.json` (`Profiles` `Name`/`Url`, `Templates` `Source`/`Target`), in `fhir-template.hbs`'s `meta.profile` and in the VitalSign integration test. `ObservationCapabilityStatement.xml` lists `DIPSVitalSignsObservationQSOFA` (a bare name, differing from the new IG id only in the case of the `q`).
+* Components re-coded with SNOMED CT, reusing the codes of the matching RespirationRate, Bloodpressure and Consciousness profiles (respiration rate `271625008`, systolic blood pressure `4471000202106`, mental status `1104441000000107`), and `DIPSQSOFAcomponentCodeSystem` removed. The service's `fhir-template.hbs` still emits the old `DIPSQSOFAcomponentCodeSystem` codes (`QsofaResRate`/`QsofaSystolicBP`/`QsofaMentalStatus`), and `composition-template.hbs` matches inbound components by those codes, so a SNOMED-coded create loses its component values. Both the `src/VitalSign` and `helm/` copies of the templates need the change.
+ 
+* qSOFA total-score code `63451000122107` (used by both the IG and the service's `config.json` and `fhir-template.hbs`) is in neither the SNOMED CT International Edition nor the Norwegian edition (`SNOMEDCT-NO`, checked 2026-10-27), so the IG Publisher reports it as an unknown code. Its origin needs confirming before it is changed on either side.
 
-**Handled outside this IG**
+**Corrected**
 
-* `ObservationCapabilityStatement.xml`'s `supportedProfile` naming (`QSOFA` → `QSOFAScore`) was corrected directly in `fhir.core.r4`, separately from this IG.
+* An earlier version of this page said `ObservationCapabilityStatement.xml`'s `supportedProfile` had been renamed from `QSOFA` to `QSOFAScore` in `fhir.core.r4`. As of `2.0.415` (`origin/master`), it still reads `DIPSVitalSignsObservationQSOFA`.
 
 ### DiagnosticReport
 

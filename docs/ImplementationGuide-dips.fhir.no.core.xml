@@ -11,7 +11,7 @@
   <name value="DIPSCore"/>
   <title value="DIPS Core Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-09-29T04:18:52+00:00"/>
+  <date value="2026-11-05T07:34:57+00:00"/>
   <publisher value="DIPS AS"/>
   <contact>
     <name value="Lars-Andreas Nystad"/>
@@ -38,7 +38,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="7.4.0"/>
+    <version value="7.5.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -46,7 +46,7 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="5.3.0"/>
+    <version value="5.4.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_no_basis">
     <uri value="http://fhir.org/packages/hl7.fhir.no.basis/ImplementationGuide/hl7.fhir.no.basis"/>
@@ -59,536 +59,8 @@
     <version value="0.9.74"/>
   </dependsOn>
   <definition>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="copyrightyear"/>
-      </extension>
-      <extension url="value">
-        <valueString value="2023+"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="releaselabel"/>
-      </extension>
-      <extension url="value">
-        <valueString value="ci-build"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://hl7.no/Fhir/Profile/Diagnosis#ATC-Code"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocRefContextAppointment"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocRefContextEncounter"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocRefOrganization"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedByName"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedTime"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApproved_By_Name"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApproved_Time"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceAuthPractionerRole"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreatedBy"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreated_By"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedDuration"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedTime"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocumentFormat"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocument_Format"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPRGroup"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPR_Group"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEventTime"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEvent_Time"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStayId"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStay_Id"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastChangedBy"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdatedTime"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdated_Time"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLast_Changed_By"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLocationIdExtension"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferencePractitionerRole"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceReferralId"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSection"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSubject"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceTemplateIdExtension"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceTerminalAddress"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceWard"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSDocumentReferencedictatedtime"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/StructureDefinition/DIPSR4DocumentReference"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="no-narrative"/>
-      </extension>
-      <extension url="value">
-        <valueString value="Encounter/agy27"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="no-narrative"/>
-      </extension>
-      <extension url="value">
-        <valueString value="Encounter/agy1002135"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="no-narrative"/>
-      </extension>
-      <extension url="value">
-        <valueString value="Encounter/agy100247"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="no-narrative"/>
-      </extension>
-      <extension url="value">
-        <valueString value="DocumentReference/docRef-pdf-full"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="no-narrative"/>
-      </extension>
-      <extension url="value">
-        <valueString value="DocumentReference/docref-dictated-duration-example"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="no-narrative"/>
-      </extension>
-      <extension url="value">
-        <valueString value="DocumentReference/docref-dictation-section-example"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="autoload-resources"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="path-liquid"/>
-      </extension>
-      <extension url="value">
-        <valueString value="template/liquid"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="path-liquid"/>
-      </extension>
-      <extension url="value">
-        <valueString value="input/liquid"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="path-qa"/>
-      </extension>
-      <extension url="value">
-        <valueString value="temp/qa"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="path-temp"/>
-      </extension>
-      <extension url="value">
-        <valueString value="temp/pages"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="path-output"/>
-      </extension>
-      <extension url="value">
-        <valueString value="output"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="path-suppressed-warnings"/>
-      </extension>
-      <extension url="value">
-        <valueString value="input/ignoreWarnings.txt"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="path-history"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://dips.no/fhir/R4/history.html"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="template-html"/>
-      </extension>
-      <extension url="value">
-        <valueString value="template-page.html"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="template-md"/>
-      </extension>
-      <extension url="value">
-        <valueString value="template-page-md.html"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-contact"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-context"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-copyright"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-jurisdiction"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-license"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-publisher"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-version"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-wg"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="active-tables"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="fmm-definition"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="propagate-status"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="excludelogbinaryformat"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="tabbed-snapshots"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#1.1.2"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#1.3.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -2079,6 +1551,18 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/DIPSVitalSignsObservationqSOFA"/>
+      </reference>
+      <name value="DIPS Vital Signs Observation - qSOFA"/>
+      <description value="Quick Sepsis-related Organ Failure Assessment (qSOFA) is a simplified version of the SOFA score, which is used outside intensive care units to quickly assess sepsis risk in adults."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="ObservationProfiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/DIPSVitalSignsObservationRespirationRate"/>
       </reference>
       <name value="DIPS Vital Signs Observation - Respiration Rate"/>
@@ -2215,7 +1699,7 @@
         <reference value="Observation/dips-QSOFAScore-create"/>
       </reference>
       <name value="dips-QSOFAScore-create"/>
-      <exampleCanonical value="http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationQSOFAScore"/>
+      <exampleCanonical value="http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationqSOFA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -3404,16 +2888,6 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/DIPSQSOFAcomponentCodeSystem"/>
-      </reference>
-      <name value="DIPSQSOFAcomponentCodeSystem"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
         <reference value="CodeSystem/DIPSQSOFAScoreBPCodeSystem"/>
       </reference>
       <name value="DIPSQSOFAScoreBPCodeSystem"/>
@@ -3427,7 +2901,7 @@
         <reference value="ValueSet/DIPSQSOFAScoreBPValueSet"/>
       </reference>
       <name value="DIPSQSOFAScoreBPValueSet"/>
-      <description value="ValueSet of QSOFA Blood Pressure"/>
+      <description value="ValueSet of qSOFA Blood Pressure"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -3438,7 +2912,7 @@
         <reference value="ValueSet/DIPSQSOFAScoreResRateValueSet"/>
       </reference>
       <name value="DIPSQSOFAScoreBPValueSet"/>
-      <description value="ValueSet of QSOFA Respiration Rate"/>
+      <description value="ValueSet of qSOFA Respiration Rate"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -3459,7 +2933,7 @@
         <reference value="ValueSet/DIPSQSOFAScoreMentalSatusValueSet"/>
       </reference>
       <name value="DIPSQSOFAScoreMentalSatusValueSet"/>
-      <description value="ValueSet of QSOFA Blood Pressure"/>
+      <description value="ValueSet of qSOFA Blood Pressure"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -3762,18 +3236,6 @@
       <name value="DIPSVitalSignsObservationPulseMeasurementMethod"/>
       <description value="Codes representing measurement method"/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DIPSVitalSignsObservationQSOFAScore"/>
-      </reference>
-      <name value="DIPSVitalSignsObservationQSOFAScore"/>
-      <description value="Quick Sepsis-related Organ Failure Assessment (qSOFA) is a simplified version of the SOFA score, which is used outside intensive care units to quickly assess sepsis risk in adults."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="ObservationProfiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

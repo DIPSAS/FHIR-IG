@@ -6,6 +6,10 @@
 
 ## Example PractitionerRole: PractitionerRole details of agb1000456
 
+(no practitioner)
+
+-------
+
 
 
 ## Resource Content

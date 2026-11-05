@@ -8,15 +8,15 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreBPValueSet | *Version*:0.1.0 | |
+| *Official URL*:http://dips.no/fhir/ValueSet/DIPSQSOFAScoreBPValueSet | *Version*:0.1.0 | |
 | * Standards status: *[Draft](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:DIPSQSOFAScoreBPValueSet |
 
  
-ValueSet of QSOFA Blood Pressure 
+ValueSet of qSOFA Blood Pressure 
 
  **References** 
 
-* [DIPSVitalSignsObservationQSOFAScore](StructureDefinition-DIPSVitalSignsObservationQSOFAScore.md)
+* [DIPS Vital Signs Observation - qSOFA](StructureDefinition-DIPSVitalSignsObservationqSOFA.md)
 
 ### Logical Definition (CLD)
 
@@ -61,7 +61,7 @@ ValueSet of QSOFA Blood Pressure
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
     "valueInteger" : 1
   }],
-  "url" : "http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreBPValueSet",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreBPValueSet",
   "version" : "0.1.0",
   "name" : "DIPSQSOFAScoreBPValueSet",
   "title" : "DIPSQSOFAScoreBPValueSet",
@@ -77,7 +77,7 @@ ValueSet of QSOFA Blood Pressure
       "use" : "work"
     }]
   }],
-  "description" : "ValueSet of QSOFA Blood Pressure",
+  "description" : "ValueSet of qSOFA Blood Pressure",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -87,7 +87,7 @@ ValueSet of QSOFA Blood Pressure
   }],
   "compose" : {
     "include" : [{
-      "system" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem",
+      "system" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreBPCodeSystem",
       "concept" : [{
         "code" : "0",
         "display" : "Systolisk blodtrykk >100"

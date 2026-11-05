@@ -6,6 +6,10 @@
 
 ## Example Location: Location details of afm8
 
+Unnamed Location
+
+-------
+
 
 
 ## Resource Content

@@ -15,7 +15,7 @@ Person (Dips Api Unittest), Død(official) Male, DoB: 1956-08-05 ( http://dips.n
 | | | | |
 | :--- | :--- | :--- | :--- |
 | Active: | true | Deceased: | 2004-03-22 09:00:00+0530 |
-| Other Id: | FellesHjelpenummer/05485649338 (use: temp, ) | | |
+| Other Id: | FellesHjelpenummer/05485649338 (use: temp) | | |
 | Contact Detail | * 93423712(Mobile)
 * [fhs@dips.no](mailto:fhs@dips.no)
 * ph: 75532557(Home)

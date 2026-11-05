@@ -8,15 +8,15 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreResRateValueSet | *Version*:0.1.0 | |
+| *Official URL*:http://dips.no/fhir/ValueSet/DIPSQSOFAScoreResRateValueSet | *Version*:0.1.0 | |
 | * Standards status: *[Draft](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:DIPSQSOFAScoreResRateValueSet |
 
  
-ValueSet of QSOFA Respiration Rate 
+ValueSet of qSOFA Respiration Rate 
 
  **References** 
 
-* [DIPSVitalSignsObservationQSOFAScore](StructureDefinition-DIPSVitalSignsObservationQSOFAScore.md)
+* [DIPS Vital Signs Observation - qSOFA](StructureDefinition-DIPSVitalSignsObservationqSOFA.md)
 
 ### Logical Definition (CLD)
 
@@ -61,7 +61,7 @@ ValueSet of QSOFA Respiration Rate
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
     "valueInteger" : 1
   }],
-  "url" : "http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreResRateValueSet",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreResRateValueSet",
   "version" : "0.1.0",
   "name" : "DIPSQSOFAScoreResRateValueSet",
   "title" : "DIPSQSOFAScoreBPValueSet",
@@ -77,7 +77,7 @@ ValueSet of QSOFA Respiration Rate
       "use" : "work"
     }]
   }],
-  "description" : "ValueSet of QSOFA Respiration Rate",
+  "description" : "ValueSet of qSOFA Respiration Rate",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -87,7 +87,7 @@ ValueSet of QSOFA Respiration Rate
   }],
   "compose" : {
     "include" : [{
-      "system" : "http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreResRateCodeSystem",
+      "system" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreResRateCodeSystem",
       "concept" : [{
         "code" : "0",
         "display" : "Respirasjonsfrekvens <22"

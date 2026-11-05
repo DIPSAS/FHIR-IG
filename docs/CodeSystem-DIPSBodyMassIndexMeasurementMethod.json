@@ -3,16 +3,16 @@
   "id" : "DIPSBodyMassIndexMeasurementMethod",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DIPSBodyMassIndexMeasurementMethod</b></p><a name=\"DIPSBodyMassIndexMeasurementMethod\"> </a><a name=\"hcDIPSBodyMassIndexMeasurementMethod\"> </a><p>This  code system <code>http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">D0001<a name=\"DIPSBodyMassIndexMeasurementMethod-D0001\"> </a></td><td>Automatisk registrering</td><td>Automatisk registrering</td></tr><tr><td style=\"white-space:nowrap\">D0002<a name=\"DIPSBodyMassIndexMeasurementMethod-D0002\"> </a></td><td>Manuell registrering</td><td>Manuell registrering</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DIPSBodyMassIndexMeasurementMethod</b></p><a name=\"DIPSBodyMassIndexMeasurementMethod\"> </a><a name=\"hcDIPSBodyMassIndexMeasurementMethod\"> </a><p>This  code system <code>http://dips.no/fhir/CodeSystem/DIPSBodyMassIndexMeasurementMethod</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">D0001<a name=\"DIPSBodyMassIndexMeasurementMethod-D0001\"> </a></td><td>Automatisk registrering</td><td>Automatisk registrering</td></tr><tr><td style=\"white-space:nowrap\">D0002<a name=\"DIPSBodyMassIndexMeasurementMethod-D0002\"> </a></td><td>Manuell registrering</td><td>Manuell registrering</td></tr></table></div>"
   },
-  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod",
+  "url" : "http://dips.no/fhir/CodeSystem/DIPSBodyMassIndexMeasurementMethod",
   "identifier" : [{
     "system" : "http://dips.no/fhir/namingsystem/dips-bodymassindex"
   }],
   "version" : "0.1.0",
   "name" : "DIPSBodyMassIndexMeasurementMethod",
   "status" : "draft",
-  "date" : "2026-09-29T04:18:52+00:00",
+  "date" : "2026-11-05T07:34:57+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

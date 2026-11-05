@@ -12,15 +12,14 @@ Tag:
 
 Security Label: 
 
-**identifier**: `http://dips.no/fhir/namingsystem/dips-teamid`/1000027 (use: official, )
+Labsvar Psy (Team) (http://dips.no/fhir/namingsystem/dips-teamid#1000027 (use: official))
 
-**status**: Active
+-------
 
-**name**: Labsvar Psy
-
-**mode**: Instance
-
-**type**: Team
+| | | | |
+| :--- | :--- | :--- | :--- |
+| Status: | Active | Mode: | Instance |
+| Type: | Team | | |
 
 
 

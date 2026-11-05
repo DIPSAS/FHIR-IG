@@ -1,12 +1,17 @@
-<html>
+<html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>IP Review</title>
     <link rel="stylesheet" href="fhir.css"/>
   </head>
   <body>
+    <h1>IP Review</h1>
     <h2>Unattributed Code Systems</h2>
     <ul>
+      <li>
+        <a href="Observation-dips-body-mass-index-create.html">
+<code>http://dips.no/fhir/CodeSystem/DIPSBodyMassIndexMeasurementMethod</code>        </a>
+      </li>
       <li>
         <a href="Observation-dips-gcs-create.html">
 <code>http://dips.no/fhir/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem</code>        </a>
@@ -36,6 +41,10 @@
 <code>http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreResRateCodeSystem</code>        </a>
       </li>
       <li>
+        <a href="Observation-dips-consciousness-create.html">
+<code>http://dips.no/fhir/CodeSystem/DIPSVitalSignsObservationConsciousness</code>        </a>
+      </li>
+      <li>
         <a href="Observation-dips-oxygen-saturation-create.html">
 <code>http://dips.no/fhir/CodeSystem/DIPSVitalSignsObservationPrePostduktal</code>        </a>
       </li>
@@ -44,20 +53,8 @@
 <code>http://dips.no/fhir/InternalSecurityAccess</code>        </a>
       </li>
       <li>
-        <a href="Observation-dips-body-mass-index-create.html">
-<code>http://dips.no/fhir/R4/CodeSystem/DIPSBodyMassIndexMeasurementMethod</code>        </a>
-      </li>
-      <li>
         <a href="Observation-dips-respiratory-rate-create.html">
 <code>http://dips.no/fhir/R4/CodeSystem/DIPSLocation</code>        </a>
-      </li>
-      <li>
-        <a href="StructureDefinition-DIPSVitalSignsObservationQSOFAScore.html">
-<code>http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAcomponentCodeSystem</code>        </a>
-      </li>
-      <li>
-        <a href="Observation-dips-consciousness-create.html">
-<code>http://dips.no/fhir/R4/CodeSystem/DIPSVitalSignsObservationConsciousness</code>        </a>
       </li>
       <li>
         <a href="Location-Location-Ward-ahl1000139.html">
@@ -242,7 +239,7 @@
     <ul>
       <li>
 
-          IG &copy; 2023+ DIPS AS.  Package dips.fhir.no.core#0.1.0 based on FHIR 4.0.1. Generated 2026-09-29
+          IG &copy; 2023+ DIPS AS.  Package dips.fhir.no.core#0.1.0 based on FHIR 4.0.1. Generated 2026-11-05
           
           
                       Links: Table of Contents |
@@ -541,13 +538,13 @@ https://www.dips.no
           <a href="http://dips.no/fhir/ValueSet/DipsCoding1003ValueSet">dips.no</a>
         </td>
         <td>
-          <span style="opacity: 0.5">Code defined by a terminology system</span>
+          <span class="xhtPieceDeEmphasized">Code defined by a terminology system</span>
           <br class="binding"/>
-          <span style="font-weight:bold" title="null" class="binding">Binding: </span>
+          <span class="xhtPieceBold binding">Binding: </span>
           <a href="http://dips.no/fhir/ValueSet/DipsCoding1003ValueSet" class="binding">http://dips.no/fhir/ValueSet/DipsCoding1003ValueSet</a>
-          <span title="null" class="binding"> (</span>
+          <span class="binding"> (</span>
           <a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a>
-          <span title="null" class="binding">)</span>
+          <span class="binding">)</span>
           <br/>
         </td>
       </tr>
@@ -559,13 +556,13 @@ https://www.dips.no
           <a href="http://dips.no/fhir/ValueSet/KithCoding9040ValueSet">dips.no</a>
         </td>
         <td>
-          <span style="opacity: 0.5">Code defined by a terminology system</span>
+          <span class="xhtPieceDeEmphasized">Code defined by a terminology system</span>
           <br class="binding"/>
-          <span style="font-weight:bold" title="null" class="binding">Binding: </span>
+          <span class="xhtPieceBold binding">Binding: </span>
           <a href="http://dips.no/fhir/ValueSet/KithCoding9040ValueSet" class="binding">http://dips.no/fhir/ValueSet/KithCoding9040ValueSet</a>
-          <span title="null" class="binding"> (</span>
+          <span class="binding"> (</span>
           <a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a>
-          <span title="null" class="binding">)</span>
+          <span class="binding">)</span>
           <br/>
         </td>
       </tr>
@@ -577,13 +574,13 @@ https://www.dips.no
           <a href="http://dips.no/fhir/ValueSet/DIPSHealthcareServiceTypes">dips.no</a>
         </td>
         <td>
-          <span style="opacity: 0.5">Code defined by a terminology system</span>
+          <span class="xhtPieceDeEmphasized">Code defined by a terminology system</span>
           <br class="binding"/>
-          <span style="font-weight:bold" title="null" class="binding">Binding: </span>
+          <span class="xhtPieceBold binding">Binding: </span>
           <a href="http://dips.no/fhir/ValueSet/DIPSHealthcareServiceTypes" class="binding">http://dips.no/fhir/ValueSet/DIPSHealthcareServiceTypes</a>
-          <span title="null" class="binding"> (</span>
+          <span class="binding"> (</span>
           <a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a>
-          <span title="null" class="binding">)</span>
+          <span class="binding">)</span>
           <br/>
         </td>
       </tr>
@@ -595,13 +592,13 @@ https://www.dips.no
           <a href="http://dips.no/fhir/ValueSet/KithHealthcareServiceTypes">dips.no</a>
         </td>
         <td>
-          <span style="opacity: 0.5">Code defined by a terminology system</span>
+          <span class="xhtPieceDeEmphasized">Code defined by a terminology system</span>
           <br class="binding"/>
-          <span style="font-weight:bold" title="null" class="binding">Binding: </span>
+          <span class="xhtPieceBold binding">Binding: </span>
           <a href="http://dips.no/fhir/ValueSet/KithHealthcareServiceTypes" class="binding">http://dips.no/fhir/ValueSet/KithHealthcareServiceTypes</a>
-          <span title="null" class="binding"> (</span>
+          <span class="binding"> (</span>
           <a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a>
-          <span title="null" class="binding">)</span>
+          <span class="binding">)</span>
           <br/>
         </td>
       </tr>
@@ -791,7 +788,7 @@ The codes SHALL be taken from            <a href="http://dips.no/fhir/ValueSet/D
           <br/>
 (          <a href="http://hl7.org/fhir/R4/terminologies.html#required">required</a>
  to           <span class="copy-text-inline">
-<code>http://dips.no/fhir/ValueSet/DipsCoding1003ValueSet</code><button data-clipboard-text="http://dips.no/fhir/ValueSet/DipsCoding1003ValueSet" title="Click to Copy URL" class="btn-copy"></button>          </span>
+<code>http://dips.no/fhir/ValueSet/DipsCoding1003ValueSet</code><button data-clipboard-text="http://dips.no/fhir/ValueSet/DipsCoding1003ValueSet" title="Click to Copy URL" class="btn-copy" aria-label="copy"></button>          </span>
 )
         </td>
       </tr>
@@ -807,7 +804,7 @@ The codes SHALL be taken from            <a href="http://dips.no/fhir/ValueSet/K
           <br/>
 (          <a href="http://hl7.org/fhir/R4/terminologies.html#required">required</a>
  to           <span class="copy-text-inline">
-<code>http://dips.no/fhir/ValueSet/KithCoding9040ValueSet</code><button data-clipboard-text="http://dips.no/fhir/ValueSet/KithCoding9040ValueSet" title="Click to Copy URL" class="btn-copy"></button>          </span>
+<code>http://dips.no/fhir/ValueSet/KithCoding9040ValueSet</code><button data-clipboard-text="http://dips.no/fhir/ValueSet/KithCoding9040ValueSet" title="Click to Copy URL" class="btn-copy" aria-label="copy"></button>          </span>
 )
         </td>
       </tr>
@@ -823,7 +820,7 @@ The codes SHALL be taken from            <a href="http://dips.no/fhir/ValueSet/D
           <br/>
 (          <a href="http://hl7.org/fhir/R4/terminologies.html#required">required</a>
  to           <span class="copy-text-inline">
-<code>http://dips.no/fhir/ValueSet/DIPSHealthcareServiceTypes</code><button data-clipboard-text="http://dips.no/fhir/ValueSet/DIPSHealthcareServiceTypes" title="Click to Copy URL" class="btn-copy"></button>          </span>
+<code>http://dips.no/fhir/ValueSet/DIPSHealthcareServiceTypes</code><button data-clipboard-text="http://dips.no/fhir/ValueSet/DIPSHealthcareServiceTypes" title="Click to Copy URL" class="btn-copy" aria-label="copy"></button>          </span>
 )
         </td>
       </tr>
@@ -839,7 +836,7 @@ The codes SHALL be taken from            <a href="http://dips.no/fhir/ValueSet/K
           <br/>
 (          <a href="http://hl7.org/fhir/R4/terminologies.html#required">required</a>
  to           <span class="copy-text-inline">
-<code>http://dips.no/fhir/ValueSet/KithHealthcareServiceTypes</code><button data-clipboard-text="http://dips.no/fhir/ValueSet/KithHealthcareServiceTypes" title="Click to Copy URL" class="btn-copy"></button>          </span>
+<code>http://dips.no/fhir/ValueSet/KithHealthcareServiceTypes</code><button data-clipboard-text="http://dips.no/fhir/ValueSet/KithHealthcareServiceTypes" title="Click to Copy URL" class="btn-copy" aria-label="copy"></button>          </span>
 )
         </td>
       </tr>
@@ -852,9 +849,9 @@ The codes SHALL be taken from            <a href="http://dips.no/fhir/ValueSet/K
         </td>
         <td>
 
-                <a style="opacity: 0.5" href="http://dips.no/fhir/ValueSet/DipsCoding1003ValueSet">http://dips.no/fhir/ValueSet/DipsCoding1003ValueSet</a>
+                <a href="http://dips.no/fhir/ValueSet/DipsCoding1003ValueSet" class="unchangedStyle">http://dips.no/fhir/ValueSet/DipsCoding1003ValueSet</a>
 
-                <button data-clipboard-text="http://dips.no/fhir/ValueSet/DipsCoding1003ValueSet" title="Click to copy URL" class="btn-copy"></button>
+                <button data-clipboard-text="http://dips.no/fhir/ValueSet/DipsCoding1003ValueSet" title="Click to copy URL" class="btn-copy" aria-label="copy"></button>
 
     
         </td>
@@ -868,9 +865,9 @@ The codes SHALL be taken from            <a href="http://dips.no/fhir/ValueSet/K
         </td>
         <td>
 
-                <a style="opacity: 0.5" href="http://dips.no/fhir/ValueSet/KithCoding9040ValueSet">http://dips.no/fhir/ValueSet/KithCoding9040ValueSet</a>
+                <a href="http://dips.no/fhir/ValueSet/KithCoding9040ValueSet" class="unchangedStyle">http://dips.no/fhir/ValueSet/KithCoding9040ValueSet</a>
 
-                <button data-clipboard-text="http://dips.no/fhir/ValueSet/KithCoding9040ValueSet" title="Click to copy URL" class="btn-copy"></button>
+                <button data-clipboard-text="http://dips.no/fhir/ValueSet/KithCoding9040ValueSet" title="Click to copy URL" class="btn-copy" aria-label="copy"></button>
 
     
         </td>
@@ -884,9 +881,9 @@ The codes SHALL be taken from            <a href="http://dips.no/fhir/ValueSet/K
         </td>
         <td>
 
-                <a style="opacity: 0.5" href="http://dips.no/fhir/ValueSet/DIPSHealthcareServiceTypes">http://dips.no/fhir/ValueSet/DIPSHealthcareServiceTypes</a>
+                <a href="http://dips.no/fhir/ValueSet/DIPSHealthcareServiceTypes" class="unchangedStyle">http://dips.no/fhir/ValueSet/DIPSHealthcareServiceTypes</a>
 
-                <button data-clipboard-text="http://dips.no/fhir/ValueSet/DIPSHealthcareServiceTypes" title="Click to copy URL" class="btn-copy"></button>
+                <button data-clipboard-text="http://dips.no/fhir/ValueSet/DIPSHealthcareServiceTypes" title="Click to copy URL" class="btn-copy" aria-label="copy"></button>
 
     
         </td>
@@ -900,9 +897,9 @@ The codes SHALL be taken from            <a href="http://dips.no/fhir/ValueSet/K
         </td>
         <td>
 
-                <a style="opacity: 0.5" href="http://dips.no/fhir/ValueSet/KithHealthcareServiceTypes">http://dips.no/fhir/ValueSet/KithHealthcareServiceTypes</a>
+                <a href="http://dips.no/fhir/ValueSet/KithHealthcareServiceTypes" class="unchangedStyle">http://dips.no/fhir/ValueSet/KithHealthcareServiceTypes</a>
 
-                <button data-clipboard-text="http://dips.no/fhir/ValueSet/KithHealthcareServiceTypes" title="Click to copy URL" class="btn-copy"></button>
+                <button data-clipboard-text="http://dips.no/fhir/ValueSet/KithHealthcareServiceTypes" title="Click to copy URL" class="btn-copy" aria-label="copy"></button>
 
     
         </td>
@@ -916,14 +913,14 @@ The codes SHALL be taken from            <a href="http://dips.no/fhir/ValueSet/K
         </td>
         <td>
 Coded value for municipality/county Norwegian kommune          <br/>
-          <span style="font-weight:bold">URL: </span>
+          <span class="xhtPieceBold">URL: </span>
           <a href="https://simplifier.net/resolve?scope=hl7.fhir.no.domain.vitalsigns@0.9.74&amp;canonical=http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode">http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode</a>
           <br class="binding"/>
-          <span style="font-weight:bold" title="null" class="binding">Binding: </span>
+          <span class="xhtPieceBold binding">Binding: </span>
           <a href="https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle" class="binding">https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle</a>
-          <span title="null" class="binding"> (</span>
+          <span class="binding"> (</span>
           <a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a>
-          <span title="null" class="binding">)</span>
+          <span class="binding">)</span>
           <br/>
         </td>
       </tr>

@@ -2235,7 +2235,7 @@ Table 51. Supported Profiles
 | DIPSVitalSignsObservationNews2Score | NEWS2 score | SNOMED 1104051000000101 |
 | DIPSVitalSignsObservationOxygenSaturation | Oxygen saturation | LOINC 2708-6, SNOMED 431314004 |
 | DIPSVitalSignsObservationPulse | Pulse | LOINC 8867-4, SNOMED 78564009 |
-| DIPSVitalSignsObservationQSOFAScore | qSOFA score | SNOMED 63451000122107 |
+| DIPSVitalSignsObservationqSOFA | qSOFA | SNOMED 63451000122107 |
 | DIPSVitalSignsObservationRespirationRate | Respiration rate | LOINC 9279-1, SNOMED 271625008 |
 
 Table 52. Supported FHIR Operations
@@ -2283,7 +2283,7 @@ Search Heart rate recorded in document 1009240: `GET .../Observation?documentId=
 
 Search Pulse recorded in document 1009280: `GET .../Observation?documentId=1009280`
 
-Search qSOFA score recorded in document 1009024: `GET .../Observation?documentId=1009024`
+Search qSOFA recorded in document 1009024: `GET .../Observation?documentId=1009024`
 
 Search Oxygen saturation recorded in document 1009312: `GET .../Observation?documentId=1009312`
 

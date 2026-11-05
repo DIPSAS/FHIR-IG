@@ -48,8 +48,8 @@ Description of Respiration
 
 **performer**: 
 
-* [PractitionerRole: identifier = urn:oid:1.3.6.1.4.1.9038.51.1#30](PractitionerRole-agb30.md)
-* [Organization: identifier = urn:oid:1.3.6.1.4.1.9038.70.3#23](Organization-afa23.md)
+* [(no practitioner) (urn:oid:1.3.6.1.4.1.9038.51.1#30)](PractitionerRole-agb30.md)
+* [Unnamed Organization (urn:oid:1.3.6.1.4.1.9038.70.3#23)](Organization-afa23.md)
 
 **value**: 14 /min (Details: UCUM code/min = '/min')
 

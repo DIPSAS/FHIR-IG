@@ -6,6 +6,38 @@
 
 ## Example PractitionerRole: PractitionerRole-Physiotherapist
 
+Last updated: 2011-06-29 15:25:06+0530
+
+Profiles: [DIPSPractitionerRole](StructureDefinition-DIPSPractitionerRole.md), [http://dips.no/fhir/R4/StructureDefinition/NoBasisPractitionerRole](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&canonical=http://dips.no/fhir/R4/StructureDefinition/NoBasisPractitionerRole)
+
+Tag: 
+
+Anonymous Practitioner (urn:oid:2.16.578.1.12.4.1.4.4#HelsepersonellregisteretNummer#1215): Ikke lege at Testsykehuset HF (urn:oid:1.3.6.1.4.1.9038.51#REKV2 (use: official))
+
+-------
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| Active: | true | Valid Period: | ?? --> 2056-01-31 11:52:56+0000 |
+| Practitioner: | [Anonymous Practitioner (urn:oid:2.16.578.1.12.4.1.4.4#HelsepersonellregisteretNummer#1215)](Practitioner-stf2007723.md) | | |
+| Organization: | [Testsykehuset HF](Organization-aks1.md) | | |
+| Role: | Ikke lege | | |
+| Location: | [Unnamed Location (urn:oid:1.3.6.1.4.1.9038.70.6#1000021)](Location-aea1000021.md) | | |
+| Other Ids: | * `urn:oid:1.3.6.1.4.1.9038.51.1`/1000609 (use: official)
+* HelsepersonellregisteretNummer/1215 (use: official)
+ | | |
+| Contact Detail | ph: 75505000(Work) | | |
+
+-------
+
+**Contained Resource**
+
+-------
+
+HARRY OLA REKVIRENT (SAMMENSLÃ…ING) (urn:oid:2.16.578.1.12.4.1.4.4#HelsepersonellregisteretNummer#1215 (use: official))
+
+-------
+
 
 
 ## Resource Content

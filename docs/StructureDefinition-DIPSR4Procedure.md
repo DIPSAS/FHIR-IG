@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSR4Procedure | *Version*:0.1.0 |
-| Draft as of 2026-09-29 | *Computable Name*:DIPSR4Procedure |
+| Draft as of 2026-11-05 | *Computable Name*:DIPSR4Procedure |
 
  
 Procedure registered on a patient in DIPS Arena. Resource ids carry the `agv` prefix. 
@@ -158,7 +158,7 @@ The following search parameters SHALL be supported:
   "name" : "DIPSR4Procedure",
   "title" : "DIPS R4 Procedure",
   "status" : "draft",
-  "date" : "2026-09-29T04:18:52+00:00",
+  "date" : "2026-11-05T07:34:57+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

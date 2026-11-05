@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/ValueSet/DIPSGCSEyeOpeningScore | *Version*:0.1.0 | |
+| *Official URL*:http://dips.no/fhir/ValueSet/DIPSGCSEyeOpeningScore | *Version*:0.1.0 | |
 | * Standards status: *[Draft](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:DIPSGCSEyeOpeningScore |
 
  
@@ -61,7 +61,7 @@ ValueSet of GCS Eye OpeningScore
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
     "valueInteger" : 1
   }],
-  "url" : "http://dips.no/fhir/R4/ValueSet/DIPSGCSEyeOpeningScore",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSGCSEyeOpeningScore",
   "version" : "0.1.0",
   "name" : "DIPSGCSEyeOpeningScore",
   "title" : "DIPSGCSEyeOpeningScore",
@@ -87,7 +87,7 @@ ValueSet of GCS Eye OpeningScore
   }],
   "compose" : {
     "include" : [{
-      "system" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem",
+      "system" : "http://dips.no/fhir/CodeSystem/DIPSGCSEyeOpeningScoreCodeSystem",
       "concept" : [{
         "code" : "1",
         "display" : "Ingen reaksjon"

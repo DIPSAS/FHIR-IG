@@ -8,7 +8,9 @@
 
 Profile: [DocumentReferenceOrganization](StructureDefinition-DIPSDocRefOrganization.md)
 
-**identifier**: `http://dips.no/fhir/namingsystem/dips-organizationid`/22
+Unnamed Organization (http://dips.no/fhir/namingsystem/dips-organizationid#22)
+
+-------
 
 
 

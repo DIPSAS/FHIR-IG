@@ -26,7 +26,7 @@ FHIR artifacts this guide defines for the Observation resource. Selecting any pr
 * [DIPS Vital Signs Observation - Respiration Rate](StructureDefinition-DIPSVitalSignsObservationRespirationRate.md)
 * [DIPSBasisLabObservationR4](StructureDefinition-DIPSBasisLabObservationR4.md)
 * [DIPSVitalSignsObservationGCS](StructureDefinition-DIPSVitalSignsObservationGCS.md)
-* [DIPSVitalSignsObservationQSOFAScore](StructureDefinition-DIPSVitalSignsObservationQSOFAScore.md)
+* [DIPSVitalSignsObservationqSOFA](StructureDefinition-DIPSVitalSignsObservationqSOFA.md)
 
 #### Supported Profiles
 

@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "DIPSCore"] ;
   fhir:ImplementationGuide.title [ fhir:value "DIPS Core Implementation Guide"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-09-29T04:18:52+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-11-05T07:34:57+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "DIPS AS"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;
@@ -58,7 +58,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ] ;
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "7.4.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "7.5.0" ]
   ], [
      fhir:index 1 ;
      fhir:Element.id [ fhir:value "hl7ext" ] ;
@@ -72,7 +72,7 @@
        fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.3.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.4.0" ]
   ], [
      fhir:index 2 ;
      fhir:Element.id [ fhir:value "hl7_fhir_no_basis" ] ;
@@ -95,802 +95,10 @@
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
        fhir:index 0 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "2023+" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency" ] ;
+       fhir:Extension.valueCode [ fhir:value "hl7.fhir.uv.tools.r4#1.3.0" ]
      ], [
        fhir:index 1 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "releaselabel" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "ci-build" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 2 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://hl7.no/Fhir/Profile/Diagnosis#ATC-Code" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 3 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocRefContextAppointment" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 4 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocRefContextEncounter" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 5 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocRefOrganization" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 6 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedByName" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 7 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApprovedTime" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 8 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApproved_By_Name" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 9 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceApproved_Time" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 10 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceAuthPractionerRole" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 11 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreatedBy" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 12 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceCreated_By" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 13 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedDuration" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 14 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedTime" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 15 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocumentFormat" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 16 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDocument_Format" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 17 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPRGroup" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 18 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPR_Group" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 19 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEventTime" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 20 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEvent_Time" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 21 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStayId" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 22 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceHospitalStay_Id" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 23 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastChangedBy" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 24 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdatedTime" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 25 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLastUpdated_Time" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 26 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLast_Changed_By" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 27 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceLocationIdExtension" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 28 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferencePractitionerRole" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 29 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceReferralId" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 30 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSection" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 31 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceSubject" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 32 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceTemplateIdExtension" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 33 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceTerminalAddress" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 34 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceWard" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 35 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSDocumentReferencedictatedtime" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 36 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "special-url" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/StructureDefinition/DIPSR4DocumentReference" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 37 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "no-narrative" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "Encounter/agy27" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 38 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "no-narrative" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "Encounter/agy1002135" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 39 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "no-narrative" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "Encounter/agy100247" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 40 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "no-narrative" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "DocumentReference/docRef-pdf-full" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 41 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "no-narrative" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "DocumentReference/docref-dictated-duration-example" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 42 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "no-narrative" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "DocumentReference/docref-dictation-section-example" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 43 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "true" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 44 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "path-liquid" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "template/liquid" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 45 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "path-liquid" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "input/liquid" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 46 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "path-qa" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "temp/qa" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 47 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "path-temp" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "temp/pages" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 48 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "path-output" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "output" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 49 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 50 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "path-history" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://dips.no/fhir/R4/history.html" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 51 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "template-html" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "template-page.html" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 52 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "template-md" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 53 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "apply-contact" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "true" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 54 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "apply-context" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "true" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 55 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "true" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 56 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "true" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 57 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "apply-license" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "true" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 58 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "true" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 59 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "apply-version" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "true" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 60 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "apply-wg" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "true" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 61 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "active-tables" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "true" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 62 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "fmm-definition" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 63 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "propagate-status" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "true" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 64 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "excludelogbinaryformat" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "true" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 65 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "tabbed-snapshots" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "true" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 66 ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency" ] ;
-       fhir:Extension.valueCode [ fhir:value "hl7.fhir.uv.tools.r4#1.1.2" ]
-     ], [
-       fhir:index 67 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -902,7 +110,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 68 ;
+       fhir:index 2 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -914,7 +122,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 69 ;
+       fhir:index 3 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -926,7 +134,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 70 ;
+       fhir:index 4 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -938,7 +146,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 71 ;
+       fhir:index 5 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -950,7 +158,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 72 ;
+       fhir:index 6 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -962,7 +170,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 73 ;
+       fhir:index 7 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -974,7 +182,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 74 ;
+       fhir:index 8 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -986,7 +194,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 75 ;
+       fhir:index 9 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -998,7 +206,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 76 ;
+       fhir:index 10 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1010,7 +218,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 77 ;
+       fhir:index 11 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1022,7 +230,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 78 ;
+       fhir:index 12 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1034,7 +242,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 79 ;
+       fhir:index 13 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1046,7 +254,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 80 ;
+       fhir:index 14 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1058,7 +266,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 81 ;
+       fhir:index 15 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1070,7 +278,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 82 ;
+       fhir:index 16 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1082,7 +290,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 83 ;
+       fhir:index 17 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1094,7 +302,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 84 ;
+       fhir:index 18 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1106,7 +314,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 85 ;
+       fhir:index 19 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1118,7 +326,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 86 ;
+       fhir:index 20 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1130,7 +338,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 87 ;
+       fhir:index 21 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1142,7 +350,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 88 ;
+       fhir:index 22 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1154,7 +362,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 89 ;
+       fhir:index 23 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1166,7 +374,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 90 ;
+       fhir:index 24 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1178,7 +386,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 91 ;
+       fhir:index 25 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1190,7 +398,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 92 ;
+       fhir:index 26 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1202,7 +410,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 93 ;
+       fhir:index 27 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1214,7 +422,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 94 ;
+       fhir:index 28 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1226,7 +434,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 95 ;
+       fhir:index 29 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1238,7 +446,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 96 ;
+       fhir:index 30 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1250,7 +458,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 97 ;
+       fhir:index 31 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1262,7 +470,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 98 ;
+       fhir:index 32 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1274,7 +482,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 99 ;
+       fhir:index 33 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1286,7 +494,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 100 ;
+       fhir:index 34 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1298,7 +506,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 101 ;
+       fhir:index 35 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1310,7 +518,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 102 ;
+       fhir:index 36 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1322,7 +530,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 103 ;
+       fhir:index 37 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1334,7 +542,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 104 ;
+       fhir:index 38 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1346,7 +554,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 105 ;
+       fhir:index 39 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1358,7 +566,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 106 ;
+       fhir:index 40 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1370,7 +578,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 107 ;
+       fhir:index 41 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1382,7 +590,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 108 ;
+       fhir:index 42 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1394,7 +602,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 109 ;
+       fhir:index 43 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1406,7 +614,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 110 ;
+       fhir:index 44 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1418,7 +626,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 111 ;
+       fhir:index 45 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1430,7 +638,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 112 ;
+       fhir:index 46 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1442,7 +650,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 113 ;
+       fhir:index 47 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1454,7 +662,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 114 ;
+       fhir:index 48 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1466,7 +674,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 115 ;
+       fhir:index 49 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1478,7 +686,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 116 ;
+       fhir:index 50 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1490,7 +698,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 117 ;
+       fhir:index 51 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1502,7 +710,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 118 ;
+       fhir:index 52 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1514,7 +722,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 119 ;
+       fhir:index 53 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1526,7 +734,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 120 ;
+       fhir:index 54 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1538,7 +746,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 121 ;
+       fhir:index 55 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1550,7 +758,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 122 ;
+       fhir:index 56 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1562,7 +770,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 123 ;
+       fhir:index 57 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1574,7 +782,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 124 ;
+       fhir:index 58 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1586,7 +794,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 125 ;
+       fhir:index 59 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1598,7 +806,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 126 ;
+       fhir:index 60 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1610,7 +818,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 127 ;
+       fhir:index 61 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1622,7 +830,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 128 ;
+       fhir:index 62 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1634,7 +842,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 129 ;
+       fhir:index 63 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1646,7 +854,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 130 ;
+       fhir:index 64 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1658,7 +866,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 131 ;
+       fhir:index 65 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -1670,7 +878,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 132 ;
+       fhir:index 66 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -2965,6 +2173,21 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSVitalSignsObservationqSOFA> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DIPSVitalSignsObservationqSOFA" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPS Vital Signs Observation - qSOFA" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Quick Sepsis-related Organ Failure Assessment (qSOFA) is a simplified version of the SOFA score, which is used outside intensive care units to quickly assess sepsis risk in adults." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "ObservationProfiles" ]
+     ], [
+       fhir:index 84 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSVitalSignsObservationRespirationRate> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DIPSVitalSignsObservationRespirationRate" ]
        ] ;
@@ -2973,7 +2196,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "ObservationProfiles" ]
      ], [
-       fhir:index 84 ;
+       fhir:index 85 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2989,7 +2212,7 @@
          fhir:link <http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBloodpressure>
        ]
      ], [
-       fhir:index 85 ;
+       fhir:index 86 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3005,7 +2228,7 @@
          fhir:link <http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBloodpressure>
        ]
      ], [
-       fhir:index 86 ;
+       fhir:index 87 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3021,7 +2244,7 @@
          fhir:link <http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBodyHeight>
        ]
      ], [
-       fhir:index 87 ;
+       fhir:index 88 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3037,7 +2260,7 @@
          fhir:link <http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBodyMassIndex>
        ]
      ], [
-       fhir:index 88 ;
+       fhir:index 89 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3053,7 +2276,7 @@
          fhir:link <http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBodyTemp>
        ]
      ], [
-       fhir:index 89 ;
+       fhir:index 90 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3069,7 +2292,7 @@
          fhir:link <http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationBodyWeight>
        ]
      ], [
-       fhir:index 90 ;
+       fhir:index 91 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3085,7 +2308,7 @@
          fhir:link <http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationConsciousness>
        ]
      ], [
-       fhir:index 91 ;
+       fhir:index 92 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3101,7 +2324,7 @@
          fhir:link <http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationGCS>
        ]
      ], [
-       fhir:index 92 ;
+       fhir:index 93 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3117,7 +2340,7 @@
          fhir:link <http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationHeartRate>
        ]
      ], [
-       fhir:index 93 ;
+       fhir:index 94 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3133,7 +2356,7 @@
          fhir:link <http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationNews2Score>
        ]
      ], [
-       fhir:index 94 ;
+       fhir:index 95 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3149,7 +2372,7 @@
          fhir:link <http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationOxygenSaturation>
        ]
      ], [
-       fhir:index 95 ;
+       fhir:index 96 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3163,7 +2386,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Defines the Id of the language that patient speaks" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 96 ;
+       fhir:index 97 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3175,11 +2398,11 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "dips-QSOFAScore-create" ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationQSOFAScore" ;
-         fhir:link <http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationQSOFAScore>
+         fhir:value "http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationqSOFA" ;
+         fhir:link <http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationqSOFA>
        ]
      ], [
-       fhir:index 97 ;
+       fhir:index 98 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3195,7 +2418,7 @@
          fhir:link <http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationRespirationRate>
        ]
      ], [
-       fhir:index 98 ;
+       fhir:index 99 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3209,7 +2432,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "AppointmentProfiles" ]
      ], [
-       fhir:index 99 ;
+       fhir:index 100 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3223,7 +2446,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "ScheduleProfiles" ]
      ], [
-       fhir:index 100 ;
+       fhir:index 101 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3237,7 +2460,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "ObservationProfiles" ]
      ], [
-       fhir:index 101 ;
+       fhir:index 102 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3251,7 +2474,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "SupportingReferenceProfiles" ]
      ], [
-       fhir:index 102 ;
+       fhir:index 103 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3265,7 +2488,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "ReferenceProfiles" ]
      ], [
-       fhir:index 103 ;
+       fhir:index 104 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3279,7 +2502,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "SupportingReferenceProfiles" ]
      ], [
-       fhir:index 104 ;
+       fhir:index 105 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3293,7 +2516,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "SupportingReferenceProfiles" ]
      ], [
-       fhir:index 105 ;
+       fhir:index 106 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3306,7 +2529,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSBodyMassIndexMeasurementMethod" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 106 ;
+       fhir:index 107 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3320,7 +2543,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value Sets of DipsCoding1003ValueSet" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 107 ;
+       fhir:index 108 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3334,7 +2557,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "ReferenceProfiles" ]
      ], [
-       fhir:index 108 ;
+       fhir:index 109 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3348,7 +2571,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "SupportingReferenceProfiles" ]
      ], [
-       fhir:index 109 ;
+       fhir:index 110 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3362,7 +2585,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "SupportingReferenceProfiles" ]
      ], [
-       fhir:index 110 ;
+       fhir:index 111 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3376,7 +2599,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "SupportingReferenceProfiles" ]
      ], [
-       fhir:index 111 ;
+       fhir:index 112 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3391,7 +2614,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "SupportingReferenceProfiles" ]
      ], [
-       fhir:index 112 ;
+       fhir:index 113 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3404,7 +2627,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSDocumentReferenceApprovedByName" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 113 ;
+       fhir:index 114 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3417,7 +2640,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSDocumentReferenceApprovedTime" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 114 ;
+       fhir:index 115 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3432,7 +2655,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "SupportingReferenceProfiles" ]
      ], [
-       fhir:index 115 ;
+       fhir:index 116 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3445,7 +2668,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSDocumentReferenceCreatedBy" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 116 ;
+       fhir:index 117 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3459,7 +2682,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DictatedDuration can be mentioned either in seconds (s), minutes (min), hours (h)\nor days (d) in the POST request. However, the response will always return in (s)\nseconds." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 117 ;
+       fhir:index 118 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3473,7 +2696,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This Extension is a mandatory property in creation and update of dictation" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 118 ;
+       fhir:index 119 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3486,7 +2709,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSDocumentReferenceDocumentFormat" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 119 ;
+       fhir:index 120 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3499,7 +2722,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSDocumentReferenceEPRGroup" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 120 ;
+       fhir:index 121 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3512,7 +2735,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSDocumentReferenceEventTime" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 121 ;
+       fhir:index 122 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3525,7 +2748,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSDocumentReferenceHospitalStayId" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 122 ;
+       fhir:index 123 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3538,7 +2761,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSDocumentReferenceLastChangedBy" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 123 ;
+       fhir:index 124 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3551,7 +2774,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSDocumentReferenceLastUpdatedTime" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 124 ;
+       fhir:index 125 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3564,7 +2787,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSDocumentReferenceLocationIdExtension" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 125 ;
+       fhir:index 126 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3579,7 +2802,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "SupportingReferenceProfiles" ]
      ], [
-       fhir:index 126 ;
+       fhir:index 127 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3592,7 +2815,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSDocumentReferenceReferralId" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 127 ;
+       fhir:index 128 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3605,7 +2828,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSDocumentReferenceSection" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 128 ;
+       fhir:index 129 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3620,7 +2843,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "SupportingReferenceProfiles" ]
      ], [
-       fhir:index 129 ;
+       fhir:index 130 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3634,7 +2857,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is a mandatory property in create / update dictation" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 130 ;
+       fhir:index 131 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3648,7 +2871,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "As per the current implementation, saved documents are moved out of locked state to unlocked state\nafter a document is created. The device terminal address can be sent in the document create post data\nas an extension" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 131 ;
+       fhir:index 132 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3661,7 +2884,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSDocumentReferenceWard" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 132 ;
+       fhir:index 133 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3675,7 +2898,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "SupportingReferenceProfiles" ]
      ], [
-       fhir:index 133 ;
+       fhir:index 134 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3689,7 +2912,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "SupportingReferenceProfiles" ]
      ], [
-       fhir:index 134 ;
+       fhir:index 135 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3703,7 +2926,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "SupportingReferenceProfiles" ]
      ], [
-       fhir:index 135 ;
+       fhir:index 136 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3717,7 +2940,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "ServiceRequestProfiles" ]
      ], [
-       fhir:index 136 ;
+       fhir:index 137 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3731,7 +2954,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "SupportingReferenceProfiles" ]
      ], [
-       fhir:index 137 ;
+       fhir:index 138 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3745,7 +2968,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Have volven codesystems and rest of the namesystem" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 138 ;
+       fhir:index 139 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3759,7 +2982,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes representing body site for blood pressure" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 139 ;
+       fhir:index 140 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3773,7 +2996,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet of GCS Eye OpeningScore" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 140 ;
+       fhir:index 141 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3786,7 +3009,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSGCSEyeOpeningScoreCodeSystem" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 141 ;
+       fhir:index 142 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3800,7 +3023,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet of GCS Motor Score" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 142 ;
+       fhir:index 143 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3813,7 +3036,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSGCSMotorScoreCodeSystem" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 143 ;
+       fhir:index 144 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3827,7 +3050,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet of GCS Verbal Score" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 144 ;
+       fhir:index 145 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3840,7 +3063,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSGCSVerbalScoreCodeSystem" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 145 ;
+       fhir:index 146 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3854,7 +3077,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "HealthcareServiceProfiles" ]
      ], [
-       fhir:index 146 ;
+       fhir:index 147 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3867,7 +3090,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSHealthcareServiceAddress" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 147 ;
+       fhir:index 148 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3880,7 +3103,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSHealthcareServiceCommunicationProtocol" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 148 ;
+       fhir:index 149 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3893,7 +3116,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSHealthcareServiceDepartment" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 149 ;
+       fhir:index 150 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3906,7 +3129,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSHealthcareServiceHospital" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 150 ;
+       fhir:index 151 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3919,7 +3142,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSHealthcareServiceIsPaperCopy" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 151 ;
+       fhir:index 152 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3932,7 +3155,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSHealthcareServiceSection" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 152 ;
+       fhir:index 153 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3946,7 +3169,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value Sets of DIPSHealthcareServiceTypes" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 153 ;
+       fhir:index 154 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3959,7 +3182,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSHealthcareServiceWard" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 154 ;
+       fhir:index 155 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3973,7 +3196,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "EncounterProfiles" ]
      ], [
-       fhir:index 155 ;
+       fhir:index 156 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3987,7 +3210,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DIPS extension for Journal ID, common for all DIPS vital sign profiles" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 156 ;
+       fhir:index 157 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4001,7 +3224,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "ReferenceProfiles" ]
      ], [
-       fhir:index 157 ;
+       fhir:index 158 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4015,7 +3238,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LocationProfiles" ]
      ], [
-       fhir:index 158 ;
+       fhir:index 159 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4029,7 +3252,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DIPSLocation" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 159 ;
+       fhir:index 160 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4042,7 +3265,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSLocation" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 160 ;
+       fhir:index 161 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4055,7 +3278,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DipsLocationExtension" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 161 ;
+       fhir:index 162 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4069,7 +3292,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "SupportingReferenceProfiles" ]
      ], [
-       fhir:index 162 ;
+       fhir:index 163 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4082,7 +3305,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSLocationTopLevel" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 163 ;
+       fhir:index 164 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4095,7 +3318,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSMeasurementMethod" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 164 ;
+       fhir:index 165 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4109,7 +3332,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "SupportingReferenceProfiles" ]
      ], [
-       fhir:index 165 ;
+       fhir:index 166 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4123,7 +3346,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "OrganizationProfiles" ]
      ], [
-       fhir:index 166 ;
+       fhir:index 167 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4137,7 +3360,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "SupportingReferenceProfiles" ]
      ], [
-       fhir:index 167 ;
+       fhir:index 168 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4151,7 +3374,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "ReferenceProfiles" ]
      ], [
-       fhir:index 168 ;
+       fhir:index 169 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4165,7 +3388,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "PatientProfiles" ]
      ], [
-       fhir:index 169 ;
+       fhir:index 170 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4178,7 +3401,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPatientContactIdentifier" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 170 ;
+       fhir:index 171 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4191,7 +3414,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPatientContactPractitionerRoleName" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 171 ;
+       fhir:index 172 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4204,7 +3427,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DipsPatientDeathComment" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 172 ;
+       fhir:index 173 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4217,7 +3440,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DipsPatientDeathRegisteredBy" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 173 ;
+       fhir:index 174 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4230,7 +3453,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DipsPatientDeathRegisteredTime" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 174 ;
+       fhir:index 175 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4243,7 +3466,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DipsPatientHospitalSectorId" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 175 ;
+       fhir:index 176 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4256,7 +3479,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DipsPatientHospitalSectorName" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 176 ;
+       fhir:index 177 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4269,7 +3492,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DipsPatientMunicipality" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 177 ;
+       fhir:index 178 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4282,7 +3505,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DipsPatientPhoneTypeId" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 178 ;
+       fhir:index 179 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4295,7 +3518,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DipsPatientStateName" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 179 ;
+       fhir:index 180 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4309,7 +3532,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "PersonProfiles" ]
      ], [
-       fhir:index 180 ;
+       fhir:index 181 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4322,7 +3545,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPersonDeathComment" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 181 ;
+       fhir:index 182 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4335,7 +3558,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPersonDeathRegisteredBy" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 182 ;
+       fhir:index 183 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4348,7 +3571,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPersonDeathRegisteredTime" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 183 ;
+       fhir:index 184 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4361,7 +3584,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPersonHospitalSectorId" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 184 ;
+       fhir:index 185 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4374,7 +3597,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPersonHospitalSectorName" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 185 ;
+       fhir:index 186 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4387,7 +3610,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPersonLanguage" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 186 ;
+       fhir:index 187 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4400,7 +3623,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPersonLastOfficialAddressSyncTime" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 187 ;
+       fhir:index 188 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4413,7 +3636,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPersonMunicipality" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 188 ;
+       fhir:index 189 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4426,7 +3649,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPersonStateName" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 189 ;
+       fhir:index 190 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4440,7 +3663,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "PractitionerProfiles" ]
      ], [
-       fhir:index 190 ;
+       fhir:index 191 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4454,7 +3677,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "ReferenceProfiles" ]
      ], [
-       fhir:index 191 ;
+       fhir:index 192 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4468,7 +3691,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "PractitionerRoleProfiles" ]
      ], [
-       fhir:index 192 ;
+       fhir:index 193 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4481,7 +3704,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPractitionerRoleCommunicationProtocol" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 193 ;
+       fhir:index 194 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4494,7 +3717,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPractitionerRoleCommunicationType" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 194 ;
+       fhir:index 195 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4507,7 +3730,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPractitionerRoleCommunicationTypeId" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 195 ;
+       fhir:index 196 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4520,7 +3743,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPractitionerRoleDipsSignature" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 196 ;
+       fhir:index 197 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4533,7 +3756,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPractitionerRoleHcpRoleName" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 197 ;
+       fhir:index 198 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4546,7 +3769,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPractitionerRoleHealthCarePartyDepartment" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 198 ;
+       fhir:index 199 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4559,7 +3782,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPractitionerRoleHealthCarePartyType" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 199 ;
+       fhir:index 200 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4572,7 +3795,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPractitionerRoleHealthCarePosition" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 200 ;
+       fhir:index 201 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4585,7 +3808,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPractitionerRoleHospital" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 201 ;
+       fhir:index 202 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4598,7 +3821,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPractitionerRoleIsPaperCopy" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 202 ;
+       fhir:index 203 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4612,7 +3835,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "ReferenceProfiles" ]
      ], [
-       fhir:index 203 ;
+       fhir:index 204 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4625,7 +3848,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPractitionerRoleSection" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 204 ;
+       fhir:index 205 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4638,7 +3861,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPractitionerRoleUserRoleDepartment" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 205 ;
+       fhir:index 206 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4651,7 +3874,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPractitionerRoleUserRoleId" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 206 ;
+       fhir:index 207 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4664,7 +3887,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPractitionerRoleUserRoleLastUpdated" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 207 ;
+       fhir:index 208 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4677,7 +3900,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPractitionerRoleUserRoleName" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 208 ;
+       fhir:index 209 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4690,7 +3913,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPractitionerRoleWard" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 209 ;
+       fhir:index 210 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -4701,19 +3924,6 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/DIPSPractitionerSpecialist" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSPractitionerSpecialist" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 210 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAcomponentCodeSystem> ;
-         fhir:Reference.reference [ fhir:value "CodeSystem/DIPSQSOFAcomponentCodeSystem" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSQSOFAcomponentCodeSystem" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 211 ;
@@ -4740,7 +3950,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/DIPSQSOFAScoreBPValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSQSOFAScoreBPValueSet" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet of QSOFA Blood Pressure" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet of qSOFA Blood Pressure" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 213 ;
@@ -4754,7 +3964,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/DIPSQSOFAScoreResRateValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSQSOFAScoreBPValueSet" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet of QSOFA Respiration Rate" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet of qSOFA Respiration Rate" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 214 ;
@@ -4781,7 +3991,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/DIPSQSOFAScoreMentalSatusValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSQSOFAScoreMentalSatusValueSet" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet of QSOFA Blood Pressure" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet of qSOFA Blood Pressure" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 216 ;
@@ -5176,21 +4386,6 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSVitalSignsObservationQSOFAScore> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/DIPSVitalSignsObservationQSOFAScore" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DIPSVitalSignsObservationQSOFAScore" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Quick Sepsis-related Organ Failure Assessment (qSOFA) is a simplified version of the SOFA score, which is used outside intensive care units to quickly assess sepsis risk in adults." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "ObservationProfiles" ]
-     ], [
-       fhir:index 245 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSVitalSignsObservationSubjectReference> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DIPSVitalSignsObservationSubjectReference" ]
        ] ;
@@ -5198,7 +4393,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "SupportingReferenceProfiles" ]
      ], [
-       fhir:index 246 ;
+       fhir:index 245 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5213,7 +4408,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "SupportingReferenceProfiles" ]
      ], [
-       fhir:index 247 ;
+       fhir:index 246 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5230,7 +4425,7 @@
          fhir:link <http://dips.no/fhir/StructureDefinition/DIPSR4DocumentReference>
        ]
      ], [
-       fhir:index 248 ;
+       fhir:index 247 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5247,7 +4442,7 @@
          fhir:link <http://dips.no/fhir/StructureDefinition/DIPSR4DocumentReference>
        ]
      ], [
-       fhir:index 249 ;
+       fhir:index 248 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5264,7 +4459,7 @@
          fhir:link <http://dips.no/fhir/StructureDefinition/DIPSR4DocumentReference>
        ]
      ], [
-       fhir:index 250 ;
+       fhir:index 249 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5278,7 +4473,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Same as DIPSDocumentReferenceDocumentFormat, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 251 ;
+       fhir:index 250 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5293,7 +4488,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "SupportingReferenceProfiles" ]
      ], [
-       fhir:index 252 ;
+       fhir:index 251 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5308,7 +4503,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "SupportingReferenceProfiles" ]
      ], [
-       fhir:index 253 ;
+       fhir:index 252 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5325,7 +4520,7 @@
          fhir:link <http://dips.no/fhir/StructureDefinition/DIPSDocRefContextEncounter>
        ]
      ], [
-       fhir:index 254 ;
+       fhir:index 253 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5338,7 +4533,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Encounter details of agy1000245" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 255 ;
+       fhir:index 254 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5351,7 +4546,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Encounter details of agy1002679" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 256 ;
+       fhir:index 255 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5365,7 +4560,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Same as DIPSDocumentReferenceEPRGroup, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 257 ;
+       fhir:index 256 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5379,7 +4574,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Same as DIPSDocumentReferenceEventTime, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 258 ;
+       fhir:index 257 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5392,7 +4587,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "GCS_1_Eye" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 259 ;
+       fhir:index 258 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5405,7 +4600,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "GCS_2_Verbal" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 260 ;
+       fhir:index 259 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5418,7 +4613,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "GCS_3_Motor" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 261 ;
+       fhir:index 260 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5434,7 +4629,7 @@
          fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareService>
        ]
      ], [
-       fhir:index 262 ;
+       fhir:index 261 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5450,7 +4645,7 @@
          fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSHealthcareService>
        ]
      ], [
-       fhir:index 263 ;
+       fhir:index 262 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5464,7 +4659,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Have volven codesystems and rest of the namesystem" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 264 ;
+       fhir:index 263 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5478,7 +4673,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Have volven codesystems and rest of the namesystem" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 265 ;
+       fhir:index 264 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5492,7 +4687,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Same as DIPSDocumentReferenceHospitalStayId, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 266 ;
+       fhir:index 265 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5505,7 +4700,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "IsSpecialistExtension" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 267 ;
+       fhir:index 266 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5518,7 +4713,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "IsUpdatedByPopulationRegister" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 268 ;
+       fhir:index 267 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5532,7 +4727,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value Sets of KithCoding9040ValueSet" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 269 ;
+       fhir:index 268 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5546,7 +4741,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value Sets of KithHealthcareServiceTypes" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 270 ;
+       fhir:index 269 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5560,7 +4755,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Valesets of LanguageCodes" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 271 ;
+       fhir:index 270 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5574,7 +4769,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Valesets of languageid" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 272 ;
+       fhir:index 271 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5588,7 +4783,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Same as DIPSDocumentReferenceLastChangedBy, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 273 ;
+       fhir:index 272 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5602,7 +4797,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Same as DIPSDocumentReferenceLastUpdatedTime, under the URL the documenttype / documentTypeandDepartmentid named queries actually emit. Read-only - not recognized on create or update." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 274 ;
+       fhir:index 273 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5615,7 +4810,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "LastOfficialAddressSyncTime" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 275 ;
+       fhir:index 274 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5628,7 +4823,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "LevelOfCareExtension" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 276 ;
+       fhir:index 275 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5642,7 +4837,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Location details of aea1000021" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 277 ;
+       fhir:index 276 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5656,7 +4851,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Location details of afm8" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 278 ;
+       fhir:index 277 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5670,7 +4865,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Location details of ahl25" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 279 ;
+       fhir:index 278 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5684,7 +4879,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Location details of stf2007723" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 280 ;
+       fhir:index 279 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5700,7 +4895,7 @@
          fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSLocation>
        ]
      ], [
-       fhir:index 281 ;
+       fhir:index 280 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5716,7 +4911,7 @@
          fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSLocation>
        ]
      ], [
-       fhir:index 282 ;
+       fhir:index 281 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5732,7 +4927,7 @@
          fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSLocation>
        ]
      ], [
-       fhir:index 283 ;
+       fhir:index 282 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5745,7 +4940,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "LocationAddressId" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 284 ;
+       fhir:index 283 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5758,7 +4953,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "LocationExtension" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 285 ;
+       fhir:index 284 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5771,7 +4966,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "LocationLabLocalizationId" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 286 ;
+       fhir:index 285 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5784,7 +4979,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "LocationTypeCodeId" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 287 ;
+       fhir:index 286 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5797,7 +4992,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "LocationTypeId" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 288 ;
+       fhir:index 287 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5811,7 +5006,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Valesets of Location Types" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 289 ;
+       fhir:index 288 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5824,7 +5019,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "LocationValidPeriod" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 290 ;
+       fhir:index 289 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5837,7 +5032,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "LocationWorkplaceLocalizationId" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 291 ;
+       fhir:index 290 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5850,7 +5045,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MunicipalityCode" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 292 ;
+       fhir:index 291 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5863,7 +5058,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MustOccurBefore" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 293 ;
+       fhir:index 292 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5876,7 +5071,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "no-blood-pressure-create" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 294 ;
+       fhir:index 293 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5889,7 +5084,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "no-body-height-create" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 295 ;
+       fhir:index 294 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5902,7 +5097,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "no-body-temperature-create" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 296 ;
+       fhir:index 295 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5915,7 +5110,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "no-body-weight-create" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 297 ;
+       fhir:index 296 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5928,7 +5123,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "no-heart-rate-create" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 298 ;
+       fhir:index 297 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5941,7 +5136,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "no-oxygen-saturation-create" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 299 ;
+       fhir:index 298 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5954,7 +5149,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "no-pulse-rate" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 300 ;
+       fhir:index 299 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5967,7 +5162,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "no-respiratory-rate-create" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 301 ;
+       fhir:index 300 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5981,7 +5176,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Have volven codesystems and rest of the namesystem" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 302 ;
+       fhir:index 301 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -5994,7 +5189,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NprLevelOfCareExtension" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 303 ;
+       fhir:index 302 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6008,7 +5203,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization details of afa1000061" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 304 ;
+       fhir:index 303 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6022,7 +5217,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization details of afa22" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 305 ;
+       fhir:index 304 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6039,7 +5234,7 @@
          fhir:link <http://dips.no/fhir/StructureDefinition/DIPSDocRefOrganization>
        ]
      ], [
-       fhir:index 306 ;
+       fhir:index 305 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6052,7 +5247,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization details of afa23" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 307 ;
+       fhir:index 306 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6066,7 +5261,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization details of ahl1000057" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 308 ;
+       fhir:index 307 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6080,7 +5275,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization details of aks1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 309 ;
+       fhir:index 308 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6097,7 +5292,7 @@
          fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSOrganization>
        ]
      ], [
-       fhir:index 310 ;
+       fhir:index 309 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6111,7 +5306,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization details of aks1000174" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 311 ;
+       fhir:index 310 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6127,7 +5322,7 @@
          fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSOrganization>
        ]
      ], [
-       fhir:index 312 ;
+       fhir:index 311 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6141,7 +5336,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value Sets of AccessTypes" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 313 ;
+       fhir:index 312 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6154,7 +5349,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "OrganizationAddressId" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 314 ;
+       fhir:index 313 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6170,7 +5365,7 @@
          fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSOrganization>
        ]
      ], [
-       fhir:index 315 ;
+       fhir:index 314 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6183,7 +5378,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "OrganizationPaymentCode" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 316 ;
+       fhir:index 315 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6196,7 +5391,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "OrganizationTypeCodeId" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 317 ;
+       fhir:index 316 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6210,7 +5405,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value Sets of OrganizationTypes" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 318 ;
+       fhir:index 317 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6223,7 +5418,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "OrganizationValidPeriod" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 319 ;
+       fhir:index 318 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6237,7 +5432,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Orgnization details of ahl29" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 320 ;
+       fhir:index 319 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6251,7 +5446,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Orgnization details of aju21" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 321 ;
+       fhir:index 320 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6264,7 +5459,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PartOfDepartment" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 322 ;
+       fhir:index 321 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6277,7 +5472,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PartOfSection" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 323 ;
+       fhir:index 322 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6291,7 +5486,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient details of cdp1000063" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 324 ;
+       fhir:index 323 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6304,7 +5499,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient details of cdp1000239" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 325 ;
+       fhir:index 324 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6317,7 +5512,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient details of cdp1000240" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 326 ;
+       fhir:index 325 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6330,7 +5525,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient details of cdp1000807" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 327 ;
+       fhir:index 326 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6343,7 +5538,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient details of cdp1000808" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 328 ;
+       fhir:index 327 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6357,7 +5552,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient details of cdp2007860" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 329 ;
+       fhir:index 328 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6371,7 +5566,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient details of cdp2009597" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 330 ;
+       fhir:index 329 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6384,7 +5579,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PlannedContactEndTimeExtension" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 331 ;
+       fhir:index 330 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6397,7 +5592,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practioner details of agb103" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 332 ;
+       fhir:index 331 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6410,7 +5605,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practioner details of agb104" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 333 ;
+       fhir:index 332 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6424,7 +5619,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Practioner details of agb113" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 334 ;
+       fhir:index 333 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6438,7 +5633,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "PractionerRole details of agb91" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 335 ;
+       fhir:index 334 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6454,7 +5649,7 @@
          fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSPractitioner>
        ]
      ], [
-       fhir:index 336 ;
+       fhir:index 335 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6468,7 +5663,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "PractitionerRole details of agb1000043" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 337 ;
+       fhir:index 336 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6482,7 +5677,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "PractitionerRole details of agb1000456" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 338 ;
+       fhir:index 337 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6495,7 +5690,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PractitionerRole details of agb27" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 339 ;
+       fhir:index 338 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6508,7 +5703,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PractitionerRole details of agb30" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 340 ;
+       fhir:index 339 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6522,7 +5717,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "PractitionerRole details of agb57" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 341 ;
+       fhir:index 340 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6536,7 +5731,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "PractitionerRole details of agb59" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 342 ;
+       fhir:index 341 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6552,7 +5747,7 @@
          fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRole>
        ]
      ], [
-       fhir:index 343 ;
+       fhir:index 342 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6568,7 +5763,7 @@
          fhir:link <http://dips.no/fhir/R4/StructureDefinition/DIPSPractitionerRole>
        ]
      ], [
-       fhir:index 344 ;
+       fhir:index 343 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6581,7 +5776,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ReferredBy" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 345 ;
+       fhir:index 344 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6595,7 +5790,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Valesets of Guardian" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 346 ;
+       fhir:index 345 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6608,7 +5803,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Reminder" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 347 ;
+       fhir:index 346 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6622,7 +5817,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DIPS: describes if the lab result has been signed by the requester in DIPS" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 348 ;
+       fhir:index 347 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6635,7 +5830,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SectionExtension" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 349 ;
+       fhir:index 348 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6648,7 +5843,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SectionProfessionCodeId" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 350 ;
+       fhir:index 349 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6662,7 +5857,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "SlotProfiles" ]
      ], [
-       fhir:index 351 ;
+       fhir:index 350 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6676,7 +5871,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ServiceRequest details of ahr1003778" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 352 ;
+       fhir:index 351 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6690,7 +5885,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes representing consciousness" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 353 ;
+       fhir:index 352 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6703,7 +5898,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TeamTypeId" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 354 ;
+       fhir:index 353 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6716,7 +5911,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TerminationExtension" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 355 ;
+       fhir:index 354 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6730,7 +5925,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DIPS: textual rendering of a lab result that is otherwise carried as a Quantity." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 356 ;
+       fhir:index 355 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6743,7 +5938,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "VideoUrl" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 357 ;
+       fhir:index 356 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6756,7 +5951,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WardExtension" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 358 ;
+       fhir:index 357 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;

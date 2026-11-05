@@ -3,16 +3,16 @@
   "id" : "DIPSGCSVerbalScoreCodeSystem",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DIPSGCSVerbalScoreCodeSystem</b></p><a name=\"DIPSGCSVerbalScoreCodeSystem\"> </a><a name=\"hcDIPSGCSVerbalScoreCodeSystem\"> </a><p>This  code system <code>http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"DIPSGCSVerbalScoreCodeSystem-1\"> </a></td><td>Ingen reaksjon</td><td>Ingen reaksjon</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"DIPSGCSVerbalScoreCodeSystem-2\"> </a></td><td>Uforståelige lyder</td><td>Uforståelige lyder</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"DIPSGCSVerbalScoreCodeSystem-3\"> </a></td><td>Usammenhengende tale</td><td>Usammenhengende tale</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"DIPSGCSVerbalScoreCodeSystem-4\"> </a></td><td>Forvirret, desorientert</td><td>Forvirret, desorientert</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"DIPSGCSVerbalScoreCodeSystem-5\"> </a></td><td>Orientert</td><td>Orientert</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DIPSGCSVerbalScoreCodeSystem</b></p><a name=\"DIPSGCSVerbalScoreCodeSystem\"> </a><a name=\"hcDIPSGCSVerbalScoreCodeSystem\"> </a><p>This  code system <code>http://dips.no/fhir/CodeSystem/DIPSGCSVerbalScoreCodeSystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"DIPSGCSVerbalScoreCodeSystem-1\"> </a></td><td>Ingen reaksjon</td><td>Ingen reaksjon</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"DIPSGCSVerbalScoreCodeSystem-2\"> </a></td><td>Uforståelige lyder</td><td>Uforståelige lyder</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"DIPSGCSVerbalScoreCodeSystem-3\"> </a></td><td>Usammenhengende tale</td><td>Usammenhengende tale</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"DIPSGCSVerbalScoreCodeSystem-4\"> </a></td><td>Forvirret, desorientert</td><td>Forvirret, desorientert</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"DIPSGCSVerbalScoreCodeSystem-5\"> </a></td><td>Orientert</td><td>Orientert</td></tr></table></div>"
   },
-  "url" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem",
+  "url" : "http://dips.no/fhir/CodeSystem/DIPSGCSVerbalScoreCodeSystem",
   "identifier" : [{
     "system" : "http://dips.no/fhir/namingsystem/dips-gcs-verbal"
   }],
   "version" : "0.1.0",
   "name" : "DIPSGCSVerbalScoreCodeSystem",
   "status" : "draft",
-  "date" : "2026-09-29T04:18:52+00:00",
+  "date" : "2026-11-05T07:34:57+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/R4/ValueSet/DIPSGCSVerbalScore | *Version*:0.1.0 | |
+| *Official URL*:http://dips.no/fhir/ValueSet/DIPSGCSVerbalScore | *Version*:0.1.0 | |
 | * Standards status: *[Draft](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:DIPSGCSVerbalScore |
 
  
@@ -61,7 +61,7 @@ ValueSet of GCS Verbal Score
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
     "valueInteger" : 1
   }],
-  "url" : "http://dips.no/fhir/R4/ValueSet/DIPSGCSVerbalScore",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSGCSVerbalScore",
   "version" : "0.1.0",
   "name" : "DIPSGCSVerbalScore",
   "title" : "DIPSGCSVerbalScore",
@@ -87,7 +87,7 @@ ValueSet of GCS Verbal Score
   }],
   "compose" : {
     "include" : [{
-      "system" : "http://dips.no/fhir/R4/CodeSystem/DIPSGCSVerbalScoreCodeSystem",
+      "system" : "http://dips.no/fhir/CodeSystem/DIPSGCSVerbalScoreCodeSystem",
       "concept" : [{
         "code" : "1",
         "display" : "Ingen reaksjon"

@@ -8,29 +8,19 @@
 
 Profiles: [DIPSRelatedPerson](StructureDefinition-DIPSRelatedPerson.md), [no-basis-RelatedPerson](https://simplifier.net/resolve?scope=hl7.fhir.no.domain.vitalsigns@0.9.74&canonical=http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson)
 
-**no/fhir/R4/StructureDefinition/DIPSRelatedPersonAppointedByMunicipality**: [not stated]: 688 (Namsos)
+Verge, Setteverge - Setteverge (http://dips.no/fhir/namingsystem/dips-guardianid#1000003 (use: official))
 
-**no/fhir/R4/StructureDefinition/DIPSRelatedPersonAdditionalInformation**: Dette er vergetype "Setteverge"
+-------
 
-**no/fhir/R4/StructureDefinition/DIPSRelatedPersonResponsibleRequisitioner**: [KIRURG (TESTPLAN RESSURS), KJELL, TESTSYKEHUSET HF](PractitionerRole-agb1000043.md)
-
-**identifier**: `http://dips.no/fhir/namingsystem/dips-guardianid`/1000003 (use: official, )
-
-**active**: false
-
-**patient**: [Anonymous Patient (no stated gender), DoB Unknown ( http://dips.no/fhir/namingsystem/dips-patientid#2007860)](Patient-cdp2007860.md)
-
-**relationship**: Setteverge
-
-**name**: Verge, Setteverge
-
-**telecom**: ph: 12455689(Home)
-
-**gender**: Unknown
-
-**address**: Vergveien 23 Namsos 7800 
-
-**period**: 2008-02-13 00:00:00+0000 --> 2018-02-28 00:00:00+0000
+| | | | |
+| :--- | :--- | :--- | :--- |
+| Active: | false | Valid Period: | 2008-02-13 00:00:00+0000 --> 2018-02-28 00:00:00+0000 |
+| Gender: | Unknown | | |
+| Patient: | [Anonymous Patient (no stated gender), DoB Unknown ( http://dips.no/fhir/namingsystem/dips-patientid#2007860)](Patient-cdp2007860.md) | | |
+| Relationship: | Setteverge | | |
+| Contact Detail | * ph: 12455689(Home)
+* Vergveien 23 Namsos 7800 
+ | | |
 
 
 

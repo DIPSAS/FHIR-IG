@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationGCS | *Version*:0.1.0 |
-| Draft as of 2026-09-29 | *Computable Name*:DIPSVitalSignsObservationGCS |
+| Draft as of 2026-11-05 | *Computable Name*:DIPSVitalSignsObservationGCS |
 
  
 Fifteen point scale used to assess impairment of consciousness in response to defined stimuli. More correctly known as the Modified Glasgow coma scale. 
@@ -106,7 +106,7 @@ This resource only supports search - there is no `GET [base]/Observation/[id]` r
   "name" : "DIPSVitalSignsObservationGCS",
   "title" : "DIPSVitalSignsObservationGCS",
   "status" : "draft",
-  "date" : "2026-09-29T04:18:52+00:00",
+  "date" : "2026-11-05T07:34:57+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -772,7 +772,7 @@ This resource only supports search - there is no `GET [base]/Observation/[id]` r
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://dips.no/fhir/R4/ValueSet/DIPSGCSEyeOpeningScore"
+        "valueSet" : "http://dips.no/fhir/ValueSet/DIPSGCSEyeOpeningScore"
       }
     },
     {
@@ -874,7 +874,7 @@ This resource only supports search - there is no `GET [base]/Observation/[id]` r
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://dips.no/fhir/R4/ValueSet/DIPSGCSVerbalScore"
+        "valueSet" : "http://dips.no/fhir/ValueSet/DIPSGCSVerbalScore"
       }
     },
     {
@@ -961,7 +961,7 @@ This resource only supports search - there is no `GET [base]/Observation/[id]` r
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://dips.no/fhir/R4/ValueSet/DIPSGCSMotorScore"
+        "valueSet" : "http://dips.no/fhir/ValueSet/DIPSGCSMotorScore"
       }
     },
     {
