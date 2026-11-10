@@ -10,7 +10,7 @@ version: 0; Last updated: 2014-01-30 11:35:23+0000;
 
 Information Source: [DIPS_ASA](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.1.2&canonical=http://fhir.org/packages/hl7.fhir.no.basis/DIPS_ASA)
 
-Profile: [DIPSVitalSignsObservationGCS](StructureDefinition-DIPSVitalSignsObservationGCS.md)
+Profile: [DIPS Vital Signs Observation - Glasgow Coma Scale](StructureDefinition-DIPSVitalSignsObservationGCS.md)
 
 **identifier**: `http://dips.no/fhir/namingsystem/dips-RelativeEhrUri`/ehr:compositions/6c41D37f-f173-45d6-8504-17c40454b9ee::default::1/content[openEHR-EHR-OBSERVATION.news2.v1 and name/value='NEWS2-Basic-Vitals'], `http://dips.no/fhir/namingsystem/dips-ObservationId`/dfdcd132-f0c0-e84a-a9b0-937bcb93c008, `http://dips.no/fhir/namingsystem/dips-VersionIndependentId`/bd96cd32-3bdb-f448-9d65-265828cae8c8, `http://dips.no/fhir/namingsystem/externalId`/testBPexternalId1
 

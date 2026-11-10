@@ -9,11 +9,11 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreResRateCodeSystem | *Version*:0.1.0 |
-| Draft as of 2026-11-05 | *Computable Name*:DIPSQSOFAScoreResRateCodeSystem |
+| Draft as of 2026-11-10 | *Computable Name*:DIPSQSOFAScoreResRateCodeSystem |
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [DIPSQSOFAScoreBPValueSet](ValueSet-DIPSQSOFAScoreResRateValueSet.md)
+* [DIPSQSOFAScoreResRateValueSet](ValueSet-DIPSQSOFAScoreResRateValueSet.md)
 
 
 
@@ -30,7 +30,7 @@
   "version" : "0.1.0",
   "name" : "DIPSQSOFAScoreResRateCodeSystem",
   "status" : "draft",
-  "date" : "2026-11-05T07:34:57+00:00",
+  "date" : "2026-11-10T08:48:38+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

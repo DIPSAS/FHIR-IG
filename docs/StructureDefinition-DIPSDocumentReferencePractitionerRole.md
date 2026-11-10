@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSDocumentReferencePractitionerRole | *Version*:0.1.0 |
-| Draft as of 2026-11-05 | *Computable Name*:DIPSDocumentReferencePractitionerRole |
+| Draft as of 2026-11-10 | *Computable Name*:DIPSDocumentReferencePractitionerRole |
 
  
 Practioner Profile For DocumentReference 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSDocumentReferenc
   "name" : "DIPSDocumentReferencePractitionerRole",
   "title" : "DIPSDocumentReferencePractitioner",
   "status" : "draft",
-  "date" : "2026-11-05T07:34:57+00:00",
+  "date" : "2026-11-10T08:48:38+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

@@ -174,11 +174,11 @@
   "name" : "DIPSQSOFAScoreBPCodeSystem"
 },
 {
-  "id" : "DIPSQSOFAScoreMentalSatusCodeSystem",
+  "id" : "DIPSQSOFAScoreMentalStatusCodeSystem",
   "type" : "CodeSystem",
-  "url" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem",
+  "url" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem",
   "version" : "0.1.0",
-  "name" : "DIPSQSOFAScoreMentalSatusCodeSystem"
+  "name" : "DIPSQSOFAScoreMentalStatusCodeSystem"
 },
 {
   "id" : "DIPSQSOFAScoreResRateCodeSystem",
@@ -1657,11 +1657,11 @@
   "name" : "DIPSQSOFAScoreBPValueSet"
 },
 {
-  "id" : "DIPSQSOFAScoreMentalSatusValueSet",
+  "id" : "DIPSQSOFAScoreMentalStatusValueSet",
   "type" : "ValueSet",
-  "url" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalSatusValueSet",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalStatusValueSet",
   "version" : "0.1.0",
-  "name" : "DIPSQSOFAScoreMentalSatusValueSet"
+  "name" : "DIPSQSOFAScoreMentalStatusValueSet"
 },
 {
   "id" : "DIPSQSOFAScoreResRateValueSet",

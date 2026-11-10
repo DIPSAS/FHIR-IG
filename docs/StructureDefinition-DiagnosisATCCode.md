@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/Fhir/Profile/Diagnosis#ATC-Code | *Version*:0.1.0 |
-| Draft as of 2026-11-05 | *Computable Name*:DiagnosisATCCode |
+| Draft as of 2026-11-10 | *Computable Name*:DiagnosisATCCode |
 
 ATC code associated with a diagnosis, carried as a Coding on DIPS Condition.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-DiagnosisATCCode.csv
   "name" : "DiagnosisATCCode",
   "title" : "Diagnosis ATC Code",
   "status" : "draft",
-  "date" : "2026-11-05T07:34:57+00:00",
+  "date" : "2026-11-10T08:48:38+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

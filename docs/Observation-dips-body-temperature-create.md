@@ -16,7 +16,7 @@ Profile: [DIPS Vital Signs Observation - Body Temperature](StructureDefinition-D
 
 **DIPSVitalSignsLocation**: [DIPSLocation: School](CodeSystem-DIPSLocation.md#DIPSLocation-School) (At School)
 
-**NoDomainVitalSignsBodyExposure-Extension**: [SNOMED CT: 5611000202100](http://snomed.info/id/5611000202100) (Passende p�kledning/tildekking)
+**NoDomainVitalSignsBodyExposure-Extension**: [SNOMED CT: 5611000202100](http://snomed.info/id/5611000202100) (Passende påkledning/tildekking)
 
 **NoDomainVitalSignsActiveHeating-Extension**: active heating sample
 
@@ -96,7 +96,7 @@ Demo Body Temperature
     "valueCoding" : {
       "system" : "http://snomed.info/sct",
       "code" : "5611000202100",
-      "display" : "Passende p�kledning/tildekking"
+      "display" : "Passende påkledning/tildekking"
     }
   },
   {

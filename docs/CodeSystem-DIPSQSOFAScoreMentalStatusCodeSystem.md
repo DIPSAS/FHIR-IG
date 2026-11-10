@@ -1,19 +1,19 @@
-# DIPSQSOFAScoreMentalSatusCodeSystem - DIPS Core Implementation Guide v0.1.0
+# DIPSQSOFAScoreMentalStatusCodeSystem - DIPS Core Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DIPSQSOFAScoreMentalSatusCodeSystem**
+* **DIPSQSOFAScoreMentalStatusCodeSystem**
 
-## CodeSystem: DIPSQSOFAScoreMentalSatusCodeSystem 
+## CodeSystem: DIPSQSOFAScoreMentalStatusCodeSystem 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem | *Version*:0.1.0 |
-| Draft as of 2026-11-05 | *Computable Name*:DIPSQSOFAScoreMentalSatusCodeSystem |
+| *Official URL*:http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem | *Version*:0.1.0 |
+| Draft as of 2026-11-10 | *Computable Name*:DIPSQSOFAScoreMentalStatusCodeSystem |
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [DIPSQSOFAScoreMentalSatusValueSet](ValueSet-DIPSQSOFAScoreMentalSatusValueSet.md)
+* [DIPSQSOFAScoreMentalStatusValueSet](ValueSet-DIPSQSOFAScoreMentalStatusValueSet.md)
 
 
 
@@ -22,15 +22,15 @@
 ```json
 {
   "resourceType" : "CodeSystem",
-  "id" : "DIPSQSOFAScoreMentalSatusCodeSystem",
-  "url" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem",
+  "id" : "DIPSQSOFAScoreMentalStatusCodeSystem",
+  "url" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem",
   "identifier" : [{
     "system" : "http://dips.no/fhir/namingsystem/dips-qsofa-mentalstatus"
   }],
   "version" : "0.1.0",
-  "name" : "DIPSQSOFAScoreMentalSatusCodeSystem",
+  "name" : "DIPSQSOFAScoreMentalStatusCodeSystem",
   "status" : "draft",
-  "date" : "2026-11-05T07:34:57+00:00",
+  "date" : "2026-11-10T08:48:38+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

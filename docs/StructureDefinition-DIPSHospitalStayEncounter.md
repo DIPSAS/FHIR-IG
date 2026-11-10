@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSHospitalStayEncounter | *Version*:0.1.0 |
-| Draft as of 2026-11-05 | *Computable Name*:DIPSHospitalStayEncounter |
+| Draft as of 2026-11-10 | *Computable Name*:DIPSHospitalStayEncounter |
 
 **Usages:**
 
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSHospitalStayEnco
   "version" : "0.1.0",
   "name" : "DIPSHospitalStayEncounter",
   "status" : "draft",
-  "date" : "2026-11-05T07:34:57+00:00",
+  "date" : "2026-11-10T08:48:38+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

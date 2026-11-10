@@ -6,15 +6,15 @@
   "status" : "draft",
   "package-id" : "dips.fhir.no.core",
   "ig-ver" : "0.1.0",
-  "date" : "Thu, 05 Nov, 2026 07:34:57 +0000",
-  "dateISO8601" : "2026-11-05T07:34:57+00:00",
-  "errs" : 437,
-  "warnings" : 1431,
+  "date" : "Tue, 10 Nov, 2026 08:48:38 +0000",
+  "dateISO8601" : "2026-11-10T08:48:38+00:00",
+  "errs" : 449,
+  "warnings" : 1419,
   "hints" : 627,
   "broken-links" : 6,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "6.0.0-snapshot1 (3)",
-  "maxMemory" : 3760886360
+  "maxMemory" : 2468192640
 }

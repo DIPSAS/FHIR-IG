@@ -10,7 +10,7 @@
   "name" : "DIPSCore",
   "title" : "DIPS Core Implementation Guide",
   "status" : "draft",
-  "date" : "2026-11-05T07:34:57+00:00",
+  "date" : "2026-11-10T08:48:38+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -1795,6 +1795,19 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsObservationGCS"
+      },
+      "name" : "DIPS Vital Signs Observation - Glasgow Coma Scale",
+      "description" : "Fifteen point scale used to assess impairment of consciousness in response to defined stimuli. More correctly known as the Modified Glasgow coma scale.",
+      "exampleBoolean" : false,
+      "groupingId" : "ObservationProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/DIPSVitalSignsObservationHeartRate"
       },
       "name" : "DIPS Vital Signs Observation - Heart Rate",
@@ -3345,24 +3358,12 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/DIPSQSOFAScoreResRateValueSet"
-      },
-      "name" : "DIPSQSOFAScoreBPValueSet",
-      "description" : "ValueSet of qSOFA Respiration Rate",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem"
+        "reference" : "CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem"
       },
-      "name" : "DIPSQSOFAScoreMentalSatusCodeSystem",
+      "name" : "DIPSQSOFAScoreMentalStatusCodeSystem",
       "exampleBoolean" : false
     },
     {
@@ -3371,10 +3372,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/DIPSQSOFAScoreMentalSatusValueSet"
+        "reference" : "ValueSet/DIPSQSOFAScoreMentalStatusValueSet"
       },
-      "name" : "DIPSQSOFAScoreMentalSatusValueSet",
-      "description" : "ValueSet of qSOFA Blood Pressure",
+      "name" : "DIPSQSOFAScoreMentalStatusValueSet",
+      "description" : "ValueSet of qSOFA Mental Status",
       "exampleBoolean" : false
     },
     {
@@ -3386,6 +3387,18 @@
         "reference" : "CodeSystem/DIPSQSOFAScoreResRateCodeSystem"
       },
       "name" : "DIPSQSOFAScoreResRateCodeSystem",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DIPSQSOFAScoreResRateValueSet"
+      },
+      "name" : "DIPSQSOFAScoreResRateValueSet",
+      "description" : "ValueSet of qSOFA Respiration Rate",
       "exampleBoolean" : false
     },
     {
@@ -3560,7 +3573,7 @@
         "reference" : "ValueSet/DIPSVitalSignsObservationBodyMassIndexFormula"
       },
       "name" : "DIPSVitalSignsObservationBodyMassIndexFormula",
-      "description" : "Value set for DIPS Body Mass Index Formula Measurment methods",
+      "description" : "Value set for DIPS Body Mass Index Formula Measurement methods",
       "exampleBoolean" : false
     },
     {
@@ -3572,7 +3585,7 @@
         "reference" : "ValueSet/DIPSVitalSignsObservationBodySite"
       },
       "name" : "DIPSVitalSignsObservationBodySite",
-      "description" : "Value set for DIPS Body Mass Index Formula Measurment methods",
+      "description" : "Value set for DIPS body sites used for body temperature measurement",
       "exampleBoolean" : false
     },
     {
@@ -3609,19 +3622,6 @@
       "description" : "Encounter with Episode Of Care and Planned Contact",
       "exampleBoolean" : false,
       "groupingId" : "SupportingReferenceProfiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/DIPSVitalSignsObservationGCS"
-      },
-      "name" : "DIPSVitalSignsObservationGCS",
-      "description" : "Fifteen point scale used to assess impairment of consciousness in response to defined stimuli. More correctly known as the Modified Glasgow coma scale.",
-      "exampleBoolean" : false,
-      "groupingId" : "ObservationProfiles"
     },
     {
       "extension" : [{
@@ -3690,7 +3690,7 @@
       "reference" : {
         "reference" : "ValueSet/DIPSVitalSignsObservationPulseBodySite"
       },
-      "name" : "DIPSVitalSignsObservationPulsBodySite",
+      "name" : "DIPSVitalSignsObservationPulseBodySite",
       "description" : "Codes representing Body site for Pulse",
       "exampleBoolean" : false
     },

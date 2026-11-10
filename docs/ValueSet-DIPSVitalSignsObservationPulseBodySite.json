@@ -24,7 +24,7 @@
   "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationPulseBodySite",
   "version" : "0.1.0",
   "name" : "DIPSVitalSignsObservationPulseBodySite",
-  "title" : "DIPSVitalSignsObservationPulsBodySite",
+  "title" : "DIPSVitalSignsObservationPulseBodySite",
   "status" : "draft",
   "experimental" : false,
   "date" : "2021-03-17T00:00:00+00:00",

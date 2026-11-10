@@ -51,7 +51,7 @@
        fhir:ContactPoint.use [ fhir:value "work" ]
      ]
   ] ;
-  fhir:ValueSet.description [ fhir:value "Value set for DIPS Body Mass Index Formula Measurment methods"] ;
+  fhir:ValueSet.description [ fhir:value "Value set for DIPS body sites used for body temperature measurement"] ;
   fhir:ValueSet.jurisdiction [
      fhir:index 0 ;
      fhir:CodeableConcept.coding [

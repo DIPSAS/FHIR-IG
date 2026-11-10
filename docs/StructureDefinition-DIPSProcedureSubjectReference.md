@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSProcedureSubjectReference | *Version*:0.1.0 |
-| Draft as of 2026-11-05 | *Computable Name*:DIPSProcedureSubjectReference |
+| Draft as of 2026-11-10 | *Computable Name*:DIPSProcedureSubjectReference |
 
  
 The patient a DIPS Procedure is about, constraining the identifiers the subject reference may carry. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSProcedureSubject
   "name" : "DIPSProcedureSubjectReference",
   "title" : "DIPS Procedure Subject Reference",
   "status" : "draft",
-  "date" : "2026-11-05T07:34:57+00:00",
+  "date" : "2026-11-10T08:48:38+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

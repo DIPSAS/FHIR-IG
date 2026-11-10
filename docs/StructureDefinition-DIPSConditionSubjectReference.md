@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSConditionSubjectReference | *Version*:0.1.0 |
-| Draft as of 2026-11-05 | *Computable Name*:DIPSConditionSubjectReference |
+| Draft as of 2026-11-10 | *Computable Name*:DIPSConditionSubjectReference |
 
  
 The patient a DIPS Condition is about, constraining the identifiers the subject reference may carry. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSConditionSubject
   "name" : "DIPSConditionSubjectReference",
   "title" : "DIPS Condition Subject Reference",
   "status" : "draft",
-  "date" : "2026-11-05T07:34:57+00:00",
+  "date" : "2026-11-10T08:48:38+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

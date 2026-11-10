@@ -5,7 +5,7 @@ http://dips.no/fhir/CodeSystem/DIPSGCSMotorScoreCodeSystem,0.1.0,draft,,DIPSGCSM
 http://dips.no/fhir/CodeSystem/DIPSGCSVerbalScoreCodeSystem,0.1.0,draft,,DIPSGCSVerbalScoreCodeSystem,,"","ValueSet/DIPSGCSVerbalScore"
 http://dips.no/fhir/CodeSystem/DIPSMeasurementMethod,0.1.0,draft,,DIPSMeasurementMethod,,"","ValueSet/DIPSVitalSignsObservationBloodPressureMeasurementMethod,ValueSet/DIPSVitalSignsObservationHeartRateMeasurementMethod,ValueSet/DIPSVitalSignsObservationPulseMeasurementMethod"
 http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreBPCodeSystem,0.1.0,draft,,DIPSQSOFAScoreBPCodeSystem,,"","ValueSet/DIPSQSOFAScoreBPValueSet"
-http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem,0.1.0,draft,,DIPSQSOFAScoreMentalSatusCodeSystem,,"","ValueSet/DIPSQSOFAScoreMentalSatusValueSet"
+http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem,0.1.0,draft,,DIPSQSOFAScoreMentalStatusCodeSystem,,"","ValueSet/DIPSQSOFAScoreMentalStatusValueSet"
 http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreResRateCodeSystem,0.1.0,draft,,DIPSQSOFAScoreResRateCodeSystem,,"","ValueSet/DIPSQSOFAScoreResRateValueSet"
 http://dips.no/fhir/CodeSystem/DIPSVitalSignsObservationConsciousness,0.1.0,draft,,DIPSVitalSignsObservationConsciousness,,"","ValueSet/DIPSVitalSignsObservationConsciousness"
 http://dips.no/fhir/CodeSystem/DIPSVitalSignsObservationPrePostduktal,0.1.0,draft,,DIPSVitalSignsObservationPrePostduktal,,"","ValueSet/DIPSVitalSignsObservationPrePostduktal"

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSConditionAsserterReferenceOrg | *Version*:0.1.0 |
-| Draft as of 2026-11-05 | *Computable Name*:DIPSConditionAsserterReferenceOrg |
+| Draft as of 2026-11-10 | *Computable Name*:DIPSConditionAsserterReferenceOrg |
 
  
 Organization form of a DIPS Condition asserter. Not referenced by DIPSR4Condition - base FHIR does not permit Organization on Condition.asserter. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSConditionAsserte
   "name" : "DIPSConditionAsserterReferenceOrg",
   "title" : "DIPS Condition Asserter Reference (Organization)",
   "status" : "draft",
-  "date" : "2026-11-05T07:34:57+00:00",
+  "date" : "2026-11-10T08:48:38+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "2a095818-7aad-407d-b096-24827c5234ef",
+  "id" : "bec789c9-242b-4b2e-bc00-e69fb7c0f6f6",
   "meta" : {
-    "lastUpdated" : "2026-11-05T07:34:57.566+00:00"
+    "lastUpdated" : "2026-11-10T08:48:38.714+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -23,7 +23,7 @@
       "title" : "DIPSEncounterV3",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-11-05T07:34:57+00:00",
+      "date" : "2026-11-10T08:48:38+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -32,8 +32,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:81127c0a-ba60-4c47-a2df-3fdb90521da2",
-        "timestamp" : "2026-11-05T07:45:25+00:00",
+        "identifier" : "urn:uuid:2621b6ec-96b9-439a-b964-da79e3b4ac05",
+        "timestamp" : "2026-11-10T08:52:01+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -94,8 +94,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ac7aba86-33d5-43a1-aa6e-3c508d131cdc",
-        "timestamp" : "2026-11-05T07:45:27+00:00",
+        "identifier" : "urn:uuid:9ea03b4a-778b-408c-9c43-c17c009e711f",
+        "timestamp" : "2026-11-10T08:52:01+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -164,8 +164,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b37e5a7e-8f56-4b34-8811-c635ae364f40",
-        "timestamp" : "2026-11-05T07:45:27+00:00",
+        "identifier" : "urn:uuid:32a4cee2-a950-4f38-b319-d3e2297d60f6",
+        "timestamp" : "2026-11-10T08:52:01+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -242,8 +242,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a8225ed3-a916-4f4f-8c07-75302842a367",
-        "timestamp" : "2026-11-05T07:45:27+00:00",
+        "identifier" : "urn:uuid:1ca465b7-c62b-4d77-9c0b-0e47a52fac8c",
+        "timestamp" : "2026-11-10T08:52:01+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -316,8 +316,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:dcc4d496-f26c-40b0-abfb-e39fae343617",
-        "timestamp" : "2026-11-05T07:45:27+00:00",
+        "identifier" : "urn:uuid:c95a3fc5-8f6b-4ed1-aabe-1cd0b98d5cb9",
+        "timestamp" : "2026-11-10T08:52:01+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -390,8 +390,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:28bfc75a-c954-45c4-b723-ae8772bef25f",
-        "timestamp" : "2026-11-05T07:45:27+00:00",
+        "identifier" : "urn:uuid:93c23cd8-82b9-4b63-b0f7-8b53676311b3",
+        "timestamp" : "2026-11-10T08:52:01+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -426,7 +426,7 @@
     }
   },
   {
-    "fullUrl" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalSatusValueSet",
+    "fullUrl" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalStatusValueSet",
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
@@ -435,12 +435,12 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-DIPSQSOFAScoreMentalSatusCodeSystem.html\">codesystem DIPSQSOFAScoreMentalSatusCodeSystem v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (no)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem-0\"> </a><code>http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-DIPSQSOFAScoreMentalSatusCodeSystem.html#DIPSQSOFAScoreMentalSatusCodeSystem-0\">0</a></td><td/><td>Ikke endret mental status</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;0&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;0&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem-1\"> </a><code>http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-DIPSQSOFAScoreMentalSatusCodeSystem.html#DIPSQSOFAScoreMentalSatusCodeSystem-1\">1</a></td><td/><td>Endret mental status</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;1&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;1&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-DIPSQSOFAScoreMentalStatusCodeSystem.html\">codesystem DIPSQSOFAScoreMentalStatusCodeSystem v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (no)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem-0\"> </a><code>http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-DIPSQSOFAScoreMentalStatusCodeSystem.html#DIPSQSOFAScoreMentalStatusCodeSystem-0\">0</a></td><td/><td>Ikke endret mental status</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;0&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;0&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem-1\"> </a><code>http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-DIPSQSOFAScoreMentalStatusCodeSystem.html#DIPSQSOFAScoreMentalStatusCodeSystem-1\">1</a></td><td/><td>Endret mental status</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;1&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;1&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
       },
-      "url" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalSatusValueSet",
+      "url" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalStatusValueSet",
       "version" : "0.1.0",
-      "name" : "DIPSQSOFAScoreMentalSatusValueSet",
-      "title" : "DIPSQSOFAScoreMentalSatusValueSet",
+      "name" : "DIPSQSOFAScoreMentalStatusValueSet",
+      "title" : "DIPSQSOFAScoreMentalStatusValueSet",
       "status" : "draft",
       "experimental" : false,
       "date" : "2025-05-14T00:00:00+00:00",
@@ -452,8 +452,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:53972db4-e909-4212-a8a5-9475a5a565c6",
-        "timestamp" : "2026-11-05T07:45:27+00:00",
+        "identifier" : "urn:uuid:0eec59b1-58da-484a-b913-d154e7c6c7c6",
+        "timestamp" : "2026-11-10T08:52:02+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -474,14 +474,14 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem|0.1.0"
+          "valueUri" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem|0.1.0"
         }],
         "contains" : [{
-          "system" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem",
+          "system" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem",
           "code" : "0"
         },
         {
-          "system" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem",
+          "system" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem",
           "code" : "1"
         }]
       }
@@ -502,7 +502,7 @@
       "url" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreResRateValueSet",
       "version" : "0.1.0",
       "name" : "DIPSQSOFAScoreResRateValueSet",
-      "title" : "DIPSQSOFAScoreBPValueSet",
+      "title" : "DIPSQSOFAScoreResRateValueSet",
       "status" : "draft",
       "experimental" : false,
       "date" : "2025-05-14T00:00:00+00:00",
@@ -514,8 +514,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:5ece7419-6bcc-4fd6-812b-f1eed7eb7306",
-        "timestamp" : "2026-11-05T07:45:27+00:00",
+        "identifier" : "urn:uuid:0a08547d-1a1a-4b70-a71b-168958bef769",
+        "timestamp" : "2026-11-10T08:52:02+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -576,8 +576,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1b4da4f3-1f64-40ad-9487-02af61e12707",
-        "timestamp" : "2026-11-05T07:45:28+00:00",
+        "identifier" : "urn:uuid:7c4d9693-c2e9-475e-a678-9ed12e3842f6",
+        "timestamp" : "2026-11-10T08:52:02+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -638,8 +638,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9d399f25-435d-4446-b0a7-577c9298c137",
-        "timestamp" : "2026-11-05T07:45:28+00:00",
+        "identifier" : "urn:uuid:949ffb97-bac5-440a-a23f-04d39a63717e",
+        "timestamp" : "2026-11-10T08:52:02+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -712,8 +712,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:90275980-9ba6-4e4f-9715-ae71e70424f0",
-        "timestamp" : "2026-11-05T07:45:28+00:00",
+        "identifier" : "urn:uuid:c5ea1059-4365-4393-93b5-8798969118c9",
+        "timestamp" : "2026-11-10T08:52:02+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DIPSR4Condition | *Version*:0.1.0 |
-| Draft as of 2026-11-05 | *Computable Name*:DIPSR4Condition |
+| Draft as of 2026-11-10 | *Computable Name*:DIPSR4Condition |
 
  
 Diagnosis registered on a patient in DIPS Arena. Resource ids carry the `afn` prefix. 
@@ -160,7 +160,7 @@ The following search parameters SHALL be supported:
   "name" : "DIPSR4Condition",
   "title" : "DIPS R4 Condition",
   "status" : "draft",
-  "date" : "2026-11-05T07:34:57+00:00",
+  "date" : "2026-11-10T08:48:38+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

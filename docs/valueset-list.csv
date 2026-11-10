@@ -20,16 +20,16 @@ http://dips.no/fhir/ValueSet/DIPSGCSMotorScore,0.1.0,draft,,DIPSGCSMotorScore,DI
 http://dips.no/fhir/ValueSet/DIPSGCSVerbalScore,0.1.0,draft,,DIPSGCSVerbalScore,DIPSGCSVerbalScore,"ValueSet of GCS Verbal Score",,"Internal"
 http://dips.no/fhir/ValueSet/DIPSLocation,0.1.0,draft,,DIPSLocation,DIPSLocation,"DIPSLocation",,"Internal"
 http://dips.no/fhir/ValueSet/DIPSQSOFAScoreBPValueSet,0.1.0,draft,,DIPSQSOFAScoreBPValueSet,DIPSQSOFAScoreBPValueSet,"ValueSet of qSOFA Blood Pressure",,"Internal"
-http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalSatusValueSet,0.1.0,draft,,DIPSQSOFAScoreMentalSatusValueSet,DIPSQSOFAScoreMentalSatusValueSet,"ValueSet of qSOFA Blood Pressure",,"Internal"
-http://dips.no/fhir/ValueSet/DIPSQSOFAScoreResRateValueSet,0.1.0,draft,,DIPSQSOFAScoreResRateValueSet,DIPSQSOFAScoreBPValueSet,"ValueSet of qSOFA Respiration Rate",,"Internal"
+http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalStatusValueSet,0.1.0,draft,,DIPSQSOFAScoreMentalStatusValueSet,DIPSQSOFAScoreMentalStatusValueSet,"ValueSet of qSOFA Mental Status",,"Internal"
+http://dips.no/fhir/ValueSet/DIPSQSOFAScoreResRateValueSet,0.1.0,draft,,DIPSQSOFAScoreResRateValueSet,DIPSQSOFAScoreResRateValueSet,"ValueSet of qSOFA Respiration Rate",,"Internal"
 http://dips.no/fhir/ValueSet/DIPSVitalSignsHeartRhythmIrregularity,0.1.0,draft,,DIPSVitalSignsHeartRhythmIrregularity,DIPSVitalSignsHeartRhythmIrregularity,"Codes representing heart rhythm irregularity for heart rate",,
 http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationBloodPressureMeasurementMethod,0.1.0,draft,,DIPSVitalSignsObservationBloodPressureMeasurementMethod,,"Codes representing measurement method",,"Internal"
-http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationBodyMassIndexFormula,0.1.0,draft,,DIPSVitalSignsObservationBodyMassIndexFormula,DIPSVitalSignsObservationBodyMassIndexFormula,"Value set for DIPS Body Mass Index Formula Measurment methods",,"Internal"
-http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationBodySite,0.1.0,draft,,DIPSVitalSignsObservationBodySite,DIPSVitalSignsObservationBodySite,"Value set for DIPS Body Mass Index Formula Measurment methods",,"SCT"
+http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationBodyMassIndexFormula,0.1.0,draft,,DIPSVitalSignsObservationBodyMassIndexFormula,DIPSVitalSignsObservationBodyMassIndexFormula,"Value set for DIPS Body Mass Index Formula Measurement methods",,"Internal"
+http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationBodySite,0.1.0,draft,,DIPSVitalSignsObservationBodySite,DIPSVitalSignsObservationBodySite,"Value set for DIPS body sites used for body temperature measurement",,"SCT"
 http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationConsciousness,0.1.0,draft,,DIPSVitalSignsObservationConsciousness,SNOMED CT Consciousness Structures,"Codes representing consciousness",,"Internal"
 http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationHeartRateMeasurementMethod,0.1.0,draft,,DIPSVitalSignsObservationHeartRateMeasurementMethod,,"Codes representing measurement method",,"Internal"
 http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationPrePostduktal,0.1.0,draft,,DIPSVitalSignsObservationPrePostduktal,DIPSVitalSignsObservationPrePostduktal,"Codes representing pre/post ductal",,"Internal"
-http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationPulseBodySite,0.1.0,draft,,DIPSVitalSignsObservationPulseBodySite,DIPSVitalSignsObservationPulsBodySite,"Codes representing Body site for Pulse ",,
+http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationPulseBodySite,0.1.0,draft,,DIPSVitalSignsObservationPulseBodySite,DIPSVitalSignsObservationPulseBodySite,"Codes representing Body site for Pulse ",,
 http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationPulseMeasurementMethod,0.1.0,draft,,DIPSVitalSignsObservationPulseMeasurementMethod,,"Codes representing measurement method",,"Internal"
 http://loinc.org/vs/LL355-9,0.1.0,active,"1.3.6.1.4.1.12009.10.1.2208",GCS_1_Eye,,"",,"LOINC"
 http://loinc.org/vs/LL356-7,0.1.0,active,"1.3.6.1.4.1.12009.10.1.2209",GCS_2_Verbal,,"",,"LOINC"

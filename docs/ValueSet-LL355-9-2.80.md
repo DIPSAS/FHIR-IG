@@ -9,13 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://loinc.org/vs/LL355-9 | *Version*:0.1.0 |
-| Active as of 2026-11-05 | *Computable Name*:GCS_1_Eye |
+| Active as of 2026-11-10 | *Computable Name*:GCS_1_Eye |
 | *Other Identifiers:*OID:1.3.6.1.4.1.12009.10.1.2208 | |
 | **Copyright/Legal**: This material contains content from LOINC (http://loinc.org). LOINC is copyright Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. | |
 
  **References** 
 
-* [DIPSVitalSignsObservationGCS](StructureDefinition-DIPSVitalSignsObservationGCS.md)
+* [DIPS Vital Signs Observation - Glasgow Coma Scale](StructureDefinition-DIPSVitalSignsObservationGCS.md)
 
 ### Logical Definition (CLD)
 
@@ -58,7 +58,7 @@ No Expansion for this valueset (Unknown Code System)
   "version" : "0.1.0",
   "name" : "GCS_1_Eye",
   "status" : "active",
-  "date" : "2026-11-05T07:34:57+00:00",
+  "date" : "2026-11-10T08:48:38+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

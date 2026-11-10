@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/ImplementationGuide/dips.fhir.no.core | *Version*:0.1.0 |
-| Draft as of 2026-11-05 | *Computable Name*:DIPSCore |
+| Draft as of 2026-11-10 | *Computable Name*:DIPSCore |
 
 ### DIPS Core Implementation Guide
 
@@ -40,7 +40,7 @@ This guide is intended for developers and integrators building or consuming inte
   "name" : "DIPSCore",
   "title" : "DIPS Core Implementation Guide",
   "status" : "draft",
-  "date" : "2026-11-05T07:34:57+00:00",
+  "date" : "2026-11-10T08:48:38+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -2128,6 +2128,23 @@ This guide is intended for developers and integrators building or consuming inte
       },
       "name" : "DIPS Vital Signs Observation - Body Weight",
       "description" : "DIPS profile for Body Weight including some extensions",
+      "exampleBoolean" : false,
+      "groupingId" : "ObservationProfiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationGCS.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DIPSVitalSignsObservationGCS"
+      },
+      "name" : "DIPS Vital Signs Observation - Glasgow Coma Scale",
+      "description" : "Fifteen point scale used to assess impairment of consciousness in response to defined stimuli. More correctly known as the Modified Glasgow coma scale.",
       "exampleBoolean" : false,
       "groupingId" : "ObservationProfiles"
     },
@@ -4227,32 +4244,16 @@ This guide is intended for developers and integrators building or consuming inte
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-DIPSQSOFAScoreResRateValueSet.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/DIPSQSOFAScoreResRateValueSet"
-      },
-      "name" : "DIPSQSOFAScoreBPValueSet",
-      "description" : "ValueSet of qSOFA Respiration Rate",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-DIPSQSOFAScoreMentalSatusCodeSystem.html"
+        "valueUri" : "CodeSystem-DIPSQSOFAScoreMentalStatusCodeSystem.html"
       }],
       "reference" : {
-        "reference" : "CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem"
+        "reference" : "CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem"
       },
-      "name" : "DIPSQSOFAScoreMentalSatusCodeSystem",
+      "name" : "DIPSQSOFAScoreMentalStatusCodeSystem",
       "exampleBoolean" : false
     },
     {
@@ -4262,13 +4263,13 @@ This guide is intended for developers and integrators building or consuming inte
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-DIPSQSOFAScoreMentalSatusValueSet.html"
+        "valueUri" : "ValueSet-DIPSQSOFAScoreMentalStatusValueSet.html"
       }],
       "reference" : {
-        "reference" : "ValueSet/DIPSQSOFAScoreMentalSatusValueSet"
+        "reference" : "ValueSet/DIPSQSOFAScoreMentalStatusValueSet"
       },
-      "name" : "DIPSQSOFAScoreMentalSatusValueSet",
-      "description" : "ValueSet of qSOFA Blood Pressure",
+      "name" : "DIPSQSOFAScoreMentalStatusValueSet",
+      "description" : "ValueSet of qSOFA Mental Status",
       "exampleBoolean" : false
     },
     {
@@ -4284,6 +4285,22 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "CodeSystem/DIPSQSOFAScoreResRateCodeSystem"
       },
       "name" : "DIPSQSOFAScoreResRateCodeSystem",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DIPSQSOFAScoreResRateValueSet.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DIPSQSOFAScoreResRateValueSet"
+      },
+      "name" : "DIPSQSOFAScoreResRateValueSet",
+      "description" : "ValueSet of qSOFA Respiration Rate",
       "exampleBoolean" : false
     },
     {
@@ -4518,7 +4535,7 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "ValueSet/DIPSVitalSignsObservationBodyMassIndexFormula"
       },
       "name" : "DIPSVitalSignsObservationBodyMassIndexFormula",
-      "description" : "Value set for DIPS Body Mass Index Formula Measurment methods",
+      "description" : "Value set for DIPS Body Mass Index Formula Measurement methods",
       "exampleBoolean" : false
     },
     {
@@ -4534,7 +4551,7 @@ This guide is intended for developers and integrators building or consuming inte
         "reference" : "ValueSet/DIPSVitalSignsObservationBodySite"
       },
       "name" : "DIPSVitalSignsObservationBodySite",
-      "description" : "Value set for DIPS Body Mass Index Formula Measurment methods",
+      "description" : "Value set for DIPS body sites used for body temperature measurement",
       "exampleBoolean" : false
     },
     {
@@ -4583,23 +4600,6 @@ This guide is intended for developers and integrators building or consuming inte
       "description" : "Encounter with Episode Of Care and Planned Contact",
       "exampleBoolean" : false,
       "groupingId" : "SupportingReferenceProfiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-DIPSVitalSignsObservationGCS.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/DIPSVitalSignsObservationGCS"
-      },
-      "name" : "DIPSVitalSignsObservationGCS",
-      "description" : "Fifteen point scale used to assess impairment of consciousness in response to defined stimuli. More correctly known as the Modified Glasgow coma scale.",
-      "exampleBoolean" : false,
-      "groupingId" : "ObservationProfiles"
     },
     {
       "extension" : [{
@@ -4692,7 +4692,7 @@ This guide is intended for developers and integrators building or consuming inte
       "reference" : {
         "reference" : "ValueSet/DIPSVitalSignsObservationPulseBodySite"
       },
-      "name" : "DIPSVitalSignsObservationPulsBodySite",
+      "name" : "DIPSVitalSignsObservationPulseBodySite",
       "description" : "Codes representing Body site for Pulse",
       "exampleBoolean" : false
     },

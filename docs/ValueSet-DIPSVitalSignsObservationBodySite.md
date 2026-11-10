@@ -12,7 +12,7 @@
 | * Standards status: *[Draft](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:DIPSVitalSignsObservationBodySite |
 
  
-Value set for DIPS Body Mass Index Formula Measurment methods 
+Value set for DIPS body sites used for body temperature measurement 
 
  **References** 
 
@@ -79,7 +79,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
       "use" : "work"
     }]
   }],
-  "description" : "Value set for DIPS Body Mass Index Formula Measurment methods",
+  "description" : "Value set for DIPS body sites used for body temperature measurement",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

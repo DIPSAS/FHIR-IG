@@ -315,9 +315,9 @@ schedule.</p>
     <tr>
       <td>VitalSign</td>
       <td>13 <code class="language-plaintext highlighter-rouge">DIPSVitalSignsObservation*</code> profiles + reference profiles + 6 DIPS-specific extensions</td>
-      <td>2.0.415 (qSOFA only; others 2.0.362)</td>
-      <td>2026-10-27</td>
-      <td>qSOFA renamed and SNOMED-coded in the IG ahead of the service; fhir.core.r4 change pending with its developer. Other open items unchanged — see <a href="#vitalsign">VitalSign</a></td>
+      <td>2.0.451 (spelling and naming review); qSOFA mapping 2.0.415; others 2.0.362</td>
+      <td>2026-11-07</td>
+      <td>Spelling and naming corrections applied in the IG. qSOFA renamed and SNOMED-coded, and its mental-status CodeSystem renamed <code class="language-plaintext highlighter-rouge">MentalSatus</code> → <code class="language-plaintext highlighter-rouge">MentalStatus</code>, in the IG ahead of the service; fhir.core.r4 changes pending with its developer. Other open items unchanged — see <a href="#vitalsign">VitalSign</a></td>
     </tr>
     <tr>
       <td>DiagnosticReport</td>
@@ -365,6 +365,21 @@ publish as <code class="language-plaintext highlighter-rouge">http://dips.no/fhi
 under the IG canonical (<code class="language-plaintext highlighter-rouge">http://dips.no/fhir/R4/...</code>). The service already serves the CodeSystem
 URLs without <code class="language-plaintext highlighter-rouge">/R4/</code>, so served qSOFA/GCS/BMI/PrePostduktal values failed the IG's required
 bindings; the other VitalSign ValueSets already used this scheme.</li>
+  <li>Spelling and naming corrections (2026-11-07):
+    <ul>
+      <li>The identifier slice <code class="language-plaintext highlighter-rouge">VersionIdependentId</code> is now <code class="language-plaintext highlighter-rouge">VersionIndependentId</code> in all 13 profiles.</li>
+      <li>The HeartRate extension slice <code class="language-plaintext highlighter-rouge">DIPSheartRhythmIrregularity</code> is now <code class="language-plaintext highlighter-rouge">DIPSHeartRhythmIrregularity</code>.</li>
+      <li>The qSOFA mental-status CodeSystem and ValueSet are renamed <code class="language-plaintext highlighter-rouge">MentalSatus</code> → <code class="language-plaintext highlighter-rouge">MentalStatus</code>; see
+Open.</li>
+      <li>Copy-paste titles and descriptions corrected on the ResRate, MentalStatus, BodySite and
+PulseBodySite ValueSets, plus the GCS profile title.</li>
+      <li>Corrupted character fixed in the body-temperature example.</li>
+      <li>Typos fixed in the VitalSigns CapabilityStatement.</li>
+    </ul>
+
+    <p>Slice names never appear in FHIR JSON, so the two slice renames change only element ids, not what
+the service has to send or accept.</p>
+  </li>
 </ul>
 
 <p><strong>Open</strong></p>
@@ -402,6 +417,31 @@ the <code class="language-plaintext highlighter-rouge">src/VitalSign</code> and 
 <code class="language-plaintext highlighter-rouge">fhir-template.hbs</code>) is in neither the SNOMED CT International Edition nor the Norwegian edition
 (<code class="language-plaintext highlighter-rouge">SNOMEDCT-NO</code>, checked 2026-10-27), so the IG Publisher reports it as an unknown code. Its
 origin needs confirming before it is changed on either side.</li>
+  <li><strong>qSOFA mental-status CodeSystem: IG ahead of the service (2026-11-07).</strong> Renamed in the IG to
+<code class="language-plaintext highlighter-rouge">http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem</code>, and its ValueSet to
+<code class="language-plaintext highlighter-rouge">.../ValueSet/DIPSQSOFAScoreMentalStatusValueSet</code>. As of <code class="language-plaintext highlighter-rouge">fhir.core.r4</code> <code class="language-plaintext highlighter-rouge">2.0.451</code>
+(<code class="language-plaintext highlighter-rouge">origin/master</code>), the QSOFA config still uses <code class="language-plaintext highlighter-rouge">...MentalSatusCodeSystem</code>:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">fhir-template.hbs</code> emits it as <code class="language-plaintext highlighter-rouge">component.valueCodeableConcept.coding.system</code>.</li>
+      <li><code class="language-plaintext highlighter-rouge">conceptmap.json</code> and <code class="language-plaintext highlighter-rouge">composition-template.hbs</code> also refer to it.</li>
+    </ul>
+
+    <p>Until the service follows, served qSOFA mental-status values fail the IG's required binding. The
+<code class="language-plaintext highlighter-rouge">fhir.core.r4</code> developer has been given the old and new values.</p>
+  </li>
+  <li><strong>Service-side spelling defects found in the same review (2026-11-07).</strong> None of these needs an IG
+change; they have been passed to the <code class="language-plaintext highlighter-rouge">fhir.core.r4</code> developer.
+    <ul>
+      <li>Three displays in <code class="language-plaintext highlighter-rouge">BodyTemprature/config/conceptmap.json</code> (<code class="language-plaintext highlighter-rouge">Øre</code>, <code class="language-plaintext highlighter-rouge">Spiserør</code>,
+<code class="language-plaintext highlighter-rouge">Redusert påkledning/tildekking</code>) contain a corrupted character (U+FFFD) and are emitted
+corrupted in responses.</li>
+      <li><code class="language-plaintext highlighter-rouge">HeartRate</code> and <code class="language-plaintext highlighter-rouge">Pulse</code> <code class="language-plaintext highlighter-rouge">conceptmap.json</code> emit the SNOMED CT 251894003 display as
+"Level of Extertion (attribute)".</li>
+      <li>The Pulsoksymetri <code class="language-plaintext highlighter-rouge">fhir-template.hbs</code> has a block that never renders because of the misspelled
+context key <code class="language-plaintext highlighter-rouge">VersionIdependentId</code>. It should be deleted, not corrected: correcting it would add a
+second identifier with a wrong system.</li>
+    </ul>
+  </li>
 </ul>
 
 <p><strong>Corrected</strong></p>
@@ -567,7 +607,7 @@ sets <code class="language-plaintext highlighter-rouge">Meta.Profile</code>, so 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 5, 2026 07:34+0000">2026-11-05</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:lan@dips.no">DIPS AS</a>.  Package dips.fhir.no.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 10, 2026 08:48+0000">2026-11-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

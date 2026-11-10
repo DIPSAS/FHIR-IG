@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://DIPS.no/fhir/StructureDefinition/R4/LocationTypeCodeId | *Version*:0.1.0 |
-| Draft as of 2026-11-05 | *Computable Name*:LocationTypeCodeId |
+| Draft as of 2026-11-10 | *Computable Name*:LocationTypeCodeId |
 
 **Context of Use**
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-LocationTypeCodeId.c
   "version" : "0.1.0",
   "name" : "LocationTypeCodeId",
   "status" : "draft",
-  "date" : "2026-11-05T07:34:57+00:00",
+  "date" : "2026-11-10T08:48:38+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

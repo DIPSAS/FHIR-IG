@@ -1,10 +1,10 @@
-# DIPSQSOFAScoreBPValueSet - DIPS Core Implementation Guide v0.1.0
+# DIPSQSOFAScoreResRateValueSet - DIPS Core Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DIPSQSOFAScoreBPValueSet**
+* **DIPSQSOFAScoreResRateValueSet**
 
-## ValueSet: DIPSQSOFAScoreBPValueSet 
+## ValueSet: DIPSQSOFAScoreResRateValueSet 
 
 | | | |
 | :--- | :--- | :--- |
@@ -64,7 +64,7 @@ ValueSet of qSOFA Respiration Rate
   "url" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreResRateValueSet",
   "version" : "0.1.0",
   "name" : "DIPSQSOFAScoreResRateValueSet",
-  "title" : "DIPSQSOFAScoreBPValueSet",
+  "title" : "DIPSQSOFAScoreResRateValueSet",
   "status" : "draft",
   "experimental" : false,
   "date" : "2025-05-14T00:00:00+00:00",

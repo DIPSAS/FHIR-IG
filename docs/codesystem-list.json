@@ -48,10 +48,10 @@
     "description" : ""
   },
   {
-    "url" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem",
+    "url" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem",
     "version" : "0.1.0",
     "status" : "draft",
-    "name" : "DIPSQSOFAScoreMentalSatusCodeSystem",
+    "name" : "DIPSQSOFAScoreMentalStatusCodeSystem",
     "title" : null,
     "description" : ""
   },

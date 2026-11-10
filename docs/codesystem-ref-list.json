@@ -53,8 +53,8 @@
     "uses" : {
     },
     "ValueSet-DIPSVitalSignsObservationPulseMeasurementMethod.html" : "DIPSVitalSignsObservationPulseMeasurementMethod",
-    "ValueSet-DIPSVitalSignsObservationBloodPressureMeasurementMethod.html" : "DIPSVitalSignsObservationBloodPressureMeasurementMethod",
-    "ValueSet-DIPSVitalSignsObservationHeartRateMeasurementMethod.html" : "DIPSVitalSignsObservationHeartRateMeasurementMethod"
+    "ValueSet-DIPSVitalSignsObservationHeartRateMeasurementMethod.html" : "DIPSVitalSignsObservationHeartRateMeasurementMethod",
+    "ValueSet-DIPSVitalSignsObservationBloodPressureMeasurementMethod.html" : "DIPSVitalSignsObservationBloodPressureMeasurementMethod"
   },
   {
     "url" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreBPCodeSystem",
@@ -68,15 +68,15 @@
     "ValueSet-DIPSQSOFAScoreBPValueSet.html" : "DIPSQSOFAScoreBPValueSet"
   },
   {
-    "url" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem",
+    "url" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem",
     "version" : "0.1.0",
     "status" : "draft",
-    "name" : "DIPSQSOFAScoreMentalSatusCodeSystem",
+    "name" : "DIPSQSOFAScoreMentalStatusCodeSystem",
     "title" : null,
     "description" : "",
     "uses" : {
     },
-    "ValueSet-DIPSQSOFAScoreMentalSatusValueSet.html" : "DIPSQSOFAScoreMentalSatusValueSet"
+    "ValueSet-DIPSQSOFAScoreMentalStatusValueSet.html" : "DIPSQSOFAScoreMentalStatusValueSet"
   },
   {
     "url" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreResRateCodeSystem",
@@ -87,7 +87,7 @@
     "description" : "",
     "uses" : {
     },
-    "ValueSet-DIPSQSOFAScoreResRateValueSet.html" : "DIPSQSOFAScoreBPValueSet"
+    "ValueSet-DIPSQSOFAScoreResRateValueSet.html" : "DIPSQSOFAScoreResRateValueSet"
   },
   {
     "url" : "http://dips.no/fhir/CodeSystem/DIPSVitalSignsObservationConsciousness",

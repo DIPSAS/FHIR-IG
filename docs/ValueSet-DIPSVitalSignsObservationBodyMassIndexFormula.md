@@ -12,7 +12,7 @@
 | * Standards status: *[Draft](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:DIPSVitalSignsObservationBodyMassIndexFormula |
 
  
-Value set for DIPS Body Mass Index Formula Measurment methods 
+Value set for DIPS Body Mass Index Formula Measurement methods 
 
  **References** 
 
@@ -77,7 +77,7 @@ Value set for DIPS Body Mass Index Formula Measurment methods
       "use" : "work"
     }]
   }],
-  "description" : "Value set for DIPS Body Mass Index Formula Measurment methods",
+  "description" : "Value set for DIPS Body Mass Index Formula Measurement methods",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

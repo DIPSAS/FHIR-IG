@@ -24,7 +24,7 @@
   "url" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreResRateValueSet",
   "version" : "0.1.0",
   "name" : "DIPSQSOFAScoreResRateValueSet",
-  "title" : "DIPSQSOFAScoreBPValueSet",
+  "title" : "DIPSQSOFAScoreResRateValueSet",
   "status" : "draft",
   "experimental" : false,
   "date" : "2025-05-14T00:00:00+00:00",

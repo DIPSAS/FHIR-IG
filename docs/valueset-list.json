@@ -202,20 +202,20 @@
     "systems" : ["http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreBPCodeSystem"]
   },
   {
-    "url" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalSatusValueSet",
+    "url" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalStatusValueSet",
     "version" : "0.1.0",
     "status" : "draft",
-    "name" : "DIPSQSOFAScoreMentalSatusValueSet",
-    "title" : "DIPSQSOFAScoreMentalSatusValueSet",
-    "description" : "ValueSet of qSOFA Blood Pressure",
-    "systems" : ["http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem"]
+    "name" : "DIPSQSOFAScoreMentalStatusValueSet",
+    "title" : "DIPSQSOFAScoreMentalStatusValueSet",
+    "description" : "ValueSet of qSOFA Mental Status",
+    "systems" : ["http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem"]
   },
   {
     "url" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreResRateValueSet",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DIPSQSOFAScoreResRateValueSet",
-    "title" : "DIPSQSOFAScoreBPValueSet",
+    "title" : "DIPSQSOFAScoreResRateValueSet",
     "description" : "ValueSet of qSOFA Respiration Rate",
     "systems" : ["http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreResRateCodeSystem"]
   },
@@ -244,7 +244,7 @@
     "status" : "draft",
     "name" : "DIPSVitalSignsObservationBodyMassIndexFormula",
     "title" : "DIPSVitalSignsObservationBodyMassIndexFormula",
-    "description" : "Value set for DIPS Body Mass Index Formula Measurment methods",
+    "description" : "Value set for DIPS Body Mass Index Formula Measurement methods",
     "systems" : ["http://dips.no/fhir/CodeSystem/DIPSBodyMassIndexMeasurementMethod"]
   },
   {
@@ -253,7 +253,7 @@
     "status" : "draft",
     "name" : "DIPSVitalSignsObservationBodySite",
     "title" : "DIPSVitalSignsObservationBodySite",
-    "description" : "Value set for DIPS Body Mass Index Formula Measurment methods",
+    "description" : "Value set for DIPS body sites used for body temperature measurement",
     "systems" : ["http://snomed.info/sct"]
   },
   {
@@ -289,7 +289,7 @@
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DIPSVitalSignsObservationPulseBodySite",
-    "title" : "DIPSVitalSignsObservationPulsBodySite",
+    "title" : "DIPSVitalSignsObservationPulseBodySite",
     "description" : "Codes representing Body site for Pulse",
     "systems" : ["http://snomed.info/sct"]
   },

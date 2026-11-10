@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationHeartRate | *Version*:0.1.0 |
-| Draft as of 2026-11-05 | *Computable Name*:DIPSVitalSignsObservationHeartRate |
+| Draft as of 2026-11-10 | *Computable Name*:DIPSVitalSignsObservationHeartRate |
 
  
 DIPS profile for Heart Rate including some extensions 
@@ -104,7 +104,7 @@ This resource only supports search - there is no `GET [base]/Observation/[id]` r
   "name" : "DIPSVitalSignsObservationHeartRate",
   "title" : "DIPS Vital Signs Observation - Heart Rate",
   "status" : "draft",
-  "date" : "2026-11-05T07:34:57+00:00",
+  "date" : "2026-11-10T08:48:38+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",
@@ -213,9 +213,9 @@ This resource only supports search - there is no `GET [base]/Observation/[id]` r
       }]
     },
     {
-      "id" : "Observation.extension:DIPSheartRhythmIrregularity",
+      "id" : "Observation.extension:DIPSHeartRhythmIrregularity",
       "path" : "Observation.extension",
-      "sliceName" : "DIPSheartRhythmIrregularity",
+      "sliceName" : "DIPSHeartRhythmIrregularity",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -321,40 +321,40 @@ This resource only supports search - there is no `GET [base]/Observation/[id]` r
       "max" : "0"
     },
     {
-      "id" : "Observation.identifier:VersionIdependentId",
+      "id" : "Observation.identifier:VersionIndependentId",
       "path" : "Observation.identifier",
-      "sliceName" : "VersionIdependentId",
+      "sliceName" : "VersionIndependentId",
       "min" : 0,
       "max" : "1"
     },
     {
-      "id" : "Observation.identifier:VersionIdependentId.use",
+      "id" : "Observation.identifier:VersionIndependentId.use",
       "path" : "Observation.identifier.use",
       "max" : "0"
     },
     {
-      "id" : "Observation.identifier:VersionIdependentId.type",
+      "id" : "Observation.identifier:VersionIndependentId.type",
       "path" : "Observation.identifier.type",
       "max" : "0"
     },
     {
-      "id" : "Observation.identifier:VersionIdependentId.system",
+      "id" : "Observation.identifier:VersionIndependentId.system",
       "path" : "Observation.identifier.system",
       "min" : 1,
       "fixedUri" : "http://dips.no/fhir/namingsystem/dips-VersionIndependentId"
     },
     {
-      "id" : "Observation.identifier:VersionIdependentId.value",
+      "id" : "Observation.identifier:VersionIndependentId.value",
       "path" : "Observation.identifier.value",
       "min" : 1
     },
     {
-      "id" : "Observation.identifier:VersionIdependentId.period",
+      "id" : "Observation.identifier:VersionIndependentId.period",
       "path" : "Observation.identifier.period",
       "max" : "0"
     },
     {
-      "id" : "Observation.identifier:VersionIdependentId.assigner",
+      "id" : "Observation.identifier:VersionIndependentId.assigner",
       "path" : "Observation.identifier.assigner",
       "max" : "0"
     },

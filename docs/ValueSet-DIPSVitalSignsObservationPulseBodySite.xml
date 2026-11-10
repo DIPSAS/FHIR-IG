@@ -21,7 +21,7 @@
   <url value="http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationPulseBodySite"/>
   <version value="0.1.0"/>
   <name value="DIPSVitalSignsObservationPulseBodySite"/>
-  <title value="DIPSVitalSignsObservationPulsBodySite"/>
+  <title value="DIPSVitalSignsObservationPulseBodySite"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2021-03-17T00:00:00+00:00"/>

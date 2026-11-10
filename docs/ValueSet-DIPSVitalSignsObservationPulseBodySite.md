@@ -1,10 +1,10 @@
-# DIPSVitalSignsObservationPulsBodySite - DIPS Core Implementation Guide v0.1.0
+# DIPSVitalSignsObservationPulseBodySite - DIPS Core Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DIPSVitalSignsObservationPulsBodySite**
+* **DIPSVitalSignsObservationPulseBodySite**
 
-## ValueSet: DIPSVitalSignsObservationPulsBodySite 
+## ValueSet: DIPSVitalSignsObservationPulseBodySite 
 
 | | | |
 | :--- | :--- | :--- |
@@ -66,7 +66,7 @@ No Expansion for this valueset (Unknown Code System)
   "url" : "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationPulseBodySite",
   "version" : "0.1.0",
   "name" : "DIPSVitalSignsObservationPulseBodySite",
-  "title" : "DIPSVitalSignsObservationPulsBodySite",
+  "title" : "DIPSVitalSignsObservationPulseBodySite",
   "status" : "draft",
   "experimental" : false,
   "date" : "2021-03-17T00:00:00+00:00",

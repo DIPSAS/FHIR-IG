@@ -36,7 +36,7 @@
   fhir:ValueSet.url [ fhir:value "http://dips.no/fhir/ValueSet/DIPSVitalSignsObservationPulseBodySite"] ;
   fhir:ValueSet.version [ fhir:value "0.1.0"] ;
   fhir:ValueSet.name [ fhir:value "DIPSVitalSignsObservationPulseBodySite"] ;
-  fhir:ValueSet.title [ fhir:value "DIPSVitalSignsObservationPulsBodySite"] ;
+  fhir:ValueSet.title [ fhir:value "DIPSVitalSignsObservationPulseBodySite"] ;
   fhir:ValueSet.status [ fhir:value "draft"] ;
   fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
   fhir:ValueSet.date [ fhir:value "2021-03-17T00:00:00+00:00"^^xsd:dateTime] ;

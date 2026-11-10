@@ -1,7 +1,7 @@
 DIPSCore : Validation Results
 =========================================
 
-err = 437, warn = 1431, info = 627, broken links = 6
+err = 449, warn = 1419, info = 627, broken links = 6
 $--
 Generated $--. FHIR version $-- for dips.fhir.no.core#$-- (canonical = http://dips.no/fhir/R4)
  Build Errors : 9 / 252 / 0
@@ -17,7 +17,7 @@ Generated $--. FHIR version $-- for dips.fhir.no.core#$-- (canonical = http://di
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/CodeSystem-DIPSLocationTopLevel : 0 / 7 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/CodeSystem-DIPSMeasurementMethod : 2 / 7 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/CodeSystem-DIPSQSOFAScoreBPCodeSystem : 2 / 7 / 2
- /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/CodeSystem-DIPSQSOFAScoreMentalSatusCodeSystem : 2 / 7 / 2
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/CodeSystem-DIPSQSOFAScoreMentalStatusCodeSystem : 2 / 7 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/CodeSystem-DIPSQSOFAScoreResRateCodeSystem : 2 / 7 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/CodeSystem-DIPSVitalSignsObservationConsciousness : 2 / 7 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/CodeSystem-DIPSVitalSignsObservationPrePostduktal : 2 / 7 / 2
@@ -52,10 +52,10 @@ Generated $--. FHIR version $-- for dips.fhir.no.core#$-- (canonical = http://di
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-dips-QSOFAScore-create : 0 / 10 / 8
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-dips-blood-pressure-create : 0 / 12 / 14
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-dips-bloodpressureexample : 1 / 13 / 13
- /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-dips-body-height-create : 0 / 12 / 9
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-dips-body-height-create : 2 / 10 / 9
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-dips-body-mass-index-create : 0 / 9 / 8
- /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-dips-body-temperature-create : 0 / 12 / 10
- /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-dips-body-weight-create : 0 / 12 / 8
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-dips-body-temperature-create : 2 / 10 / 10
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-dips-body-weight-create : 2 / 10 / 8
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-dips-consciousness-create : 0 / 8 / 5
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-dips-gcs-create : 0 / 9 / 13
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-dips-heart-rate-create : 0 / 11 / 13
@@ -63,9 +63,9 @@ Generated $--. FHIR version $-- for dips.fhir.no.core#$-- (canonical = http://di
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-dips-oxygen-saturation-create : 0 / 9 / 8
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-dips-respiratory-rate-create : 0 / 11 / 9
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-no-blood-pressure-create : 0 / 10 / 19
- /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-no-body-height-create : 0 / 6 / 7
- /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-no-body-temperature-create : 0 / 6 / 9
- /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-no-body-weight-create : 0 / 6 / 7
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-no-body-height-create : 2 / 4 / 7
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-no-body-temperature-create : 2 / 4 / 9
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-no-body-weight-create : 2 / 4 / 7
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-no-heart-rate-create : 0 / 5 / 12
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-no-oxygen-saturation-create : 0 / 3 / 6
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/Observation-no-pulse-rate : 0 / 6 / 11
@@ -337,7 +337,7 @@ Generated $--. FHIR version $-- for dips.fhir.no.core#$-- (canonical = http://di
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/ValueSet-DIPSHealthcareServiceTypes : 0 / 11 / 7
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/ValueSet-DIPSLocation : 2 / 2 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/ValueSet-DIPSQSOFAScoreBPValueSet : 2 / 2 / 2
- /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/ValueSet-DIPSQSOFAScoreMentalSatusValueSet : 2 / 2 / 2
+ /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/ValueSet-DIPSQSOFAScoreMentalStatusValueSet : 2 / 2 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/ValueSet-DIPSQSOFAScoreResRateValueSet : 2 / 2 / 2
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/ValueSet-DIPSVitalSignsHeartRhythmIrregularity : 2 / 4 / 1
  /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/ValueSet-DIPSVitalSignsObservationBloodPressureMeasurementMethod : 2 / 4 / 2
@@ -519,7 +519,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/DIPSLocationTopLevel.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/DIPSMeasurementMethod.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/DIPSQSOFAScoreBPCodeSystem.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/DIPSQSOFAScoreResRateCodeSystem.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/DIPSVitalSignsObservationConsciousness.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/DIPSVitalSignsObservationPrePostduktal.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -748,17 +748,17 @@ WARNING: Resource: The resource CodeSystem/DIPSQSOFAScoreBPCodeSystem should hav
 ERROR: /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/CodeSystem-DIPSQSOFAScoreBPCodeSystem: URL Mismatch http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreBPCodeSystem vs http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreBPCodeSystem
 
 
-== fsh-generated/resources/CodeSystem-DIPSQSOFAScoreMentalSatusCodeSystem.json ==
-ERROR: CodeSystem.where(url = 'http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem'): Conformance resource /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/CodeSystem-DIPSQSOFAScoreMentalSatusCodeSystem.json - the canonical URL (http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem) does not match the URL (http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem). Use the special-url parameter if you really mean for it not to match
-WARNING: CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem: CodeSystem.identifier[0].system: No definition could be found for URL value 'http://dips.no/fhir/namingsystem/dips-qsofa-mentalstatus'
-WARNING: CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem: CodeSystem.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
-INFORMATION: CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.title is mandatory, but it is not present
-WARNING: CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
-WARNING: CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
-WARNING: CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
-WARNING: Resource: The resource CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
-ERROR: /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/CodeSystem-DIPSQSOFAScoreMentalSatusCodeSystem: URL Mismatch http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem vs http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem
+== fsh-generated/resources/CodeSystem-DIPSQSOFAScoreMentalStatusCodeSystem.json ==
+ERROR: CodeSystem.where(url = 'http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem'): Conformance resource /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/CodeSystem-DIPSQSOFAScoreMentalStatusCodeSystem.json - the canonical URL (http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem) does not match the URL (http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem). Use the special-url parameter if you really mean for it not to match
+WARNING: CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem: CodeSystem.identifier[0].system: No definition could be found for URL value 'http://dips.no/fhir/namingsystem/dips-qsofa-mentalstatus'
+WARNING: CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem: CodeSystem.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+INFORMATION: CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.title is mandatory, but it is not present
+WARNING: CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: Resource: The resource CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+ERROR: /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/CodeSystem-DIPSQSOFAScoreMentalStatusCodeSystem: URL Mismatch http://dips.no/fhir/R4/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem vs http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem
 
 
 == fsh-generated/resources/CodeSystem-DIPSQSOFAScoreResRateCodeSystem.json ==
@@ -1142,7 +1142,7 @@ WARNING: Observation/dips-QSOFAScore-create: Observation.value.ofType(Quantity):
 WARNING: Observation/dips-QSOFAScore-create: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {ScoreOf} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
 INFORMATION: Observation/dips-QSOFAScore-create: Observation.component[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreResRateCodeSystem|0.1.0
 INFORMATION: Observation/dips-QSOFAScore-create: Observation.component[1].value.ofType(CodeableConcept): Reference to draft CodeSystem http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreBPCodeSystem|0.1.0
-INFORMATION: Observation/dips-QSOFAScore-create: Observation.component[2].value.ofType(CodeableConcept): Reference to draft CodeSystem http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem|0.1.0
+INFORMATION: Observation/dips-QSOFAScore-create: Observation.component[2].value.ofType(CodeableConcept): Reference to draft CodeSystem http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem|0.1.0
 
 
 == fsh-generated/resources/Observation-dips-blood-pressure-create.json ==
@@ -1218,8 +1218,8 @@ WARNING: Observation/dips-body-height-create: Observation.encounter.identifier.s
 WARNING: Observation/dips-body-height-create: Observation.performer[0].identifier.system: No definition could be found for URL value 'urn:oid:1.3.6.1.4.1.9038.51.1'
 WARNING: Observation/dips-body-height-create: Observation.performer[1].identifier.system: No definition could be found for URL value 'urn:oid:1.3.6.1.4.1.9038.70.3'
 WARNING: Observation/dips-body-height-create: Observation.value.ofType(Quantity): Unable to validate code 'cm' in system 'http://unitsofmeasure.org' because the validator is running without terminology services
-WARNING: Observation/dips-body-height-create: Observation.value.ofType(Quantity).code.system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
-WARNING: Observation/dips-body-height-create: Observation.value.ofType(Quantity).code: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
+ERROR: Observation/dips-body-height-create: Observation.value.ofType(Quantity).code: The System URI could not be determined for the code 'cm' in the ValueSet 'http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1': a definition for the CodeSystem 'http://unitsofmeasure.org' it includes could not be found
+ERROR: Observation/dips-body-height-create: Observation.value.ofType(Quantity).code: The value provided ('cm') was not found in the value set 'Body Length Units' (http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'cm' in the ValueSet 'http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1': a definition for the CodeSystem 'http://unitsofmeasure.org' it includes could not be found)
 
 
 == fsh-generated/resources/Observation-dips-body-mass-index-create.json ==
@@ -1257,8 +1257,8 @@ WARNING: Observation/dips-body-temperature-create: Observation.encounter.identif
 WARNING: Observation/dips-body-temperature-create: Observation.performer[0].identifier.system: No definition could be found for URL value 'urn:oid:1.3.6.1.4.1.9038.51.1'
 WARNING: Observation/dips-body-temperature-create: Observation.performer[1].identifier.system: No definition could be found for URL value 'urn:oid:1.3.6.1.4.1.9038.70.3'
 WARNING: Observation/dips-body-temperature-create: Observation.value.ofType(Quantity): Unable to validate code 'Cel' in system 'http://unitsofmeasure.org' because the validator is running without terminology services
-WARNING: Observation/dips-body-temperature-create: Observation.value.ofType(Quantity).code.system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
-WARNING: Observation/dips-body-temperature-create: Observation.value.ofType(Quantity).code: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
+ERROR: Observation/dips-body-temperature-create: Observation.value.ofType(Quantity).code: The System URI could not be determined for the code 'Cel' in the ValueSet 'http://hl7.org/fhir/ValueSet/ucum-bodytemp|4.0.1': a definition for the CodeSystem 'http://unitsofmeasure.org' it includes could not be found
+ERROR: Observation/dips-body-temperature-create: Observation.value.ofType(Quantity).code: The value provided ('Cel') was not found in the value set 'Body Temperature Units' (http://hl7.org/fhir/ValueSet/ucum-bodytemp|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'Cel' in the ValueSet 'http://hl7.org/fhir/ValueSet/ucum-bodytemp|4.0.1': a definition for the CodeSystem 'http://unitsofmeasure.org' it includes could not be found)
 INFORMATION: Observation/dips-body-temperature-create: Observation.bodySite: Could not confirm that the codes provided are from the extensible value set http://hl7.no/fhir/no-domain/vitalsigns/ValueSet/NoDomainVitalSignsBodyTempBodySiteValueSet because there is no terminology service
 INFORMATION: Observation/dips-body-temperature-create: Observation.bodySite.coding[0]: The value provided ([http://snomed.info/sct#34402009]) could not be validated in the absence of a terminology server
 
@@ -1280,8 +1280,8 @@ WARNING: Observation/dips-body-weight-create: Observation.encounter.identifier.s
 WARNING: Observation/dips-body-weight-create: Observation.performer[0].identifier.system: No definition could be found for URL value 'urn:oid:1.3.6.1.4.1.9038.51.1'
 WARNING: Observation/dips-body-weight-create: Observation.performer[1].identifier.system: No definition could be found for URL value 'urn:oid:1.3.6.1.4.1.9038.70.3'
 WARNING: Observation/dips-body-weight-create: Observation.value.ofType(Quantity): Unable to validate code 'kg' in system 'http://unitsofmeasure.org' because the validator is running without terminology services
-WARNING: Observation/dips-body-weight-create: Observation.value.ofType(Quantity).code.system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
-WARNING: Observation/dips-body-weight-create: Observation.value.ofType(Quantity).code: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
+ERROR: Observation/dips-body-weight-create: Observation.value.ofType(Quantity).code: The System URI could not be determined for the code 'kg' in the ValueSet 'http://hl7.org/fhir/ValueSet/ucum-bodyweight|4.0.1': a definition for the CodeSystem 'http://unitsofmeasure.org' it includes could not be found
+ERROR: Observation/dips-body-weight-create: Observation.value.ofType(Quantity).code: The value provided ('kg') was not found in the value set 'Body Weight Units' (http://hl7.org/fhir/ValueSet/ucum-bodyweight|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'kg' in the ValueSet 'http://hl7.org/fhir/ValueSet/ucum-bodyweight|4.0.1': a definition for the CodeSystem 'http://unitsofmeasure.org' it includes could not be found)
 
 
 == fsh-generated/resources/Observation-dips-consciousness-create.json ==
@@ -1457,8 +1457,8 @@ INFORMATION: Observation/no-body-height-create: Observation.code: Could not conf
 WARNING: Observation/no-body-height-create: Observation.performer[0].identifier.system: No definition could be found for URL value 'urn:oid:2.16.578.1.12.4.1.2'
 WARNING: Observation/no-body-height-create: Observation.performer[1].identifier.system: No definition could be found for URL value 'urn:oid:1.3.6.1.4.1.9038.70.3'
 WARNING: Observation/no-body-height-create: Observation.value.ofType(Quantity): Unable to validate code 'cm' in system 'http://unitsofmeasure.org' because the validator is running without terminology services
-WARNING: Observation/no-body-height-create: Observation.value.ofType(Quantity).code.system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
-WARNING: Observation/no-body-height-create: Observation.value.ofType(Quantity).code: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
+ERROR: Observation/no-body-height-create: Observation.value.ofType(Quantity).code: The System URI could not be determined for the code 'cm' in the ValueSet 'http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1': a definition for the CodeSystem 'http://unitsofmeasure.org' it includes could not be found
+ERROR: Observation/no-body-height-create: Observation.value.ofType(Quantity).code: The value provided ('cm') was not found in the value set 'Body Length Units' (http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'cm' in the ValueSet 'http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1': a definition for the CodeSystem 'http://unitsofmeasure.org' it includes could not be found)
 
 
 == fsh-generated/resources/Observation-no-body-temperature-create.json ==
@@ -1471,8 +1471,8 @@ INFORMATION: Observation/no-body-temperature-create: Observation.code: Could not
 WARNING: Observation/no-body-temperature-create: Observation.performer[0].identifier.system: No definition could be found for URL value 'urn:oid:2.16.578.1.12.4.1.2'
 WARNING: Observation/no-body-temperature-create: Observation.performer[1].identifier.system: No definition could be found for URL value 'urn:oid:1.3.6.1.4.1.9038.70.3'
 WARNING: Observation/no-body-temperature-create: Observation.value.ofType(Quantity): Unable to validate code 'Cel' in system 'http://unitsofmeasure.org' because the validator is running without terminology services
-WARNING: Observation/no-body-temperature-create: Observation.value.ofType(Quantity).code.system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
-WARNING: Observation/no-body-temperature-create: Observation.value.ofType(Quantity).code: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
+ERROR: Observation/no-body-temperature-create: Observation.value.ofType(Quantity).code: The System URI could not be determined for the code 'Cel' in the ValueSet 'http://hl7.org/fhir/ValueSet/ucum-bodytemp|4.0.1': a definition for the CodeSystem 'http://unitsofmeasure.org' it includes could not be found
+ERROR: Observation/no-body-temperature-create: Observation.value.ofType(Quantity).code: The value provided ('Cel') was not found in the value set 'Body Temperature Units' (http://hl7.org/fhir/ValueSet/ucum-bodytemp|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'Cel' in the ValueSet 'http://hl7.org/fhir/ValueSet/ucum-bodytemp|4.0.1': a definition for the CodeSystem 'http://unitsofmeasure.org' it includes could not be found)
 INFORMATION: Observation/no-body-temperature-create: Observation.bodySite: Could not confirm that the codes provided are from the extensible value set http://hl7.no/fhir/no-domain/vitalsigns/ValueSet/NoDomainVitalSignsBodyTempBodySiteValueSet because there is no terminology service
 INFORMATION: Observation/no-body-temperature-create: Observation.bodySite.coding[0]: The value provided ([http://snomed.info/sct#34402009]) could not be validated in the absence of a terminology server
 
@@ -1487,8 +1487,8 @@ INFORMATION: Observation/no-body-weight-create: Observation.code: Could not conf
 WARNING: Observation/no-body-weight-create: Observation.performer[0].identifier.system: No definition could be found for URL value 'urn:oid:2.16.578.1.12.4.1.2'
 WARNING: Observation/no-body-weight-create: Observation.performer[1].identifier.system: No definition could be found for URL value 'urn:oid:1.3.6.1.4.1.9038.70.3'
 WARNING: Observation/no-body-weight-create: Observation.value.ofType(Quantity): Unable to validate code 'g' in system 'http://unitsofmeasure.org' because the validator is running without terminology services
-WARNING: Observation/no-body-weight-create: Observation.value.ofType(Quantity).code.system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
-WARNING: Observation/no-body-weight-create: Observation.value.ofType(Quantity).code: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
+ERROR: Observation/no-body-weight-create: Observation.value.ofType(Quantity).code: The System URI could not be determined for the code 'g' in the ValueSet 'http://hl7.org/fhir/ValueSet/ucum-bodyweight|4.0.1': a definition for the CodeSystem 'http://unitsofmeasure.org' it includes could not be found
+ERROR: Observation/no-body-weight-create: Observation.value.ofType(Quantity).code: The value provided ('g') was not found in the value set 'Body Weight Units' (http://hl7.org/fhir/ValueSet/ucum-bodyweight|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'g' in the ValueSet 'http://hl7.org/fhir/ValueSet/ucum-bodyweight|4.0.1': a definition for the CodeSystem 'http://unitsofmeasure.org' it includes could not be found)
 
 
 == fsh-generated/resources/Observation-no-heart-rate-create.json ==
@@ -3675,12 +3675,12 @@ WARNING: Resource: The resource ValueSet/DIPSQSOFAScoreBPValueSet should have an
 ERROR: /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/ValueSet-DIPSQSOFAScoreBPValueSet: URL Mismatch http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreBPValueSet vs http://dips.no/fhir/ValueSet/DIPSQSOFAScoreBPValueSet
 
 
-== fsh-generated/resources/ValueSet-DIPSQSOFAScoreMentalSatusValueSet.json ==
-ERROR: ValueSet.where(url = 'http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalSatusValueSet'): Conformance resource /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/ValueSet-DIPSQSOFAScoreMentalSatusValueSet.json - the canonical URL (http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreMentalSatusValueSet) does not match the URL (http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalSatusValueSet). Use the special-url parameter if you really mean for it not to match
-WARNING: ValueSet/DIPSQSOFAScoreMentalSatusValueSet: ValueSet.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
-INFORMATION: ValueSet/DIPSQSOFAScoreMentalSatusValueSet: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
-WARNING: Resource: The resource ValueSet/DIPSQSOFAScoreMentalSatusValueSet should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
-ERROR: /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/ValueSet-DIPSQSOFAScoreMentalSatusValueSet: URL Mismatch http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreMentalSatusValueSet vs http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalSatusValueSet
+== fsh-generated/resources/ValueSet-DIPSQSOFAScoreMentalStatusValueSet.json ==
+ERROR: ValueSet.where(url = 'http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalStatusValueSet'): Conformance resource /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/ValueSet-DIPSQSOFAScoreMentalStatusValueSet.json - the canonical URL (http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreMentalStatusValueSet) does not match the URL (http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalStatusValueSet). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/DIPSQSOFAScoreMentalStatusValueSet: ValueSet.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+INFORMATION: ValueSet/DIPSQSOFAScoreMentalStatusValueSet: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+WARNING: Resource: The resource ValueSet/DIPSQSOFAScoreMentalStatusValueSet should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+ERROR: /mnt/agent/work/3bd745e69014deb3/fsh-generated/resources/ValueSet-DIPSQSOFAScoreMentalStatusValueSet: URL Mismatch http://dips.no/fhir/R4/ValueSet/DIPSQSOFAScoreMentalStatusValueSet vs http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalStatusValueSet
 
 
 == fsh-generated/resources/ValueSet-DIPSQSOFAScoreResRateValueSet.json ==

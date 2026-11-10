@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceDictatedTime | *Version*:0.1.0 |
-| Draft as of 2026-11-05 | *Computable Name*:DIPSDocumentReferenceDictatedTime |
+| Draft as of 2026-11-10 | *Computable Name*:DIPSDocumentReferenceDictatedTime |
 
 This Extension is a mandatory property in creation and update of dictation
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSDocumentReferenc
   "version" : "0.1.0",
   "name" : "DIPSDocumentReferenceDictatedTime",
   "status" : "draft",
-  "date" : "2026-11-05T07:34:57+00:00",
+  "date" : "2026-11-10T08:48:38+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

@@ -147,7 +147,7 @@
           {
             "name": "code",
             "in": "query",
-            "description": "Loinc code for type of observation eg: For blood presure \u0027code\u003d85354-9\u0027",
+            "description": "LOINC code for type of observation, e.g. for blood pressure \u0027code\u003d85354-9\u0027",
             "schema": {
               "type": "string"
             }
@@ -163,7 +163,7 @@
           {
             "name": "patient.Identifier",
             "in": "query",
-            "description": "DIPS patient id or national id.Supported systems are urn:oid:2.16.578.1.12.4.1.4.1,urn:oid:2.16.578.1.12.4.1.4.2 or urn:oid:2.16.578.1.12.4.1.4.3 ",
+            "description": "DIPS patient id or national id. Supported systems are urn:oid:2.16.578.1.12.4.1.4.1,urn:oid:2.16.578.1.12.4.1.4.2 or urn:oid:2.16.578.1.12.4.1.4.3 ",
             "schema": {
               "type": "string"
             }

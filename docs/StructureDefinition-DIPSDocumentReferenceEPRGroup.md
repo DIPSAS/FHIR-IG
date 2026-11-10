@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSDocumentReferenceEPRGroup | *Version*:0.1.0 |
-| Draft as of 2026-11-05 | *Computable Name*:DIPSDocumentReferenceEPRGroup |
+| Draft as of 2026-11-10 | *Computable Name*:DIPSDocumentReferenceEPRGroup |
 
 **Context of Use**
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSDocumentReferenc
   "version" : "0.1.0",
   "name" : "DIPSDocumentReferenceEPRGroup",
   "status" : "draft",
-  "date" : "2026-11-05T07:34:57+00:00",
+  "date" : "2026-11-10T08:48:38+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

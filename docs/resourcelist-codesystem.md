@@ -21,7 +21,7 @@ CodeSystem artifacts this guide defines. Selecting any entry opens its page.
 * [DIPSLocationTopLevel](CodeSystem-DIPSLocationTopLevel.md)
 * [DIPSMeasurementMethod](CodeSystem-DIPSMeasurementMethod.md)
 * [DIPSQSOFAScoreBPCodeSystem](CodeSystem-DIPSQSOFAScoreBPCodeSystem.md)
-* [DIPSQSOFAScoreMentalSatusCodeSystem](CodeSystem-DIPSQSOFAScoreMentalSatusCodeSystem.md)
+* [DIPSQSOFAScoreMentalStatusCodeSystem](CodeSystem-DIPSQSOFAScoreMentalStatusCodeSystem.md)
 * [DIPSQSOFAScoreResRateCodeSystem](CodeSystem-DIPSQSOFAScoreResRateCodeSystem.md)
 * [DIPSVitalSignsObservationConsciousness](CodeSystem-DIPSVitalSignsObservationConsciousness.md)
 * [DIPSVitalSignsObservationPrePostduktal](CodeSystem-DIPSVitalSignsObservationPrePostduktal.md)

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/R4/WardTypeCodeId | *Version*:0.1.0 |
-| Draft as of 2026-11-05 | *Computable Name*:WardTypeCodeId |
+| Draft as of 2026-11-10 | *Computable Name*:WardTypeCodeId |
 
 **Context of Use**
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-WardTypeCodeId.csv),
   "version" : "0.1.0",
   "name" : "WardTypeCodeId",
   "status" : "draft",
-  "date" : "2026-11-05T07:34:57+00:00",
+  "date" : "2026-11-10T08:48:38+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

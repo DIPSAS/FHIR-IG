@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/StructureDefinition/DIPSVitalSignsObservationConfoundingFactor | *Version*:0.1.0 |
-| Draft as of 2026-11-05 | *Computable Name*:DIPSVitalSignsObservationConfoundingFactor |
+| Draft as of 2026-11-10 | *Computable Name*:DIPSVitalSignsObservationConfoundingFactor |
 
 **Context of Use**
 
@@ -17,7 +17,7 @@
 
 **Usages:**
 
-* Use this Extension: [DIPS Vital Signs Observation - Body Mass Index(BMI)](StructureDefinition-DIPSVitalSignsObservationBodyMassIndex.md) and [DIPSVitalSignsObservationGCS](StructureDefinition-DIPSVitalSignsObservationGCS.md)
+* Use this Extension: [DIPS Vital Signs Observation - Body Mass Index(BMI)](StructureDefinition-DIPSVitalSignsObservationBodyMassIndex.md) and [DIPS Vital Signs Observation - Glasgow Coma Scale](StructureDefinition-DIPSVitalSignsObservationGCS.md)
 * Examples for this Extension: [Observation/dips-body-mass-index-create](Observation-dips-body-mass-index-create.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.no.core|current/StructureDefinition/StructureDefinition-DIPSVitalSignsObservationConfoundingFactor.json)
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-DIPSVitalSignsObserv
   "version" : "0.1.0",
   "name" : "DIPSVitalSignsObservationConfoundingFactor",
   "status" : "draft",
-  "date" : "2026-11-05T07:34:57+00:00",
+  "date" : "2026-11-10T08:48:38+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

@@ -71,7 +71,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "DIPSEncounterTypeCom",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-05T07:34:57+00:00",
+  "date" : "2026-11-10T08:48:38+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

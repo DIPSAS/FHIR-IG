@@ -176,7 +176,7 @@ Profile: [DIPS Vital Signs Observation - qSOFA](StructureDefinition-DIPSVitalSig
     },
     "valueCodeableConcept" : {
       "coding" : [{
-        "system" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem",
+        "system" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem",
         "code" : "1",
         "display" : "Endret mental status"
       }],

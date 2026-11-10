@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/CodeSystem/DIPSVitalSignsObservationConsciousness | *Version*:0.1.0 |
-| Draft as of 2026-11-05 | *Computable Name*:DIPSVitalSignsObservationConsciousness |
+| Draft as of 2026-11-10 | *Computable Name*:DIPSVitalSignsObservationConsciousness |
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
@@ -30,7 +30,7 @@
   "version" : "0.1.0",
   "name" : "DIPSVitalSignsObservationConsciousness",
   "status" : "draft",
-  "date" : "2026-11-05T07:34:57+00:00",
+  "date" : "2026-11-10T08:48:38+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

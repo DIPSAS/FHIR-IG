@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/R4/StructureDefinition/DepartmentExtension | *Version*:0.1.0 |
-| Draft as of 2026-11-05 | *Computable Name*:DepartmentExtension |
+| Draft as of 2026-11-10 | *Computable Name*:DepartmentExtension |
 
 **Context of Use**
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-DepartmentExtension.
   "version" : "0.1.0",
   "name" : "DepartmentExtension",
   "status" : "draft",
-  "date" : "2026-11-05T07:34:57+00:00",
+  "date" : "2026-11-10T08:48:38+00:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "Lars-Andreas Nystad",

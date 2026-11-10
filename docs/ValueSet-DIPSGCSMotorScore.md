@@ -16,7 +16,7 @@ ValueSet of GCS Motor Score
 
  **References** 
 
-* [DIPSVitalSignsObservationGCS](StructureDefinition-DIPSVitalSignsObservationGCS.md)
+* [DIPS Vital Signs Observation - Glasgow Coma Scale](StructureDefinition-DIPSVitalSignsObservationGCS.md)
 
 ### Logical Definition (CLD)
 

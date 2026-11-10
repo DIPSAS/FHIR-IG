@@ -1,18 +1,18 @@
-# DIPSQSOFAScoreMentalSatusValueSet - DIPS Core Implementation Guide v0.1.0
+# DIPSQSOFAScoreMentalStatusValueSet - DIPS Core Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DIPSQSOFAScoreMentalSatusValueSet**
+* **DIPSQSOFAScoreMentalStatusValueSet**
 
-## ValueSet: DIPSQSOFAScoreMentalSatusValueSet 
+## ValueSet: DIPSQSOFAScoreMentalStatusValueSet 
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalSatusValueSet | *Version*:0.1.0 | |
-| * Standards status: *[Draft](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:DIPSQSOFAScoreMentalSatusValueSet |
+| *Official URL*:http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalStatusValueSet | *Version*:0.1.0 | |
+| * Standards status: *[Draft](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:DIPSQSOFAScoreMentalStatusValueSet |
 
  
-ValueSet of qSOFA Blood Pressure 
+ValueSet of qSOFA Mental Status 
 
  **References** 
 
@@ -44,7 +44,7 @@ ValueSet of qSOFA Blood Pressure
 ```json
 {
   "resourceType" : "ValueSet",
-  "id" : "DIPSQSOFAScoreMentalSatusValueSet",
+  "id" : "DIPSQSOFAScoreMentalStatusValueSet",
   "meta" : {
     "lastUpdated" : "2021-03-17T00:00:00+00:00",
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
@@ -61,10 +61,10 @@ ValueSet of qSOFA Blood Pressure
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
     "valueInteger" : 1
   }],
-  "url" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalSatusValueSet",
+  "url" : "http://dips.no/fhir/ValueSet/DIPSQSOFAScoreMentalStatusValueSet",
   "version" : "0.1.0",
-  "name" : "DIPSQSOFAScoreMentalSatusValueSet",
-  "title" : "DIPSQSOFAScoreMentalSatusValueSet",
+  "name" : "DIPSQSOFAScoreMentalStatusValueSet",
+  "title" : "DIPSQSOFAScoreMentalStatusValueSet",
   "status" : "draft",
   "experimental" : false,
   "date" : "2025-05-14T00:00:00+00:00",
@@ -77,7 +77,7 @@ ValueSet of qSOFA Blood Pressure
       "use" : "work"
     }]
   }],
-  "description" : "ValueSet of qSOFA Blood Pressure",
+  "description" : "ValueSet of qSOFA Mental Status",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -87,7 +87,7 @@ ValueSet of qSOFA Blood Pressure
   }],
   "compose" : {
     "include" : [{
-      "system" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem",
+      "system" : "http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem",
       "concept" : [{
         "code" : "0",
         "display" : "Ikke endret mental status"

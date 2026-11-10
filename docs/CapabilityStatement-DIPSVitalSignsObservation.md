@@ -83,7 +83,7 @@ DIPS implementation of Vital Signs - Capability Statement
       "http://hl7.no/fhir/no-domain/vitalsigns/StructureDefinition/no-domain-VitalSigns-Observation-pulse"],
       "interaction" : [{
         "code" : "create",
-        "documentation" : "Register an observation on a specific patient in DIPS.\r\n                       It is not  possible to register cancer and person injury\r\n                       diagnoses via this interface."
+        "documentation" : "Register an observation on a specific patient in DIPS.\r\n                       It is not possible to register cancer and person injury\r\n                       diagnoses via this interface."
       },
       {
         "code" : "read",
@@ -106,7 +106,7 @@ DIPS implementation of Vital Signs - Capability Statement
       {
         "name" : "code",
         "type" : "reference",
-        "documentation" : "Loinc code for type of observation eg: For blood presure 'code=85354-9'"
+        "documentation" : "LOINC code for type of observation, e.g. for blood pressure 'code=85354-9'"
       },
       {
         "name" : "patient",
@@ -116,7 +116,7 @@ DIPS implementation of Vital Signs - Capability Statement
       {
         "name" : "patient.Identifier",
         "type" : "token",
-        "documentation" : "DIPS patient id or national id.Supported systems are urn:oid:2.16.578.1.12.4.1.4.1,urn:oid:2.16.578.1.12.4.1.4.2 or urn:oid:2.16.578.1.12.4.1.4.3 "
+        "documentation" : "DIPS patient id or national id. Supported systems are urn:oid:2.16.578.1.12.4.1.4.1,urn:oid:2.16.578.1.12.4.1.4.2 or urn:oid:2.16.578.1.12.4.1.4.3 "
       },
       {
         "name" : "effectivedatetime",

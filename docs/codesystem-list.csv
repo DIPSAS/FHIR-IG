@@ -5,7 +5,7 @@ http://dips.no/fhir/CodeSystem/DIPSGCSMotorScoreCodeSystem,0.1.0,draft,,DIPSGCSM
 http://dips.no/fhir/CodeSystem/DIPSGCSVerbalScoreCodeSystem,0.1.0,draft,,DIPSGCSVerbalScoreCodeSystem,,"",
 http://dips.no/fhir/CodeSystem/DIPSMeasurementMethod,0.1.0,draft,,DIPSMeasurementMethod,,"",
 http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreBPCodeSystem,0.1.0,draft,,DIPSQSOFAScoreBPCodeSystem,,"",
-http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalSatusCodeSystem,0.1.0,draft,,DIPSQSOFAScoreMentalSatusCodeSystem,,"",
+http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreMentalStatusCodeSystem,0.1.0,draft,,DIPSQSOFAScoreMentalStatusCodeSystem,,"",
 http://dips.no/fhir/CodeSystem/DIPSQSOFAScoreResRateCodeSystem,0.1.0,draft,,DIPSQSOFAScoreResRateCodeSystem,,"",
 http://dips.no/fhir/CodeSystem/DIPSVitalSignsObservationConsciousness,0.1.0,draft,,DIPSVitalSignsObservationConsciousness,,"",
 http://dips.no/fhir/CodeSystem/DIPSVitalSignsObservationPrePostduktal,0.1.0,draft,,DIPSVitalSignsObservationPrePostduktal,,"",
